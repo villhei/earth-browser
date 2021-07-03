@@ -1,7 +1,13 @@
 import * as React from "react"
-import ControlPanel, { ControlPanelProps, Range } from "react-control-panel"
+import ControlPanel, {
+  ControlPanelProps,
+  Color,
+  Range,
+  Select,
+} from "react-control-panel"
 import "./Controls.css"
 import { Config } from "./config"
+import { Texture } from "../earthTextures"
 
 type Props = {
   title: string
@@ -30,7 +36,11 @@ export default function Controls({ title, config, onChange }: Props) {
       initialState={config}
       onChange={handleOnChange}
     >
-      <Range label="layerAltitude" min={0.001} max={1} />
+      <Range label="layerAltitude" min={0.004} max={1} />
+      <Select label="texture" options={Texture} />
+
+      <Color label="sideColor" format="hex" />
+      <Color label="strokeColor" format="hex" />
     </ControlPanel>
   )
 }
