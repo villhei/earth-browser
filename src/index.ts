@@ -21,7 +21,6 @@ function findCountryColor(name: string): string | undefined {
   if (colors) {
     return α(colors[0], 0.4)
   }
-  console.log("Not found", name)
   return undefined
 }
 
@@ -37,10 +36,8 @@ function findColor(country: Feature): string | undefined {
 
 const Globe = new ThreeGlobe()
   .globeImageUrl(globeTexture)
-  .polygonsData(
-    worldMap.features.filter((d: Feature) => d.properties.ISO_A2 !== "AQ")
-  )
-  .polygonAltitude(0.01)
+  .polygonsData(worldMap.features)
+  .polygonAltitude(0.005)
   .polygonCapColor((d: object) => {
     const feature = d as Feature
     return findColor(feature) || "rgba(0, 0, 0, 0.0)"
@@ -67,6 +64,8 @@ camera.position.z = 500
 
 // Add camera controls
 const tbControls = new TrackballControls(camera, renderer.domElement)
+tbControls.noPan = true
+tbControls.staticMoving = true
 tbControls.minDistance = 101
 tbControls.rotateSpeed = 3
 tbControls.zoomSpeed = 0.8
