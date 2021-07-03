@@ -8,6 +8,7 @@ import ControlPanel, {
 import "./Controls.css"
 import { Config } from "./config"
 import { Texture } from "../earthTextures"
+import { CountryDataset } from "../worldmap"
 
 type Props = {
   title: string
@@ -37,8 +38,9 @@ export default function Controls({ title, config, onChange }: Props) {
       onChange={handleOnChange}
     >
       <Range label="layerAltitude" min={0.004} max={1} />
+      <Range label="opacity" min={0} max={1} />
       <Select label="texture" options={Texture} />
-
+      <Select label="dataset" options={CountryDataset} />
       <Color label="sideColor" format="hex" />
       <Color label="strokeColor" format="hex" />
     </ControlPanel>

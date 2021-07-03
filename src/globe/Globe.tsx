@@ -2,43 +2,39 @@ import React, { useEffect, useRef } from "react"
 import * as THREE from "three"
 import ThreeGlobe from "three-globe"
 import TrackballControls from "three-trackballcontrols"
-import COUNTRY_COLORS_LIST, { Country } from "country-flag-colors"
 import alpha from "color-alpha"
-import { Feature } from "../worldmap/geojson"
+import {
+  getCountryData,
+  Feature,
+  CountryDataset,
+  getCountryNameKeys,
+} from "../worldmap"
 import { Config } from "../controls"
 import { getTexturePath } from "../earthTextures"
-
-const COLORS_BY_COUNTRY_NAME = new Map<string, Array<string>>(
-  COUNTRY_COLORS_LIST.map((countrySpec: Country) => [
-    countrySpec.name,
-    countrySpec.colors,
-  ])
-)
-
-function findCountryColor(name: string): string | undefined {
-  const colors = COLORS_BY_COUNTRY_NAME.get(name)
-  if (colors) {
-    return alpha(colors[0], 0.4)
-  }
-  return undefined
-}
-
-function findColor(country: Feature): string | undefined {
-  const { NAME_LONG, SOVEREIGNT } = country.properties
-  const color = findCountryColor(NAME_LONG) || findCountryColor(SOVEREIGNT)
-  if (!color) {
-    return undefined
-  }
-  return color
-}
+import { findCountryColor, DEFAULT_COLOR } from "../countryColors"
 
 type Props = {
   config: Config
 }
 
+export function findColor(dataset: CountryDataset, country: Feature): string {
+  const [color] = getCountryNameKeys(dataset)
+    .map((key) => country.properties[key])
+    .map(findCountryColor)
+    .filter(Boolean)
+  return color || DEFAULT_COLOR
+}
+
 const GlobeComponent = (props: Props) => {
   const {
-    config: { countries, layerAltitude, texture, strokeColor, sideColor },
+    config: {
+      layerAltitude,
+      texture,
+      strokeColor,
+      sideColor,
+      opacity,
+      dataset,
+    },
   } = props
   const containerRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLDivElement>(null)
@@ -56,16 +52,7 @@ const GlobeComponent = (props: Props) => {
     renderer.setSize(width, height)
     canvas.appendChild(renderer.domElement)
 
-    globe
-      .globeImageUrl(getTexturePath(texture))
-      .polygonsData(countries.features)
-      .polygonAltitude(layerAltitude)
-      .polygonCapColor((d: object) => {
-        const feature = d as Feature
-        return findColor(feature) || "rgba(0, 0, 0, 0.0)"
-      })
-      .polygonSideColor(() => sideColor)
-      .polygonStrokeColor(() => strokeColor)
+    globe.globeImageUrl(getTexturePath(texture))
 
     // Setup scene
     const scene = new THREE.Scene()
@@ -126,15 +113,27 @@ const GlobeComponent = (props: Props) => {
     const globe = globeRef.current
 
     globe.polygonSideColor(() => alpha(sideColor, 0.4))
-    console.log("sideColor")
   }, [globeRef, sideColor])
 
   useEffect(() => {
     const globe = globeRef.current
 
     globe.polygonStrokeColor(() => strokeColor)
-    console.log("strokeColor")
   }, [globeRef, strokeColor])
+
+  useEffect(() => {
+    const globe = globeRef.current
+
+    globe.polygonCapColor((d: object) => {
+      const feature = d as Feature
+      return alpha(findColor(dataset, feature), opacity)
+    })
+  }, [globeRef, dataset, opacity])
+
+  useEffect(() => {
+    const globe = globeRef.current
+    globe.polygonsData(getCountryData(dataset).features)
+  }, [globeRef, dataset])
 
   return (
     <div

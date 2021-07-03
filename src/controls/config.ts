@@ -1,13 +1,15 @@
 import { Texture } from "../earthTextures"
-import { worldMap } from "../worldmap"
+import { CountryDataset, worldMap } from "../worldmap"
 import { GeoJSON } from "../worldmap/geojson"
 
 export type Config = {
   layerAltitude: number
   countries: GeoJSON
   texture: Texture
+  dataset: CountryDataset
   sideColor: string
   strokeColor: string
+  opacity: number
 }
 
 const WHITE = "#FFFFFF"
@@ -19,4 +21,6 @@ export const DEFAULT_CONFIG: Config = {
   texture: Texture.EARTH_DAY,
   sideColor: WHITE,
   strokeColor: BLACK,
+  opacity: 0.4,
+  dataset: CountryDataset.PRESENT_DAY,
 }
