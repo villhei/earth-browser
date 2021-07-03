@@ -33,7 +33,7 @@ declare module "country-flag-colors" {
   export default CountryList
 }
 
-declare module "*.jpg" {
+declare module "*.(jpg|css)" {
   const content: string
   export default content
 }

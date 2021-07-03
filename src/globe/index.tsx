@@ -4,9 +4,10 @@ import ThreeGlobe from "three-globe"
 import TrackballControls from "three-trackballcontrols"
 import COUNTRY_COLORS_LIST, { Country } from "country-flag-colors"
 import α from "color-alpha"
-import worldGeoJSON from "./assets/countries.json"
 import globeTexture from "url:./assets/earth-blue-marble.jpg"
-import { GeoJSON, Feature } from "../types/geojson"
+import { Feature } from "../worldmap/geojson"
+import { Config } from "../controls"
+import { worldMap } from "../worldmap"
 
 const COLORS_BY_COUNTRY_NAME = new Map<string, Array<string>>(
   COUNTRY_COLORS_LIST.map((countrySpec: Country) => [
@@ -14,8 +15,6 @@ const COLORS_BY_COUNTRY_NAME = new Map<string, Array<string>>(
     countrySpec.colors,
   ])
 )
-
-const worldMap = worldGeoJSON as GeoJSON
 
 function findCountryColor(name: string): string | undefined {
   const colors = COLORS_BY_COUNTRY_NAME.get(name)
@@ -35,25 +34,34 @@ function findColor(country: Feature): string | undefined {
   return color
 }
 
-const GlobeComponent = () => {
+type Props = {
+  config: Config
+}
+
+const GlobeComponent = (props: Props) => {
+  const {
+    config: { countries, layerAltitude },
+  } = props
   const containerRef = useRef<HTMLDivElement>(null)
+  const globeRef = useRef<ThreeGlobe>(new ThreeGlobe())
 
   useEffect(() => {
-    if (!containerRef.current) {
+    if (!containerRef.current || !globeRef.current) {
       return
     }
     const container = containerRef.current
+    const globe = globeRef.current
 
     const { width, height } = container.getBoundingClientRect()
     // Setup renderer
     const renderer = new THREE.WebGLRenderer()
     renderer.setSize(width, height)
-    containerRef.current.appendChild(renderer.domElement)
+    container.appendChild(renderer.domElement)
 
-    const globe = new ThreeGlobe()
+    globe
       .globeImageUrl(globeTexture)
-      .polygonsData(worldMap.features)
-      .polygonAltitude(0.005)
+      .polygonsData(countries.features)
+      .polygonAltitude(layerAltitude)
       .polygonCapColor((d: object) => {
         const feature = d as Feature
         return findColor(feature) || "rgba(0, 0, 0, 0.0)"
@@ -82,20 +90,19 @@ const GlobeComponent = () => {
     tbControls.zoomSpeed = 0.8
 
     // Kick-off renderer
-    setTimeout(function animate() {
-      // IIFE
-      // Frame cycle
+
+    let currentFrame = requestAnimationFrame(animate)
+    function animate() {
       tbControls.update()
       renderer.render(scene, camera)
-      requestAnimationFrame(animate)
-    }, 0)
+      currentFrame = requestAnimationFrame(animate)
+    }
 
     const onResize = () => {
       const { width, height } = container.getBoundingClientRect()
 
       camera.aspect = width / height
       camera.updateProjectionMatrix()
-
       renderer.setSize(width, height)
     }
 
@@ -103,9 +110,20 @@ const GlobeComponent = () => {
 
     return () => {
       window.removeEventListener("resize", onResize)
+      container.removeChild(renderer.domElement)
       renderer.dispose()
+      cancelAnimationFrame(currentFrame)
     }
   }, [containerRef.current])
+
+  useEffect(() => {
+    if (!globeRef.current) {
+      return
+    }
+
+    const globe = globeRef.current
+    globe.polygonAltitude(layerAltitude)
+  }, [globeRef.current, layerAltitude])
 
   return <div style={{ flex: 1 }} ref={containerRef}></div>
 }
