@@ -3,11 +3,10 @@ import * as THREE from "three"
 import ThreeGlobe from "three-globe"
 import TrackballControls from "three-trackballcontrols"
 import COUNTRY_COLORS_LIST, { Country } from "country-flag-colors"
-import α from "color-alpha"
+import alpha from "color-alpha"
 import globeTexture from "url:./assets/earth-blue-marble.jpg"
 import { Feature } from "../worldmap/geojson"
 import { Config } from "../controls"
-import { worldMap } from "../worldmap"
 
 const COLORS_BY_COUNTRY_NAME = new Map<string, Array<string>>(
   COUNTRY_COLORS_LIST.map((countrySpec: Country) => [
@@ -19,7 +18,7 @@ const COLORS_BY_COUNTRY_NAME = new Map<string, Array<string>>(
 function findCountryColor(name: string): string | undefined {
   const colors = COLORS_BY_COUNTRY_NAME.get(name)
   if (colors) {
-    return α(colors[0], 0.4)
+    return alpha(colors[0], 0.4)
   }
   return undefined
 }
@@ -28,7 +27,6 @@ function findColor(country: Feature): string | undefined {
   const { NAME_LONG, SOVEREIGNT } = country.properties
   const color = findCountryColor(NAME_LONG) || findCountryColor(SOVEREIGNT)
   if (!color) {
-    console.log("not found", country.properties)
     return undefined
   }
   return color
@@ -43,20 +41,20 @@ const GlobeComponent = (props: Props) => {
     config: { countries, layerAltitude },
   } = props
   const containerRef = useRef<HTMLDivElement>(null)
+  const canvasRef = useRef<HTMLDivElement>(null)
+
   const globeRef = useRef<ThreeGlobe>(new ThreeGlobe())
 
   useEffect(() => {
-    if (!containerRef.current || !globeRef.current) {
-      return
-    }
-    const container = containerRef.current
+    const container = containerRef.current!
+    const canvas = canvasRef.current!
     const globe = globeRef.current
 
     const { width, height } = container.getBoundingClientRect()
     // Setup renderer
     const renderer = new THREE.WebGLRenderer()
     renderer.setSize(width, height)
-    container.appendChild(renderer.domElement)
+    canvas.appendChild(renderer.domElement)
 
     globe
       .globeImageUrl(globeTexture)
@@ -99,8 +97,8 @@ const GlobeComponent = (props: Props) => {
     }
 
     const onResize = () => {
+      renderer.setSize(0, 0)
       const { width, height } = container.getBoundingClientRect()
-
       camera.aspect = width / height
       camera.updateProjectionMatrix()
       renderer.setSize(width, height)
@@ -109,12 +107,12 @@ const GlobeComponent = (props: Props) => {
     window.addEventListener("resize", onResize)
 
     return () => {
-      window.removeEventListener("resize", onResize)
-      container.removeChild(renderer.domElement)
+      canvas.removeChild(renderer.domElement)
       renderer.dispose()
       cancelAnimationFrame(currentFrame)
+      window.removeEventListener("resize", onResize)
     }
-  }, [containerRef.current])
+  }, [])
 
   useEffect(() => {
     if (!globeRef.current) {
@@ -125,7 +123,18 @@ const GlobeComponent = (props: Props) => {
     globe.polygonAltitude(layerAltitude)
   }, [globeRef.current, layerAltitude])
 
-  return <div style={{ flex: 1 }} ref={containerRef}></div>
+  return (
+    <div
+      style={{
+        flex: 1,
+        overflow: "hidden",
+        position: "relative",
+      }}
+      ref={containerRef}
+    >
+      <div ref={canvasRef} />
+    </div>
+  )
 }
 
 export default GlobeComponent

@@ -7,6 +7,6 @@ export type Config = {
 }
 
 export const DEFAULT_CONFIG: Config = {
-  layerAltitude: 0.05,
+  layerAltitude: 0.005,
   countries: worldMap,
 }

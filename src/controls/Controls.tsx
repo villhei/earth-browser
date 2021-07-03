@@ -1,6 +1,6 @@
 import * as React from "react"
-import ControlPanel, { Range } from "react-control-panel"
-
+import ControlPanel, { ControlPanelProps, Range } from "react-control-panel"
+import "./Controls.css"
 import { Config } from "./config"
 
 type Props = {
@@ -10,7 +10,10 @@ type Props = {
 }
 
 export default function Controls({ title, config, onChange }: Props) {
-  const handleOnChange = (updated: keyof Config, value: unknown) => {
+  const handleOnChange: ControlPanelProps<Config>["onChange"] = (
+    updated,
+    value
+  ) => {
     onChange({
       ...config,
       [updated]: value,
@@ -19,6 +22,9 @@ export default function Controls({ title, config, onChange }: Props) {
 
   return (
     <ControlPanel
+      style={{
+        minWidth: "200px",
+      }}
       theme="dark"
       title={title}
       initialState={config}

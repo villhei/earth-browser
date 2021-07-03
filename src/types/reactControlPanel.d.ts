@@ -3,19 +3,21 @@ declare module "react-control-panel" {
 
   type ControlPanelProps<T extends {}> = {
     initialState?: T
-    onChange?: (fieldName: string, fieldValue: unknown) => void
+    onChange<K extends keyof T>(fieldName: K, fieldValue: T[K][fieldName]): void
     theme?: string | object
     title?: string
     width?: number
     position?: "top-right" | "top-left" | "bottom-right" | "bottom-left"
     style?: object
     settings?: object[]
-    state?: object
+    state?: T
     contextCb?: Function
     draggable?: boolean
   }
 
-  export default class ControlPanel<T extends{]}> extends React.Component<ControlPanelProps<T>> {}
+  export default class ControlPanel<T extends {}> extends React.Component<
+    ControlPanelProps<T>
+  > {}
 
   interface ComponentProps {
     label: string
