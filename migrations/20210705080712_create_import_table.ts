@@ -12,7 +12,7 @@ export async function up(knex: Knex): Promise<void> {
 
   const countryTable = knex("countries_import")
 
-  const dataPath = path.join(__dirname, "migrations", "seed")
+  const dataPath = path.join(__dirname, "seed")
   const files = fs.readdirSync(dataPath)
 
   for (const name of files) {
