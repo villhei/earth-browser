@@ -6,7 +6,8 @@
   "scripts": {
     "knex": "knex",
     "bootstrap": "ts-node bootstrap.ts",
-    "start": "parcel src/index.html",
+    "server": "ts-node server",
+    "start": "npm run server && parcel src/index.html",
     "test": "jest"
   },
   "author": "",
@@ -19,6 +20,7 @@
     "country-flag-colors": "0.0.3",
     "knex": "^0.95.6",
     "pg": "^8.6.0",
+    "postgraphile": "^4.12.3",
     "react": "^17.0.2",
     "react-control-panel": "^0.8.3",
     "react-dom": "^17.0.2",

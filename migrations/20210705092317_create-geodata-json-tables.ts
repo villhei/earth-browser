@@ -88,7 +88,6 @@ export async function up(knex: Knex): Promise<void> {
     table.string("REGION_WB")
     table.integer("POP_EST")
     table.string("NAME_SORT")
-    table.string("type")
     table.integer("SU_DIF")
     table.string("ADMIN")
     table.float("AREA")
@@ -132,7 +131,7 @@ export async function up(knex: Knex): Promise<void> {
             properties ->> 'NAME_LONG' as NAME_LONG,
             properties ->> 'ABBREVNAME' as ABBREVNAME,
             properties ->> 'POSTAL' as POSTAL,
-            properties ->> 'TYPE' as TYPE,
+            COALESCE(properties ->> 'TYPE', properties ->> 'type') as TYPE,
             (properties ->> 'WOE_ID')::int as WOE_ID,
             (properties ->> 'LEVEL')::int as LEVEL,
             (properties ->> 'POP_RANK')::int as POP_RANK,
@@ -174,7 +173,6 @@ export async function up(knex: Knex): Promise<void> {
             properties ->> 'REGION_WB' as REGION_WB,
             (properties ->> 'POP_EST')::int as POP_EST,
             properties ->> 'NAME_SORT' as NAME_SORT,
-            properties ->> 'type' as type,
             (properties ->> 'SU_DIF')::int as SU_DIF,
             properties ->> 'ADMIN' as ADMIN,
             (properties ->> 'AREA')::float as AREA,
