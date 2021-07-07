@@ -1,7 +1,7 @@
 import { Knex } from "knex"
 
 export async function up(knex: Knex): Promise<void> {
-  knex.raw('create extension if not exists "postgis')
+  await knex.raw('create extension if not exists "postgis"')
 
   await knex.schema.alterTable("feature_geometries", (table) => {
     table.specificType("geometry", "geometry")
