@@ -3,12 +3,7 @@ import * as THREE from "three"
 import ThreeGlobe from "three-globe"
 import TrackballControls from "three-trackballcontrols"
 import alpha from "color-alpha"
-import {
-  Feature,
-  CountryDataset,
-  getCountryNameKeys,
-  GeoJSON,
-} from "../worldmap"
+import { Feature, getCountryNameKeys, GeoJSON } from "../datasets"
 import { Config } from "../controls"
 import { getTexturePath } from "../earthTextures"
 import { findCountryColor, DEFAULT_COLOR } from "../countryColors"
@@ -128,7 +123,12 @@ const GlobeComponent = (props: Props) => {
   useEffect(() => {
     const globe = globeRef.current
     const polygons = JSON.parse(JSON.stringify(dataset.features))
+    console.log("changing dataset", dataset.name)
     globe.polygonsData(polygons)
+
+    return () => {
+      globe.polygonsData([])
+    }
   }, [globeRef, dataset])
 
   return (

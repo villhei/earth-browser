@@ -8,24 +8,35 @@ import ControlPanel, {
 import "./Controls.css"
 import { Config } from "./config"
 import { Texture } from "../earthTextures"
-import { CountryDataset } from "../worldmap"
+import { GeoJsonDatasetDescriptionFragment } from "../datasets/datasets.generated"
 
 type Props = {
   title: string
   config: Config
+  datasets: Array<GeoJsonDatasetDescriptionFragment>
   onChange: (config: Config) => void
 }
 
-export default function Controls({ title, config, onChange }: Props) {
+export default function Controls({ title, config, datasets, onChange }: Props) {
   const handleOnChange: ControlPanelProps<Config>["onChange"] = (
     updated,
     value
   ) => {
-    onChange({
-      ...config,
-      [updated]: value,
-    })
+    if (updated === "dataset") {
+      const dataset = datasets.find((dataset) => dataset.name === value)!
+      onChange({
+        ...config,
+        dataset: dataset.id,
+      })
+    } else {
+      onChange({
+        ...config,
+        [updated]: value,
+      })
+    }
   }
+
+  const datasetNames = datasets.map((value) => value.name)
 
   return (
     <ControlPanel
@@ -40,7 +51,7 @@ export default function Controls({ title, config, onChange }: Props) {
       <Range label="layerAltitude" min={0.004} max={1} />
       <Range label="opacity" min={0} max={1} />
       <Select label="texture" options={Texture} />
-      <Select label="dataset" options={CountryDataset} />
+      <Select label="dataset" options={datasetNames} />
       <Color label="sideColor" format="hex" />
       <Color label="strokeColor" format="hex" />
     </ControlPanel>

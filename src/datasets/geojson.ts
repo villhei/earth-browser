@@ -1,5 +1,6 @@
 export interface GeoJSON {
   type: string
+  name: string
   features: Feature[]
   bbox?: number[]
 }

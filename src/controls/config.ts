@@ -1,10 +1,9 @@
 import { Texture } from "../earthTextures"
-import { CountryDataset } from "../worldmap"
 
 export type Config = {
   layerAltitude: number
   texture: Texture
-  dataset: CountryDataset
+  dataset: string
   sideColor: string
   strokeColor: string
   opacity: number
@@ -13,11 +12,10 @@ export type Config = {
 const WHITE = "#FFFFFF"
 const BLACK = "#000000"
 
-export const DEFAULT_CONFIG: Config = {
+export const DEFAULT_CONFIG: Omit<Config, "dataset"> = {
   layerAltitude: 0.005,
   sideColor: WHITE,
   strokeColor: BLACK,
   texture: Texture.EARTH_BLUE_MARBLE,
   opacity: 0.4,
-  dataset: CountryDataset.PRESENT_DAY,
 }

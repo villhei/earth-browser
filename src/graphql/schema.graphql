@@ -1,0 +1,2207 @@
+"""The root query type which gives access points into the data universe."""
+type Query implements Node {
+  """
+  Exposes the root query type nested one level down. This is helpful for Relay 1
+  which can only query top level fields if they are in a particular form.
+  """
+  query: Query!
+
+  """
+  The root query type must be a `Node` to work well with Relay 1 mutations. This just resolves to `query`.
+  """
+  nodeId: ID!
+
+  """Fetches an object given its globally unique `ID`."""
+  node(
+    """The globally unique `ID`."""
+    nodeId: ID!
+  ): Node
+
+  """Reads and enables pagination through a set of `Dataset`."""
+  datasets(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `Dataset`."""
+    orderBy: [DatasetsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: DatasetCondition
+  ): DatasetsConnection
+
+  """Reads and enables pagination through a set of `FeatureGeometry`."""
+  featureGeometries(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `FeatureGeometry`."""
+    orderBy: [FeatureGeometriesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: FeatureGeometryCondition
+  ): FeatureGeometriesConnection
+
+  """Reads and enables pagination through a set of `Feature`."""
+  features(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `Feature`."""
+    orderBy: [FeaturesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: FeatureCondition
+  ): FeaturesConnection
+
+  """Reads and enables pagination through a set of `GeojsonDataset`."""
+  geojsonDatasets(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `GeojsonDataset`."""
+    orderBy: [GeojsonDatasetsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: GeojsonDatasetCondition
+  ): GeojsonDatasetsConnection
+
+  """Reads and enables pagination through a set of `GeojsonFeature`."""
+  geojsonFeatures(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `GeojsonFeature`."""
+    orderBy: [GeojsonFeaturesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: GeojsonFeatureCondition
+  ): GeojsonFeaturesConnection
+
+  """Reads and enables pagination through a set of `Property`."""
+  properties(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `Property`."""
+    orderBy: [PropertiesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PropertyCondition
+  ): PropertiesConnection
+  dataset(id: UUID!): Dataset
+  featureGeometry(id: UUID!): FeatureGeometry
+  feature(id: UUID!): Feature
+  geojsonDataset(id: UUID!): GeojsonDataset
+  geojsonFeature(id: UUID!): GeojsonFeature
+  property(id: UUID!): Property
+
+  """Reads a single `Dataset` using its globally unique `ID`."""
+  datasetByNodeId(
+    """The globally unique `ID` to be used in selecting a single `Dataset`."""
+    nodeId: ID!
+  ): Dataset
+
+  """Reads a single `FeatureGeometry` using its globally unique `ID`."""
+  featureGeometryByNodeId(
+    """
+    The globally unique `ID` to be used in selecting a single `FeatureGeometry`.
+    """
+    nodeId: ID!
+  ): FeatureGeometry
+
+  """Reads a single `Feature` using its globally unique `ID`."""
+  featureByNodeId(
+    """The globally unique `ID` to be used in selecting a single `Feature`."""
+    nodeId: ID!
+  ): Feature
+
+  """Reads a single `GeojsonDataset` using its globally unique `ID`."""
+  geojsonDatasetByNodeId(
+    """
+    The globally unique `ID` to be used in selecting a single `GeojsonDataset`.
+    """
+    nodeId: ID!
+  ): GeojsonDataset
+
+  """Reads a single `GeojsonFeature` using its globally unique `ID`."""
+  geojsonFeatureByNodeId(
+    """
+    The globally unique `ID` to be used in selecting a single `GeojsonFeature`.
+    """
+    nodeId: ID!
+  ): GeojsonFeature
+
+  """Reads a single `Property` using its globally unique `ID`."""
+  propertyByNodeId(
+    """The globally unique `ID` to be used in selecting a single `Property`."""
+    nodeId: ID!
+  ): Property
+}
+
+"""An object with a globally unique `ID`."""
+interface Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+}
+
+"""A connection to a list of `Dataset` values."""
+type DatasetsConnection {
+  """A list of `Dataset` objects."""
+  nodes: [Dataset]!
+
+  """
+  A list of edges which contains the `Dataset` and cursor to aid in pagination.
+  """
+  edges: [DatasetsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `Dataset` you could get from the connection."""
+  totalCount: Int!
+}
+
+type Dataset implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: UUID!
+  type: String!
+  name: String!
+  crs: JSON
+  bbox: JSON
+
+  """Reads and enables pagination through a set of `Feature`."""
+  featuresByDatasetId(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `Feature`."""
+    orderBy: [FeaturesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: FeatureCondition
+  ): FeaturesConnection!
+}
+
+"""
+A universally unique identifier as defined by [RFC 4122](https://tools.ietf.org/html/rfc4122).
+"""
+scalar UUID
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON
+
+"""A connection to a list of `Feature` values."""
+type FeaturesConnection {
+  """A list of `Feature` objects."""
+  nodes: [Feature]!
+
+  """
+  A list of edges which contains the `Feature` and cursor to aid in pagination.
+  """
+  edges: [FeaturesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `Feature` you could get from the connection."""
+  totalCount: Int!
+}
+
+type Feature implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: UUID!
+  datasetId: UUID!
+  bbox: String
+
+  """Reads a single `Dataset` that is related to this `Feature`."""
+  datasetByDatasetId: Dataset
+
+  """Reads and enables pagination through a set of `Property`."""
+  propertiesByFeatureId(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `Property`."""
+    orderBy: [PropertiesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PropertyCondition
+  ): PropertiesConnection!
+
+  """Reads and enables pagination through a set of `FeatureGeometry`."""
+  featureGeometriesByFeatureId(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `FeatureGeometry`."""
+    orderBy: [FeatureGeometriesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: FeatureGeometryCondition
+  ): FeatureGeometriesConnection!
+}
+
+"""A connection to a list of `Property` values."""
+type PropertiesConnection {
+  """A list of `Property` objects."""
+  nodes: [Property]!
+
+  """
+  A list of edges which contains the `Property` and cursor to aid in pagination.
+  """
+  edges: [PropertiesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `Property` you could get from the connection."""
+  totalCount: Int!
+}
+
+type Property implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: UUID!
+  featureId: UUID!
+  name: String
+  nameLong: String
+  abbrevname: String
+  postal: String
+  type: String
+  woeId: Int
+  level: Int
+  popRank: Int
+  adm0A3Us: String
+  isoA2: String
+  controllin: String
+  abbrevLen: Int
+  wikipedia: Int
+  fips10_: String
+  labelrank: Int
+  sovereignt: String
+  suA3: String
+  geouDif: Int
+  isoA3Eh: String
+  featurecla: String
+  mapcolor9: Int
+  formalFr: String
+  longLen: Int
+  bordering: String
+  formalEn: String
+  wbA2: String
+  homepart: Int
+  gdpMdEst: Float
+  economy: String
+  isoA3: String
+  popYear: Int
+  adm0A3: String
+  borderColorIndex: String
+  minZoom: Float
+  adm0A3Wb: Int
+  mapcolor13: Int
+  gdpYear: Int
+  brkA3: String
+  sovA3: String
+  incomeGrp: String
+  isoN3: String
+  mapcolor8: Int
+  guA3: String
+  regionWb: String
+  popEst: Int
+  nameSort: String
+  suDif: Int
+  admin: String
+  area: Float
+  adm0Dif: Int
+  woeNote: String
+  minLabel: Float
+  scalerank: Int
+  wbA3: String
+  regionUn: String
+  woeIdEh: Int
+  subunit: String
+  subregion: String
+  brkName: String
+  maxLabel: Float
+  wbCntry: String
+  continent: String
+  geounit: String
+  noteAdm0: String
+  noteBrk: String
+  abbrev: String
+  unA3: String
+  weblinks: String
+  nameCiawf: String
+  mapcolor7: Int
+  nameAlt: String
+  fipsCode: String
+  nameLen: Int
+  brkDiff: Int
+  adm0A3Un: Int
+  adm0A3Is: String
+  tiny: Int
+  lastcensus: Int
+
+  """Reads a single `Feature` that is related to this `Property`."""
+  featureByFeatureId: Feature
+}
+
+"""A `Property` edge in the connection."""
+type PropertiesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `Property` at the end of the edge."""
+  node: Property
+}
+
+"""A location in a connection that can be used for resuming pagination."""
+scalar Cursor
+
+"""Information about pagination in a connection."""
+type PageInfo {
+  """When paginating forwards, are there more items?"""
+  hasNextPage: Boolean!
+
+  """When paginating backwards, are there more items?"""
+  hasPreviousPage: Boolean!
+
+  """When paginating backwards, the cursor to continue."""
+  startCursor: Cursor
+
+  """When paginating forwards, the cursor to continue."""
+  endCursor: Cursor
+}
+
+"""Methods to use when ordering `Property`."""
+enum PropertiesOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  FEATURE_ID_ASC
+  FEATURE_ID_DESC
+  NAME_ASC
+  NAME_DESC
+  NAME_LONG_ASC
+  NAME_LONG_DESC
+  ABBREVNAME_ASC
+  ABBREVNAME_DESC
+  POSTAL_ASC
+  POSTAL_DESC
+  TYPE_ASC
+  TYPE_DESC
+  WOE_ID_ASC
+  WOE_ID_DESC
+  LEVEL_ASC
+  LEVEL_DESC
+  POP_RANK_ASC
+  POP_RANK_DESC
+  ADM0_A3_US_ASC
+  ADM0_A3_US_DESC
+  ISO_A2_ASC
+  ISO_A2_DESC
+  CONTROLLIN_ASC
+  CONTROLLIN_DESC
+  ABBREV_LEN_ASC
+  ABBREV_LEN_DESC
+  WIKIPEDIA_ASC
+  WIKIPEDIA_DESC
+  FIPS_10_ASC
+  FIPS_10_DESC
+  LABELRANK_ASC
+  LABELRANK_DESC
+  SOVEREIGNT_ASC
+  SOVEREIGNT_DESC
+  SU_A3_ASC
+  SU_A3_DESC
+  GEOU_DIF_ASC
+  GEOU_DIF_DESC
+  ISO_A3_EH_ASC
+  ISO_A3_EH_DESC
+  FEATURECLA_ASC
+  FEATURECLA_DESC
+  MAPCOLOR9_ASC
+  MAPCOLOR9_DESC
+  FORMAL_FR_ASC
+  FORMAL_FR_DESC
+  LONG_LEN_ASC
+  LONG_LEN_DESC
+  BORDERING_ASC
+  BORDERING_DESC
+  FORMAL_EN_ASC
+  FORMAL_EN_DESC
+  WB_A2_ASC
+  WB_A2_DESC
+  HOMEPART_ASC
+  HOMEPART_DESC
+  GDP_MD_EST_ASC
+  GDP_MD_EST_DESC
+  ECONOMY_ASC
+  ECONOMY_DESC
+  ISO_A3_ASC
+  ISO_A3_DESC
+  POP_YEAR_ASC
+  POP_YEAR_DESC
+  ADM0_A3_ASC
+  ADM0_A3_DESC
+  BORDER_COLOR_INDEX_ASC
+  BORDER_COLOR_INDEX_DESC
+  MIN_ZOOM_ASC
+  MIN_ZOOM_DESC
+  ADM0_A3_WB_ASC
+  ADM0_A3_WB_DESC
+  MAPCOLOR13_ASC
+  MAPCOLOR13_DESC
+  GDP_YEAR_ASC
+  GDP_YEAR_DESC
+  BRK_A3_ASC
+  BRK_A3_DESC
+  SOV_A3_ASC
+  SOV_A3_DESC
+  INCOME_GRP_ASC
+  INCOME_GRP_DESC
+  ISO_N3_ASC
+  ISO_N3_DESC
+  MAPCOLOR8_ASC
+  MAPCOLOR8_DESC
+  GU_A3_ASC
+  GU_A3_DESC
+  REGION_WB_ASC
+  REGION_WB_DESC
+  POP_EST_ASC
+  POP_EST_DESC
+  NAME_SORT_ASC
+  NAME_SORT_DESC
+  SU_DIF_ASC
+  SU_DIF_DESC
+  ADMIN_ASC
+  ADMIN_DESC
+  AREA_ASC
+  AREA_DESC
+  ADM0_DIF_ASC
+  ADM0_DIF_DESC
+  WOE_NOTE_ASC
+  WOE_NOTE_DESC
+  MIN_LABEL_ASC
+  MIN_LABEL_DESC
+  SCALERANK_ASC
+  SCALERANK_DESC
+  WB_A3_ASC
+  WB_A3_DESC
+  REGION_UN_ASC
+  REGION_UN_DESC
+  WOE_ID_EH_ASC
+  WOE_ID_EH_DESC
+  SUBUNIT_ASC
+  SUBUNIT_DESC
+  SUBREGION_ASC
+  SUBREGION_DESC
+  BRK_NAME_ASC
+  BRK_NAME_DESC
+  MAX_LABEL_ASC
+  MAX_LABEL_DESC
+  WB_CNTRY_ASC
+  WB_CNTRY_DESC
+  CONTINENT_ASC
+  CONTINENT_DESC
+  GEOUNIT_ASC
+  GEOUNIT_DESC
+  NOTE_ADM0_ASC
+  NOTE_ADM0_DESC
+  NOTE_BRK_ASC
+  NOTE_BRK_DESC
+  ABBREV_ASC
+  ABBREV_DESC
+  UN_A3_ASC
+  UN_A3_DESC
+  WEBLINKS_ASC
+  WEBLINKS_DESC
+  NAME_CIAWF_ASC
+  NAME_CIAWF_DESC
+  MAPCOLOR7_ASC
+  MAPCOLOR7_DESC
+  NAME_ALT_ASC
+  NAME_ALT_DESC
+  FIPS_CODE_ASC
+  FIPS_CODE_DESC
+  NAME_LEN_ASC
+  NAME_LEN_DESC
+  BRK_DIFF_ASC
+  BRK_DIFF_DESC
+  ADM0_A3_UN_ASC
+  ADM0_A3_UN_DESC
+  ADM0_A3_IS_ASC
+  ADM0_A3_IS_DESC
+  TINY_ASC
+  TINY_DESC
+  LASTCENSUS_ASC
+  LASTCENSUS_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+A condition to be used against `Property` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input PropertyCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: UUID
+
+  """Checks for equality with the object’s `featureId` field."""
+  featureId: UUID
+
+  """Checks for equality with the object’s `name` field."""
+  name: String
+
+  """Checks for equality with the object’s `nameLong` field."""
+  nameLong: String
+
+  """Checks for equality with the object’s `abbrevname` field."""
+  abbrevname: String
+
+  """Checks for equality with the object’s `postal` field."""
+  postal: String
+
+  """Checks for equality with the object’s `type` field."""
+  type: String
+
+  """Checks for equality with the object’s `woeId` field."""
+  woeId: Int
+
+  """Checks for equality with the object’s `level` field."""
+  level: Int
+
+  """Checks for equality with the object’s `popRank` field."""
+  popRank: Int
+
+  """Checks for equality with the object’s `adm0A3Us` field."""
+  adm0A3Us: String
+
+  """Checks for equality with the object’s `isoA2` field."""
+  isoA2: String
+
+  """Checks for equality with the object’s `controllin` field."""
+  controllin: String
+
+  """Checks for equality with the object’s `abbrevLen` field."""
+  abbrevLen: Int
+
+  """Checks for equality with the object’s `wikipedia` field."""
+  wikipedia: Int
+
+  """Checks for equality with the object’s `fips10_` field."""
+  fips10_: String
+
+  """Checks for equality with the object’s `labelrank` field."""
+  labelrank: Int
+
+  """Checks for equality with the object’s `sovereignt` field."""
+  sovereignt: String
+
+  """Checks for equality with the object’s `suA3` field."""
+  suA3: String
+
+  """Checks for equality with the object’s `geouDif` field."""
+  geouDif: Int
+
+  """Checks for equality with the object’s `isoA3Eh` field."""
+  isoA3Eh: String
+
+  """Checks for equality with the object’s `featurecla` field."""
+  featurecla: String
+
+  """Checks for equality with the object’s `mapcolor9` field."""
+  mapcolor9: Int
+
+  """Checks for equality with the object’s `formalFr` field."""
+  formalFr: String
+
+  """Checks for equality with the object’s `longLen` field."""
+  longLen: Int
+
+  """Checks for equality with the object’s `bordering` field."""
+  bordering: String
+
+  """Checks for equality with the object’s `formalEn` field."""
+  formalEn: String
+
+  """Checks for equality with the object’s `wbA2` field."""
+  wbA2: String
+
+  """Checks for equality with the object’s `homepart` field."""
+  homepart: Int
+
+  """Checks for equality with the object’s `gdpMdEst` field."""
+  gdpMdEst: Float
+
+  """Checks for equality with the object’s `economy` field."""
+  economy: String
+
+  """Checks for equality with the object’s `isoA3` field."""
+  isoA3: String
+
+  """Checks for equality with the object’s `popYear` field."""
+  popYear: Int
+
+  """Checks for equality with the object’s `adm0A3` field."""
+  adm0A3: String
+
+  """Checks for equality with the object’s `borderColorIndex` field."""
+  borderColorIndex: String
+
+  """Checks for equality with the object’s `minZoom` field."""
+  minZoom: Float
+
+  """Checks for equality with the object’s `adm0A3Wb` field."""
+  adm0A3Wb: Int
+
+  """Checks for equality with the object’s `mapcolor13` field."""
+  mapcolor13: Int
+
+  """Checks for equality with the object’s `gdpYear` field."""
+  gdpYear: Int
+
+  """Checks for equality with the object’s `brkA3` field."""
+  brkA3: String
+
+  """Checks for equality with the object’s `sovA3` field."""
+  sovA3: String
+
+  """Checks for equality with the object’s `incomeGrp` field."""
+  incomeGrp: String
+
+  """Checks for equality with the object’s `isoN3` field."""
+  isoN3: String
+
+  """Checks for equality with the object’s `mapcolor8` field."""
+  mapcolor8: Int
+
+  """Checks for equality with the object’s `guA3` field."""
+  guA3: String
+
+  """Checks for equality with the object’s `regionWb` field."""
+  regionWb: String
+
+  """Checks for equality with the object’s `popEst` field."""
+  popEst: Int
+
+  """Checks for equality with the object’s `nameSort` field."""
+  nameSort: String
+
+  """Checks for equality with the object’s `suDif` field."""
+  suDif: Int
+
+  """Checks for equality with the object’s `admin` field."""
+  admin: String
+
+  """Checks for equality with the object’s `area` field."""
+  area: Float
+
+  """Checks for equality with the object’s `adm0Dif` field."""
+  adm0Dif: Int
+
+  """Checks for equality with the object’s `woeNote` field."""
+  woeNote: String
+
+  """Checks for equality with the object’s `minLabel` field."""
+  minLabel: Float
+
+  """Checks for equality with the object’s `scalerank` field."""
+  scalerank: Int
+
+  """Checks for equality with the object’s `wbA3` field."""
+  wbA3: String
+
+  """Checks for equality with the object’s `regionUn` field."""
+  regionUn: String
+
+  """Checks for equality with the object’s `woeIdEh` field."""
+  woeIdEh: Int
+
+  """Checks for equality with the object’s `subunit` field."""
+  subunit: String
+
+  """Checks for equality with the object’s `subregion` field."""
+  subregion: String
+
+  """Checks for equality with the object’s `brkName` field."""
+  brkName: String
+
+  """Checks for equality with the object’s `maxLabel` field."""
+  maxLabel: Float
+
+  """Checks for equality with the object’s `wbCntry` field."""
+  wbCntry: String
+
+  """Checks for equality with the object’s `continent` field."""
+  continent: String
+
+  """Checks for equality with the object’s `geounit` field."""
+  geounit: String
+
+  """Checks for equality with the object’s `noteAdm0` field."""
+  noteAdm0: String
+
+  """Checks for equality with the object’s `noteBrk` field."""
+  noteBrk: String
+
+  """Checks for equality with the object’s `abbrev` field."""
+  abbrev: String
+
+  """Checks for equality with the object’s `unA3` field."""
+  unA3: String
+
+  """Checks for equality with the object’s `weblinks` field."""
+  weblinks: String
+
+  """Checks for equality with the object’s `nameCiawf` field."""
+  nameCiawf: String
+
+  """Checks for equality with the object’s `mapcolor7` field."""
+  mapcolor7: Int
+
+  """Checks for equality with the object’s `nameAlt` field."""
+  nameAlt: String
+
+  """Checks for equality with the object’s `fipsCode` field."""
+  fipsCode: String
+
+  """Checks for equality with the object’s `nameLen` field."""
+  nameLen: Int
+
+  """Checks for equality with the object’s `brkDiff` field."""
+  brkDiff: Int
+
+  """Checks for equality with the object’s `adm0A3Un` field."""
+  adm0A3Un: Int
+
+  """Checks for equality with the object’s `adm0A3Is` field."""
+  adm0A3Is: String
+
+  """Checks for equality with the object’s `tiny` field."""
+  tiny: Int
+
+  """Checks for equality with the object’s `lastcensus` field."""
+  lastcensus: Int
+}
+
+"""A connection to a list of `FeatureGeometry` values."""
+type FeatureGeometriesConnection {
+  """A list of `FeatureGeometry` objects."""
+  nodes: [FeatureGeometry]!
+
+  """
+  A list of edges which contains the `FeatureGeometry` and cursor to aid in pagination.
+  """
+  edges: [FeatureGeometriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `FeatureGeometry` you could get from the connection.
+  """
+  totalCount: Int!
+}
+
+type FeatureGeometry implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: UUID!
+  featureId: UUID!
+  geometry: String
+
+  """Reads a single `Feature` that is related to this `FeatureGeometry`."""
+  featureByFeatureId: Feature
+}
+
+"""A `FeatureGeometry` edge in the connection."""
+type FeatureGeometriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `FeatureGeometry` at the end of the edge."""
+  node: FeatureGeometry
+}
+
+"""Methods to use when ordering `FeatureGeometry`."""
+enum FeatureGeometriesOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  FEATURE_ID_ASC
+  FEATURE_ID_DESC
+  GEOMETRY_ASC
+  GEOMETRY_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+A condition to be used against `FeatureGeometry` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input FeatureGeometryCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: UUID
+
+  """Checks for equality with the object’s `featureId` field."""
+  featureId: UUID
+
+  """Checks for equality with the object’s `geometry` field."""
+  geometry: String
+}
+
+"""A `Feature` edge in the connection."""
+type FeaturesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `Feature` at the end of the edge."""
+  node: Feature
+}
+
+"""Methods to use when ordering `Feature`."""
+enum FeaturesOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  DATASET_ID_ASC
+  DATASET_ID_DESC
+  BBOX_ASC
+  BBOX_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+A condition to be used against `Feature` object types. All fields are tested for equality and combined with a logical ‘and.’
+"""
+input FeatureCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: UUID
+
+  """Checks for equality with the object’s `datasetId` field."""
+  datasetId: UUID
+
+  """Checks for equality with the object’s `bbox` field."""
+  bbox: String
+}
+
+"""A `Dataset` edge in the connection."""
+type DatasetsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `Dataset` at the end of the edge."""
+  node: Dataset
+}
+
+"""Methods to use when ordering `Dataset`."""
+enum DatasetsOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  TYPE_ASC
+  TYPE_DESC
+  NAME_ASC
+  NAME_DESC
+  CRS_ASC
+  CRS_DESC
+  BBOX_ASC
+  BBOX_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+A condition to be used against `Dataset` object types. All fields are tested for equality and combined with a logical ‘and.’
+"""
+input DatasetCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: UUID
+
+  """Checks for equality with the object’s `type` field."""
+  type: String
+
+  """Checks for equality with the object’s `name` field."""
+  name: String
+
+  """Checks for equality with the object’s `crs` field."""
+  crs: JSON
+
+  """Checks for equality with the object’s `bbox` field."""
+  bbox: JSON
+}
+
+"""A connection to a list of `GeojsonDataset` values."""
+type GeojsonDatasetsConnection {
+  """A list of `GeojsonDataset` objects."""
+  nodes: [GeojsonDataset]!
+
+  """
+  A list of edges which contains the `GeojsonDataset` and cursor to aid in pagination.
+  """
+  edges: [GeojsonDatasetsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `GeojsonDataset` you could get from the connection."""
+  totalCount: Int!
+}
+
+type GeojsonDataset implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: UUID!
+  name: String
+  value: JSON
+}
+
+"""A `GeojsonDataset` edge in the connection."""
+type GeojsonDatasetsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `GeojsonDataset` at the end of the edge."""
+  node: GeojsonDataset
+}
+
+"""Methods to use when ordering `GeojsonDataset`."""
+enum GeojsonDatasetsOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  NAME_ASC
+  NAME_DESC
+  VALUE_ASC
+  VALUE_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+A condition to be used against `GeojsonDataset` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input GeojsonDatasetCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: UUID
+
+  """Checks for equality with the object’s `name` field."""
+  name: String
+
+  """Checks for equality with the object’s `value` field."""
+  value: JSON
+}
+
+"""A connection to a list of `GeojsonFeature` values."""
+type GeojsonFeaturesConnection {
+  """A list of `GeojsonFeature` objects."""
+  nodes: [GeojsonFeature]!
+
+  """
+  A list of edges which contains the `GeojsonFeature` and cursor to aid in pagination.
+  """
+  edges: [GeojsonFeaturesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `GeojsonFeature` you could get from the connection."""
+  totalCount: Int!
+}
+
+type GeojsonFeature implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: UUID!
+  datasetid: UUID
+  feature: JSON
+}
+
+"""A `GeojsonFeature` edge in the connection."""
+type GeojsonFeaturesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `GeojsonFeature` at the end of the edge."""
+  node: GeojsonFeature
+}
+
+"""Methods to use when ordering `GeojsonFeature`."""
+enum GeojsonFeaturesOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  DATASETID_ASC
+  DATASETID_DESC
+  FEATURE_ASC
+  FEATURE_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+A condition to be used against `GeojsonFeature` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input GeojsonFeatureCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: UUID
+
+  """Checks for equality with the object’s `datasetid` field."""
+  datasetid: UUID
+
+  """Checks for equality with the object’s `feature` field."""
+  feature: JSON
+}
+
+"""
+The root mutation type which contains root level fields which mutate data.
+"""
+type Mutation {
+  """Creates a single `Dataset`."""
+  createDataset(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateDatasetInput!
+  ): CreateDatasetPayload
+
+  """Creates a single `FeatureGeometry`."""
+  createFeatureGeometry(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateFeatureGeometryInput!
+  ): CreateFeatureGeometryPayload
+
+  """Creates a single `Feature`."""
+  createFeature(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateFeatureInput!
+  ): CreateFeaturePayload
+
+  """Creates a single `Property`."""
+  createProperty(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreatePropertyInput!
+  ): CreatePropertyPayload
+
+  """Updates a single `Dataset` using its globally unique id and a patch."""
+  updateDatasetByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateDatasetByNodeIdInput!
+  ): UpdateDatasetPayload
+
+  """Updates a single `Dataset` using a unique key and a patch."""
+  updateDataset(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateDatasetInput!
+  ): UpdateDatasetPayload
+
+  """
+  Updates a single `FeatureGeometry` using its globally unique id and a patch.
+  """
+  updateFeatureGeometryByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateFeatureGeometryByNodeIdInput!
+  ): UpdateFeatureGeometryPayload
+
+  """Updates a single `FeatureGeometry` using a unique key and a patch."""
+  updateFeatureGeometry(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateFeatureGeometryInput!
+  ): UpdateFeatureGeometryPayload
+
+  """Updates a single `Feature` using its globally unique id and a patch."""
+  updateFeatureByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateFeatureByNodeIdInput!
+  ): UpdateFeaturePayload
+
+  """Updates a single `Feature` using a unique key and a patch."""
+  updateFeature(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateFeatureInput!
+  ): UpdateFeaturePayload
+
+  """Updates a single `Property` using its globally unique id and a patch."""
+  updatePropertyByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdatePropertyByNodeIdInput!
+  ): UpdatePropertyPayload
+
+  """Updates a single `Property` using a unique key and a patch."""
+  updateProperty(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdatePropertyInput!
+  ): UpdatePropertyPayload
+
+  """Deletes a single `Dataset` using its globally unique id."""
+  deleteDatasetByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteDatasetByNodeIdInput!
+  ): DeleteDatasetPayload
+
+  """Deletes a single `Dataset` using a unique key."""
+  deleteDataset(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteDatasetInput!
+  ): DeleteDatasetPayload
+
+  """Deletes a single `FeatureGeometry` using its globally unique id."""
+  deleteFeatureGeometryByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteFeatureGeometryByNodeIdInput!
+  ): DeleteFeatureGeometryPayload
+
+  """Deletes a single `FeatureGeometry` using a unique key."""
+  deleteFeatureGeometry(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteFeatureGeometryInput!
+  ): DeleteFeatureGeometryPayload
+
+  """Deletes a single `Feature` using its globally unique id."""
+  deleteFeatureByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteFeatureByNodeIdInput!
+  ): DeleteFeaturePayload
+
+  """Deletes a single `Feature` using a unique key."""
+  deleteFeature(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteFeatureInput!
+  ): DeleteFeaturePayload
+
+  """Deletes a single `Property` using its globally unique id."""
+  deletePropertyByNodeId(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeletePropertyByNodeIdInput!
+  ): DeletePropertyPayload
+
+  """Deletes a single `Property` using a unique key."""
+  deleteProperty(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeletePropertyInput!
+  ): DeletePropertyPayload
+}
+
+"""The output of our create `Dataset` mutation."""
+type CreateDatasetPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Dataset` that was created by this mutation."""
+  dataset: Dataset
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `Dataset`. May be used by Relay 1."""
+  datasetEdge(
+    """The method to use when ordering `Dataset`."""
+    orderBy: [DatasetsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DatasetsEdge
+}
+
+"""All input for the create `Dataset` mutation."""
+input CreateDatasetInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `Dataset` to be created by this mutation."""
+  dataset: DatasetInput!
+}
+
+"""An input for mutations affecting `Dataset`"""
+input DatasetInput {
+  id: UUID
+  type: String!
+  name: String!
+  crs: JSON
+  bbox: JSON
+}
+
+"""The output of our create `FeatureGeometry` mutation."""
+type CreateFeatureGeometryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `FeatureGeometry` that was created by this mutation."""
+  featureGeometry: FeatureGeometry
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Feature` that is related to this `FeatureGeometry`."""
+  featureByFeatureId: Feature
+
+  """An edge for our `FeatureGeometry`. May be used by Relay 1."""
+  featureGeometryEdge(
+    """The method to use when ordering `FeatureGeometry`."""
+    orderBy: [FeatureGeometriesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FeatureGeometriesEdge
+}
+
+"""All input for the create `FeatureGeometry` mutation."""
+input CreateFeatureGeometryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `FeatureGeometry` to be created by this mutation."""
+  featureGeometry: FeatureGeometryInput!
+}
+
+"""An input for mutations affecting `FeatureGeometry`"""
+input FeatureGeometryInput {
+  id: UUID
+  featureId: UUID!
+  geometry: String
+}
+
+"""The output of our create `Feature` mutation."""
+type CreateFeaturePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Feature` that was created by this mutation."""
+  feature: Feature
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Dataset` that is related to this `Feature`."""
+  datasetByDatasetId: Dataset
+
+  """An edge for our `Feature`. May be used by Relay 1."""
+  featureEdge(
+    """The method to use when ordering `Feature`."""
+    orderBy: [FeaturesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FeaturesEdge
+}
+
+"""All input for the create `Feature` mutation."""
+input CreateFeatureInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `Feature` to be created by this mutation."""
+  feature: FeatureInput!
+}
+
+"""An input for mutations affecting `Feature`"""
+input FeatureInput {
+  id: UUID
+  datasetId: UUID!
+  bbox: String
+}
+
+"""The output of our create `Property` mutation."""
+type CreatePropertyPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Property` that was created by this mutation."""
+  property: Property
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Feature` that is related to this `Property`."""
+  featureByFeatureId: Feature
+
+  """An edge for our `Property`. May be used by Relay 1."""
+  propertyEdge(
+    """The method to use when ordering `Property`."""
+    orderBy: [PropertiesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PropertiesEdge
+}
+
+"""All input for the create `Property` mutation."""
+input CreatePropertyInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `Property` to be created by this mutation."""
+  property: PropertyInput!
+}
+
+"""An input for mutations affecting `Property`"""
+input PropertyInput {
+  id: UUID
+  featureId: UUID!
+  name: String
+  nameLong: String
+  abbrevname: String
+  postal: String
+  type: String
+  woeId: Int
+  level: Int
+  popRank: Int
+  adm0A3Us: String
+  isoA2: String
+  controllin: String
+  abbrevLen: Int
+  wikipedia: Int
+  fips10_: String
+  labelrank: Int
+  sovereignt: String
+  suA3: String
+  geouDif: Int
+  isoA3Eh: String
+  featurecla: String
+  mapcolor9: Int
+  formalFr: String
+  longLen: Int
+  bordering: String
+  formalEn: String
+  wbA2: String
+  homepart: Int
+  gdpMdEst: Float
+  economy: String
+  isoA3: String
+  popYear: Int
+  adm0A3: String
+  borderColorIndex: String
+  minZoom: Float
+  adm0A3Wb: Int
+  mapcolor13: Int
+  gdpYear: Int
+  brkA3: String
+  sovA3: String
+  incomeGrp: String
+  isoN3: String
+  mapcolor8: Int
+  guA3: String
+  regionWb: String
+  popEst: Int
+  nameSort: String
+  suDif: Int
+  admin: String
+  area: Float
+  adm0Dif: Int
+  woeNote: String
+  minLabel: Float
+  scalerank: Int
+  wbA3: String
+  regionUn: String
+  woeIdEh: Int
+  subunit: String
+  subregion: String
+  brkName: String
+  maxLabel: Float
+  wbCntry: String
+  continent: String
+  geounit: String
+  noteAdm0: String
+  noteBrk: String
+  abbrev: String
+  unA3: String
+  weblinks: String
+  nameCiawf: String
+  mapcolor7: Int
+  nameAlt: String
+  fipsCode: String
+  nameLen: Int
+  brkDiff: Int
+  adm0A3Un: Int
+  adm0A3Is: String
+  tiny: Int
+  lastcensus: Int
+}
+
+"""The output of our update `Dataset` mutation."""
+type UpdateDatasetPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Dataset` that was updated by this mutation."""
+  dataset: Dataset
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `Dataset`. May be used by Relay 1."""
+  datasetEdge(
+    """The method to use when ordering `Dataset`."""
+    orderBy: [DatasetsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DatasetsEdge
+}
+
+"""All input for the `updateDatasetByNodeId` mutation."""
+input UpdateDatasetByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `Dataset` to be updated.
+  """
+  nodeId: ID!
+
+  """
+  An object where the defined keys will be set on the `Dataset` being updated.
+  """
+  patch: DatasetPatch!
+}
+
+"""
+Represents an update to a `Dataset`. Fields that are set will be updated.
+"""
+input DatasetPatch {
+  id: UUID
+  type: String
+  name: String
+  crs: JSON
+  bbox: JSON
+}
+
+"""All input for the `updateDataset` mutation."""
+input UpdateDatasetInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Dataset` being updated.
+  """
+  patch: DatasetPatch!
+  id: UUID!
+}
+
+"""The output of our update `FeatureGeometry` mutation."""
+type UpdateFeatureGeometryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `FeatureGeometry` that was updated by this mutation."""
+  featureGeometry: FeatureGeometry
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Feature` that is related to this `FeatureGeometry`."""
+  featureByFeatureId: Feature
+
+  """An edge for our `FeatureGeometry`. May be used by Relay 1."""
+  featureGeometryEdge(
+    """The method to use when ordering `FeatureGeometry`."""
+    orderBy: [FeatureGeometriesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FeatureGeometriesEdge
+}
+
+"""All input for the `updateFeatureGeometryByNodeId` mutation."""
+input UpdateFeatureGeometryByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `FeatureGeometry` to be updated.
+  """
+  nodeId: ID!
+
+  """
+  An object where the defined keys will be set on the `FeatureGeometry` being updated.
+  """
+  patch: FeatureGeometryPatch!
+}
+
+"""
+Represents an update to a `FeatureGeometry`. Fields that are set will be updated.
+"""
+input FeatureGeometryPatch {
+  id: UUID
+  featureId: UUID
+  geometry: String
+}
+
+"""All input for the `updateFeatureGeometry` mutation."""
+input UpdateFeatureGeometryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `FeatureGeometry` being updated.
+  """
+  patch: FeatureGeometryPatch!
+  id: UUID!
+}
+
+"""The output of our update `Feature` mutation."""
+type UpdateFeaturePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Feature` that was updated by this mutation."""
+  feature: Feature
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Dataset` that is related to this `Feature`."""
+  datasetByDatasetId: Dataset
+
+  """An edge for our `Feature`. May be used by Relay 1."""
+  featureEdge(
+    """The method to use when ordering `Feature`."""
+    orderBy: [FeaturesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FeaturesEdge
+}
+
+"""All input for the `updateFeatureByNodeId` mutation."""
+input UpdateFeatureByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `Feature` to be updated.
+  """
+  nodeId: ID!
+
+  """
+  An object where the defined keys will be set on the `Feature` being updated.
+  """
+  patch: FeaturePatch!
+}
+
+"""
+Represents an update to a `Feature`. Fields that are set will be updated.
+"""
+input FeaturePatch {
+  id: UUID
+  datasetId: UUID
+  bbox: String
+}
+
+"""All input for the `updateFeature` mutation."""
+input UpdateFeatureInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Feature` being updated.
+  """
+  patch: FeaturePatch!
+  id: UUID!
+}
+
+"""The output of our update `Property` mutation."""
+type UpdatePropertyPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Property` that was updated by this mutation."""
+  property: Property
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Feature` that is related to this `Property`."""
+  featureByFeatureId: Feature
+
+  """An edge for our `Property`. May be used by Relay 1."""
+  propertyEdge(
+    """The method to use when ordering `Property`."""
+    orderBy: [PropertiesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PropertiesEdge
+}
+
+"""All input for the `updatePropertyByNodeId` mutation."""
+input UpdatePropertyByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `Property` to be updated.
+  """
+  nodeId: ID!
+
+  """
+  An object where the defined keys will be set on the `Property` being updated.
+  """
+  patch: PropertyPatch!
+}
+
+"""
+Represents an update to a `Property`. Fields that are set will be updated.
+"""
+input PropertyPatch {
+  id: UUID
+  featureId: UUID
+  name: String
+  nameLong: String
+  abbrevname: String
+  postal: String
+  type: String
+  woeId: Int
+  level: Int
+  popRank: Int
+  adm0A3Us: String
+  isoA2: String
+  controllin: String
+  abbrevLen: Int
+  wikipedia: Int
+  fips10_: String
+  labelrank: Int
+  sovereignt: String
+  suA3: String
+  geouDif: Int
+  isoA3Eh: String
+  featurecla: String
+  mapcolor9: Int
+  formalFr: String
+  longLen: Int
+  bordering: String
+  formalEn: String
+  wbA2: String
+  homepart: Int
+  gdpMdEst: Float
+  economy: String
+  isoA3: String
+  popYear: Int
+  adm0A3: String
+  borderColorIndex: String
+  minZoom: Float
+  adm0A3Wb: Int
+  mapcolor13: Int
+  gdpYear: Int
+  brkA3: String
+  sovA3: String
+  incomeGrp: String
+  isoN3: String
+  mapcolor8: Int
+  guA3: String
+  regionWb: String
+  popEst: Int
+  nameSort: String
+  suDif: Int
+  admin: String
+  area: Float
+  adm0Dif: Int
+  woeNote: String
+  minLabel: Float
+  scalerank: Int
+  wbA3: String
+  regionUn: String
+  woeIdEh: Int
+  subunit: String
+  subregion: String
+  brkName: String
+  maxLabel: Float
+  wbCntry: String
+  continent: String
+  geounit: String
+  noteAdm0: String
+  noteBrk: String
+  abbrev: String
+  unA3: String
+  weblinks: String
+  nameCiawf: String
+  mapcolor7: Int
+  nameAlt: String
+  fipsCode: String
+  nameLen: Int
+  brkDiff: Int
+  adm0A3Un: Int
+  adm0A3Is: String
+  tiny: Int
+  lastcensus: Int
+}
+
+"""All input for the `updateProperty` mutation."""
+input UpdatePropertyInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Property` being updated.
+  """
+  patch: PropertyPatch!
+  id: UUID!
+}
+
+"""The output of our delete `Dataset` mutation."""
+type DeleteDatasetPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Dataset` that was deleted by this mutation."""
+  dataset: Dataset
+  deletedDatasetNodeId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `Dataset`. May be used by Relay 1."""
+  datasetEdge(
+    """The method to use when ordering `Dataset`."""
+    orderBy: [DatasetsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DatasetsEdge
+}
+
+"""All input for the `deleteDatasetByNodeId` mutation."""
+input DeleteDatasetByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `Dataset` to be deleted.
+  """
+  nodeId: ID!
+}
+
+"""All input for the `deleteDataset` mutation."""
+input DeleteDatasetInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: UUID!
+}
+
+"""The output of our delete `FeatureGeometry` mutation."""
+type DeleteFeatureGeometryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `FeatureGeometry` that was deleted by this mutation."""
+  featureGeometry: FeatureGeometry
+  deletedFeatureGeometryNodeId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Feature` that is related to this `FeatureGeometry`."""
+  featureByFeatureId: Feature
+
+  """An edge for our `FeatureGeometry`. May be used by Relay 1."""
+  featureGeometryEdge(
+    """The method to use when ordering `FeatureGeometry`."""
+    orderBy: [FeatureGeometriesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FeatureGeometriesEdge
+}
+
+"""All input for the `deleteFeatureGeometryByNodeId` mutation."""
+input DeleteFeatureGeometryByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `FeatureGeometry` to be deleted.
+  """
+  nodeId: ID!
+}
+
+"""All input for the `deleteFeatureGeometry` mutation."""
+input DeleteFeatureGeometryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: UUID!
+}
+
+"""The output of our delete `Feature` mutation."""
+type DeleteFeaturePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Feature` that was deleted by this mutation."""
+  feature: Feature
+  deletedFeatureNodeId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Dataset` that is related to this `Feature`."""
+  datasetByDatasetId: Dataset
+
+  """An edge for our `Feature`. May be used by Relay 1."""
+  featureEdge(
+    """The method to use when ordering `Feature`."""
+    orderBy: [FeaturesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FeaturesEdge
+}
+
+"""All input for the `deleteFeatureByNodeId` mutation."""
+input DeleteFeatureByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `Feature` to be deleted.
+  """
+  nodeId: ID!
+}
+
+"""All input for the `deleteFeature` mutation."""
+input DeleteFeatureInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: UUID!
+}
+
+"""The output of our delete `Property` mutation."""
+type DeletePropertyPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Property` that was deleted by this mutation."""
+  property: Property
+  deletedPropertyNodeId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """Reads a single `Feature` that is related to this `Property`."""
+  featureByFeatureId: Feature
+
+  """An edge for our `Property`. May be used by Relay 1."""
+  propertyEdge(
+    """The method to use when ordering `Property`."""
+    orderBy: [PropertiesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PropertiesEdge
+}
+
+"""All input for the `deletePropertyByNodeId` mutation."""
+input DeletePropertyByNodeIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `Property` to be deleted.
+  """
+  nodeId: ID!
+}
+
+"""All input for the `deleteProperty` mutation."""
+input DeletePropertyInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: UUID!
+}

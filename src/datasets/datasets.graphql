@@ -1,0 +1,24 @@
+fragment GeoJSONDataset on GeojsonDataset {
+  id
+  name
+  value
+}
+
+query GetGeoJSONDataset($id: UUID!) {
+  geojsonDataset(id: $id) {
+    ...GeoJSONDataset
+  }
+}
+
+fragment GeoJSONDatasetDescription on GeojsonDataset {
+  id
+  name
+}
+
+query GetGeoJSONDescriptions {
+  geojsonDatasets {
+    nodes {
+      ...GeoJSONDatasetDescription
+    }
+  }
+}

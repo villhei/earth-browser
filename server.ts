@@ -18,7 +18,7 @@ app.use(
       graphiql: true,
       dynamicJson: true,
       enhanceGraphiql: true,
-      exportGqlSchemaPath: "schema.graphql",
+      exportGqlSchemaPath: "src/graphql/schema.graphql",
       pgDefaultRole: "default_role",
       appendPlugins: [require("@graphile-contrib/pg-simplify-inflector")],
     }
