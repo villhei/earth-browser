@@ -4,10 +4,10 @@ import ThreeGlobe from "three-globe"
 import TrackballControls from "three-trackballcontrols"
 import alpha from "color-alpha"
 import {
-  getCountryData,
   Feature,
   CountryDataset,
   getCountryNameKeys,
+  GeoJSON,
 } from "../worldmap"
 import { Config } from "../controls"
 import { getTexturePath } from "../earthTextures"
@@ -15,11 +15,12 @@ import { findCountryColor, DEFAULT_COLOR } from "../countryColors"
 
 type Props = {
   config: Config
+  dataset: GeoJSON
 }
 
-export function findColor(dataset: CountryDataset, country: Feature): string {
-  const [color] = getCountryNameKeys(dataset)
-    .map((key) => country.properties[key])
+export function findColor(country: Feature): string {
+  const [color] = getCountryNameKeys()
+    .map((key): string => country.properties[key] as any)
     .map(findCountryColor)
     .filter(Boolean)
   return color || DEFAULT_COLOR
@@ -27,14 +28,8 @@ export function findColor(dataset: CountryDataset, country: Feature): string {
 
 const GlobeComponent = (props: Props) => {
   const {
-    config: {
-      layerAltitude,
-      texture,
-      strokeColor,
-      sideColor,
-      opacity,
-      dataset,
-    },
+    config: { layerAltitude, texture, strokeColor, sideColor, opacity },
+    dataset,
   } = props
   const containerRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLDivElement>(null)
@@ -100,6 +95,7 @@ const GlobeComponent = (props: Props) => {
       canvas.removeChild(renderer.domElement)
       renderer.dispose()
       cancelAnimationFrame(currentFrame)
+
       window.removeEventListener("resize", onResize)
     }
   }, [containerRef, texture])
@@ -126,13 +122,12 @@ const GlobeComponent = (props: Props) => {
 
     globe.polygonCapColor((d: object) => {
       const feature = d as Feature
-      return alpha(findColor(dataset, feature), opacity)
+      return alpha(findColor(feature), opacity)
     })
   }, [globeRef, dataset, opacity])
 
   useEffect(() => {
     const globe = globeRef.current
-    globe.polygonsData(getCountryData(dataset).features)
   }, [globeRef, dataset])
 
   return (

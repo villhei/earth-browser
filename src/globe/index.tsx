@@ -1,2 +1,3 @@
-import Globe from "./Globe"
-export default Globe
+import ConnectedGlobe from "./ConnectedGlobe"
+
+export default ConnectedGlobe
