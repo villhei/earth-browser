@@ -107,7 +107,6 @@ const GlobeComponent = (props: Props) => {
 
   useEffect(() => {
     const globe = globeRef.current
-
     globe.polygonSideColor(() => alpha(sideColor, 0.4))
   }, [globeRef, sideColor])
 
@@ -128,6 +127,8 @@ const GlobeComponent = (props: Props) => {
 
   useEffect(() => {
     const globe = globeRef.current
+    const polygons = JSON.parse(JSON.stringify(dataset.features))
+    globe.polygonsData(polygons)
   }, [globeRef, dataset])
 
   return (

@@ -154,7 +154,7 @@ type Query implements Node {
     after: Cursor
 
     """The method to use when ordering `GeojsonFeature`."""
-    orderBy: [GeojsonFeaturesOrderBy!] = [NATURAL]
+    orderBy: [GeojsonFeaturesOrderBy!] = [PRIMARY_KEY_ASC]
 
     """
     A condition to be used in determining which values should be returned by the collection.
@@ -194,6 +194,7 @@ type Query implements Node {
   featureGeometry(id: UUID!): FeatureGeometry
   feature(id: UUID!): Feature
   geojsonDataset(id: UUID!): GeojsonDataset
+  geojsonFeature(id: UUID!): GeojsonFeature
   property(id: UUID!): Property
 
   """Reads a single `Dataset` using its globally unique `ID`."""
@@ -223,6 +224,14 @@ type Query implements Node {
     """
     nodeId: ID!
   ): GeojsonDataset
+
+  """Reads a single `GeojsonFeature` using its globally unique `ID`."""
+  geojsonFeatureByNodeId(
+    """
+    The globally unique `ID` to be used in selecting a single `GeojsonFeature`.
+    """
+    nodeId: ID!
+  ): GeojsonFeature
 
   """Reads a single `Property` using its globally unique `ID`."""
   propertyByNodeId(
@@ -295,35 +304,6 @@ type Dataset implements Node {
     """
     condition: FeatureCondition
   ): FeaturesConnection!
-
-  """Reads and enables pagination through a set of `GeojsonFeature`."""
-  geojsonFeaturesByDatasetid(
-    """Only read the first `n` values of the set."""
-    first: Int
-
-    """Only read the last `n` values of the set."""
-    last: Int
-
-    """
-    Skip the first `n` values from our `after` cursor, an alternative to cursor
-    based pagination. May not be used with `last`.
-    """
-    offset: Int
-
-    """Read all values in the set before (above) this cursor."""
-    before: Cursor
-
-    """Read all values in the set after (below) this cursor."""
-    after: Cursor
-
-    """The method to use when ordering `GeojsonFeature`."""
-    orderBy: [GeojsonFeaturesOrderBy!] = [NATURAL]
-
-    """
-    A condition to be used in determining which values should be returned by the collection.
-    """
-    condition: GeojsonFeatureCondition
-  ): GeojsonFeaturesConnection!
 }
 
 """
@@ -1076,67 +1056,6 @@ input FeatureCondition {
   bbox: String
 }
 
-"""A connection to a list of `GeojsonFeature` values."""
-type GeojsonFeaturesConnection {
-  """A list of `GeojsonFeature` objects."""
-  nodes: [GeojsonFeature]!
-
-  """
-  A list of edges which contains the `GeojsonFeature` and cursor to aid in pagination.
-  """
-  edges: [GeojsonFeaturesEdge!]!
-
-  """Information to aid in pagination."""
-  pageInfo: PageInfo!
-
-  """The count of *all* `GeojsonFeature` you could get from the connection."""
-  totalCount: Int!
-}
-
-type GeojsonFeature {
-  id: UUID
-  datasetid: UUID
-  feature: JSON
-
-  """Reads a single `Dataset` that is related to this `GeojsonFeature`."""
-  datasetByDatasetid: Dataset
-}
-
-"""A `GeojsonFeature` edge in the connection."""
-type GeojsonFeaturesEdge {
-  """A cursor for use in pagination."""
-  cursor: Cursor
-
-  """The `GeojsonFeature` at the end of the edge."""
-  node: GeojsonFeature
-}
-
-"""Methods to use when ordering `GeojsonFeature`."""
-enum GeojsonFeaturesOrderBy {
-  NATURAL
-  ID_ASC
-  ID_DESC
-  DATASETID_ASC
-  DATASETID_DESC
-  FEATURE_ASC
-  FEATURE_DESC
-}
-
-"""
-A condition to be used against `GeojsonFeature` object types. All fields are
-tested for equality and combined with a logical ‘and.’
-"""
-input GeojsonFeatureCondition {
-  """Checks for equality with the object’s `id` field."""
-  id: UUID
-
-  """Checks for equality with the object’s `datasetid` field."""
-  datasetid: UUID
-
-  """Checks for equality with the object’s `feature` field."""
-  feature: JSON
-}
-
 """A `Dataset` edge in the connection."""
 type DatasetsEdge {
   """A cursor for use in pagination."""
@@ -1206,6 +1125,7 @@ type GeojsonDataset implements Node {
   """
   nodeId: ID!
   id: UUID!
+  name: String
   value: JSON
 }
 
@@ -1223,6 +1143,8 @@ enum GeojsonDatasetsOrderBy {
   NATURAL
   ID_ASC
   ID_DESC
+  NAME_ASC
+  NAME_DESC
   VALUE_ASC
   VALUE_DESC
   PRIMARY_KEY_ASC
@@ -1237,8 +1159,75 @@ input GeojsonDatasetCondition {
   """Checks for equality with the object’s `id` field."""
   id: UUID
 
+  """Checks for equality with the object’s `name` field."""
+  name: String
+
   """Checks for equality with the object’s `value` field."""
   value: JSON
+}
+
+"""A connection to a list of `GeojsonFeature` values."""
+type GeojsonFeaturesConnection {
+  """A list of `GeojsonFeature` objects."""
+  nodes: [GeojsonFeature]!
+
+  """
+  A list of edges which contains the `GeojsonFeature` and cursor to aid in pagination.
+  """
+  edges: [GeojsonFeaturesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `GeojsonFeature` you could get from the connection."""
+  totalCount: Int!
+}
+
+type GeojsonFeature implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: UUID!
+  datasetid: UUID
+  feature: String
+}
+
+"""A `GeojsonFeature` edge in the connection."""
+type GeojsonFeaturesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `GeojsonFeature` at the end of the edge."""
+  node: GeojsonFeature
+}
+
+"""Methods to use when ordering `GeojsonFeature`."""
+enum GeojsonFeaturesOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  DATASETID_ASC
+  DATASETID_DESC
+  FEATURE_ASC
+  FEATURE_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+A condition to be used against `GeojsonFeature` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input GeojsonFeatureCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: UUID
+
+  """Checks for equality with the object’s `datasetid` field."""
+  datasetid: UUID
+
+  """Checks for equality with the object’s `feature` field."""
+  feature: String
 }
 
 """

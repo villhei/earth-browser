@@ -12,9 +12,11 @@ export default function ConnectedGlobe(props: Props) {
 
   if (result.data && !result.loading) {
     const { data } = result
-    const { geojsonDataset } = data
-    console.log("mapData", data)
-    return <Globe config={props.config} />
+    const {
+      geojsonDataset: { value },
+    } = data
+    console.log("value", value)
+    return <Globe config={props.config} dataset={value} />
   }
   return null
 }

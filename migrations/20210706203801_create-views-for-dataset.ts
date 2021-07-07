@@ -20,18 +20,20 @@ export async function up(knex: Knex): Promise<void> {
         on
         geojson_features to default_role;
 
+    grant select on geojson_features to default_role;
+    comment on view geojson_features is E'@primaryKey id';
         
     create view geojson_datasets as
     select
         fc.id as id,
+        fc.name as name,
         to_jsonb(fc) as value
     from
         (
         select
             datasets.id,
-            datasets.name,
+            datasets.name as name,
             'FeatureCollection' as type,
-            name,
             jsonb_agg(gf.feature::jsonb) as features
         from
             datasets
@@ -40,8 +42,8 @@ export async function up(knex: Knex): Promise<void> {
         group by
             datasets.id) as fc;
 
-    grant select on geojson_features to default_role;
     grant select on geojson_datasets to default_role;
+    comment on view geojson_datasets is E'@primaryKey id';
     `)
 }
 

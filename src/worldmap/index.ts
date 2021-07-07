@@ -16,7 +16,7 @@ export function getCountryNameKeys(): Array<string> {
 
 const COUNTRY_DATA_QUERY = gql`
   query GetCountryData {
-    geojsonDataset(id: "ce57a115-78fc-46a0-a38e-9e792605926a") {
+    geojsonDataset(id: "75dc0416-fd97-437c-bc4f-766f8ee689f6") {
       id
       value
     }
