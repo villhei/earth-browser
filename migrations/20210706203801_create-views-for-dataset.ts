@@ -2,18 +2,17 @@ import { Knex } from "knex"
 
 export async function up(knex: Knex): Promise<void> {
   await knex.raw(`
-    create view geojson_features as
-    select
-        f.id as id,
-        f."datasetID" as datasetID,
-        st_asgeojson(row(fg.geometry,
-        to_jsonb(p.*)::jsonb - 'id')) as feature
-    from
-        features f
-    join properties p on
-        f.id = p."featureID"
-    join feature_geometries fg on
-        f.id = fg."featureID";
+   create view geojson_features as
+   select
+       f.id as id,
+       f."datasetID" as datasetID,
+       jsonb_build_object('geometry', fg.geometry, 'bbox', f.bbox, 'properties', to_json(p.*))::json feature
+   from
+       features f
+   join properties p on
+       f.id = p."featureID"
+   join feature_geometries fg on
+       f.id = fg."featureID";
 
     grant
     select

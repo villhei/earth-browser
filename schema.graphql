@@ -1190,7 +1190,7 @@ type GeojsonFeature implements Node {
   nodeId: ID!
   id: UUID!
   datasetid: UUID
-  feature: String
+  feature: JSON
 }
 
 """A `GeojsonFeature` edge in the connection."""
@@ -1227,7 +1227,7 @@ input GeojsonFeatureCondition {
   datasetid: UUID
 
   """Checks for equality with the object’s `feature` field."""
-  feature: String
+  feature: JSON
 }
 
 """

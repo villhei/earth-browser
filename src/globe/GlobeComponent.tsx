@@ -65,9 +65,9 @@ const GlobeComponent = (props: Props) => {
     const tbControls = new TrackballControls(camera, renderer.domElement)
     tbControls.noPan = true
     tbControls.staticMoving = true
-    tbControls.minDistance = 101
-    tbControls.rotateSpeed = 3
-    tbControls.zoomSpeed = 0.8
+    tbControls.minDistance = 2
+    tbControls.rotateSpeed = 2
+    tbControls.zoomSpeed = 8
 
     // Kick-off renderer
 
