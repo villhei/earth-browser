@@ -1,4 +1,6 @@
 import React from "react"
+import { PuffLoader } from "react-spinners"
+
 import { Config } from "../controls"
 import Globe from "./GlobeComponent"
 import { useGetCountryData } from "../datasets"
@@ -9,7 +11,6 @@ type Props = {
 }
 
 export default function ConnectedGlobe(props: Props) {
-  console.log("fetch", props.datasetId)
   const result = useGetCountryData(props.datasetId)
 
   if (result.data && !result.loading) {
@@ -19,5 +20,9 @@ export default function ConnectedGlobe(props: Props) {
     } = data
     return <Globe config={props.config} dataset={value} />
   }
-  return null
+  return (
+    <div className="spinner-wrapper">
+      <PuffLoader color="gray" size={200} />
+    </div>
+  )
 }

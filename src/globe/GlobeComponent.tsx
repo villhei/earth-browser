@@ -123,7 +123,6 @@ const GlobeComponent = (props: Props) => {
   useEffect(() => {
     const globe = globeRef.current
     const polygons = JSON.parse(JSON.stringify(dataset.features))
-    console.log("changing dataset", dataset.name)
     globe.polygonsData(polygons)
 
     return () => {

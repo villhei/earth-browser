@@ -33,7 +33,7 @@ export async function up(knex: Knex): Promise<void> {
             datasets.id,
             datasets.name as name,
             'FeatureCollection' as type,
-            jsonb_agg(gf.feature::jsonb) as features
+            jsonb_agg(gfg.feature::jsonb) as features
         from
             datasets
         join geojson_features gf on

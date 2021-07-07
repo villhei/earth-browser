@@ -5,7 +5,6 @@ import { Controls, Config, DEFAULT_CONFIG } from "~/src/controls"
 
 import "./MainScreen.css"
 import { useGetGeoJsonDescriptionsQuery } from "../datasets/datasets.generated"
-import { config } from "node:process"
 
 const CONTENT_STYLE = { flex: 1, display: "flex" }
 const MainScreen = () => {
@@ -20,7 +19,9 @@ const MainScreen = () => {
           <h1>Earth browser</h1>
         </div>
         <div style={CONTENT_STYLE}>
-          <RiseLoader />
+          <div className="spinner-wrapper">
+            <RiseLoader size={50} color="gray" />
+          </div>
         </div>
       </>
     )
