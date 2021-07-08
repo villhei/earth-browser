@@ -14,10 +14,10 @@ type Props = {
 }
 
 export function findColor(country: Feature): string {
-  const [color] = getCountryNameKeys()
-    .map((key): string => country.properties[key] as any)
-    .map(findCountryColor)
-    .filter(Boolean)
+  if (!country.properties.name) {
+    return DEFAULT_COLOR
+  }
+  const color = findCountryColor(country.properties.name!)
   return color || DEFAULT_COLOR
 }
 

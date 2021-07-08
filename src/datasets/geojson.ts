@@ -1,3 +1,5 @@
+import { GeojsonDataset } from "../graphql"
+
 export interface GeoJSON {
   type: string
   name: string
@@ -22,8 +24,9 @@ export enum GeometryType {
   Polygon = "Polygon",
 }
 
-type Properties = Record<string, unknown>
-
+type Properties = {
+  name: string | null
+}
 export enum Continent {
   Africa = "Africa",
   Americas = "Americas",

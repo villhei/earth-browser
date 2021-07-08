@@ -6,7 +6,7 @@ export async function up(knex: Knex): Promise<void> {
    select
        f.id as id,
        f."datasetID" as datasetID,
-       jsonb_build_object('geometry', fg.geometry, 'bbox', f.bbox, 'properties', to_json(p.*))::json feature
+       jsonb_build_object('geometry', fg.geometry, 'bbox', f.bbox, 'properties', json_build_object('name', COALESCE(p."NAME_LONG", p."SOVEREIGNT", p."ABBREVNAME")))::json feature
    from
        features f
    join properties p on
@@ -33,7 +33,7 @@ export async function up(knex: Knex): Promise<void> {
             datasets.id,
             datasets.name as name,
             'FeatureCollection' as type,
-            jsonb_agg(gfg.feature::jsonb) as features
+            jsonb_agg(gf.feature::jsonb) as features
         from
             datasets
         join geojson_features gf on
