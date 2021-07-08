@@ -3,7 +3,7 @@ import * as THREE from "three"
 import ThreeGlobe from "three-globe"
 import TrackballControls from "three-trackballcontrols"
 import alpha from "color-alpha"
-import { Feature, getCountryNameKeys, GeoJSON } from "../datasets"
+import { Feature, GeoJSON } from "../datasets"
 import { Config } from "../controls"
 import { getTexturePath } from "../earthTextures"
 import { findCountryColor, DEFAULT_COLOR } from "../countryColors"
@@ -118,15 +118,43 @@ const GlobeComponent = (props: Props) => {
       const feature = d as Feature
       return alpha(findColor(feature), opacity)
     })
-  }, [globeRef, dataset, opacity])
+  }, [globeRef, opacity])
 
   useEffect(() => {
     const globe = globeRef.current
-    const polygons = JSON.parse(JSON.stringify(dataset.features))
+    const polygons: Feature[] = JSON.parse(JSON.stringify(dataset.features))
+    const labelPositions = polygons.map(({ bbox, properties }) => {
+      let lngs = 0,
+        lats = 0
+      for (const [lng, lat] of bbox.coordinates[0]) {
+        lngs += lng
+        lats += lat
+      }
+
+      const count = bbox.coordinates[0].length
+      return {
+        lng: lngs / count,
+        lat: lats / count,
+        size: 1,
+        color: "white",
+        name: properties.name || "Unknown",
+      }
+    })
     globe.polygonsData(polygons)
+
+    globe
+      .labelsData(labelPositions)
+      .labelText((d: any) => {
+        console.log(d)
+        return d.name
+      })
+      .labelSize("size")
+      .labelDotRadius((d: any) => 0.2)
+      .labelColor("color")
 
     return () => {
       globe.polygonsData([])
+      globe.labelsData()
     }
   }, [globeRef, dataset])
 

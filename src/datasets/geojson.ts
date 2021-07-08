@@ -4,13 +4,16 @@ export interface GeoJSON {
   type: string
   name: string
   features: Feature[]
-  bbox?: number[]
+  bbox: number[][]
 }
 
 export interface Feature {
   type: FeatureType
   properties: Properties
-  bbox?: number[]
+  bbox: {
+    type: GeometryType
+    coordinates: number[][][]
+  }
   geometry: Geometry
 }
 
