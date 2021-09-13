@@ -47,3 +47,63 @@ declare module "*.geojson" {
   const content: string
   export default content
 }
+
+declare module "three-orbitcontrols" {
+  import * as THREE from "three"
+
+  type Screen = { left: number; top: number; width: number; height: number }
+
+  class OrbitControls {
+    constructor(object: THREE.Camera, domElement: HTMLElement) {}
+
+    autoRotate: boolean
+    autoRotateSpeed: number
+    dampingFactor: number
+    domElement: HTMLElement
+    enabled: boolean
+    enableRotate: boolean
+    enableZoom: boolean
+    keyPanSpeed: number
+    keys: {
+      LEFT: "ArrowLeft" | string
+      UP: "ArrowUp" | string
+      RIGHT: "ArrowRight" | string
+      BOTTOM: "ArrowDown" | string
+    }
+    maxAzimuthAngle: number
+    maxDistance: number
+    maxPolarAngle: number
+    maxZoom: number
+    minAzimuthAngle: number
+    minDistance: number
+    minPolarAngle: number
+    minZoom: number
+    mouseButtons: {
+      LEFT: THREE.MOUSE
+      MIDDLE: THREE.MOUSE
+      RIGHT: THREE.MOUSE
+    }
+    object: THREE.Camera
+    panSpeed: number
+    position0: THREE.Vector3
+    rotateSpeed: number
+    screenSpacePlanning: boolean
+    target0: THREE.Vector3
+    target: THREE.Vector3
+    touches: {
+      ONE: THREE.TOUCH
+      TWO: THREE.TOUCH
+    }
+    zoom0: number
+    zoomSpeed: number
+    dispose(): void
+    getAzimuthAngle: number
+    getPolarAngle: number
+    getDistabcne: number
+    listenToKeyEvents(domElement: HTMLElement): void
+    reset(): null
+    saveState(): null
+    update(): boolean
+  }
+  export default TrackballControls
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import * as THREE from "three"
 import ThreeGlobe from "three-globe"
-import TrackballControls from "three-trackballcontrols"
+import OrbitControls from "three-orbitcontrols"
 import alpha from "color-alpha"
 import { Feature, GeoJSON } from "../datasets"
 import { Config } from "../controls"
@@ -57,18 +57,12 @@ const GlobeComponent = (props: Props) => {
     camera.position.z = 500
 
     // Add camera controls
-    const tbControls = new TrackballControls(camera, renderer.domElement)
-    tbControls.noPan = true
-    tbControls.staticMoving = true
-    tbControls.minDistance = 2
-    tbControls.rotateSpeed = 2
-    tbControls.zoomSpeed = 8
-
+    const orbitControls = new OrbitControls(camera, renderer.domElement)
     // Kick-off renderer
 
     let currentFrame = requestAnimationFrame(animate)
     function animate() {
-      tbControls.update()
+      orbitControls.update()
       renderer.render(scene, camera)
       currentFrame = requestAnimationFrame(animate)
     }
