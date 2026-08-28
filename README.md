@@ -1,12 +1,12 @@
 # Earth Browser (Maailma)
 
-3D WebGL Earth browser visualizing historical world country boundaries and geospatial datasets across different eras. Built with Three.js, React, Apollo Client, PostGraphile, Knex, and PostgreSQL/PostGIS.
+3D WebGL Earth browser visualizing historical world country boundaries and geospatial datasets across different eras. Built with Three.js, React 18, Apollo Client, Leva, PostGraphile, Knex, Vite, and PostgreSQL/PostGIS.
 
 ---
 
 ## Prerequisites
 
-- **Node.js** (v16+ recommended, tested with v22) & **npm**
+- **Node.js** (v18+ LTS, tested with v22) & **npm**
 - **Docker** (or local PostgreSQL with PostGIS extension enabled)
 
 ---
@@ -15,10 +15,10 @@
 
 ### 1. Install Dependencies
 
-Because `react-control-panel` and older Apollo CLI dependencies have legacy peer dependency requirements against React 17/GraphQL 15, install dependencies using `--legacy-peer-deps`:
+Install project dependencies cleanly without any legacy flags:
 
 ```bash
-npm install --legacy-peer-deps
+npm install
 ```
 
 ### 2. Start PostgreSQL with PostGIS
@@ -49,44 +49,57 @@ npm run codegen
 
 ### 5. Start the Application
 
-To start both the PostGraphile backend server (port `3000`) and the Parcel frontend development server (port `1234`):
+To start both the PostGraphile backend server (port `3000`) and the Vite frontend development server (port `1234`) concurrently:
 
 ```bash
 npm start
 ```
+*(or `npm run dev`)*
 
 Alternatively, you can run them separately in different terminal windows:
 
 - **Backend (GraphQL API & GraphiQL explorer):**
   ```bash
-  npm run server
+  npm run server:dev
   ```
   - GraphQL API: `http://localhost:3000/graphql`
   - GraphiQL IDE: `http://localhost:3000/graphiql`
 
-- **Frontend (Parcel Dev Server):**
+- **Frontend (Vite Dev Server with HMR):**
   ```bash
-  npx parcel src/index.html
+  npm run client:dev
   ```
   - Earth Browser Web App: `http://localhost:1234`
 
-### 6. Production Build
+### 6. Run Tests
 
-To produce a production bundle in the `dist/` directory:
+To run unit tests with Vitest:
+
+```bash
+npm test
+```
+
+### 7. Production Build & Preview
+
+To typecheck and bundle the production assets into `dist/`:
 
 ```bash
 npm run build
 ```
 
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
 ---
 
-## Architecture & Configuration Details
+## Architecture & Modern Tooling
 
-- **Backend (`server.ts`)**: Express server mounting [PostGraphile](https://www.graphile.org/postgraphile/) with `@graphile-contrib/pg-simplify-inflector`. Connects using `DATABASE_URL` (or default `postgres://postgres:postgres@localhost:5432/world`).
-- **Database Migrations (`migrations/`)**: 8 Knex migration steps that load 24 historical GeoJSON datasets from `migrations/seed/`, convert geometries into PostGIS geometries, compute bounding boxes, and expose `geojson_datasets` and `geojson_features` views for GraphQL queries.
-- **Frontend (`src/`)**:
-  - `src/index.tsx` & `src/index.html`: Entry point rendering the React root.
-  - `src/app/`: Sets up the Apollo Client provider connecting to `http://localhost:3000/graphql`.
-  - `src/mainscreen/`: Loads available dataset descriptions and coordinates control state with the 3D globe.
-  - `src/globe/`: Uses `three-globe` and `three` to render the interactive 3D globe with textures, country boundaries, polygon extrusions, and labels.
-  - `src/controls/`: Side panel controls to change layers, altitude, opacity, textures (Day, Night, Blue Marble, Dark), and historical eras.
+- **Frontend Bundler**: [Vite](https://vitejs.dev/) with `@vitejs/plugin-react` for instant HMR and optimized production bundling.
+- **UI & State**: [React 18](https://react.dev/) using `createRoot` and [Leva](https://github.com/pmndrs/leva) by Pmndrs for the 3D controls GUI.
+- **3D Geospatial Engine**: [Three.js](https://threejs.org/) (ESM addons) and [three-globe](https://github.com/vasturiano/three-globe) for WebGL globe rendering, country polygons, and era-based textures.
+- **Data & GraphQL**: [Apollo Client 3](https://www.apollographql.com/docs/react/) with [GraphQL Code Generator v5](https://the-guild.dev/graphql/codegen) (`codegen.ts`) generating TypeScript hooks.
+- **Backend & Database**: Express server mounting [PostGraphile](https://www.graphile.org/postgraphile/) run via [tsx](https://github.com/privatenumber/tsx), connecting to PostgreSQL with PostGIS through [Knex 3](https://knexjs.org/).
+

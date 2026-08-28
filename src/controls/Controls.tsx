@@ -1,59 +1,78 @@
-import * as React from "react"
-import ControlPanel, {
-  ControlPanelProps,
-  Color,
-  Range,
-  Select,
-} from "react-control-panel"
+import React, { useMemo } from "react"
+import { useControls, Leva } from "leva"
 import "./Controls.css"
-import { Config } from "./config"
+import { Config, DEFAULT_CONFIG } from "./config"
 import { Texture } from "../earthTextures"
 import { GeoJsonDatasetDescriptionFragment } from "../datasets/datasets.generated"
 
-type Props = {
-  title: string
-  config: Config
-  datasets: Array<GeoJsonDatasetDescriptionFragment>
-  onChange: (config: Config) => void
+export function useGlobeControls(
+  datasets: Array<GeoJsonDatasetDescriptionFragment>,
+  initialConfig?: Partial<Config>
+): Config {
+  const datasetOptions = useMemo(() => {
+    const opts: Record<string, string> = {}
+    for (const d of datasets) {
+      if (d?.name && d?.id) {
+        opts[d.name] = d.id
+      }
+    }
+    return opts
+  }, [datasets])
+
+  const defaultDataset = datasets[0]?.id || ""
+
+  const values = useControls(
+    "Controls",
+    {
+      layerAltitude: {
+        value: initialConfig?.layerAltitude ?? DEFAULT_CONFIG.layerAltitude,
+        min: 0.004,
+        max: 1,
+        step: 0.001,
+        label: "Layer Altitude",
+      },
+      opacity: {
+        value: initialConfig?.opacity ?? DEFAULT_CONFIG.opacity,
+        min: 0,
+        max: 1,
+        step: 0.01,
+        label: "Opacity",
+      },
+      texture: {
+        value: initialConfig?.texture ?? DEFAULT_CONFIG.texture,
+        options: {
+          "Blue Marble": Texture.EARTH_BLUE_MARBLE,
+          Dark: Texture.EARTH_DARK,
+          Day: Texture.EARTH_DAY,
+          Night: Texture.EARTH_NIGHT,
+        },
+        label: "Texture",
+      },
+      dataset: {
+        value: initialConfig?.dataset ?? defaultDataset,
+        options: datasetOptions,
+        label: "Dataset (Era)",
+      },
+      sideColor: {
+        value: initialConfig?.sideColor ?? DEFAULT_CONFIG.sideColor,
+        label: "Side Color",
+      },
+      strokeColor: {
+        value: initialConfig?.strokeColor ?? DEFAULT_CONFIG.strokeColor,
+        label: "Stroke Color",
+      },
+    },
+    [datasetOptions]
+  )
+
+  return values as Config
 }
 
-export default function Controls({ title, config, datasets, onChange }: Props) {
-  const handleOnChange: ControlPanelProps<Config>["onChange"] = (
-    updated,
-    value
-  ) => {
-    if (updated === "dataset") {
-      const dataset = datasets.find((dataset) => dataset.name === value)!
-      onChange({
-        ...config,
-        dataset: dataset.id,
-      })
-    } else {
-      onChange({
-        ...config,
-        [updated]: value,
-      })
-    }
-  }
-
-  const datasetNames = datasets.map((value) => value.name)
-
+export default function Controls() {
   return (
-    <ControlPanel
-      style={{
-        minWidth: "200px",
-      }}
-      theme="dark"
-      title={title}
-      initialState={config}
-      onChange={handleOnChange}
-    >
-      <Range label="layerAltitude" min={0.004} max={1} />
-      <Range label="opacity" min={0} max={1} />
-      <Select label="texture" options={Texture} />
-      <Select label="dataset" options={datasetNames} />
-      <Color label="sideColor" format="hex" />
-      <Color label="strokeColor" format="hex" />
-    </ControlPanel>
+    <div className="controlPanel">
+      <Leva titleBar={{ title: "Controls", drag: true }} />
+    </div>
   )
 }
+

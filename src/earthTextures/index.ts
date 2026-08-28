@@ -1,7 +1,7 @@
-import earthBlueMarble from "url:./earth-blue-marble.jpg"
-import earthDark from "url:./earth-dark.jpg"
-import earthDay from "url:./earth-day.jpg"
-import earthNight from "url:./earth-night.jpg"
+import earthBlueMarble from "./earth-blue-marble.jpg"
+import earthDark from "./earth-dark.jpg"
+import earthDay from "./earth-day.jpg"
+import earthNight from "./earth-night.jpg"
 
 export enum Texture {
   EARTH_BLUE_MARBLE = "EARTH_BLUE_MARBLE",

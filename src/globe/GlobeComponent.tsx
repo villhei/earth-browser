@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import * as THREE from "three"
 import ThreeGlobe from "three-globe"
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+import { OrbitControls } from "three/addons/controls/OrbitControls.js"
 import alpha from "color-alpha"
 import { Feature, GeoJSON } from "../datasets"
 import { Config } from "../controls"

@@ -1,3 +1,3 @@
 export * from "./config"
+export { default as Controls, useGlobeControls } from "./Controls"
 
-export { default as Controls } from "./Controls"
