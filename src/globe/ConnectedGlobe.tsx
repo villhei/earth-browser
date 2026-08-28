@@ -13,11 +13,8 @@ type Props = {
 export default function ConnectedGlobe(props: Props) {
   const result = useGetCountryData(props.datasetId)
 
-  if (result.data && !result.loading) {
-    const { data } = result
-    const {
-      geojsonDataset: { value },
-    } = data
+  if (result.data?.geojsonDataset && !result.loading) {
+    const value = result.data.geojsonDataset.value as any
     return <Globe config={props.config} dataset={value} />
   }
   return (

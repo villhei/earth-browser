@@ -2,14 +2,18 @@
   "name": "maailma",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.html",
+  "source": "src/index.html",
+  "alias": {
+    "react-control-panel": "react-control-panel/dist/index.js"
+  },
   "scripts": {
     "knex": "knex",
-    "bootstrap": "ts-node bootstrap.ts",
+    "migrate": "knex migrate:latest",
     "codegen": "graphql-codegen --config codegen.yml",
     "server": "ts-node server",
+    "build": "parcel build src/index.html --no-optimize",
     "start": "npm run server & parcel src/index.html",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "author": "",
   "license": "ISC",

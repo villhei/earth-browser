@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import * as THREE from "three"
 import ThreeGlobe from "three-globe"
-import OrbitControls from "three-orbitcontrols"
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import alpha from "color-alpha"
 import { Feature, GeoJSON } from "../datasets"
 import { Config } from "../controls"
@@ -143,7 +143,7 @@ const GlobeComponent = (props: Props) => {
         return d.name
       })
       .labelSize("size")
-      .labelDotRadius((d: any) => 0.2)
+      .labelDotRadius(() => 0.2)
       .labelColor("color")
 
     return () => {

@@ -27,9 +27,11 @@ const MainScreen = () => {
     )
   }
 
-  const { nodes: datasets } = result.data?.geojsonDatasets
+  const datasets = (result.data?.geojsonDatasets?.nodes || []).filter(
+    (dataset): dataset is NonNullable<typeof dataset> => Boolean(dataset)
+  )
 
-  const [{ id: firstDatasetID }] = datasets
+  const firstDatasetID = datasets[0]?.id
   const config = configMaybe
     ? configMaybe
     : {

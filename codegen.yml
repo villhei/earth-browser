@@ -22,7 +22,7 @@ generates:
       - "typescript-react-apollo"
     preset: near-operation-file
     presetConfig:
-      baseTypesPath: types.generated.ts
+      baseTypesPath: graphql/types.generated.ts
       extension: .generated.tsx
 config:
   scalars:
