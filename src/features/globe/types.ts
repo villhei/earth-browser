@@ -52,6 +52,11 @@ export interface HistoricalGlobeProps {
   onFeatureHover?: (feature: GeoJSONFeature | null) => void
 
   /**
+   * Whether to display 2D screen-space non-overlapping country labels. Defaults to true.
+   */
+  showLabels?: boolean
+
+  /**
    * Custom CSS style for the globe container.
    */
   style?: React.CSSProperties

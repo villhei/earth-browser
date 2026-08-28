@@ -136,6 +136,24 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               className="controls-slider"
             />
           </div>
+
+          <div className="controls-group">
+            <div className="controls-label-row">
+              <label className="controls-label">Country Labels</label>
+              <button
+                className={`controls-pill ${config.showLabels !== false ? "active" : ""}`}
+                style={{ padding: "4px 12px", width: "auto" }}
+                onClick={() =>
+                  onChangeConfig({
+                    ...config,
+                    showLabels: config.showLabels === false,
+                  })
+                }
+              >
+                {config.showLabels !== false ? "Enabled" : "Disabled"}
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>

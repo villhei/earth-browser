@@ -51,4 +51,5 @@ export interface GlobeConfig {
   sideColor: string
   strokeColor: string
   opacity: number
+  showLabels?: boolean
 }

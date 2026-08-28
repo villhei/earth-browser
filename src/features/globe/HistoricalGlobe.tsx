@@ -7,6 +7,11 @@ import { PuffLoader } from "react-spinners"
 import { HistoricalGlobeProps, GlobeTexture } from "./types"
 import { getGlobeTextureUrl } from "./textures"
 import { getCountryColor, HIGHLIGHT_COLOR } from "./colors"
+import {
+  PlacedLabel,
+  computePlacedLabels,
+  renderLabelsToCanvas,
+} from "./labels"
 import { GeoJSONFeature } from "../../types"
 
 const DEFAULT_ALTITUDE = 0.006
@@ -23,6 +28,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   sideColor = DEFAULT_SIDE_COLOR,
   strokeColor = DEFAULT_STROKE_COLOR,
   selectedFeatureId = null,
+  showLabels = true,
   onFeatureClick,
   onFeatureHover,
   style,
@@ -30,31 +36,64 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLDivElement>(null)
+  const labelsCanvasRef = useRef<HTMLCanvasElement>(null)
   const globeRef = useRef<ThreeGlobe | null>(null)
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null)
+  const placedLabelsRef = useRef<PlacedLabel[]>([])
   const [hoveredFeature, setHoveredFeature] = useState<GeoJSONFeature | null>(null)
 
-  // Callbacks refs to avoid re-attaching listeners
+  // Mutable refs to keep animation loop in sync with props without re-initializing
+  const dataRef = useRef(data)
+  const showLabelsRef = useRef(showLabels)
+  const layerAltitudeRef = useRef(layerAltitude)
+  const selectedFeatureIdRef = useRef(selectedFeatureId)
+  const hoveredFeatureRef = useRef(hoveredFeature)
   const onFeatureClickRef = useRef(onFeatureClick)
   const onFeatureHoverRef = useRef(onFeatureHover)
+
   useEffect(() => {
+    dataRef.current = data
+    showLabelsRef.current = showLabels
+    layerAltitudeRef.current = layerAltitude
+    selectedFeatureIdRef.current = selectedFeatureId
+    hoveredFeatureRef.current = hoveredFeature
     onFeatureClickRef.current = onFeatureClick
     onFeatureHoverRef.current = onFeatureHover
-  }, [onFeatureClick, onFeatureHover])
+  }, [
+    data,
+    showLabels,
+    layerAltitude,
+    selectedFeatureId,
+    hoveredFeature,
+    onFeatureClick,
+    onFeatureHover,
+  ])
 
-  // 1. Initialize Three.js Engine ONCE on mount
+  // 1. Initialize Three.js Engine & 2D Labels Canvas ONCE on mount
   useEffect(() => {
     const container = containerRef.current
     const canvas = canvasRef.current
-    if (!container || !canvas) return
+    const labelsCanvas = labelsCanvasRef.current
+    if (!container || !canvas || !labelsCanvas) return
 
     const { width, height } = container.getBoundingClientRect()
+    const dpr = Math.min(window.devicePixelRatio || 1, 2)
+
+    // WebGL Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    renderer.setPixelRatio(dpr)
     renderer.setSize(width || window.innerWidth, height || window.innerHeight)
     canvas.appendChild(renderer.domElement)
     rendererRef.current = renderer
+
+    // 2D Labels Canvas setup
+    labelsCanvas.width = (width || window.innerWidth) * dpr
+    labelsCanvas.height = (height || window.innerHeight) * dpr
+    const ctx2d = labelsCanvas.getContext("2d")
+    if (ctx2d) {
+      ctx2d.scale(dpr, dpr)
+    }
 
     const globe = new ThreeGlobe()
     globeRef.current = globe
@@ -79,7 +118,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     camera.position.y = 80
     cameraRef.current = camera
 
-    const controls = new OrbitControls(camera, renderer.domElement)
+    const controls = new OrbitControls(camera, container)
     controls.enableDamping = true
     controls.dampingFactor = 0.05
     controls.rotateSpeed = 0.6
@@ -90,11 +129,47 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const animate = () => {
       controls.update()
       renderer.render(scene, camera)
+
+      // 2D Screen-space non-overlapping labels rendering
+      if (labelsCanvasRef.current && camera) {
+        const c2d = labelsCanvasRef.current
+        const ctx = c2d.getContext("2d")
+        if (ctx) {
+          const w = container.clientWidth || window.innerWidth
+          const h = container.clientHeight || window.innerHeight
+
+          if (showLabelsRef.current && dataRef.current?.features?.length) {
+            const placed = computePlacedLabels(
+              dataRef.current.features,
+              camera,
+              w,
+              h,
+              {
+                layerAltitude: layerAltitudeRef.current,
+                selectedFeatureId: selectedFeatureIdRef.current,
+                hoveredFeatureId:
+                  hoveredFeatureRef.current?.id ||
+                  hoveredFeatureRef.current?.properties?.name ||
+                  null,
+                paddingX: 10,
+                paddingY: 6,
+              },
+              ctx
+            )
+            placedLabelsRef.current = placed
+            renderLabelsToCanvas(ctx, placed, w, h, dpr)
+          } else {
+            placedLabelsRef.current = []
+            ctx.clearRect(0, 0, w, h)
+          }
+        }
+      }
+
       animationFrameId = requestAnimationFrame(animate)
     }
     animate()
 
-    // Raycaster for pointer interactions
+    // Raycaster for 3D polygon pointer interactions
     const raycaster = new THREE.Raycaster()
     const mouse = new THREE.Vector2()
 
@@ -117,6 +192,25 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       return null
     }
 
+    const getHoveredLabel = (clientX: number, clientY: number): PlacedLabel | null => {
+      const rect = container.getBoundingClientRect()
+      const px = clientX - rect.left
+      const py = clientY - rect.top
+
+      for (let i = placedLabelsRef.current.length - 1; i >= 0; i--) {
+        const label = placedLabelsRef.current[i]
+        if (
+          px >= label.box.minX &&
+          px <= label.box.maxX &&
+          py >= label.box.minY &&
+          py <= label.box.maxY
+        ) {
+          return label
+        }
+      }
+      return null
+    }
+
     let isDragging = false
     let pointerDownPos = { x: 0, y: 0 }
 
@@ -133,33 +227,60 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       }
 
       if (!isDragging) {
+        // 1. Check direct label hit
+        const hitLabel = getHoveredLabel(e.clientX, e.clientY)
+        if (hitLabel) {
+          container.style.cursor = "pointer"
+          setHoveredFeature(hitLabel.feature)
+          if (onFeatureHoverRef.current) onFeatureHoverRef.current(hitLabel.feature)
+          return
+        }
+
+        // 2. Fall back to 3D geometry hit
         const feat = getIntersectedFeature(e)
         setHoveredFeature(feat)
         if (onFeatureHoverRef.current) onFeatureHoverRef.current(feat)
+        container.style.cursor = feat ? "pointer" : "grab"
       }
     }
 
     const handleClick = (e: MouseEvent) => {
       if (!isDragging) {
+        // 1. Check direct label click
+        const hitLabel = getHoveredLabel(e.clientX, e.clientY)
+        if (hitLabel) {
+          if (onFeatureClickRef.current) onFeatureClickRef.current(hitLabel.feature)
+          return
+        }
+
+        // 2. Fall back to 3D geometry click
         const feat = getIntersectedFeature(e)
         if (onFeatureClickRef.current) onFeatureClickRef.current(feat)
       }
     }
 
-    const domElement = renderer.domElement
-    domElement.addEventListener("mousedown", handlePointerDown)
-    domElement.addEventListener("mousemove", handlePointerMove)
-    domElement.addEventListener("click", handleClick)
+    container.addEventListener("mousedown", handlePointerDown)
+    container.addEventListener("mousemove", handlePointerMove)
+    container.addEventListener("click", handleClick)
 
     // Responsive Resize Handler
     const handleResize = () => {
-      if (!container || !renderer) return
+      if (!container || !renderer || !camera || !labelsCanvasRef.current) return
       const rect = container.getBoundingClientRect()
       const w = rect.width || window.innerWidth
       const h = rect.height || window.innerHeight
+      const curDpr = Math.min(window.devicePixelRatio || 1, 2)
+
       camera.aspect = w / h
       camera.updateProjectionMatrix()
       renderer.setSize(w, h)
+
+      labelsCanvasRef.current.width = w * curDpr
+      labelsCanvasRef.current.height = h * curDpr
+      const ctx = labelsCanvasRef.current.getContext("2d")
+      if (ctx) {
+        ctx.scale(curDpr, curDpr)
+      }
     }
 
     const resizeObserver = new ResizeObserver(handleResize)
@@ -167,9 +288,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     window.addEventListener("resize", handleResize)
 
     return () => {
-      domElement.removeEventListener("mousedown", handlePointerDown)
-      domElement.removeEventListener("mousemove", handlePointerMove)
-      domElement.removeEventListener("click", handleClick)
+      container.removeEventListener("mousedown", handlePointerDown)
+      container.removeEventListener("mousemove", handlePointerMove)
+      container.removeEventListener("click", handleClick)
       resizeObserver.disconnect()
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animationFrameId)
@@ -237,33 +358,16 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     })
   }, [opacity, selectedFeatureId, hoveredFeature])
 
-  // 7. Polygons & Labels Data Synchronization
+  // 7. Polygons Data Synchronization
   useEffect(() => {
     if (!globeRef.current) return
     const globe = globeRef.current
     const features = data?.features || []
 
-    // Build label points accurately from PostGIS precomputed surface points
-    const labels = features
-      .filter((f) => f.properties?.name && f.properties?.labelLng != null && f.properties?.labelLat != null)
-      .map((f) => ({
-        lat: f.properties.labelLat!,
-        lng: f.properties.labelLng!,
-        name: f.properties.name!,
-        id: f.id,
-        size: 0.9,
-      }))
-
     globe.polygonsData(features)
-
-    globe
-      .labelsData(labels)
-      .labelText((d: any) => d.name)
-      .labelSize("size")
-      .labelDotRadius(() => 0.25)
-      .labelColor(() => "rgba(255, 255, 255, 0.95)")
-      .labelAltitude(() => layerAltitude + 0.005)
-  }, [data, layerAltitude])
+    // Clear three-globe 3D text meshes in favor of fixed-scale non-overlapping canvas labels
+    globe.labelsData([])
+  }, [data])
 
   return (
     <div
@@ -275,10 +379,30 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         height: "100%",
         overflow: "hidden",
         backgroundColor: "#050811",
+        cursor: "grab",
         ...style,
       }}
     >
-      <div ref={canvasRef} style={{ width: "100%", height: "100%" }} />
+      <div
+        ref={canvasRef}
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      />
+
+      <canvas
+        ref={labelsCanvasRef}
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          pointerEvents: "none",
+        }}
+      />
 
       {isLoading && (
         <div

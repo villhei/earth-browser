@@ -128,6 +128,7 @@ export const App: React.FC = () => {
           selectedFeatureId={
             selectedFeature?.id || selectedFeature?.properties?.name || null
           }
+          showLabels={globeConfig.showLabels !== false}
           onFeatureClick={(feature) => setSelectedFeature(feature)}
         />
 
