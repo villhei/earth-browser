@@ -1,30 +1,22 @@
 import express from "express"
 import cors from "cors"
-
-import { postgraphile } from "postgraphile"
+import { apiRouter } from "./src/server/api"
 
 const serverPort = process.env.PORT || 3000
-
 const app = express()
 
 app.use(cors())
-app.use(
-  postgraphile(
-    process.env.DATABASE_URL ||
-      "postgres://postgres:postgres@localhost:5432/world",
-    "public",
-    {
-      watchPg: true,
-      graphiql: true,
-      dynamicJson: true,
-      enhanceGraphiql: true,
-      exportGqlSchemaPath: "src/graphql/schema.graphql",
-      pgDefaultRole: "default_role",
-      appendPlugins: [require("@graphile-contrib/pg-simplify-inflector")],
-    }
-  )
-)
+app.use(express.json())
 
-app.listen(serverPort)
+// Mount REST API
+app.use("/api", apiRouter)
 
-console.log(`Listening to ${serverPort}`)
+const server = app.listen(serverPort, () => {
+  console.log(`🚀 Earth Browser API Server running on port ${serverPort}`)
+  console.log(`   - Eras: http://localhost:${serverPort}/api/eras`)
+  console.log(`   - Health: http://localhost:${serverPort}/api/health`)
+})
+
+process.on("SIGTERM", () => {
+  server.close(() => console.log("Server stopped"))
+})

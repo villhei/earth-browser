@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     port: 1234,
     proxy: {
-      "/graphql": {
+      "/api": {
         target: "http://localhost:3000",
         changeOrigin: true,
       },
