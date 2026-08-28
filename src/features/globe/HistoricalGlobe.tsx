@@ -6,7 +6,7 @@ import alpha from "color-alpha"
 import { PuffLoader } from "react-spinners"
 import { HistoricalGlobeProps, GlobeTexture } from "./types"
 import { getGlobeTextureUrl } from "./textures"
-import { getCountryColor, HIGHLIGHT_COLOR } from "./colors"
+import { getCountryColor, HIGHLIGHT_COLOR, isNeutralOrUnclaimed, NEUTRAL_TERRITORY_COLOR } from "./colors"
 import {
   PlacedLabel,
   computePlacedLabels,
@@ -315,21 +315,45 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   // 3. Layer Altitude update
   useEffect(() => {
     if (globeRef.current) {
-      globeRef.current.polygonAltitude(layerAltitude)
+      globeRef.current.polygonAltitude((d: any) => {
+        const feat = d as GeoJSONFeature
+        const props = feat.properties || {}
+        const name = props.name || props.NAME || ""
+        if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
+          return 0.001
+        }
+        return layerAltitude
+      })
     }
   }, [layerAltitude])
 
   // 4. Side Color update
   useEffect(() => {
     if (globeRef.current) {
-      globeRef.current.polygonSideColor(() => alpha(sideColor, 0.4))
+      globeRef.current.polygonSideColor((d: any) => {
+        const feat = d as GeoJSONFeature
+        const props = feat.properties || {}
+        const name = props.name || props.NAME || ""
+        if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
+          return "transparent"
+        }
+        return alpha(sideColor, 0.4)
+      })
     }
   }, [sideColor])
 
   // 5. Stroke Color update
   useEffect(() => {
     if (globeRef.current) {
-      globeRef.current.polygonStrokeColor(() => strokeColor)
+      globeRef.current.polygonStrokeColor((d: any) => {
+        const feat = d as GeoJSONFeature
+        const props = feat.properties || {}
+        const name = props.name || props.NAME || ""
+        if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
+          return "rgba(100, 116, 139, 0.15)"
+        }
+        return strokeColor
+      })
     }
   }, [strokeColor])
 
@@ -340,7 +364,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
 
     globe.polygonCapColor((d: any) => {
       const feat = d as GeoJSONFeature
-      const name = feat.properties?.name || ""
+      const props = feat.properties || {}
+      const name = props.name || props.NAME || ""
+      const isUnclaimed = props.is_unclaimed || isNeutralOrUnclaimed(name)
       const isSelected =
         selectedFeatureId &&
         (feat.id === selectedFeatureId || name === selectedFeatureId)
@@ -354,7 +380,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       if (isHovered) {
         return alpha(HIGHLIGHT_COLOR, 0.7)
       }
-      return alpha(getCountryColor(name), opacity)
+      if (isUnclaimed) {
+        return alpha(NEUTRAL_TERRITORY_COLOR, 0.15)
+      }
+      return alpha(getCountryColor(name, props), opacity)
     })
   }, [opacity, selectedFeatureId, hoveredFeature])
 

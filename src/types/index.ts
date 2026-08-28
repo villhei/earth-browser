@@ -14,6 +14,11 @@ export interface GeoJSONProperties {
   name?: string
   formal_name?: string | null
   iso_a3?: string | null
+  color?: string
+  lineage_id?: string
+  canonical_name?: string
+  culture_group?: string
+  is_unclaimed?: boolean
   labelLng?: number
   labelLat?: number
   [key: string]: any

@@ -64,7 +64,12 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
             json_build_object(
               'type', 'Feature',
               'id', f.id,
-              'geometry', ST_AsGeoJSON(COALESCE(f.geom_simplified, f.geom))::json,
+              'geometry', ST_AsGeoJSON(
+                COALESCE(
+                  NULLIF(ST_Multi(ST_CollectionExtract(COALESCE(f.geom_simplified, f.geom), 3)), ST_GeomFromText('MULTIPOLYGON EMPTY', 4326)),
+                  ST_Multi(ST_CollectionExtract(f.geom, 3))
+                )
+              )::json,
               'properties', f.properties || jsonb_build_object(
                 'name', f.name,
                 'formal_name', f.formal_name,
@@ -90,8 +95,8 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
       return
     }
 
-    // Set cache-control headers for high performance
-    res.setHeader("Cache-Control", "public, max-age=3600")
+    // Set cache-control headers for dynamic freshness
+    res.setHeader("Cache-Control", "no-cache, must-revalidate")
     res.json(result.rows[0].geojson)
   } catch (err: any) {
     res.status(500).json({ error: "Failed to fetch era geojson", message: err.message })

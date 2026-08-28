@@ -1,5 +1,6 @@
 import React from "react"
 import { GeoJSONFeature, Era } from "../types"
+import { getEntityMetadata } from "../features/globe/colors"
 import "./CountryDrawer.css"
 
 interface CountryDrawerProps {
@@ -23,11 +24,32 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
   const economy = props.ECONOMY
   const sovereignty = props.SOVEREIGNT || props.CONTROLLIN
 
+  const meta = getEntityMetadata(name, props)
+  const color = props.color || meta.color
+  const canonicalName = props.canonical_name || meta.canonicalName
+  const cultureGroup = props.culture_group || meta.cultureGroup
+
   return (
     <div className="country-drawer">
       <div className="drawer-header">
         <div className="drawer-title-group">
-          <span className="drawer-tag">{currentEra?.year_label || "Historical Era"}</span>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <span className="drawer-tag">{currentEra?.year_label || "Historical Era"}</span>
+            {color && (
+              <span
+                style={{
+                  display: "inline-block",
+                  width: "12px",
+                  height: "12px",
+                  borderRadius: "50%",
+                  backgroundColor: color,
+                  border: "1px solid rgba(255,255,255,0.4)",
+                  boxShadow: `0 0 6px ${color}88`,
+                }}
+                title={`Culture color: ${color}`}
+              />
+            )}
+          </div>
           <h3 className="drawer-title">{name}</h3>
           {formalName && formalName !== name && (
             <div className="drawer-subtitle">{formalName}</div>
@@ -39,6 +61,22 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
       </div>
 
       <div className="drawer-content">
+        {cultureGroup && (
+          <div className="drawer-row">
+            <span className="drawer-label">Culture Sphere:</span>
+            <span className="drawer-value badge" style={{ borderColor: color }}>
+              {cultureGroup}
+            </span>
+          </div>
+        )}
+
+        {canonicalName && canonicalName !== name && (
+          <div className="drawer-row">
+            <span className="drawer-label">Civilization / Lineage:</span>
+            <span className="drawer-value">{canonicalName}</span>
+          </div>
+        )}
+
         {iso && (
           <div className="drawer-row">
             <span className="drawer-label">ISO / Code:</span>

@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import { pool, closePool } from "./db"
 import { ERA_CATALOG, getEraByFilename } from "./eraMetadata"
+import { resolveEntityMetadata } from "../features/globe/historicalLineage"
 
 async function ingest() {
   console.log("🌍 Starting Historical Earth GeoJSON Ingestion...")
@@ -75,21 +76,34 @@ async function ingest() {
         if (!feature.geometry) continue
 
         const props = feature.properties || {}
-        const featureName =
+        const rawName = (
           props.NAME ||
           props.name ||
           props.NAME_LONG ||
           props.SOVEREIGNT ||
           props.ADMIN ||
-          "Unknown"
+          props.ABBREVNAME ||
+          ""
+        ).trim()
+        const featureName = rawName || "Unclaimed"
         const formalName = props.FORMAL_EN || props.FORMAL_FR || null
         const isoA3 = props.ISO_A3 || props.ADM0_A3 || null
         const geomJson = JSON.stringify(feature.geometry)
 
+        const entityMeta = resolveEntityMetadata(featureName, props)
+        const enrichedProps = {
+          ...props,
+          color: entityMeta.color,
+          lineage_id: entityMeta.lineageId,
+          canonical_name: entityMeta.canonicalName,
+          culture_group: entityMeta.cultureGroup,
+          is_unclaimed: entityMeta.isUnclaimed,
+        }
+
         await client.query(
           `
           WITH raw_geom AS (
-            SELECT ST_MakeValid(ST_SetSRID(ST_GeomFromGeoJSON($4), 4326)) AS g
+            SELECT ST_Multi(ST_CollectionExtract(ST_MakeValid(ST_SetSRID(ST_GeomFromGeoJSON($4), 4326)), 3)) AS g
           ),
           surface_pt AS (
             SELECT ST_PointOnSurface(g) AS pt FROM raw_geom
@@ -104,12 +118,15 @@ async function ingest() {
             $5,
             $6::jsonb,
             g,
-            ST_SimplifyPreserveTopology(g, 0.02),
+            COALESCE(
+              NULLIF(ST_Multi(ST_CollectionExtract(ST_SimplifyPreserveTopology(g, 0.02), 3)), ST_GeomFromText('MULTIPOLYGON EMPTY', 4326)),
+              g
+            ),
             ST_X(pt),
             ST_Y(pt)
           FROM raw_geom, surface_pt
         `,
-          [eraId, featureName, formalName, geomJson, isoA3, JSON.stringify(props)]
+          [eraId, featureName, formalName, geomJson, isoA3, JSON.stringify(enrichedProps)]
         )
 
         validFeatures++

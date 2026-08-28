@@ -1,23 +1,53 @@
-import COUNTRY_COLORS_LIST, { Country } from "country-flag-colors"
+import {
+  resolveEntityMetadata,
+  isNeutralOrUnclaimed,
+  NEUTRAL_TERRITORY_COLOR,
+  EntityMetadata,
+} from "./historicalLineage"
+
+export {
+  isNeutralOrUnclaimed,
+  NEUTRAL_TERRITORY_COLOR,
+  type EntityMetadata,
+} from "./historicalLineage"
 
 export const DEFAULT_COUNTRY_COLOR = "#3b82f6"
 export const HIGHLIGHT_COLOR = "#f59e0b"
 
-const COLORS_BY_NAME = new Map<string, string>(
-  COUNTRY_COLORS_LIST.map((c: Country) => [c.name.toLowerCase(), c.colors[0]])
-)
-
-export function getCountryColor(name?: string | null): string {
-  if (!name) return DEFAULT_COUNTRY_COLOR
-  const normalized = name.trim().toLowerCase()
-  const found = COLORS_BY_NAME.get(normalized)
-  if (found) return found
-
-  // Generate deterministic pastel color from name hash if not in flag list
-  let hash = 0
-  for (let i = 0; i < name.length; i++) {
-    hash = name.charCodeAt(i) + ((hash << 5) - hash)
+/**
+ * Returns the resolved hex/HSL color for any historical feature or country name.
+ * Respects:
+ * 1. Pre-assigned properties.color
+ * 2. User manual overrides in entityRegistry.json
+ * 3. Unclaimed / neutral territory filter
+ * 4. Exact modern country baseline / ISO matches
+ * 5. Historical dynasty and succession rules
+ * 6. Deterministic golden-ratio perceptual fallback
+ */
+export function getCountryColor(
+  name?: string | null,
+  properties: Record<string, any> = {}
+): string {
+  // If the territory is unclaimed, unknown, or neutral wilderness, always return NEUTRAL_TERRITORY_COLOR
+  if (properties.is_unclaimed || isNeutralOrUnclaimed(name)) {
+    return NEUTRAL_TERRITORY_COLOR
   }
-  const h = Math.abs(hash % 360)
-  return `hsl(${h}, 65%, 55%)`
+
+  // If the feature already has an explicit color assigned (e.g. from DB/API)
+  if (properties.color && typeof properties.color === "string") {
+    return properties.color
+  }
+
+  const meta = resolveEntityMetadata(name, properties)
+  return meta.color
+}
+
+/**
+ * Retrieves full entity metadata (canonical lineage, culture group, color, unclaimed status)
+ */
+export function getEntityMetadata(
+  name?: string | null,
+  properties: Record<string, any> = {}
+): EntityMetadata {
+  return resolveEntityMetadata(name, properties)
 }
