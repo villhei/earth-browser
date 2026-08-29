@@ -6,7 +6,12 @@ import alpha from "color-alpha"
 import { PuffLoader } from "react-spinners"
 import { HistoricalGlobeProps, GlobeTexture } from "./types"
 import { getGlobeTextureUrl } from "./textures"
-import { getCountryColor, HIGHLIGHT_COLOR, isNeutralOrUnclaimed, NEUTRAL_TERRITORY_COLOR } from "./colors"
+import {
+  getCountryColor,
+  HIGHLIGHT_COLOR,
+  isNeutralOrUnclaimed,
+  NEUTRAL_TERRITORY_COLOR,
+} from "./colors"
 import {
   PlacedLabel,
   computePlacedLabels,
@@ -14,7 +19,7 @@ import {
 } from "./labels"
 import { GeoJSONFeature } from "../../types"
 
-const DEFAULT_ALTITUDE = 0.006
+const DEFAULT_ALTITUDE = 0.01
 const DEFAULT_OPACITY = 0.55
 const DEFAULT_SIDE_COLOR = "#ffffff"
 const DEFAULT_STROKE_COLOR = "#000000"
@@ -41,7 +46,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null)
   const placedLabelsRef = useRef<PlacedLabel[]>([])
-  const [hoveredFeature, setHoveredFeature] = useState<GeoJSONFeature | null>(null)
+  const [hoveredFeature, setHoveredFeature] = useState<GeoJSONFeature | null>(
+    null,
+  )
 
   // Mutable refs to keep animation loop in sync with props without re-initializing
   const dataRef = useRef(data)
@@ -98,6 +105,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const globe = new ThreeGlobe()
     globeRef.current = globe
     globe.globeImageUrl(getGlobeTextureUrl(texture))
+    globe.polygonCapCurvatureResolution(180)
 
     // Scene & Lights
     const scene = new THREE.Scene()
@@ -112,7 +120,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       45,
       (width || window.innerWidth) / (height || window.innerHeight),
       0.1,
-      2000
+      2000,
     )
     camera.position.z = 320
     camera.position.y = 80
@@ -138,9 +146,16 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           const w = container.clientWidth || window.innerWidth
           const h = container.clientHeight || window.innerHeight
 
-          if (showLabelsRef.current && dataRef.current?.features?.length) {
+          const allFeatures = dataRef.current?.features || []
+          const renderableFeatures = allFeatures.filter((feat) => {
+            const props = feat.properties || {}
+            const name = props.name || props.NAME || ""
+            return !props.is_unclaimed && !isNeutralOrUnclaimed(name)
+          })
+
+          if (showLabelsRef.current && renderableFeatures.length) {
             const placed = computePlacedLabels(
-              dataRef.current.features,
+              renderableFeatures,
               camera,
               w,
               h,
@@ -154,7 +169,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
                 paddingX: 10,
                 paddingY: 6,
               },
-              ctx
+              ctx,
             )
             placedLabelsRef.current = placed
             renderLabelsToCanvas(ctx, placed, w, h, dpr)
@@ -182,7 +197,12 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       const intersects = raycaster.intersectObjects(globe.children, true)
       for (const hit of intersects) {
         let current: any = hit.object
-        while (current && !current.__data && current.parent && current !== globe) {
+        while (
+          current &&
+          !current.__data &&
+          current.parent &&
+          current !== globe
+        ) {
           current = current.parent
         }
         if (current && current.__data && current.__data.geometry) {
@@ -192,7 +212,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       return null
     }
 
-    const getHoveredLabel = (clientX: number, clientY: number): PlacedLabel | null => {
+    const getHoveredLabel = (
+      clientX: number,
+      clientY: number,
+    ): PlacedLabel | null => {
       const rect = container.getBoundingClientRect()
       const px = clientX - rect.left
       const py = clientY - rect.top
@@ -232,7 +255,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         if (hitLabel) {
           container.style.cursor = "pointer"
           setHoveredFeature(hitLabel.feature)
-          if (onFeatureHoverRef.current) onFeatureHoverRef.current(hitLabel.feature)
+          if (onFeatureHoverRef.current)
+            onFeatureHoverRef.current(hitLabel.feature)
           return
         }
 
@@ -249,7 +273,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         // 1. Check direct label click
         const hitLabel = getHoveredLabel(e.clientX, e.clientY)
         if (hitLabel) {
-          if (onFeatureClickRef.current) onFeatureClickRef.current(hitLabel.feature)
+          if (onFeatureClickRef.current)
+            onFeatureClickRef.current(hitLabel.feature)
           return
         }
 
@@ -296,7 +321,11 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       cancelAnimationFrame(animationFrameId)
       controls.dispose()
       renderer.dispose()
-      if (canvas && renderer.domElement && canvas.contains(renderer.domElement)) {
+      if (
+        canvas &&
+        renderer.domElement &&
+        canvas.contains(renderer.domElement)
+      ) {
         canvas.removeChild(renderer.domElement)
       }
       globeRef.current = null
@@ -320,7 +349,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         const props = feat.properties || {}
         const name = props.name || props.NAME || ""
         if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
-          return 0.001
+          return 0.0
         }
         return layerAltitude
       })
@@ -350,7 +379,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         const props = feat.properties || {}
         const name = props.name || props.NAME || ""
         if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
-          return "rgba(100, 116, 139, 0.15)"
+          return "transparent"
         }
         return strokeColor
       })
@@ -372,7 +401,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         (feat.id === selectedFeatureId || name === selectedFeatureId)
       const isHovered =
         hoveredFeature &&
-        (feat.id === hoveredFeature.id || (name && name === hoveredFeature.properties?.name))
+        (feat.id === hoveredFeature.id ||
+          (name && name === hoveredFeature.properties?.name))
 
       if (isSelected) {
         return alpha(HIGHLIGHT_COLOR, 0.85)
@@ -381,7 +411,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         return alpha(HIGHLIGHT_COLOR, 0.7)
       }
       if (isUnclaimed) {
-        return alpha(NEUTRAL_TERRITORY_COLOR, 0.15)
+        return "transparent"
       }
       return alpha(getCountryColor(name, props), opacity)
     })
@@ -391,9 +421,16 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   useEffect(() => {
     if (!globeRef.current) return
     const globe = globeRef.current
-    const features = data?.features || []
+    const allFeatures = data?.features || []
 
-    globe.polygonsData(features)
+    // Filter out unclaimed background filler features so they do not produce elevated 3D meshes over oceans/wilderness
+    const renderableFeatures = allFeatures.filter((feat) => {
+      const props = feat.properties || {}
+      const name = props.name || props.NAME || ""
+      return !props.is_unclaimed && !isNeutralOrUnclaimed(name)
+    })
+
+    globe.polygonsData(renderableFeatures)
     // Clear three-globe 3D text meshes in favor of fixed-scale non-overlapping canvas labels
     globe.labelsData([])
   }, [data])
@@ -478,8 +515,11 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         >
           {hoveredFeature.properties.name}
           {hoveredFeature.properties.formal_name &&
-            hoveredFeature.properties.formal_name !== hoveredFeature.properties.name && (
-              <span style={{ opacity: 0.7, marginLeft: "8px", fontSize: "12px" }}>
+            hoveredFeature.properties.formal_name !==
+              hoveredFeature.properties.name && (
+              <span
+                style={{ opacity: 0.7, marginLeft: "8px", fontSize: "12px" }}
+              >
                 ({hoveredFeature.properties.formal_name})
               </span>
             )}
