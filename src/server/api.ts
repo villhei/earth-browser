@@ -66,8 +66,8 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
               'id', f.id,
               'geometry', ST_AsGeoJSON(
                 COALESCE(
-                  NULLIF(ST_Multi(ST_CollectionExtract(COALESCE(f.geom_simplified, f.geom), 3)), ST_GeomFromText('MULTIPOLYGON EMPTY', 4326)),
-                  ST_Multi(ST_CollectionExtract(f.geom, 3))
+                  NULLIF(ST_ForcePolygonCW(ST_Multi(ST_CollectionExtract(COALESCE(f.geom_simplified, f.geom), 3))), ST_GeomFromText('MULTIPOLYGON EMPTY', 4326)),
+                  ST_ForcePolygonCW(ST_Multi(ST_CollectionExtract(f.geom, 3)))
                 )
               )::json,
               'properties', f.properties || jsonb_build_object(
