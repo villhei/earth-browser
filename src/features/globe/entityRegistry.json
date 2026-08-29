@@ -1,0 +1,389 @@
+{
+  "_comment": "Manual Entity Overrides & Lineage Registry. Edit this file to customize colors or historical lineages without modifying raw GeoJSON files.",
+  "manualOverrides": {
+    "Roman Empire": {
+      "color": "#831843",
+      "lineage": "rome",
+      "displayName": "Roman Empire",
+      "cultureGroup": "Greco-Roman"
+    },
+    "Western Roman Empire": {
+      "color": "#9f1239",
+      "lineage": "western-rome",
+      "displayName": "Western Roman Empire",
+      "cultureGroup": "Greco-Roman"
+    },
+    "Byzantine Empire": {
+      "color": "#7c3aed",
+      "lineage": "byzantium",
+      "displayName": "Byzantine Empire (Eastern Roman Empire)",
+      "cultureGroup": "Greco-Roman"
+    },
+    "Ottoman Empire": {
+      "color": "#b91c1c",
+      "lineage": "ottoman",
+      "displayName": "Ottoman Empire",
+      "cultureGroup": "Middle East"
+    },
+    "Persian Empire": {
+      "color": "#0d9488",
+      "lineage": "persia",
+      "displayName": "Achaemenid Persian Empire",
+      "cultureGroup": "Iranian"
+    },
+    "Achaemenid Empire": {
+      "color": "#0d9488",
+      "lineage": "persia",
+      "displayName": "Achaemenid Empire",
+      "cultureGroup": "Iranian"
+    },
+    "Sasanian Empire": {
+      "color": "#0f766e",
+      "lineage": "persia",
+      "displayName": "Sasanian Empire",
+      "cultureGroup": "Iranian"
+    },
+    "Safavid Empire": {
+      "color": "#115e59",
+      "lineage": "persia",
+      "displayName": "Safavid Empire",
+      "cultureGroup": "Iranian"
+    },
+    "Holy Roman Empire": {
+      "color": "#b45309",
+      "lineage": "hre",
+      "displayName": "Holy Roman Empire",
+      "cultureGroup": "Central Europe"
+    },
+    "German Empire": {
+      "color": "#78350f",
+      "lineage": "germany",
+      "displayName": "German Empire",
+      "cultureGroup": "Central Europe"
+    },
+    "Prussia": {
+      "color": "#1e3a8a",
+      "lineage": "prussia",
+      "displayName": "Kingdom of Prussia",
+      "cultureGroup": "Central Europe"
+    },
+    "Austro-Hungarian Empire": {
+      "color": "#854d0e",
+      "lineage": "austria-hungary",
+      "displayName": "Austro-Hungarian Empire",
+      "cultureGroup": "Central Europe"
+    },
+    "Russian Empire": {
+      "color": "#be123c",
+      "lineage": "russia",
+      "displayName": "Russian Empire",
+      "cultureGroup": "Slavic"
+    },
+    "Soviet Union": {
+      "color": "#dc2626",
+      "lineage": "ussr",
+      "displayName": "Union of Soviet Socialist Republics",
+      "cultureGroup": "Slavic"
+    },
+    "USSR": {
+      "color": "#dc2626",
+      "lineage": "ussr",
+      "displayName": "USSR",
+      "cultureGroup": "Slavic"
+    },
+    "Kingdom of England": {
+      "color": "#1d4ed8",
+      "lineage": "britain",
+      "displayName": "Kingdom of England",
+      "cultureGroup": "Western Europe"
+    },
+    "Kingdom of Great Britain": {
+      "color": "#1e40af",
+      "lineage": "britain",
+      "displayName": "Kingdom of Great Britain",
+      "cultureGroup": "Western Europe"
+    },
+    "British Empire": {
+      "color": "#1e40af",
+      "lineage": "britain",
+      "displayName": "British Empire",
+      "cultureGroup": "Western Europe"
+    },
+    "Han Empire": {
+      "color": "#b91c1c",
+      "lineage": "china",
+      "displayName": "Han Dynasty",
+      "cultureGroup": "East Asia"
+    },
+    "Tang Empire": {
+      "color": "#c2410c",
+      "lineage": "china",
+      "displayName": "Tang Dynasty",
+      "cultureGroup": "East Asia"
+    },
+    "Song Empire": {
+      "color": "#d97706",
+      "lineage": "china",
+      "displayName": "Song Dynasty",
+      "cultureGroup": "East Asia"
+    },
+    "Ming Chinese Empire": {
+      "color": "#ea580c",
+      "lineage": "china",
+      "displayName": "Ming Dynasty",
+      "cultureGroup": "East Asia"
+    },
+    "Ming Empire": {
+      "color": "#ea580c",
+      "lineage": "china",
+      "displayName": "Ming Dynasty",
+      "cultureGroup": "East Asia"
+    },
+    "Manchu Empire": {
+      "color": "#eab308",
+      "lineage": "china",
+      "displayName": "Qing Dynasty",
+      "cultureGroup": "East Asia"
+    },
+    "Inca Empire": {
+      "color": "#d97706",
+      "lineage": "inca",
+      "displayName": "Inca Empire (Tawantinsuyu)",
+      "cultureGroup": "Andean"
+    },
+    "Aztec Empire": {
+      "color": "#059669",
+      "lineage": "aztec",
+      "displayName": "Aztec Empire (Triple Alliance)",
+      "cultureGroup": "Mesoamerican"
+    },
+    "Maya city-states": {
+      "color": "#0d9488",
+      "lineage": "maya",
+      "displayName": "Maya Civilization",
+      "cultureGroup": "Mesoamerican"
+    },
+    "Carthaginian Empire": {
+      "color": "#c2410c",
+      "lineage": "carthage",
+      "displayName": "Carthage",
+      "cultureGroup": "Mediterranean"
+    },
+    "Mughal Empire": {
+      "color": "#047857",
+      "lineage": "mughal",
+      "displayName": "Mughal Empire",
+      "cultureGroup": "South Asia"
+    },
+    "Mauryan Empire": {
+      "color": "#ea580c",
+      "lineage": "maurya",
+      "displayName": "Mauryan Empire",
+      "cultureGroup": "South Asia"
+    },
+    "Gupta Empire": {
+      "color": "#f59e0b",
+      "lineage": "gupta",
+      "displayName": "Gupta Empire",
+      "cultureGroup": "South Asia"
+    },
+    "Maratha Empire": {
+      "color": "#ea580c",
+      "lineage": "maratha",
+      "displayName": "Maratha Empire",
+      "cultureGroup": "South Asia"
+    },
+    "Fatimid Caliphate": {
+      "color": "#15803d",
+      "lineage": "fatimid",
+      "displayName": "Fatimid Caliphate",
+      "cultureGroup": "Islamic Caliphates"
+    },
+    "Umayyad Caliphate": {
+      "color": "#166534",
+      "lineage": "umayyad",
+      "displayName": "Umayyad Caliphate",
+      "cultureGroup": "Islamic Caliphates"
+    },
+    "Abbasid Caliphate": {
+      "color": "#1e293b",
+      "lineage": "abbasid",
+      "displayName": "Abbasid Caliphate",
+      "cultureGroup": "Islamic Caliphates"
+    },
+    "Great Khanate": {
+      "color": "#2563eb",
+      "lineage": "mongol",
+      "displayName": "Mongol Empire (Yuan)",
+      "cultureGroup": "Central Asia"
+    },
+    "Chagatai Khanate": {
+      "color": "#0284c7",
+      "lineage": "mongol-chagatai",
+      "displayName": "Chagatai Khanate",
+      "cultureGroup": "Central Asia"
+    },
+    "Khanate of the Golden Horde": {
+      "color": "#ca8a04",
+      "lineage": "golden-horde",
+      "displayName": "Golden Horde",
+      "cultureGroup": "Central Asia"
+    },
+    "Golden Horde": {
+      "color": "#ca8a04",
+      "lineage": "golden-horde",
+      "displayName": "Golden Horde",
+      "cultureGroup": "Central Asia"
+    },
+    "Ilkhanate": {
+      "color": "#0d9488",
+      "lineage": "ilkhanate",
+      "displayName": "Ilkhanate",
+      "cultureGroup": "Central Asia"
+    },
+    "Mali Empire": {
+      "color": "#ca8a04",
+      "lineage": "mali",
+      "displayName": "Mali Empire",
+      "cultureGroup": "West Africa"
+    },
+    "Songhai Empire": {
+      "color": "#d97706",
+      "lineage": "songhai",
+      "displayName": "Songhai Empire",
+      "cultureGroup": "West Africa"
+    },
+    "Kingdom of Kongo": {
+      "color": "#0284c7",
+      "lineage": "kongo",
+      "displayName": "Kingdom of Kongo",
+      "cultureGroup": "Central Africa"
+    },
+    "Kingdom of Benin": {
+      "color": "#ea580c",
+      "lineage": "benin",
+      "displayName": "Kingdom of Benin",
+      "cultureGroup": "West Africa"
+    },
+    "Oyo Empire": {
+      "color": "#ea580c",
+      "lineage": "oyo",
+      "displayName": "Oyo Empire",
+      "cultureGroup": "West Africa"
+    },
+    "Axumite Empire": {
+      "color": "#15803d",
+      "lineage": "axum",
+      "displayName": "Kingdom of Aksum (Axum)",
+      "cultureGroup": "East Africa"
+    },
+    "Kingdom of Zimbabwe": {
+      "color": "#ca8a04",
+      "lineage": "zimbabwe",
+      "displayName": "Kingdom of Zimbabwe",
+      "cultureGroup": "Southern Africa"
+    },
+    "Khmer Empire": {
+      "color": "#0284c7",
+      "lineage": "khmer",
+      "displayName": "Khmer Empire (Angkor)",
+      "cultureGroup": "Southeast Asia"
+    },
+    "Majapahit Empire": {
+      "color": "#047857",
+      "lineage": "majapahit",
+      "displayName": "Majapahit Empire",
+      "cultureGroup": "Southeast Asia"
+    },
+    "Srivijaya": {
+      "color": "#059669",
+      "lineage": "srivijaya",
+      "displayName": "Srivijaya Empire",
+      "cultureGroup": "Southeast Asia"
+    },
+    "Ayutthaya": {
+      "color": "#2563eb",
+      "lineage": "siam",
+      "displayName": "Ayutthaya Kingdom (Siam)",
+      "cultureGroup": "Southeast Asia"
+    },
+    "Đại Việt": {
+      "color": "#dc2626",
+      "lineage": "vietnam",
+      "displayName": "Đại Việt",
+      "cultureGroup": "Southeast Asia"
+    },
+    "Republic of Venice": {
+      "color": "#0284c7",
+      "lineage": "venice",
+      "displayName": "Republic of Venice",
+      "cultureGroup": "Southern Europe"
+    },
+    "Venice": {
+      "color": "#0284c7",
+      "lineage": "venice",
+      "displayName": "Republic of Venice",
+      "cultureGroup": "Southern Europe"
+    },
+    "Papal States": {
+      "color": "#ca8a04",
+      "lineage": "papal-states",
+      "displayName": "Papal States",
+      "cultureGroup": "Southern Europe"
+    },
+    "Polish-Lithuanian Commonwealth": {
+      "color": "#be123c",
+      "lineage": "poland-lithuania",
+      "displayName": "Polish-Lithuanian Commonwealth",
+      "cultureGroup": "Central Europe"
+    },
+    "Poland-Lithuania": {
+      "color": "#be123c",
+      "lineage": "poland-lithuania",
+      "displayName": "Polish-Lithuanian Commonwealth",
+      "cultureGroup": "Central Europe"
+    },
+    "Grand Duchy of Moscow": {
+      "color": "#be123c",
+      "lineage": "russia",
+      "displayName": "Grand Duchy of Moscow (Muscovy)",
+      "cultureGroup": "Slavic"
+    },
+    "Tsardom of Muscovy": {
+      "color": "#be123c",
+      "lineage": "russia",
+      "displayName": "Tsardom of Russia",
+      "cultureGroup": "Slavic"
+    },
+    "Kievan Rus": {
+      "color": "#be123c",
+      "lineage": "russia",
+      "displayName": "Kievan Rus'",
+      "cultureGroup": "Slavic"
+    },
+    "Novgorod Republic": {
+      "color": "#0284c7",
+      "lineage": "novgorod",
+      "displayName": "Novgorod Republic",
+      "cultureGroup": "Slavic"
+    },
+    "Teutonic Knights": {
+      "color": "#1e3a8a",
+      "lineage": "prussia",
+      "displayName": "State of the Teutonic Order",
+      "cultureGroup": "Central Europe"
+    },
+    "Tuʻi Tonga Empire": {
+      "color": "#0284c7",
+      "lineage": "polynesia",
+      "displayName": "Tuʻi Tonga Empire",
+      "cultureGroup": "Oceania"
+    },
+    "Kingdom of Hawaii": {
+      "color": "#0284c7",
+      "lineage": "polynesia",
+      "displayName": "Kingdom of Hawaii",
+      "cultureGroup": "Oceania"
+    }
+  }
+}

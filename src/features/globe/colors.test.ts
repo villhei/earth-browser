@@ -74,10 +74,71 @@ describe("Globe Colors & Lineage Engine", () => {
     expect(austria).not.toBe(austriaHungary)
   })
 
+  it("resolves newly added cultural regions with designated cohesive palettes", () => {
+    // Australian Aboriginal & Tasmanian
+    const aboriginal = getEntityMetadata("Australian aboriginal hunter-gatherers")
+    expect(aboriginal.cultureGroup).toBe("Oceania")
+    expect(aboriginal.color).toBe("#c2410c")
+
+    const arrernte = getEntityMetadata("Arrernte")
+    expect(arrernte.cultureGroup).toBe("Oceania")
+    expect(arrernte.color).toBe("#c2410c")
+
+    // Arctic & Subarctic
+    const inuit = getEntityMetadata("Arctic marine mammal hunters")
+    expect(inuit.cultureGroup).toBe("Arctic & Subarctic")
+    expect(inuit.color).toBe("#0284c7")
+
+    const athabaskan = getEntityMetadata("Athabaskan")
+    expect(athabaskan.cultureGroup).toBe("Arctic & Subarctic")
+    expect(athabaskan.color).toBe("#0f766e")
+
+    // North American Indigenous
+    const cherokee = getEntityMetadata("Cherokee (Oklahoma)")
+    expect(cherokee.cultureGroup).toBe("North American Indigenous")
+    expect(cherokee.color).toBe("#15803d")
+
+    const plains = getEntityMetadata("Plain bison hunters")
+    expect(plains.cultureGroup).toBe("North American Indigenous")
+    expect(plains.color).toBe("#d97706")
+
+    // South American Indigenous & Andean
+    const pampas = getEntityMetadata("Pampas cultures")
+    expect(pampas.cultureGroup).toBe("South American Indigenous")
+    expect(pampas.color).toBe("#a16207")
+
+    const amazon = getEntityMetadata("Amazon hunter-gatherers")
+    expect(amazon.cultureGroup).toBe("South American Indigenous")
+    expect(amazon.color).toBe("#059669")
+
+    // African Kingdoms
+    const songhai = getEntityMetadata("Songhai")
+    expect(songhai.cultureGroup).toBe("West Africa")
+    expect(songhai.color).toBe("#ca8a04")
+
+    const merina = getEntityMetadata("Expansionist Kingdom of Merina")
+    expect(merina.cultureGroup).toBe("East Africa")
+    expect(merina.color).toBe("#dc2626")
+
+    // Steppe Nomads
+    const scythian = getEntityMetadata("Scythian Nomads")
+    expect(scythian.cultureGroup).toBe("Central Asia")
+    expect(scythian.color).toBe("#0369a1")
+
+    // Southeast Asian Dynasties
+    const daiViet = getEntityMetadata("Đại Việt")
+    expect(daiViet.cultureGroup).toBe("Southeast Asia")
+    expect(daiViet.color).toBe("#dc2626")
+
+    const ayutthaya = getEntityMetadata("Ayutthaya")
+    expect(ayutthaya.cultureGroup).toBe("Southeast Asia")
+    expect(ayutthaya.color).toBe("#2563eb")
+  })
+
   it("returns deterministic golden-ratio HSL color for uncataloged ancient cultures", () => {
-    const color1 = getCountryColor("Scythian Nomads")
-    const color2 = getCountryColor("Scythian Nomads")
-    const colorDiff = getCountryColor("Lapita Culture")
+    const color1 = getCountryColor("Lapita Culture")
+    const color2 = getCountryColor("Lapita Culture")
+    const colorDiff = getCountryColor("Proto-Aurignacian Tribe")
 
     expect(color1).toBe(color2)
     expect(color1).toMatch(/^hsl\(\d+,\s*68%,\s*52%\)$/)
