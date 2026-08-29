@@ -13,6 +13,7 @@
     "migrate": "tsx ./node_modules/.bin/knex migrate:latest",
     "db:ingest": "tsx src/server/ingest.ts",
     "db:setup": "npm run migrate && npm run db:ingest",
+    "db:reset": "npm run knex -- migrate:rollback --all && npm run db:setup",
     "test": "vitest run",
     "start": "npm run dev"
   },
