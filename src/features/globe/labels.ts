@@ -161,7 +161,63 @@ export function estimateGeometryArea(geometry: GeoJSONGeometry | undefined): num
 }
 
 /**
- * Computes bounding box centroid fallback if labelLat / labelLng are missing.
+ * Computes polygon ring centroid and approximate area.
+ * Unwraps longitudes across anti-meridian to prevent artificial Atlantic/ocean centroids.
+ */
+function computeRingCentroid(ring: number[][]): { lng: number; lat: number; area: number } | null {
+  if (!ring || ring.length < 3) return null
+  const refLng = ring[0][0]
+  let area2 = 0
+  let cx = 0
+  let cy = 0
+
+  for (let i = 0; i < ring.length - 1; i++) {
+    let x1 = ring[i][0]
+    let y1 = ring[i][1]
+    let x2 = ring[i + 1][0]
+    let y2 = ring[i + 1][1]
+
+    // Unwrap longitude relative to reference vertex
+    if (x1 - refLng > 180) x1 -= 360
+    if (x1 - refLng < -180) x1 += 360
+    if (x2 - refLng > 180) x2 -= 360
+    if (x2 - refLng < -180) x2 += 360
+
+    const cross = x1 * y2 - x2 * y1
+    area2 += cross
+    cx += (x1 + x2) * cross
+    cy += (y1 + y2) * cross
+  }
+
+  const absArea = Math.abs(area2) / 2
+  if (absArea < 1e-7 || Math.abs(area2) < 1e-7) {
+    let sumX = 0
+    let sumY = 0
+    for (let i = 0; i < ring.length; i++) {
+      let x = ring[i][0]
+      if (x - refLng > 180) x -= 360
+      if (x - refLng < -180) x += 360
+      sumX += x
+      sumY += ring[i][1]
+    }
+    let finalLng = sumX / ring.length
+    while (finalLng > 180) finalLng -= 360
+    while (finalLng < -180) finalLng += 360
+    return { lng: finalLng, lat: sumY / ring.length, area: absArea }
+  }
+
+  let finalLng = cx / (3 * area2)
+  let finalLat = cy / (3 * area2)
+  while (finalLng > 180) finalLng -= 360
+  while (finalLng < -180) finalLng += 360
+
+  return { lng: finalLng, lat: finalLat, area: absArea }
+}
+
+/**
+ * Computes primary landmass centroid fallback for Polygon and MultiPolygon geometries.
+ * For multi-island archipelagos and maritime realms, selects the largest polygon by area
+ * so label anchors are placed on actual land rather than floating in open ocean.
  */
 export function computeGeometryCentroid(
   geometry: GeoJSONGeometry | undefined
@@ -170,6 +226,29 @@ export function computeGeometryCentroid(
     return null
   }
 
+  if (geometry.type === "Polygon") {
+    const ring = geometry.coordinates[0]
+    const res = computeRingCentroid(ring)
+    return res ? { lng: res.lng, lat: res.lat } : null
+  }
+
+  if (geometry.type === "MultiPolygon") {
+    let maxArea = -1
+    let bestCentroid: { lng: number; lat: number } | null = null
+
+    for (const poly of geometry.coordinates) {
+      if (!Array.isArray(poly) || poly.length === 0) continue
+      const ring = poly[0]
+      const res = computeRingCentroid(ring)
+      if (res && res.area > maxArea) {
+        maxArea = res.area
+        bestCentroid = { lng: res.lng, lat: res.lat }
+      }
+    }
+    return bestCentroid
+  }
+
+  // Fallback for Point or generic coordinates
   let sumX = 0
   let sumY = 0
   let count = 0

@@ -4,45 +4,8 @@ import { pool, closePool } from "./db"
 import { ERA_CATALOG, getEraByFilename } from "./eraMetadata"
 import { resolveEntityMetadata } from "../features/globe/historicalLineage"
 
-async function ensureGlobalLand(client: any, seedDir: string) {
-  await client.query(`
-    CREATE TABLE IF NOT EXISTS global_land (
-      id SERIAL PRIMARY KEY,
-      geom GEOMETRY(MultiPolygon, 4326) NOT NULL
-    );
-    CREATE INDEX IF NOT EXISTS idx_global_land_geom ON global_land USING GIST(geom);
-  `)
-
-  const countRes = await client.query("SELECT COUNT(*) FROM global_land")
-  const count = parseInt(countRes.rows[0].count, 10)
-
-  if (count === 0) {
-    const landFile = path.join(seedDir, "land_50m.geojson")
-    if (fs.existsSync(landFile)) {
-      console.log("🌊 Ingesting global land boundaries (land_50m.geojson) for ocean clipping...")
-      const rawLand = fs.readFileSync(landFile, "utf-8")
-      const landGeoJson = JSON.parse(rawLand)
-      const features = landGeoJson.features || []
-
-      for (const feat of features) {
-        if (!feat.geometry) continue
-        await client.query(
-          `
-          INSERT INTO global_land (geom)
-          SELECT ST_Multi(ST_CollectionExtract(ST_MakeValid(ST_SetSRID(ST_GeomFromGeoJSON($1), 4326)), 3))
-        `,
-          [JSON.stringify(feat.geometry)]
-        )
-      }
-      console.log(`  ✓ Successfully loaded ${features.length} land reference polygons into global_land`)
-    } else {
-      console.warn("  ⚠️ land_50m.geojson not found in seed dir. Ocean clipping will fallback to raw bounds.")
-    }
-  }
-}
-
 async function ingest() {
-  console.log("🌍 Starting Historical Earth GeoJSON Ingestion...")
+  console.log("🌍 Starting Historical Earth GeoJSON Ingestion (Raw Geometry Mode)...")
   const seedDir = path.resolve(__dirname, "../../migrations/seed")
 
   if (!fs.existsSync(seedDir)) {
@@ -50,22 +13,9 @@ async function ingest() {
     process.exit(1)
   }
 
-  const client = await pool.connect()
-  try {
-    // 0. Ensure global land table exists and is populated for coastline clipping
-    await ensureGlobalLand(client, seedDir)
-  } finally {
-    client.release()
-  }
-
   const files = fs
     .readdirSync(seedDir)
-    .filter(
-      (f) =>
-        f.endsWith(".geojson") &&
-        f !== "places.geojson" &&
-        !f.startsWith("land_")
-    )
+    .filter((f) => f.endsWith(".geojson") && f !== "places.geojson")
     .sort((a, b) => {
       const eraA = getEraByFilename(a)
       const eraB = getEraByFilename(b)
@@ -161,22 +111,8 @@ async function ingest() {
           WITH raw_geom AS (
             SELECT ST_Multi(ST_CollectionExtract(ST_MakeValid(ST_SetSRID(ST_GeomFromGeoJSON($4), 4326)), 3)) AS g
           ),
-          clipped_pieces AS (
-            SELECT (ST_Dump(ST_CollectionExtract(ST_Intersection(r.g, l.geom), 3))).geom AS piece
-            FROM raw_geom r
-            JOIN global_land l ON ST_Intersects(r.g, l.geom)
-          ),
-          filtered_pieces AS (
-            SELECT piece FROM clipped_pieces WHERE ST_Area(piece) > 0.0001
-          ),
-          union_geom AS (
-            SELECT COALESCE(
-              NULLIF((SELECT ST_Multi(ST_Union(piece)) FROM filtered_pieces), ST_GeomFromText('MULTIPOLYGON EMPTY', 4326)),
-              (SELECT g FROM raw_geom)
-            ) AS g
-          ),
           surface_pt AS (
-            SELECT ST_PointOnSurface(g) AS pt FROM union_geom
+            SELECT ST_PointOnSurface(g) AS pt FROM raw_geom
           )
           INSERT INTO era_features (
             era_id, name, formal_name, iso_a3, properties, geom, geom_simplified, label_lng, label_lat
@@ -187,15 +123,12 @@ async function ingest() {
             $3,
             $5,
             $6::jsonb,
-            ST_ForcePolygonCW(g),
-            COALESCE(
-              NULLIF(ST_ForcePolygonCW(ST_Multi(ST_CollectionExtract(ST_SimplifyPreserveTopology(g, 0.02), 3))), ST_GeomFromText('MULTIPOLYGON EMPTY', 4326)),
-              ST_ForcePolygonCW(g)
-            ),
+            g,
+            g,
             ST_X(pt),
             ST_Y(pt)
-          FROM union_geom, surface_pt
-          WHERE NOT ST_IsEmpty(g) AND ST_Area(g) > 0.0001
+          FROM raw_geom, surface_pt
+          WHERE NOT ST_IsEmpty(g)
           RETURNING id;
         `,
           [eraId, featureName, formalName, geomJson, isoA3, JSON.stringify(enrichedProps)]

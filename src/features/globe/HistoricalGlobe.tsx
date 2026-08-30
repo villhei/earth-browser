@@ -19,10 +19,11 @@ import {
 } from "./labels"
 import { GeoJSONFeature } from "../../types"
 
-const DEFAULT_ALTITUDE = 0.01
+const DEFAULT_ALTITUDE = 0.005
 const DEFAULT_OPACITY = 0.55
 const DEFAULT_SIDE_COLOR = "#ffffff"
 const DEFAULT_STROKE_COLOR = "#000000"
+const DEFAULT_CAP_CURVATURE_RESOLUTION = 3
 
 export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   data,
@@ -34,6 +35,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   strokeColor = DEFAULT_STROKE_COLOR,
   selectedFeatureId = null,
   showLabels = true,
+  polygonCapCurvatureResolution = DEFAULT_CAP_CURVATURE_RESOLUTION,
   onFeatureClick,
   onFeatureHover,
   style,
@@ -105,7 +107,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const globe = new ThreeGlobe()
     globeRef.current = globe
     globe.globeImageUrl(getGlobeTextureUrl(texture))
-    globe.polygonCapCurvatureResolution(180)
+    globe.polygonCapCurvatureResolution(polygonCapCurvatureResolution)
 
     // Scene & Lights
     const scene = new THREE.Scene()
@@ -341,7 +343,14 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     }
   }, [texture])
 
-  // 3. Layer Altitude update
+  // 3. Polygon Cap Curvature Resolution update
+  useEffect(() => {
+    if (globeRef.current) {
+      globeRef.current.polygonCapCurvatureResolution(polygonCapCurvatureResolution)
+    }
+  }, [polygonCapCurvatureResolution])
+
+  // 4. Layer Altitude update
   useEffect(() => {
     if (globeRef.current) {
       globeRef.current.polygonAltitude((d: any) => {

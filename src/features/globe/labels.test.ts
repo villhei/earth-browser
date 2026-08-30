@@ -95,8 +95,38 @@ describe("labels: coordinate & geometry utilities", () => {
 
     const centroid = computeGeometryCentroid(polygonGeom)
     expect(centroid).not.toBeNull()
-    expect(centroid!.lng).toBeCloseTo(14, 1)
-    expect(centroid!.lat).toBeCloseTo(24, 1)
+    expect(centroid!.lng).toBeCloseTo(15, 1)
+    expect(centroid!.lat).toBeCloseTo(25, 1)
+
+    // MultiPolygon with smaller island and larger mainland
+    const multiPolygonGeom = {
+      type: "MultiPolygon",
+      coordinates: [
+        [
+          [
+            [0, 0],
+            [1, 0],
+            [1, 1],
+            [0, 1],
+            [0, 0],
+          ],
+        ],
+        [
+          [
+            [100, 20],
+            [120, 20],
+            [120, 40],
+            [100, 40],
+            [100, 20],
+          ],
+        ],
+      ],
+    }
+    const multiCentroid = computeGeometryCentroid(multiPolygonGeom)
+    expect(multiCentroid).not.toBeNull()
+    // Should place centroid on the larger polygon (around 110, 30), not in the ocean between them
+    expect(multiCentroid!.lng).toBeCloseTo(110, 1)
+    expect(multiCentroid!.lat).toBeCloseTo(30, 1)
   })
 })
 

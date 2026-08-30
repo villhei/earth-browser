@@ -57,6 +57,14 @@ export interface HistoricalGlobeProps {
   showLabels?: boolean
 
   /**
+   * Resolution (in angular degrees) of the polygon cap surface curvature.
+   * Lower values yield finer subdivision that closely hugs the sphere surface,
+   * preventing large region polygons from sinking into or intersecting the terrain.
+   * Defaults to 3.
+   */
+  polygonCapCurvatureResolution?: number
+
+  /**
    * Custom CSS style for the globe container.
    */
   style?: React.CSSProperties
