@@ -33,6 +33,7 @@ export interface LabelComputeOptions {
   layerAltitude?: number
   selectedFeatureId?: string | null
   hoveredFeatureId?: string | null
+  hoveredPoint?: { lat: number; lng: number } | null
   minFontScale?: number
   paddingX?: number
   paddingY?: number
@@ -41,6 +42,7 @@ export interface LabelComputeOptions {
   labelSize?: number
   labelTolerance?: number
   elevationScale?: number
+  onlyHoveredOrSelected?: boolean
 }
 
 /**
@@ -63,6 +65,22 @@ export function polar2Cartesian(
     r * Math.cos(phi),
     r * phiSin * Math.sin(theta),
   )
+}
+
+/**
+ * Converts 3D Cartesian coordinates back to geographic coordinates (latitude, longitude).
+ */
+export function cartesian2Polar(pos: THREE.Vector3): { lat: number; lng: number } {
+  const r = pos.length()
+  if (r === 0) return { lat: 0, lng: 0 }
+  const phi = Math.acos(Math.max(-1, Math.min(1, pos.y / r)))
+  const lat = 90 - (phi * 180) / Math.PI
+  const theta = Math.atan2(pos.z, pos.x)
+  const thetaDeg = (theta * 180) / Math.PI
+  let lng = 90 - thetaDeg
+  while (lng > 180) lng -= 360
+  while (lng < -180) lng += 360
+  return { lat, lng }
 }
 
 /**
@@ -301,26 +319,37 @@ export function getFeaturePriority(
   selectedFeatureId?: string | null,
   hoveredFeatureId?: string | null,
 ): number {
-  const name = feature.properties?.name || ""
-  const id = feature.id || name
+  const props = feature.properties || {}
+  const name = props.name || props.NAME || props.NAME_LONG || props.formal_name || ""
+  const id = feature.id != null ? String(feature.id) : name
 
-  // 1. Selected country is top priority
+  // 1. Hovered country has absolute highest priority so it is always placed and unobstructed
   if (
-    selectedFeatureId &&
-    (id === selectedFeatureId || name === selectedFeatureId)
+    hoveredFeatureId != null &&
+    (id === String(hoveredFeatureId) ||
+      name === hoveredFeatureId ||
+      props.name === hoveredFeatureId ||
+      props.NAME === hoveredFeatureId ||
+      props.formal_name === hoveredFeatureId ||
+      props.FORMAL_EN === hoveredFeatureId ||
+      (feature.id != null && String(feature.id) === String(hoveredFeatureId)))
   ) {
     return 1_000_000_000
   }
 
-  // 2. Hovered country is second highest priority
+  // 2. Selected country is second highest priority
   if (
-    hoveredFeatureId &&
-    (id === hoveredFeatureId || name === hoveredFeatureId)
+    selectedFeatureId != null &&
+    (id === String(selectedFeatureId) ||
+      name === selectedFeatureId ||
+      props.name === selectedFeatureId ||
+      props.NAME === selectedFeatureId ||
+      props.formal_name === selectedFeatureId ||
+      props.FORMAL_EN === selectedFeatureId ||
+      (feature.id != null && String(feature.id) === String(selectedFeatureId)))
   ) {
     return 500_000_000
   }
-
-  const props = feature.properties || {}
 
   // 3. Precomputed area from GIS properties
   if (typeof props.AREA === "number" && props.AREA > 0) {
@@ -445,57 +474,100 @@ export function computePlacedLabels(
   // 1. Filter visible features and project to screen space
   for (const feat of features) {
     const props = feat.properties || {}
-    const name = props.name || props.NAME || props.NAME_LONG
+    const name = props.name || props.NAME || props.NAME_LONG || props.formal_name || props.FORMAL_EN || ""
     if (!name || typeof name !== "string" || name.trim() === "") {
       continue
     }
 
-    let lat = props.labelLat ?? props.label_lat
-    let lng = props.labelLng ?? props.label_lng
+    const id = (feat.id != null ? feat.id : name).toString()
+    const isHovered =
+      hoveredFeatureId != null &&
+      (id === String(hoveredFeatureId) ||
+        name === hoveredFeatureId ||
+        props.name === hoveredFeatureId ||
+        props.NAME === hoveredFeatureId ||
+        props.formal_name === hoveredFeatureId ||
+        props.FORMAL_EN === hoveredFeatureId ||
+        (feat.id != null && String(feat.id) === String(hoveredFeatureId)))
+
+    const isSelected =
+      selectedFeatureId != null &&
+      (id === String(selectedFeatureId) ||
+        name === selectedFeatureId ||
+        props.name === selectedFeatureId ||
+        props.NAME === selectedFeatureId ||
+        props.formal_name === selectedFeatureId ||
+        props.FORMAL_EN === selectedFeatureId ||
+        (feat.id != null && String(feat.id) === String(selectedFeatureId)))
+
+    if (options.onlyHoveredOrSelected && !isHovered && !isSelected) {
+      continue
+    }
+
+    let lat = props.labelLat ?? props.label_lat ?? props.lat ?? props.LAT
+    let lng = props.labelLng ?? props.label_lng ?? props.lng ?? props.LNG
 
     if (lat == null || lng == null) {
       const centroid = computeGeometryCentroid(feat.geometry)
-      if (!centroid) continue
-      lat = centroid.lat
-      lng = centroid.lng
+      if (centroid) {
+        lat = centroid.lat
+        lng = centroid.lng
+      }
     }
 
     const tier = Number(props.elevation_tier ?? props.elevationTier ?? 0)
     const tierStep = 0.0025 * (options.elevationScale ?? 0.3)
     const featureAlt = layerAltitude + tier * tierStep
 
-    const worldPos = polar2Cartesian(
-      lat,
-      lng,
-      featureAlt + 0.002,
-      GLOBE_RADIUS,
-    )
+    let worldPos: THREE.Vector3 | null = null
+    let screenPos: { x: number; y: number; z: number } | null = null
 
-    // Occlusion check against globe sphere horizon
-    if (isPointBehindGlobe(worldPos, cameraPos, GLOBE_RADIUS)) {
-      continue
+    if (lat != null && lng != null) {
+      const candidateWorldPos = polar2Cartesian(
+        lat,
+        lng,
+        featureAlt + 0.002,
+        GLOBE_RADIUS,
+      )
+      const isBehind = isPointBehindGlobe(candidateWorldPos, cameraPos, GLOBE_RADIUS)
+      if (!isBehind) {
+        const candidateScreenPos = projectToScreen(candidateWorldPos, camera, width, height)
+        if (
+          candidateScreenPos &&
+          candidateScreenPos.x >= -80 &&
+          candidateScreenPos.x <= width + 80 &&
+          candidateScreenPos.y >= -80 &&
+          candidateScreenPos.y <= height + 80
+        ) {
+          worldPos = candidateWorldPos
+          screenPos = candidateScreenPos
+        }
+      }
     }
 
-    const screenPos = projectToScreen(worldPos, camera, width, height)
-    if (!screenPos) continue
-
-    // Reject points far outside screen view
-    if (
-      screenPos.x < -80 ||
-      screenPos.x > width + 80 ||
-      screenPos.y < -80 ||
-      screenPos.y > height + 80
-    ) {
-      continue
+    // If the feature is hovered, but its centroid is occluded or offscreen,
+    // fallback to the active hovered surface intersection point on the visible globe
+    if ((!worldPos || !screenPos) && isHovered && options.hoveredPoint) {
+      const hoverWorldPos = polar2Cartesian(
+        options.hoveredPoint.lat,
+        options.hoveredPoint.lng,
+        featureAlt + 0.002,
+        GLOBE_RADIUS,
+      )
+      if (!isPointBehindGlobe(hoverWorldPos, cameraPos, GLOBE_RADIUS)) {
+        const hoverScreenPos = projectToScreen(hoverWorldPos, camera, width, height)
+        if (hoverScreenPos) {
+          worldPos = hoverWorldPos
+          screenPos = hoverScreenPos
+          lat = options.hoveredPoint.lat
+          lng = options.hoveredPoint.lng
+        }
+      }
     }
 
-    const id = (feat.id || name).toString()
-    const isSelected =
-      selectedFeatureId != null &&
-      (id === selectedFeatureId || name === selectedFeatureId)
-    const isHovered =
-      hoveredFeatureId != null &&
-      (id === hoveredFeatureId || name === hoveredFeatureId)
+    if (!worldPos || !screenPos) {
+      continue
+    }
 
     const priority = getFeaturePriority(
       feat,
@@ -523,10 +595,10 @@ export function computePlacedLabels(
     })
   }
 
-  // 2. Sort candidates by priority (Selected -> Hovered -> Area/Prominence -> Closer to center)
+  // 2. Sort candidates by priority (Hovered -> Selected -> Area/Prominence -> Closer to center)
   candidates.sort((a, b) => {
-    if (a.isSelected !== b.isSelected) return a.isSelected ? -1 : 1
     if (a.isHovered !== b.isHovered) return a.isHovered ? -1 : 1
+    if (a.isSelected !== b.isSelected) return a.isSelected ? -1 : 1
     if (Math.abs(a.priority - b.priority) > 10) {
       return b.priority - a.priority
     }
@@ -551,12 +623,18 @@ export function computePlacedLabels(
       candidate.priority > 500_000 ||
       candidate.isSelected ||
       candidate.isHovered
-    const fontSize = candidate.isSelected
-      ? baseFontSize + 1
-      : isMajor
-        ? baseFontSize
-        : Math.max(8, baseFontSize - 1)
-    const fontWeight = candidate.isSelected ? 700 : isMajor ? 600 : 500
+    const fontSize =
+      candidate.isHovered || candidate.isSelected
+        ? baseFontSize + 1
+        : isMajor
+          ? baseFontSize
+          : Math.max(8, baseFontSize - 1)
+    const fontWeight =
+      candidate.isHovered || candidate.isSelected
+        ? 700
+        : isMajor
+          ? 600
+          : 500
 
     if (ctx) {
       ctx.font = `${fontWeight} ${fontSize}px "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`
@@ -591,8 +669,8 @@ export function computePlacedLabels(
       }
     }
 
-    // Always place selected country even if tight, but skip others on collision
-    if (collides && !candidate.isSelected) {
+    // Always place hovered and selected country even if tight, but skip others on collision
+    if (collides && !candidate.isSelected && !candidate.isHovered) {
       continue
     }
 
@@ -633,7 +711,26 @@ export function renderLabelsToCanvas(
   ctx.save()
   ctx.clearRect(0, 0, width, height)
 
+  // Draw regular labels first, then selected, then hovered on the topmost layer
+  const regularLabels: PlacedLabel[] = []
+  let selectedLabel: PlacedLabel | null = null
+  let hoveredLabel: PlacedLabel | null = null
+
   for (const label of placedLabels) {
+    if (label.isHovered) {
+      hoveredLabel = label
+    } else if (label.isSelected) {
+      selectedLabel = label
+    } else {
+      regularLabels.push(label)
+    }
+  }
+
+  const orderedToDraw: PlacedLabel[] = [...regularLabels]
+  if (selectedLabel) orderedToDraw.push(selectedLabel)
+  if (hoveredLabel) orderedToDraw.push(hoveredLabel)
+
+  for (const label of orderedToDraw) {
     const {
       name,
       dotX,
@@ -647,18 +744,18 @@ export function renderLabelsToCanvas(
     } = label
 
     // 1. Draw Anchor Dot
-    const dotRadius = isSelected ? 3.5 : isHovered ? 3.0 : 2.2
+    const dotRadius = isSelected ? 3.5 : isHovered ? 3.2 : 2.2
     ctx.beginPath()
     ctx.arc(dotX, dotY, dotRadius, 0, Math.PI * 2)
 
-    if (isSelected) {
+    if (isHovered) {
+      ctx.fillStyle = "#7dd3fc"
+      ctx.shadowColor = "#38bdf8"
+      ctx.shadowBlur = 6
+    } else if (isSelected) {
       ctx.fillStyle = "#38bdf8"
       ctx.shadowColor = "#38bdf8"
       ctx.shadowBlur = 6
-    } else if (isHovered) {
-      ctx.fillStyle = "#7dd3fc"
-      ctx.shadowColor = "#38bdf8"
-      ctx.shadowBlur = 4
     } else {
       ctx.fillStyle = "rgba(255, 255, 255, 0.95)"
       ctx.shadowColor = "transparent"
@@ -666,7 +763,7 @@ export function renderLabelsToCanvas(
     }
     ctx.fill()
 
-    ctx.lineWidth = 1.2
+    ctx.lineWidth = isHovered || isSelected ? 1.5 : 1.2
     ctx.strokeStyle = "rgba(10, 15, 29, 0.85)"
     ctx.stroke()
     ctx.shadowBlur = 0 // reset shadow
@@ -677,16 +774,16 @@ export function renderLabelsToCanvas(
     ctx.textBaseline = "bottom"
 
     // Outline / halo
-    ctx.strokeStyle = "rgba(10, 15, 29, 0.92)"
-    ctx.lineWidth = isSelected || isHovered ? 3.5 : 2.8
+    ctx.strokeStyle = "rgba(10, 15, 29, 0.95)"
+    ctx.lineWidth = isHovered ? 4.0 : isSelected ? 3.5 : 2.8
     ctx.lineJoin = "round"
     ctx.strokeText(name, textX, textY)
 
     // Text Fill
-    if (isSelected) {
+    if (isHovered) {
+      ctx.fillStyle = "#e0f2fe"
+    } else if (isSelected) {
       ctx.fillStyle = "#38bdf8"
-    } else if (isHovered) {
-      ctx.fillStyle = "#bae6fd"
     } else {
       ctx.fillStyle = "#ffffff"
     }

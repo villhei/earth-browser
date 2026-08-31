@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest"
 import * as THREE from "three"
 import {
   polar2Cartesian,
+  cartesian2Polar,
   isPointBehindGlobe,
   projectToScreen,
   estimateGeometryArea,
@@ -9,6 +10,7 @@ import {
   getFeaturePriority,
   checkAABBOverlap,
   computePlacedLabels,
+  renderLabelsToCanvas,
   measureTextWidth,
   clearTextWidthCache,
   GLOBE_RADIUS,
@@ -40,6 +42,26 @@ describe("labels: coordinate & geometry utilities", () => {
     expect(equatorEast.x).toBeCloseTo(100, 4)
     expect(equatorEast.y).toBeCloseTo(0, 4)
     expect(equatorEast.z).toBeCloseTo(0, 4)
+  })
+
+  it("converts cartesian coordinates back to polar (cartesian2Polar)", () => {
+    const coords = [
+      { lat: 0, lng: 0 },
+      { lat: 45, lng: 90 },
+      { lat: -30, lng: -60 },
+      { lat: 60, lng: -120 },
+      { lat: 90, lng: 0 },
+      { lat: -90, lng: 0 },
+    ]
+
+    for (const { lat, lng } of coords) {
+      const cart = polar2Cartesian(lat, lng, 0, GLOBE_RADIUS)
+      const polar = cartesian2Polar(cart)
+      expect(polar.lat).toBeCloseTo(lat, 1)
+      if (Math.abs(lat) < 89) {
+        expect(polar.lng).toBeCloseTo(lng, 1)
+      }
+    }
   })
 
   it("accurately detects points behind the globe horizon", () => {
@@ -398,6 +420,154 @@ describe("labels: computePlacedLabels algorithm", () => {
     const width3 = measureTextWidth("Roman Empire", 14, null)
     // Fallback estimation after clear
     expect(width3).toBeCloseTo(12 * 14 * 0.62, 1)
+  })
+
+  it("prioritizes hovered cultural area over larger colliding neighbors", () => {
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 0.1, 1000)
+    camera.position.set(0, 0, 320)
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    camera.updateProjectionMatrix()
+
+    // 2 overlapping features: a large empire and a smaller cultural area
+    const features: GeoJSONFeature[] = [
+      {
+        type: "Feature",
+        id: "france",
+        properties: { name: "Kingdom of France", labelLat: 48.8, labelLng: 2.3, AREA: 550000 },
+        geometry: { type: "Point", coordinates: [2.3, 48.8] },
+      },
+      {
+        type: "Feature",
+        id: "normandy",
+        properties: { name: "Duchy of Normandy", labelLat: 48.9, labelLng: 2.2, AREA: 30000 },
+        geometry: { type: "Point", coordinates: [2.2, 48.9] },
+      },
+    ]
+
+    // Without hover: France is placed, Normandy is omitted due to collision
+    const unhovered = computePlacedLabels(features, camera, 800, 600, {
+      paddingX: 10,
+      paddingY: 10,
+    })
+    expect(unhovered.map((p) => p.name)).toContain("Kingdom of France")
+    expect(unhovered.map((p) => p.name)).not.toContain("Duchy of Normandy")
+
+    // When Normandy is hovered: Normandy takes priority over France, France is suppressed on collision
+    const hoveredNormandy = computePlacedLabels(features, camera, 800, 600, {
+      hoveredFeatureId: "normandy",
+      paddingX: 10,
+      paddingY: 10,
+    })
+    expect(hoveredNormandy.map((p) => p.name)).toContain("Duchy of Normandy")
+    expect(hoveredNormandy.map((p) => p.name)).not.toContain("Kingdom of France")
+    expect(hoveredNormandy.find((p) => p.id === "normandy")?.isHovered).toBe(true)
+  })
+
+  it("uses hoveredPoint when the feature's default centroid is behind the horizon", () => {
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 0.1, 1000)
+    // Camera is looking at Europe/Africa (0, 0, 320)
+    camera.position.set(0, 0, 320)
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    camera.updateProjectionMatrix()
+
+    // Large empire with centroid in East Asia (behind the horizon from camera looking at prime meridian)
+    const largeEmpire: GeoJSONFeature = {
+      type: "Feature",
+      id: "mongol-empire",
+      properties: {
+        name: "Mongol Empire",
+        labelLat: 47.0,
+        labelLng: 103.0, // Behind the globe from prime meridian view
+        AREA: 24000000,
+      },
+      geometry: { type: "Point", coordinates: [103.0, 47.0] },
+    }
+
+    // Without hoveredPoint: Centroid is behind globe, so label is not visible
+    const unhovered = computePlacedLabels([largeEmpire], camera, 800, 600)
+    expect(unhovered.length).toBe(0)
+
+    // When user hovers over a visible western outpost at (lat: 45, lng: 10)
+    const hovered = computePlacedLabels([largeEmpire], camera, 800, 600, {
+      hoveredFeatureId: "mongol-empire",
+      hoveredPoint: { lat: 45.0, lng: 10.0 },
+    })
+
+    expect(hovered.length).toBe(1)
+    expect(hovered[0].name).toBe("Mongol Empire")
+    expect(hovered[0].isHovered).toBe(true)
+    expect(hovered[0].x).toBeGreaterThan(0)
+    expect(hovered[0].y).toBeGreaterThan(0)
+  })
+
+  it("renders hovered label to canvas without errors", () => {
+    const mockCtx = {
+      save: () => {},
+      restore: () => {},
+      clearRect: () => {},
+      beginPath: () => {},
+      arc: () => {},
+      fill: () => {},
+      stroke: () => {},
+      strokeText: () => {},
+      fillText: () => {},
+    } as any
+
+    const labels = [
+      {
+        id: "feat-1",
+        name: "Hovered Culture",
+        feature: { type: "Feature", id: "feat-1", properties: { name: "Hovered Culture" }, geometry: { type: "Point", coordinates: [0, 0] } } as GeoJSONFeature,
+        x: 400,
+        y: 300,
+        dotX: 400,
+        dotY: 300,
+        textX: 400,
+        textY: 294,
+        box: { minX: 350, minY: 280, maxX: 450, maxY: 304 },
+        priority: 1000000000,
+        isSelected: false,
+        isHovered: true,
+        fontSize: 15,
+        fontWeight: 700,
+      },
+    ]
+
+    expect(() => renderLabelsToCanvas(mockCtx, labels, 800, 600)).not.toThrow()
+  })
+
+  it("places only hovered or selected labels when onlyHoveredOrSelected is true", () => {
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 0.1, 1000)
+    camera.position.set(0, 0, 320)
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    camera.updateProjectionMatrix()
+
+    const features: GeoJSONFeature[] = [
+      {
+        type: "Feature",
+        id: "f1",
+        properties: { name: "Country A", labelLat: 0, labelLng: 0, AREA: 100000 },
+        geometry: { type: "Point", coordinates: [0, 0] },
+      },
+      {
+        type: "Feature",
+        id: "f2",
+        properties: { name: "Country B", labelLat: 20, labelLng: 20, AREA: 100000 },
+        geometry: { type: "Point", coordinates: [20, 20] },
+      },
+    ]
+
+    const placed = computePlacedLabels(features, camera, 800, 600, {
+      hoveredFeatureId: "f2",
+      onlyHoveredOrSelected: true,
+    })
+
+    expect(placed.length).toBe(1)
+    expect(placed[0].name).toBe("Country B")
+    expect(placed[0].isHovered).toBe(true)
   })
 })
 

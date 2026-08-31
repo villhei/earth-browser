@@ -49,11 +49,17 @@ export function getPolygonCapMaterial(
 
   const isSelected = !!(
     options.selectedFeatureId &&
-    (feature.id === options.selectedFeatureId || name === options.selectedFeatureId)
+    (String(feature.id) === String(options.selectedFeatureId) ||
+      name === options.selectedFeatureId ||
+      props.name === options.selectedFeatureId ||
+      props.formal_name === options.selectedFeatureId)
   )
   const isHovered = !!(
     options.hoveredFeatureId &&
-    (feature.id === options.hoveredFeatureId || name === options.hoveredFeatureId)
+    (String(feature.id) === String(options.hoveredFeatureId) ||
+      name === options.hoveredFeatureId ||
+      props.name === options.hoveredFeatureId ||
+      props.formal_name === options.hoveredFeatureId)
   )
 
   const subjugation = getSubjugationInfo(name, props)

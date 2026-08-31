@@ -48,6 +48,11 @@ export interface HistoricalGlobeProps {
   selectedFeatureId?: string | null
 
   /**
+   * Currently hovered feature ID or name to highlight.
+   */
+  hoveredFeatureId?: string | null
+
+  /**
    * Callback fired when a country/region polygon is clicked.
    */
   onFeatureClick?: (feature: GeoJSONFeature | null) => void

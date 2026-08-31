@@ -20,6 +20,7 @@ import {
   PlacedLabel,
   computePlacedLabels,
   renderLabelsToCanvas,
+  cartesian2Polar,
 } from "./labels"
 import { GeoJSONFeature } from "../../types"
 
@@ -40,6 +41,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   sideColor = DEFAULT_SIDE_COLOR,
   strokeColor = DEFAULT_STROKE_COLOR,
   selectedFeatureId = null,
+  hoveredFeatureId = null,
   showLabels = true,
   labelSize = 14,
   labelTolerance = 10,
@@ -65,7 +67,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const allFeatures = data?.features || []
     return allFeatures.filter((feat) => {
       const props = feat.properties || {}
-      const name = props.name || props.NAME || ""
+      const name = props.name || props.NAME || props.NAME_LONG || props.formal_name || ""
       return !props.is_unclaimed && !isNeutralOrUnclaimed(name)
     })
   }, [data])
@@ -79,6 +81,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const layerAltitudeRef = useRef(layerAltitude)
   const elevationScaleRef = useRef(elevationScale)
   const selectedFeatureIdRef = useRef(selectedFeatureId)
+  const hoveredFeatureIdRef = useRef(hoveredFeatureId)
   const hoveredFeatureRef = useRef(hoveredFeature)
   const onFeatureClickRef = useRef(onFeatureClick)
   const onFeatureHoverRef = useRef(onFeatureHover)
@@ -92,6 +95,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     layerAltitudeRef.current = layerAltitude
     elevationScaleRef.current = elevationScale
     selectedFeatureIdRef.current = selectedFeatureId
+    hoveredFeatureIdRef.current = hoveredFeatureId
     hoveredFeatureRef.current = hoveredFeature
     onFeatureClickRef.current = onFeatureClick
     onFeatureHoverRef.current = onFeatureHover
@@ -104,6 +108,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     layerAltitude,
     elevationScale,
     selectedFeatureId,
+    hoveredFeatureId,
     hoveredFeature,
     onFeatureClick,
     onFeatureHover,
@@ -173,7 +178,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const raycaster = new THREE.Raycaster()
     const mouse = new THREE.Vector2()
 
-    const getIntersectedFeature = (clientX: number, clientY: number): GeoJSONFeature | null => {
+    const getIntersectedFeature = (
+      clientX: number,
+      clientY: number,
+    ): { feature: GeoJSONFeature; point: THREE.Vector3 } | null => {
       const rect = renderer.domElement.getBoundingClientRect()
       mouse.x = ((clientX - rect.left) / rect.width) * 2 - 1
       mouse.y = -((clientY - rect.top) / rect.height) * 2 + 1
@@ -195,8 +203,15 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         ) {
           current = current.parent
         }
-        if (current && current.__data && current.__data.geometry) {
-          return current.__data as GeoJSONFeature
+        if (current && current.__data) {
+          const raw = current.__data
+          const feat = (raw.data || raw) as GeoJSONFeature
+          if (feat && (feat.geometry || feat.properties || feat.type === "Feature")) {
+            return {
+              feature: feat,
+              point: hit.point,
+            }
+          }
         }
       }
       return null
@@ -224,26 +239,52 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       return null
     }
 
+    let isMouseDown = false
     let isDragging = false
     let pointerDownPos = { x: 0, y: 0 }
     let pendingPointer: { x: number; y: number } | null = null
     let hasPendingPointer = false
+    let hoveredPointLat = 0
+    let hoveredPointLng = 0
+    let hasHoveredPoint = false
 
     const handlePointerDown = (e: MouseEvent) => {
+      isMouseDown = true
       isDragging = false
       pointerDownPos = { x: e.clientX, y: e.clientY }
     }
 
     const handlePointerMove = (e: MouseEvent) => {
-      const dx = Math.abs(e.clientX - pointerDownPos.x)
-      const dy = Math.abs(e.clientY - pointerDownPos.y)
-      if (dx > 4 || dy > 4) {
-        isDragging = true
-      }
-
-      if (!isDragging) {
+      if (isMouseDown || e.buttons !== 0) {
+        const dx = Math.abs(e.clientX - pointerDownPos.x)
+        const dy = Math.abs(e.clientY - pointerDownPos.y)
+        if (dx > 4 || dy > 4) {
+          isDragging = true
+        }
+      } else {
+        isDragging = false
         pendingPointer = { x: e.clientX, y: e.clientY }
         hasPendingPointer = true
+      }
+    }
+
+    const handlePointerUp = () => {
+      isMouseDown = false
+    }
+
+    const handlePointerLeave = () => {
+      isMouseDown = false
+      isDragging = false
+      pendingPointer = null
+      hasPendingPointer = false
+      hasHoveredPoint = false
+      const curHov = hoveredFeatureRef.current
+      if (curHov !== null) {
+        hoveredFeatureRef.current = null
+        setHoveredFeature(null)
+        if (onFeatureHoverRef.current) {
+          onFeatureHoverRef.current(null)
+        }
       }
     }
 
@@ -258,13 +299,19 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         }
 
         // 2. Fall back to 3D geometry click
-        const feat = getIntersectedFeature(e.clientX, e.clientY)
-        if (onFeatureClickRef.current) onFeatureClickRef.current(feat)
+        const hit = getIntersectedFeature(e.clientX, e.clientY)
+        if (onFeatureClickRef.current) onFeatureClickRef.current(hit?.feature || null)
       }
     }
 
+    container.addEventListener("pointerdown", handlePointerDown as any)
+    container.addEventListener("pointermove", handlePointerMove as any)
+    container.addEventListener("pointerup", handlePointerUp as any)
+    container.addEventListener("pointerleave", handlePointerLeave as any)
     container.addEventListener("mousedown", handlePointerDown)
     container.addEventListener("mousemove", handlePointerMove)
+    container.addEventListener("mouseup", handlePointerUp)
+    container.addEventListener("mouseleave", handlePointerLeave)
     container.addEventListener("click", handleClick)
 
     // State trackers for label engine dirty-checking to eliminate 0-cost idle rendering
@@ -272,6 +319,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const lastCamQuat = new THREE.Quaternion()
     let lastSelectedId: string | null = null
     let lastHoveredId: string | null = null
+    let lastHoveredLat = 0
+    let lastHoveredLng = 0
     let lastW = 0
     let lastH = 0
     let lastLabelSize = 0
@@ -296,22 +345,46 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           container.style.cursor = "pointer"
           const curHov = hoveredFeatureRef.current
           const nextHov = hitLabel.feature
-          if (
-            curHov?.id !== nextHov.id ||
-            curHov?.properties?.name !== nextHov.properties?.name
-          ) {
+          const curHovId =
+            curHov?.id != null
+              ? String(curHov.id)
+              : curHov?.properties?.name || null
+          const nextHovId =
+            nextHov?.id != null
+              ? String(nextHov.id)
+              : nextHov?.properties?.name || null
+
+          if (curHovId !== nextHovId) {
+            hoveredFeatureRef.current = nextHov
             setHoveredFeature(nextHov)
             if (onFeatureHoverRef.current)
               onFeatureHoverRef.current(nextHov)
           }
         } else {
           // 2. Fall back to 3D geometry hit
-          const feat = getIntersectedFeature(px, py)
+          const hit = getIntersectedFeature(px, py)
+          const feat = hit?.feature || null
+          if (hit) {
+            const polar = cartesian2Polar(hit.point)
+            hoveredPointLat = polar.lat
+            hoveredPointLng = polar.lng
+            hasHoveredPoint = true
+          } else {
+            hasHoveredPoint = false
+          }
+
           const curHov = hoveredFeatureRef.current
-          if (
-            curHov?.id !== feat?.id ||
-            curHov?.properties?.name !== feat?.properties?.name
-          ) {
+          const curHovId =
+            curHov?.id != null
+              ? String(curHov.id)
+              : curHov?.properties?.name || null
+          const nextHovId =
+            feat?.id != null
+              ? String(feat.id)
+              : feat?.properties?.name || null
+
+          if (curHovId !== nextHovId) {
+            hoveredFeatureRef.current = feat
             setHoveredFeature(feat)
             if (onFeatureHoverRef.current)
               onFeatureHoverRef.current(feat)
@@ -327,9 +400,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         const curFeatures = renderableFeaturesRef.current
         const curSelectedId = selectedFeatureIdRef.current
         const curHoveredId =
-          hoveredFeatureRef.current?.id ||
-          hoveredFeatureRef.current?.properties?.name ||
-          null
+          hoveredFeatureIdRef.current ??
+          (hoveredFeatureRef.current?.id != null
+            ? String(hoveredFeatureRef.current.id)
+            : hoveredFeatureRef.current?.properties?.name || null)
         const curShowLabels = showLabelsRef.current
         const curLabelSize = labelSizeRef.current
         const curLabelTol = labelToleranceRef.current
@@ -340,10 +414,16 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           lastCamPos.distanceToSquared(camera.position) > 1e-4 ||
           Math.abs(lastCamQuat.dot(camera.quaternion) - 1) > 1e-4
 
+        const isHoverPointDirty =
+          hasHoveredPoint &&
+          (Math.abs(lastHoveredLat - hoveredPointLat) > 1e-3 ||
+            Math.abs(lastHoveredLng - hoveredPointLng) > 1e-3)
+
         const isLabelsDirty =
           isCamDirty ||
           lastSelectedId !== curSelectedId ||
           lastHoveredId !== curHoveredId ||
+          isHoverPointDirty ||
           lastW !== w ||
           lastH !== h ||
           lastLabelSize !== curLabelSize ||
@@ -358,6 +438,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           lastCamQuat.copy(camera.quaternion)
           lastSelectedId = curSelectedId
           lastHoveredId = curHoveredId
+          lastHoveredLat = hoveredPointLat
+          lastHoveredLng = hoveredPointLng
           lastW = w
           lastH = h
           lastLabelSize = curLabelSize
@@ -370,7 +452,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           const c2d = labelsCanvasRef.current
           const ctx = c2d.getContext("2d")
           if (ctx) {
-            if (curShowLabels && curFeatures.length) {
+            const shouldRender = (curShowLabels || curHoveredId) && curFeatures.length > 0
+            if (shouldRender) {
               const placed = computePlacedLabels(
                 curFeatures,
                 camera,
@@ -381,8 +464,12 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
                   elevationScale: curElevScale,
                   selectedFeatureId: curSelectedId,
                   hoveredFeatureId: curHoveredId,
+                  hoveredPoint: hasHoveredPoint
+                    ? { lat: hoveredPointLat, lng: hoveredPointLng }
+                    : null,
                   baseFontSize: curLabelSize,
                   labelTolerance: curLabelTol,
+                  onlyHoveredOrSelected: !curShowLabels,
                 },
                 ctx,
               )
@@ -428,8 +515,14 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     window.addEventListener("resize", handleResize)
 
     return () => {
+      container.removeEventListener("pointerdown", handlePointerDown as any)
+      container.removeEventListener("pointermove", handlePointerMove as any)
+      container.removeEventListener("pointerup", handlePointerUp as any)
+      container.removeEventListener("pointerleave", handlePointerLeave as any)
       container.removeEventListener("mousedown", handlePointerDown)
       container.removeEventListener("mousemove", handlePointerMove)
+      container.removeEventListener("mouseup", handlePointerUp)
+      container.removeEventListener("mouseleave", handlePointerLeave)
       container.removeEventListener("click", handleClick)
       resizeObserver.disconnect()
       window.removeEventListener("resize", handleResize)
