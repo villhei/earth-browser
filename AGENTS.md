@@ -122,7 +122,7 @@ earth-browser/
   - Enriches properties with civilization lineage, culture groups, border precision ratings, and elevation tiers.
 - **Static Export (`npm run db:export`)**:
   - Exports the PostGIS-enriched era catalog (`public/data/eras.json`) and 53 era GeoJSON FeatureCollections (`public/data/eras/[slug].json`) into `public/data/`.
-  - Copied into `dist/data/` on `vite build` for 100% serverless, static bucket hosting.
+  - Copied into `docs/data/` on `vite build` for 100% serverless, static bucket hosting.
 
 ### Endpoints (Dev API & Static Data Layout)
 - `GET /api/eras` or static `/data/eras.json`: List of all 53 historical eras sorted chronologically with metadata.

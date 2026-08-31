@@ -126,31 +126,33 @@ export function MyEmbeddedGlobe({ geoJsonData }) {
 
 ---
 
+## Available Scripts
+
 - `npm run dev` / `npm start`: Runs both backend and frontend development servers.
 - `npm run server:dev`: Runs the Express backend server with live reload via `tsx`.
 - `npm run client:dev`: Runs Vite frontend development server on port 1234.
 - `npm run db:setup`: Runs migrations, ingests all GeoJSON datasets into PostGIS, and exports static JSON.
 - `npm run db:ingest`: Re-ingests all GeoJSON seed files into PostGIS.
 - `npm run db:export`: Exports PostGIS data to `public/data/` for static site hosting.
-- `npm run build`: Typechecks and compiles production bundle to `dist/`.
-- `npm run build:static`: Runs `db:export` and compiles static bundle to `dist/`.
+- `npm run build`: Single command that exports data and compiles production bundle to `docs/`.
 - `npm test`: Runs Vitest unit test suite.
 
 ---
 
-## Static Site & Bucket Deployment
+## Static Site & GitHub Pages Deployment
 
-Earth Browser can be deployed as a 100% static site with zero backend or database requirements (e.g. to AWS S3, Cloudflare Pages, GitHub Pages, or Google Cloud Storage):
+Earth Browser compiles to the `docs/` directory, making it directly deployable to GitHub Pages (or AWS S3, Cloudflare Pages, etc.) with zero backend or database requirements:
 
-1. Run the static data export:
-   ```bash
-   npm run db:export
-   ```
-2. Build the static site bundle:
+1. Build the static bundle:
    ```bash
    npm run build
    ```
-3. Deploy the contents of the `dist/` directory to any static file hosting or bucket. The bundle is site-agnostic and supports root domains as well as arbitrary subpath deployments.
+2. For **GitHub Pages**:
+   - In your GitHub repository settings, go to **Settings > Pages**.
+   - Under **Build and deployment > Source**, select **Deploy from a branch**.
+   - Choose your branch (e.g. `main`) and select the `/docs` folder.
+   - Click **Save**. The site will be live at `https://<username>.github.io/<repository-name>/`.
+
 
 
 ---

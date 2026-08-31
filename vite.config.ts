@@ -7,10 +7,10 @@ function githubPagesPlugin(): Plugin {
   return {
     name: "github-pages-bundle-enhancer",
     closeBundle() {
-      const distDir = path.resolve(__dirname, "dist")
-      const indexPath = path.join(distDir, "index.html")
-      const fallbackPath = path.join(distDir, "404.html")
-      const noJekyllPath = path.join(distDir, ".nojekyll")
+      const docsDir = path.resolve(__dirname, "docs")
+      const indexPath = path.join(docsDir, "index.html")
+      const fallbackPath = path.join(docsDir, "404.html")
+      const noJekyllPath = path.join(docsDir, ".nojekyll")
 
       // 1. Ensure .nojekyll exists
       if (!fs.existsSync(noJekyllPath)) {
@@ -27,6 +27,9 @@ function githubPagesPlugin(): Plugin {
 
 export default defineConfig({
   base: "./",
+  build: {
+    outDir: "docs",
+  },
   plugins: [react(), githubPagesPlugin()],
   resolve: {
     alias: {
@@ -43,3 +46,4 @@ export default defineConfig({
     },
   },
 })
+
