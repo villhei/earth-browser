@@ -37,6 +37,9 @@ export interface LabelComputeOptions {
   paddingX?: number
   paddingY?: number
   maxLabels?: number
+  baseFontSize?: number
+  labelSize?: number
+  labelTolerance?: number
 }
 
 /**
@@ -47,7 +50,7 @@ export function polar2Cartesian(
   lat: number,
   lng: number,
   relAltitude: number = 0,
-  globeRadius: number = GLOBE_RADIUS
+  globeRadius: number = GLOBE_RADIUS,
 ): THREE.Vector3 {
   const phi = ((90 - lat) * Math.PI) / 180
   const theta = ((90 - lng) * Math.PI) / 180
@@ -57,7 +60,7 @@ export function polar2Cartesian(
   return new THREE.Vector3(
     r * phiSin * Math.cos(theta),
     r * Math.cos(phi),
-    r * phiSin * Math.sin(theta)
+    r * phiSin * Math.sin(theta),
   )
 }
 
@@ -68,7 +71,7 @@ export function polar2Cartesian(
 export function isPointBehindGlobe(
   pos: THREE.Vector3,
   cameraPos: THREE.Vector3,
-  globeRadius: number = GLOBE_RADIUS
+  globeRadius: number = GLOBE_RADIUS,
 ): boolean {
   const povDist = cameraPos.length()
   const posDist = pos.length()
@@ -100,7 +103,7 @@ export function projectToScreen(
   pos: THREE.Vector3,
   camera: THREE.Camera,
   width: number,
-  height: number
+  height: number,
 ): { x: number; y: number; z: number } | null {
   const projected = pos.clone().project(camera)
 
@@ -119,8 +122,14 @@ export function projectToScreen(
  * Estimates approximate surface area from GeoJSON geometry coordinates
  * when precomputed area properties are unavailable.
  */
-export function estimateGeometryArea(geometry: GeoJSONGeometry | undefined): number {
-  if (!geometry || !geometry.coordinates || !Array.isArray(geometry.coordinates)) {
+export function estimateGeometryArea(
+  geometry: GeoJSONGeometry | undefined,
+): number {
+  if (
+    !geometry ||
+    !geometry.coordinates ||
+    !Array.isArray(geometry.coordinates)
+  ) {
     return 1000
   }
 
@@ -164,7 +173,9 @@ export function estimateGeometryArea(geometry: GeoJSONGeometry | undefined): num
  * Computes polygon ring centroid and approximate area.
  * Unwraps longitudes across anti-meridian to prevent artificial Atlantic/ocean centroids.
  */
-function computeRingCentroid(ring: number[][]): { lng: number; lat: number; area: number } | null {
+function computeRingCentroid(
+  ring: number[][],
+): { lng: number; lat: number; area: number } | null {
   if (!ring || ring.length < 3) return null
   const refLng = ring[0][0]
   let area2 = 0
@@ -220,9 +231,13 @@ function computeRingCentroid(ring: number[][]): { lng: number; lat: number; area
  * so label anchors are placed on actual land rather than floating in open ocean.
  */
 export function computeGeometryCentroid(
-  geometry: GeoJSONGeometry | undefined
+  geometry: GeoJSONGeometry | undefined,
 ): { lat: number; lng: number } | null {
-  if (!geometry || !geometry.coordinates || !Array.isArray(geometry.coordinates)) {
+  if (
+    !geometry ||
+    !geometry.coordinates ||
+    !Array.isArray(geometry.coordinates)
+  ) {
     return null
   }
 
@@ -283,7 +298,7 @@ export function computeGeometryCentroid(
 export function getFeaturePriority(
   feature: GeoJSONFeature,
   selectedFeatureId?: string | null,
-  hoveredFeatureId?: string | null
+  hoveredFeatureId?: string | null,
 ): number {
   const name = feature.properties?.name || ""
   const id = feature.id || name
@@ -297,7 +312,10 @@ export function getFeaturePriority(
   }
 
   // 2. Hovered country is second highest priority
-  if (hoveredFeatureId && (id === hoveredFeatureId || name === hoveredFeatureId)) {
+  if (
+    hoveredFeatureId &&
+    (id === hoveredFeatureId || name === hoveredFeatureId)
+  ) {
     return 500_000_000
   }
 
@@ -328,7 +346,7 @@ export function checkAABBOverlap(
   a: BoundingBox2D,
   b: BoundingBox2D,
   padX: number = 0,
-  padY: number = 0
+  padY: number = 0,
 ): boolean {
   return (
     a.minX - padX < b.maxX + padX &&
@@ -344,7 +362,7 @@ export function checkAABBOverlap(
 export function measureTextWidth(
   text: string,
   fontSize: number,
-  ctx?: CanvasRenderingContext2D | null
+  ctx?: CanvasRenderingContext2D | null,
 ): number {
   if (ctx) {
     return ctx.measureText(text).width
@@ -362,7 +380,7 @@ export function computePlacedLabels(
   width: number,
   height: number,
   options: LabelComputeOptions = {},
-  ctx?: CanvasRenderingContext2D | null
+  ctx?: CanvasRenderingContext2D | null,
 ): PlacedLabel[] {
   if (!features.length || width <= 0 || height <= 0) {
     return []
@@ -372,10 +390,13 @@ export function computePlacedLabels(
     layerAltitude = 0.005,
     selectedFeatureId = null,
     hoveredFeatureId = null,
-    paddingX = 10,
-    paddingY = 6,
-    maxLabels = 80,
+    maxLabels = 120,
   } = options
+
+  const baseFontSize = options.baseFontSize ?? options.labelSize ?? 14
+  const tolerance = options.labelTolerance ?? options.paddingX ?? 10
+  const paddingX = tolerance
+  const paddingY = options.paddingY ?? Math.max(2, Math.round(tolerance * 0.6))
 
   const cameraPos = new THREE.Vector3()
   camera.getWorldPosition(cameraPos)
@@ -416,7 +437,12 @@ export function computePlacedLabels(
       lng = centroid.lng
     }
 
-    const worldPos = polar2Cartesian(lat, lng, layerAltitude + 0.005, GLOBE_RADIUS)
+    const worldPos = polar2Cartesian(
+      lat,
+      lng,
+      layerAltitude + 0.005,
+      GLOBE_RADIUS,
+    )
 
     // Occlusion check against globe sphere horizon
     if (isPointBehindGlobe(worldPos, cameraPos, GLOBE_RADIUS)) {
@@ -444,7 +470,11 @@ export function computePlacedLabels(
       hoveredFeatureId != null &&
       (id === hoveredFeatureId || name === hoveredFeatureId)
 
-    const priority = getFeaturePriority(feat, selectedFeatureId, hoveredFeatureId)
+    const priority = getFeaturePriority(
+      feat,
+      selectedFeatureId,
+      hoveredFeatureId,
+    )
 
     const dx = screenPos.x - centerX
     const dy = screenPos.y - centerY
@@ -481,14 +511,24 @@ export function computePlacedLabels(
   const placedBoxes: BoundingBox2D[] = []
 
   for (const candidate of candidates) {
-    if (placedLabels.length >= maxLabels && !candidate.isSelected && !candidate.isHovered) {
+    if (
+      placedLabels.length >= maxLabels &&
+      !candidate.isSelected &&
+      !candidate.isHovered
+    ) {
       break
     }
 
-    // Fixed consistent font sizing:
-    // 12px for standard countries, 13px bold for selected/hovered/empires
-    const isMajor = candidate.priority > 500_000 || candidate.isSelected || candidate.isHovered
-    const fontSize = candidate.isSelected ? 13 : isMajor ? 12 : 11
+    // Configurable font sizing based on baseFontSize
+    const isMajor =
+      candidate.priority > 500_000 ||
+      candidate.isSelected ||
+      candidate.isHovered
+    const fontSize = candidate.isSelected
+      ? baseFontSize + 1
+      : isMajor
+        ? baseFontSize
+        : Math.max(8, baseFontSize - 1)
     const fontWeight = candidate.isSelected ? 700 : isMajor ? 600 : 500
 
     if (ctx) {
@@ -561,13 +601,23 @@ export function renderLabelsToCanvas(
   placedLabels: PlacedLabel[],
   width: number,
   height: number,
-  _dpr: number = 1
+  _dpr: number = 1,
 ): void {
   ctx.save()
   ctx.clearRect(0, 0, width, height)
 
   for (const label of placedLabels) {
-    const { name, dotX, dotY, textX, textY, isSelected, isHovered, fontSize, fontWeight } = label
+    const {
+      name,
+      dotX,
+      dotY,
+      textX,
+      textY,
+      isSelected,
+      isHovered,
+      fontSize,
+      fontWeight,
+    } = label
 
     // 1. Draw Anchor Dot
     const dotRadius = isSelected ? 3.5 : isHovered ? 3.0 : 2.2

@@ -41,6 +41,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   strokeColor = DEFAULT_STROKE_COLOR,
   selectedFeatureId = null,
   showLabels = true,
+  labelSize = 14,
+  labelTolerance = 10,
   polygonCapCurvatureResolution = DEFAULT_CAP_CURVATURE_RESOLUTION,
   onFeatureClick,
   onFeatureHover,
@@ -62,6 +64,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   // Mutable refs to keep animation loop in sync with props without re-initializing
   const dataRef = useRef(data)
   const showLabelsRef = useRef(showLabels)
+  const labelSizeRef = useRef(labelSize)
+  const labelToleranceRef = useRef(labelTolerance)
   const layerAltitudeRef = useRef(layerAltitude)
   const selectedFeatureIdRef = useRef(selectedFeatureId)
   const hoveredFeatureRef = useRef(hoveredFeature)
@@ -71,6 +75,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   useEffect(() => {
     dataRef.current = data
     showLabelsRef.current = showLabels
+    labelSizeRef.current = labelSize
+    labelToleranceRef.current = labelTolerance
     layerAltitudeRef.current = layerAltitude
     selectedFeatureIdRef.current = selectedFeatureId
     hoveredFeatureRef.current = hoveredFeature
@@ -79,6 +85,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   }, [
     data,
     showLabels,
+    labelSize,
+    labelTolerance,
     layerAltitude,
     selectedFeatureId,
     hoveredFeature,
@@ -186,8 +194,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
                   hoveredFeatureRef.current?.id ||
                   hoveredFeatureRef.current?.properties?.name ||
                   null,
-                paddingX: 10,
-                paddingY: 6,
+                baseFontSize: labelSizeRef.current,
+                labelTolerance: labelToleranceRef.current,
               },
               ctx,
             )

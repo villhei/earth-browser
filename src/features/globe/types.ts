@@ -57,6 +57,18 @@ export interface HistoricalGlobeProps {
   showLabels?: boolean
 
   /**
+   * Base font size (in px) for country labels. Defaults to 14.
+   */
+  labelSize?: number
+
+  /**
+   * Collision and spacing tolerance (in px) for label appearance.
+   * Lower values allow higher label density; higher values yield looser spacing.
+   * Defaults to 10.
+   */
+  labelTolerance?: number
+
+  /**
    * Resolution (in angular degrees) of the polygon cap surface curvature.
    * Lower values yield finer subdivision that closely hugs the sphere surface,
    * preventing large region polygons from sinking into or intersecting the terrain.

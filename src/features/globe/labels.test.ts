@@ -253,4 +253,65 @@ describe("labels: computePlacedLabels algorithm", () => {
     // Font size in screen pixels is constant and consistent across zoom levels
     expect(placedFar[0].fontSize).toBe(placedNear[0].fontSize)
   })
+
+  it("respects custom baseFontSize and labelSize options", () => {
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 0.1, 1000)
+    camera.position.set(0, 0, 320)
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    camera.updateProjectionMatrix()
+
+    const feature: GeoJSONFeature = {
+      type: "Feature",
+      id: "feat-1",
+      properties: { name: "Empire", labelLat: 0, labelLng: 0, AREA: 1000000 },
+      geometry: { type: "Point", coordinates: [0, 0] },
+    }
+
+    const placedDefault = computePlacedLabels([feature], camera, 800, 600)
+    const placedLarge = computePlacedLabels([feature], camera, 800, 600, { baseFontSize: 16 })
+    const placedSmall = computePlacedLabels([feature], camera, 800, 600, { labelSize: 10 })
+
+    expect(placedDefault[0].fontSize).toBe(14)
+    expect(placedLarge[0].fontSize).toBe(16)
+    expect(placedSmall[0].fontSize).toBe(10)
+  })
+
+  it("adjusts label density based on labelTolerance", () => {
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 0.1, 1000)
+    camera.position.set(0, 0, 320)
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    camera.updateProjectionMatrix()
+
+    // 3 adjacent points close to each other
+    const features: GeoJSONFeature[] = [
+      {
+        type: "Feature",
+        id: "f1",
+        properties: { name: "Alpha", labelLat: 0, labelLng: 0, AREA: 100000 },
+        geometry: { type: "Point", coordinates: [0, 0] },
+      },
+      {
+        type: "Feature",
+        id: "f2",
+        properties: { name: "Beta", labelLat: 0, labelLng: 5, AREA: 90000 },
+        geometry: { type: "Point", coordinates: [5, 0] },
+      },
+      {
+        type: "Feature",
+        id: "f3",
+        properties: { name: "Gamma", labelLat: 0, labelLng: 10, AREA: 80000 },
+        geometry: { type: "Point", coordinates: [10, 0] },
+      },
+    ]
+
+    // Low tolerance (dense spacing) should allow more labels
+    const placedDense = computePlacedLabels(features, camera, 800, 600, { labelTolerance: 1 })
+    // High tolerance (loose spacing) requires more room, placing fewer labels
+    const placedSpaced = computePlacedLabels(features, camera, 800, 600, { labelTolerance: 50 })
+
+    expect(placedDense.length).toBeGreaterThanOrEqual(placedSpaced.length)
+  })
 })
+

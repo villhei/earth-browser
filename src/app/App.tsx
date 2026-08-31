@@ -31,6 +31,9 @@ export const App: React.FC = () => {
     opacity: 0.55,
     sideColor: "#ffffff",
     strokeColor: "#000000",
+    showLabels: true,
+    labelSize: 14,
+    labelTolerance: 10,
   })
 
   // 1. Fetch available eras on mount
@@ -113,6 +116,8 @@ export const App: React.FC = () => {
               selectedFeature?.id || selectedFeature?.properties?.name || null
             }
             showLabels={globeConfig.showLabels !== false}
+            labelSize={globeConfig.labelSize}
+            labelTolerance={globeConfig.labelTolerance}
             onFeatureClick={(feature) => setSelectedFeature(feature)}
           />
         </div>

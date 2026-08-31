@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { GlobeConfig, GlobeTexture } from "../types"
+import { GlobeConfig } from "../types"
 import "./ControlsOverlay.css"
 
 interface ControlsOverlayProps {
@@ -12,6 +12,9 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onChangeConfig,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const labelSize = config.labelSize ?? 14
+  const labelTolerance = config.labelTolerance ?? 10
 
   return (
     <div className="controls-overlay">
@@ -33,64 +36,6 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
             >
               ✕
             </button>
-          </div>
-
-          <div className="controls-group">
-            <label className="controls-label">Earth Texture</label>
-            <div className="controls-grid-2">
-              <button
-                className={`controls-pill ${
-                  config.texture === GlobeTexture.EARTH_BLUE_MARBLE ? "active" : ""
-                }`}
-                onClick={() =>
-                  onChangeConfig({
-                    ...config,
-                    texture: GlobeTexture.EARTH_BLUE_MARBLE,
-                  })
-                }
-              >
-                Marble
-              </button>
-              <button
-                className={`controls-pill ${
-                  config.texture === GlobeTexture.EARTH_DARK ? "active" : ""
-                }`}
-                onClick={() =>
-                  onChangeConfig({
-                    ...config,
-                    texture: GlobeTexture.EARTH_DARK,
-                  })
-                }
-              >
-                Dark
-              </button>
-              <button
-                className={`controls-pill ${
-                  config.texture === GlobeTexture.EARTH_DAY ? "active" : ""
-                }`}
-                onClick={() =>
-                  onChangeConfig({
-                    ...config,
-                    texture: GlobeTexture.EARTH_DAY,
-                  })
-                }
-              >
-                Day
-              </button>
-              <button
-                className={`controls-pill ${
-                  config.texture === GlobeTexture.EARTH_NIGHT ? "active" : ""
-                }`}
-                onClick={() =>
-                  onChangeConfig({
-                    ...config,
-                    texture: GlobeTexture.EARTH_NIGHT,
-                  })
-                }
-              >
-                Night
-              </button>
-            </div>
           </div>
 
           <div className="controls-group">
@@ -154,6 +99,52 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               </button>
             </div>
           </div>
+
+          {config.showLabels !== false && (
+            <>
+              <div className="controls-group">
+                <div className="controls-label-row">
+                  <label className="controls-label">Label Size</label>
+                  <span className="controls-val">{labelSize}px</span>
+                </div>
+                <input
+                  type="range"
+                  min={9}
+                  max={22}
+                  step={1}
+                  value={labelSize}
+                  onChange={(e) =>
+                    onChangeConfig({
+                      ...config,
+                      labelSize: parseInt(e.target.value, 10),
+                    })
+                  }
+                  className="controls-slider"
+                />
+              </div>
+
+              <div className="controls-group">
+                <div className="controls-label-row">
+                  <label className="controls-label">Appearance Tolerance</label>
+                  <span className="controls-val">{labelTolerance}px</span>
+                </div>
+                <input
+                  type="range"
+                  min={2}
+                  max={24}
+                  step={2}
+                  value={labelTolerance}
+                  onChange={(e) =>
+                    onChangeConfig({
+                      ...config,
+                      labelTolerance: parseInt(e.target.value, 10),
+                    })
+                  }
+                  className="controls-slider"
+                />
+              </div>
+            </>
+          )}
         </div>
       )}
     </div>

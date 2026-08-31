@@ -63,4 +63,6 @@ export interface GlobeConfig {
   strokeColor: string
   opacity: number
   showLabels?: boolean
+  labelSize?: number
+  labelTolerance?: number
 }
