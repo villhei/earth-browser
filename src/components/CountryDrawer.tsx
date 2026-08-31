@@ -1,6 +1,11 @@
 import React from "react"
 import { GeoJSONFeature, Era } from "../types"
-import { getEntityMetadata } from "../features/globe/colors"
+import {
+  getEntityMetadata,
+  getSubjugationInfo,
+  getBorderPrecision,
+  getCountryColor,
+} from "../features/globe/colors"
 import "./CountryDrawer.css"
 
 interface CountryDrawerProps {
@@ -25,9 +30,16 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
   const sovereignty = props.SOVEREIGNT || props.CONTROLLIN
 
   const meta = getEntityMetadata(name, props)
-  const color = props.color || meta.color
-  const canonicalName = props.canonical_name || meta.canonicalName
-  const cultureGroup = props.culture_group || meta.cultureGroup
+  const color = meta.color
+  const canonicalName = meta.canonicalName
+  const cultureGroup = meta.cultureGroup
+
+  const partOf = (props.PARTOF || props.part_of || "").trim()
+  const subjectTo = (props.SUBJECTO || props.subject_to || props.SUBCTO || "").trim()
+  const subjugation = getSubjugationInfo(name, props)
+  const borderPrecision = getBorderPrecision(props)
+
+  const parentColor = partOf ? getCountryColor(partOf, { name: partOf }) : null
 
   return (
     <div className="country-drawer">
@@ -70,12 +82,75 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
           </div>
         )}
 
+        {partOf && partOf.toLowerCase() !== name.toLowerCase() && (
+          <div className="drawer-row">
+            <span className="drawer-label">Part of (Parent):</span>
+            <span className="drawer-value" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              {parentColor && (
+                <span
+                  style={{
+                    width: "8px",
+                    height: "8px",
+                    borderRadius: "50%",
+                    backgroundColor: parentColor,
+                    display: "inline-block",
+                  }}
+                />
+              )}
+              {partOf}
+            </span>
+          </div>
+        )}
+
+        {subjugation.isSubjugated && subjectTo && (
+          <div className="drawer-row">
+            <span className="drawer-label">Subjugated to:</span>
+            <span
+              className="drawer-value badge"
+              style={{
+                background: "repeating-linear-gradient(45deg, rgba(239, 68, 68, 0.2), rgba(239, 68, 68, 0.2) 6px, rgba(56, 189, 248, 0.2) 6px, rgba(56, 189, 248, 0.2) 12px)",
+                color: "#f87171",
+                border: "1px solid rgba(239, 68, 68, 0.4)",
+                fontWeight: 600,
+              }}
+            >
+              ☵ {subjectTo}
+            </span>
+          </div>
+        )}
+
         {canonicalName && canonicalName !== name && (
           <div className="drawer-row">
             <span className="drawer-label">Civilization / Lineage:</span>
             <span className="drawer-value">{canonicalName}</span>
           </div>
         )}
+
+        <div className="drawer-row">
+          <span className="drawer-label">Border Precision:</span>
+          {borderPrecision === 3 ? (
+            <span
+              className="drawer-value badge"
+              style={{ backgroundColor: "rgba(34, 197, 94, 0.15)", color: "#4ade80", border: "1px solid rgba(34, 197, 94, 0.3)" }}
+            >
+              Exact (Thin Line)
+            </span>
+          ) : borderPrecision === 2 ? (
+            <span
+              className="drawer-value badge"
+              style={{ backgroundColor: "rgba(245, 158, 11, 0.15)", color: "#fbbf24", border: "1px solid rgba(245, 158, 11, 0.3)" }}
+            >
+              Approximate (Medium Line)
+            </span>
+          ) : (
+            <span
+              className="drawer-value badge"
+              style={{ backgroundColor: "rgba(148, 163, 184, 0.15)", color: "#cbd5e1", border: "1px solid rgba(148, 163, 184, 0.3)" }}
+            >
+              Frontier / Estimate (Thick Line)
+            </span>
+          )}
+        </div>
 
         {iso && (
           <div className="drawer-row">
@@ -84,7 +159,7 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
           </div>
         )}
 
-        {sovereignty && sovereignty !== name && (
+        {sovereignty && sovereignty !== name && !subjugation.isSubjugated && (
           <div className="drawer-row">
             <span className="drawer-label">Sovereignty / Control:</span>
             <span className="drawer-value">{sovereignty}</span>

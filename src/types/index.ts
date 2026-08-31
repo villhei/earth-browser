@@ -19,6 +19,12 @@ export interface GeoJSONProperties {
   canonical_name?: string
   culture_group?: string
   is_unclaimed?: boolean
+  border_precision?: number | null
+  BORDERPRECISION?: number | null
+  part_of?: string | null
+  PARTOF?: string | null
+  subject_to?: string | null
+  SUBJECTO?: string | null
   labelLng?: number
   labelLat?: number
   [key: string]: any

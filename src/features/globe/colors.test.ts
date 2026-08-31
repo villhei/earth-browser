@@ -4,6 +4,8 @@ import {
   getEntityMetadata,
   isNeutralOrUnclaimed,
   NEUTRAL_TERRITORY_COLOR,
+  getSubjugationInfo,
+  getBorderPrecision,
 } from "./colors"
 
 describe("Globe Colors & Lineage Engine", () => {
@@ -133,6 +135,105 @@ describe("Globe Colors & Lineage Engine", () => {
     const ayutthaya = getEntityMetadata("Ayutthaya")
     expect(ayutthaya.cultureGroup).toBe("Southeast Asia")
     expect(ayutthaya.color).toBe("#2563eb")
+
+    // Archaeological & Ancient Cultures in 700 BCE and other ancient datasets
+    const karasuk = getEntityMetadata("Karasuk culture")
+    expect(karasuk.cultureGroup).toBe("Central Asia")
+    expect(karasuk.color).toBe("#06b6d4") // Vivid cyan / turquoise
+
+    const chernoles = getEntityMetadata("Chernoles culture")
+    expect(chernoles.cultureGroup).toBe("Eastern Europe")
+    expect(chernoles.color).toBe("#10b981") // Vivid emerald green
+
+    const lusatian = getEntityMetadata("Lusatian culture")
+    expect(lusatian.cultureGroup).toBe("Central Europe")
+    expect(lusatian.color).toBe("#f59e0b") // Vivid amber gold
+
+    const milograd = getEntityMetadata("Milograd culture")
+    expect(milograd.cultureGroup).toBe("Eastern Europe")
+    expect(milograd.color).toBe("#8b5cf6") // Vivid violet / purple
+
+    const latene = getEntityMetadata("La Tène culture")
+    expect(latene.cultureGroup).toBe("Western Europe")
+    expect(latene.color).toBe("#15803d") // Vivid Celtic green
+
+    const jomon = getEntityMetadata("Late Jomon culture")
+    expect(jomon.cultureGroup).toBe("East Asia")
+    expect(jomon.color).toBe("#e11d48") // Vivid Japanese crimson
+
+    const austroAsiatic = getEntityMetadata("Austro-Asiatic rice farmers")
+    expect(austroAsiatic.cultureGroup).toBe("Southeast Asia")
+    expect(austroAsiatic.color).toBe("#059669") // Vivid jade green
+
+    const papuan = getEntityMetadata("Papuan neolithic farmers")
+    expect(papuan.cultureGroup).toBe("Oceania")
+    expect(papuan.color).toBe("#047857") // Vivid highland green
+
+    const shellfish = getEntityMetadata("Shellfish gatherers")
+    expect(shellfish.cultureGroup).toBe("Prehistoric & Archaeological")
+    expect(shellfish.color).toBe("#0891b2") // Vivid coastal cyan
+
+    // 10000 / 8000 BCE Mesolithic & Neolithic Farmers
+    const steppeMesolithic = getEntityMetadata("Steppe Mesolithic Hunter-Foragers")
+    expect(steppeMesolithic.color).toBe("#0284c7") // Vivid azure
+    expect(steppeMesolithic.lineageId).toBe("steppe-mesolithic")
+
+    const alluvialMesolithic = getEntityMetadata("Alluvial Lowland Mesolithic Hunter-Foragers")
+    expect(alluvialMesolithic.color).toBe("#d97706") // Vivid alluvial gold
+    expect(alluvialMesolithic.lineageId).toBe("alluvial-mesolithic")
+
+    const highlandMesolithic = getEntityMetadata("Highland Mesolithic Hunter-Foragers")
+    expect(highlandMesolithic.color).toBe("#7c3aed") // Vivid violet
+    expect(highlandMesolithic.lineageId).toBe("highland-mesolithic")
+
+    const coastalWoodland = getEntityMetadata("Coastal and Woodland Mesolithic Hunter-Foragers")
+    expect(coastalWoodland.color).toBe("#16a34a") // Vivid spring green
+    expect(coastalWoodland.lineageId).toBe("coastal-woodland-mesolithic")
+
+    const levantineNeolithic = getEntityMetadata("Levantine Corridor (Neolithic Farmers)")
+    expect(levantineNeolithic.color).toBe("#ea580c") // Vivid terracotta orange
+    expect(levantineNeolithic.lineageId).toBe("levantine-corridor-neolithic")
+
+    const neolithicFarmers = getEntityMetadata("Neolithic Farmers")
+    expect(neolithicFarmers.color).toBe("#eab308") // Vivid harvest gold
+    expect(neolithicFarmers.lineageId).toBe("neolithic-farmers")
+
+    // Early Hominins
+    const neanderthal = getEntityMetadata("Neanderthal")
+    expect(neanderthal.color).toBe("#2563eb")
+
+    const erectus = getEntityMetadata("Homo erectus")
+    expect(erectus.color).toBe("#dc2626")
+
+    // Verify visual distinguishability among 10000/8000 BCE groups
+    const distinctMesolithicNeolithicColors = new Set([
+      steppeMesolithic.color,
+      alluvialMesolithic.color,
+      highlandMesolithic.color,
+      coastalWoodland.color,
+      levantineNeolithic.color,
+      neolithicFarmers.color,
+    ])
+    expect(distinctMesolithicNeolithicColors.size).toBe(6)
+
+    // Verify visual distinguishability among ancient cultures
+    const distinctColors = new Set([
+      karasuk.color,
+      chernoles.color,
+      lusatian.color,
+      milograd.color,
+      latene.color,
+      jomon.color,
+      austroAsiatic.color,
+      papuan.color,
+      steppeMesolithic.color,
+      alluvialMesolithic.color,
+      highlandMesolithic.color,
+      coastalWoodland.color,
+      levantineNeolithic.color,
+      neolithicFarmers.color,
+    ])
+    expect(distinctColors.size).toBe(14)
   })
 
   it("returns deterministic golden-ratio HSL color for uncataloged ancient cultures", () => {
@@ -141,7 +242,54 @@ describe("Globe Colors & Lineage Engine", () => {
     const colorDiff = getCountryColor("Proto-Aurignacian Tribe")
 
     expect(color1).toBe(color2)
-    expect(color1).toMatch(/^hsl\(\d+,\s*68%,\s*52%\)$/)
+    expect(color1).toMatch(/^hsl\(\d+,\s*82%,\s*50%\)$/)
     expect(color1).not.toBe(colorDiff)
+  })
+
+  it("inherits parent entity color when PARTOF is defined", () => {
+    // Pomeranian culture with PARTOF: 'Baltic archeological cultures'
+    const pomeranianParentColor = getCountryColor("Pomeranian culture", {
+      PARTOF: "Baltic archeological cultures",
+    })
+    const balticCultureColor = getCountryColor("Baltic archeological cultures")
+    expect(pomeranianParentColor).toBe(balticCultureColor)
+
+    // Duchy of Swabia with PARTOF: 'Holy Roman Empire'
+    const swabiaColor = getCountryColor("Duchy of Swabia", {
+      PARTOF: "Holy Roman Empire",
+    })
+    const hreColor = getCountryColor("Holy Roman Empire")
+    expect(swabiaColor).toBe(hreColor)
+
+    // Without PARTOF, Swabia gets its own or regional color
+    const standaloneSwabia = getCountryColor("Duchy of Swabia")
+    expect(standaloneSwabia).toBeDefined()
+  })
+
+  it("identifies subjugation relationships via SUBJECTO", () => {
+    // Bosporian Kingdom subject to Roman Empire
+    const bosporusSubjugation = getSubjugationInfo("Bosporian Kingdom", {
+      NAME: "Bosporian Kingdom",
+      PARTOF: "Bosporian Kingdom",
+      SUBJECTO: "Roman Empire",
+    })
+    expect(bosporusSubjugation.isSubjugated).toBe(true)
+    expect(bosporusSubjugation.suzerainName).toBe("Roman Empire")
+    expect(bosporusSubjugation.suzerainColor).toBe(getCountryColor("Roman Empire"))
+
+    // Autonomous country where SUBJECTO matches its own identity
+    const franceSubjugation = getSubjugationInfo("Kingdom of France", {
+      NAME: "Kingdom of France",
+      SUBJECTO: "Kingdom of France",
+    })
+    expect(franceSubjugation.isSubjugated).toBe(false)
+  })
+
+  it("resolves border precision levels correctly", () => {
+    expect(getBorderPrecision({ BORDERPRECISION: 3 })).toBe(3)
+    expect(getBorderPrecision({ border_precision: 2 })).toBe(2)
+    expect(getBorderPrecision({ BORDERPRECISION: 1 })).toBe(1)
+    expect(getBorderPrecision({ BORDERPRECISION: 0 })).toBe(1)
+    expect(getBorderPrecision({})).toBe(1)
   })
 })

@@ -96,6 +96,15 @@ async function ingest() {
         const isoA3 = props.ISO_A3 || props.ADM0_A3 || null
         const geomJson = JSON.stringify(feature.geometry)
 
+        const rawPrecision = props.BORDERPRECISION ?? props.border_precision ?? props.BORDERI ?? null
+        const borderPrecision =
+          rawPrecision !== null && rawPrecision !== undefined && !isNaN(Number(rawPrecision))
+            ? Number(rawPrecision)
+            : null
+        const partOf = (props.PARTOF || props.part_of || "").trim() || null
+        const subjectTo =
+          (props.SUBJECTO || props.subject_to || props.SUBCTO || "").trim() || null
+
         const entityMeta = resolveEntityMetadata(featureName, props)
         const enrichedProps = {
           ...props,
@@ -104,6 +113,12 @@ async function ingest() {
           canonical_name: entityMeta.canonicalName,
           cultureGroup: entityMeta.cultureGroup,
           is_unclaimed: entityMeta.isUnclaimed,
+          border_precision: borderPrecision,
+          BORDERPRECISION: borderPrecision,
+          part_of: partOf,
+          PARTOF: partOf,
+          subject_to: subjectTo,
+          SUBJECTO: subjectTo,
         }
 
         const insertRes = await eraClient.query(
@@ -115,7 +130,8 @@ async function ingest() {
             SELECT ST_PointOnSurface(g) AS pt FROM raw_geom
           )
           INSERT INTO era_features (
-            era_id, name, formal_name, iso_a3, properties, geom, geom_simplified, label_lng, label_lat
+            era_id, name, formal_name, iso_a3, properties, geom, geom_simplified, label_lng, label_lat,
+            border_precision, part_of, subject_to
           )
           SELECT
             $1,
@@ -126,12 +142,25 @@ async function ingest() {
             g,
             g,
             ST_X(pt),
-            ST_Y(pt)
+            ST_Y(pt),
+            $7,
+            $8,
+            $9
           FROM raw_geom, surface_pt
           WHERE NOT ST_IsEmpty(g)
           RETURNING id;
         `,
-          [eraId, featureName, formalName, geomJson, isoA3, JSON.stringify(enrichedProps)]
+          [
+            eraId,
+            featureName,
+            formalName,
+            geomJson,
+            isoA3,
+            JSON.stringify(enrichedProps),
+            borderPrecision,
+            partOf,
+            subjectTo,
+          ]
         )
 
         if (insertRes.rowCount && insertRes.rowCount > 0) {

@@ -69,6 +69,12 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
                 'name', f.name,
                 'formal_name', f.formal_name,
                 'iso_a3', f.iso_a3,
+                'border_precision', f.border_precision,
+                'BORDERPRECISION', f.border_precision,
+                'part_of', f.part_of,
+                'PARTOF', f.part_of,
+                'subject_to', f.subject_to,
+                'SUBJECTO', f.subject_to,
                 'labelLng', f.label_lng,
                 'labelLat', f.label_lat
               )
