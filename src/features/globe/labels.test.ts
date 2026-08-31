@@ -9,6 +9,8 @@ import {
   getFeaturePriority,
   checkAABBOverlap,
   computePlacedLabels,
+  measureTextWidth,
+  clearTextWidthCache,
   GLOBE_RADIUS,
 } from "./labels"
 import { GeoJSONFeature } from "../../types"
@@ -376,6 +378,26 @@ describe("labels: computePlacedLabels algorithm", () => {
 
     expect(placedNormal.length).toBe(1)
     expect(placedScaled.length).toBe(1)
+  })
+
+  it("caches measured text widths correctly", () => {
+    const mockCtx = {
+      measureText: (text: string) => ({ width: text.length * 10 }),
+    } as any
+
+    // First call computes
+    const width1 = measureTextWidth("Roman Empire", 14, mockCtx)
+    expect(width1).toBe(120)
+
+    // Second call returns cached value even without ctx
+    const width2 = measureTextWidth("Roman Empire", 14, null)
+    expect(width2).toBe(120)
+
+    // Clear cache
+    clearTextWidthCache()
+    const width3 = measureTextWidth("Roman Empire", 14, null)
+    // Fallback estimation after clear
+    expect(width3).toBeCloseTo(12 * 14 * 0.62, 1)
   })
 })
 

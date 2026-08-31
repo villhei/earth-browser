@@ -1,10 +1,12 @@
 import express from "express"
 import cors from "cors"
+import compression from "compression"
 import { apiRouter } from "./src/server/api"
 
 const serverPort = process.env.PORT || 3000
 const app = express()
 
+app.use(compression())
 app.use(cors())
 app.use(express.json())
 

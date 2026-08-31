@@ -357,19 +357,41 @@ export function checkAABBOverlap(
   )
 }
 
+// Cache for measured text dimensions to avoid canvas measureText layout engine overhead
+const textWidthCache = new Map<string, number>()
+
+export function clearTextWidthCache(): void {
+  textWidthCache.clear()
+}
+
 /**
- * Measures text width or provides a fast fallback estimate.
+ * Measures text width or provides a fast fallback estimate, using an in-memory cache.
  */
 export function measureTextWidth(
   text: string,
   fontSize: number,
   ctx?: CanvasRenderingContext2D | null,
 ): number {
-  if (ctx) {
-    return ctx.measureText(text).width
+  const key = `${text}::${fontSize}`
+  const cached = textWidthCache.get(key)
+  if (cached !== undefined) {
+    return cached
   }
-  // Fast approximate width for Latin typography (avg ~0.62em per char)
-  return text.length * fontSize * 0.62
+
+  let width: number
+  if (ctx) {
+    width = ctx.measureText(text).width
+  } else {
+    // Fast approximate width for Latin typography (avg ~0.62em per char)
+    width = text.length * fontSize * 0.62
+  }
+
+  // Cap cache size to avoid unbounded memory growth
+  if (textWidthCache.size > 2000) {
+    textWidthCache.clear()
+  }
+  textWidthCache.set(key, width)
+  return width
 }
 
 /**

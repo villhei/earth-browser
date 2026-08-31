@@ -27,7 +27,7 @@ const DEFAULT_ALTITUDE = 0.005
 const DEFAULT_OPACITY = 0.55
 const DEFAULT_SIDE_COLOR = "#ffffff"
 const DEFAULT_STROKE_COLOR = "#000000"
-const DEFAULT_CAP_CURVATURE_RESOLUTION = 3
+const DEFAULT_CAP_CURVATURE_RESOLUTION = 1
 const DEFAULT_ELEVATION_SCALE = 1.2
 
 export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
@@ -60,8 +60,19 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     null,
   )
 
+  // Pre-filter renderable features to avoid per-frame allocations
+  const renderableFeatures = React.useMemo(() => {
+    const allFeatures = data?.features || []
+    return allFeatures.filter((feat) => {
+      const props = feat.properties || {}
+      const name = props.name || props.NAME || ""
+      return !props.is_unclaimed && !isNeutralOrUnclaimed(name)
+    })
+  }, [data])
+
   // Mutable refs to keep animation loop in sync with props without re-initializing
   const dataRef = useRef(data)
+  const renderableFeaturesRef = useRef(renderableFeatures)
   const showLabelsRef = useRef(showLabels)
   const labelSizeRef = useRef(labelSize)
   const labelToleranceRef = useRef(labelTolerance)
@@ -74,6 +85,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
 
   useEffect(() => {
     dataRef.current = data
+    renderableFeaturesRef.current = renderableFeatures
     showLabelsRef.current = showLabels
     labelSizeRef.current = labelSize
     labelToleranceRef.current = labelTolerance
@@ -85,6 +97,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     onFeatureHoverRef.current = onFeatureHover
   }, [
     data,
+    renderableFeatures,
     showLabels,
     labelSize,
     labelTolerance,
@@ -107,7 +120,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const dpr = Math.min(window.devicePixelRatio || 1, 2)
 
     // WebGL Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" })
     renderer.setPixelRatio(dpr)
     renderer.setSize(width || window.innerWidth, height || window.innerHeight)
     canvas.appendChild(renderer.domElement)
@@ -153,67 +166,23 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     controls.minDistance = 140
     controls.maxDistance = 700
 
-    let animationFrameId: number
-    const animate = () => {
-      controls.update()
-      renderer.render(scene, camera)
-
-      // 2D Screen-space non-overlapping labels rendering
-      if (labelsCanvasRef.current && camera) {
-        const c2d = labelsCanvasRef.current
-        const ctx = c2d.getContext("2d")
-        if (ctx) {
-          const w = container.clientWidth || window.innerWidth
-          const h = container.clientHeight || window.innerHeight
-
-          const allFeatures = dataRef.current?.features || []
-          const renderableFeatures = allFeatures.filter((feat) => {
-            const props = feat.properties || {}
-            const name = props.name || props.NAME || ""
-            return !props.is_unclaimed && !isNeutralOrUnclaimed(name)
-          })
-
-          if (showLabelsRef.current && renderableFeatures.length) {
-            const placed = computePlacedLabels(
-              renderableFeatures,
-              camera,
-              w,
-              h,
-              {
-                layerAltitude: layerAltitudeRef.current,
-                elevationScale: elevationScaleRef.current,
-                selectedFeatureId: selectedFeatureIdRef.current,
-                hoveredFeatureId:
-                  hoveredFeatureRef.current?.id ||
-                  hoveredFeatureRef.current?.properties?.name ||
-                  null,
-                baseFontSize: labelSizeRef.current,
-                labelTolerance: labelToleranceRef.current,
-              },
-              ctx,
-            )
-            placedLabelsRef.current = placed
-            renderLabelsToCanvas(ctx, placed, w, h, dpr)
-          } else {
-            placedLabelsRef.current = []
-            ctx.clearRect(0, 0, w, h)
-          }
-        }
-      }
-
-      animationFrameId = requestAnimationFrame(animate)
-    }
-    animate()
+    // Bounding sphere for fast raycast early exit (avoiding deep mesh traversal on space misses)
+    const globeBoundingSphere = new THREE.Sphere(new THREE.Vector3(0, 0, 0), 100 * 1.06)
 
     // Raycaster for 3D polygon pointer interactions
     const raycaster = new THREE.Raycaster()
     const mouse = new THREE.Vector2()
 
-    const getIntersectedFeature = (e: MouseEvent): GeoJSONFeature | null => {
+    const getIntersectedFeature = (clientX: number, clientY: number): GeoJSONFeature | null => {
       const rect = renderer.domElement.getBoundingClientRect()
-      mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1
-      mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1
+      mouse.x = ((clientX - rect.left) / rect.width) * 2 - 1
+      mouse.y = -((clientY - rect.top) / rect.height) * 2 + 1
       raycaster.setFromCamera(mouse, camera)
+
+      // Fast rejection against Earth bounding sphere
+      if (!raycaster.ray.intersectsSphere(globeBoundingSphere)) {
+        return null
+      }
 
       const intersects = raycaster.intersectObjects(globe.children, true)
       for (const hit of intersects) {
@@ -257,6 +226,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
 
     let isDragging = false
     let pointerDownPos = { x: 0, y: 0 }
+    let pendingPointer: { x: number; y: number } | null = null
+    let hasPendingPointer = false
 
     const handlePointerDown = (e: MouseEvent) => {
       isDragging = false
@@ -271,21 +242,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       }
 
       if (!isDragging) {
-        // 1. Check direct label hit
-        const hitLabel = getHoveredLabel(e.clientX, e.clientY)
-        if (hitLabel) {
-          container.style.cursor = "pointer"
-          setHoveredFeature(hitLabel.feature)
-          if (onFeatureHoverRef.current)
-            onFeatureHoverRef.current(hitLabel.feature)
-          return
-        }
-
-        // 2. Fall back to 3D geometry hit
-        const feat = getIntersectedFeature(e)
-        setHoveredFeature(feat)
-        if (onFeatureHoverRef.current) onFeatureHoverRef.current(feat)
-        container.style.cursor = feat ? "pointer" : "grab"
+        pendingPointer = { x: e.clientX, y: e.clientY }
+        hasPendingPointer = true
       }
     }
 
@@ -300,7 +258,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         }
 
         // 2. Fall back to 3D geometry click
-        const feat = getIntersectedFeature(e)
+        const feat = getIntersectedFeature(e.clientX, e.clientY)
         if (onFeatureClickRef.current) onFeatureClickRef.current(feat)
       }
     }
@@ -308,6 +266,139 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     container.addEventListener("mousedown", handlePointerDown)
     container.addEventListener("mousemove", handlePointerMove)
     container.addEventListener("click", handleClick)
+
+    // State trackers for label engine dirty-checking to eliminate 0-cost idle rendering
+    const lastCamPos = new THREE.Vector3()
+    const lastCamQuat = new THREE.Quaternion()
+    let lastSelectedId: string | null = null
+    let lastHoveredId: string | null = null
+    let lastW = 0
+    let lastH = 0
+    let lastLabelSize = 0
+    let lastLabelTolerance = 0
+    let lastLayerAlt = 0
+    let lastElevScale = 0
+    let lastFeaturesRef: any = null
+    let lastShowLabels = true
+
+    let animationFrameId: number
+    const animate = () => {
+      controls.update()
+      renderer.render(scene, camera)
+
+      // Process throttled pointer hover test (at most once per frame)
+      if (hasPendingPointer && pendingPointer && !isDragging) {
+        hasPendingPointer = false
+        const { x: px, y: py } = pendingPointer
+        // 1. Check direct label hit
+        const hitLabel = getHoveredLabel(px, py)
+        if (hitLabel) {
+          container.style.cursor = "pointer"
+          const curHov = hoveredFeatureRef.current
+          const nextHov = hitLabel.feature
+          if (
+            curHov?.id !== nextHov.id ||
+            curHov?.properties?.name !== nextHov.properties?.name
+          ) {
+            setHoveredFeature(nextHov)
+            if (onFeatureHoverRef.current)
+              onFeatureHoverRef.current(nextHov)
+          }
+        } else {
+          // 2. Fall back to 3D geometry hit
+          const feat = getIntersectedFeature(px, py)
+          const curHov = hoveredFeatureRef.current
+          if (
+            curHov?.id !== feat?.id ||
+            curHov?.properties?.name !== feat?.properties?.name
+          ) {
+            setHoveredFeature(feat)
+            if (onFeatureHoverRef.current)
+              onFeatureHoverRef.current(feat)
+          }
+          container.style.cursor = feat ? "pointer" : "grab"
+        }
+      }
+
+      // 2D Screen-space non-overlapping labels rendering with dirty checking
+      if (labelsCanvasRef.current && camera) {
+        const w = container.clientWidth || window.innerWidth
+        const h = container.clientHeight || window.innerHeight
+        const curFeatures = renderableFeaturesRef.current
+        const curSelectedId = selectedFeatureIdRef.current
+        const curHoveredId =
+          hoveredFeatureRef.current?.id ||
+          hoveredFeatureRef.current?.properties?.name ||
+          null
+        const curShowLabels = showLabelsRef.current
+        const curLabelSize = labelSizeRef.current
+        const curLabelTol = labelToleranceRef.current
+        const curLayerAlt = layerAltitudeRef.current
+        const curElevScale = elevationScaleRef.current
+
+        const isCamDirty =
+          lastCamPos.distanceToSquared(camera.position) > 1e-4 ||
+          Math.abs(lastCamQuat.dot(camera.quaternion) - 1) > 1e-4
+
+        const isLabelsDirty =
+          isCamDirty ||
+          lastSelectedId !== curSelectedId ||
+          lastHoveredId !== curHoveredId ||
+          lastW !== w ||
+          lastH !== h ||
+          lastLabelSize !== curLabelSize ||
+          lastLabelTolerance !== curLabelTol ||
+          lastLayerAlt !== curLayerAlt ||
+          lastElevScale !== curElevScale ||
+          lastFeaturesRef !== curFeatures ||
+          lastShowLabels !== curShowLabels
+
+        if (isLabelsDirty) {
+          lastCamPos.copy(camera.position)
+          lastCamQuat.copy(camera.quaternion)
+          lastSelectedId = curSelectedId
+          lastHoveredId = curHoveredId
+          lastW = w
+          lastH = h
+          lastLabelSize = curLabelSize
+          lastLabelTolerance = curLabelTol
+          lastLayerAlt = curLayerAlt
+          lastElevScale = curElevScale
+          lastFeaturesRef = curFeatures
+          lastShowLabels = curShowLabels
+
+          const c2d = labelsCanvasRef.current
+          const ctx = c2d.getContext("2d")
+          if (ctx) {
+            if (curShowLabels && curFeatures.length) {
+              const placed = computePlacedLabels(
+                curFeatures,
+                camera,
+                w,
+                h,
+                {
+                  layerAltitude: curLayerAlt,
+                  elevationScale: curElevScale,
+                  selectedFeatureId: curSelectedId,
+                  hoveredFeatureId: curHoveredId,
+                  baseFontSize: curLabelSize,
+                  labelTolerance: curLabelTol,
+                },
+                ctx,
+              )
+              placedLabelsRef.current = placed
+              renderLabelsToCanvas(ctx, placed, w, h, dpr)
+            } else {
+              placedLabelsRef.current = []
+              ctx.clearRect(0, 0, w, h)
+            }
+          }
+        }
+      }
+
+      animationFrameId = requestAnimationFrame(animate)
+    }
+    animate()
 
     // Responsive Resize Handler
     const handleResize = () => {
@@ -440,19 +531,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   useEffect(() => {
     if (!globeRef.current) return
     const globe = globeRef.current
-    const allFeatures = data?.features || []
-
-    // Filter out unclaimed background filler features so they do not produce elevated 3D meshes over oceans/wilderness
-    const renderableFeatures = allFeatures.filter((feat) => {
-      const props = feat.properties || {}
-      const name = props.name || props.NAME || ""
-      return !props.is_unclaimed && !isNeutralOrUnclaimed(name)
-    })
-
     globe.polygonsData(renderableFeatures)
     // Clear three-globe 3D text meshes in favor of fixed-scale non-overlapping canvas labels
     globe.labelsData([])
-  }, [data])
+  }, [renderableFeatures])
 
   return (
     <div

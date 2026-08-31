@@ -40,7 +40,7 @@ export function getPolygonCapMaterial(
           transparent: true,
           opacity: 0,
           depthWrite: false,
-          side: THREE.DoubleSide,
+          side: THREE.FrontSide,
         })
       )
     }
@@ -116,7 +116,7 @@ function createPolygonMaterial(params: {
       color: colA,
       transparent: params.opacity < 1,
       opacity: params.opacity,
-      side: THREE.DoubleSide,
+      side: THREE.FrontSide,
       depthWrite: true,
     })
   }
@@ -126,7 +126,7 @@ function createPolygonMaterial(params: {
     color: colA,
     transparent: true,
     opacity: params.opacity,
-    side: THREE.DoubleSide,
+    side: THREE.FrontSide,
     depthWrite: true,
   })
 
