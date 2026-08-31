@@ -113,17 +113,20 @@ earth-browser/
 
 ## PostGIS & Backend Pipeline
 
-### Ingestion (`npm run db:ingest`)
-- Reads raw GeoJSON files from `migrations/seed/` (sourced from [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps/tree/master/geojson), GPL-3.0).
-- Cleans and repairs geometries using PostGIS `ST_MakeValid` and `ST_CollectionExtract`.
-- Precalculates true interior surface centroids using `ST_PointOnSurface(geom)` to store `label_lng` and `label_lat`.
-- Precalculates 3D `elevation_tier` (0–N) using topological DAG area-ordered stratification over PostGIS spatial intersections (`ST_Intersects`, `ST_Area(ST_Intersection)`) so sub-entities overlapping sub-entities receive strictly ascending, non-colliding elevation tiers with zero z-fighting.
-- Enriches properties with civilization lineage, culture groups, border precision ratings, and elevation tiers.
+### Ingestion & Export Pipeline
+- **Ingestion (`npm run db:ingest`)**:
+  - Reads raw GeoJSON files from `migrations/seed/` (sourced from [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps/tree/master/geojson), GPL-3.0).
+  - Cleans and repairs geometries using PostGIS `ST_MakeValid` and `ST_CollectionExtract`.
+  - Precalculates true interior surface centroids using `ST_PointOnSurface(geom)` to store `label_lng` and `label_lat`.
+  - Precalculates 3D `elevation_tier` (0–N) using topological DAG area-ordered stratification over PostGIS spatial intersections (`ST_Intersects`, `ST_Area(ST_Intersection)`) so sub-entities overlapping sub-entities receive strictly ascending, non-colliding elevation tiers with zero z-fighting.
+  - Enriches properties with civilization lineage, culture groups, border precision ratings, and elevation tiers.
+- **Static Export (`npm run db:export`)**:
+  - Exports the PostGIS-enriched era catalog (`public/data/eras.json`) and 53 era GeoJSON FeatureCollections (`public/data/eras/[slug].json`) into `public/data/`.
+  - Copied into `dist/data/` on `vite build` for 100% serverless, static bucket hosting.
 
-
-### Endpoints
-- `GET /api/eras`: Returns list of all 53 historical eras sorted chronologically with metadata and feature counts.
-- `GET /api/eras/:slug/geojson`: Returns GeoJSON `FeatureCollection` with simplified geometries and label centroids.
+### Endpoints (Dev API & Static Data Layout)
+- `GET /api/eras` or static `/data/eras.json`: List of all 53 historical eras sorted chronologically with metadata.
+- `GET /api/eras/:slug/geojson` or static `/data/eras/:slug.json`: GeoJSON `FeatureCollection` with simplified geometries, label centroids, and elevation tiers.
 
 ---
 
