@@ -31,8 +31,8 @@ export const App: React.FC = () => {
   const [globeConfig, setGlobeConfig] = useState<GlobeConfig>({
 
     texture: GlobeTexture.EARTH_BLUE_MARBLE,
-    layerAltitude: 0.005,
-    elevationScale: 1.2,
+    layerAltitude: 0.002,
+    elevationScale: 0.3,
     opacity: 0.55,
     sideColor: "#ffffff",
     strokeColor: "#000000",

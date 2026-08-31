@@ -94,8 +94,8 @@ earth-browser/
 ### 4. Visual Controls Overlay (`src/components/ControlsOverlay.tsx`)
 - Located at top-right (`top: 24px; right: 24px;`).
 - Controls:
-  - **Polygon Altitude** (`0.001` - `0.030`).
-  - **Overlap Elevation** (`0.0x` - `3.0x`, default `1.2x` multiplier for stepped elevation of nested sub-entities and overlapping territories).
+  - **Polygon Altitude** (`0.001` - `0.030`, default `0.002`).
+  - **Overlap Elevation** (`0.0x` - `3.0x`, default `0.3x` multiplier for stepped elevation of nested sub-entities and overlapping territories).
   - **Fill Opacity** (`10%` - `100%`).
   - **Country Labels Toggle** (`Enabled` / `Disabled`).
   - **Label Size** (`9px` - `22px`, default `14px`).

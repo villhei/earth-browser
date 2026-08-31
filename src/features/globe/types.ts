@@ -17,13 +17,13 @@ export interface HistoricalGlobeProps {
   texture?: GlobeTexture
 
   /**
-   * Extrusion / altitude of country boundary polygons. Defaults to 0.005.
+   * Extrusion / altitude of country boundary polygons. Defaults to 0.002.
    */
   layerAltitude?: number
 
   /**
    * Multiplier for 3D elevation tiers on overlapping/nested territories.
-   * Higher values create more pronounced terracing between sub-entities. Defaults to 1.2.
+   * Higher values create more pronounced terracing between sub-entities. Defaults to 0.3.
    */
   elevationScale?: number
 

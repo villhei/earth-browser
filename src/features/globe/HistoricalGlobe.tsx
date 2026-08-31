@@ -23,12 +23,12 @@ import {
 } from "./labels"
 import { GeoJSONFeature } from "../../types"
 
-const DEFAULT_ALTITUDE = 0.005
+const DEFAULT_ALTITUDE = 0.002
 const DEFAULT_OPACITY = 0.55
 const DEFAULT_SIDE_COLOR = "#ffffff"
 const DEFAULT_STROKE_COLOR = "#000000"
 const DEFAULT_CAP_CURVATURE_RESOLUTION = 1
-const DEFAULT_ELEVATION_SCALE = 1.2
+const DEFAULT_ELEVATION_SCALE = 0.3
 
 export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   data,

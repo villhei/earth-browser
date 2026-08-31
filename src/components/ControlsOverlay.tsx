@@ -66,14 +66,14 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
           <div className="controls-group">
             <div className="controls-label-row">
               <label className="controls-label">Overlap Elevation</label>
-              <span className="controls-val">{(config.elevationScale ?? 1.2).toFixed(1)}x</span>
+              <span className="controls-val">{(config.elevationScale ?? 0.3).toFixed(1)}x</span>
             </div>
             <input
               type="range"
               min={0.0}
               max={3.0}
               step={0.1}
-              value={config.elevationScale ?? 1.2}
+              value={config.elevationScale ?? 0.3}
               onChange={(e) =>
                 onChangeConfig({
                   ...config,

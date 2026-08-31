@@ -410,7 +410,7 @@ export function computePlacedLabels(
   }
 
   const {
-    layerAltitude = 0.005,
+    layerAltitude = 0.002,
     selectedFeatureId = null,
     hoveredFeatureId = null,
     maxLabels = 120,
@@ -461,13 +461,13 @@ export function computePlacedLabels(
     }
 
     const tier = Number(props.elevation_tier ?? props.elevationTier ?? 0)
-    const tierStep = 0.0025 * (options.elevationScale ?? 1.2)
+    const tierStep = 0.0025 * (options.elevationScale ?? 0.3)
     const featureAlt = layerAltitude + tier * tierStep
 
     const worldPos = polar2Cartesian(
       lat,
       lng,
-      featureAlt + 0.005,
+      featureAlt + 0.002,
       GLOBE_RADIUS,
     )
 
