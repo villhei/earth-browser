@@ -64,7 +64,7 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
             json_build_object(
               'type', 'Feature',
               'id', f.id,
-              'geometry', ST_AsGeoJSON(f.geom)::json,
+              'geometry', ST_AsGeoJSON(f.geom, 4)::json,
               'properties', f.properties || jsonb_build_object(
                 'name', f.name,
                 'formal_name', f.formal_name,
@@ -77,8 +77,8 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
                 'SUBJECTO', f.subject_to,
                 'elevation_tier', f.elevation_tier,
                 'elevationTier', f.elevation_tier,
-                'labelLng', f.label_lng,
-                'labelLat', f.label_lat
+                'labelLng', ROUND(f.label_lng::numeric, 4),
+                'labelLat', ROUND(f.label_lat::numeric, 4)
               )
             )
           ),
