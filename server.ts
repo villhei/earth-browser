@@ -12,8 +12,9 @@ app.use(express.json())
 app.use("/api", apiRouter)
 
 const server = app.listen(serverPort, () => {
-  console.log(`🚀 Earth Browser API Server running on port ${serverPort}`)
+  console.log(`Earth Browser API Server running on port ${serverPort}`)
   console.log(`   - Eras: http://localhost:${serverPort}/api/eras`)
+
   console.log(`   - Health: http://localhost:${serverPort}/api/health`)
 })
 

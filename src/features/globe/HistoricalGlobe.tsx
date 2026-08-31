@@ -11,13 +11,11 @@ import {
   HIGHLIGHT_COLOR,
   isNeutralOrUnclaimed,
   NEUTRAL_TERRITORY_COLOR,
-  getBorderPrecision,
 } from "./colors"
 import {
   getPolygonCapMaterial,
   clearPolygonMaterialCache,
 } from "./polygonMaterials"
-import { createBorderLineMesh } from "./borderLineMesh"
 import {
   PlacedLabel,
   computePlacedLabels,
@@ -30,12 +28,14 @@ const DEFAULT_OPACITY = 0.55
 const DEFAULT_SIDE_COLOR = "#ffffff"
 const DEFAULT_STROKE_COLOR = "#000000"
 const DEFAULT_CAP_CURVATURE_RESOLUTION = 3
+const DEFAULT_ELEVATION_SCALE = 1.2
 
 export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   data,
   isLoading = false,
   texture = GlobeTexture.EARTH_BLUE_MARBLE,
   layerAltitude = DEFAULT_ALTITUDE,
+  elevationScale = DEFAULT_ELEVATION_SCALE,
   opacity = DEFAULT_OPACITY,
   sideColor = DEFAULT_SIDE_COLOR,
   strokeColor = DEFAULT_STROKE_COLOR,
@@ -56,7 +56,6 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null)
   const placedLabelsRef = useRef<PlacedLabel[]>([])
-  const borderLineMeshRef = useRef<THREE.Mesh | null>(null)
   const [hoveredFeature, setHoveredFeature] = useState<GeoJSONFeature | null>(
     null,
   )
@@ -67,6 +66,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const labelSizeRef = useRef(labelSize)
   const labelToleranceRef = useRef(labelTolerance)
   const layerAltitudeRef = useRef(layerAltitude)
+  const elevationScaleRef = useRef(elevationScale)
   const selectedFeatureIdRef = useRef(selectedFeatureId)
   const hoveredFeatureRef = useRef(hoveredFeature)
   const onFeatureClickRef = useRef(onFeatureClick)
@@ -78,6 +78,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     labelSizeRef.current = labelSize
     labelToleranceRef.current = labelTolerance
     layerAltitudeRef.current = layerAltitude
+    elevationScaleRef.current = elevationScale
     selectedFeatureIdRef.current = selectedFeatureId
     hoveredFeatureRef.current = hoveredFeature
     onFeatureClickRef.current = onFeatureClick
@@ -88,6 +89,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     labelSize,
     labelTolerance,
     layerAltitude,
+    elevationScale,
     selectedFeatureId,
     hoveredFeature,
     onFeatureClick,
@@ -124,16 +126,6 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     globe.globeImageUrl(getGlobeTextureUrl(texture))
     globe.polygonCapCurvatureResolution(polygonCapCurvatureResolution)
     globe.rendererSize(new THREE.Vector2(width || window.innerWidth, height || window.innerHeight))
-
-    // Configure pathsData accessors for precision-scaled border lines
-    globe.pathPoints((d: any) => d.points)
-    globe.pathPointLat((p: any) => p[1])
-    globe.pathPointLng((p: any) => p[0])
-    globe.pathPointAlt((d: any) => d.altitude)
-    globe.pathStroke((d: any) => d.stroke)
-    globe.pathColor((d: any) => d.color)
-    globe.pathResolution(1)
-    globe.pathTransitionDuration(0)
 
     // Scene & Lights
     const scene = new THREE.Scene()
@@ -189,6 +181,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
               h,
               {
                 layerAltitude: layerAltitudeRef.current,
+                elevationScale: elevationScaleRef.current,
                 selectedFeatureId: selectedFeatureIdRef.current,
                 hoveredFeatureId:
                   hoveredFeatureRef.current?.id ||
@@ -351,16 +344,6 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animationFrameId)
       clearPolygonMaterialCache()
-      if (borderLineMeshRef.current && globeRef.current) {
-        globeRef.current.remove(borderLineMeshRef.current)
-        borderLineMeshRef.current.geometry.dispose()
-        if (Array.isArray(borderLineMeshRef.current.material)) {
-          borderLineMeshRef.current.material.forEach((m: THREE.Material) => m.dispose())
-        } else {
-          borderLineMeshRef.current.material.dispose()
-        }
-        borderLineMeshRef.current = null
-      }
       controls.dispose()
       renderer.dispose()
       if (
@@ -390,9 +373,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     }
   }, [polygonCapCurvatureResolution])
 
-  // 4. Layer Altitude update
+  // 4. Layer Altitude update (incorporating precalculated topological elevation tiers for overlapping/nested polygons)
   useEffect(() => {
     if (globeRef.current) {
+      const tierStep = 0.0025 * (elevationScale ?? DEFAULT_ELEVATION_SCALE)
       globeRef.current.polygonAltitude((d: any) => {
         const feat = d as GeoJSONFeature
         const props = feat.properties || {}
@@ -400,10 +384,11 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
           return 0.0
         }
-        return layerAltitude
+        const tier = Number(props.elevation_tier ?? props.elevationTier ?? 0)
+        return layerAltitude + tier * tierStep
       })
     }
-  }, [layerAltitude])
+  }, [layerAltitude, elevationScale])
 
   // 4b. Side Color update
   useEffect(() => {
@@ -420,12 +405,20 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     }
   }, [sideColor])
 
-  // 5. Stroke Color update (disabled in three-globe in favor of custom precision-scaled border ribbon meshes)
+  // 5. Stroke Color update
   useEffect(() => {
     if (globeRef.current) {
-      globeRef.current.polygonStrokeColor(() => "transparent")
+      globeRef.current.polygonStrokeColor((d: any) => {
+        const feat = d as GeoJSONFeature
+        const props = feat.properties || {}
+        const name = props.name || props.NAME || ""
+        if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
+          return "transparent"
+        }
+        return strokeColor || "transparent"
+      })
     }
-  }, [])
+  }, [strokeColor])
 
   // 6. Polygon cap material: handles solid colors, PARTOF parent color, and SUBJECTO striping
   useEffect(() => {
@@ -443,7 +436,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     })
   }, [opacity, selectedFeatureId, hoveredFeature])
 
-  // 7. Polygons & Precision-Scaled Curvature-Matching Border Meshes Synchronization
+  // 7. Polygons Data Synchronization
   useEffect(() => {
     if (!globeRef.current) return
     const globe = globeRef.current
@@ -459,29 +452,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     globe.polygonsData(renderableFeatures)
     // Clear three-globe 3D text meshes in favor of fixed-scale non-overlapping canvas labels
     globe.labelsData([])
-
-    // Update curvature-matching border ribbon mesh
-    if (borderLineMeshRef.current) {
-      globe.remove(borderLineMeshRef.current)
-      borderLineMeshRef.current.geometry.dispose()
-      if (Array.isArray(borderLineMeshRef.current.material)) {
-        borderLineMeshRef.current.material.forEach((m: THREE.Material) => m.dispose())
-      } else {
-        borderLineMeshRef.current.material.dispose()
-      }
-      borderLineMeshRef.current = null
-    }
-
-    const lineMesh = createBorderLineMesh(renderableFeatures, {
-      layerAltitude,
-      strokeColor,
-      capCurvatureResolution: polygonCapCurvatureResolution,
-    })
-    if (lineMesh) {
-      globe.add(lineMesh)
-      borderLineMeshRef.current = lineMesh
-    }
-  }, [data, layerAltitude, strokeColor, polygonCapCurvatureResolution])
+  }, [data])
 
   return (
     <div

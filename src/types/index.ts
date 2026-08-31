@@ -25,6 +25,8 @@ export interface GeoJSONProperties {
   PARTOF?: string | null
   subject_to?: string | null
   SUBJECTO?: string | null
+  elevation_tier?: number | null
+  elevationTier?: number | null
   labelLng?: number
   labelLat?: number
   [key: string]: any
@@ -65,4 +67,5 @@ export interface GlobeConfig {
   showLabels?: boolean
   labelSize?: number
   labelTolerance?: number
+  elevationScale?: number
 }

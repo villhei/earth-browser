@@ -112,3 +112,24 @@
   font-size: 12px;
   font-family: monospace;
 }
+
+.drawer-footer {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  color: #64748b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.drawer-footer a:hover {
+  text-decoration: underline;
+}
+

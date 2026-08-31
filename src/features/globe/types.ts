@@ -22,6 +22,12 @@ export interface HistoricalGlobeProps {
   layerAltitude?: number
 
   /**
+   * Multiplier for 3D elevation tiers on overlapping/nested territories.
+   * Higher values create more pronounced terracing between sub-entities. Defaults to 1.2.
+   */
+  elevationScale?: number
+
+  /**
    * Polygon fill opacity (0 to 1). Defaults to 0.5.
    */
   opacity?: number

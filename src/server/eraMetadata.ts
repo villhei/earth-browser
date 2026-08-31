@@ -1,3 +1,13 @@
+/**
+ * Historical Era Catalog & Metadata
+ *
+ * GeoJSON boundary datasets and historical eras are sourced from:
+ * https://github.com/aourednik/historical-basemaps/tree/master/geojson
+ *
+ * Created & curated by André Ourednik (https://ourednik.info/historicalmaps/)
+ * License: GNU General Public License v3.0 (GPL-3.0)
+ */
+
 export interface EraMetadata {
   slug: string
   name: string

@@ -5,12 +5,15 @@ import "./ControlsOverlay.css"
 interface ControlsOverlayProps {
   config: GlobeConfig
   onChangeConfig: (config: GlobeConfig) => void
+  onOpenAttribution?: () => void
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   config,
   onChangeConfig,
+  onOpenAttribution,
 }) => {
+
   const [isOpen, setIsOpen] = useState(false)
 
   const labelSize = config.labelSize ?? 14
@@ -23,8 +26,9 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
         onClick={() => setIsOpen(!isOpen)}
         title="Globe Visual Settings"
       >
-        ⚙ Visuals
+        Visuals
       </button>
+
 
       {isOpen && (
         <div className="controls-panel">
@@ -53,6 +57,27 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
                 onChangeConfig({
                   ...config,
                   layerAltitude: parseFloat(e.target.value),
+                })
+              }
+              className="controls-slider"
+            />
+          </div>
+
+          <div className="controls-group">
+            <div className="controls-label-row">
+              <label className="controls-label">Overlap Elevation</label>
+              <span className="controls-val">{(config.elevationScale ?? 1.2).toFixed(1)}x</span>
+            </div>
+            <input
+              type="range"
+              min={0.0}
+              max={3.0}
+              step={0.1}
+              value={config.elevationScale ?? 1.2}
+              onChange={(e) =>
+                onChangeConfig({
+                  ...config,
+                  elevationScale: parseFloat(e.target.value),
                 })
               }
               className="controls-slider"
@@ -145,8 +170,36 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               </div>
             </>
           )}
+
+          {onOpenAttribution && (
+            <div
+              style={{
+                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                paddingTop: "10px",
+                marginTop: "2px",
+              }}
+            >
+              <button
+                className="controls-pill"
+                style={{
+                  width: "100%",
+                  textAlign: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "6px",
+                  fontSize: "11px",
+                  padding: "6px 8px",
+                }}
+                onClick={onOpenAttribution}
+              >
+                ℹ Data Sources & Attribution
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>
   )
 }
+

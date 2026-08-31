@@ -11,8 +11,10 @@ import { HistoricalGlobe } from "../features/globe"
 import { Timeline } from "../components/Timeline"
 import { CountryDrawer } from "../components/CountryDrawer"
 import { ControlsOverlay } from "../components/ControlsOverlay"
+import { Attribution } from "../components/Attribution"
 import { PuffLoader } from "react-spinners"
 import "./App.css"
+
 
 export const App: React.FC = () => {
   const [eras, setEras] = useState<Era[]>([])
@@ -24,10 +26,13 @@ export const App: React.FC = () => {
   const [selectedFeature, setSelectedFeature] = useState<GeoJSONFeature | null>(
     null,
   )
+  const [isAttributionOpen, setIsAttributionOpen] = useState(false)
 
   const [globeConfig, setGlobeConfig] = useState<GlobeConfig>({
+
     texture: GlobeTexture.EARTH_BLUE_MARBLE,
     layerAltitude: 0.005,
+    elevationScale: 1.2,
     opacity: 0.55,
     sideColor: "#ffffff",
     strokeColor: "#000000",
@@ -95,10 +100,10 @@ export const App: React.FC = () => {
       {/* Top Navigation Bar */}
       <header className="app-header">
         <div className="app-brand">
-          <span className="app-icon">🌍</span>
           <h1 className="app-title">Earth Browser</h1>
           <span className="app-subtitle">Historical Atlas</span>
         </div>
+
       </header>
 
       {/* Main 3D Globe Visualizer */}
@@ -109,6 +114,7 @@ export const App: React.FC = () => {
             isLoading={isLoadingGeoJson}
             texture={globeConfig.texture}
             layerAltitude={globeConfig.layerAltitude}
+            elevationScale={globeConfig.elevationScale}
             opacity={globeConfig.opacity}
             sideColor={globeConfig.sideColor}
             strokeColor={globeConfig.strokeColor}
@@ -123,7 +129,11 @@ export const App: React.FC = () => {
         </div>
 
         {/* Visual Settings Controls */}
-        <ControlsOverlay config={globeConfig} onChangeConfig={setGlobeConfig} />
+        <ControlsOverlay
+          config={globeConfig}
+          onChangeConfig={setGlobeConfig}
+          onOpenAttribution={() => setIsAttributionOpen(true)}
+        />
 
         {/* Country / Culture Inspector Drawer */}
         <CountryDrawer
@@ -139,9 +149,17 @@ export const App: React.FC = () => {
           onSelectEra={setCurrentEra}
           isLoading={isLoadingGeoJson}
         />
+
+        {/* Data Source & Map Attribution */}
+        <Attribution
+          isModalOpen={isAttributionOpen}
+          onOpenModal={() => setIsAttributionOpen(true)}
+          onCloseModal={() => setIsAttributionOpen(false)}
+        />
       </main>
     </div>
   )
 }
+
 
 export default App

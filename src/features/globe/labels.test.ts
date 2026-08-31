@@ -313,5 +313,70 @@ describe("labels: computePlacedLabels algorithm", () => {
 
     expect(placedDense.length).toBeGreaterThanOrEqual(placedSpaced.length)
   })
+
+  it("handles elevation_tier properties on features for 3D label placement", () => {
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 0.1, 1000)
+    camera.position.set(0, 0, 320)
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    camera.updateProjectionMatrix()
+
+    const tieredFeature: GeoJSONFeature = {
+      type: "Feature",
+      id: "san-marino",
+      properties: {
+        name: "San Marino",
+        labelLat: 43.94,
+        labelLng: 12.45,
+        AREA: 61,
+        elevation_tier: 2,
+      },
+      geometry: { type: "Point", coordinates: [12.45, 43.94] },
+    }
+
+    const placed = computePlacedLabels([tieredFeature], camera, 800, 600, {
+      layerAltitude: 0.005,
+    })
+
+    expect(placed.length).toBe(1)
+    expect(placed[0].name).toBe("San Marino")
+    expect(placed[0].x).toBeGreaterThan(0)
+    expect(placed[0].y).toBeGreaterThan(0)
+  })
+
+  it("applies elevationScale multiplier to label placement altitude", () => {
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 0.1, 1000)
+    camera.position.set(0, 0, 320)
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    camera.updateProjectionMatrix()
+
+    const subSubFeature: GeoJSONFeature = {
+      type: "Feature",
+      id: "enclave-nested",
+      properties: {
+        name: "Nested Enclave",
+        labelLat: 0,
+        labelLng: 0,
+        AREA: 100,
+        elevation_tier: 3,
+      },
+      geometry: { type: "Point", coordinates: [0, 0] },
+    }
+
+    const placedNormal = computePlacedLabels([subSubFeature], camera, 800, 600, {
+      layerAltitude: 0.005,
+      elevationScale: 1.0,
+    })
+
+    const placedScaled = computePlacedLabels([subSubFeature], camera, 800, 600, {
+      layerAltitude: 0.005,
+      elevationScale: 2.5,
+    })
+
+    expect(placedNormal.length).toBe(1)
+    expect(placedScaled.length).toBe(1)
+  })
 })
+
 

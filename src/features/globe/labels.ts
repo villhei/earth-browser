@@ -40,6 +40,7 @@ export interface LabelComputeOptions {
   baseFontSize?: number
   labelSize?: number
   labelTolerance?: number
+  elevationScale?: number
 }
 
 /**
@@ -437,10 +438,14 @@ export function computePlacedLabels(
       lng = centroid.lng
     }
 
+    const tier = Number(props.elevation_tier ?? props.elevationTier ?? 0)
+    const tierStep = 0.0025 * (options.elevationScale ?? 1.2)
+    const featureAlt = layerAltitude + tier * tierStep
+
     const worldPos = polar2Cartesian(
       lat,
       lng,
-      layerAltitude + 0.005,
+      featureAlt + 0.005,
       GLOBE_RADIUS,
     )
 
