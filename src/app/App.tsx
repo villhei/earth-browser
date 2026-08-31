@@ -96,41 +96,26 @@ export const App: React.FC = () => {
           <h1 className="app-title">Earth Browser</h1>
           <span className="app-subtitle">Historical Atlas</span>
         </div>
-
-        <div className="app-header-controls">
-          <select
-            className="era-dropdown"
-            value={currentEra?.slug || ""}
-            onChange={(e) => {
-              const selected = eras.find((era) => era.slug === e.target.value)
-              if (selected) setCurrentEra(selected)
-            }}
-          >
-            {eras.map((era) => (
-              <option key={era.id} value={era.slug}>
-                {era.year_label} — {era.name}
-              </option>
-            ))}
-          </select>
-        </div>
       </header>
 
       {/* Main 3D Globe Visualizer */}
       <main className="app-main">
-        <HistoricalGlobe
-          data={geoJsonData}
-          isLoading={isLoadingGeoJson}
-          texture={globeConfig.texture}
-          layerAltitude={globeConfig.layerAltitude}
-          opacity={globeConfig.opacity}
-          sideColor={globeConfig.sideColor}
-          strokeColor={globeConfig.strokeColor}
-          selectedFeatureId={
-            selectedFeature?.id || selectedFeature?.properties?.name || null
-          }
-          showLabels={globeConfig.showLabels !== false}
-          onFeatureClick={(feature) => setSelectedFeature(feature)}
-        />
+        <div className="globe-viewport">
+          <HistoricalGlobe
+            data={geoJsonData}
+            isLoading={isLoadingGeoJson}
+            texture={globeConfig.texture}
+            layerAltitude={globeConfig.layerAltitude}
+            opacity={globeConfig.opacity}
+            sideColor={globeConfig.sideColor}
+            strokeColor={globeConfig.strokeColor}
+            selectedFeatureId={
+              selectedFeature?.id || selectedFeature?.properties?.name || null
+            }
+            showLabels={globeConfig.showLabels !== false}
+            onFeatureClick={(feature) => setSelectedFeature(feature)}
+          />
+        </div>
 
         {/* Visual Settings Controls */}
         <ControlsOverlay config={globeConfig} onChangeConfig={setGlobeConfig} />
