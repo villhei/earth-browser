@@ -22,6 +22,7 @@ import {
   renderLabelsToCanvas,
   cartesian2Polar,
 } from "./labels"
+import { sanitizeRenderableFeatures } from "./geometrySanitizer"
 import { GeoJSONFeature } from "../../types"
 
 const DEFAULT_ALTITUDE = 0.002
@@ -62,14 +63,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     null,
   )
 
-  // Pre-filter renderable features to avoid per-frame allocations
+  // Pre-filter & sanitize renderable features (stripping zero-area/collapsed slivers and unclaimed entities)
   const renderableFeatures = React.useMemo(() => {
-    const allFeatures = data?.features || []
-    return allFeatures.filter((feat) => {
-      const props = feat.properties || {}
-      const name = props.name || props.NAME || props.NAME_LONG || props.formal_name || ""
-      return !props.is_unclaimed && !isNeutralOrUnclaimed(name)
-    })
+    return sanitizeRenderableFeatures(data?.features)
   }, [data])
 
   // Mutable refs to keep animation loop in sync with props without re-initializing
