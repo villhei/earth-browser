@@ -1,6 +1,6 @@
 # Earth Browser 🌍
 
-An interactive 3D WebGL historical Earth browser and atlas visualizing world country, culture, and empire boundaries across 24 historical eras (from 2000 BCE to the Modern Era).
+An interactive 3D WebGL historical Earth browser and atlas visualizing world country, culture, and empire boundaries across 36 historical eras (from 123,000 BCE to 2010 CE).
 
 Built with **Three.js**, **ThreeGlobe**, **React 18**, **PostGIS (PostgreSQL)**, **Express**, and **Vite**.
 
@@ -9,13 +9,15 @@ Built with **Three.js**, **ThreeGlobe**, **React 18**, **PostGIS (PostgreSQL)**,
 ## 🌟 Key Architecture & Highlights
 
 - **Decoupled 3D Globe Visualizer (`src/features/globe`)**: Pure, props-driven React component with zero backend/GraphQL coupling. Liftable directly into any host application or separate library.
-- **Radically Simple Tooling**: Replaced heavy PostGraphile + Apollo Client + GraphQL Code Generator with lightweight REST/GeoJSON endpoints and native `fetch` caching.
+- **Vertical Scrollable Timeline**: Left-side historical scrubber spanning 36 eras with dot markers, clearly visible years, truncated labels, active era overview, step navigation, and automatic smooth scrolling.
+- **High-Performance 2D Screen-Space Labels**: Fixed-scale canvas labels with AABB collision resolution, horizon culling, centroid calculation on largest landmasses, configurable font sizes (default 14px), and appearance spacing tolerances.
+- **Curvature-Matching Precision Borders**: Custom border ribbon geometry matching sphere surface curvature, scaled according to border precision ratings.
+- **Radically Simple Tooling**: Lightweight REST/GeoJSON endpoints with native `fetch` caching and fast Vite development server.
 - **High-Performance PostGIS Data Pipeline**:
   - Separates DDL schema migrations from idempotent data ingestion (`npm run db:ingest`).
   - Precomputes surface centroids (`ST_PointOnSurface`) for pixel-perfect label placement inside complex geometries.
   - Multi-resolution geometry simplification (`ST_SimplifyPreserveTopology`) for smooth rendering.
   - Spatial indexing with GiST.
-- **Interactive Historical Timeline**: Chronological scrubber across 24 historical periods with territory counts, descriptions, quick selectors, and country inspector drawer.
 
 ---
 
@@ -37,7 +39,7 @@ docker compose up -d
 *(Database running on `localhost:5432` with credentials `postgres:postgres@localhost:5432/world`)*
 
 ### 4. Setup Schema & Ingest Historical Datasets
-Run migrations and ingest all 24 GeoJSON seed files into PostGIS:
+Run migrations and ingest all 36 GeoJSON seed files into PostGIS:
 ```bash
 npm run db:setup
 ```
@@ -59,25 +61,33 @@ Open your browser at: **`http://localhost:1234`**
 ```
 earth-browser/
 ├── migrations/                 # Knex DDL database schema migrations
-│   └── seed/                   # Raw historical GeoJSON datasets (24 eras)
+│   └── seed/                   # Raw historical GeoJSON datasets (36 eras)
 ├── src/
 │   ├── app/                    # Application shell & layout
+│   │   ├── App.tsx             # Main React application layout
+│   │   └── App.css             # Layout styling (viewport offsets, headers)
 │   ├── components/             # Reusable UI components
-│   │   ├── Timeline.tsx        # Interactive historical era timeline scrubber
-│   │   ├── CountryDrawer.tsx   # Country details / inspector side drawer
-│   │   └── ControlsOverlay.tsx # Visual appearance settings (texture, altitude, opacity)
+│   │   ├── Timeline.tsx        # Vertical scrollable left timeline panel with dot markers
+│   │   ├── Timeline.css        # Timeline panel styling
+│   │   ├── CountryDrawer.tsx   # Country details / culture inspector side drawer
+│   │   ├── CountryDrawer.css   # Country drawer styling
+│   │   ├── ControlsOverlay.tsx # Visual appearance settings (altitude, opacity, labels)
+│   │   └── ControlsOverlay.css # Visual settings overlay styling
 │   ├── features/
 │   │   └── globe/              # Standalone, embeddable 3D Globe package
 │   │       ├── HistoricalGlobe.tsx # Pure ThreeGlobe WebGL visualizer
+│   │       ├── labels.ts       # 2D Screen-space non-overlapping label projection & collision engine
+│   │       ├── borderLineMesh.ts # Curvature-matching precision border line meshes
+│   │       ├── polygonMaterials.ts # Three.js polygon cap materials & subjugation stripes
+│   │       ├── colors.ts       # Culture color palette and precision resolvers
 │   │       ├── textures.ts     # Earth textures (Marble, Dark, Day, Night)
-│   │       ├── colors.ts       # Flag & historical culture color resolvers
 │   │       ├── types.ts        # Globe component props & domain types
 │   │       └── index.ts        # Public export
 │   ├── server/                 # Backend services
 │   │   ├── db.ts               # PostgreSQL connection pool
 │   │   ├── api.ts              # Clean REST endpoints (/api/eras, /api/eras/:slug/geojson)
 │   │   ├── ingest.ts           # Idempotent GeoJSON -> PostGIS ETL CLI
-│   │   └── eraMetadata.ts      # Chronological historical era catalog
+│   │   └── eraMetadata.ts      # Chronological historical era catalog (36 eras)
 │   ├── services/
 │   │   └── api.ts              # Frontend API client with in-memory caching
 │   ├── types/                  # Shared GeoJSON & Era types
@@ -102,8 +112,11 @@ export function MyEmbeddedGlobe({ geoJsonData }) {
     <HistoricalGlobe
       data={geoJsonData}
       texture={GlobeTexture.EARTH_BLUE_MARBLE}
-      layerAltitude={0.006}
-      opacity={0.6}
+      layerAltitude={0.005}
+      opacity={0.55}
+      showLabels={true}
+      labelSize={14}
+      labelTolerance={10}
       onFeatureClick={(feature) => {
         console.log('Clicked country:', feature?.properties?.name);
       }}
