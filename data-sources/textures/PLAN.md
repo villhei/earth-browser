@@ -1,6 +1,6 @@
 # Research-based prehistoric Earth masks — implementation plan
 
-Recorded: 2026-09-16. Updated after the phase-1 source audit on the same date.
+Recorded: 2026-09-16. Updated after phase-2 source selection on the same date.
 
 ## Objective and agreed scope
 
@@ -20,7 +20,7 @@ User requirements:
 
 ## Current state and handoff
 
-Removal is complete in the working tree, but has not been committed by this session:
+The original handoff recorded the removal changes below. Phase 2 started from a clean working tree; these earlier changes were already present in the checkout:
 
 - Removed `src/earthTextures/earth-blue-marble-{123000,10000,8000,5000}bc.jpg`.
 - Removed their imports, enum entries, dropdown options, and automatic era selection from the app; updated the existing texture test.
@@ -50,7 +50,7 @@ Do not store planning or source documentation in `docs/`: it is the generated pr
 
 ## Findings and constraints established by phase 1
 
-The detailed evidence and citations are in [SOURCE-AUDIT.md](SOURCE-AUDIT.md); [AUDIT-INVENTORY.json](AUDIT-INVENTORY.json) identifies the inspected local bytes. The audit is complete, but no era yet has a complete validated global mask set.
+The historical phase-1 evidence and citations are in [SOURCE-AUDIT.md](SOURCE-AUDIT.md); [AUDIT-INVENTORY.json](AUDIT-INVENTORY.json) identifies the inspected local bytes. The audit is complete, but no era yet has a complete validated global mask set.
 
 - All 54 catalog entries have matching, parseable seed FeatureCollections. Use `year_start` as the reconstruction target; territory boundaries are not paleoshoreline evidence.
 - Interpret negative catalog years as historical BCE, without year zero. At equal positions within the year, N BCE = N + 1949 calendar BP and N CE = 1950 − N calendar BP. Preserve negative BP for dates after 1950. Rounding for display must not change target metadata.
@@ -77,19 +77,23 @@ Completed 2026-09-16: [SOURCE-AUDIT.md](SOURCE-AUDIT.md) contains the 54-era/sou
 
 ### 2. Resolve source gaps and select reconstruction datasets
 
-- [ ] Trace the bundled North American archive, conversion history and license, or select a documented replacement. Correct the legacy bibliographic attribution using the audit; inspect Dalton 2020's calibrated isochrones and uncertainty before matching catalog dates.
-- [ ] Retrieve the full DATED-1 archive and README, compare bundled files, and recover minimum/maximum boundaries. Evaluate DATED-2 before choosing a release; retain dataset-specific attribution and license terms.
-- [ ] Decide and document source slices for 11,949 and 9,949 calendar BP, including the 51-year offsets and TS10 endpoint approximation. Do not interpolate polygon vertices or extrapolate DATED-1 through the Holocene.
-- [ ] Evaluate the Godbout/Brouard/Roy North American rebound and paleotopography dataset (CC-BY-4.0; 35–90°N, 165–45°W). Inspect available time steps, vertical datum, sea-level treatment and ICE5G/6G/7G variants; this is regional terrain evidence, not an ice mask.
-- [ ] Compare global and regional GIA models for shoreline reconstruction and document how overlapping regions will be reconciled. PaleoMIST's 2,500-year steps limit near-field Holocene use; its 80 ka range excludes the Last Interglacial target.
-- [ ] Select and pin original elevation inputs with resolution, registration and vertical reference. Use modern bathymetry plus a sourced sea-level curve only as a declared fallback; do not reuse the legacy cache or scalar offsets as validated inputs.
-- [ ] Research Greenland, Antarctica and smaller ice masses, plus grounded ice, floating shelves and winter/summer sea ice independently. Verify classification semantics rather than deriving all classes from undifferentiated ice polygons.
-- [ ] Research 124,949 BP independently using Last Interglacial regional relative sea-level and ice evidence. A broad highstand range cannot establish an exact-date +7 m coastline.
-- [ ] Record suitable Holocene and modern source families for the remaining catalog dates, using the audit's H-early/H/M groups. Do not assume later eras share identical coastlines or ice.
-- [ ] Trace the modern alignment image's original product and rights record where possible; retain unresolved details explicitly.
-- [ ] Produce a source-selection record alongside this plan with retrieval URLs, versions, terms, age systems, selected slices, geographic/class coverage, uncertainty, fallback decisions and unresolved gaps for each era/source group.
+- [x] Trace the bundled North American archive, conversion history and license, or select a documented replacement. Correct the legacy bibliographic attribution using the audit; inspect Dalton 2020's calibrated isochrones and uncertainty before matching catalog dates.
+- [x] Retrieve the full DATED-1 archive and README, compare bundled files, and recover minimum/maximum boundaries. Evaluate DATED-2 before choosing a release; retain dataset-specific attribution and license terms.
+- [x] Decide and document source slices for 11,949 and 9,949 calendar BP, including the 51-year offsets and TS10 endpoint approximation. Do not interpolate polygon vertices or extrapolate DATED-1 through the Holocene.
+- [x] Evaluate the Godbout/Brouard/Roy North American rebound and paleotopography dataset (CC-BY-4.0; 35–90°N, 165–45°W). Inspect available time steps, vertical datum, sea-level treatment and ICE5G/6G/7G variants; this is regional terrain evidence, not an ice mask.
+- [x] Compare global and regional GIA models for shoreline reconstruction and document how overlapping regions will be reconciled. PaleoMIST's 2,500-year steps limit near-field Holocene use; its 80 ka range excludes the Last Interglacial target.
+- [x] Select and pin original elevation inputs with resolution, registration and vertical reference. Use modern bathymetry plus a sourced sea-level curve only as a declared fallback; do not reuse the legacy cache or scalar offsets as validated inputs.
+- [x] Research Greenland, Antarctica and smaller ice masses, plus grounded ice, floating shelves and winter/summer sea ice independently. Verify classification semantics rather than deriving all classes from undifferentiated ice polygons.
+- [x] Research 124,949 BP independently using Last Interglacial regional relative sea-level and ice evidence. A broad highstand range cannot establish an exact-date +7 m coastline.
+- [x] Record suitable Holocene and modern source families for the remaining catalog dates, using the audit's H-early/H/M groups. Do not assume later eras share identical coastlines or ice.
+- [x] Trace the modern alignment image's original product and rights record where possible; retain unresolved details explicitly.
+- [x] Produce a source-selection record alongside this plan with retrieval URLs, versions, terms, age systems, selected slices, geographic/class coverage, uncertainty, fallback decisions and unresolved gaps for each era/source group.
 
 Completion criterion: select reproducible inputs for the supported reference-era layers and record a disposition for every remaining source gap. Unsupported layers remain unavailable. Dataset selection may support a clearly identified regional/partial result; it must not imply global completeness. This source-selection record is the next reviewable deliverable, before mask generation.
+
+Completed 2026-09-16: [SOURCE-SELECTION.md](SOURCE-SELECTION.md) records selected releases, chronology, class/region limits, GIA comparisons and every remaining gap. [SOURCE-SELECTION.json](SOURCE-SELECTION.json) pins 14 original downloads, 21 inspected margin layers, all 24 successful DATED-1 bundle comparisons, the original ETOPO grid and 54 era dispositions. Original downloads are retained in ignored `research-cache/`; reacquisition is required in other checkouts. NADI-1 replaces the untraceable North American bundle. Completion is selection/disposition, not global mask readiness: regional terrain bulk acquisition and marine classification remain explicit gates. No masks were generated.
+
+Phase-2 verification: rechecked all 14 download SHA-256 hashes, 84 selected shapefile component hashes, and 24 archive-to-bundle byte comparisons. All 54 era dates and dispositions match the exported catalog; selected offsets are +51 years. `npm test`: 54 tests passed. `npm run build`: database export, TypeScript and Vite passed; execution outside the sandbox was required for the `tsx` IPC socket. Existing Vite CJS deprecation and bundle-size warnings remain. `git diff --check` passed; the build introduced no tracked site changes.
 
 ### 3. Define output and metadata contracts
 
@@ -111,7 +115,7 @@ Completion criterion: select reproducible inputs for the supported reference-era
 
 ### 5. Validate one reference era
 
-First reference target: **10,000 BCE / 11,949 calendar BP**. Begin after phases 2–4 establish selected inputs and coverage contracts. TS12 is a candidate at +51 years, not an exact-date match; North American matching remains dependent on calibrated chronology. This sequence does not restrict final era coverage.
+First reference target: **10,000 BCE / 11,949 calendar BP**. Begin after phases 2–4 establish selected inputs and coverage contracts. Phase 2 selects DATED-1 TS12 and NADI-1 12 calendar ka at +51 years, not exact-date matches; preserve their uncertainty suites and resolve class/coverage contracts before generation. This sequence does not restrict final era coverage.
 
 - [ ] Generate independent masks and separate diagnostic previews.
 - [ ] Compare ice margins and shorelines against published reconstructions, including relevant land-bridge regions.
@@ -150,4 +154,4 @@ These are starting points, not final dataset selections. Inspect original data a
 
 ## Suggested next-session task
 
-Read `AGENTS.md`, this plan and [SOURCE-AUDIT.md](SOURCE-AUDIT.md), then inspect the working tree. Execute phase 2, prioritizing documented inputs for 10,000 BCE / 11,949 calendar BP. Write the source-selection record, resolve or explicitly disposition all source gaps, and update only completed checkboxes. Keep unverified local files as research references. Mask generation follows phases 3–4; do not run the legacy generator or restore retired JPEGs.
+Read `AGENTS.md`, this plan and [SOURCE-SELECTION.md](SOURCE-SELECTION.md), then inspect the working tree. Execute phase 3: define the output grid and metadata contracts, using [SOURCE-SELECTION.json](SOURCE-SELECTION.json) for pinned inputs, selected slices and all 54 era dispositions. Distinguish raw margin evidence from classified grounded/floating ice, partial coverage from empty masks, and the named TS10 endpoint exception from unrestricted extrapolation. Terrain acquisition and validation gates are recorded in the selection record. Generation follows phase 4; do not run the legacy generator or restore retired JPEGs.

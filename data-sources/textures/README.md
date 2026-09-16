@@ -4,7 +4,9 @@ This directory contains the geospatial source data, vector shapefiles, and techn
 
 > **Status:** The four generated prehistoric JPEGs and their app integration have been removed. Modern textures and research inputs are retained. The pipeline below documents the legacy generator; its reconstructions have not been validated and are being replaced with independently sourced, transparent era masks. Running the legacy generator recreates the retired JPEGs.
 
-> **Current source audit:** See [SOURCE-AUDIT.md](SOURCE-AUDIT.md) for catalog dates, usable inputs and unresolved provenance. The legacy North American BP-to-BCE assignments below are unsupported: the attributed source uses radiocarbon chronology. Those files also contain `LAKE` records. Sea-level offsets and artistic marine ice below are legacy assumptions, not validated reconstruction inputs.
+> **Current selection:** [SOURCE-SELECTION.md](SOURCE-SELECTION.md) and [SOURCE-SELECTION.json](SOURCE-SELECTION.json) record phase-2 decisions and original input checksums. NADI-1 replaces the unverified North American bundle; DATED-1 is authenticated. New research downloads are cached locally outside Git.
+
+> **Source audit:** See [SOURCE-AUDIT.md](SOURCE-AUDIT.md) for catalog dates, usable inputs and unresolved provenance. The legacy North American BP-to-BCE assignments below are unsupported: the attributed source uses radiocarbon chronology. Those files also contain `LAKE` records. Sea-level offsets and artistic marine ice below are legacy assumptions, not validated reconstruction inputs.
 
 ---
 
@@ -35,20 +37,20 @@ This pipeline reconstructs five key prehistoric epochs:
 - File: `ETOPO_2022_v1_60s_N90W180_bed.tif`.
 
 ### C. North American Ice Sheets (Laurentide & Cordilleran)
-- **Dyke, A. S. (2004)**: *An outline of North American deglaciation with emphasis on central and northern Canada*. Geological Survey of Canada Bulletin 577.
+- **Historical attribution, exact bundled release unresolved:** Dyke et al. (2003), GSC Open File 1574; Dyke, A. S. (2004), *An outline of North American deglaciation with emphasis on central and northern Canada*, in *Quaternary Glaciations – Extent and Chronology, Part II*, pp. 373–424. The earlier Bulletin 577 citation was incorrect. These files are research references, not selected generation inputs.
 - Vector shapefiles provided in WGS84 coordinates in `data-sources/textures/ice-sheets/north-america/`:
-  - `ice018000.*`: 18,000 BP (LGM)
-  - `ice012000.*`: 12,000 BP (10,000 BCE)
-  - `ice010000.*`: 10,000 BP (8,000 BCE)
-  - `ice007000.*`: 7,000 BP (5,000 BCE)
-  - `ice005000.*`: 5,000 BP (3,000 BCE)
+  - `ice018000.*`: nominal 18,000 radiocarbon BP
+  - `ice012000.*`: nominal 12,000 radiocarbon BP; not 10,000 BCE
+  - `ice010000.*`: nominal 10,000 radiocarbon BP; not 8,000 BCE
+  - `ice007000.*`: nominal 7,000 radiocarbon BP; not 5,000 BCE
+  - `ice005000.*`: nominal 5,000 radiocarbon BP; not 3,000 BCE
 
 ### D. Eurasian Ice Sheets (Scandinavian, British-Irish, Barents-Kara)
 - **DATED-1 (Hughes et al., 2015)**: *The last Eurasian ice sheets – a chronological database and time-slice reconstruction, DATED-1*. Boreas, 45(1), 1–45. DOI: [10.1594/PANGAEA.848117](https://doi.org/10.1594/PANGAEA.848117).
 - Vector shapefiles provided in North Pole Lambert Azimuthal Equal Area projection (`.prj`) in `data-sources/textures/ice-sheets/eurasia/`:
   - `TS20_mc.*`: 20,000 BP (LGM)
-  - `TS12_mc.*`: 12,000 BP (10,000 BCE)
-  - `TS10_mc.*`: 10,000 BP (8,000 BCE)
+  - `TS12_mc.*`: 12,000 calendar BP (+51 years from 10,000 BCE)
+  - `TS10_mc.*`: 10,000 calendar BP (+51 years from 8,000 BCE; endpoint approximation)
 
 ---
 

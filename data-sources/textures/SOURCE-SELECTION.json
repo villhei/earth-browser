@@ -1,0 +1,1897 @@
+{
+  "record_date": "2026-09-16",
+  "scope": "Phase 2 source selection; not a generated-mask manifest",
+  "record": "SOURCE-SELECTION.md",
+  "downloads": [
+    {
+      "path": "research-cache/DATED-1_TimeSlices_kmz.zip",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_TimeSlices_kmz.zip",
+      "bytes": 13436479,
+      "sha256": "8695aa3ab236fe31989c4f01254d2a6e9446b16ef2ea2077e6fcfd94e0cd91fd",
+      "archive_file_count": 2
+    },
+    {
+      "path": "research-cache/DATED-1_TimeSlices_shp.zip",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_TimeSlices_shp.zip",
+      "bytes": 11545303,
+      "sha256": "a916de31ff31b0bb63863b82d61a6be02659ecfe36a7cab0fdf00034b38be1f1",
+      "archive_file_count": 464
+    },
+    {
+      "path": "research-cache/DATED-1_database_kmz.zip",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_database_kmz.zip",
+      "bytes": 1226643,
+      "sha256": "4fe567cb232a2b9bb1967c76a5caa9c4b24ed9639ca771d146e99794f27f529a",
+      "archive_file_count": 2
+    },
+    {
+      "path": "research-cache/DATED-1_database_shp.zip",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_database_shp.zip",
+      "bytes": 759788,
+      "sha256": "be1364003f74a1c485e91628069026314611434375b9f106491549f18859e765",
+      "archive_file_count": 8
+    },
+    {
+      "path": "research-cache/DATED-1_readme.pdf",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_readme.pdf",
+      "bytes": 234121,
+      "sha256": "86a0557366053066e0ca031c3ef5a032841fe83722d2cb2a889f45b2f01f0b97"
+    },
+    {
+      "path": "research-cache/DATED-1_reference_list.pdf",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_reference_list.pdf",
+      "bytes": 613338,
+      "sha256": "1d7c3a3f906ea90386a42a60c6aec9193280dca8f11f7809963a77a99f0538b7"
+    },
+    {
+      "path": "research-cache/NADI-1.zip",
+      "url": "https://zenodo.org/api/records/8161764/files/NADI-1%20shapefiles%20Dalton%20et%20al.%20QSR.zip/content",
+      "bytes": 54725237,
+      "sha256": "cbfdc0c14a8bd08eb13036ca488ec611de7d2d9b61bed22f03aec2e272b4cb44",
+      "archive_file_count": 588
+    },
+    {
+      "path": "research-cache/dalton2020.pdf",
+      "url": "https://www.glyfac.buffalo.edu/Faculty/briner/buf/pubs/Dalton_et_al_2020_w_maps.pdf",
+      "bytes": 32752344,
+      "sha256": "95b2009a942261775866291c56393694da25fbb07417da1855612e2438a01589"
+    },
+    {
+      "path": "research-cache/dated2.html",
+      "url": "https://www.uib.no/en/project/dated/95011/dated-2",
+      "bytes": 20671,
+      "sha256": "07016cbeca6b784772b7a320c687154015ad9287a55454708d10768a79bb8e30"
+    },
+    {
+      "path": "research-cache/etopo-guide.pdf",
+      "url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO2022/docs/1.2%20ETOPO%202022%20User%20Guide.pdf",
+      "bytes": 852374,
+      "sha256": "6859a650a53446d62a502dc05d04f3b174b90f2e24f46069680924270c8d1642"
+    },
+    {
+      "path": "research-cache/godbout.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593785/?pdf=render",
+      "bytes": 211591,
+      "sha256": "4b3d0aa81c3ac7461bc585c028f98401e01a12bdf29c4e17e7577085457c526c"
+    },
+    {
+      "path": "research-cache/nadi-paper.pdf",
+      "url": "https://web.natur.cuni.cz/~kfggsekr/rggg/pdf/dalton_ea_23.pdf",
+      "bytes": 28250969,
+      "sha256": "388ff99784f628fb4711bde6e49b805f3884bdcbbe2906bde952f52cd13a2dde"
+    },
+    {
+      "path": "research-cache/nadi-record.json",
+      "url": "https://zenodo.org/api/records/8161764",
+      "bytes": 5620,
+      "sha256": "0b412a83a9e9db0e995d25d62178611aff0284e70133b8b19290e1f49d9d5fe6"
+    },
+    {
+      "path": "research-cache/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO2022/data/60s/60s_bed_elev_gtif/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "bytes": 478386633,
+      "sha256": "a2cc72f8a4292dee928f439069457cdefc1fba319876807c626edce40258ba7a"
+    }
+  ],
+  "dated1_bundle_comparison": [
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.CPG",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.CPG",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.dbf",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.dbf",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.prj",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.prj",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.sbn",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.sbn",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.sbx",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.sbx",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.shp",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.shp",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.shp.xml",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.shp.xml",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS10_mc.shx",
+      "archive_member": "DATED1 TimeSlices shp/TS10_mc.shx",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.CPG",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.CPG",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.dbf",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.dbf",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.prj",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.prj",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.sbn",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.sbn",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.sbx",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.sbx",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.shp",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.shp",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.shp.xml",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.shp.xml",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS12_mc.shx",
+      "archive_member": "DATED1 TimeSlices shp/TS12_mc.shx",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.CPG",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.CPG",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.dbf",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.dbf",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.prj",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.prj",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.sbn",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.sbn",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.sbx",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.sbx",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.shp",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.shp",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.shp.xml",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.shp.xml",
+      "identical": true
+    },
+    {
+      "local_path": "ice-sheets/eurasia/TS20_mc.shx",
+      "archive_member": "DATED1 TimeSlices shp/TS20_mc.shx",
+      "identical": true
+    }
+  ],
+  "inspected_layers": [
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS10_max",
+      "source_calendar_bp": 10000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 16,
+      "native_bbox": [
+        230260.9366999995,
+        -3201793.6982000005,
+        1534858.1633999993,
+        -421057.20889999915
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 383144,
+          "sha256": "3b6691ff6aec6e730693d9b08c1ed4c8646a20984aad0d06a3b578a4fb267633"
+        },
+        "shx": {
+          "bytes": 228,
+          "sha256": "79517d7514dc85c6cf60b790499d633c62f3fe5a884d15190f14027c3ec85405"
+        },
+        "dbf": {
+          "bytes": 1394,
+          "sha256": "def70c1e35f6ec1ecce8e1268b66f49c27cfd0e013a32cb30d76e13858b46483"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS10_mc",
+      "source_calendar_bp": 10000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 1,
+      "native_bbox": [
+        424643.40210000053,
+        -3178738.2223000005,
+        975097.8264000005,
+        -2291068.3935000002
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 180988,
+          "sha256": "e836d5d400279cb20d985f870913f4d07b0afe749ceae066371af886b1bf8a82"
+        },
+        "shx": {
+          "bytes": 108,
+          "sha256": "d364ad750b430f7f46b0c10cd5f5b840fbf16763e1a1c6a1290e8daa40c0d0e0"
+        },
+        "dbf": {
+          "bytes": 239,
+          "sha256": "db884d539f622d5619e078422f881e033782c58b15e6373fe43f126337255c5e"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS10_min",
+      "source_calendar_bp": 10000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 2,
+      "native_bbox": [
+        430332.97389999963,
+        -3159545.5940000005,
+        921097.6991000008,
+        -2315061.797100001
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 47700,
+          "sha256": "4130bda09451490a196b850deb2530845654812d256af16b841acaa9b9c1a38b"
+        },
+        "shx": {
+          "bytes": 116,
+          "sha256": "1eed38fef83c0e0334cad375441a86ee25f7bf0f691fc8348d1a830ba14ef761"
+        },
+        "dbf": {
+          "bytes": 316,
+          "sha256": "359c1ea4519d8e93b044f69df700f556556fb2dc8c4fcefb6b067c4e79637175"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS12_max",
+      "source_calendar_bp": 12000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 5,
+      "native_bbox": [
+        -370037.94490000047,
+        -3728825.1248000003,
+        1591333.1445000004,
+        -400796.75620000064
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 258300,
+          "sha256": "6e0c4f42df1489c6364e8b5771fe386005b7a4678d3b20e0da36a31f2acda137"
+        },
+        "shx": {
+          "bytes": 140,
+          "sha256": "dc4392abf5d40f4d1b22182571077cee0a934d36fc5e4ec0209948732fd6d41b"
+        },
+        "dbf": {
+          "bytes": 547,
+          "sha256": "dc5a13bf6f94cb8234528e6f132c20addb5aba07250250819fceeddeda64f388"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS12_mc",
+      "source_calendar_bp": 12000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 5,
+      "native_bbox": [
+        -363808.12319999933,
+        -3727746.1931999996,
+        1546968.8527999995,
+        -406616.1436000001
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 560912,
+          "sha256": "3c942f9afed730e1feb984f113d394a9b2ba158e01a718db6d6dc53a64c828d2"
+        },
+        "shx": {
+          "bytes": 140,
+          "sha256": "3241e67a576a35134d12c123c8bb66bc7b3b45af8573bbd2a0a7c2280b3302a0"
+        },
+        "dbf": {
+          "bytes": 547,
+          "sha256": "7324e718d474d2925a8f62fd33df759c496e17a1f33658b823a0085db7e585f4"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS12_min",
+      "source_calendar_bp": 12000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 6,
+      "native_bbox": [
+        -353653.2134000007,
+        -3721921.442399999,
+        1538910.5664000006,
+        -411744.4291000002
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 156452,
+          "sha256": "d59ac0a67eeb60ed8db6129a13b6bdcd17cafab6b6d540721f04784358a1cc81"
+        },
+        "shx": {
+          "bytes": 148,
+          "sha256": "bfdfece49d960652c65db6983fd80d466fba7b5f25829f349b0520fa3148e76b"
+        },
+        "dbf": {
+          "bytes": 624,
+          "sha256": "4954c7cd86a36393d89fcb1b3391c7bb63112f2b579afca0f1b98b4cf4668f41"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/10ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 10000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 22,
+      "native_bbox": [
+        -158.8230391469359,
+        46.819365883154944,
+        -51.685876344082146,
+        83.19278883238013
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 116932,
+          "sha256": "57adf6b1955cacbd73d84dce78c149c2946bd9db9e4d3c80cfcdea24778ecdf8"
+        },
+        "shx": {
+          "bytes": 276,
+          "sha256": "a3832d1f6374e2860eeb0dacdc8d42e21d8a55d412dfe5513630c0439e95b3ae"
+        },
+        "dbf": {
+          "bytes": 506,
+          "sha256": "4fed4b967997681e742972646481bc4d7176371c481927f1d3f223c1189356a5"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/10ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 10000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 41,
+      "native_bbox": [
+        -115.36666927547344,
+        49.34495437434583,
+        -55.50309627026206,
+        83.11792448460456
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 157456,
+          "sha256": "3f75992bc21a22515af28b3cbdd9b546f7f10a1decc566ed105a441b336e81de"
+        },
+        "shx": {
+          "bytes": 428,
+          "sha256": "68a887d6f3dded131c586bd23d7c221ec6ba9356c9aac64b101bff2f28bddc05"
+        },
+        "dbf": {
+          "bytes": 886,
+          "sha256": "fade877dabb900af27b2c7d66575c7c90b1a3288e0eb548aa917fa943821d5f5"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/10ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 10000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 22,
+      "native_bbox": [
+        -153.52975445280285,
+        48.034577027596136,
+        -52.65972613027197,
+        83.13218325855969
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 90612,
+          "sha256": "4c779869b6077a91b9f2a2f5d8a60d9395259901b1a21ffe701219bd5d6221e2"
+        },
+        "shx": {
+          "bytes": 276,
+          "sha256": "e3a18ea077578626a749fa710ce86f6fac6c6461d2b4fbb296c8ec109c76d6df"
+        },
+        "dbf": {
+          "bytes": 506,
+          "sha256": "566ea50c558a93cf215ccad763e380110ba97c75622b750d00687daa2ce8775c"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 12000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 33,
+      "native_bbox": [
+        -158.8230391469359,
+        44.25766259648742,
+        -48.42323263702923,
+        84.25878267106293
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 139056,
+          "sha256": "48dd143f2a92014f948ce9f659b7d7af6b95da9775e6640a3696b17c24c432d7"
+        },
+        "shx": {
+          "bytes": 364,
+          "sha256": "5ae5d219d75e3a81b365cce88e3a2e5a8a41145e29e2d1c8e134eb261c84bcb0"
+        },
+        "dbf": {
+          "bytes": 726,
+          "sha256": "a9fa3bad102cf2c8766635d246987482229762f95b30acca981d916f71b1cc80"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 12000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 20,
+      "native_bbox": [
+        -134.98494642415756,
+        46.81936588316609,
+        -54.62764950467481,
+        83.1398004242123
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 80216,
+          "sha256": "c857b46b7c83d1a267acffc4c15813ca1f7e8e67abf08fdcac8a05d81d2358fb"
+        },
+        "shx": {
+          "bytes": 260,
+          "sha256": "11e61f95bddcc85e1077f427c7f4d610939e3cca46e50b378311080bd2b6a821"
+        },
+        "dbf": {
+          "bytes": 466,
+          "sha256": "b7494d66e9ab4c43629f5347ae59afe19c499da75c79f22b3d9f8ae959408c6d"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 12000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 37,
+      "native_bbox": [
+        -153.52975445280285,
+        44.40586850393839,
+        -51.62532624877415,
+        83.25315426427437
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 162500,
+          "sha256": "44089a28b98996a202f1685175bcab5c995316e4a1f89cf4601de2696ffa0225"
+        },
+        "shx": {
+          "bytes": 396,
+          "sha256": "924046ee3a176cee9b8450af1356645c21cf4edce0daa864974dceead6e40509"
+        },
+        "dbf": {
+          "bytes": 806,
+          "sha256": "bed4d58d0e4c479a0d553f58b69beae216351986d6e4a6593340a7dd210a7fe7"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/5ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 5000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 144,
+      "native_bbox": [
+        -158.82301931399996,
+        56.316792441000075,
+        -54.899317033999964,
+        83.11565617000007
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 297612,
+          "sha256": "3babf5d4b474dc4a85c9968db70cc8087e93edb94ec1cf1c8c983c42c617845f"
+        },
+        "shx": {
+          "bytes": 1252,
+          "sha256": "5e738674ef36717248e46a8a0dc97a541bb73fcd0652b2ab92c94c705e8df24c"
+        },
+        "dbf": {
+          "bytes": 2946,
+          "sha256": "0c31ef204231695b14c0eb7a5c119892f0bc65987f701223707c61ea4a645bdb"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/5ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 5000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 292,
+      "native_bbox": [
+        -115.15213355399999,
+        62.15276585400005,
+        -55.503102138999964,
+        83.11565617000008
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 602360,
+          "sha256": "9e9e27c5f0cabc75d56485af58589805dd4c92d43b7d9bd82967106e57008c87"
+        },
+        "shx": {
+          "bytes": 2436,
+          "sha256": "4f49e3bd69f767b2054e79c6c408dca13be643962dec97161eb93b412db52dba"
+        },
+        "dbf": {
+          "bytes": 5906,
+          "sha256": "1dcf4f3233bb5f2b15056f94ec1f4e766cba9c5148006d25dab56382086e41b2"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/5ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 5000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 301,
+      "native_bbox": [
+        -153.53195163999996,
+        59.72223579100006,
+        -54.81363783699995,
+        83.11565617000008
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 547540,
+          "sha256": "44ebeed6a084c64415f598a3d45330306f500a676101c6c2188cfa2f212bc26e"
+        },
+        "shx": {
+          "bytes": 2508,
+          "sha256": "6a9280f8bfef3f4a0fb18f7295d5178204ab71c8d2d07ba9d588175a5bae128e"
+        },
+        "dbf": {
+          "bytes": 6086,
+          "sha256": "eedd99bf065c9868f2204d6cfcd3e822421e557bf28307fe44ca4a07bfddd8b6"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 6000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 141,
+      "native_bbox": [
+        -158.8230391469359,
+        52.5154761786747,
+        -54.75070423875887,
+        83.11566803579308
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 299508,
+          "sha256": "c717dbd3e6af9312e68847ca1fcc6d82cfaa871485479f110a9014a5d360c321"
+        },
+        "shx": {
+          "bytes": 1228,
+          "sha256": "703dde544c393045814e10283d08d9eb3bb2fcd8b227ae76a1a92a48634f6ea7"
+        },
+        "dbf": {
+          "bytes": 2886,
+          "sha256": "13d9dcc6adcc8ea763b38d4553afd2c891b6ee20931bb089923583523e6d8591"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 6000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 292,
+      "native_bbox": [
+        -115.15217037668549,
+        62.15276585478273,
+        -55.50309627026206,
+        83.11566803593075
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 538156,
+          "sha256": "e5820a791cefb79abdbb1193cb4cda94f2b6df28b61d30c442e16620dd0fe032"
+        },
+        "shx": {
+          "bytes": 2436,
+          "sha256": "ca7580ddfedb542c1d19abc7d125d789d6c2e19ce0399639a2cd3469fc050322"
+        },
+        "dbf": {
+          "bytes": 5906,
+          "sha256": "da76cb98db905d9f5a06f42ba33302db4c42b100fdedace3f88e11c0db92405d"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 6000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 239,
+      "native_bbox": [
+        -153.52975445279716,
+        56.561035870541254,
+        -54.81363098490823,
+        83.11566803591353
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 453432,
+          "sha256": "2d571a571c575f7ccb15391b9a8fa3741f7ea59edc52f04f8b53d6153c79c414"
+        },
+        "shx": {
+          "bytes": 2012,
+          "sha256": "da154c32bdab87accba69ae1ed9a49fc6661469f2de42f4884808a278aa750b5"
+        },
+        "dbf": {
+          "bytes": 4846,
+          "sha256": "667755aacca9c1a6207c080a35229ad5a827f896fb2aca58adbc17314534db6d"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/7ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 7000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 102,
+      "native_bbox": [
+        -158.8230391469359,
+        50.265060222821376,
+        -54.750704238759795,
+        83.11602363024144
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 232312,
+          "sha256": "7165962e4ed9b4d334864c64307f0eb5ad509dce088d1e5bc8b32700030a57ab"
+        },
+        "shx": {
+          "bytes": 916,
+          "sha256": "0c8b0e3c138c904d128eec977681a3f66fcc38a6b3e7f1dbafb285c4668fc170"
+        },
+        "dbf": {
+          "bytes": 2106,
+          "sha256": "3b4b132d907d156cbe6e6601e794ba8cecb889df909dde21b219e53fe7f0cb91"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/7ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 7000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 229,
+      "native_bbox": [
+        -115.1521703766872,
+        56.56103587054139,
+        -55.50309627026206,
+        83.11566803591353
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 424072,
+          "sha256": "d1063f7de2ba024279a5aee12ec7bad354cdde38fe49babe252cd8e129e48ab0"
+        },
+        "shx": {
+          "bytes": 1932,
+          "sha256": "1fcf66b2fed2348b8fde4722e662bfb4eee5df7d9e0e05b1b4f2f840f2a4f0a7"
+        },
+        "dbf": {
+          "bytes": 4646,
+          "sha256": "ab66601b7c65d69d5bb9490283d91508e0da84851f9a8bda6d9f8c6de0e7561b"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/7ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 7000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 194,
+      "native_bbox": [
+        -153.5297544528,
+        52.51547617867456,
+        -54.81363098154549,
+        83.11566803583572
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 371680,
+          "sha256": "a8f1a3fece8da119ae52e47acadee8e9e854b118bf4581477b517ff8e2b5f624"
+        },
+        "shx": {
+          "bytes": 1652,
+          "sha256": "83ada8d8734c4c3ba9f93f6985478f9ee6d8dc5b5aa589b061644c5d85aaac90"
+        },
+        "dbf": {
+          "bytes": 3946,
+          "sha256": "4bb71d049867a6f812a6650abf32baa3521bf58be53eea25c9bcaec0bdf24224"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    }
+  ],
+  "nadi1_publisher_md5": "fde5b0c80e766183ba5ad87c611f3e56",
+  "nadi1_license_from_api": "CC-BY-4.0",
+  "modern_alignment": {
+    "path": "../../src/earthTextures/earth-blue-marble.jpg",
+    "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01",
+    "source_identity": "unresolved",
+    "dimensions": [
+      4096,
+      2048
+    ]
+  },
+  "datasets": [
+    {
+      "id": "nadi-1",
+      "version": "v1, 2023-11-09",
+      "doi": "10.5281/zenodo.8161764",
+      "license": "CC-BY-4.0",
+      "status": "selected_margin_evidence",
+      "age_system": "calendar BP (1950)",
+      "marine_classification": "unresolved; no class field"
+    },
+    {
+      "id": "dated-1",
+      "version": "PANGAEA.848117, 2015 release",
+      "doi": "10.1594/PANGAEA.848117",
+      "license": "CC-BY-3.0",
+      "status": "selected_margin_evidence",
+      "age_system": "calendar BP (1950)",
+      "marine_classification": "unresolved; no class field"
+    },
+    {
+      "id": "godbout-ice6g",
+      "doi": "10.1594/PANGAEA.947536",
+      "license": "CC-BY-4.0",
+      "status": "selected_family_not_acquired",
+      "candidate_archive": "ICE6G_Paleo_subice.zip",
+      "trial_calendar_bp": [
+        12000,
+        10000,
+        7000
+      ],
+      "vertical_reference": "epoch-relative paleoDEM; do not apply another sea-level offset",
+      "alternatives": [
+        "ICE5G",
+        "ICE7G"
+      ]
+    },
+    {
+      "id": "paleogris-1",
+      "doi": "10.17632/nh57cz4gys.1",
+      "license": "CC-BY-4.0",
+      "status": "preferred_extension_not_acquired",
+      "candidate_calendar_bp": [
+        12000,
+        10000,
+        7000
+      ]
+    },
+    {
+      "id": "etopo-2022",
+      "version": "v1 60s bed",
+      "license": "CC0-1.0",
+      "status": "selected_modern_reference_not_paleotopography"
+    }
+  ],
+  "eras": [
+    {
+      "slug": "world-bc123000",
+      "target_calendar_bp": 124949,
+      "source_group": "L",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc10000",
+      "target_calendar_bp": 11949,
+      "source_group": "D12",
+      "selected_margin_slices": [
+        {
+          "dataset": "nadi-1",
+          "source_calendar_bp": 12000,
+          "source_minus_target_years": 51,
+          "bounds": [
+            "OPTIMAL",
+            "MIN",
+            "MAX"
+          ],
+          "policy": "nearest_slice_approximation"
+        },
+        {
+          "dataset": "dated-1",
+          "source_calendar_bp": 12000,
+          "source_minus_target_years": 51,
+          "bounds": [
+            "mc",
+            "min",
+            "max"
+          ],
+          "policy": "nearest_slice_approximation"
+        }
+      ],
+      "grounded_ice": "regional_margin_evidence_selected_classification_pending",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc8000",
+      "target_calendar_bp": 9949,
+      "source_group": "D10",
+      "selected_margin_slices": [
+        {
+          "dataset": "nadi-1",
+          "source_calendar_bp": 10000,
+          "source_minus_target_years": 51,
+          "bounds": [
+            "OPTIMAL",
+            "MIN",
+            "MAX"
+          ],
+          "policy": "nearest_slice_approximation"
+        },
+        {
+          "dataset": "dated-1",
+          "source_calendar_bp": 10000,
+          "source_minus_target_years": 51,
+          "bounds": [
+            "mc",
+            "min",
+            "max"
+          ],
+          "policy": "endpoint_approximation"
+        }
+      ],
+      "grounded_ice": "regional_margin_evidence_selected_classification_pending",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc5000",
+      "target_calendar_bp": 6949,
+      "source_group": "H-early",
+      "selected_margin_slices": [
+        {
+          "dataset": "nadi-1",
+          "source_calendar_bp": 7000,
+          "source_minus_target_years": 51,
+          "bounds": [
+            "OPTIMAL",
+            "MIN",
+            "MAX"
+          ],
+          "policy": "nearest_slice_approximation"
+        }
+      ],
+      "grounded_ice": "regional_margin_evidence_selected_classification_pending",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc4000",
+      "target_calendar_bp": 5949,
+      "source_group": "H-early",
+      "selected_margin_slices": [
+        {
+          "dataset": "nadi-1",
+          "source_calendar_bp": 6000,
+          "source_minus_target_years": 51,
+          "bounds": [
+            "OPTIMAL",
+            "MIN",
+            "MAX"
+          ],
+          "policy": "nearest_slice_approximation"
+        }
+      ],
+      "grounded_ice": "regional_margin_evidence_selected_classification_pending",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc3000",
+      "target_calendar_bp": 4949,
+      "source_group": "H-early",
+      "selected_margin_slices": [
+        {
+          "dataset": "nadi-1",
+          "source_calendar_bp": 5000,
+          "source_minus_target_years": 51,
+          "bounds": [
+            "OPTIMAL",
+            "MIN",
+            "MAX"
+          ],
+          "policy": "nearest_slice_approximation"
+        }
+      ],
+      "grounded_ice": "regional_margin_evidence_selected_classification_pending",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc2000",
+      "target_calendar_bp": 3949,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc1500",
+      "target_calendar_bp": 3449,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc1000",
+      "target_calendar_bp": 2949,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc700",
+      "target_calendar_bp": 2649,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc500",
+      "target_calendar_bp": 2449,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc400",
+      "target_calendar_bp": 2349,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc323",
+      "target_calendar_bp": 2272,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc300",
+      "target_calendar_bp": 2249,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc200",
+      "target_calendar_bp": 2149,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc100",
+      "target_calendar_bp": 2049,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-bc1",
+      "target_calendar_bp": 1950,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-100",
+      "target_calendar_bp": 1850,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-200",
+      "target_calendar_bp": 1750,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-300",
+      "target_calendar_bp": 1650,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-400",
+      "target_calendar_bp": 1550,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-500",
+      "target_calendar_bp": 1450,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-600",
+      "target_calendar_bp": 1350,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-700",
+      "target_calendar_bp": 1250,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-800",
+      "target_calendar_bp": 1150,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-900",
+      "target_calendar_bp": 1050,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1000",
+      "target_calendar_bp": 950,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1100",
+      "target_calendar_bp": 850,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1200",
+      "target_calendar_bp": 750,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1279",
+      "target_calendar_bp": 671,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1300",
+      "target_calendar_bp": 650,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1400",
+      "target_calendar_bp": 550,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1492",
+      "target_calendar_bp": 458,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1500",
+      "target_calendar_bp": 450,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1530",
+      "target_calendar_bp": 420,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1600",
+      "target_calendar_bp": 350,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1650",
+      "target_calendar_bp": 300,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1700",
+      "target_calendar_bp": 250,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1715",
+      "target_calendar_bp": 235,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1783",
+      "target_calendar_bp": 167,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1800",
+      "target_calendar_bp": 150,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1815",
+      "target_calendar_bp": 135,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1878",
+      "target_calendar_bp": 72,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1880",
+      "target_calendar_bp": 70,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1900",
+      "target_calendar_bp": 50,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1914",
+      "target_calendar_bp": 36,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1920",
+      "target_calendar_bp": 30,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1930",
+      "target_calendar_bp": 20,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1938",
+      "target_calendar_bp": 12,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1945",
+      "target_calendar_bp": 5,
+      "source_group": "H",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1960",
+      "target_calendar_bp": -10,
+      "source_group": "M",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-1994",
+      "target_calendar_bp": -44,
+      "source_group": "M",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-2000",
+      "target_calendar_bp": -50,
+      "source_group": "M",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    },
+    {
+      "slug": "world-2010",
+      "target_calendar_bp": -60,
+      "source_group": "M",
+      "selected_margin_slices": [],
+      "grounded_ice": "unavailable",
+      "exposed_land": "unavailable",
+      "flooded_land": "unavailable",
+      "floating_shelf": "unavailable",
+      "winter_sea_ice": "unavailable",
+      "summer_sea_ice": "unavailable",
+      "complete_global_set": false
+    }
+  ],
+  "elevation_inspection": {
+    "dimensions": [
+      21600,
+      10800
+    ],
+    "mode": "F",
+    "pixel_scale": [
+      0.016666666666666666,
+      0.016666666666666666,
+      1.0
+    ],
+    "tie_point": [
+      0.0,
+      0.0,
+      0.0,
+      -180.0,
+      90.0,
+      0.0
+    ],
+    "geokey_directory": [
+      1,
+      1,
+      1,
+      5,
+      1024,
+      0,
+      1,
+      2,
+      1025,
+      0,
+      1,
+      1,
+      1026,
+      34737,
+      24,
+      0,
+      2048,
+      0,
+      1,
+      4326,
+      4096,
+      0,
+      1,
+      3855
+    ],
+    "geokey_citation": "WGS 84 + EGM2008 height|",
+    "nodata": "-99999",
+    "registration": "PixelIsArea",
+    "horizontal_crs": "EPSG:4326",
+    "vertical_crs": "EPSG:3855",
+    "validation": "Complete download size, SHA-256 and GeoTIFF tags checked; terrain classification not validated"
+  }
+}

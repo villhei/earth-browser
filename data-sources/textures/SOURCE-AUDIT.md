@@ -1,5 +1,7 @@
 # Phase 1: era dates and source audit
 
+> Historical audit snapshot. Phase-2 resolutions and current dataset choices are in [SOURCE-SELECTION.md](SOURCE-SELECTION.md); the unresolved findings below describe the inputs at the time of phase 1.
+
 Audit date: 2026-09-16. Scope: phase 1 of [PLAN.md](PLAN.md). This is the first reviewable deliverable; recommendations below are candidates for phase 2, not approved generation inputs. Existing texture-removal changes were preserved. No masks or artistic textures were generated.
 
 ## Date convention and matching policy
