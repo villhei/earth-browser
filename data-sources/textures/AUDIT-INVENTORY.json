@@ -1,0 +1,437 @@
+{
+  "audit_date": "2026-09-16",
+  "note": "Local snapshot, not authentication against publisher originals. Paths relative to repository root.",
+  "files": [
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.dbf",
+      "bytes": 239,
+      "sha256": "db884d539f622d5619e078422f881e033782c58b15e6373fe43f126337255c5e"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.prj",
+      "bytes": 390,
+      "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.sbn",
+      "bytes": 132,
+      "sha256": "6859d9ae0fa3858566e3f510d75f6ba675ebbd209e97625d00e4017918938e6a"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.sbx",
+      "bytes": 116,
+      "sha256": "f841216ae58e207f5b00e204b1da3d96ec007d2c48d01cebe30a90d05a4c71ce"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.shp",
+      "bytes": 180988,
+      "sha256": "e836d5d400279cb20d985f870913f4d07b0afe749ceae066371af886b1bf8a82"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.shp.xml",
+      "bytes": 9772,
+      "sha256": "fab10ac3c4d91837221d5e4fb8b892787421ddc1c61aa492ea1e50b2fd897cb5"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.shx",
+      "bytes": 108,
+      "sha256": "d364ad750b430f7f46b0c10cd5f5b840fbf16763e1a1c6a1290e8daa40c0d0e0"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.dbf",
+      "bytes": 547,
+      "sha256": "7324e718d474d2925a8f62fd33df759c496e17a1f33658b823a0085db7e585f4"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.prj",
+      "bytes": 390,
+      "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.sbn",
+      "bytes": 196,
+      "sha256": "36906074726427b1536ea497c3feae1cb656608e569393778f765c20d2fabdb8"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.sbx",
+      "bytes": 132,
+      "sha256": "91dafba1db7203b8b5395bca2def584def8bf964e27cd4e5e6501b3cf4a22a0b"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.shp",
+      "bytes": 560912,
+      "sha256": "3c942f9afed730e1feb984f113d394a9b2ba158e01a718db6d6dc53a64c828d2"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.shp.xml",
+      "bytes": 9775,
+      "sha256": "9149d9f7f94483ea26452432cb8ec3acc06d8ae2a53d6093af047747589603cb"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.shx",
+      "bytes": 140,
+      "sha256": "3241e67a576a35134d12c123c8bb66bc7b3b45af8573bbd2a0a7c2280b3302a0"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.dbf",
+      "bytes": 239,
+      "sha256": "bbc3be7ce1dc3acfd08e45428bab07e1a66bf9861d4d132fd44c9936e83d22b5"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.prj",
+      "bytes": 390,
+      "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.sbn",
+      "bytes": 132,
+      "sha256": "c339f5f63e681afa8262aa0408bd998a157107f731250c246f038dbeb21e2b81"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.sbx",
+      "bytes": 116,
+      "sha256": "1c1f9263e135dff6aad952be337e7ebb61e057e8e0ad62fbf7203246086d769d"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.shp",
+      "bytes": 1603084,
+      "sha256": "8e914a9f9247087c5441e93b887cd59f251ce976a552c8a7363e3bd495d2b32b"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.shp.xml",
+      "bytes": 9440,
+      "sha256": "cd12f7475e857ef576fff6e3d041ed33a1c9d1b68a24c07d2ea4824446ec0197"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.shx",
+      "bytes": 108,
+      "sha256": "662ede57e99884695b1f20861d0f7522767d05533b5b18bbf20cdde907cdf9ed"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice005000.dbf",
+      "bytes": 36063,
+      "sha256": "05378f2dfafb978a56b249ef41b83ebe7c1ee429003c91e7dd3d8b30a31df365"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice005000.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice005000.shp",
+      "bytes": 653964,
+      "sha256": "ac7b946e43f6eff9bd12954bfea88839840b718b2f2b74409053221d3620566c"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice005000.shx",
+      "bytes": 1876,
+      "sha256": "dc682846a613e00c915ee375fa5177fc5b5be15cacfc226df3c22a8e254f0f51"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice007000.dbf",
+      "bytes": 21051,
+      "sha256": "fa44f64bfef29031a513ae8db92022b4d13177b15a8f49403d69629f58581533"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice007000.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice007000.shp",
+      "bytes": 685180,
+      "sha256": "721f94e01a4e457d24b24496c1981d24d817ebd58ae333c80008a0a4a8474095"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice007000.shx",
+      "bytes": 1972,
+      "sha256": "b7b33ca81162c12edd8f1a61a8e62bc0d631965c48e73d7d2eb32d8e6bf7ea61"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice010000.dbf",
+      "bytes": 37160,
+      "sha256": "acb4991dff42e3983ff958515462af5d352e26a115e74078eed76845d14d62c2"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice010000.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice010000.shp",
+      "bytes": 458228,
+      "sha256": "9c643b21a81baea88a73e860ab53ead9b5ef822ecceb4fd1dc80ef112898fc87"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice010000.shx",
+      "bytes": 3420,
+      "sha256": "3421ea0817da5431b1a49a2eb58d975d530ae4c0b815c14237aede75e4877a36"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice012000.dbf",
+      "bytes": 74184,
+      "sha256": "1d52f2df5694e5cf223b4276830f044b110086fdee67ca8d9559978c00bfa243"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice012000.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice012000.shp",
+      "bytes": 933260,
+      "sha256": "5b11b6057f2d810d08173c0044d7d08ed3663c3d27d02618b71b935d64bfec65"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice012000.shx",
+      "bytes": 6748,
+      "sha256": "fa4f9f1c69b47829aea999ff303a1867efead7ae0f225eeb0c1a9181b45b6de9"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice018000.dbf",
+      "bytes": 23899,
+      "sha256": "7312579d4e5f9d2fa3cc42fba5c452238962bf0aa0b9dbc23e9350a115e26bb6"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice018000.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice018000.shp",
+      "bytes": 532876,
+      "sha256": "34780eb75331f69a00ac61cc355b5fb44c508c4342b8141781b7c2fa2f08e0cd"
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice018000.shx",
+      "bytes": 2228,
+      "sha256": "16444b8a02df8f88fca49cde0074db1aff900787fdef6ea46c1890ce3e2cd82b"
+    },
+    {
+      "path": "data-sources/textures/elevation_4096x2048.npy",
+      "bytes": 33554560,
+      "sha256": "b0d94730a1db7c592b60429f01cb240e3b8077deddaf3dc3ec991b5000e64a44"
+    },
+    {
+      "path": "src/earthTextures/earth-blue-marble.jpg",
+      "bytes": 1461877,
+      "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01"
+    },
+    {
+      "path": "src/server/eraMetadata.ts",
+      "bytes": 18777,
+      "sha256": "9f4ad7405a76f68f07f951e6f53b07b3d80cf0c8b72e8b85abe9f975327dfb53"
+    }
+  ],
+  "shapefiles": [
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS10_mc.shp",
+      "shape_type": 5,
+      "records": 1,
+      "bbox_native": [
+        424643.40210000053,
+        -3178738.2223000005,
+        975097.8264000005,
+        -2291068.3935000002
+      ],
+      "parts": 1,
+      "points": 11302,
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "AV_Time_values": [
+        10.0
+      ]
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS12_mc.shp",
+      "shape_type": 5,
+      "records": 5,
+      "bbox_native": [
+        -363808.12319999933,
+        -3727746.1931999996,
+        1546968.8527999995,
+        -406616.1436000001
+      ],
+      "parts": 6,
+      "points": 35033,
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "AV_Time_values": [
+        12.0
+      ]
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/eurasia/TS20_mc.shp",
+      "shape_type": 5,
+      "records": 1,
+      "bbox_native": [
+        -801790.9597999994,
+        -4197747.412599999,
+        2195055.1127000004,
+        -66081.86799999932
+      ],
+      "parts": 1,
+      "points": 100183,
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "AV_Time_values": [
+        20.0
+      ]
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice005000.shp",
+      "shape_type": 5,
+      "records": 222,
+      "bbox_native": [
+        -153.52975445313217,
+        41.37078833878453,
+        -11.965686853383755,
+        83.41110513556147
+      ],
+      "parts": 352,
+      "points": 40057,
+      "fields": [
+        "cat",
+        "AREA",
+        "PERIMETER",
+        "ICE5K_",
+        "ICE5K_ID",
+        "AKICE_",
+        "AKICE_ID",
+        "POLY_",
+        "SYMB"
+      ],
+      "SYMB_counts": {
+        "ICE": 128,
+        "LAKE": 94
+      }
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice007000.shp",
+      "shape_type": 5,
+      "records": 234,
+      "bbox_native": [
+        -153.52975445313217,
+        41.3707874916358,
+        -11.965691721017727,
+        83.41110513619762
+      ],
+      "parts": 360,
+      "points": 41967,
+      "fields": [
+        "cat",
+        "AREA",
+        "PERIMETER",
+        "ICE7K_",
+        "ICE7K_ID",
+        "SYMB"
+      ],
+      "SYMB_counts": {
+        "ICE": 151,
+        "LAKE": 83
+      }
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice010000.shp",
+      "shape_type": 5,
+      "records": 415,
+      "bbox_native": [
+        -153.52975445313217,
+        41.61718990689662,
+        -12.12163147597649,
+        83.85250173807881
+      ],
+      "parts": 421,
+      "points": 27179,
+      "fields": [
+        "cat",
+        "AREA",
+        "PERIMETER",
+        "ICE10K_",
+        "ICE10K_ID",
+        "SYMB"
+      ],
+      "SYMB_counts": {
+        "ICE": 217,
+        "LAKE": 198
+      }
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice012000.shp",
+      "shape_type": 5,
+      "records": 831,
+      "bbox_native": [
+        -159.09310763559077,
+        41.56841054167401,
+        -9.944332606277824,
+        84.02993860918453
+      ],
+      "parts": 871,
+      "points": 55404,
+      "fields": [
+        "cat",
+        "AREA",
+        "PERIMETER",
+        "ICE12K_",
+        "ICE12K_ID",
+        "SYMB"
+      ],
+      "SYMB_counts": {
+        "ICE": 477,
+        "LAKE": 354
+      }
+    },
+    {
+      "path": "data-sources/textures/ice-sheets/north-america/ice018000.shp",
+      "shape_type": 5,
+      "records": 266,
+      "bbox_native": [
+        -166.13922166375343,
+        36.038067294984536,
+        -9.944332662703816,
+        84.02993860759305
+      ],
+      "parts": 292,
+      "points": 32361,
+      "fields": [
+        "cat",
+        "AREA",
+        "PERIMETER",
+        "ICE18K_",
+        "ICE18K_ID",
+        "SYMB"
+      ],
+      "SYMB_counts": {
+        "LAKE": 127,
+        "ICE": 139
+      }
+    }
+  ]
+}
