@@ -2,6 +2,10 @@
 
 This directory contains the geospatial source data, vector shapefiles, and technical documentation for generating era-accurate, high-resolution Earth textures with bathymetry-based coastline expansions and glacial ice sheets for `earth-browser`.
 
+> **Status:** The four generated prehistoric JPEGs and their app integration have been removed. Modern textures and research inputs are retained. The pipeline below documents the legacy generator; its reconstructions have not been validated and are being replaced with independently sourced, transparent era masks. Running the legacy generator recreates the retired JPEGs.
+
+> **Current source audit:** See [SOURCE-AUDIT.md](SOURCE-AUDIT.md) for catalog dates, usable inputs and unresolved provenance. The legacy North American BP-to-BCE assignments below are unsupported: the attributed source uses radiocarbon chronology. Those files also contain `LAKE` records. Sea-level offsets and artistic marine ice below are legacy assumptions, not validated reconstruction inputs.
+
 ---
 
 ## 1. Overview & Paleogeography

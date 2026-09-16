@@ -57,18 +57,6 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               <option value={GlobeTexture.EARTH_BLUE_MARBLE}>
                 Blue Marble (Modern)
               </option>
-              <option value={GlobeTexture.EARTH_BLUE_MARBLE_123K_BC}>
-                Blue Marble (123k BCE Eemian)
-              </option>
-              <option value={GlobeTexture.EARTH_BLUE_MARBLE_10K_BC}>
-                Blue Marble (10k BCE Younger Dryas)
-              </option>
-              <option value={GlobeTexture.EARTH_BLUE_MARBLE_8K_BC}>
-                Blue Marble (8000 BCE Neolithic)
-              </option>
-              <option value={GlobeTexture.EARTH_BLUE_MARBLE_5K_BC}>
-                Blue Marble (5000 BCE Green Sahara)
-              </option>
               <option value={GlobeTexture.EARTH_DAY}>Day Map</option>
               <option value={GlobeTexture.EARTH_NIGHT}>Night Lights</option>
               <option value={GlobeTexture.EARTH_DARK}>Dark Planetary</option>
