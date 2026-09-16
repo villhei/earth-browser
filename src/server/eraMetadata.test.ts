@@ -4,8 +4,8 @@ import path from "path"
 import { ERA_CATALOG, getEraByFilename, getEraBySlug } from "./eraMetadata"
 
 describe("Era Metadata Catalog", () => {
-  it("contains all 53 historical and modern eras", () => {
-    expect(ERA_CATALOG.length).toBe(53)
+  it("contains all 54 historical and modern eras", () => {
+    expect(ERA_CATALOG.length).toBe(54)
   })
 
   it("is strictly ordered chronologically by year_start", () => {
@@ -46,9 +46,18 @@ describe("Era Metadata Catalog", () => {
     expect(eraBc1).toBeDefined()
     expect(eraBc1?.year_start).toBe(-1)
     expect(eraBc1?.slug).toBe("world-bc1")
+    const era1878 = getEraByFilename("world_1878.geojson")
+    expect(era1878).toBeDefined()
+    expect(era1878?.year_start).toBe(1878)
+    expect(era1878?.slug).toBe("world-1878")
   })
 
   it("resolves era by slug correctly", () => {
+    const era1878 = getEraBySlug("world-1878")
+    expect(era1878).toBeDefined()
+    expect(era1878?.year_start).toBe(1878)
+    expect(era1878?.year_label).toBe("1878 CE")
+
     const era2000bc = getEraBySlug("world-bc2000")
     expect(era2000bc).toBeDefined()
     expect(era2000bc?.year_start).toBe(-2000)

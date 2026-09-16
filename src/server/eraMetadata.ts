@@ -434,10 +434,20 @@ export const ERA_CATALOG: EraMetadata[] = [
     filename: "world_1815.geojson",
     name: "1815 CE - Congress of Vienna",
     year_start: 1815,
-    year_end: 1880,
+    year_end: 1878,
     year_label: "1815 CE",
     description:
       "Post-Napoleonic Concert of Europe; Latin American wars of independence create new republics.",
+  },
+  {
+    slug: "world-1878",
+    filename: "world_1878.geojson",
+    name: "1878 CE - Congress of Berlin & Eve of the War of the Pacific",
+    year_start: 1878,
+    year_end: 1880,
+    year_label: "1878 CE",
+    description:
+      "Congress of Berlin restructures the Balkans; eve of the War of the Pacific in South America; Late Victorian imperial era.",
   },
   {
     slug: "world-1880",

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { GlobeConfig } from "../types"
+import { GlobeConfig, GlobeTexture } from "../types"
 import "./ControlsOverlay.css"
 
 interface ControlsOverlayProps {
@@ -13,7 +13,6 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onChangeConfig,
   onOpenAttribution,
 }) => {
-
   const [isOpen, setIsOpen] = useState(false)
 
   const labelSize = config.labelSize ?? 14
@@ -29,7 +28,6 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
         Visuals
       </button>
 
-
       {isOpen && (
         <div className="controls-panel">
           <div className="controls-header">
@@ -40,6 +38,41 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
             >
               ✕
             </button>
+          </div>
+
+          <div className="controls-group">
+            <div className="controls-label-row">
+              <label className="controls-label">Earth Surface Texture</label>
+            </div>
+            <select
+              className="controls-select"
+              value={config.texture}
+              onChange={(e) =>
+                onChangeConfig({
+                  ...config,
+                  texture: e.target.value as GlobeTexture,
+                })
+              }
+            >
+              <option value={GlobeTexture.EARTH_BLUE_MARBLE}>
+                Blue Marble (Modern)
+              </option>
+              <option value={GlobeTexture.EARTH_BLUE_MARBLE_123K_BC}>
+                Blue Marble (123k BCE Eemian)
+              </option>
+              <option value={GlobeTexture.EARTH_BLUE_MARBLE_10K_BC}>
+                Blue Marble (10k BCE Younger Dryas)
+              </option>
+              <option value={GlobeTexture.EARTH_BLUE_MARBLE_8K_BC}>
+                Blue Marble (8000 BCE Neolithic)
+              </option>
+              <option value={GlobeTexture.EARTH_BLUE_MARBLE_5K_BC}>
+                Blue Marble (5000 BCE Green Sahara)
+              </option>
+              <option value={GlobeTexture.EARTH_DAY}>Day Map</option>
+              <option value={GlobeTexture.EARTH_NIGHT}>Night Lights</option>
+              <option value={GlobeTexture.EARTH_DARK}>Dark Planetary</option>
+            </select>
           </div>
 
           <div className="controls-group">
@@ -86,14 +119,14 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
 
           <div className="controls-group">
             <div className="controls-label-row">
-              <label className="controls-label">Fill Opacity</label>
+              <label className="controls-label">Country Base Opacity</label>
               <span className="controls-val">
                 {Math.round(config.opacity * 100)}%
               </span>
             </div>
             <input
               type="range"
-              min={0.1}
+              min={0.0}
               max={1.0}
               step={0.05}
               value={config.opacity}

@@ -178,7 +178,7 @@ export const HISTORICAL_LINEAGE_RULES: LineageRule[] = [
   // ==========================================
   // 5. Oceania & Austronesian Realms
   // ==========================================
-  { pattern: /polynesian|austronesian|tu.i tonga|tonga|tu.i manu.a|samoa|american samoa|rapa nui|maori|maoris|niue|wallis|futuna|hawaii|hawai.i|kō hawai|kongldom of hawaii|tahiti|tuamotu|marquesas|cook islands|tokelau/i, lineageId: "polynesia", canonicalName: "Polynesian Realms & Voyagers", baseColor: "#0284c7", cultureGroup: "Oceania" },
+  { pattern: /polynesian|austronesian|tu.i tonga|tonga|tu.i manu.a|samoa|american samoa|rapa nui|m[aā\?]?ori|maori|maoris|niue|wallis|futuna|hawaii|hawai.i|kō hawai|kongldom of hawaii|tahiti|tuamotu|marquesas|cook islands|tokelau/i, lineageId: "polynesia", canonicalName: "Polynesian Realms & Voyagers", baseColor: "#0284c7", cultureGroup: "Oceania" },
   { pattern: /fiji|papua|melanesian|vanuatu|solomon islands|solomon is|new caledonia|kanak/i, lineageId: "melanesia", canonicalName: "Melanesian Realms", baseColor: "#0d9488", cultureGroup: "Oceania" },
   { pattern: /micronesia|palau|yap|chuuk|pohnpei|nan madol|kosrae|leluh|marshall islands|kiribati|nauru/i, lineageId: "micronesia", canonicalName: "Micronesian Realms", baseColor: "#0284c7", cultureGroup: "Oceania" },
 

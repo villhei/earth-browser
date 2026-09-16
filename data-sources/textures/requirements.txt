@@ -1,0 +1,6 @@
+# Python dependencies for prehistoric Earth texture generation
+pillow>=10.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+pyshp>=2.3.0
+pyproj>=3.5.0

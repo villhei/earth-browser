@@ -134,6 +134,31 @@
   font-weight: 600;
 }
 
+.controls-select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #f8fafc;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.controls-select:hover,
+.controls-select:focus {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #38bdf8;
+}
+
+.controls-select option {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
 .controls-slider {
   width: 100%;
   appearance: none;

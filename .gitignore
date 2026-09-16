@@ -1,4 +1,11 @@
 .parcel-cache
 node_modules
 dist
+.env
+.venv
+*.npy
+*.tif
+*.tiff
+__pycache__/
+*.pyc
 

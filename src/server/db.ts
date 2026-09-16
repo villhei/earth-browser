@@ -1,7 +1,8 @@
 import { Pool, QueryResultRow } from "pg"
 
+const defaultPort = process.env.POSTGRES_PORT || "5432"
 const connectionString =
-  process.env.DATABASE_URL || "postgres://postgres:postgres@localhost:5432/world"
+  process.env.DATABASE_URL || `postgres://postgres:postgres@127.0.0.1:${defaultPort}/world`
 
 export const pool = new Pool({
   connectionString,

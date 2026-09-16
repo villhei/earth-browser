@@ -1,6 +1,6 @@
 [
   {
-    "id": "2c113468-4ff0-4371-b7ac-e99ea476a3b0",
+    "id": "c44bbc43-3781-4eda-ac27-1ea3823e8f8d",
     "slug": "world-bc123000",
     "name": "123,000 BCE - Eemian Interglacial & Early Humans",
     "year_start": -123000,
@@ -8,10 +8,10 @@
     "year_label": "123,000 BCE",
     "description": "Eemian interglacial period; early anatomically modern humans and Neanderthal hunter-gatherer ranges.",
     "feature_count": 157,
-    "created_at": "2026-08-29T07:47:31.384Z"
+    "created_at": "2026-09-01T17:24:32.842Z"
   },
   {
-    "id": "c89cd946-16d1-4e12-92f8-7b6b20232652",
+    "id": "c0634201-02fb-4bc5-9f13-a70a4d5bfad5",
     "slug": "world-bc10000",
     "name": "10,000 BCE - Dawn of the Holocene",
     "year_start": -10000,
@@ -19,10 +19,10 @@
     "year_label": "10,000 BCE",
     "description": "End of the Last Glacial Period; emergence of early agriculture and sedentary hunter-gatherer communities in the Fertile Crescent.",
     "feature_count": 135,
-    "created_at": "2026-08-29T07:47:34.532Z"
+    "created_at": "2026-09-01T17:24:33.008Z"
   },
   {
-    "id": "7df76bf2-5445-4543-975d-7fb33ae764c7",
+    "id": "106b098e-93c3-4c11-9248-eb538d988990",
     "slug": "world-bc8000",
     "name": "8000 BCE - Early Neolithic Era",
     "year_start": -8000,
@@ -30,10 +30,10 @@
     "year_label": "8000 BCE",
     "description": "Early agricultural settlements expand across the Near East, Anatolia (Göbekli Tepe, Çatalhöyük), and East Asia.",
     "feature_count": 134,
-    "created_at": "2026-08-29T07:47:37.039Z"
+    "created_at": "2026-09-01T17:24:33.158Z"
   },
   {
-    "id": "070743d0-2951-4b24-ac7c-5b75b9d06246",
+    "id": "ae559505-20c4-4249-bfdb-fd927b1d0b08",
     "slug": "world-bc5000",
     "name": "5000 BCE - Chalcolithic & Ubaid Period",
     "year_start": -5000,
@@ -41,10 +41,10 @@
     "year_label": "5000 BCE",
     "description": "Ubaid period in Mesopotamia, early farming cultures in the Nile Valley, Yangshao culture in China, and Vinča culture in Europe.",
     "feature_count": 279,
-    "created_at": "2026-08-29T07:47:39.540Z"
+    "created_at": "2026-09-01T17:24:33.326Z"
   },
   {
-    "id": "a33ccf55-68cd-4776-8cf9-c840800f23eb",
+    "id": "8111b285-0ea1-469a-ac95-7b4ffc56de62",
     "slug": "world-bc4000",
     "name": "4000 BCE - Early Bronze Age & Urban Genesis",
     "year_start": -4000,
@@ -52,10 +52,10 @@
     "year_label": "4000 BCE",
     "description": "First cities arise in Sumer (Uruk period); predynastic Egypt and Kurgan cultures spread across the Eurasian steppe.",
     "feature_count": 136,
-    "created_at": "2026-08-29T07:47:45.973Z"
+    "created_at": "2026-09-01T17:24:33.832Z"
   },
   {
-    "id": "ca3e6254-5781-4932-bc9e-5921d01b2db2",
+    "id": "8cf88c56-8b5e-447c-babd-17dbe23aee2d",
     "slug": "world-bc3000",
     "name": "3000 BCE - Early Dynastic & Sumerian Cities",
     "year_start": -3000,
@@ -63,10 +63,10 @@
     "year_label": "3000 BCE",
     "description": "Unification of Egypt under the First Dynasty, Sumerian Early Dynastic city-states, and the rise of the Indus Valley Civilization.",
     "feature_count": 138,
-    "created_at": "2026-08-29T07:47:48.450Z"
+    "created_at": "2026-09-01T17:24:33.966Z"
   },
   {
-    "id": "15d286d9-7317-40d0-b2a1-68461b83cae2",
+    "id": "de034ae5-6404-4205-ab1f-15d2f2e4e3c1",
     "slug": "world-bc2000",
     "name": "2000 BCE - Middle Bronze Age & Minoan Crete",
     "year_start": -2000,
@@ -74,10 +74,10 @@
     "year_label": "2000 BCE",
     "description": "Middle Kingdom Egypt, Ur III Sumerian Renaissance, Minoan civilization in Crete, and Xia/Erlitou China.",
     "feature_count": 145,
-    "created_at": "2026-08-29T07:47:50.959Z"
+    "created_at": "2026-09-01T17:24:34.110Z"
   },
   {
-    "id": "f4559f04-887a-4994-ab1f-2e0a7219130c",
+    "id": "ffa8b3bd-fa2f-4fd5-a19a-d9f060dd87fa",
     "slug": "world-bc1500",
     "name": "1500 BCE - Late Bronze Age Empires",
     "year_start": -1500,
@@ -85,10 +85,10 @@
     "year_label": "1500 BCE",
     "description": "New Kingdom Egyptian Empire, Hittite Empire in Anatolia, Mycenaean Greece, and Shang Dynasty in China.",
     "feature_count": 163,
-    "created_at": "2026-08-29T07:47:53.748Z"
+    "created_at": "2026-09-01T17:24:34.309Z"
   },
   {
-    "id": "b41aa104-5426-4a59-9e42-b99958085d98",
+    "id": "115132a4-3255-4b2a-82a2-1f634c31eeeb",
     "slug": "world-bc1000",
     "name": "1000 BCE - Early Iron Age",
     "year_start": -1000,
@@ -96,10 +96,10 @@
     "year_label": "1000 BCE",
     "description": "Bronze Age collapse aftermath, Kingdom of Israel under David & Solomon, early Western Zhou Dynasty in China.",
     "feature_count": 163,
-    "created_at": "2026-08-29T07:47:56.653Z"
+    "created_at": "2026-09-01T17:24:34.532Z"
   },
   {
-    "id": "ea3e0688-5a43-4193-a159-2b3ab85d0500",
+    "id": "3e75ebad-8c4d-4ad0-8ce8-0498145d30c4",
     "slug": "world-bc700",
     "name": "700 BCE - Neo-Assyrian Empire & Archaic Greece",
     "year_start": -700,
@@ -107,10 +107,10 @@
     "year_label": "700 BCE",
     "description": "Neo-Assyrian Empire at its peak; Spring and Autumn period in China; rise of Archaic Greek poleis and Nubian 25th Dynasty.",
     "feature_count": 174,
-    "created_at": "2026-08-29T07:47:59.594Z"
+    "created_at": "2026-09-01T17:24:34.765Z"
   },
   {
-    "id": "1d4b0119-f55d-4975-afaa-206f26c9a4d7",
+    "id": "61fcb2bf-7816-455c-999a-ee50d2047630",
     "slug": "world-bc500",
     "name": "500 BCE - Classical Antiquity & Persian Zenith",
     "year_start": -500,
@@ -118,10 +118,10 @@
     "year_label": "500 BCE",
     "description": "Achaemenid Persian Empire at its zenith, Golden Age of Classical Greece, and early Roman Republic.",
     "feature_count": 189,
-    "created_at": "2026-08-29T07:48:02.648Z"
+    "created_at": "2026-09-01T17:24:35.003Z"
   },
   {
-    "id": "f221b59e-1255-4aae-93dc-e1147784e5b9",
+    "id": "9f69cf69-8fa8-4737-a4e2-bea05dc181ed",
     "slug": "world-bc400",
     "name": "400 BCE - Late Classical & Warring States",
     "year_start": -400,
@@ -129,10 +129,10 @@
     "year_label": "400 BCE",
     "description": "Peloponnesian War aftermath in Greece; Warring States era in China; Mahajanapadas and rise of Magadha in India.",
     "feature_count": 190,
-    "created_at": "2026-08-29T07:48:06.001Z"
+    "created_at": "2026-09-01T17:24:35.254Z"
   },
   {
-    "id": "da3cd6a2-405f-4751-9ae3-c2667a8ea903",
+    "id": "ea114a87-858f-4d66-b4c3-2be101ae8149",
     "slug": "world-bc323",
     "name": "323 BCE - Hellenistic Kingdoms & Alexander",
     "year_start": -323,
@@ -140,10 +140,10 @@
     "year_label": "323 BCE",
     "description": "Death of Alexander the Great and division of his empire into Diadochi kingdoms (Ptolemaic, Seleucid, Antigonid); Mauryan expansion.",
     "feature_count": 149,
-    "created_at": "2026-08-29T07:48:09.296Z"
+    "created_at": "2026-09-01T17:24:35.500Z"
   },
   {
-    "id": "4eba112a-0060-4fbb-b8db-deb8e3412f93",
+    "id": "75339afe-6164-4691-b0d7-2a38520cf1b8",
     "slug": "world-bc300",
     "name": "300 BCE - Mauryan Empire & Hellenistic World",
     "year_start": -300,
@@ -151,10 +151,10 @@
     "year_label": "300 BCE",
     "description": "Mauryan Empire under Chandragupta Maurya and Ashoka dominates South Asia; Qin state prepares for Chinese unification.",
     "feature_count": 155,
-    "created_at": "2026-08-29T07:48:10.780Z"
+    "created_at": "2026-09-01T17:24:35.706Z"
   },
   {
-    "id": "c01b3230-0138-4ceb-8f79-2a73241ddaaf",
+    "id": "ae5f871a-015f-416b-995d-a3873c3a9282",
     "slug": "world-bc200",
     "name": "200 BCE - Han & Roman Expansion",
     "year_start": -200,
@@ -162,10 +162,10 @@
     "year_label": "200 BCE",
     "description": "Western Han Dynasty consolidates China, Roman Republic defeats Carthage in the Second Punic War.",
     "feature_count": 183,
-    "created_at": "2026-08-29T07:48:12.105Z"
+    "created_at": "2026-09-01T17:24:35.924Z"
   },
   {
-    "id": "847a86e9-cf16-4535-8c86-7551597d4a11",
+    "id": "6c94852c-2182-4c90-9a4d-5d36e52524a7",
     "slug": "world-bc100",
     "name": "100 BCE - Late Roman Republic & Han Silk Road",
     "year_start": -100,
@@ -173,10 +173,10 @@
     "year_label": "100 BCE",
     "description": "Late Roman Republic under Marius and Sulla; Han Dynasty expands the Silk Road through Central Asia under Emperor Wu.",
     "feature_count": 196,
-    "created_at": "2026-08-29T07:48:13.527Z"
+    "created_at": "2026-09-01T17:24:36.190Z"
   },
   {
-    "id": "6d0b3272-257f-403d-a5d8-749614da0638",
+    "id": "ff1a37e8-a81b-44d8-b5fa-6bbc937100f1",
     "slug": "world-bc1",
     "name": "1 BCE - Augustan Roman Empire",
     "year_start": -1,
@@ -184,10 +184,10 @@
     "year_label": "1 BCE",
     "description": "Pax Romana begins under Emperor Augustus; Han Dynasty China and Parthian Empire dominate Eurasia.",
     "feature_count": 385,
-    "created_at": "2026-08-29T07:48:15.065Z"
+    "created_at": "2026-09-01T17:24:36.462Z"
   },
   {
-    "id": "b78a6aed-7f7d-4dbd-9235-5e4cf1af90c3",
+    "id": "2fd94b8f-7214-4683-9bed-1b6bff3ad087",
     "slug": "world-100",
     "name": "100 CE - Trajan & High Roman Empire",
     "year_start": 100,
@@ -195,10 +195,10 @@
     "year_label": "100 CE",
     "description": "Roman Empire reaches maximum territorial extent under Trajan; Eastern Han Dynasty and Kushan Empire thrive.",
     "feature_count": 440,
-    "created_at": "2026-08-29T07:48:17.492Z"
+    "created_at": "2026-09-01T17:24:36.887Z"
   },
   {
-    "id": "15f62748-bcdd-4a18-8cfd-bfdf2c424b66",
+    "id": "e9edaf1f-0f48-4b78-a3dd-6f6fa94fcaa3",
     "slug": "world-200",
     "name": "200 CE - Severan Rome & Three Kingdoms Prelude",
     "year_start": 200,
@@ -206,10 +206,10 @@
     "year_label": "200 CE",
     "description": "Severan dynasty in Rome; collapse of the Han Dynasty leading to the Three Kingdoms era in China; Sasanian rise in Persia.",
     "feature_count": 317,
-    "created_at": "2026-08-29T07:48:20.150Z"
+    "created_at": "2026-09-01T17:24:37.288Z"
   },
   {
-    "id": "8e4c8824-b56a-4ba2-ac82-53e21a841ff9",
+    "id": "a960e61e-8608-4e10-a0ca-fd330b38cd06",
     "slug": "world-300",
     "name": "300 CE - Tetrarchy & Gupta Foundation",
     "year_start": 300,
@@ -217,10 +217,10 @@
     "year_label": "300 CE",
     "description": "Diocletian's Tetrarchy reorganizes Rome; Gupta Empire founded in India; Jin Dynasty in China.",
     "feature_count": 429,
-    "created_at": "2026-08-29T07:48:22.158Z"
+    "created_at": "2026-09-01T17:24:37.628Z"
   },
   {
-    "id": "b011e201-6a00-47ef-ac88-428347316224",
+    "id": "33f10799-663b-4cd2-9400-815906a07fc8",
     "slug": "world-400",
     "name": "400 CE - Late Antiquity & Migrations",
     "year_start": 400,
@@ -228,10 +228,10 @@
     "year_label": "400 CE",
     "description": "Western Roman Empire collapses amidst barbarian migrations; Eastern Roman (Byzantine), Sasanian, and Gupta empires flourish.",
     "feature_count": 330,
-    "created_at": "2026-08-29T07:48:24.765Z"
+    "created_at": "2026-09-01T17:24:38.019Z"
   },
   {
-    "id": "51d8b1fb-3715-415b-9c20-96ccd2841c8a",
+    "id": "5ae65917-1c81-4542-b846-09ce0969b040",
     "slug": "world-500",
     "name": "500 CE - Post-Roman Kingdoms & Northern/Southern Dynasties",
     "year_start": 500,
@@ -239,10 +239,10 @@
     "year_label": "500 CE",
     "description": "Ostrogothic, Visigothic, and Frankish kingdoms divide Western Europe; Byzantine Empire under Anastasius I; Northern & Southern dynasties in China.",
     "feature_count": 205,
-    "created_at": "2026-08-29T07:48:26.798Z"
+    "created_at": "2026-09-01T17:24:38.376Z"
   },
   {
-    "id": "1276435a-fecf-42ea-bb15-bd7ef6b2ca7d",
+    "id": "90d2571c-51e0-46ff-b69e-92b1be1c1003",
     "slug": "world-600",
     "name": "600 CE - Early Middle Ages & Sui Unification",
     "year_start": 600,
@@ -250,10 +250,10 @@
     "year_label": "600 CE",
     "description": "Byzantine-Sasanian wars on the eve of the Islamic expansion; Sui dynasty reunifies China followed by early Tang.",
     "feature_count": 204,
-    "created_at": "2026-08-29T07:48:28.334Z"
+    "created_at": "2026-09-01T17:24:38.667Z"
   },
   {
-    "id": "458b1954-b74e-4b34-b649-0bd9669d5779",
+    "id": "322e840c-773e-483c-8fee-d7b4798d7227",
     "slug": "world-700",
     "name": "700 CE - Umayyad Caliphate & Tang Golden Age",
     "year_start": 700,
@@ -261,10 +261,10 @@
     "year_label": "700 CE",
     "description": "Umayyad Caliphate expands from Spain to the Indus Valley; Tang Dynasty China reaches cultural height under Empress Wu Zetian.",
     "feature_count": 253,
-    "created_at": "2026-08-29T07:48:29.904Z"
+    "created_at": "2026-09-01T17:24:38.939Z"
   },
   {
-    "id": "f53e41af-468a-4919-813e-eecdd9b168cc",
+    "id": "22d82eeb-0b80-4586-8625-b628fb29e0d2",
     "slug": "world-800",
     "name": "800 CE - Carolingian & Abbasid Golden Age",
     "year_start": 800,
@@ -272,10 +272,10 @@
     "year_label": "800 CE",
     "description": "Charlemagne crowned Emperor of the Romans; Abbasid Caliphate Golden Age in Baghdad; Tang Dynasty in China.",
     "feature_count": 225,
-    "created_at": "2026-08-29T07:48:31.636Z"
+    "created_at": "2026-09-01T17:24:39.269Z"
   },
   {
-    "id": "41e66bce-358f-48b0-95f9-0038430a99b5",
+    "id": "6efc2d16-cead-4f96-9917-267af257b522",
     "slug": "world-900",
     "name": "900 CE - Five Dynasties & Norse Expansion",
     "year_start": 900,
@@ -283,10 +283,10 @@
     "year_label": "900 CE",
     "description": "Viking expansions in Europe; collapse of Tang China into the Five Dynasties; rise of the Samanids and Fatimids.",
     "feature_count": 244,
-    "created_at": "2026-08-29T07:48:33.201Z"
+    "created_at": "2026-09-01T17:24:39.591Z"
   },
   {
-    "id": "0f7df09a-7b08-4ac7-8450-08426babe3a0",
+    "id": "9d7f65a1-5d81-4b1c-826c-106e2296d5be",
     "slug": "world-1000",
     "name": "1000 CE - High Middle Ages & Song Dynasty",
     "year_start": 1000,
@@ -294,10 +294,10 @@
     "year_label": "1000 CE",
     "description": "Song Dynasty China, Holy Roman Empire under the Ottonians, Fatimid Caliphate, and Byzantine Empire under Basil II.",
     "feature_count": 264,
-    "created_at": "2026-08-29T07:48:34.960Z"
+    "created_at": "2026-09-01T17:24:39.969Z"
   },
   {
-    "id": "83c0d6e3-20a4-44cb-b995-c7fcc0248f17",
+    "id": "a452100a-5b97-42ab-8ea2-6f87d5d54b7c",
     "slug": "world-1100",
     "name": "1100 CE - Crusader States & Great Seljuks",
     "year_start": 1100,
@@ -305,10 +305,10 @@
     "year_label": "1100 CE",
     "description": "Establishment of Crusader States after the First Crusade; Great Seljuk Empire dominates the Middle East; Liao and Northern Song in China.",
     "feature_count": 235,
-    "created_at": "2026-08-29T07:48:36.828Z"
+    "created_at": "2026-09-01T17:24:40.364Z"
   },
   {
-    "id": "bc42bfe5-28d3-416c-9a9b-8012c6eb2aa8",
+    "id": "478eedca-264c-41a5-a8dc-f365c8426415",
     "slug": "world-1200",
     "name": "1200 CE - Eve of the Mongol Invasions",
     "year_start": 1200,
@@ -316,10 +316,10 @@
     "year_label": "1200 CE",
     "description": "Ayyubid Sultanate under Saladin's successors; Jin and Southern Song in China; Genghis Khan prepares to unify the Mongol tribes.",
     "feature_count": 285,
-    "created_at": "2026-08-29T07:48:38.587Z"
+    "created_at": "2026-09-01T17:24:40.733Z"
   },
   {
-    "id": "0d0d5700-6eea-4ea3-9a7c-51355eadef84",
+    "id": "a5058c54-1db0-4d26-a9bf-7a236c8cbb75",
     "slug": "world-1279",
     "name": "1279 CE - Mongol Empire & Yuan Dynasty",
     "year_start": 1279,
@@ -327,10 +327,10 @@
     "year_label": "1279 CE",
     "description": "Kublai Khan conquers the Song Dynasty establishing the Yuan Dynasty; Pax Mongolica spans Eurasia.",
     "feature_count": 247,
-    "created_at": "2026-08-29T07:48:40.521Z"
+    "created_at": "2026-09-01T17:24:41.136Z"
   },
   {
-    "id": "353dccfb-de5d-465e-a7e6-671b814fe39a",
+    "id": "53621324-3e15-4499-a9b2-6f225b78704d",
     "slug": "world-1300",
     "name": "1300 CE - Four Mongol Khanates & Ottoman Genesis",
     "year_start": 1300,
@@ -338,10 +338,10 @@
     "year_label": "1300 CE",
     "description": "Division of Mongol Empire into Yuan, Ilkhanate, Chagatai, and Golden Horde; foundation of Ottoman principality by Osman I.",
     "feature_count": 237,
-    "created_at": "2026-08-29T07:48:42.221Z"
+    "created_at": "2026-09-01T17:24:41.462Z"
   },
   {
-    "id": "dd9acdf7-58aa-4b70-a840-983e508ff241",
+    "id": "cc448a4e-6105-4149-8588-d91b08176bed",
     "slug": "world-1400",
     "name": "1400 CE - Timurid Empire & Early Ming",
     "year_start": 1400,
@@ -349,10 +349,10 @@
     "year_label": "1400 CE",
     "description": "Conquests of Timur (Tamerlane) across Central Asia and Middle East; Ming Dynasty consolidates China and launches treasure voyages.",
     "feature_count": 233,
-    "created_at": "2026-08-29T07:48:43.881Z"
+    "created_at": "2026-09-01T17:24:41.792Z"
   },
   {
-    "id": "992b8766-7e86-4e64-b42e-dd150006180f",
+    "id": "1b93e1e8-3309-4ea7-9bda-5ede58cf2457",
     "slug": "world-1492",
     "name": "1492 CE - Age of Discovery",
     "year_start": 1492,
@@ -360,10 +360,10 @@
     "year_label": "1492 CE",
     "description": "Columbus reaches the Americas; Spanish Reconquista completed; Ming Dynasty China and Ottoman Empire expand.",
     "feature_count": 1946,
-    "created_at": "2026-08-29T07:48:45.527Z"
+    "created_at": "2026-09-01T17:24:42.194Z"
   },
   {
-    "id": "4278a621-35f0-4065-9955-d9de57456a9e",
+    "id": "df0ad64d-0767-4c66-81c9-6c2bba55209a",
     "slug": "world-1500",
     "name": "1500 CE - Global Maritime Networks",
     "year_start": 1500,
@@ -371,10 +371,10 @@
     "year_label": "1500 CE",
     "description": "Portuguese establish sea route to India (Vasco da Gama) and Brazil (Cabral); Safavid dynasty founded in Iran.",
     "feature_count": 291,
-    "created_at": "2026-08-29T07:48:58.782Z"
+    "created_at": "2026-09-01T17:24:46.541Z"
   },
   {
-    "id": "45f04e49-a301-499d-9263-0ee1b34297a4",
+    "id": "82ae3375-e252-4b52-a835-d9a15fde0c91",
     "slug": "world-1530",
     "name": "1530 CE - Reformation & Global Empires",
     "year_start": 1530,
@@ -382,10 +382,10 @@
     "year_label": "1530 CE",
     "description": "Charles V rules Habsburg global empire; Protestant Reformation; Mughal Empire established in India by Babur.",
     "feature_count": 494,
-    "created_at": "2026-08-29T07:49:00.759Z"
+    "created_at": "2026-09-01T17:24:46.985Z"
   },
   {
-    "id": "754eac71-5c5c-406f-bc2a-af5b73d96f49",
+    "id": "005111b9-a453-40ec-b381-72ce270ae2f4",
     "slug": "world-1600",
     "name": "1600 CE - Tokugawa Shogunate & East India Companies",
     "year_start": 1600,
@@ -393,10 +393,10 @@
     "year_label": "1600 CE",
     "description": "Battle of Sekigahara establishes Tokugawa Shogunate in Japan; English and Dutch East India Companies chartered; Akbar expands Mughal Empire.",
     "feature_count": 866,
-    "created_at": "2026-08-29T07:49:04.095Z"
+    "created_at": "2026-09-01T17:24:47.645Z"
   },
   {
-    "id": "ee5efda9-e96e-4b60-90c7-fa3394567110",
+    "id": "c8bdcfca-6035-4a2c-b053-f1549a139b51",
     "slug": "world-1650",
     "name": "1650 CE - Peace of Westphalia",
     "year_start": 1650,
@@ -404,10 +404,10 @@
     "year_label": "1650 CE",
     "description": "End of Thirty Years' War establishes modern nation-state sovereignty; Qing Dynasty conquers Ming China.",
     "feature_count": 778,
-    "created_at": "2026-08-29T07:49:08.484Z"
+    "created_at": "2026-09-01T17:24:49.220Z"
   },
   {
-    "id": "97657de0-849e-4d37-8329-a17a4cf6f103",
+    "id": "1f36c42f-795b-4578-a208-2076c5a09f6b",
     "slug": "world-1700",
     "name": "1700 CE - Great Northern War & War of Spanish Succession",
     "year_start": 1700,
@@ -415,10 +415,10 @@
     "year_label": "1700 CE",
     "description": "Outbreak of the Great Northern War in the Baltic and War of the Spanish Succession; Peter the Great modernizes Russia.",
     "feature_count": 782,
-    "created_at": "2026-08-29T07:49:12.543Z"
+    "created_at": "2026-09-01T17:24:50.601Z"
   },
   {
-    "id": "9d20582a-1272-4f56-81a1-b83db19921b1",
+    "id": "5900030f-1720-4549-9718-587c5feefc4c",
     "slug": "world-1715",
     "name": "1715 CE - Age of Enlightenment",
     "year_start": 1715,
@@ -426,10 +426,10 @@
     "year_label": "1715 CE",
     "description": "End of War of the Spanish Succession and death of Louis XIV; rise of Great Britain, Prussia, and Russian Empire under Peter the Great.",
     "feature_count": 758,
-    "created_at": "2026-08-29T07:49:16.526Z"
+    "created_at": "2026-09-01T17:24:51.932Z"
   },
   {
-    "id": "c4309a10-1f81-431d-8d85-f1122717d9d8",
+    "id": "883347a4-e8b9-4a45-a573-a650f3fdd82f",
     "slug": "world-1783",
     "name": "1783 CE - American Independence",
     "year_start": 1783,
@@ -437,10 +437,10 @@
     "year_label": "1783 CE",
     "description": "Treaty of Paris recognizes the United States; Pre-Revolutionary France; Catherine the Great expands Russia into Crimea.",
     "feature_count": 641,
-    "created_at": "2026-08-29T07:49:20.340Z"
+    "created_at": "2026-09-01T17:24:53.325Z"
   },
   {
-    "id": "ec906cf7-9182-46ac-b650-1af656415a11",
+    "id": "5c514e07-d6de-49fb-9c48-38d7602aa713",
     "slug": "world-1800",
     "name": "1800 CE - Napoleonic Era & Global Shifts",
     "year_start": 1800,
@@ -448,21 +448,32 @@
     "year_label": "1800 CE",
     "description": "Rise of Napoleon in Europe; United States expands; Qing Dynasty at peak geographic extent; British East India Company expands across India.",
     "feature_count": 627,
-    "created_at": "2026-08-29T07:49:23.508Z"
+    "created_at": "2026-09-01T17:24:54.622Z"
   },
   {
-    "id": "15529644-bfbd-4a1c-b562-563b4a79a7f4",
+    "id": "9361d440-a166-4714-8b10-fd2edf9f063a",
     "slug": "world-1815",
     "name": "1815 CE - Congress of Vienna",
     "year_start": 1815,
-    "year_end": 1880,
+    "year_end": 1878,
     "year_label": "1815 CE",
     "description": "Post-Napoleonic Concert of Europe; Latin American wars of independence create new republics.",
     "feature_count": 436,
-    "created_at": "2026-08-29T07:49:26.602Z"
+    "created_at": "2026-09-01T17:24:55.919Z"
   },
   {
-    "id": "b3c9fc04-3b59-4359-b19b-173528aafb1e",
+    "id": "d7046c89-b30c-40ad-9d35-647aa0d24546",
+    "slug": "world-1878",
+    "name": "1878 CE - Congress of Berlin & Eve of the War of the Pacific",
+    "year_start": 1878,
+    "year_end": 1880,
+    "year_label": "1878 CE",
+    "description": "Congress of Berlin restructures the Balkans; eve of the War of the Pacific in South America; Late Victorian imperial era.",
+    "feature_count": 239,
+    "created_at": "2026-09-16T05:49:45.732Z"
+  },
+  {
+    "id": "5649c572-3475-4e36-ad0e-0a487675c7d7",
     "slug": "world-1880",
     "name": "1880 CE - High Imperialism",
     "year_start": 1880,
@@ -470,10 +481,10 @@
     "year_label": "1880 CE",
     "description": "Scramble for Africa begins; newly unified Germany and Italy; Victorian British Empire at global peak.",
     "feature_count": 236,
-    "created_at": "2026-08-29T07:49:29.282Z"
+    "created_at": "2026-09-01T17:24:56.918Z"
   },
   {
-    "id": "228c2ebf-41d6-4276-aaf8-d40f93778d37",
+    "id": "a675c221-bb4d-442b-a310-4c36274c8812",
     "slug": "world-1900",
     "name": "1900 CE - Turn of the Century",
     "year_start": 1900,
@@ -481,10 +492,10 @@
     "year_label": "1900 CE",
     "description": "Boxer Rebellion in China; Boer War in South Africa; global imperial powers at maximum territorial extent.",
     "feature_count": 270,
-    "created_at": "2026-08-29T07:49:31.245Z"
+    "created_at": "2026-09-01T17:24:57.466Z"
   },
   {
-    "id": "1390da31-5e2c-4000-9644-41811513faf3",
+    "id": "76d20cf8-3321-4c91-81e5-f541297f323b",
     "slug": "world-1914",
     "name": "1914 CE - Outbreak of World War I",
     "year_start": 1914,
@@ -492,10 +503,10 @@
     "year_label": "1914 CE",
     "description": "Eurasia on the eve of WWI; European alliances, Austro-Hungarian, Russian, and Ottoman Empires before their collapse.",
     "feature_count": 177,
-    "created_at": "2026-08-29T07:49:33.182Z"
+    "created_at": "2026-09-01T17:24:58.033Z"
   },
   {
-    "id": "274318f8-e081-4689-a7dc-274cd8756839",
+    "id": "ffa38100-f913-4cb7-8afa-d695cbd90063",
     "slug": "world-1920",
     "name": "1920 CE - Interwar & League of Nations",
     "year_start": 1920,
@@ -503,21 +514,21 @@
     "year_label": "1920 CE",
     "description": "Post-WWI border restructuring under Treaty of Versailles; emergence of Poland, Czechoslovakia, Yugoslavia, and Soviet Union.",
     "feature_count": 205,
-    "created_at": "2026-08-29T07:49:34.775Z"
+    "created_at": "2026-09-01T17:24:58.534Z"
   },
   {
-    "id": "0713b572-e50a-4678-8cde-760a422cd5e6",
+    "id": "882127e2-6bb6-4cfb-b2f2-73e40ab7641a",
     "slug": "world-1930",
     "name": "1930 CE - Great Depression & Rising Autocracies",
     "year_start": 1930,
     "year_end": 1938,
     "year_label": "1930 CE",
     "description": "Global economic crisis of the Great Depression; Weimar Republic crisis; Japanese expansion in Manchuria.",
-    "feature_count": 191,
-    "created_at": "2026-08-29T07:49:36.532Z"
+    "feature_count": 200,
+    "created_at": "2026-09-01T17:24:59.139Z"
   },
   {
-    "id": "5a7f4dbd-4d40-486c-aee7-adb71056e237",
+    "id": "b9725689-dc49-46a8-90e5-b9a77c0d7547",
     "slug": "world-1938",
     "name": "1938 CE - Eve of World War II",
     "year_start": 1938,
@@ -525,10 +536,10 @@
     "year_label": "1938 CE",
     "description": "Pre-WWII Europe following Austrian Anschluss; Second Sino-Japanese War; Axis and Allied powers aligning.",
     "feature_count": 254,
-    "created_at": "2026-08-29T07:49:38.178Z"
+    "created_at": "2026-09-01T17:24:59.635Z"
   },
   {
-    "id": "fe7a515f-ca2b-425c-9a88-4b9e27adc15a",
+    "id": "5c59eaa5-5d4b-4c7a-8443-46806a4af86e",
     "slug": "world-1945",
     "name": "1945 CE - Post-World War II",
     "year_start": 1945,
@@ -536,10 +547,10 @@
     "year_label": "1945 CE",
     "description": "Post-WWII division of Germany and Europe; founding of the United Nations; dawn of the Cold War and Asian decolonization.",
     "feature_count": 227,
-    "created_at": "2026-08-29T07:49:40.096Z"
+    "created_at": "2026-09-01T17:25:00.210Z"
   },
   {
-    "id": "1b09557c-b71e-46f0-80b1-cd73b35ca45b",
+    "id": "50dbbf2a-0010-44a3-86f9-a6c8eaf0b06c",
     "slug": "world-1960",
     "name": "1960 CE - Year of Africa & Cold War Zenith",
     "year_start": 1960,
@@ -547,10 +558,10 @@
     "year_label": "1960 CE",
     "description": "Wave of African independence (Year of Africa); Space Race and Cold War nuclear standoff between NATO and Warsaw Pact.",
     "feature_count": 197,
-    "created_at": "2026-08-29T07:49:41.883Z"
+    "created_at": "2026-09-01T17:25:00.774Z"
   },
   {
-    "id": "e090da21-cccf-4b1f-badf-ec7ab5e3ad81",
+    "id": "3eaa752e-1767-4e57-b1ca-376a5f70feed",
     "slug": "world-1994",
     "name": "1994 CE - Post-Cold War World",
     "year_start": 1994,
@@ -558,10 +569,10 @@
     "year_label": "1994 CE",
     "description": "Dissolution of Soviet Union and Yugoslavia; establishment of the European Union (Maastricht); post-Apartheid South Africa.",
     "feature_count": 240,
-    "created_at": "2026-08-29T07:49:43.513Z"
+    "created_at": "2026-09-01T17:25:01.292Z"
   },
   {
-    "id": "fc0418cf-deb7-4548-93f2-a58cbf36573a",
+    "id": "a4cf1fd0-f2e4-4449-b84f-ed22aaead3ab",
     "slug": "world-2000",
     "name": "2000 CE - Turn of the Millennium",
     "year_start": 2000,
@@ -569,10 +580,10 @@
     "year_label": "2000 CE",
     "description": "Dawn of the 21st century; expanding European Union; rise of global internet economy and WTO integration.",
     "feature_count": 240,
-    "created_at": "2026-08-29T07:49:45.577Z"
+    "created_at": "2026-09-01T17:25:01.961Z"
   },
   {
-    "id": "1ece3139-9b47-4eeb-8514-dc49bbc95964",
+    "id": "3439787d-50ca-4597-8940-bdf34185cbeb",
     "slug": "world-2010",
     "name": "2010 CE - Contemporary Era",
     "year_start": 2010,
@@ -580,6 +591,6 @@
     "year_label": "2010 CE",
     "description": "Globalized modern world; Arab Spring prelude; contemporary geopolitical alignments and sovereign states.",
     "feature_count": 240,
-    "created_at": "2026-08-29T07:49:47.658Z"
+    "created_at": "2026-09-01T17:25:02.657Z"
   }
 ]

@@ -1,6 +1,6 @@
 # Historical GeoJSON Datasets
 
-The GeoJSON files in this directory contain historical boundaries, sovereign territories, and cultural regions across 53 eras from 123,000 BCE to 2010 CE.
+The GeoJSON files in this directory contain historical boundaries, sovereign territories, and cultural regions across 54 eras from 123,000 BCE to 2010 CE.
 
 
 ## Data Source & Attribution
@@ -55,6 +55,7 @@ The seed files span prehistoric, ancient, medieval, early modern, and contempora
 - `world_1783.geojson` – American Independence
 - `world_1800.geojson` – Napoleonic Era & Global Shifts
 - `world_1815.geojson` – Congress of Vienna
+- `world_1878.geojson` – Congress of Berlin & Eve of the War of the Pacific
 - `world_1880.geojson` – High Imperialism
 - `world_1900.geojson` – Turn of the Century
 - `world_1914.geojson` – Outbreak of World War I
@@ -67,3 +68,28 @@ The seed files span prehistoric, ancient, medieval, early modern, and contempora
 - `world_2000.geojson` – Turn of the Millennium
 - `world_2010.geojson` – Contemporary Era
 - `places.geojson` – Historical settlements and cities
+
+## Updating Datasets from Upstream
+
+To synchronize GeoJSON datasets from the upstream `aourednik/historical-basemaps` repository:
+
+```bash
+# 1. Fetch and synchronize seed files from upstream
+npm run data:update
+
+# 2. Ingest updated features into the PostGIS database
+npm run db:ingest
+
+# 3. Re-export static datasets for client & static distribution
+npm run db:export
+
+# 4. Verify test suite
+npm test
+```
+
+The `npm run data:update` command (`scripts/update_geojson_datasets.ts`):
+- Clones or pulls the latest master branch of `https://github.com/aourednik/historical-basemaps`.
+- Validates the GeoJSON topology and FeatureCollection format of every file.
+- Detects added, modified, and unchanged datasets.
+- Automatically checks consistency with the era catalog in `src/server/eraMetadata.ts` to ensure all historical eras have catalog metadata and year definitions.
+

@@ -134,7 +134,7 @@ async function ingest() {
         const insertRes = await eraClient.query(
           `
           WITH raw_geom AS (
-            SELECT ST_Multi(ST_CollectionExtract(ST_MakeValid(ST_SetSRID(ST_GeomFromGeoJSON($4), 4326)), 3)) AS g
+            SELECT ST_Multi(ST_CollectionExtract(ST_MakeValid(ST_Force2D(ST_SetSRID(ST_GeomFromGeoJSON($4), 4326))), 3)) AS g
           ),
           surface_pt AS (
             SELECT ST_PointOnSurface(g) AS pt FROM raw_geom

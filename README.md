@@ -1,6 +1,6 @@
 # Earth Browser
 
-An interactive 3D WebGL historical Earth browser and atlas visualizing world country, culture, and empire boundaries across 53 historical eras (from 123,000 BCE to 2010 CE).
+An interactive 3D WebGL historical Earth browser and atlas visualizing world country, culture, and empire boundaries across 54 historical eras (from 123,000 BCE to 2010 CE).
 
 Built with **Three.js**, **ThreeGlobe**, **React 18**, **PostGIS (PostgreSQL)**, **Express**, and **Vite**.
 
@@ -9,7 +9,7 @@ Built with **Three.js**, **ThreeGlobe**, **React 18**, **PostGIS (PostgreSQL)**,
 ## Key Architecture & Highlights
 
 - **Decoupled 3D Globe Visualizer (`src/features/globe`)**: Pure, props-driven React component with zero backend/GraphQL coupling. Liftable directly into any host application or separate library.
-- **Vertical Scrollable Timeline**: Left-side historical scrubber spanning 53 eras with dot markers, clearly visible years, truncated labels, active era overview, step navigation, and automatic smooth scrolling.
+- **Vertical Scrollable Timeline**: Left-side historical scrubber spanning 54 eras with dot markers, clearly visible years, truncated labels, active era overview, step navigation, and automatic smooth scrolling.
 - **High-Performance 2D Screen-Space Labels**: Fixed-scale canvas labels with AABB collision resolution, horizon culling, centroid calculation on largest landmasses, configurable font sizes (default 14px), and appearance spacing tolerances.
 - **Curvature-Matching Precision Borders**: Custom border ribbon geometry matching sphere surface curvature, scaled according to border precision ratings.
 - **Radically Simple Tooling**: Lightweight REST/GeoJSON endpoints with native `fetch` caching and fast Vite development server.
@@ -36,23 +36,23 @@ npm install
 ```bash
 docker compose up -d
 ```
-*(Database running on `localhost:5432` with credentials `postgres:postgres@localhost:5432/world`)*
+*(Database running on `localhost:5432` with credentials `postgres:postgres@localhost:5432/world`. If port 5432 is already bound by a host PostgreSQL server, configure `POSTGRES_PORT=5434` and `DATABASE_URL=postgres://postgres:postgres@127.0.0.1:5434/world` in `.env`)*
 
 ### 4. Setup Schema & Ingest Historical Datasets
-Run migrations and ingest all 53 GeoJSON seed files into PostGIS:
+Run migrations and ingest all 54 GeoJSON seed files into PostGIS:
 ```bash
 npm run db:setup
 ```
 *(or run separately: `npm run migrate` then `npm run db:ingest`)*
 
 ### 5. Start the Application
-Start both the backend API (port `3000`) and the Vite frontend dev server (port `1234`) concurrently:
+Start both the backend API (port `3000`) and the Vite frontend dev server (port `5173`) concurrently:
 ```bash
 npm start
 ```
 *(or `npm run dev`)*
 
-Open your browser at: **`http://localhost:1234`**
+Open your browser at: **`http://localhost:5173`**
 
 ---
 
@@ -61,7 +61,7 @@ Open your browser at: **`http://localhost:1234`**
 ```
 earth-browser/
 ├── migrations/                 # Knex DDL database schema migrations
-│   └── seed/                   # Raw historical GeoJSON datasets (53 eras)
+│   └── seed/                   # Raw historical GeoJSON datasets (54 eras)
 ├── src/
 │   ├── app/                    # Application shell & layout
 │   │   ├── App.tsx             # Main React application layout
@@ -86,7 +86,7 @@ earth-browser/
 │   │   ├── db.ts               # PostgreSQL connection pool
 │   │   ├── api.ts              # Clean REST endpoints (/api/eras, /api/eras/:slug/geojson)
 │   │   ├── ingest.ts           # Idempotent GeoJSON -> PostGIS ETL CLI
-│   │   └── eraMetadata.ts      # Chronological historical era catalog (53 eras)
+│   │   └── eraMetadata.ts      # Chronological historical era catalog (54 eras)
 │   ├── services/
 │   │   └── api.ts              # Frontend API client with in-memory caching
 │   ├── types/                  # Shared GeoJSON & Era types
@@ -130,7 +130,8 @@ export function MyEmbeddedGlobe({ geoJsonData }) {
 
 - `npm run dev` / `npm start`: Runs both backend and frontend development servers.
 - `npm run server:dev`: Runs the Express backend server with live reload via `tsx`.
-- `npm run client:dev`: Runs Vite frontend development server on port 1234.
+- `npm run client:dev`: Runs Vite frontend development server on port 5173.
+- `npm run data:update`: Fetches and synchronizes updated GeoJSON datasets from the upstream `historical-basemaps` repository into `migrations/seed/`.
 - `npm run db:setup`: Runs migrations, ingests all GeoJSON datasets into PostGIS, and exports static JSON.
 - `npm run db:ingest`: Re-ingests all GeoJSON seed files into PostGIS.
 - `npm run db:export`: Exports PostGIS data to `public/data/` for static site hosting.
@@ -157,15 +158,28 @@ Earth Browser compiles to the `docs/` directory, making it directly deployable t
 
 ---
 
+## Prehistoric Earth Textures & Bathymetry Pipeline
+
+Earth Browser features era-accurate Earth textures with realistic bathymetry-based coastline expansions (Doggerland, Sundaland, Beringia, Sahul) and reconstructed glacial ice sheets across human prehistory:
+
+- **123,000 BCE** (*Eemian*): Flooded lowlands (+7m sea level), reduced polar margin ice.
+- **10,000 BCE** (*Younger Dryas*): -55m sea level, Baltic Ice Lake proglacial basin.
+- **8,000 BCE** (*Early Neolithic*): -25m sea level, Doggerland archipelago.
+- **5,000 BCE** (*Green Sahara*): African Humid Period, Lake Mega-Chad (~350,000 km²).
+
+See [data-sources/textures/README.md](file:///home/ville/src/web/earth-browser/data-sources/textures/README.md) for data sources, algorithms, and instructions on generating and iterating on custom textures using [generate_prehistoric_textures.py](file:///home/ville/src/web/earth-browser/scripts/generate_prehistoric_textures.py).
+
+---
+
 ## Data Sources & Attribution
 
+The historical world boundary and sovereign territory datasets visualized across all 54 eras are sourced from the **[historical-basemaps](https://github.com/aourednik/historical-basemaps)** project.
 
-The historical world boundary and sovereign territory datasets visualized across all 53 eras are sourced from the **[historical-basemaps](https://github.com/aourednik/historical-basemaps)** project.
-
-- **Data Repository**: [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps/tree/master/geojson)
-- **Author & Cartographer**: **André Ourednik** ([ourednik.info](https://ourednik.info/historicalmaps/))
-- **License**: [GNU General Public License v3.0 (GPL-3.0)](https://github.com/aourednik/historical-basemaps/blob/master/LICENSE)
-- **Planetary Imagery**: NASA Earth Observatory / Visible Earth (Public Domain)
+- **Sovereign Boundaries**: [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps/tree/master/geojson) by **André Ourednik** ([ourednik.info](https://ourednik.info/historicalmaps/)), GPL-3.0.
+- **Elevation & Bathymetry**: NOAA NCEI ETOPO 2022 (Public Domain).
+- **North American Ice Sheets**: Geological Survey of Canada (Dyke et al., 2004).
+- **Eurasian Ice Sheets**: DATED-1 (Hughes et al., 2015, PANGAEA, CC-BY-3.0).
+- **Planetary Imagery**: NASA Earth Observatory / Visible Earth (Public Domain).
 
 We gratefully acknowledge André Ourednik and the contributors of `historical-basemaps` for their dedicated research and open-source cartographic work digitizing historical global frontiers.
 

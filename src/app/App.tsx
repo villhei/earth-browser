@@ -63,12 +63,46 @@ export const App: React.FC = () => {
     }
   }, [])
 
+  // Helper to resolve prehistoric texture variant
+  const getRecommendedTexture = (slug: string): GlobeTexture => {
+    switch (slug) {
+      case "world-bc123000":
+        return GlobeTexture.EARTH_BLUE_MARBLE_123K_BC
+      case "world-bc10000":
+        return GlobeTexture.EARTH_BLUE_MARBLE_10K_BC
+      case "world-bc8000":
+        return GlobeTexture.EARTH_BLUE_MARBLE_8K_BC
+      case "world-bc5000":
+        return GlobeTexture.EARTH_BLUE_MARBLE_5K_BC
+      default:
+        return GlobeTexture.EARTH_BLUE_MARBLE
+    }
+  }
+
   // 2. Fetch GeoJSON whenever currentEra changes
   useEffect(() => {
     if (!currentEra) return
     let isMounted = true
     setIsLoadingGeoJson(true)
     setSelectedFeature(null) // Reset selection on era change
+
+    // Auto-sync prehistoric Blue Marble texture if user is in Blue Marble mode
+    setGlobeConfig((prev) => {
+      const isBlueMarble =
+        prev.texture === GlobeTexture.EARTH_BLUE_MARBLE ||
+        prev.texture === GlobeTexture.EARTH_BLUE_MARBLE_123K_BC ||
+        prev.texture === GlobeTexture.EARTH_BLUE_MARBLE_10K_BC ||
+        prev.texture === GlobeTexture.EARTH_BLUE_MARBLE_8K_BC ||
+        prev.texture === GlobeTexture.EARTH_BLUE_MARBLE_5K_BC
+
+      if (isBlueMarble) {
+        const recommended = getRecommendedTexture(currentEra.slug)
+        if (recommended !== prev.texture) {
+          return { ...prev, texture: recommended }
+        }
+      }
+      return prev
+    })
 
     fetchEraGeoJson(currentEra.slug)
       .then((data) => {

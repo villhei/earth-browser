@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "knex": "tsx ./node_modules/.bin/knex",
     "migrate": "tsx ./node_modules/.bin/knex migrate:latest",
+    "data:update": "tsx scripts/update_geojson_datasets.ts",
     "db:ingest": "tsx src/server/ingest.ts",
     "db:export": "tsx src/server/exportStatic.ts",
     "db:setup": "npm run migrate && npm run db:ingest && npm run db:export",
