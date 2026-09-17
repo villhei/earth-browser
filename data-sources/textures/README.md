@@ -4,6 +4,8 @@ This directory contains the geospatial source data, vector shapefiles, and techn
 
 > **Status:** The four generated prehistoric JPEGs and their app integration have been removed. Modern textures and research inputs are retained. The pipeline below documents the legacy generator; its reconstructions have not been validated and are being replaced with independently sourced, transparent era masks. Running the legacy generator recreates the retired JPEGs.
 
+> **Current phase-6 status:** [PHASE6-EXPANSION.md](PHASE6-EXPANSION.md) accounts for all 54 eras: five partial regional ice suites and 49 unavailable-era records. Coastlines and seasonal sea ice remain unavailable. The [phase-5 review](PHASE5-VALIDATION.md) rejected the coastline candidates and left ice scientific acceptance pending; older progress notes below do not supersede those findings. Use `expand-eras` and `validate-expansion` in `scripts/generate_reconstruction_masks.py` for the current catalog package.
+
 > **Current selection:** [SOURCE-SELECTION.md](SOURCE-SELECTION.md) and [SOURCE-SELECTION.json](SOURCE-SELECTION.json) record phase-2 decisions and original input checksums. NADI-1 replaces the unverified North American bundle; DATED-1 is authenticated. New research downloads are cached locally outside Git.
 
 > **Output contract:** [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md) and [OUTPUT-CONTRACT.json](OUTPUT-CONTRACT.json) define the phase-3 grid, independent masks, coverage semantics and provenance requirements. The [reference-era manifest example](examples/world-bc10000.manifest.json) retains selected evidence while marking every mask unavailable pending classification and terrain validation. Generation starts in phase 4.

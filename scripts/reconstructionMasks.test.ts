@@ -22,6 +22,20 @@ interface Disposition {
 }
 
 describe("reconstruction mask contract", () => {
+  it("accounts for all eras without promoting failed coastlines or inventing temporal reuse", async () => {
+    const { stdout } = await promisify(execFile)("python3", ["scripts/generate_reconstruction_masks.py", "expand-eras", "--help"])
+    expect(stdout).toContain("--overlay-root")
+    const expansion = JSON.parse(readFileSync(`${data}PHASE6-EXPANSION.json`, "utf8"))
+    expect(expansion.eras.map((era: { slug: string }) => era.slug)).toEqual(ERA_CATALOG.map(era => era.slug))
+    expect(expansion.partial_ice_era_count).toBe(5)
+    expect(expansion.fully_unavailable_era_count).toBe(49)
+    expect(expansion.coastal_mask_count).toBe(0)
+    expect(expansion.scientifically_accepted_era_count).toBe(0)
+    expect(expansion.source_slices).toHaveLength(7)
+    expect(expansion.source_slices.every((slice: { reused_across_eras: boolean }) => !slice.reused_across_eras)).toBe(true)
+    const review = JSON.parse(readFileSync(`${data}PHASE5-VALIDATION.json`, "utf8"))
+    expect(expansion.phase5_acceptance).toEqual(review.acceptance)
+  })
   it("keeps reference review explicit and limited to the selected era", async () => {
     const { stdout } = await promisify(execFile)("python3", ["scripts/generate_reconstruction_masks.py", "review-reference", "--help"])
     expect(stdout).toContain("--ice-package")

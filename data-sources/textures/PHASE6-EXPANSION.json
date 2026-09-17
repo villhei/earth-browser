@@ -1,0 +1,522 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "all_era_expansion",
+  "era_count": 54,
+  "partial_ice_era_count": 5,
+  "fully_unavailable_era_count": 49,
+  "scientifically_accepted_era_count": 0,
+  "coastal_mask_count": 0,
+  "complete_global_reconstruction": false,
+  "phase5_acceptance": {
+    "ice": "source_transfer_checked_scientific_acceptance_pending",
+    "coastlines": "withheld_pending_baseline_and_seam_resolution",
+    "expansion": "not_authorized_by_this_review",
+    "native_invalid_features": 1
+  },
+  "source_slices": [
+    {
+      "dataset": "nadi-1",
+      "source_calendar_bp": 12000,
+      "era_slugs": [
+        "world-bc10000"
+      ],
+      "reused_across_eras": false,
+      "temporal_interpretation": "source snapshot; offsets do not establish independent target-date precision"
+    },
+    {
+      "dataset": "dated-1",
+      "source_calendar_bp": 12000,
+      "era_slugs": [
+        "world-bc10000"
+      ],
+      "reused_across_eras": false,
+      "temporal_interpretation": "source snapshot; offsets do not establish independent target-date precision"
+    },
+    {
+      "dataset": "nadi-1",
+      "source_calendar_bp": 10000,
+      "era_slugs": [
+        "world-bc8000"
+      ],
+      "reused_across_eras": false,
+      "temporal_interpretation": "source snapshot; offsets do not establish independent target-date precision"
+    },
+    {
+      "dataset": "dated-1",
+      "source_calendar_bp": 10000,
+      "era_slugs": [
+        "world-bc8000"
+      ],
+      "reused_across_eras": false,
+      "temporal_interpretation": "source snapshot; offsets do not establish independent target-date precision"
+    },
+    {
+      "dataset": "nadi-1",
+      "source_calendar_bp": 7000,
+      "era_slugs": [
+        "world-bc5000"
+      ],
+      "reused_across_eras": false,
+      "temporal_interpretation": "source snapshot; offsets do not establish independent target-date precision"
+    },
+    {
+      "dataset": "nadi-1",
+      "source_calendar_bp": 6000,
+      "era_slugs": [
+        "world-bc4000"
+      ],
+      "reused_across_eras": false,
+      "temporal_interpretation": "source snapshot; offsets do not establish independent target-date precision"
+    },
+    {
+      "dataset": "nadi-1",
+      "source_calendar_bp": 5000,
+      "era_slugs": [
+        "world-bc3000"
+      ],
+      "reused_across_eras": false,
+      "temporal_interpretation": "source snapshot; offsets do not establish independent target-date precision"
+    }
+  ],
+  "groups": {
+    "L": [
+      "world-bc123000"
+    ],
+    "D12": [
+      "world-bc10000"
+    ],
+    "D10": [
+      "world-bc8000"
+    ],
+    "H-early": [
+      "world-bc5000",
+      "world-bc4000",
+      "world-bc3000"
+    ],
+    "H": [
+      "world-bc2000",
+      "world-bc1500",
+      "world-bc1000",
+      "world-bc700",
+      "world-bc500",
+      "world-bc400",
+      "world-bc323",
+      "world-bc300",
+      "world-bc200",
+      "world-bc100",
+      "world-bc1",
+      "world-100",
+      "world-200",
+      "world-300",
+      "world-400",
+      "world-500",
+      "world-600",
+      "world-700",
+      "world-800",
+      "world-900",
+      "world-1000",
+      "world-1100",
+      "world-1200",
+      "world-1279",
+      "world-1300",
+      "world-1400",
+      "world-1492",
+      "world-1500",
+      "world-1530",
+      "world-1600",
+      "world-1650",
+      "world-1700",
+      "world-1715",
+      "world-1783",
+      "world-1800",
+      "world-1815",
+      "world-1878",
+      "world-1880",
+      "world-1900",
+      "world-1914",
+      "world-1920",
+      "world-1930",
+      "world-1938",
+      "world-1945"
+    ],
+    "M": [
+      "world-1960",
+      "world-1994",
+      "world-2000",
+      "world-2010"
+    ]
+  },
+  "provenance": [
+    {
+      "path": "provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "provenance/PHASE5-VALIDATION.json",
+      "bytes": 22799,
+      "sha256": "25f40a7f9c26c7666a0e5dd24cda56fd99f39ba85284d1f898d7426c2c0d4068"
+    },
+    {
+      "path": "provenance/PHASE5-VALIDATION.md",
+      "bytes": 12305,
+      "sha256": "64f68708d378904fb1433c91de56dc07e6619de715f6f66060e72f400ab3aa7e"
+    },
+    {
+      "path": "provenance/PHASE5-EVIDENCE.json",
+      "bytes": 5462,
+      "sha256": "fd2b295ba0019bc79a96776e9f8c92aab85e41ee3625bb9bf3aa0cef0432ff22"
+    }
+  ],
+  "eras": [
+    {
+      "slug": "world-bc123000",
+      "path": "eras/world-bc123000/manifest.json",
+      "bytes": 3115,
+      "sha256": "556866069af3710743d3194a8241e911d28b7bc93af3afbd83875e0865e6a03d"
+    },
+    {
+      "slug": "world-bc10000",
+      "path": "eras/world-bc10000/manifest.json",
+      "bytes": 4589,
+      "sha256": "353dc46af59c8a3cb27b7e7155d293a7d61ebad13faf3a78df454202666776a8"
+    },
+    {
+      "slug": "world-bc8000",
+      "path": "eras/world-bc8000/manifest.json",
+      "bytes": 4469,
+      "sha256": "ed67f07fbba85f5e18808f3e475b8d03b67d74987c530f5a367c14e2fb910920"
+    },
+    {
+      "slug": "world-bc5000",
+      "path": "eras/world-bc5000/manifest.json",
+      "bytes": 4120,
+      "sha256": "1c3eff6330f1ddc282280aadcca3518f0132a69bc46b09fd3e1cebfb2a6f20d4"
+    },
+    {
+      "slug": "world-bc4000",
+      "path": "eras/world-bc4000/manifest.json",
+      "bytes": 4241,
+      "sha256": "4c2c79c2967862598699fc068f038724842573e108335251d9c29c6206eb4e35"
+    },
+    {
+      "slug": "world-bc3000",
+      "path": "eras/world-bc3000/manifest.json",
+      "bytes": 4120,
+      "sha256": "ad25a97a9ee5a3657b739ce7e256a8828639c30b5b960eacf37e2ed09571dd09"
+    },
+    {
+      "slug": "world-bc2000",
+      "path": "eras/world-bc2000/manifest.json",
+      "bytes": 3091,
+      "sha256": "fe174534f8a8134b977b1929e31c317b6d9df96b305f9971d71b46f22d4ebcca"
+    },
+    {
+      "slug": "world-bc1500",
+      "path": "eras/world-bc1500/manifest.json",
+      "bytes": 3091,
+      "sha256": "25bd1f20d67b764dea1d730219820fc4ea0f3ec7bf872afb4e7201dd12c5b4e9"
+    },
+    {
+      "slug": "world-bc1000",
+      "path": "eras/world-bc1000/manifest.json",
+      "bytes": 3091,
+      "sha256": "5e5f04875d998b0efae18c3aaf3d0a5bec47dd40491750662580a400313aae53"
+    },
+    {
+      "slug": "world-bc700",
+      "path": "eras/world-bc700/manifest.json",
+      "bytes": 3089,
+      "sha256": "06cd74ddae781ec643cbd7a41b9976c29eb166fb377228b1abba32a4970b4e15"
+    },
+    {
+      "slug": "world-bc500",
+      "path": "eras/world-bc500/manifest.json",
+      "bytes": 3089,
+      "sha256": "baa8f82955fba210bbe95c18d7053983f2e100530f0b2a51855018f933c02d74"
+    },
+    {
+      "slug": "world-bc400",
+      "path": "eras/world-bc400/manifest.json",
+      "bytes": 3089,
+      "sha256": "ff346bc7733372144c02687a1ced4c4c00bf76cb257fc4fd1d006277528266b5"
+    },
+    {
+      "slug": "world-bc323",
+      "path": "eras/world-bc323/manifest.json",
+      "bytes": 3089,
+      "sha256": "73decf0895f8c714ac0a02cd62528f1764ae537978ad132e1e41ed4c7be9a57e"
+    },
+    {
+      "slug": "world-bc300",
+      "path": "eras/world-bc300/manifest.json",
+      "bytes": 3089,
+      "sha256": "1393547de824f517cba88f87c584c29a3ea14831317f65737acc669553cb4e69"
+    },
+    {
+      "slug": "world-bc200",
+      "path": "eras/world-bc200/manifest.json",
+      "bytes": 3089,
+      "sha256": "7b44f660b39fb687445455b5517c2be3f7f7bc4a372ec29fe850a3f20d64feec"
+    },
+    {
+      "slug": "world-bc100",
+      "path": "eras/world-bc100/manifest.json",
+      "bytes": 3089,
+      "sha256": "edbb2d180c1e0d326f44d76f82033c9c80d5f12d2218121775ed368fedd84880"
+    },
+    {
+      "slug": "world-bc1",
+      "path": "eras/world-bc1/manifest.json",
+      "bytes": 3085,
+      "sha256": "47bc492942ce26e2fd23fb0225f2bf6c147893e00b8631cc22373b1f4b2dc94e"
+    },
+    {
+      "slug": "world-100",
+      "path": "eras/world-100/manifest.json",
+      "bytes": 3086,
+      "sha256": "b1fe039a520eaee7e509c189c4691a1a9dccaf5952e3648efbdc7b6b9bbf429f"
+    },
+    {
+      "slug": "world-200",
+      "path": "eras/world-200/manifest.json",
+      "bytes": 3086,
+      "sha256": "6422ff227ed423b02fa1fca6759e138a756488230e56e5db05fe8ddc029b1fef"
+    },
+    {
+      "slug": "world-300",
+      "path": "eras/world-300/manifest.json",
+      "bytes": 3086,
+      "sha256": "0729b95dfc1979493c1583ec529e248f985bc6d5cc21a104ed0048106c693bd4"
+    },
+    {
+      "slug": "world-400",
+      "path": "eras/world-400/manifest.json",
+      "bytes": 3086,
+      "sha256": "d31b9eff4a910d5ff592092e0c52b429863ac5739248f389e00e8dbdd9660fa1"
+    },
+    {
+      "slug": "world-500",
+      "path": "eras/world-500/manifest.json",
+      "bytes": 3086,
+      "sha256": "d12b48ff52a8cfca633d2ac83ff2f72528615aa3c60d30605775bed75d9e4c4f"
+    },
+    {
+      "slug": "world-600",
+      "path": "eras/world-600/manifest.json",
+      "bytes": 3086,
+      "sha256": "11c03d3dda665a9c7c8059ebf94a980b4f3e2f3eb81644cecf2af9ddb777ecb8"
+    },
+    {
+      "slug": "world-700",
+      "path": "eras/world-700/manifest.json",
+      "bytes": 3086,
+      "sha256": "dfc905ca3fecec134ecf70914402326763e2f907363f282dd3909b765e44807f"
+    },
+    {
+      "slug": "world-800",
+      "path": "eras/world-800/manifest.json",
+      "bytes": 3086,
+      "sha256": "d213be1d2daf0dec89b44a2a13aef5810db102da0704e267b0e436202d748c61"
+    },
+    {
+      "slug": "world-900",
+      "path": "eras/world-900/manifest.json",
+      "bytes": 3086,
+      "sha256": "5f68427472546672486d530b7dfa5c9c2b0739f457870da7d9daaec1aa332433"
+    },
+    {
+      "slug": "world-1000",
+      "path": "eras/world-1000/manifest.json",
+      "bytes": 3087,
+      "sha256": "61f2e54d5c9a292f6a785d3989e69c60123e72e268ee7f0cbb9e87f39bcb195b"
+    },
+    {
+      "slug": "world-1100",
+      "path": "eras/world-1100/manifest.json",
+      "bytes": 3087,
+      "sha256": "cc9bfe36fdd6b43b9f1ab04db982e33b9478ba0071d0c7a21421e805800f6c43"
+    },
+    {
+      "slug": "world-1200",
+      "path": "eras/world-1200/manifest.json",
+      "bytes": 3087,
+      "sha256": "0a926d247630be5da2e0c94a9074ca35c94d0c3edd32a15f1be92c9bbd2c3639"
+    },
+    {
+      "slug": "world-1279",
+      "path": "eras/world-1279/manifest.json",
+      "bytes": 3087,
+      "sha256": "137ce37f163f354c26d1d1876b4e010bc84fbe54d2ac97b580db23b9dfcc2e4d"
+    },
+    {
+      "slug": "world-1300",
+      "path": "eras/world-1300/manifest.json",
+      "bytes": 3087,
+      "sha256": "2f2f2e34570c9ab7b356918e7a303656e9048ed0bce74ac491974b771e0702ce"
+    },
+    {
+      "slug": "world-1400",
+      "path": "eras/world-1400/manifest.json",
+      "bytes": 3087,
+      "sha256": "400b03ebfba2c0b1c4437a7d7ac5c47ecd65d8f667b55647eeb91a3d39b052ac"
+    },
+    {
+      "slug": "world-1492",
+      "path": "eras/world-1492/manifest.json",
+      "bytes": 3087,
+      "sha256": "4ca06a710b057bf8e6516e31f2d2a33b84b9434b6899bf73f07d91433cd750e6"
+    },
+    {
+      "slug": "world-1500",
+      "path": "eras/world-1500/manifest.json",
+      "bytes": 3087,
+      "sha256": "76c453d283c696acc93ee0ad96c65f70d1b15e37917449d8dcfb924492e71db0"
+    },
+    {
+      "slug": "world-1530",
+      "path": "eras/world-1530/manifest.json",
+      "bytes": 3087,
+      "sha256": "d6020e471f26a6b29be8f96867788d872c3a9912562c58fe9403e0ff06449450"
+    },
+    {
+      "slug": "world-1600",
+      "path": "eras/world-1600/manifest.json",
+      "bytes": 3087,
+      "sha256": "dee3f1c82bee3f99db48ec469553a11efbbd03341000de3430cda33d50feba9f"
+    },
+    {
+      "slug": "world-1650",
+      "path": "eras/world-1650/manifest.json",
+      "bytes": 3087,
+      "sha256": "aea3ca784abe6e4e282d8511a3b7676cc0a12369efae771918dbded1a2a2a1e8"
+    },
+    {
+      "slug": "world-1700",
+      "path": "eras/world-1700/manifest.json",
+      "bytes": 3087,
+      "sha256": "c3c8b37b3c4f51277b6b3c439907404bde679fd623327516e5237a46830d1fb8"
+    },
+    {
+      "slug": "world-1715",
+      "path": "eras/world-1715/manifest.json",
+      "bytes": 3087,
+      "sha256": "ea5527d73625e4b29ce0ed1e5f1b0b1367c3f0e7ccbc9143df9017d18ddfc8f2"
+    },
+    {
+      "slug": "world-1783",
+      "path": "eras/world-1783/manifest.json",
+      "bytes": 3087,
+      "sha256": "2d9d8e71d54bd5ee58cadb844476a128ed3b9769b257c64db677898643a5c331"
+    },
+    {
+      "slug": "world-1800",
+      "path": "eras/world-1800/manifest.json",
+      "bytes": 3087,
+      "sha256": "ee71470422f7e8c12e68cf26c3aabf521b93f230fbe638fb84b4405b3ef7a977"
+    },
+    {
+      "slug": "world-1815",
+      "path": "eras/world-1815/manifest.json",
+      "bytes": 3087,
+      "sha256": "7e1a0cb863d940b4aae439914947158ad9edb5f852a75814ab29f7f940f31dca"
+    },
+    {
+      "slug": "world-1878",
+      "path": "eras/world-1878/manifest.json",
+      "bytes": 3086,
+      "sha256": "1967992653d6ec2332bbe878717fcaca7c3bafc82e79f5cd90f891a7e4ff3f16"
+    },
+    {
+      "slug": "world-1880",
+      "path": "eras/world-1880/manifest.json",
+      "bytes": 3086,
+      "sha256": "e5f6e239e63da349073849487b0e1d9c0e907fed8035e4e006a51b5ecca538c3"
+    },
+    {
+      "slug": "world-1900",
+      "path": "eras/world-1900/manifest.json",
+      "bytes": 3086,
+      "sha256": "f71ea84c5d54ddda030514dedaf96a4a1d094e937316876379910e985f6a69b7"
+    },
+    {
+      "slug": "world-1914",
+      "path": "eras/world-1914/manifest.json",
+      "bytes": 3086,
+      "sha256": "e60012fd0da6ebe6919c3de325139794e9a7d0c9d123371f4f140859be261f3e"
+    },
+    {
+      "slug": "world-1920",
+      "path": "eras/world-1920/manifest.json",
+      "bytes": 3086,
+      "sha256": "1cf174038777fd5f0139260b598a18c7cee5c7357a73367328ecae4b6d641a57"
+    },
+    {
+      "slug": "world-1930",
+      "path": "eras/world-1930/manifest.json",
+      "bytes": 3086,
+      "sha256": "9ee0e74dd65e50b56f33f5d34d130b1dae0855e256664086509b84cddc7e8b3a"
+    },
+    {
+      "slug": "world-1938",
+      "path": "eras/world-1938/manifest.json",
+      "bytes": 3086,
+      "sha256": "7f0f99ead11267b32e013fbe0132f8d9f9cc5bbcc3b92088ed8fd36daf7e13e0"
+    },
+    {
+      "slug": "world-1945",
+      "path": "eras/world-1945/manifest.json",
+      "bytes": 3085,
+      "sha256": "195f4ab85d46d608c266e8021d5090cd1c46b9c59d81f0fcb2ac08e97f0612f8"
+    },
+    {
+      "slug": "world-1960",
+      "path": "eras/world-1960/manifest.json",
+      "bytes": 2822,
+      "sha256": "ded5e593179d70f53df8bc0460f876ace7a10dbaf0a3d9b8b1784a6976ae60a1"
+    },
+    {
+      "slug": "world-1994",
+      "path": "eras/world-1994/manifest.json",
+      "bytes": 3016,
+      "sha256": "95bb5d041fd27ae6d46eb7f985f5da3c1f542809d7089bfe2d9219f8a30641f5"
+    },
+    {
+      "slug": "world-2000",
+      "path": "eras/world-2000/manifest.json",
+      "bytes": 3016,
+      "sha256": "e06ad7200eaee501669270b76571595b1995b10aebe7f60a02fe0a4569ed5d49"
+    },
+    {
+      "slug": "world-2010",
+      "path": "eras/world-2010/manifest.json",
+      "bytes": 3016,
+      "sha256": "75d03a268e8f16ac3d3b4d90a1af5bed2c5bda1d8bc7ae03d4b281d738cbac09"
+    }
+  ]
+}

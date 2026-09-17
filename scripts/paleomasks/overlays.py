@@ -100,11 +100,11 @@ def generate_overlays(eras, contract, selection, catalog, cache, output):
                         "complete_global_reconstruction": False,
                         "transparency": "baseline_unchanged_not_confirmed_absence",
                         "coastlines": {"enabled": True, "status": "not_generated", "baseline": "BLUE_MARBLE",
-                                       "reason": "Image-to-marine classification and native ocean connectivity remain to be implemented and validated."},
+                                       "reason": "Coastlines are a separate product. Current reference candidates failed baseline classification and regional seam acceptance; no coastline is delivered in this ice package."},
                         "limitations": ["Partial selected regional ice evidence only; unselected regions preserve the baseline.",
                                         "Grounded and floating ice are merged; no new shelf front or seasonal sea ice is invented.",
                                         "Source uncertainty bounds remain alternative geometries, not alpha probabilities.",
-                                        "Coastline reconstruction and Phase-5 scientific validation remain incomplete."],
+                                        "Phase-5 ice scientific acceptance remains pending; reference coastlines failed acceptance."],
                         "processing": processing_record()}
             for name in PROVENANCE:
                 dest = package / "provenance" / name

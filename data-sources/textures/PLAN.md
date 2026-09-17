@@ -1,6 +1,6 @@
 # Research-based prehistoric Earth masks — implementation plan
 
-Recorded: 2026-09-16. Updated during phase-5 reference review on 2026-09-17.
+Recorded: 2026-09-16. Updated during phase-6 catalog expansion on 2026-09-17.
 
 **Latest operator override:** [PHASE4-OPERATOR-DIRECTIVES.md](PHASE4-OPERATOR-DIRECTIVES.md)
 supersedes conflicting earlier requirements: empirical ice takes precedence
@@ -179,10 +179,32 @@ fallback. No app/site/source-pin changes.
 
 ### 6. Expand to the remaining eras
 
-- [ ] Work through all 54 rows of the audit matrix: D10 endpoint handling, H-early/H Holocene evidence, M dated modern observations and L Last Interglacial reconstruction. Generate masks only where selected evidence supports them; record unavailable outputs for unresolved cases.
-- [ ] Explicitly identify shared/reused source time slices; do not imply independent temporal precision.
-- [ ] Include flooded modern land for 123,000 BCE where supported.
-- [ ] Keep lakes and inland landscape changes outside this stage.
+- [x] Work through all 54 rows of the audit matrix: D10 endpoint handling, H-early/H Holocene evidence, M dated modern observations and L Last Interglacial reconstruction. Generate masks only where selected evidence supports them; record unavailable outputs for unresolved cases.
+- [x] Explicitly identify shared/reused source time slices; do not imply independent temporal precision.
+- [x] Include flooded modern land for 123,000 BCE where supported. No selected exact-target surface supports it; explicitly unavailable with no placeholder PNG or uniform +7 m approximation.
+- [x] Keep lakes and inland landscape changes outside this stage.
+
+Completed 2026-09-17 **as catalog-wide evidence/disposition expansion**, following
+the operator's request to continue to phase 6. This does not complete phase 5's
+scientifically accepted-mask deliverable or authorize expansion of the rejected
+coastline algorithm. [PHASE6-EXPANSION.md](PHASE6-EXPANSION.md) documents all 54
+rows, the CLI and remaining scientific limits;
+[PHASE6-EXPANSION.json](PHASE6-EXPANSION.json) pins the generated catalog and
+per-era manifests. `expand-eras` produces an atomic package under
+`masks/phase6-eras-verified/`: five regenerated partial regional ice suites (central,
+minimum, maximum) and 49 metadata-only unavailable eras. All coastlines and
+seasonal sea ice remain unavailable. Original source selection is unchanged.
+The seven dataset/age pairs have no cross-era reuse; all offsets remain +51
+years and TS10 is restricted to 8,000 BCE. Each era records the scope, unavailable
+products and acceptance limits; no transparent absence mask is fabricated.
+
+Phase-6 verification: all 54 packages validate; the existing-overlay reuse path
+also passes. All 15 regenerated PNGs match the phase-4 bytes and retain 70
+audited zero-rounding drops. 69 distinct Python tests and 63 Vitest tests pass.
+`npm run build` encounters the existing sandbox IPC failure; equivalent Node
+import/export, typecheck and Vite stages pass with cached static data because
+PostGIS is unavailable. No tracked app/site/source-pin changes;
+`git diff --check` passes.
 
 ### 7. Package and verify
 
@@ -207,15 +229,15 @@ These are starting points, not final dataset selections. Inspect original data a
 
 ## Suggested next-session task
 
-Read `AGENTS.md`, this plan, [PHASE5-VALIDATION.md](PHASE5-VALIDATION.md),
-[PHASE5-VALIDATION.json](PHASE5-VALIDATION.json), the current
-[operator directives](PHASE4-OPERATOR-DIRECTIVES.md) and the source/output
-contracts. Inspect the working tree and local reference diagnostic plates.
-Resolve the failed RGB marine classification, coastal domain-edge disposition
-and NADI-1 12 ka source self-intersection before accepting the reference products
-or expanding coastlines. Preserve original source bytes, all three ice bounds,
-the +51-year match and operator rules. Do not infer ocean from all negative
-terrain, enlarge zero-rounding features, repair topology silently, replace
-unavailable coverage with modern imagery, or run the retired JPEG generator.
-The `review-reference` command reproduces the diagnostic report; it does not
-confer scientific approval. No operator decision is pending.
+Read `AGENTS.md`, this plan, [PHASE6-EXPANSION.md](PHASE6-EXPANSION.md),
+[PHASE5-VALIDATION.md](PHASE5-VALIDATION.md) and the current
+[operator directives](PHASE4-OPERATOR-DIRECTIVES.md). Phase 7 can package the
+partial evidence with its limitations; it cannot label these masks scientifically
+accepted. To expand coastal coverage, first resolve the failed RGB marine
+classification, regional edge disposition and source topology findings. Retain
+all 54 era dispositions, original source pins, three ice bounds, signed offsets
+and the single TS10 exception. Do not infer ocean from all negative terrain,
+enlarge zero-rounding features, repair topology silently, substitute modern
+imagery for unavailable evidence or run the retired JPEG generator. The
+`validate-expansion` command verifies package integrity and scope, not scientific
+acceptance. No operator decision is pending.

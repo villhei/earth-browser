@@ -279,6 +279,11 @@ def main(argv=None):
         p = sub.add_parser(name)
         p.add_argument("--all-downloads", action="store_true", help="Include all 14 pinned research downloads")
     sub.add_parser("plan")
+    p = sub.add_parser("expand-eras", help="Account for all 54 eras; attach selected partial ice and withhold unsupported masks")
+    p.add_argument("--output", type=Path, default=DATA / "masks/phase6-eras-v1")
+    p.add_argument("--overlay-root", type=Path, help="Reuse verified existing overlays; otherwise regenerate all five selected eras")
+    p = sub.add_parser("validate-expansion")
+    p.add_argument("package", type=Path)
     p = sub.add_parser("generate-overlays", help="Generate operator-directed unified static ice overlays")
     scope = p.add_mutually_exclusive_group(required=True)
     scope.add_argument("--era")
@@ -329,6 +334,12 @@ def main(argv=None):
                 for record in archive_inputs(selection, args.all_downloads):
                     acquire(record, args.cache)
             print(json.dumps(verify_inputs(selection, args.cache, args.all_downloads)))
+        elif args.command == "expand-eras":
+            from .expansion import expand_eras
+            expand_eras(contract, selection, catalog, args.cache, args.output, args.overlay_root)
+        elif args.command == "validate-expansion":
+            from .expansion import validate_expansion
+            print(json.dumps(validate_expansion(args.package, contract, selection, catalog)))
         elif args.command == "validate":
             manifest = read_json(args.manifest)
             print(json.dumps(validate_manifest(manifest, args.manifest.parent if manifest["record_kind"] == "delivery" else None)))
