@@ -8,6 +8,12 @@ This directory contains the geospatial source data, vector shapefiles, and techn
 
 > **Output contract:** [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md) and [OUTPUT-CONTRACT.json](OUTPUT-CONTRACT.json) define the phase-3 grid, independent masks, coverage semantics and provenance requirements. The [reference-era manifest example](examples/world-bc10000.manifest.json) retains selected evidence while marking every mask unavailable pending classification and terrain validation. Generation starts in phase 4.
 
+> **Phase-4 tooling:** [PHASE4-IMPLEMENTATION.md](PHASE4-IMPLEMENTATION.md) documents the new verified-input CLI, contract validator and separate margin diagnostics. Production masks remain gated by terrain acquisition, grounding and supported-domain evidence. Use `scripts/generate_reconstruction_masks.py`; the legacy generator below is not part of this pipeline.
+
+> **Operator handoff:** [PHASE4-OPERATOR-ISSUES.md](PHASE4-OPERATOR-ISSUES.md) lists acquisition/access actions, marine/grounding evidence requirements and the fixed-grid alpha encoding limit found by the diagnostic loss analysis.
+
+> **Latest operator-directed outputs:** [PHASE4-OPERATOR-DIRECTIVES.md](PHASE4-OPERATOR-DIRECTIVES.md) supersedes conflicting older requirements. Five unified static ice overlays are generated with empirical-ice priority and audited zero-rounding drops. Regional Blue Marble coastline candidates are available for 10,000 BCE; scientific validation remains pending. See [PHASE4-OUTPUT-INVENTORY.json](PHASE4-OUTPUT-INVENTORY.json) and the current handoff for artifact/status details.
+
 > **Source audit:** See [SOURCE-AUDIT.md](SOURCE-AUDIT.md) for catalog dates, usable inputs and unresolved provenance. The legacy North American BP-to-BCE assignments below are unsupported: the attributed source uses radiocarbon chronology. Those files also contain `LAKE` records. Sea-level offsets and artistic marine ice below are legacy assumptions, not validated reconstruction inputs.
 
 ---

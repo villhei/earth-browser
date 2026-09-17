@@ -1,3 +1,6 @@
 # Original research downloads are pinned in SOURCE-SELECTION.json.
 # Keep large archives locally; reacquire by URL and verify SHA-256 on other machines.
 research-cache/
+
+# Reproducible evidence/disposition packages; source pins and code are tracked.
+masks/

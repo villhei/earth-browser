@@ -1,0 +1,151 @@
+{
+  "record_date": "2026-09-17",
+  "scope": "Operator-directed partial static ice overlays and experimental regional coastlines",
+  "overlay_contract": {
+    "repository_path": "data-sources/textures/OUTPUT-OVERLAY-CONTRACT.json",
+    "bytes": 1602,
+    "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+  },
+  "ice_overlays": [
+    {
+      "era_slug": "world-bc10000",
+      "manifest": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc10000/manifest.json",
+        "bytes": 23220,
+        "sha256": "8daae71b853eb452aab7ae7569aa2a1635364bfbb6da71b172a372ec63c9324d"
+      },
+      "main_overlay": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc10000/ice.png",
+        "bytes": 63203,
+        "sha256": "0b515e4acdfe42cdcc960efa5dba194c43ef13164b4b33a1e9a75e04feb33f64"
+      },
+      "discarded_polygon_instances": {
+        "central": 1,
+        "minimum": 1,
+        "maximum": 1
+      },
+      "complete_global_reconstruction": false
+    },
+    {
+      "era_slug": "world-bc3000",
+      "manifest": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc3000/manifest.json",
+        "bytes": 30088,
+        "sha256": "39b730bfdd37dde2b306dfe80468daf4473f975fca0728b3b632e8ec440f4580"
+      },
+      "main_overlay": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc3000/ice.png",
+        "bytes": 54364,
+        "sha256": "2f9ec88e112066ab56bf9996557b8355bd10af93ebab6ec22716be4f83df10a8"
+      },
+      "discarded_polygon_instances": {
+        "central": 12,
+        "minimum": 12,
+        "maximum": 3
+      },
+      "complete_global_reconstruction": false
+    },
+    {
+      "era_slug": "world-bc4000",
+      "manifest": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc4000/manifest.json",
+        "bytes": 28977,
+        "sha256": "a8e5a237cbed4cd69e426776cd4ffc9cc21aeefad5db5278d25c26a9a54e6e37"
+      },
+      "main_overlay": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc4000/ice.png",
+        "bytes": 52777,
+        "sha256": "7dec96106a8b3c3cf7b63f9a6bd0f9f6d2b9576992cb50cb2d4900b3cf07b865"
+      },
+      "discarded_polygon_instances": {
+        "central": 9,
+        "minimum": 12,
+        "maximum": 3
+      },
+      "complete_global_reconstruction": false
+    },
+    {
+      "era_slug": "world-bc5000",
+      "manifest": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc5000/manifest.json",
+        "bytes": 23142,
+        "sha256": "0af9b29e2d5d1ea40aac5cd80f58c749af66d76c3880dd64e6ca75a760ef8b73"
+      },
+      "main_overlay": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc5000/ice.png",
+        "bytes": 54334,
+        "sha256": "fef7e707ce35022562c5d18beca93abb363c40d71357beff4b6dfa44751ce4a9"
+      },
+      "discarded_polygon_instances": {
+        "central": 4,
+        "minimum": 9,
+        "maximum": 2
+      },
+      "complete_global_reconstruction": false
+    },
+    {
+      "era_slug": "world-bc8000",
+      "manifest": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc8000/manifest.json",
+        "bytes": 22040,
+        "sha256": "112f2d7b3f272c0589ba7096887f8d40e39f5356962689a11be018ffd14f0b52"
+      },
+      "main_overlay": {
+        "repository_path": "data-sources/textures/masks/overlays-v2/world-bc8000/ice.png",
+        "bytes": 53693,
+        "sha256": "26692412a847cc5ab3aa51bca4dcdf462056581cccefba9c4c4993cd5413d769"
+      },
+      "discarded_polygon_instances": {
+        "central": 0,
+        "minimum": 1,
+        "maximum": 0
+      },
+      "complete_global_reconstruction": false
+    }
+  ],
+  "coastline_reference": {
+    "report": {
+      "repository_path": "data-sources/textures/masks/coastline-candidates-v2/world-bc10000/coastline-candidates.json",
+      "bytes": 7602,
+      "sha256": "d9109282c9f9f800f5a9b77fb0b3c6f41e58c811eaacc0fa7756219bd575d6a6"
+    },
+    "artifacts": [
+      {
+        "path": "exposed-land-candidate.png",
+        "bytes": 96774,
+        "sha256": "d547f62dba3d84110607df1ab3e5c8efad7f5673dff54b9a59498b8ef874de09",
+        "positive_pixels": 38989
+      },
+      {
+        "path": "flooded-land-candidate.png",
+        "bytes": 40644,
+        "sha256": "11f51085352c177b2965987c180ada37fa2ab2c18e13020aa36bb2418d0a56ba",
+        "positive_pixels": 2718
+      },
+      {
+        "path": "comparison-domain.png",
+        "bytes": 49636,
+        "sha256": "30a33ecd1bb31cb34ae9fefd9e356a26a993e6be3db2af1a3c9a28ce4d00c5f7"
+      }
+    ],
+    "native_counts": {
+      "ocean_seed_cells": 12660,
+      "ocean_connected_cells": 15163606,
+      "disconnected_negative_cells_excluded": 329361,
+      "ice_priority_cells": 8227920
+    },
+    "production_eligible": false
+  },
+  "verification_environment": {
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [GCC 12.3.0]",
+    "packages": {
+      "numpy": "2.5.2",
+      "pillow": "12.3.0",
+      "pyproj": "3.7.2",
+      "pyshp": "3.1.6",
+      "scipy": "1.18.1"
+    },
+    "gdal": "GDAL 3.8.4, released 2024/02/08"
+  },
+  "scientific_validation": "pending; no complete global reconstruction claimed"
+}

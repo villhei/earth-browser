@@ -1,6 +1,14 @@
 # Research-based prehistoric Earth masks — implementation plan
 
-Recorded: 2026-09-16. Updated after phase-3 output contracts on 2026-09-17.
+Recorded: 2026-09-16. Updated during phase-4 implementation on 2026-09-17.
+
+**Latest operator override:** [PHASE4-OPERATOR-DIRECTIVES.md](PHASE4-OPERATOR-DIRECTIVES.md)
+supersedes conflicting earlier requirements: empirical ice takes precedence
+over GIA/marine conflicts; grounded and floating ice merge into one static
+overlay; Blue Marble is the baseline; PALEOMAP, inland waterbody changes and
+vegetation changes are excluded. The completed `DROP_ARTIFACTS` rule discards
+polygons/subpixels that round to zero under the existing 8-bit coverage quantizer;
+retain a processing audit without enlarging those features.
 
 ## Objective and agreed scope
 
@@ -110,12 +118,34 @@ Phase-3 verification: checked all 54 catalog dates/dispositions, all seven selec
 
 ### 4. Implement reproducible generation
 
-- [ ] Preserve original research inputs; record retrieval locations and checksums.
-- [ ] Implement correct reprojection (including ESRI:102017), polygon holes, polar handling and antimeridian handling. Filter North American `SYMB` categories if those layers are selected; reject unknown categories and exclude `LAKE`.
+- [x] Preserve original research inputs; record retrieval locations and checksums.
+- [x] Implement correct reprojection (including ESRI:102017), polygon holes, polar handling and antimeridian handling. Filter North American `SYMB` categories if those layers are selected; reject unknown categories and exclude `LAKE`. Implemented for evidence rasters; production supported-domain splitting remains gated below.
 - [ ] Derive land/ocean classifications using documented vertical references, regional land movement and ocean connectivity; prevent subglacial depressions and inland basins from becoming unsupported ocean. Reconcile source overlaps and regional seams explicitly.
-- [ ] Preserve source detail during processing and rasterize to the common final grid.
-- [ ] Support one-era and all-supported-era generation, independent of colorization.
-- [ ] Fail clearly on missing required inputs; make any explicitly permitted partial output visible in metadata.
+- [x] Preserve source detail during processing and rasterize to the common final grid, with the operator-authorized exception for coverage that rounds to zero. Record those drops without enlarging geometry.
+- [x] Support one-era and all-supported-era generation, independent of colorization. The operator-directed version-2 workflow now emits partial unified ice overlays for all five selected eras; the original version-1 evidence workflow is retained.
+- [x] Fail clearly on missing required inputs; make partial output visible in metadata. Version-2 overlays have separate validation and cannot claim global absence/completeness; version-1 class-separated production remains gated.
+
+Current regional coastline implementation: Blue Marble RGB segmentation, native-grid boundary-seeded ocean connectivity, exclusion of disconnected negative basins/inland water and empirical-ice priority are implemented and tested. The 10,000 BCE exposed/flooded candidate masks are generated; the land/ocean item above remains open for validation of image-derived baseline boundaries and regional seams before treating those candidates as production coastlines.
+
+Progress 2026-09-17: [PHASE4-IMPLEMENTATION.md](PHASE4-IMPLEMENTATION.md) records the CLI, validator, numerical implementation, real-input findings and commands. All 14 original downloads and 84 selected components verify. The software retains all seven source uses and three-bound suites. Diagnostic rasterization identified small polygon losses and nonnested bounds, plus an unclosed NADI-1 6 ka central ring that fails by default and can be explicitly closed with a recorded diagnostic-only repair. **Phase 4 remains incomplete:** terrain/modern marine inputs, grounding/presence-absence domains, production domain geometry and feature-preserving coverage are unresolved. The selected terrain archive could not be acquired in this environment. No production mask, inferred coastline, source-selection change or successful phase-5 scientific validation is claimed.
+
+Continuation 2026-09-17: added analytic image-plane coverage checks for missed diagnostic polygons and fixed numerical ring-closure roundoff at the antimeridian. Regenerated all five evidence-era packages: all 70 missed polygon instances across the bounds individually fall below the required 8-bit alpha encoding threshold; sampling increases alone cannot preserve them. Reports retain fractions and identify sampling misses versus encoding limits without changing diagnostic pixels or approving production. [PHASE4-OPERATOR-ISSUES.md](PHASE4-OPERATOR-ISSUES.md) lists the rechecked terrain download failure, required marine/grounding evidence and subpixel-policy decision. Phase 4 remains incomplete.
+
+Phase-4 verification: 35 Python tests and 60 Vitest tests passed. All 14 downloads and 84 selected components verify; five regenerated packages validate and all 21 PNGs match the preceding verified run. `npm run build` hit sandbox `tsx` IPC `EPERM`; equivalent Node-import export, TypeScript and Vite stages passed with the existing-static-data fallback because PostGIS was unreachable. No tracked site changes; existing Vite CJS/chunk warnings remain.
+
+Operator-staged terrain update 2026-09-17: `research-cache/ICE6G_Paleo_subice.zip` is now present (5,533,024,659 bytes). [ICE6G-ARCHIVE-INVENTORY.json](ICE6G-ARCHIVE-INVENTORY.json) records its SHA-256, successful CRC verification and individual hashes for all 1,028 ZIP entries. Embedded FileGDB XML identifies 47 rasters, including `ICE6G_paleosi_12000`, `ICE6G_paleosi_10000` and `ICE6G_paleosi_07000`, with NAD83 Albers and approximately 999.92745-metre cells. The archive-acquisition blocker is cleared. Native cell/NoData decoding now requires an available GDAL 3.7+ OpenFileGDB raster reader or faithful native-grid exports; none is installed here. The phase-2 selection remains an unchanged historical snapshot, and terrain is not yet registered for production. Other marine, grounding, domain and subpixel-policy gates remain.
+
+GDAL installation recheck 2026-09-17: `/usr/bin/gdalinfo` and system Python bindings report GDAL **3.4.1**. OpenFileGDB opens the zipped archive through the vector API, but advertises no raster capability. A GDAL **3.7+** installation with OpenFileGDB raster support is still needed; binary-only Rasterio acquisition for system Python 3.10 also found no matching distribution. The operator handoff now records this specific version/capability blocker.
+
+GDAL upgrade and terrain implementation 2026-09-17: GDAL **3.8.4** now reads the FileGDB rasters. The new `inspect-terrain` command verifies the ZIP and extracted members, checks the decoded native grid against the catalog, exports the selected 12/10/7 ka layers as Float32 GeoTIFFs with explicit validity masks, and compares every output cell byte and mask pixel with its source. All three exports completed under `research-cache/ice6g-native-v1/`; [ICE6G-TERRAIN-INSPECTION.json](ICE6G-TERRAIN-INSPECTION.json) records hashes, grid/CRS, chronology and processing. Each layer is 9,872 × 5,932 with 35,792,814 valid cells and 22,767,890 masked cells. No resampling, added sea-level offset or marine classification was applied. **Archive and reader blockers are cleared.** Remaining Phase-4 work is the modern marine baseline, ocean connectivity and basin/ice exclusions, scientific coverage/grounding domains, seam reconciliation and subpixel preservation. Phase 5 has not started.
+
+Latest verification: 41 distinct Python tests pass across the workspace and GDAL-enabled system interpreters; 61 Vitest tests pass. `npm run build` still hits `tsx` IPC `EPERM`; equivalent export/typecheck/Vite stages pass, with cached static data because PostGIS is unavailable. No tracked site changes.
+
+Operator-directed generation 2026-09-17: [OUTPUT-OVERLAY-CONTRACT.json](OUTPUT-OVERLAY-CONTRACT.json) defines the unified ice workflow. `generate-overlays --all-supported` produced and validated five packages under `masks/overlays-v2/`, each with a single `ice.png` and minimum/maximum diagnostic alternatives. Empirical ice is the upper overlay; grounded/floating separation is no longer required. All 70 previously diagnosed zero-rounding polygon instances are recorded as discarded. The known 6 ka unclosed ring is closed in derived geometry with the operation logged; original bytes and nonnested source bounds remain preserved.
+
+The `coastline-candidates` command also generated the 10,000 BCE regional reference under `masks/coastline-candidates-v2/world-bc10000/`: 38,989 exposed-land and 2,718 flooded-land candidate pixels. These are based on the operator-selected Blue Marble image and the verified native ICE6G terrain, with 329,361 disconnected negative native cells excluded. No output crosses its comparison domain or occupies a final pixel touched by empirical ice. The image-color coastline baseline and regional boundaries require scientific review; these outputs are explicitly candidates, not a validated global reconstruction. [PHASE4-OUTPUT-INVENTORY.json](PHASE4-OUTPUT-INVENTORY.json) records artifact hashes, losses and environment versions. No further operator decision is pending for the stated rules.
+
+Latest tests: 54 distinct Python tests pass across the two interpreters, plus 61 Vitest tests. Equivalent production build stages pass with the existing sandbox/export fallback. The legacy JPEG generator and app texture registry remain unchanged.
 
 ### 5. Validate one reference era
 
@@ -158,4 +188,4 @@ These are starting points, not final dataset selections. Inspect original data a
 
 ## Suggested next-session task
 
-Read `AGENTS.md`, this plan, [SOURCE-SELECTION.md](SOURCE-SELECTION.md) and [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md), then inspect the working tree. Execute phase 4: implement contract validation and reproducible generation using [OUTPUT-CONTRACT.json](OUTPUT-CONTRACT.json) and the pinned source-selection record. The [reference manifest example](examples/world-bc10000.manifest.json) records evidence without claiming classified outputs. Resolve supported presence/absence domains and grounding interpretation before ice export; acquire and verify terrain members and the modern marine baseline before coastline generation. Preserve the seven selected source uses, all uncertainty bounds, and the named TS10 endpoint exception. Do not run the legacy generator, restore retired JPEGs, or treat unavailable layers as empty masks. Reference-era scientific validation follows in phase 5.
+Read `AGENTS.md`, this plan, [PHASE4-IMPLEMENTATION.md](PHASE4-IMPLEMENTATION.md), [PHASE4-OPERATOR-ISSUES.md](PHASE4-OPERATOR-ISSUES.md), [ICE6G-TERRAIN-INSPECTION.json](ICE6G-TERRAIN-INSPECTION.json), [SOURCE-SELECTION.md](SOURCE-SELECTION.md) and [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md), then inspect the working tree. Continue the remaining phase-4 gates using the implemented CLI/validator and verified native terrain exports. Acquire and validate a modern marine baseline before deriving coastlines; preserve native terrain validity masks. Resolve supported presence/absence domains and grounding interpretation before ice export. Inspect diagnostic reports for the unclosed 6 ka NADI-1 ring, nonnested bounds and lost subpixel polygons; resolve production coverage and domain geometry before extending the fail-closed validator. The lost polygon instances individually fall below the fixed 8-bit encoding threshold: do not assume more supersampling resolves them. Preserve the seven selected uses, all uncertainty bounds and the named TS10 exception. Do not run the legacy generator, restore retired JPEGs, or treat unavailable layers as empty masks. Phase 5 follows these unresolved gates.

@@ -1,0 +1,209 @@
+{
+  "record_kind": "native_terrain_evidence",
+  "production_eligible": false,
+  "archive": {
+    "repository_path": "data-sources/textures/research-cache/ICE6G_Paleo_subice.zip",
+    "bytes": 5533024659,
+    "sha256": "49cb5cfd918215988a8778f63cc71ba5e1e4ec303cf5d5caff56048a715258e7"
+  },
+  "archive_inventory": {
+    "bytes": 258600,
+    "sha256": "121e4c50db51e1b5ef856f28f6fc97ba73deab6e03d1ff790cb71f32e653f50d"
+  },
+  "source_doi": "10.1594/PANGAEA.947536",
+  "license": "CC-BY-4.0",
+  "attribution": "Godbout, Brouard and Roy (2022 dataset; 2023 methods)",
+  "vertical_interpretation": "Source epoch-relative paleotopography per SOURCE-SELECTION.md; no additional sea-level offset applied. Raster CRS does not supply a vertical datum.",
+  "source_selection": {
+    "bytes": 56672,
+    "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+  },
+  "processing": {
+    "gdal": "3.8.4",
+    "numpy": "1.26.4",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "command_argv": [
+      "/usr/bin/python3",
+      "scripts/generate_reconstruction_masks.py",
+      "inspect-terrain"
+    ],
+    "files": {
+      "scripts/paleomasks/terrain.py": {
+        "bytes": 12577,
+        "sha256": "8d24f896ee6a3a50a96cf50be5fcdbfcbf507abe18d171dc2f6973dabb730fac"
+      },
+      "scripts/paleomasks/contract.py": {
+        "bytes": 13198,
+        "sha256": "1f8ea61fddda5375f4974d8919d1cc30bd2a7d44c1d502f492f749cd672f019b"
+      },
+      "scripts/paleomasks/pipeline.py": {
+        "bytes": 19977,
+        "sha256": "4dc9d74ecb00a6c80f62291e049ee8f781a9a00c24fea2af4f9259e47879aab9"
+      },
+      "scripts/generate_reconstruction_masks.py": {
+        "bytes": 202,
+        "sha256": "25697b64c7f81eaaddbade8c245fefb33502cf11484becbe900b82b1efba1924"
+      }
+    },
+    "resampling": "none",
+    "sea_level_offset": "none",
+    "classification": "none",
+    "gdal_open_options": [
+      "NODATA_OR_MASK=MASK"
+    ]
+  },
+  "layers": [
+    {
+      "size": [
+        9872,
+        5932
+      ],
+      "geotransform": [
+        -5470983.224900002,
+        999.9274533225285,
+        0.0,
+        5451080.0768092405,
+        0.0,
+        -999.9274533225285
+      ],
+      "horizontal_crs_wkt": "PROJCS[\"NAD_1983_Albers\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",40],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",50],PARAMETER[\"standard_parallel_2\",70],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "datatype": "Float32",
+      "source_nodata_value": null,
+      "source_mask_flags": 2,
+      "mask_encoding": "internal binary validity mask, read as uint8 0/255; not scientific coverage",
+      "cells_sha256_le_float32_row_major": "946ab0985e28d4eba5697a7ea1e783e6c391f4743cdeb02039b96ce995e3ae97",
+      "validity_sha256_uint8_row_major": "70b4c6bf6b09d2943de3161b4f304dd1250538b7227b2b7cf2bb56641ea3e91e",
+      "statistics": {
+        "valid_cells": 35792814,
+        "invalid_cells": 22767890,
+        "valid_below_zero_cells": 21590349,
+        "valid_zero_cells": 0,
+        "valid_above_zero_cells": 14202465,
+        "minimum": -7449.125,
+        "maximum": 6130.95166015625,
+        "valid_pixel_bounds_inclusive": [
+          24,
+          6,
+          9837,
+          5931
+        ]
+      },
+      "export_verification": "all cell bytes and validity pixels equal; grid and CRS equal",
+      "geotiff": {
+        "path": "ICE6G_paleosi_12000.tif",
+        "bytes": 76505593,
+        "sha256": "0ed2354d3a4da5eecb4d61c6252414276dbe9e82eff8cf783293c1bb72582d63"
+      },
+      "name": "ICE6G_paleosi_12000",
+      "era_slug": "world-bc10000",
+      "source_calendar_bp": 12000,
+      "target_calendar_bp": 11949,
+      "source_minus_target_years": 51,
+      "match_policy": "nearest_slice_approximation",
+      "interpolation": "none"
+    },
+    {
+      "size": [
+        9872,
+        5932
+      ],
+      "geotransform": [
+        -5470983.224900002,
+        999.9274533225285,
+        0.0,
+        5451080.0768092405,
+        0.0,
+        -999.9274533225285
+      ],
+      "horizontal_crs_wkt": "PROJCS[\"NAD_1983_Albers\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",40],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",50],PARAMETER[\"standard_parallel_2\",70],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "datatype": "Float32",
+      "source_nodata_value": null,
+      "source_mask_flags": 2,
+      "mask_encoding": "internal binary validity mask, read as uint8 0/255; not scientific coverage",
+      "cells_sha256_le_float32_row_major": "06378a13cac5816650a5a5a0b56e4e3e7a5af378b7468b6bf9efbabaf7b51ad9",
+      "validity_sha256_uint8_row_major": "70b4c6bf6b09d2943de3161b4f304dd1250538b7227b2b7cf2bb56641ea3e91e",
+      "statistics": {
+        "valid_cells": 35792814,
+        "invalid_cells": 22767890,
+        "valid_below_zero_cells": 20463814,
+        "valid_zero_cells": 1,
+        "valid_above_zero_cells": 15328999,
+        "minimum": -7477.91748046875,
+        "maximum": 6108.52587890625,
+        "valid_pixel_bounds_inclusive": [
+          24,
+          6,
+          9837,
+          5931
+        ]
+      },
+      "export_verification": "all cell bytes and validity pixels equal; grid and CRS equal",
+      "geotiff": {
+        "path": "ICE6G_paleosi_10000.tif",
+        "bytes": 75651274,
+        "sha256": "4c802fe4478b26643e03a703e3ebb7daad8eb721d039e3e3fbdc67a0e5f67636"
+      },
+      "name": "ICE6G_paleosi_10000",
+      "era_slug": "world-bc8000",
+      "source_calendar_bp": 10000,
+      "target_calendar_bp": 9949,
+      "source_minus_target_years": 51,
+      "match_policy": "nearest_slice_approximation",
+      "interpolation": "none"
+    },
+    {
+      "size": [
+        9872,
+        5932
+      ],
+      "geotransform": [
+        -5470983.224900002,
+        999.9274533225285,
+        0.0,
+        5451080.0768092405,
+        0.0,
+        -999.9274533225285
+      ],
+      "horizontal_crs_wkt": "PROJCS[\"NAD_1983_Albers\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",40],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",50],PARAMETER[\"standard_parallel_2\",70],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "datatype": "Float32",
+      "source_nodata_value": null,
+      "source_mask_flags": 2,
+      "mask_encoding": "internal binary validity mask, read as uint8 0/255; not scientific coverage",
+      "cells_sha256_le_float32_row_major": "2a05805098271ee20e2a0d5918d2e400c933035b9d6e18c97817ca8019c14dfc",
+      "validity_sha256_uint8_row_major": "70b4c6bf6b09d2943de3161b4f304dd1250538b7227b2b7cf2bb56641ea3e91e",
+      "statistics": {
+        "valid_cells": 35792814,
+        "invalid_cells": 22767890,
+        "valid_below_zero_cells": 18783840,
+        "valid_zero_cells": 0,
+        "valid_above_zero_cells": 17008974,
+        "minimum": -7500.267578125,
+        "maximum": 6086.17236328125,
+        "valid_pixel_bounds_inclusive": [
+          24,
+          6,
+          9837,
+          5931
+        ]
+      },
+      "export_verification": "all cell bytes and validity pixels equal; grid and CRS equal",
+      "geotiff": {
+        "path": "ICE6G_paleosi_07000.tif",
+        "bytes": 73009600,
+        "sha256": "fb653ecba97f47fd602114e66a91f9d127323c762b73d1b26d17af85e7e0f895"
+      },
+      "name": "ICE6G_paleosi_07000",
+      "era_slug": "world-bc5000",
+      "source_calendar_bp": 7000,
+      "target_calendar_bp": 6949,
+      "source_minus_target_years": 51,
+      "match_policy": "nearest_slice_approximation",
+      "interpolation": "none"
+    }
+  ],
+  "limitations": [
+    "Native validity is data availability, not a supported marine or ice presence/absence domain.",
+    "Negative elevation is not evidence of ocean connectivity; inland and subglacial basins remain unresolved.",
+    "No modern marine baseline, ice grounding classification or GIA/empirical-margin reconciliation is established."
+  ]
+}
