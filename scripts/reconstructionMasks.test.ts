@@ -22,6 +22,16 @@ interface Disposition {
 }
 
 describe("reconstruction mask contract", () => {
+  it("keeps reference review explicit and limited to the selected era", async () => {
+    const { stdout } = await promisify(execFile)("python3", ["scripts/generate_reconstruction_masks.py", "review-reference", "--help"])
+    expect(stdout).toContain("--ice-package")
+    expect(stdout).toContain("--coast-package")
+    expect(stdout).not.toContain("--all-supported")
+    const evidence = JSON.parse(readFileSync(`${data}PHASE5-EVIDENCE.json`, "utf8"))
+    expect(evidence.target_calendar_bp).toBe(11949)
+    expect(evidence.era_slug).toBe("world-bc10000")
+    expect(evidence.sources.every((source: { independence: string }) => source.independence.length > 0)).toBe(true)
+  })
   it("offers native terrain inspection separately from production generation", async () => {
     const { stdout } = await promisify(execFile)("python3", ["scripts/generate_reconstruction_masks.py", "inspect-terrain", "--help"])
     expect(stdout).toContain("inspect-terrain")

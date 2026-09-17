@@ -1,6 +1,6 @@
 # Research-based prehistoric Earth masks — implementation plan
 
-Recorded: 2026-09-16. Updated during phase-4 implementation on 2026-09-17.
+Recorded: 2026-09-16. Updated during phase-5 reference review on 2026-09-17.
 
 **Latest operator override:** [PHASE4-OPERATOR-DIRECTIVES.md](PHASE4-OPERATOR-DIRECTIVES.md)
 supersedes conflicting earlier requirements: empirical ice takes precedence
@@ -151,12 +151,31 @@ Latest tests: 54 distinct Python tests pass across the two interpreters, plus 61
 
 First reference target: **10,000 BCE / 11,949 calendar BP**. Begin after phases 2–4 establish selected inputs and coverage contracts. Phase 2 selects DATED-1 TS12 and NADI-1 12 calendar ka at +51 years, not exact-date matches; preserve their uncertainty suites and resolve class/coverage contracts before generation. This sequence does not restrict final era coverage.
 
-- [ ] Generate independent masks and separate diagnostic previews.
-- [ ] Compare ice margins and shorelines against published reconstructions, including relevant land-bridge regions.
-- [ ] Check alignment, seams, holes, lake exclusion, regional omissions, raster artifacts and consistency between ice and land layers. Compare alternative source bounds/slices where available and validate coverage metadata for missing marine/polar classes.
-- [ ] Record discrepancies, uncertainty, and the evidence used for validation before expanding.
+- [x] Generate independent masks and separate diagnostic previews. The three reference ice PNGs reproduce byte-for-byte; the review package preserves separate ice/coastal masks and ten labelled diagnostic plates.
+- [x] Compare ice margins and shorelines against published reconstructions, including relevant land-bridge regions. Source transfer and qualitative literature checks are recorded; Bering Strait/Doggerland shoreline comparisons are unavailable within current coverage, not successful validations.
+- [x] Check alignment, seams, holes, lake exclusion, regional omissions, raster artifacts and consistency between ice and land layers. All three selected bounds and missing-class metadata were reviewed; failed baseline classification, a domain-edge truncation and source topology findings are recorded. No neighbouring slice or alternative GIA model was adopted.
+- [x] Record discrepancies, uncertainty, and the evidence used for validation before expanding. See [PHASE5-VALIDATION.md](PHASE5-VALIDATION.md), [PHASE5-VALIDATION.json](PHASE5-VALIDATION.json) and [PHASE5-EVIDENCE.json](PHASE5-EVIDENCE.json).
+- [ ] Resolve the failed reference acceptance checks and deliver scientifically validated supported masks before phase-6 expansion.
 
 Reference-era deliverable: validated supported masks for 10,000 BCE, with provenance, diagnostic previews, uncertainty and explicit partial/unavailable coverage. Claim a complete global set only if every required region and class is supported.
+
+Reference review 2026-09-17: the new `review-reference` command creates an atomic
+package under `masks/phase5-reviewed/world-bc10000/`. Independent OGR/GDAL
+rasterization of all six selected native layers has zero full/empty-pixel
+mismatches across the three ice bounds. The bounds remain nonnested (6
+minimum-above-central and 291 central-above-maximum pixels). OGR identifies a
+self-intersection in NADI-1 12 ka OPTIMAL feature 0 near 64.215499°W, 58.747986°N;
+original geometry is retained. Coastline/ice exclusion and comparison-domain
+containment pass, but **coastal scientific acceptance fails**: 13,647 exposed
+candidate pixels sample modern ETOPO elevations above 100 m, including 6,240
+above 500 m, indicating substantial inland terrain misclassified as ocean by
+Blue Marble RGB segmentation. The Alaska domain edge also creates an artificial
+cutoff near 165°W. Bering Strait, Doggerland and Sunda lack coastal support.
+The four review activities above are performed; **Phase 5's accepted-mask
+deliverable remains incomplete**. No global validation or phase-6 expansion is
+claimed. Verification: 62 distinct Python tests and 62 Vitest tests pass;
+equivalent production build stages pass with the documented IPC/static-data
+fallback. No app/site/source-pin changes.
 
 ### 6. Expand to the remaining eras
 
@@ -188,4 +207,15 @@ These are starting points, not final dataset selections. Inspect original data a
 
 ## Suggested next-session task
 
-Read `AGENTS.md`, this plan, [PHASE4-IMPLEMENTATION.md](PHASE4-IMPLEMENTATION.md), [PHASE4-OPERATOR-ISSUES.md](PHASE4-OPERATOR-ISSUES.md), [ICE6G-TERRAIN-INSPECTION.json](ICE6G-TERRAIN-INSPECTION.json), [SOURCE-SELECTION.md](SOURCE-SELECTION.md) and [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md), then inspect the working tree. Continue the remaining phase-4 gates using the implemented CLI/validator and verified native terrain exports. Acquire and validate a modern marine baseline before deriving coastlines; preserve native terrain validity masks. Resolve supported presence/absence domains and grounding interpretation before ice export. Inspect diagnostic reports for the unclosed 6 ka NADI-1 ring, nonnested bounds and lost subpixel polygons; resolve production coverage and domain geometry before extending the fail-closed validator. The lost polygon instances individually fall below the fixed 8-bit encoding threshold: do not assume more supersampling resolves them. Preserve the seven selected uses, all uncertainty bounds and the named TS10 exception. Do not run the legacy generator, restore retired JPEGs, or treat unavailable layers as empty masks. Phase 5 follows these unresolved gates.
+Read `AGENTS.md`, this plan, [PHASE5-VALIDATION.md](PHASE5-VALIDATION.md),
+[PHASE5-VALIDATION.json](PHASE5-VALIDATION.json), the current
+[operator directives](PHASE4-OPERATOR-DIRECTIVES.md) and the source/output
+contracts. Inspect the working tree and local reference diagnostic plates.
+Resolve the failed RGB marine classification, coastal domain-edge disposition
+and NADI-1 12 ka source self-intersection before accepting the reference products
+or expanding coastlines. Preserve original source bytes, all three ice bounds,
+the +51-year match and operator rules. Do not infer ocean from all negative
+terrain, enlarge zero-rounding features, repair topology silently, replace
+unavailable coverage with modern imagery, or run the retired JPEG generator.
+The `review-reference` command reproduces the diagnostic report; it does not
+confer scientific approval. No operator decision is pending.

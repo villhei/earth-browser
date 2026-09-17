@@ -1,0 +1,61 @@
+{
+  "recorded": "2026-09-17",
+  "era_slug": "world-bc10000",
+  "target_calendar_bp": 11949,
+  "purpose": "Reference review evidence, not additional selected generation inputs",
+  "sources": [
+    {
+      "id": "nadi",
+      "citation": "Dalton et al. (2023), NADI-1 v1; Quaternary Science Reviews 321, 108345",
+      "url": "https://zenodo.org/records/8161764",
+      "methods_url": "https://doi.org/10.1016/j.quascirev.2023.108345",
+      "evidence": "Publisher supplies regional Innuitian, Cordilleran and Laurentide optimal/minimum/maximum extents. Compare all three pinned 12 ka layers via independent OGR/GDAL transfer checks.",
+      "independence": "Same reconstruction as input; validates transfer and declared scope, not independent geological accuracy."
+    },
+    {
+      "id": "dated",
+      "citation": "Hughes et al. (2016), DATED-1, Boreas 45, 1-45",
+      "url": "https://doi.org/10.1111/bor.12142",
+      "locator": "12 ka discussion; Younger Dryas discussion; Figure 1 caption",
+      "evidence": "The 12 ka reconstruction follows the late Younger Dryas Scandinavian margin, with central and maximum lines tied to different Salpausselka moraines in Finland. Small peripheral glaciers are omitted. Published map backdrops use modern coastlines, so they cannot validate paleo shorelines.",
+      "independence": "Published description of selected reconstruction; qualitative geographic check only."
+    },
+    {
+      "id": "godbout",
+      "citation": "Godbout, Brouard and Roy (2023), Scientific Data 10, 735",
+      "url": "https://doi.org/10.1038/s41597-023-02566-5",
+      "local_source": "research-cache/godbout.html (pinned in SOURCE-SELECTION.json)",
+      "locator": "Paleotopographic reconstructions, Figure 3 caption, Technical Validation",
+      "evidence": "Epoch-relative paleoDEM zero denotes predicted coastline only outside ice and connected to ocean. Model differences reflect loading histories; interpolation validation does not establish shoreline accuracy. Published illustration is 10 ka, not this 12 ka source slice.",
+      "independence": "Methods validation of selected terrain; no independent 12 ka shoreline geometry or absolute accuracy threshold."
+    },
+    {
+      "id": "bering",
+      "citation": "Jakobsson et al. (2017), Climate of the Past 13, 991-1005",
+      "url": "https://cp.copernicus.org/articles/13/991/2017/",
+      "locator": "Abstract",
+      "evidence": "Herald Canyon core evidence suggests Bering Strait opening around 11 cal ka BP, while earlier studies proposed Younger Dryas dates. At 11.949 ka this motivates checking exposed Beringia, but does not settle an exact shoreline or human traversability.",
+      "independence": "Independent regional evidence; Bering Strait is outside the selected terrain domain, so mask comparison is unavailable."
+    },
+    {
+      "id": "doggerland",
+      "citation": "Walker et al. (2020), A great wave: the Storegga tsunami and the end of Doggerland?, Antiquity",
+      "url": "https://doi.org/10.15184/aqy.2020.49",
+      "locator": "Figure 2: North Sea reconstructions at 10, 9, 8.2 and 7 cal ka BP",
+      "evidence": "These younger reconstructions identify the southern North Sea as a relevant land-bridge review region. They are not an exact 11.949 ka coastline and are not substituted for a selected Eurasian terrain model.",
+      "independence": "Independent but younger evidence; the delivered coastline candidates have no Eurasian support."
+    }
+  ],
+  "checkpoints": [
+    {"name": "Bering Strait coverage", "longitude": -169, "latitude": 66, "source": "bering", "interpretation": "Outside selected terrain; zero alpha is unavailable, not a flooded strait finding."},
+    {"name": "Dogger Bank coverage", "longitude": 2, "latitude": 55, "source": "doggerland", "interpretation": "Outside selected terrain; modern water in the preview is not a paleo result."},
+    {"name": "Scandinavian interior", "longitude": 20, "latitude": 65, "source": "dated", "interpretation": "Broad interior ice check; not a dated field control point."},
+    {"name": "Southern Finland coast", "longitude": 24.94, "latitude": 60.17, "source": "dated", "interpretation": "Geographic context south of the main margin; point transparency cannot prove absence of all ice."},
+    {"name": "Hudson Bay interior", "longitude": -85, "latitude": 60, "source": "nadi", "interpretation": "Regional ice-presence transfer check; coastal changes must be suppressed under ice."},
+    {"name": "Georges Bank", "longitude": -67, "latitude": 41, "source": "godbout", "interpretation": "Shelf exposure candidate; qualitative model result, not independently validated shoreline."},
+    {"name": "Champlain lowland", "longitude": -73.5, "latitude": 45.5, "source": "godbout", "interpretation": "Near-ice marine connectivity review location; no observed water level is assigned to this point."},
+    {"name": "Lake Superior", "longitude": -87, "latitude": 47.7, "source": "nadi", "interpretation": "Modern inland-water exclusion/ice priority spot check; does not validate all lake boundaries."},
+    {"name": "Greenland interior", "longitude": -42, "latitude": 72, "source": "nadi", "interpretation": "Outside selected ice complexes; white baseline imagery is not reconstructed Greenland ice."},
+    {"name": "Sunda shelf", "longitude": 108, "latitude": -3, "source": null, "interpretation": "Out-of-domain regional omission check; no source or coastline interpretation selected."}
+  ]
+}

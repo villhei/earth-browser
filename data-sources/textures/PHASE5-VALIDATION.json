@@ -1,0 +1,735 @@
+{
+  "kind": "reference_era_review",
+  "era": {
+    "slug": "world-bc10000",
+    "year_start": -10000,
+    "target_calendar_bp": 11949,
+    "age_system": "calendar BP (1950)"
+  },
+  "decision": "partial_ice_source_consistency_reviewed_coastlines_remain_candidates",
+  "scientifically_validated_global_reconstruction": false,
+  "coastline_production_eligible": false,
+  "acceptance": {
+    "ice": "source_transfer_checked_scientific_acceptance_pending",
+    "coastlines": "withheld_pending_baseline_and_seam_resolution",
+    "expansion": "not_authorized_by_this_review",
+    "native_invalid_features": 1
+  },
+  "source_minus_target_years": 51,
+  "metrics": {
+    "ice_overlap_pixels": 0,
+    "outside_domain_pixels": 0,
+    "mixed_coastal_pixels": 266,
+    "layers": {
+      "ice": {
+        "positive_pixels": 240724,
+        "coverage_area_km2": 9345138.581
+      },
+      "exposed": {
+        "positive_pixels": 38989,
+        "coverage_area_km2": 1285821.052
+      },
+      "flooded": {
+        "positive_pixels": 2718,
+        "coverage_area_km2": 95352.172
+      },
+      "comparison_domain": {
+        "positive_pixels": 564399,
+        "coverage_area_km2": 24402055.504
+      }
+    }
+  },
+  "baseline_elevation_screen": {
+    "exposed_pixels_above_modern_height_m": {
+      "0": 18150,
+      "100": 13647,
+      "500": 6240
+    },
+    "missing_elevation_at_exposed_pixels": 0,
+    "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+    "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections",
+    "source": {
+      "path": "research-cache/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO2022/data/60s/60s_bed_elev_gtif/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "bytes": 478386633,
+      "sha256": "a2cc72f8a4292dee928f439069457cdefc1fba319876807c626edce40258ba7a"
+    }
+  },
+  "ice_alternatives": {
+    "minimum_above_central_pixels": 6,
+    "central_above_maximum_pixels": 291,
+    "any_bound_difference_pixels": 94489,
+    "coverage_area_km2": {
+      "minimum": 7927651.523,
+      "central": 9345138.581,
+      "maximum": 11081586.344
+    },
+    "interpretation": "source alternatives, not nested guarantees or probability bounds"
+  },
+  "independent_source_rasterization": {
+    "gdal": "3.8.4",
+    "numpy": "1.26.4",
+    "layers": [
+      {
+        "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+        "features": 33,
+        "interior_rings": 0,
+        "invalid_native_geometries": [],
+        "repair": "none"
+      },
+      {
+        "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+        "features": 20,
+        "interior_rings": 0,
+        "invalid_native_geometries": [],
+        "repair": "none"
+      },
+      {
+        "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+        "features": 37,
+        "interior_rings": 17,
+        "invalid_native_geometries": [
+          {
+            "fid": 0,
+            "reason": "Ring Self-intersection at or near point -64.215499002054685 58.747985533727601"
+          }
+        ],
+        "repair": "none"
+      },
+      {
+        "member_stem": "DATED1 TimeSlices shp/TS12_max",
+        "features": 5,
+        "interior_rings": 0,
+        "invalid_native_geometries": [],
+        "repair": "none"
+      },
+      {
+        "member_stem": "DATED1 TimeSlices shp/TS12_mc",
+        "features": 5,
+        "interior_rings": 1,
+        "invalid_native_geometries": [],
+        "repair": "none"
+      },
+      {
+        "member_stem": "DATED1 TimeSlices shp/TS12_min",
+        "features": 6,
+        "interior_rings": 0,
+        "invalid_native_geometries": [],
+        "repair": "none"
+      }
+    ],
+    "agreement": {
+      "central": {
+        "opaque_or_empty_disagreements": 0,
+        "disagreements_beyond_one_pixel_edge_band": 0,
+        "method": "independent OGR native-vertex reprojection and GDAL centre hits vs full/empty 8x8 coverage",
+        "limitation": "edge conventions and straight projected segments differ; not independent geological validation"
+      },
+      "minimum": {
+        "opaque_or_empty_disagreements": 0,
+        "disagreements_beyond_one_pixel_edge_band": 0,
+        "method": "independent OGR native-vertex reprojection and GDAL centre hits vs full/empty 8x8 coverage",
+        "limitation": "edge conventions and straight projected segments differ; not independent geological validation"
+      },
+      "maximum": {
+        "opaque_or_empty_disagreements": 0,
+        "disagreements_beyond_one_pixel_edge_band": 0,
+        "method": "independent OGR native-vertex reprojection and GDAL centre hits vs full/empty 8x8 coverage",
+        "limitation": "edge conventions and straight projected segments differ; not independent geological validation"
+      }
+    }
+  },
+  "regions": {
+    "north-america": {
+      "bounds_west_south_east_north": [
+        -170,
+        35,
+        -45,
+        85
+      ],
+      "positive_pixels": {
+        "ice": 202857,
+        "exposed": 38986,
+        "flooded": 2718,
+        "domain": 488819
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 18147,
+          "100": 13644,
+          "500": 6239
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "scandinavia": {
+      "bounds_west_south_east_north": [
+        0,
+        50,
+        45,
+        75
+      ],
+      "positive_pixels": {
+        "ice": 27283,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 0,
+          "100": 0,
+          "500": 0
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "alaska-domain-edge": {
+      "bounds_west_south_east_north": [
+        -175,
+        55,
+        -145,
+        75
+      ],
+      "positive_pixels": {
+        "ice": 612,
+        "exposed": 13447,
+        "flooded": 41,
+        "domain": 37034
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 5453,
+          "100": 4165,
+          "500": 995
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "atlantic-shelf": {
+      "bounds_west_south_east_north": [
+        -80,
+        35,
+        -45,
+        55
+      ],
+      "positive_pixels": {
+        "ice": 19806,
+        "exposed": 6552,
+        "flooded": 1845,
+        "domain": 68778
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 1180,
+          "100": 285,
+          "500": 2
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "champlain": {
+      "bounds_west_south_east_north": [
+        -78,
+        43,
+        -65,
+        50
+      ],
+      "positive_pixels": {
+        "ice": 4066,
+        "exposed": 488,
+        "flooded": 1352,
+        "domain": 7635
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 233,
+          "100": 68,
+          "500": 0
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "bering-strait": {
+      "bounds_west_south_east_north": [
+        -175,
+        60,
+        -160,
+        70
+      ],
+      "positive_pixels": {
+        "ice": 0,
+        "exposed": 2093,
+        "flooded": 0,
+        "domain": 4463
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 752,
+          "100": 359,
+          "500": 1
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "doggerland": {
+      "bounds_west_south_east_north": [
+        -5,
+        50,
+        10,
+        60
+      ],
+      "positive_pixels": {
+        "ice": 887,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 0,
+          "100": 0,
+          "500": 0
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "sunda": {
+      "bounds_west_south_east_north": [
+        95,
+        -10,
+        120,
+        15
+      ],
+      "positive_pixels": {
+        "ice": 0,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 0,
+          "100": 0,
+          "500": 0
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    },
+    "greenland": {
+      "bounds_west_south_east_north": [
+        -60,
+        58,
+        -20,
+        85
+      ],
+      "positive_pixels": {
+        "ice": 1178,
+        "exposed": 2806,
+        "flooded": 179,
+        "domain": 26391
+      },
+      "baseline_elevation_screen": {
+        "exposed_pixels_above_modern_height_m": {
+          "0": 1728,
+          "100": 1242,
+          "500": 423
+        },
+        "missing_elevation_at_exposed_pixels": 0,
+        "method": "nearest modern ETOPO cell at final pixel centre; flags are not pixel-area intersections",
+        "interpretation": "large positive modern heights flag RGB ocean misclassification; thresholds are diagnostic, not corrections"
+      }
+    }
+  },
+  "checkpoints": [
+    {
+      "name": "Bering Strait coverage",
+      "longitude": -169,
+      "latitude": 66,
+      "source": "bering",
+      "interpretation": "Outside selected terrain; zero alpha is unavailable, not a flooded strait finding.",
+      "pixel_column_row": [
+        125,
+        273
+      ],
+      "alpha": {
+        "ice": 0,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "ocean"
+    },
+    {
+      "name": "Dogger Bank coverage",
+      "longitude": 2,
+      "latitude": 55,
+      "source": "doggerland",
+      "interpretation": "Outside selected terrain; modern water in the preview is not a paleo result.",
+      "pixel_column_row": [
+        2070,
+        398
+      ],
+      "alpha": {
+        "ice": 0,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "ocean"
+    },
+    {
+      "name": "Scandinavian interior",
+      "longitude": 20,
+      "latitude": 65,
+      "source": "dated",
+      "interpretation": "Broad interior ice check; not a dated field control point.",
+      "pixel_column_row": [
+        2275,
+        284
+      ],
+      "alpha": {
+        "ice": 255,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "other"
+    },
+    {
+      "name": "Southern Finland coast",
+      "longitude": 24.94,
+      "latitude": 60.17,
+      "source": "dated",
+      "interpretation": "Geographic context south of the main margin; point transparency cannot prove absence of all ice.",
+      "pixel_column_row": [
+        2331,
+        339
+      ],
+      "alpha": {
+        "ice": 0,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "ocean"
+    },
+    {
+      "name": "Hudson Bay interior",
+      "longitude": -85,
+      "latitude": 60,
+      "source": "nadi",
+      "interpretation": "Regional ice-presence transfer check; coastal changes must be suppressed under ice.",
+      "pixel_column_row": [
+        1080,
+        341
+      ],
+      "alpha": {
+        "ice": 255,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "ocean"
+    },
+    {
+      "name": "Georges Bank",
+      "longitude": -67,
+      "latitude": 41,
+      "source": "godbout",
+      "interpretation": "Shelf exposure candidate; qualitative model result, not independently validated shoreline.",
+      "pixel_column_row": [
+        1285,
+        557
+      ],
+      "alpha": {
+        "ice": 0,
+        "exposed": 255,
+        "flooded": 0,
+        "domain": 255
+      },
+      "baseline_class": "ocean"
+    },
+    {
+      "name": "Champlain lowland",
+      "longitude": -73.5,
+      "latitude": 45.5,
+      "source": "godbout",
+      "interpretation": "Near-ice marine connectivity review location; no observed water level is assigned to this point.",
+      "pixel_column_row": [
+        1211,
+        506
+      ],
+      "alpha": {
+        "ice": 0,
+        "exposed": 0,
+        "flooded": 255,
+        "domain": 255
+      },
+      "baseline_class": "other"
+    },
+    {
+      "name": "Lake Superior",
+      "longitude": -87,
+      "latitude": 47.7,
+      "source": "nadi",
+      "interpretation": "Modern inland-water exclusion/ice priority spot check; does not validate all lake boundaries.",
+      "pixel_column_row": [
+        1058,
+        481
+      ],
+      "alpha": {
+        "ice": 255,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "excluded"
+    },
+    {
+      "name": "Greenland interior",
+      "longitude": -42,
+      "latitude": 72,
+      "source": "nadi",
+      "interpretation": "Outside selected ice complexes; white baseline imagery is not reconstructed Greenland ice.",
+      "pixel_column_row": [
+        1570,
+        204
+      ],
+      "alpha": {
+        "ice": 0,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "excluded"
+    },
+    {
+      "name": "Sunda shelf",
+      "longitude": 108,
+      "latitude": -3,
+      "source": null,
+      "interpretation": "Out-of-domain regional omission check; no source or coastline interpretation selected.",
+      "pixel_column_row": [
+        3276,
+        1058
+      ],
+      "alpha": {
+        "ice": 0,
+        "exposed": 0,
+        "flooded": 0,
+        "domain": 0
+      },
+      "baseline_class": "other"
+    }
+  ],
+  "reported_native_counts": {
+    "ocean_seed_cells": 12660,
+    "ocean_connected_cells": 15163606,
+    "disconnected_negative_cells_excluded": 329361,
+    "ice_priority_cells": 8227920
+  },
+  "coverage": {
+    "ice": "partial NADI-1 and DATED-1 evidence; transparency is not confirmed absence",
+    "coastlines": "regional image-derived candidates; comparison-domain is processing support, not validated scientific coverage",
+    "unavailable": [
+      "Greenland paleo ice",
+      "Antarctica paleo ice",
+      "Iceland and unselected mountain glaciers",
+      "independent floating-shelf additions",
+      "winter sea ice",
+      "summer sea ice",
+      "coastlines outside selected terrain"
+    ]
+  },
+  "limitations": [
+    "No surveyed shoreline error or complete global reconstruction is established.",
+    "Source raster agreement is a transfer check, not independent geological confirmation.",
+    "Native domain edge clips Alaska coastal candidates; Bering Strait and Doggerland have no coastline support.",
+    "Image-color baseline, near-ice ocean connectivity and coastline sampling convergence remain unresolved.",
+    "Ice alternatives are nonnested; preserve their original shapes. Inspect source topology findings.",
+    "No neighbouring age slice or alternative GIA model was adopted; the 51-year offset is unchanged."
+  ],
+  "processing": {
+    "command_argv": [
+      "/home/ville/src/web/earth-browser/.venv/bin/python",
+      "scripts/generate_reconstruction_masks.py",
+      "review-reference",
+      "--ice-package",
+      "data-sources/textures/masks/overlays-v2/world-bc10000",
+      "--coast-package",
+      "data-sources/textures/masks/coastline-candidates-v2/world-bc10000",
+      "--output",
+      "data-sources/textures/masks/phase5-reviewed/world-bc10000"
+    ],
+    "code": {
+      "reference.py": {
+        "bytes": 17749,
+        "sha256": "3c208fab1f9e406be6489948a75146e69f55f0043e80a8c8387c8083fcb916db"
+      },
+      "reference_gdal.py": {
+        "bytes": 3577,
+        "sha256": "b0b4e5336e6c1f7b3a42556b23433e2dfdcf2e1fde20edaf36c1360a4cc4b34a"
+      },
+      "coasts.py": {
+        "bytes": 12912,
+        "sha256": "62f5703377366e038eebc0772e0858ae6731fb29808f6457247c252049e76e86"
+      }
+    },
+    "numpy": "2.5.2",
+    "baseline": {
+      "repository_path": "src/earthTextures/earth-blue-marble.jpg",
+      "bytes": 1461877,
+      "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01",
+      "registration_status": "adopted conventional full-world registration; original georeferencing unauthenticated",
+      "source_identity_and_rights": "unresolved"
+    },
+    "evidence": {
+      "bytes": 5462,
+      "sha256": "fd2b295ba0019bc79a96776e9f8c92aab85e41ee3625bb9bf3aa0cef0432ff22"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "PHASE5-EVIDENCE.json",
+      "bytes": 5462,
+      "sha256": "fd2b295ba0019bc79a96776e9f8c92aab85e41ee3625bb9bf3aa0cef0432ff22"
+    },
+    {
+      "path": "coastline-candidates/coastline-candidates.json",
+      "bytes": 7602,
+      "sha256": "d9109282c9f9f800f5a9b77fb0b3c6f41e58c811eaacc0fa7756219bd575d6a6"
+    },
+    {
+      "path": "coastline-candidates/comparison-domain.png",
+      "bytes": 49636,
+      "sha256": "30a33ecd1bb31cb34ae9fefd9e356a26a993e6be3db2af1a3c9a28ce4d00c5f7"
+    },
+    {
+      "path": "coastline-candidates/exposed-land-candidate.png",
+      "bytes": 96774,
+      "sha256": "d547f62dba3d84110607df1ab3e5c8efad7f5673dff54b9a59498b8ef874de09"
+    },
+    {
+      "path": "coastline-candidates/flooded-land-candidate.png",
+      "bytes": 40644,
+      "sha256": "11f51085352c177b2965987c180ada37fa2ab2c18e13020aa36bb2418d0a56ba"
+    },
+    {
+      "path": "diagnostics/alaska-domain-edge.png",
+      "bytes": 374323,
+      "sha256": "cdb3f856b29be4bc4849cc3807f1d7d577c27b166f63c6bae111aedc45641cb3"
+    },
+    {
+      "path": "diagnostics/atlantic-shelf.png",
+      "bytes": 333475,
+      "sha256": "0f72193a3b96738ba994dc22beb36911bae563445b778bf7a6a8fa21a5824063"
+    },
+    {
+      "path": "diagnostics/bering-strait.png",
+      "bytes": 135656,
+      "sha256": "a2ba8bdfc51d3c6168a528269b124a890362fc47cb4a5bec72d2bf9b506a8746"
+    },
+    {
+      "path": "diagnostics/champlain.png",
+      "bytes": 94452,
+      "sha256": "8c3e9efce3d6a1f2a20f15cfafab66aaba0d2f09d75b96fbe5d03cceccad25e1"
+    },
+    {
+      "path": "diagnostics/doggerland.png",
+      "bytes": 116215,
+      "sha256": "1cee17c41928c5d6e568e71d779cf3358e5ca800abae7c47a5f1b05d19b07bd1"
+    },
+    {
+      "path": "diagnostics/greenland.png",
+      "bytes": 426983,
+      "sha256": "da8a5a79d974dd20f62bf6be97d9773c3ac9de6e7933a3e4b1ffff120a3cac2a"
+    },
+    {
+      "path": "diagnostics/north-america.png",
+      "bytes": 767615,
+      "sha256": "83b371cbb1a7c8911fd1606aee07f29199593b48a56a9dd2b76264cee093912b"
+    },
+    {
+      "path": "diagnostics/scandinavia.png",
+      "bytes": 534885,
+      "sha256": "709fabc38191872229d507b08b219b5efa791d9631bde39faea4e032974d1043"
+    },
+    {
+      "path": "diagnostics/sunda.png",
+      "bytes": 371935,
+      "sha256": "388841ac65711c61bd44558930719b5195757f00384af00ebdb1bce39669ff22"
+    },
+    {
+      "path": "diagnostics/world.png",
+      "bytes": 915009,
+      "sha256": "8e89a900af9b28f71725c0f5b38e2b67606f8cc6259d784bb3b77ac35b30f9b3"
+    },
+    {
+      "path": "ice/diagnostics/ice-maximum.png",
+      "bytes": 64937,
+      "sha256": "6d69de52dda8d220a957f45ab26b13904349bdb0c9f9ed5997b6e14434aebe37"
+    },
+    {
+      "path": "ice/diagnostics/ice-minimum.png",
+      "bytes": 57414,
+      "sha256": "e90438a3a69504112a91d0731e6e4694a85917c9728f9356d81e87b861a84b76"
+    },
+    {
+      "path": "ice/ice.png",
+      "bytes": 63203,
+      "sha256": "0b515e4acdfe42cdcc960efa5dba194c43ef13164b4b33a1e9a75e04feb33f64"
+    },
+    {
+      "path": "ice/manifest.json",
+      "bytes": 23220,
+      "sha256": "8daae71b853eb452aab7ae7569aa2a1635364bfbb6da71b172a372ec63c9324d"
+    },
+    {
+      "path": "ice/provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "ice/provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "ice/provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "ice/provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "ice/provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "ice/provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    }
+  ]
+}

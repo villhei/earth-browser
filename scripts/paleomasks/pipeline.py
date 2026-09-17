@@ -286,6 +286,11 @@ def main(argv=None):
     p.add_argument("--output", type=Path, default=DATA / "masks/overlays-v2")
     p = sub.add_parser("validate-overlay")
     p.add_argument("manifest", type=Path)
+    p = sub.add_parser("review-reference", help="Review 10,000 BCE source transfer, coastal coverage and diagnostic previews")
+    p.add_argument("--ice-package", type=Path, required=True)
+    p.add_argument("--coast-package", type=Path, required=True)
+    p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--gdal-python", type=Path, default=Path("/usr/bin/python3"))
     p = sub.add_parser("coastline-candidates", help="Generate regional Blue Marble/GIA coastal candidates for scientific review")
     p.add_argument("--era", required=True)
     p.add_argument("--ice-package", type=Path, required=True)
@@ -333,6 +338,10 @@ def main(argv=None):
         elif args.command == "validate-overlay":
             from .overlays import validate_overlay
             print(json.dumps(validate_overlay(read_json(args.manifest), args.manifest.parent, contract, selection, catalog)))
+        elif args.command == "review-reference":
+            from .reference import review_reference
+            review_reference(args.ice_package, args.coast_package, args.cache, args.output,
+                             args.gdal_python, contract, selection, catalog)
         elif args.command == "generate-overlays":
             from .overlays import generate_overlays
             slugs = {u["era_slug"] for u in contract["permitted_margin_uses"]} if args.all_supported else {args.era}
