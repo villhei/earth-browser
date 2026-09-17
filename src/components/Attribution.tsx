@@ -127,6 +127,26 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
           </section>
 
           <section className="attribution-section">
+            <h4>Experimental Ice Sheet Overlay</h4>
+            <p>
+              Regional ice coverage: Dalton et al. (2023),{" "}
+              <a href="https://doi.org/10.5281/zenodo.8161764" target="_blank" rel="noopener noreferrer">NADI-1 v1</a>{" "}
+              (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>),
+              and Hughes et al. (2015 dataset; 2016 methods),{" "}
+              <a href="https://doi.org/10.1594/PANGAEA.848117" target="_blank" rel="noopener noreferrer">DATED-1</a>{" "}
+              (<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>).
+              DATED-1 is used only for 10,000 and 8,000 BCE.
+            </p>
+            <p>
+              Source polygons were merged and rasterized into partial regional masks.
+              AI-generated ice color and surface detail are illustrative; coverage comes from the original masks.
+              Selected source dates are 51 years older than the displayed eras.
+              Scientific acceptance remains pending. Uncovered regions do not establish ice absence;
+              modern snow visible on Blue Marble is not historical ice evidence.
+            </p>
+          </section>
+
+          <section className="attribution-section">
             <h4>Core Technologies</h4>
             <p>
               Interactive 3D WebGL globe visualizer built with <strong>Three.js</strong>, <strong>ThreeGlobe</strong>, and <strong>React</strong>. High-performance spatial geometry storage, simplification, and surface centroid calculations powered by <strong>PostGIS</strong> and <strong>PostgreSQL</strong>.
@@ -205,4 +225,3 @@ export const Attribution: React.FC<AttributionProps> = ({
     </>
   )
 }
-

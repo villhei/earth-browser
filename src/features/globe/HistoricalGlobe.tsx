@@ -6,6 +6,7 @@ import alpha from "color-alpha"
 import { PuffLoader } from "react-spinners"
 import { HistoricalGlobeProps, GlobeTexture } from "./types"
 import { getGlobeTextureUrl } from "./textures"
+import { createSurfaceOverlayCanvas, createSurfaceOverlayGeometry } from "./surfaceOverlay"
 import {
   getCountryColor,
   HIGHLIGHT_COLOR,
@@ -36,6 +37,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   data,
   isLoading = false,
   texture = GlobeTexture.EARTH_BLUE_MARBLE,
+  surfaceOverlay,
   layerAltitude = DEFAULT_ALTITUDE,
   elevationScale = DEFAULT_ELEVATION_SCALE,
   opacity = DEFAULT_OPACITY,
@@ -153,7 +155,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const camera = new THREE.PerspectiveCamera(
       45,
       (width || window.innerWidth) / (height || window.innerHeight),
-      0.1,
+      // Preserve depth precision between the globe, ice and territory surfaces.
+      // The closest orbit stays 40 units above the globe, safely beyond this plane.
+      1,
       2000,
     )
     camera.position.z = 320
@@ -545,6 +549,37 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       globeRef.current.globeImageUrl(getGlobeTextureUrl(texture))
     }
   }, [texture])
+
+  // Independent surface layer: era changes never recreate the WebGL context.
+  useEffect(() => {
+    const globe = globeRef.current
+    if (!globe || !surfaceOverlay) return
+    let cancelled = false
+    let mesh: THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMaterial> | undefined
+    createSurfaceOverlayCanvas(surfaceOverlay).then((canvas) => {
+      if (cancelled) return
+      const map = new THREE.CanvasTexture(canvas)
+      map.colorSpace = THREE.SRGBColorSpace
+      const geometry = createSurfaceOverlayGeometry(globe.getGlobeRadius(), globe.globeCurvatureResolution())
+      const material = new THREE.MeshPhongMaterial({ map, transparent: true, depthWrite: false })
+      mesh = new THREE.Mesh(geometry, material)
+      mesh.rotation.y = -Math.PI / 2
+      mesh.renderOrder = -1
+      mesh.raycast = () => {} // Surface decoration must not intercept country picking.
+      globe.add(mesh)
+    }).catch((error) => {
+      if (!cancelled) console.error("Unable to display surface overlay", error)
+    })
+    return () => {
+      cancelled = true
+      if (mesh) {
+        globe.remove(mesh)
+        mesh.material.map?.dispose()
+        mesh.material.dispose()
+        mesh.geometry.dispose()
+      }
+    }
+  }, [surfaceOverlay])
 
   // 3. Polygon Cap Curvature Resolution update
   useEffect(() => {

@@ -1,5 +1,12 @@
 import { GeoJSONFeature, GeoJSONFeatureCollection, GlobeTexture } from "../../types"
 
+export interface SurfaceOverlay {
+  /** Decorative RGBA artwork on the same full-world equirectangular grid. */
+  colorUrl: string
+  /** Original full-resolution RGBA mask; alpha is the sole coverage authority. */
+  coverageUrl: string
+}
+
 export interface HistoricalGlobeProps {
   /**
    * GeoJSON FeatureCollection to render on the globe.
@@ -15,6 +22,9 @@ export interface HistoricalGlobeProps {
    * Earth sphere texture. Defaults to EARTH_BLUE_MARBLE.
    */
   texture?: GlobeTexture
+
+  /** Optional equirectangular layer rendered above the globe and below territories. */
+  surfaceOverlay?: SurfaceOverlay
 
   /**
    * Extrusion / altitude of country boundary polygons. Defaults to 0.002.

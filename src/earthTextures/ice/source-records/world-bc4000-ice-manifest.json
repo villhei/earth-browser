@@ -1,0 +1,825 @@
+{
+  "contract_version": "2.0.0",
+  "kind": "static_ice_overlay",
+  "era": {
+    "slug": "world-bc4000",
+    "year_start": -4000,
+    "target_calendar_bp": 5949,
+    "age_system": "calendar BP (1950)"
+  },
+  "grid_id": "earth-equirectangular-4096-v1",
+  "baseline": {
+    "repository_path": "src/earthTextures/earth-blue-marble.jpg",
+    "bytes": 1461877,
+    "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01",
+    "registration_status": "adopted conventional full-world registration; original georeferencing unauthenticated",
+    "source_identity_and_rights": "unresolved"
+  },
+  "policy": {
+    "contract_version": "2.0.0",
+    "scope": "Operator-directed static overlays; replaces separate grounded/floating delivery for this workflow",
+    "grid_id": "earth-equirectangular-4096-v1",
+    "baseline": "BLUE_MARBLE",
+    "rejected_sources": [
+      "PALEOMAP"
+    ],
+    "ice": {
+      "filename": "ice.png",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "classes": [
+        "grounded_ice",
+        "floating_ice",
+        "empirical_ice_extent_without_grounding_split"
+      ],
+      "priority": "empirical_ice_over_gia_terrain_and_marine_predictions",
+      "merge": "polygon union before pixel coverage reduction",
+      "static_variant": "central",
+      "alternative_bounds": "separate diagnostic minimum/maximum overlays, not opacity probabilities",
+      "transparency": "leave Blue Marble unchanged; not a claim of ice absence"
+    },
+    "subpixel_policy": {
+      "disposition": "DROP_ARTIFACTS",
+      "operator_rule": "Discard the polygons/subpixels that round to 0",
+      "quantization": "floor(255*f+0.5)",
+      "rule": "A missed polygon may be discarded only if its geometric coverage rounds to zero in every covered pixel. Quantized zero pixels are transparent.",
+      "minimum_alpha_or_dilation": false,
+      "audit_required": true
+    },
+    "processing_scope": {
+      "coastal_outlines": true,
+      "inland_waterbodies": false,
+      "vegetation_biomes": false
+    },
+    "partial_coverage": "Preserve missing regions in metadata; no fabricated ice or coastlines",
+    "source_chronology": "Retain the seven pinned margin uses, all three bounds, signed offsets and the named TS10 exception",
+    "scientific_validation": "Phase 5 remains separate from implementation validation"
+  },
+  "sources": [
+    {
+      "id": "nadi-1",
+      "title": "Dalton et al. NADI-1 North American ice-margin reconstruction",
+      "version": "v1, 2023-11-09",
+      "citations": [
+        "https://doi.org/10.5281/zenodo.8161764",
+        "https://doi.org/10.1016/j.quascirev.2023.108345"
+      ],
+      "license": {
+        "id": "CC-BY-4.0",
+        "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Dalton et al. (2023), NADI-1 v1"
+      },
+      "source_role": "unclassified_margin_evidence",
+      "acquisition_status": "downloaded_and_inspected_not_classified",
+      "retrieved_at": null,
+      "retrieval_note": "Exact retrieval timestamp not recorded; phase-2 record date is 2026-09-16.",
+      "original_inputs": [
+        {
+          "path": "research-cache/NADI-1.zip",
+          "url": "https://zenodo.org/api/records/8161764/files/NADI-1%20shapefiles%20Dalton%20et%20al.%20QSR.zip/content",
+          "bytes": 54725237,
+          "sha256": "cbfdc0c14a8bd08eb13036ca488ec611de7d2d9b61bed22f03aec2e272b4cb44",
+          "archive_file_count": 588
+        }
+      ],
+      "native_horizontal_crs": "EPSG:4326",
+      "members": [
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 299508,
+              "sha256": "c717dbd3e6af9312e68847ca1fcc6d82cfaa871485479f110a9014a5d360c321"
+            },
+            "shx": {
+              "bytes": 1228,
+              "sha256": "703dde544c393045814e10283d08d9eb3bb2fcd8b227ae76a1a92a48634f6ea7"
+            },
+            "dbf": {
+              "bytes": 2886,
+              "sha256": "13d9dcc6adcc8ea763b38d4553afd2c891b6ee20931bb089923583523e6d8591"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        },
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 538156,
+              "sha256": "e5820a791cefb79abdbb1193cb4cda94f2b6df28b61d30c442e16620dd0fe032"
+            },
+            "shx": {
+              "bytes": 2436,
+              "sha256": "ca7580ddfedb542c1d19abc7d125d789d6c2e19ce0399639a2cd3469fc050322"
+            },
+            "dbf": {
+              "bytes": 5906,
+              "sha256": "da76cb98db905d9f5a06f42ba33302db4c42b100fdedace3f88e11c0db92405d"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        },
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 453432,
+              "sha256": "2d571a571c575f7ccb15391b9a8fa3741f7ea59edc52f04f8b53d6153c79c414"
+            },
+            "shx": {
+              "bytes": 2012,
+              "sha256": "da154c32bdab87accba69ae1ed9a49fc6661469f2de42f4884808a278aa750b5"
+            },
+            "dbf": {
+              "bytes": 4846,
+              "sha256": "667755aacca9c1a6207c080a35229ad5a827f896fb2aca58adbc17314534db6d"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        }
+      ],
+      "chronology": {
+        "original_age": {
+          "value": 6.0,
+          "unit": "ka",
+          "system": "calendar BP (1950)"
+        },
+        "calibration": "Published chronology retained without recalibration. Authors use CALIB 8.1.0 with IntCal20/Marine20 for radiocarbon evidence alongside other dating methods.",
+        "target_calendar_bp": 5949,
+        "source_calendar_bp": 6000,
+        "source_minus_target_years": 51,
+        "match_policy": "nearest_slice_approximation",
+        "interpolation": "none",
+        "other_era_uses": [],
+        "temporal_uncertainty": "Not quantified as a single error here; +51 years is the slice offset, not an uncertainty interval."
+      },
+      "uncertainty": {
+        "source_variants": [
+          "OPTIMAL",
+          "MIN",
+          "MAX"
+        ],
+        "interpretation": "Alternative margin extents, not confidence probabilities.",
+        "classification": "Marine grounding and supported presence/absence domains unresolved."
+      },
+      "modifications": "Source polygons merged into unified static ice overlays before raster reduction; zero-rounding losses and ring closures recorded. Original input bytes preserved."
+    }
+  ],
+  "provenance": [
+    {
+      "path": "provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    }
+  ],
+  "overlays": {
+    "central": {
+      "path": "ice.png",
+      "bytes": 52777,
+      "sha256": "7dec96106a8b3c3cf7b63f9a6bd0f9f6d2b9576992cb50cb2d4900b3cf07b865",
+      "samples_per_axis": 8,
+      "priority": "ice_over_terrain_and_marine",
+      "members": [
+        {
+          "dataset": "nadi-1",
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+          "first_polygon_index": 0,
+          "polygon_count": 242,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 27495,
+            "projected_vertices": 27496,
+            "native_crs": "EPSG:4326",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=noop ellps=GRS80",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [
+              {
+                "record": 160,
+                "polygon": 0,
+                "ring": 0,
+                "operation": "append_first_vertex",
+                "original_start": [
+                  -82.77263779435435,
+                  80.77761382259823
+                ],
+                "original_end": [
+                  -82.76079336266534,
+                  80.77812111130058
+                ],
+                "closing_segment_native_units": 0.011855290121428417,
+                "scope": "derived static overlay; source bytes unchanged; scientific validation pending"
+              }
+            ],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        }
+      ],
+      "discarded_polygons": [
+        {
+          "polygon_index": 68,
+          "area_pixel_units": 5.4655349959187305e-06,
+          "max_pixel_fraction": 5.4655349959187305e-06,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 194,
+              "column": 1179,
+              "fraction": 5.4655349959187305e-06,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 69,
+          "area_pixel_units": 4.2866941031560746e-07,
+          "max_pixel_fraction": 4.2866941031560746e-07,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 194,
+              "column": 1179,
+              "fraction": 4.2866941031560746e-07,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 114,
+          "area_pixel_units": 5.044880846752364e-07,
+          "max_pixel_fraction": 5.044880846752364e-07,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 171,
+              "column": 1134,
+              "fraction": 5.044880846752364e-07,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 115,
+          "area_pixel_units": 1.49131960985871e-06,
+          "max_pixel_fraction": 1.49131960985871e-06,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 170,
+              "column": 1134,
+              "fraction": 1.49131960985871e-06,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 138,
+          "area_pixel_units": 5.047582302056958e-05,
+          "max_pixel_fraction": 5.047582302056958e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 116,
+              "column": 1220,
+              "fraction": 5.047582302056958e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 140,
+          "area_pixel_units": 5.5790065343216955e-05,
+          "max_pixel_fraction": 5.5790065343216955e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 115,
+              "column": 1197,
+              "fraction": 5.5790065343216955e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 156,
+          "area_pixel_units": 0.00016846707823398033,
+          "max_pixel_fraction": 0.00016846707823398033,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 97,
+              "column": 1199,
+              "fraction": 0.00016846707823398033,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 166,
+          "area_pixel_units": 1.642295596142665e-05,
+          "max_pixel_fraction": 1.642295596142665e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 88,
+              "column": 1073,
+              "fraction": 1.642295596142665e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 239,
+          "area_pixel_units": 3.107853226609614e-05,
+          "max_pixel_fraction": 3.107853226609614e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 270,
+              "column": 1332,
+              "fraction": 3.107853226609614e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        }
+      ],
+      "positive_pixels": 19906
+    },
+    "minimum": {
+      "path": "diagnostics/ice-minimum.png",
+      "bytes": 51826,
+      "sha256": "08dc7305c53fb26c9eaa6df4dee43c6e120237c3f9c07d1542bdf7fa924c6b6d",
+      "samples_per_axis": 8,
+      "priority": "ice_over_terrain_and_marine",
+      "members": [
+        {
+          "dataset": "nadi-1",
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+          "first_polygon_index": 0,
+          "polygon_count": 296,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 32605,
+            "projected_vertices": 32605,
+            "native_crs": "EPSG:4326",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=noop ellps=GRS80",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        }
+      ],
+      "discarded_polygons": [
+        {
+          "polygon_index": 35,
+          "area_pixel_units": 5.047582302056958e-05,
+          "max_pixel_fraction": 5.047582302056958e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 116,
+              "column": 1220,
+              "fraction": 5.047582302056958e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 84,
+          "area_pixel_units": 5.044880846752364e-07,
+          "max_pixel_fraction": 5.044880846752364e-07,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 171,
+              "column": 1134,
+              "fraction": 5.044880846752364e-07,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 85,
+          "area_pixel_units": 1.49131960985871e-06,
+          "max_pixel_fraction": 1.49131960985871e-06,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 170,
+              "column": 1134,
+              "fraction": 1.49131960985871e-06,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 89,
+          "area_pixel_units": 5.5790065343216955e-05,
+          "max_pixel_fraction": 5.5790065343216955e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 115,
+              "column": 1197,
+              "fraction": 5.5790065343216955e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 128,
+          "area_pixel_units": 0.00016846707812398498,
+          "max_pixel_fraction": 0.00016846707812398498,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 97,
+              "column": 1199,
+              "fraction": 0.00016846707812398498,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 133,
+          "area_pixel_units": 0.0004350994514327883,
+          "max_pixel_fraction": 0.0004350994514327883,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 100,
+              "column": 1167,
+              "fraction": 0.0004350994514327883,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 144,
+          "area_pixel_units": 1.124878503511173e-06,
+          "max_pixel_fraction": 1.124878503511173e-06,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 93,
+              "column": 1146,
+              "fraction": 1.124878503511173e-06,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 145,
+          "area_pixel_units": 2.1463217099448872e-07,
+          "max_pixel_fraction": 2.1463217099448872e-07,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 93,
+              "column": 1146,
+              "fraction": 2.1463217099448872e-07,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 146,
+          "area_pixel_units": 1.6422955956187785e-05,
+          "max_pixel_fraction": 1.6422955956187785e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 88,
+              "column": 1073,
+              "fraction": 1.6422955956187785e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 261,
+          "area_pixel_units": 5.465534990450882e-06,
+          "max_pixel_fraction": 5.465534990450882e-06,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 194,
+              "column": 1179,
+              "fraction": 5.465534990450882e-06,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 262,
+          "area_pixel_units": 4.286694128829982e-07,
+          "max_pixel_fraction": 4.286694128829982e-07,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 194,
+              "column": 1179,
+              "fraction": 4.286694128829982e-07,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 293,
+          "area_pixel_units": 3.107853226609614e-05,
+          "max_pixel_fraction": 3.107853226609614e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 270,
+              "column": 1332,
+              "fraction": 3.107853226609614e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        }
+      ],
+      "positive_pixels": 14259
+    },
+    "maximum": {
+      "path": "diagnostics/ice-maximum.png",
+      "bytes": 54296,
+      "sha256": "48e35b48f566c5e411e146ba38a446624d6eea4308a90382d69300107be98838",
+      "samples_per_axis": 8,
+      "priority": "ice_over_terrain_and_marine",
+      "members": [
+        {
+          "dataset": "nadi-1",
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/6ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+          "first_polygon_index": 0,
+          "polygon_count": 143,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 18219,
+            "projected_vertices": 18219,
+            "native_crs": "EPSG:4326",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=noop ellps=GRS80",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        }
+      ],
+      "discarded_polygons": [
+        {
+          "polygon_index": 89,
+          "area_pixel_units": 5.465534995759136e-06,
+          "max_pixel_fraction": 5.465534995759136e-06,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 194,
+              "column": 1179,
+              "fraction": 5.465534995759136e-06,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 90,
+          "area_pixel_units": 4.2866941031560746e-07,
+          "max_pixel_fraction": 4.2866941031560746e-07,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 194,
+              "column": 1179,
+              "fraction": 4.2866941031560746e-07,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        },
+        {
+          "polygon_index": 115,
+          "area_pixel_units": 3.1078532250677915e-05,
+          "max_pixel_fraction": 3.1078532250677915e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 270,
+              "column": 1332,
+              "fraction": 3.1078532250677915e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        }
+      ],
+      "positive_pixels": 35276
+    }
+  },
+  "complete_global_reconstruction": false,
+  "transparency": "baseline_unchanged_not_confirmed_absence",
+  "coastlines": {
+    "enabled": true,
+    "status": "not_generated",
+    "baseline": "BLUE_MARBLE",
+    "reason": "Coastlines are a separate product. Current reference candidates failed baseline classification and regional seam acceptance; no coastline is delivered in this ice package."
+  },
+  "limitations": [
+    "Partial selected regional ice evidence only; unselected regions preserve the baseline.",
+    "Grounded and floating ice are merged; no new shelf front or seasonal sea ice is invented.",
+    "Source uncertainty bounds remain alternative geometries, not alpha probabilities.",
+    "Phase-5 ice scientific acceptance remains pending; reference coastlines failed acceptance."
+  ],
+  "processing": {
+    "command_argv": [
+      "/home/ville/src/web/earth-browser/.venv/bin/python",
+      "scripts/generate_reconstruction_masks.py",
+      "expand-eras",
+      "--output",
+      "data-sources/textures/masks/phase6-eras-verified"
+    ],
+    "git_revision": "b5a6aad25fbb74e6cfa0861116bbf8caaa2c66f4",
+    "tracked_dirty_patch_sha256": "419a07bf48a3e794d8ec1701f76e11c544fb303a4d98523208fae28ac831c272",
+    "generator_files_including_untracked": {
+      "scripts/paleomasks/__init__.py": {
+        "bytes": 87,
+        "sha256": "7e8ee77eae620fb57bef60fde7f82f7c1713f973ed6deec2cd6a830c4240413f"
+      },
+      "scripts/paleomasks/coasts.py": {
+        "bytes": 12912,
+        "sha256": "62f5703377366e038eebc0772e0858ae6731fb29808f6457247c252049e76e86"
+      },
+      "scripts/paleomasks/contract.py": {
+        "bytes": 13198,
+        "sha256": "1f8ea61fddda5375f4974d8919d1cc30bd2a7d44c1d502f492f749cd672f019b"
+      },
+      "scripts/paleomasks/expansion.py": {
+        "bytes": 12273,
+        "sha256": "2f54ce0dc27830f6d81058ed9f093605fcc4ffa08543cebde3a4bb1b9bb7e895"
+      },
+      "scripts/paleomasks/geometry.py": {
+        "bytes": 14946,
+        "sha256": "57a90999d94d59e56da5f22da5739a6fc0bbef6361f7bfeeca6a993582ebe211"
+      },
+      "scripts/paleomasks/native_arrays.py": {
+        "bytes": 1024,
+        "sha256": "61e6cb6936f617e6f815d6cdb58a94c5622456695cbe7d24c0d8981a70252a57"
+      },
+      "scripts/paleomasks/overlays.py": {
+        "bytes": 10078,
+        "sha256": "7552de3c9ee484177b25ef2ec28f5c4ca228008ba72f1b591a0fde917523046a"
+      },
+      "scripts/paleomasks/pipeline.py": {
+        "bytes": 23404,
+        "sha256": "f1448540d971306bdd19a5149b1d43a59196bd66f75e7cdd16b42fbd24492bec"
+      },
+      "scripts/paleomasks/reference.py": {
+        "bytes": 17749,
+        "sha256": "3c208fab1f9e406be6489948a75146e69f55f0043e80a8c8387c8083fcb916db"
+      },
+      "scripts/paleomasks/reference_gdal.py": {
+        "bytes": 3577,
+        "sha256": "b0b4e5336e6c1f7b3a42556b23433e2dfdcf2e1fde20edaf36c1360a4cc4b34a"
+      },
+      "scripts/paleomasks/surface_policy.py": {
+        "bytes": 2230,
+        "sha256": "4c633f3731c68b62a54377b618bdce3bd64f8477c87accfabffe82fa409bbb80"
+      },
+      "scripts/paleomasks/terrain.py": {
+        "bytes": 12577,
+        "sha256": "8d24f896ee6a3a50a96cf50be5fcdbfcbf507abe18d171dc2f6973dabb730fac"
+      },
+      "scripts/generate_reconstruction_masks.py": {
+        "bytes": 202,
+        "sha256": "25697b64c7f81eaaddbade8c245fefb33502cf11484becbe900b82b1efba1924"
+      }
+    },
+    "dependencies": {
+      "numpy": "2.5.2",
+      "pillow": "12.3.0",
+      "pyshp": "3.1.6",
+      "pyproj": "3.7.2"
+    },
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [GCC 12.3.0]",
+    "png_encoder": {
+      "compress_level": 9,
+      "optimize": false
+    },
+    "proj_version": "9.5.1",
+    "zlib_version": "1.3.1.zlib-ng",
+    "rasterization": "regular subcell centres, even/odd holes per polygon, polygon union, periodic longitude, box average",
+    "quantization": "floor(255*f+0.5)",
+    "scientific_validation": "pending"
+  }
+}

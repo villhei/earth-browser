@@ -61,6 +61,7 @@ export enum GlobeTexture {
 export interface GlobeConfig {
   layerAltitude: number
   texture: GlobeTexture
+  showIceOverlay?: boolean
   sideColor: string
   strokeColor: string
   opacity: number

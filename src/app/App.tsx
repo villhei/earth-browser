@@ -12,6 +12,7 @@ import { Timeline } from "../components/Timeline"
 import { CountryDrawer } from "../components/CountryDrawer"
 import { ControlsOverlay } from "../components/ControlsOverlay"
 import { Attribution } from "../components/Attribution"
+import { getIceOverlay } from "../earthTextures/ice"
 import { PuffLoader } from "react-spinners"
 import "./App.css"
 
@@ -31,6 +32,7 @@ export const App: React.FC = () => {
   const [globeConfig, setGlobeConfig] = useState<GlobeConfig>({
 
     texture: GlobeTexture.EARTH_BLUE_MARBLE,
+    showIceOverlay: true,
     layerAltitude: 0.002,
     elevationScale: 0.3,
     opacity: 0.55,
@@ -95,6 +97,8 @@ export const App: React.FC = () => {
     )
   }
 
+  const iceOverlay = getIceOverlay(currentEra?.slug)
+
   return (
     <div className="app-layout">
       {/* Top Navigation Bar */}
@@ -113,6 +117,7 @@ export const App: React.FC = () => {
             data={geoJsonData}
             isLoading={isLoadingGeoJson}
             texture={globeConfig.texture}
+            surfaceOverlay={globeConfig.showIceOverlay && globeConfig.texture === GlobeTexture.EARTH_BLUE_MARBLE ? iceOverlay : undefined}
             layerAltitude={globeConfig.layerAltitude}
             elevationScale={globeConfig.elevationScale}
             opacity={globeConfig.opacity}
@@ -131,6 +136,7 @@ export const App: React.FC = () => {
         {/* Visual Settings Controls */}
         <ControlsOverlay
           config={globeConfig}
+          iceOverlayAvailable={!!iceOverlay}
           onChangeConfig={setGlobeConfig}
           onOpenAttribution={() => setIsAttributionOpen(true)}
         />

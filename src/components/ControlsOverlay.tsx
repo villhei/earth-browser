@@ -6,12 +6,14 @@ interface ControlsOverlayProps {
   config: GlobeConfig
   onChangeConfig: (config: GlobeConfig) => void
   onOpenAttribution?: () => void
+  iceOverlayAvailable?: boolean
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   config,
   onChangeConfig,
   onOpenAttribution,
+  iceOverlayAvailable = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -61,6 +63,27 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               <option value={GlobeTexture.EARTH_NIGHT}>Night Lights</option>
               <option value={GlobeTexture.EARTH_DARK}>Dark Planetary</option>
             </select>
+          </div>
+
+          <div className="controls-group">
+            <div className="controls-label-row">
+              <span className="controls-label" id="ice-overlay-label">Ice sheet overlay</span>
+              <button
+                className={`controls-pill ${config.showIceOverlay ? "active" : ""}`}
+                aria-labelledby="ice-overlay-label"
+                aria-pressed={!!config.showIceOverlay}
+                onClick={() => onChangeConfig({ ...config, showIceOverlay: !config.showIceOverlay })}
+              >
+                {config.showIceOverlay ? "Enabled" : "Disabled"}
+              </button>
+            </div>
+            <p className="controls-help">
+              {config.texture !== GlobeTexture.EARTH_BLUE_MARBLE
+                ? "Select Blue Marble to view ice sheets."
+                : !iceOverlayAvailable
+                  ? "Available at 10,000, 8,000, 5,000, 4,000 and 3,000 BCE."
+                  : "Experimental appearance · partial regional ice coverage."}
+            </p>
           </div>
 
           <div className="controls-group">
@@ -223,4 +246,3 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
     </div>
   )
 }
-
