@@ -1,0 +1,303 @@
+{
+  "contract_version": "1.0.0",
+  "record_date": "2026-09-17",
+  "normative_document": "OUTPUT-CONTRACT.md",
+  "scope": "Output and metadata contract; not a generation or validation result",
+  "grid": {
+    "id": "earth-equirectangular-4096-v1",
+    "width": 4096,
+    "height": 2048,
+    "mapping": "equirectangular",
+    "horizontal_crs": "EPSG:4326",
+    "coordinate_order": [
+      "longitude",
+      "latitude"
+    ],
+    "units": "degrees",
+    "outer_edges": {
+      "west": -180,
+      "east": 180,
+      "north": 90,
+      "south": -90
+    },
+    "registration": "PixelIsArea",
+    "gdal_geotransform": [
+      -180,
+      0.087890625,
+      0,
+      90,
+      0,
+      -0.087890625
+    ],
+    "row_order": "north_to_south",
+    "column_order": "west_to_east",
+    "first_pixel_center": [
+      -179.9560546875,
+      89.9560546875
+    ],
+    "last_pixel_center": [
+      179.9560546875,
+      -89.9560546875
+    ],
+    "duplicate_seam_column": false,
+    "duplicate_pole_rows": false,
+    "alignment_reference": {
+      "repository_path": "src/earthTextures/earth-blue-marble.jpg",
+      "bytes": 1461877,
+      "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01",
+      "registration_status": "adopted conventional full-world registration; original georeferencing unauthenticated",
+      "source_identity_and_rights": "unresolved"
+    }
+  },
+  "encoding": {
+    "mask": {
+      "format": "PNG",
+      "color_type": 6,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "rgb_color_space": "sRGB",
+      "alpha": "straight_linear_pixel_area_coverage",
+      "transparent_pixel": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "coverage": {
+      "format": "PNG",
+      "color_type": 0,
+      "mode": "L",
+      "bit_depth": 8,
+      "meaning": "supported_domain_pixel_area_fraction",
+      "gamma_correction": false
+    },
+    "coverage_domain": {
+      "format": "GeoJSON",
+      "geometry_types": [
+        "Polygon",
+        "MultiPolygon"
+      ],
+      "coordinate_order": [
+        "longitude",
+        "latitude"
+      ]
+    },
+    "quantization": "floor(255 * fraction + 0.5)",
+    "fraction_measure": "equirectangular_pixel_plane",
+    "antialiasing": "geometric_area_coverage_only"
+  },
+  "layers": [
+    {
+      "class": "exposed-land",
+      "rgb": [
+        217,
+        164,
+        65
+      ]
+    },
+    {
+      "class": "flooded-land",
+      "rgb": [
+        40,
+        120,
+        181
+      ]
+    },
+    {
+      "class": "grounded-ice",
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "class": "floating-shelf",
+      "rgb": [
+        154,
+        219,
+        232
+      ]
+    },
+    {
+      "class": "winter-sea-ice",
+      "rgb": [
+        107,
+        140,
+        255
+      ]
+    },
+    {
+      "class": "summer-sea-ice",
+      "rgb": [
+        190,
+        155,
+        255
+      ]
+    }
+  ],
+  "availability": {
+    "layer_coverage_status": [
+      "unavailable",
+      "partial",
+      "complete"
+    ],
+    "product_presence": [
+      "present",
+      "confirmed_empty"
+    ],
+    "unavailable_products": [],
+    "unlisted_geography": "unavailable",
+    "coverage_required_for_every_product": true,
+    "global_completeness_requires_all_classes_and_variants": true
+  },
+  "variants": {
+    "central": [
+      "NADI-1 OPTIMAL",
+      "DATED-1 mc"
+    ],
+    "minimum": [
+      "NADI-1 MIN",
+      "DATED-1 min"
+    ],
+    "maximum": [
+      "NADI-1 MAX",
+      "DATED-1 max"
+    ]
+  },
+  "seasonal_modern_sampling": {
+    "year": "catalog year_start (CE)",
+    "aggregation": "monthly_mean_concentration",
+    "threshold_operator": ">=",
+    "threshold_fraction": 0.15,
+    "nh": {
+      "winter_month": 3,
+      "summer_month": 9
+    },
+    "sh": {
+      "winter_month": 9,
+      "summer_month": 3
+    },
+    "interpretation": "fixed seasonal samples, not annual extrema",
+    "inputs_status": "not yet selected as individual files; unavailable"
+  },
+  "chronology": {
+    "target_field": "year_start",
+    "year_zero": "invalid",
+    "negative_year_to_calendar_bp": "-year_start + 1949",
+    "positive_year_to_calendar_bp": "1950 - year_start",
+    "offset": "source_calendar_bp - target_calendar_bp",
+    "interpolation": "none",
+    "unlisted_slice_reuse": "forbidden",
+    "scalar_sea_level_fallback": "forbidden"
+  },
+  "permitted_margin_uses": [
+    {
+      "era_slug": "world-bc10000",
+      "target_calendar_bp": 11949,
+      "dataset": "nadi-1",
+      "source_calendar_bp": 12000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "OPTIMAL",
+        "MIN",
+        "MAX"
+      ],
+      "policy": "nearest_slice_approximation"
+    },
+    {
+      "era_slug": "world-bc10000",
+      "target_calendar_bp": 11949,
+      "dataset": "dated-1",
+      "source_calendar_bp": 12000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "mc",
+        "min",
+        "max"
+      ],
+      "policy": "nearest_slice_approximation"
+    },
+    {
+      "era_slug": "world-bc8000",
+      "target_calendar_bp": 9949,
+      "dataset": "nadi-1",
+      "source_calendar_bp": 10000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "OPTIMAL",
+        "MIN",
+        "MAX"
+      ],
+      "policy": "nearest_slice_approximation"
+    },
+    {
+      "era_slug": "world-bc8000",
+      "target_calendar_bp": 9949,
+      "dataset": "dated-1",
+      "source_calendar_bp": 10000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "mc",
+        "min",
+        "max"
+      ],
+      "policy": "endpoint_approximation"
+    },
+    {
+      "era_slug": "world-bc5000",
+      "target_calendar_bp": 6949,
+      "dataset": "nadi-1",
+      "source_calendar_bp": 7000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "OPTIMAL",
+        "MIN",
+        "MAX"
+      ],
+      "policy": "nearest_slice_approximation"
+    },
+    {
+      "era_slug": "world-bc4000",
+      "target_calendar_bp": 5949,
+      "dataset": "nadi-1",
+      "source_calendar_bp": 6000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "OPTIMAL",
+        "MIN",
+        "MAX"
+      ],
+      "policy": "nearest_slice_approximation"
+    },
+    {
+      "era_slug": "world-bc3000",
+      "target_calendar_bp": 4949,
+      "dataset": "nadi-1",
+      "source_calendar_bp": 5000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "OPTIMAL",
+        "MIN",
+        "MAX"
+      ],
+      "policy": "nearest_slice_approximation"
+    }
+  ],
+  "paths": {
+    "package_root": "data-sources/textures/masks/v1/{era_slug}",
+    "manifest": "manifest.json",
+    "mask": "masks/{class}--{region}--{variant}.png",
+    "coverage": "coverage/{class}--{region}--{variant}.png",
+    "domain": "coverage/{class}--{region}--{variant}.geojson",
+    "diagnostics": "diagnostics/",
+    "provenance": "provenance/",
+    "artifact_paths": "relative to era package; no traversal or absolute paths"
+  },
+  "selection_record": {
+    "repository_path": "data-sources/textures/SOURCE-SELECTION.json",
+    "bytes": 56672,
+    "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+  }
+}

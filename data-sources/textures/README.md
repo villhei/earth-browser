@@ -6,6 +6,8 @@ This directory contains the geospatial source data, vector shapefiles, and techn
 
 > **Current selection:** [SOURCE-SELECTION.md](SOURCE-SELECTION.md) and [SOURCE-SELECTION.json](SOURCE-SELECTION.json) record phase-2 decisions and original input checksums. NADI-1 replaces the unverified North American bundle; DATED-1 is authenticated. New research downloads are cached locally outside Git.
 
+> **Output contract:** [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md) and [OUTPUT-CONTRACT.json](OUTPUT-CONTRACT.json) define the phase-3 grid, independent masks, coverage semantics and provenance requirements. The [reference-era manifest example](examples/world-bc10000.manifest.json) retains selected evidence while marking every mask unavailable pending classification and terrain validation. Generation starts in phase 4.
+
 > **Source audit:** See [SOURCE-AUDIT.md](SOURCE-AUDIT.md) for catalog dates, usable inputs and unresolved provenance. The legacy North American BP-to-BCE assignments below are unsupported: the attributed source uses radiocarbon chronology. Those files also contain `LAKE` records. Sea-level offsets and artistic marine ice below are legacy assumptions, not validated reconstruction inputs.
 
 ---

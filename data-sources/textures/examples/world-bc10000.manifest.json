@@ -1,0 +1,376 @@
+{
+  "contract_version": "1.0.0",
+  "grid_id": "earth-equirectangular-4096-v1",
+  "record_kind": "example",
+  "era": {
+    "slug": "world-bc10000",
+    "year_start": -10000,
+    "target_calendar_bp": 11949,
+    "age_system": "calendar BP (1950)"
+  },
+  "provenance_records": [
+    {
+      "repository_path": "data-sources/textures/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "repository_path": "data-sources/textures/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "repository_path": "data-sources/textures/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "repository_path": "data-sources/textures/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nadi-1",
+      "title": "Dalton et al. NADI-1 North American ice-margin reconstruction",
+      "version": "v1, 2023-11-09",
+      "citations": [
+        "https://doi.org/10.5281/zenodo.8161764",
+        "https://doi.org/10.1016/j.quascirev.2023.108345"
+      ],
+      "license": {
+        "id": "CC-BY-4.0",
+        "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Dalton et al. (2023), NADI-1 v1"
+      },
+      "source_role": "unclassified_margin_evidence",
+      "acquisition_status": "downloaded_and_inspected_not_classified",
+      "retrieved_at": null,
+      "retrieval_note": "Exact retrieval timestamp not recorded; phase-2 record date is 2026-09-16.",
+      "original_inputs": [
+        {
+          "path": "research-cache/NADI-1.zip",
+          "url": "https://zenodo.org/api/records/8161764/files/NADI-1%20shapefiles%20Dalton%20et%20al.%20QSR.zip/content",
+          "bytes": 54725237,
+          "sha256": "cbfdc0c14a8bd08eb13036ca488ec611de7d2d9b61bed22f03aec2e272b4cb44",
+          "archive_file_count": 588
+        }
+      ],
+      "native_horizontal_crs": "EPSG:4326",
+      "members": [
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 139056,
+              "sha256": "48dd143f2a92014f948ce9f659b7d7af6b95da9775e6640a3696b17c24c432d7"
+            },
+            "shx": {
+              "bytes": 364,
+              "sha256": "5ae5d219d75e3a81b365cce88e3a2e5a8a41145e29e2d1c8e134eb261c84bcb0"
+            },
+            "dbf": {
+              "bytes": 726,
+              "sha256": "a9fa3bad102cf2c8766635d246987482229762f95b30acca981d916f71b1cc80"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        },
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 80216,
+              "sha256": "c857b46b7c83d1a267acffc4c15813ca1f7e8e67abf08fdcac8a05d81d2358fb"
+            },
+            "shx": {
+              "bytes": 260,
+              "sha256": "11e61f95bddcc85e1077f427c7f4d610939e3cca46e50b378311080bd2b6a821"
+            },
+            "dbf": {
+              "bytes": 466,
+              "sha256": "b7494d66e9ab4c43629f5347ae59afe19c499da75c79f22b3d9f8ae959408c6d"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        },
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 162500,
+              "sha256": "44089a28b98996a202f1685175bcab5c995316e4a1f89cf4601de2696ffa0225"
+            },
+            "shx": {
+              "bytes": 396,
+              "sha256": "924046ee3a176cee9b8450af1356645c21cf4edce0daa864974dceead6e40509"
+            },
+            "dbf": {
+              "bytes": 806,
+              "sha256": "bed4d58d0e4c479a0d553f58b69beae216351986d6e4a6593340a7dd210a7fe7"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        }
+      ],
+      "chronology": {
+        "original_age": {
+          "value": 12,
+          "unit": "ka",
+          "system": "calendar BP (1950)"
+        },
+        "calibration": "Published chronology retained without recalibration. Authors use CALIB 8.1.0 with IntCal20/Marine20 for radiocarbon evidence alongside other dating methods.",
+        "target_calendar_bp": 11949,
+        "source_calendar_bp": 12000,
+        "source_minus_target_years": 51,
+        "match_policy": "nearest_slice_approximation",
+        "interpolation": "none",
+        "other_era_uses": [],
+        "temporal_uncertainty": "Not quantified as a single error here; +51 years is the slice offset, not an uncertainty interval."
+      },
+      "uncertainty": {
+        "source_variants": [
+          "OPTIMAL",
+          "MIN",
+          "MAX"
+        ],
+        "interpretation": "Alternative margin extents, not confidence probabilities.",
+        "classification": "Marine grounding and supported presence/absence domains unresolved."
+      },
+      "modifications": "No mask processing; member identities and hashes copied from the phase-2 inspection record."
+    },
+    {
+      "id": "dated-1",
+      "title": "Hughes et al. DATED-1 Eurasian ice-margin reconstruction",
+      "version": "PANGAEA.848117, 2015 release",
+      "citations": [
+        "https://doi.org/10.1594/PANGAEA.848117",
+        "https://doi.org/10.1111/bor.12142"
+      ],
+      "license": {
+        "id": "CC-BY-3.0",
+        "terms_url": "https://creativecommons.org/licenses/by/3.0/",
+        "attribution": "Hughes et al. (2015 dataset; 2016 methods), DATED-1"
+      },
+      "source_role": "unclassified_margin_evidence",
+      "acquisition_status": "downloaded_and_inspected_not_classified",
+      "retrieved_at": null,
+      "retrieval_note": "Exact retrieval timestamp not recorded; phase-2 record date is 2026-09-16.",
+      "original_inputs": [
+        {
+          "path": "research-cache/DATED-1_TimeSlices_shp.zip",
+          "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_TimeSlices_shp.zip",
+          "bytes": 11545303,
+          "sha256": "a916de31ff31b0bb63863b82d61a6be02659ecfe36a7cab0fdf00034b38be1f1",
+          "archive_file_count": 464
+        }
+      ],
+      "native_horizontal_crs": "ESRI:102017",
+      "members": [
+        {
+          "member_stem": "DATED1 TimeSlices shp/TS12_max",
+          "components": {
+            "shp": {
+              "bytes": 258300,
+              "sha256": "6e0c4f42df1489c6364e8b5771fe386005b7a4678d3b20e0da36a31f2acda137"
+            },
+            "shx": {
+              "bytes": 140,
+              "sha256": "dc4392abf5d40f4d1b22182571077cee0a934d36fc5e4ec0209948732fd6d41b"
+            },
+            "dbf": {
+              "bytes": 547,
+              "sha256": "dc5a13bf6f94cb8234528e6f132c20addb5aba07250250819fceeddeda64f388"
+            },
+            "prj": {
+              "bytes": 390,
+              "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+            }
+          }
+        },
+        {
+          "member_stem": "DATED1 TimeSlices shp/TS12_mc",
+          "components": {
+            "shp": {
+              "bytes": 560912,
+              "sha256": "3c942f9afed730e1feb984f113d394a9b2ba158e01a718db6d6dc53a64c828d2"
+            },
+            "shx": {
+              "bytes": 140,
+              "sha256": "3241e67a576a35134d12c123c8bb66bc7b3b45af8573bbd2a0a7c2280b3302a0"
+            },
+            "dbf": {
+              "bytes": 547,
+              "sha256": "7324e718d474d2925a8f62fd33df759c496e17a1f33658b823a0085db7e585f4"
+            },
+            "prj": {
+              "bytes": 390,
+              "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+            }
+          }
+        },
+        {
+          "member_stem": "DATED1 TimeSlices shp/TS12_min",
+          "components": {
+            "shp": {
+              "bytes": 156452,
+              "sha256": "d59ac0a67eeb60ed8db6129a13b6bdcd17cafab6b6d540721f04784358a1cc81"
+            },
+            "shx": {
+              "bytes": 148,
+              "sha256": "bfdfece49d960652c65db6983fd80d466fba7b5f25829f349b0520fa3148e76b"
+            },
+            "dbf": {
+              "bytes": 624,
+              "sha256": "4954c7cd86a36393d89fcb1b3391c7bb63112f2b579afca0f1b98b4cf4668f41"
+            },
+            "prj": {
+              "bytes": 390,
+              "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+            }
+          }
+        }
+      ],
+      "chronology": {
+        "original_age": {
+          "value": 12,
+          "unit": "ka",
+          "system": "calendar BP (1950)"
+        },
+        "calibration": "Published calendar chronology retained without recalibration; see DATED-1 README and methods for underlying dating evidence.",
+        "target_calendar_bp": 11949,
+        "source_calendar_bp": 12000,
+        "source_minus_target_years": 51,
+        "match_policy": "nearest_slice_approximation",
+        "interpolation": "none",
+        "other_era_uses": [],
+        "temporal_uncertainty": "Not quantified as a single error here; +51 years is the slice offset, not an uncertainty interval."
+      },
+      "uncertainty": {
+        "source_variants": [
+          "mc",
+          "min",
+          "max"
+        ],
+        "interpretation": "Alternative margin extents, not confidence probabilities.",
+        "classification": "Marine grounding and supported presence/absence domains unresolved."
+      },
+      "modifications": "No mask processing; member identities and hashes copied from the phase-2 inspection record."
+    }
+  ],
+  "layers": [
+    {
+      "class": "exposed-land",
+      "coverage_status": "unavailable",
+      "regions": [
+        {
+          "id": "global",
+          "coverage_status": "unavailable",
+          "reason": "Regional epoch-relative terrain members, modern marine baseline, ocean connectivity and vertical/seam validation are not yet available as a validated classification.",
+          "source_ids": []
+        }
+      ],
+      "products": []
+    },
+    {
+      "class": "flooded-land",
+      "coverage_status": "unavailable",
+      "regions": [
+        {
+          "id": "global",
+          "coverage_status": "unavailable",
+          "reason": "Regional epoch-relative terrain members, modern marine baseline, ocean connectivity and vertical/seam validation are not yet available as a validated classification.",
+          "source_ids": []
+        }
+      ],
+      "products": []
+    },
+    {
+      "class": "grounded-ice",
+      "coverage_status": "unavailable",
+      "regions": [
+        {
+          "id": "north-america-nadi1",
+          "coverage_status": "unavailable",
+          "reason": "12 ka margin suite selected; grounding interpretation and supported domain pending. Greenland and disconnected western-US mountain ice excluded.",
+          "source_ids": [
+            "nadi-1"
+          ]
+        },
+        {
+          "id": "eurasia-dated1",
+          "coverage_status": "unavailable",
+          "reason": "TS12 margin suite selected; grounding interpretation and supported domain pending. Greenland, Iceland and other non-study regions excluded.",
+          "source_ids": [
+            "dated-1"
+          ]
+        },
+        {
+          "id": "rest-of-world",
+          "coverage_status": "unavailable",
+          "reason": "No acquired and classified target-epoch ice input selected.",
+          "source_ids": []
+        }
+      ],
+      "products": []
+    },
+    {
+      "class": "floating-shelf",
+      "coverage_status": "unavailable",
+      "regions": [
+        {
+          "id": "global",
+          "coverage_status": "unavailable",
+          "reason": "No separately dated and validated grounding/calving-front classification selected.",
+          "source_ids": []
+        }
+      ],
+      "products": []
+    },
+    {
+      "class": "winter-sea-ice",
+      "coverage_status": "unavailable",
+      "regions": [
+        {
+          "id": "global",
+          "coverage_status": "unavailable",
+          "reason": "No target-epoch spatial seasonal sea-ice input selected; proxies and undifferentiated ice margins cannot define this mask.",
+          "source_ids": []
+        }
+      ],
+      "products": []
+    },
+    {
+      "class": "summer-sea-ice",
+      "coverage_status": "unavailable",
+      "regions": [
+        {
+          "id": "global",
+          "coverage_status": "unavailable",
+          "reason": "No target-epoch spatial seasonal sea-ice input selected; proxies and undifferentiated ice margins cannot define this mask.",
+          "source_ids": []
+        }
+      ],
+      "products": []
+    }
+  ],
+  "complete_global_set": false,
+  "limitations": [
+    "Metadata-only example of the selected reference era, not a delivered reconstruction; no artifact files are claimed.",
+    "The selected margins are regional unclassified evidence. All six output classes remain unavailable until their gates are resolved.",
+    "Both sources are 12000 calendar BP, +51 years older than the 11949 BP target; original uncertainty suites must be retained.",
+    "A missing product or transparent pixel cannot establish absence outside supported coverage.",
+    "Phase-2 research-cache inputs are ignored by Git and require verified reacquisition in another checkout.",
+    "Ice presence does not establish a traversable human route."
+  ]
+}

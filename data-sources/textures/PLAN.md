@@ -1,6 +1,6 @@
 # Research-based prehistoric Earth masks — implementation plan
 
-Recorded: 2026-09-16. Updated after phase-2 source selection on the same date.
+Recorded: 2026-09-16. Updated after phase-3 output contracts on 2026-09-17.
 
 ## Objective and agreed scope
 
@@ -97,12 +97,16 @@ Phase-2 verification: rechecked all 14 download SHA-256 hashes, 84 selected shap
 
 ### 3. Define output and metadata contracts
 
-- [ ] Fix the shared pixel grid, projection, geographic extent, pixel registration, orientation, and alignment to the modern base.
-- [ ] Define separate exposed-land, flooded-land, grounded-ice, floating-shelf, and seasonal-sea-ice outputs where supported.
-- [ ] Use solid colors and transparent backgrounds. Any edge antialiasing must represent raster coverage rather than artistic expansion of boundaries.
-- [ ] Store source citations, licenses, versions/checksums, original age system, calibration method, target calendar BP, source calendar BP, signed source-minus-target offset, slice reuse/interpolation policy, processing parameters and uncertainty alongside each output.
-- [ ] Distinguish confirmed empty masks from unavailable or partially covered datasets for each era, region and ice class. Define coverage metadata separately from transparent pixels, so transparency cannot imply ice-free conditions outside coverage.
-- [ ] Choose and document a stable per-era directory and filename convention.
+- [x] Fix the shared pixel grid, projection, geographic extent, pixel registration, orientation, and alignment to the modern base.
+- [x] Define separate exposed-land, flooded-land, grounded-ice, floating-shelf, and seasonal-sea-ice outputs where supported.
+- [x] Use solid colors and transparent backgrounds. Any edge antialiasing must represent raster coverage rather than artistic expansion of boundaries.
+- [x] Store source citations, licenses, versions/checksums, original age system, calibration method, target calendar BP, source calendar BP, signed source-minus-target offset, slice reuse/interpolation policy, processing parameters and uncertainty alongside each output.
+- [x] Distinguish confirmed empty masks from unavailable or partially covered datasets for each era, region and ice class. Define coverage metadata separately from transparent pixels, so transparency cannot imply ice-free conditions outside coverage.
+- [x] Choose and document a stable per-era directory and filename convention.
+
+Completed 2026-09-17 as a contract definition: [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md) defines the common pixel-is-area grid, six independent RGBA classes, geometric edge coverage, per-product coverage rasters/domains, availability and uncertainty semantics, chronology, metadata fields and stable package paths. [OUTPUT-CONTRACT.json](OUTPUT-CONTRACT.json) records machine-readable constants and all seven permitted margin source/target pairs, including the sole DATED-1 TS10 endpoint exception. [examples/world-bc10000.manifest.json](examples/world-bc10000.manifest.json) demonstrates the current reference-era metadata with pinned source members and all six outputs unavailable. No generated files, coverage domains or successful scientific validation are claimed. Implementation of the contract validator belongs to phase 4.
+
+Phase-3 verification: checked all 54 catalog dates/dispositions, all seven selected source uses and offsets, the single named endpoint exception, grid centres/extent, reference-image dimensions/hash, example provenance hashes and its six margin members against the selection record. `npm test`: 54 tests passed. `npm run build` encountered sandbox `tsx` IPC `EPERM`; equivalent stages passed with `node --import tsx src/server/exportStatic.ts && ./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/vite build`. PostGIS was unreachable, so export used its existing-static-data fallback. Existing Vite CJS deprecation and bundle-size warnings remain. No tracked site changes; `git diff --check` passed.
 
 ### 4. Implement reproducible generation
 
@@ -154,4 +158,4 @@ These are starting points, not final dataset selections. Inspect original data a
 
 ## Suggested next-session task
 
-Read `AGENTS.md`, this plan and [SOURCE-SELECTION.md](SOURCE-SELECTION.md), then inspect the working tree. Execute phase 3: define the output grid and metadata contracts, using [SOURCE-SELECTION.json](SOURCE-SELECTION.json) for pinned inputs, selected slices and all 54 era dispositions. Distinguish raw margin evidence from classified grounded/floating ice, partial coverage from empty masks, and the named TS10 endpoint exception from unrestricted extrapolation. Terrain acquisition and validation gates are recorded in the selection record. Generation follows phase 4; do not run the legacy generator or restore retired JPEGs.
+Read `AGENTS.md`, this plan, [SOURCE-SELECTION.md](SOURCE-SELECTION.md) and [OUTPUT-CONTRACT.md](OUTPUT-CONTRACT.md), then inspect the working tree. Execute phase 4: implement contract validation and reproducible generation using [OUTPUT-CONTRACT.json](OUTPUT-CONTRACT.json) and the pinned source-selection record. The [reference manifest example](examples/world-bc10000.manifest.json) records evidence without claiming classified outputs. Resolve supported presence/absence domains and grounding interpretation before ice export; acquire and verify terrain members and the modern marine baseline before coastline generation. Preserve the seven selected source uses, all uncertainty bounds, and the named TS10 endpoint exception. Do not run the legacy generator, restore retired JPEGs, or treat unavailable layers as empty masks. Reference-era scientific validation follows in phase 5.
