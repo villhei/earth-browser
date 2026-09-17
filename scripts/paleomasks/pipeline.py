@@ -284,6 +284,11 @@ def main(argv=None):
     p.add_argument("--overlay-root", type=Path, help="Reuse verified existing overlays; otherwise regenerate all five selected eras")
     p = sub.add_parser("validate-expansion")
     p.add_argument("package", type=Path)
+    p = sub.add_parser("package-delivery", help="Package partial evidence, per-era editing guides and a verified ZIP")
+    p.add_argument("--expansion", type=Path, required=True)
+    p.add_argument("--output", type=Path, required=True)
+    p = sub.add_parser("validate-delivery")
+    p.add_argument("package", type=Path)
     p = sub.add_parser("generate-overlays", help="Generate operator-directed unified static ice overlays")
     scope = p.add_mutually_exclusive_group(required=True)
     scope.add_argument("--era")
@@ -340,6 +345,12 @@ def main(argv=None):
         elif args.command == "validate-expansion":
             from .expansion import validate_expansion
             print(json.dumps(validate_expansion(args.package, contract, selection, catalog)))
+        elif args.command == "package-delivery":
+            from .delivery import package_delivery
+            package_delivery(args.expansion, args.output, contract, selection, catalog)
+        elif args.command == "validate-delivery":
+            from .delivery import validate_delivery
+            print(json.dumps(validate_delivery(args.package, contract, selection, catalog)))
         elif args.command == "validate":
             manifest = read_json(args.manifest)
             print(json.dumps(validate_manifest(manifest, args.manifest.parent if manifest["record_kind"] == "delivery" else None)))

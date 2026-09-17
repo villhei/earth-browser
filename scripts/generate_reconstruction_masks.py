@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Phase-4 entry point. Does not import or execute the retired texture generator."""
+"""Research mask generation, review and delivery; excludes the retired generator."""
 from paleomasks.pipeline import main
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # Research-based prehistoric Earth masks — implementation plan
 
-Recorded: 2026-09-16. Updated during phase-6 catalog expansion on 2026-09-17.
+Recorded: 2026-09-16. Updated during phase-7 editing delivery on 2026-09-17.
 
 **Latest operator override:** [PHASE4-OPERATOR-DIRECTIVES.md](PHASE4-OPERATOR-DIRECTIVES.md)
 supersedes conflicting earlier requirements: empirical ice takes precedence
@@ -208,11 +208,25 @@ PostGIS is unavailable. No tracked app/site/source-pin changes;
 
 ### 7. Package and verify
 
-- [ ] Organize masks, provenance, and limitations by era.
-- [ ] Add meaningful tests for BCE/CE conversion across the absent year zero, negative BP, source-age offsets and endpoint handling; also test raster alignment, holes, ICE/LAKE filtering, source seams, coverage versus transparency and land/ocean classification.
-- [ ] Document reproducible generation commands and image-editor usage.
-- [ ] Run repository tests and production build after implementation changes, following `AGENTS.md`.
-- [ ] Deliver masks for external editing; defer artistic rendering and renewed application integration to a subsequent task.
+- [x] Organize masks, provenance, and limitations by era.
+- [x] Add meaningful tests for BCE/CE conversion across the absent year zero, negative BP, source-age offsets and endpoint handling; also test raster alignment, holes, ICE/LAKE filtering, source seams, coverage versus transparency and land/ocean classification.
+- [x] Document reproducible generation commands and image-editor usage.
+- [x] Run repository tests and production build after implementation changes, following `AGENTS.md`.
+- [x] Deliver masks for external editing; defer artistic rendering and renewed application integration to a subsequent task.
+
+Completed 2026-09-17 **as packaging of partial evidence, not scientific acceptance**.
+[PHASE7-DELIVERY.md](PHASE7-DELIVERY.md) records the portable ZIP, all 54 era
+guides, source credits, processing limits and verification. The new
+`package-delivery` and `validate-delivery` commands produce and verify
+`masks/phase7-delivery/`; [PHASE7-DELIVERY.json](PHASE7-DELIVERY.json) pins its
+archive and payload. All 15 PNGs preserve the phase-6 bytes and 70 audited drops;
+49 eras remain metadata-only. No rejected coastline candidate is included.
+[EDITOR-GUIDE.md](EDITOR-GUIDE.md) documents aligned layer import and alpha;
+[REPRODUCING-MASKS.md](REPRODUCING-MASKS.md) documents regeneration and offline
+verification. All 172 extracted-file checksums pass. 75 distinct Python tests
+and 64 Vitest tests pass. The standard build hits the known sandbox IPC error;
+equivalent export/typecheck/Vite stages pass using cached static data. No tracked
+app/site/source-pin changes. Phase 5's accepted-mask deliverable remains open.
 
 ## Research leads carried forward from the audit
 
@@ -231,9 +245,10 @@ These are starting points, not final dataset selections. Inspect original data a
 
 Read `AGENTS.md`, this plan, [PHASE6-EXPANSION.md](PHASE6-EXPANSION.md),
 [PHASE5-VALIDATION.md](PHASE5-VALIDATION.md) and the current
-[operator directives](PHASE4-OPERATOR-DIRECTIVES.md). Phase 7 can package the
-partial evidence with its limitations; it cannot label these masks scientifically
-accepted. To expand coastal coverage, first resolve the failed RGB marine
+[operator directives](PHASE4-OPERATOR-DIRECTIVES.md). Phase 7 has delivered the
+partial evidence with its limitations; see [PHASE7-DELIVERY.md](PHASE7-DELIVERY.md).
+It does not label these masks scientifically accepted. To expand coastal coverage,
+first resolve the failed RGB marine
 classification, regional edge disposition and source topology findings. Retain
 all 54 era dispositions, original source pins, three ice bounds, signed offsets
 and the single TS10 exception. Do not infer ocean from all negative terrain,

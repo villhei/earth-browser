@@ -42,6 +42,16 @@ class GeometryTests(unittest.TestCase):
         self.assertEqual(alpha[90, 190], 0)
         self.assertEqual(alpha[90, 210], 255)
 
+    def test_adjacent_sources_union_without_seam_gap_or_double_counting(self):
+        # Two regional sources meet within a pixel, with a slight overlap.
+        # Union before downsampling must equal a single continuous source.
+        west = ring(-2, -1, .25, 1)
+        east = ring(-.25, -1, 2, 1)
+        combined, _ = rasterize([[west], [east]], 360, 180, 8)
+        whole, _ = rasterize([[ring(-2, -1, 2, 1)]], 360, 180, 8)
+        np.testing.assert_array_equal(combined, whole)
+        self.assertEqual(np.count_nonzero(combined), 8)
+
     def test_antimeridian_crossing_preserves_holes(self):
         shell = unwrap_ring(ring(170, -20, -170, 20))
         hole = unwrap_ring(ring(175, -10, -175, 10))

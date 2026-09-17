@@ -22,6 +22,22 @@ interface Disposition {
 }
 
 describe("reconstruction mask contract", () => {
+  it("delivers all eras for editing while retaining unavailable science", async () => {
+    const { stdout } = await promisify(execFile)("python3", ["scripts/generate_reconstruction_masks.py", "package-delivery", "--help"])
+    expect(stdout).toContain("--expansion")
+    const delivery = JSON.parse(readFileSync(`${data}PHASE7-DELIVERY.json`, "utf8"))
+    expect(delivery.era_count).toBe(ERA_CATALOG.length)
+    expect(delivery.png_count).toBe(15)
+    expect(delivery.scientifically_accepted_era_count).toBe(0)
+    expect(delivery.coastal_mask_count).toBe(0)
+    expect(delivery.files.filter((file: { path: string }) => /^reconstruction-masks\/eras\/.*\.md$/.test(file.path)))
+      .toHaveLength(54)
+    for (const name of ["EDITOR-GUIDE.md", "REPRODUCING-MASKS.md", "requirements-masks.txt"]) {
+      const pin = delivery.files.find((file: { path: string }) => file.path === `reconstruction-masks/${name}`)
+      const bytes = readFileSync(`${data}${name}`)
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(pin.sha256)
+    }
+  })
   it("accounts for all eras without promoting failed coastlines or inventing temporal reuse", async () => {
     const { stdout } = await promisify(execFile)("python3", ["scripts/generate_reconstruction_masks.py", "expand-eras", "--help"])
     expect(stdout).toContain("--overlay-root")

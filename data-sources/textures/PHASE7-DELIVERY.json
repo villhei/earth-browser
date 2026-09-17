@@ -1,0 +1,883 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "external_editing_delivery",
+  "era_count": 54,
+  "partial_ice_era_count": 5,
+  "fully_unavailable_era_count": 49,
+  "scientifically_accepted_era_count": 0,
+  "coastal_mask_count": 0,
+  "png_count": 15,
+  "complete_global_reconstruction": false,
+  "archive": {
+    "path": "reconstruction-masks.zip",
+    "bytes": 2020308,
+    "sha256": "8752051d53a1268e363c360e7be823431b2ab07976f1e55b064816d7c970cf7e"
+  },
+  "files": [
+    {
+      "path": "reconstruction-masks/CHECKSUMS.sha256",
+      "bytes": 17983,
+      "sha256": "ea4a51b16878f0e6004a09ddc0b8deb88ef29f550df40ed723f7e2d0d52ba26b"
+    },
+    {
+      "path": "reconstruction-masks/EDITOR-GUIDE.md",
+      "bytes": 5027,
+      "sha256": "f890ebf805077f92ebd60373b2670923facc91dea745934a97515cf31f25ac79"
+    },
+    {
+      "path": "reconstruction-masks/README.md",
+      "bytes": 4161,
+      "sha256": "d235cac0a899be985a2bed91c2d305fc18eff7d8cebe2b88672ef8496c758d8e"
+    },
+    {
+      "path": "reconstruction-masks/REPRODUCING-MASKS.md",
+      "bytes": 4320,
+      "sha256": "297595d6d2a29656ec2a3e63cbe0a39044afaba773a5e06dfbef1134b55f79ed"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-100.md",
+      "bytes": 1889,
+      "sha256": "770e7a57e178b3556ba332f9c2c1ddfdc7a2c9d12b711d298c52551bc6948fc4"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1000.md",
+      "bytes": 1891,
+      "sha256": "c4bbea6273f514e1dfc4699a776a80923be1ffd23db9ce4b2aa9fb857b4d0b3c"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1100.md",
+      "bytes": 1891,
+      "sha256": "f94c2dfe176cdfc798eb5c0f045e5172ac3fb7eff5322d51197040eef9113ae3"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1200.md",
+      "bytes": 1891,
+      "sha256": "09951e34ff3a8981b44f4cb3c41bb07392b8663873049e5b80f6464b96aec8bd"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1279.md",
+      "bytes": 1891,
+      "sha256": "c768d299ef255bae497911e31ac8e2eb2b9e073fa5fc2be986eec523c21122e2"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1300.md",
+      "bytes": 1891,
+      "sha256": "5cd3a50dd78bd99071c989a02d2dc124c147f108a427597bb4650ddd84c956a7"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1400.md",
+      "bytes": 1891,
+      "sha256": "d469b6478f847f5cb86db6c5c3a7cc12d5e28b805c0401aed8f354d807f2c6ca"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1492.md",
+      "bytes": 1891,
+      "sha256": "4158940a08b47efa9095f45d7f70c3d57846f00b03fc14ad750caa56d1da31b7"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1500.md",
+      "bytes": 1891,
+      "sha256": "70a8c1b2763b8937860f2f9757d6b32a8abc462a7190779318afdd6bb93bf072"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1530.md",
+      "bytes": 1891,
+      "sha256": "01a061855008bbbca9fce9a9e685f48e105624a5a6268659f0386a9c714f9f56"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1600.md",
+      "bytes": 1891,
+      "sha256": "1064356838066a51253e419d2838df133c7e0e86514f8d44b6b0c830dda1ecea"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1650.md",
+      "bytes": 1891,
+      "sha256": "7ae80f386063047c902ff7eb8135720b1ba10f866e16e4dc2a783364300844d5"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1700.md",
+      "bytes": 1891,
+      "sha256": "aa5f3f62a477327ba552b427378dc730d6f7a03e7b89bc4ecf1592272e1258c7"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1715.md",
+      "bytes": 1891,
+      "sha256": "2bf0f3ed347159bffc2cbec3796b162418174fc8117e46dc105317e0551e22a2"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1783.md",
+      "bytes": 1891,
+      "sha256": "319ab008e0cc0affd323df8fb813151c045399cd3b7df3d4d65eb2fe0769e9b4"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1800.md",
+      "bytes": 1891,
+      "sha256": "2cd3250cbb562de7f86fe75fec281be037fca72bc11ab797ecfa2af0c1ae3ddc"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1815.md",
+      "bytes": 1891,
+      "sha256": "f1e9e86c76a803710444f2e1d5248bda2fa60d886d92f09f2e1b48967be6dfb6"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1878.md",
+      "bytes": 1890,
+      "sha256": "769eea33dfcf7be533521d6e1c8be3796fe35effb1a2ef9d6090cd57f7876dec"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1880.md",
+      "bytes": 1890,
+      "sha256": "ccd247e01f4b9659b2849d42b978ec6d8932b3c9aa419061b1c7ec661f3b29c0"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1900.md",
+      "bytes": 1890,
+      "sha256": "2cb5e0065c6d68797f9d44803613edb20912eac5d4b1123471e115d4bb65aed9"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1914.md",
+      "bytes": 1890,
+      "sha256": "1e9547b48cb0339d64dd27c29b98cca5f741742de1ae70cfae1f67dc868150f4"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1920.md",
+      "bytes": 1890,
+      "sha256": "1573b629f6086bb638eec88594008e93680530c3701002f4064de462235e4206"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1930.md",
+      "bytes": 1890,
+      "sha256": "79c9479b027d219f0eb7c95ca22b1e514ed5e70a69ad494ccdb754e3cfbaa228"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1938.md",
+      "bytes": 1890,
+      "sha256": "efe964b23b62083331ff0487bf5146273a8774700875c27ebbb95b0bbdb19826"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1945.md",
+      "bytes": 1889,
+      "sha256": "ea44ca9af79e891ddae265c12b7752632825879f7562382eed1d350e70768b1e"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1960.md",
+      "bytes": 1626,
+      "sha256": "31aee379c4577c1493401f586302cd6b461cf98b2a22e4c2b669ae239a828f81"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-1994.md",
+      "bytes": 1820,
+      "sha256": "a1a844f587af9fbd49c366dbbb20907f1a80903a06b149d5bfd2afa7d2302c6c"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-200.md",
+      "bytes": 1889,
+      "sha256": "cc711e1778cef547ab0169c37e6735fa0caea06700a3a4eb08bb3ac0caea9ec3"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-2000.md",
+      "bytes": 1820,
+      "sha256": "461a7c40fe4d12681d430c9b8a27b235972775a45b278a09d3c5b2f76eb9c62f"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-2010.md",
+      "bytes": 1820,
+      "sha256": "1f8aba8b31613cee246e909df9b3e6df19a09f9a1a2d66a992b933bede91973f"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-300.md",
+      "bytes": 1889,
+      "sha256": "b44bd1479d6a3ef96dd43c05f4a9883c7809f761cf0b8ae83e7bc7915acf1fb1"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-400.md",
+      "bytes": 1889,
+      "sha256": "b858a3c68bf79b6d0892348ef7025710c657e866f4dab4b3495fbd825dd85fa8"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-500.md",
+      "bytes": 1889,
+      "sha256": "7549209d896410a66605d6ef6c8e8252ad1753c76afc8260ce65f671960c3a0b"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-600.md",
+      "bytes": 1889,
+      "sha256": "d816424c5797b3160ce1ec087ab4c5506c3121690064871ffdf039ac3fc32085"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-700.md",
+      "bytes": 1889,
+      "sha256": "c7546aad6d3d1e368f1e2b9159352ea46974d0f8b54dff01fd595c54be73f468"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-800.md",
+      "bytes": 1889,
+      "sha256": "6386500f4a01717021e378693735664b42ac1cdda91a3ef18be5d778db6a4ff3"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-900.md",
+      "bytes": 1889,
+      "sha256": "5a2442ab51798d7574c0d9752b4b9e5c268ccc7f62e0637edf250cc460c426bb"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc1.md",
+      "bytes": 1888,
+      "sha256": "965f22bb155ec9780b8cfd6b0dc29d51001ad4a9fea7892ce05eb54d9cf28297"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc100.md",
+      "bytes": 1894,
+      "sha256": "cf5e0bbe10b80406d2de7704873a8e9ab7896f11fe3a6f148afa5104fc9ce3c5"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc1000.md",
+      "bytes": 1898,
+      "sha256": "bf847b8aec0a2e869a48f14c5c3cc3f80f15e8dfae1e9869c08e323e2960f08b"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc10000.md",
+      "bytes": 3414,
+      "sha256": "f41a8df4fe9a0b445c5e7feeb80f247e4f97e224e118cd18ce4910aabe5c509a"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc123000.md",
+      "bytes": 1924,
+      "sha256": "f964d64fa818d013092b0ebe0fdb6c254dc52438c2dc6c6b30389dcb124988bc"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc1500.md",
+      "bytes": 1898,
+      "sha256": "1a86c818378e14a4b17f54901bf983045d376ff2ec9894a1de8bc7c6741b086e"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc200.md",
+      "bytes": 1894,
+      "sha256": "9c08a71c68c49f5085cf0708e8c579dba2e729ba44164a04bfd40e8d3b484a62"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc2000.md",
+      "bytes": 1898,
+      "sha256": "09c2baabb9c8f1a8671d50df94994ffac983fa4bd1380aaef8b2a9316bcd57e9"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc300.md",
+      "bytes": 1894,
+      "sha256": "f3a3e7050b59adfd044ba5f37f90ac7c270e6738c69d0e48c751b9fe634e2237"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc3000.md",
+      "bytes": 2760,
+      "sha256": "c6cb60800021dcf9391dba415037d549ddd686db09bd74a158df357b448ddb07"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc323.md",
+      "bytes": 1894,
+      "sha256": "59811b7f1e8a33237d3cc35e0edc01838b0f789f015f5efebaddca974f906380"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc400.md",
+      "bytes": 1894,
+      "sha256": "97bfc5e9c6408d4250614f45f7414489b14ffd49ceb265d7455bf57a35591ae3"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc4000.md",
+      "bytes": 2876,
+      "sha256": "8d7d7dee574c5ea58f32678215d304a8532ff4cd1f00071ef1b1c7bd8ef8eb1e"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc500.md",
+      "bytes": 1894,
+      "sha256": "360f4e52e9bb22dc7936758f2162c23af2fe65a4b5f92efb692a0c44d7351a32"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc5000.md",
+      "bytes": 2760,
+      "sha256": "4993784172c1ffcdee1b432c5f2638daf7e67a33644ce0aac9bd8a206c226c54"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc700.md",
+      "bytes": 1894,
+      "sha256": "ab286af2c93e5d02a3853f0de7ce94d63da348ef84e8966dd6c762838d916b21"
+    },
+    {
+      "path": "reconstruction-masks/eras/world-bc8000.md",
+      "bytes": 3298,
+      "sha256": "baf5f8834af10a28b5d107ebdcfd60d81d0b9ec2b1d50bf7ed0ef470c53a020b"
+    },
+    {
+      "path": "reconstruction-masks/evidence/catalog.json",
+      "bytes": 15641,
+      "sha256": "c14f9adf03541c6254f3be4b26195253b2962d72ea5eeada8e88c7d2e9cd1233"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-100/manifest.json",
+      "bytes": 3086,
+      "sha256": "b1fe039a520eaee7e509c189c4691a1a9dccaf5952e3648efbdc7b6b9bbf429f"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1000/manifest.json",
+      "bytes": 3087,
+      "sha256": "61f2e54d5c9a292f6a785d3989e69c60123e72e268ee7f0cbb9e87f39bcb195b"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1100/manifest.json",
+      "bytes": 3087,
+      "sha256": "cc9bfe36fdd6b43b9f1ab04db982e33b9478ba0071d0c7a21421e805800f6c43"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1200/manifest.json",
+      "bytes": 3087,
+      "sha256": "0a926d247630be5da2e0c94a9074ca35c94d0c3edd32a15f1be92c9bbd2c3639"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1279/manifest.json",
+      "bytes": 3087,
+      "sha256": "137ce37f163f354c26d1d1876b4e010bc84fbe54d2ac97b580db23b9dfcc2e4d"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1300/manifest.json",
+      "bytes": 3087,
+      "sha256": "2f2f2e34570c9ab7b356918e7a303656e9048ed0bce74ac491974b771e0702ce"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1400/manifest.json",
+      "bytes": 3087,
+      "sha256": "400b03ebfba2c0b1c4437a7d7ac5c47ecd65d8f667b55647eeb91a3d39b052ac"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1492/manifest.json",
+      "bytes": 3087,
+      "sha256": "4ca06a710b057bf8e6516e31f2d2a33b84b9434b6899bf73f07d91433cd750e6"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1500/manifest.json",
+      "bytes": 3087,
+      "sha256": "76c453d283c696acc93ee0ad96c65f70d1b15e37917449d8dcfb924492e71db0"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1530/manifest.json",
+      "bytes": 3087,
+      "sha256": "d6020e471f26a6b29be8f96867788d872c3a9912562c58fe9403e0ff06449450"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1600/manifest.json",
+      "bytes": 3087,
+      "sha256": "dee3f1c82bee3f99db48ec469553a11efbbd03341000de3430cda33d50feba9f"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1650/manifest.json",
+      "bytes": 3087,
+      "sha256": "aea3ca784abe6e4e282d8511a3b7676cc0a12369efae771918dbded1a2a2a1e8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1700/manifest.json",
+      "bytes": 3087,
+      "sha256": "c3c8b37b3c4f51277b6b3c439907404bde679fd623327516e5237a46830d1fb8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1715/manifest.json",
+      "bytes": 3087,
+      "sha256": "ea5527d73625e4b29ce0ed1e5f1b0b1367c3f0e7ccbc9143df9017d18ddfc8f2"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1783/manifest.json",
+      "bytes": 3087,
+      "sha256": "2d9d8e71d54bd5ee58cadb844476a128ed3b9769b257c64db677898643a5c331"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1800/manifest.json",
+      "bytes": 3087,
+      "sha256": "ee71470422f7e8c12e68cf26c3aabf521b93f230fbe638fb84b4405b3ef7a977"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1815/manifest.json",
+      "bytes": 3087,
+      "sha256": "7e1a0cb863d940b4aae439914947158ad9edb5f852a75814ab29f7f940f31dca"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1878/manifest.json",
+      "bytes": 3086,
+      "sha256": "1967992653d6ec2332bbe878717fcaca7c3bafc82e79f5cd90f891a7e4ff3f16"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1880/manifest.json",
+      "bytes": 3086,
+      "sha256": "e5f6e239e63da349073849487b0e1d9c0e907fed8035e4e006a51b5ecca538c3"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1900/manifest.json",
+      "bytes": 3086,
+      "sha256": "f71ea84c5d54ddda030514dedaf96a4a1d094e937316876379910e985f6a69b7"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1914/manifest.json",
+      "bytes": 3086,
+      "sha256": "e60012fd0da6ebe6919c3de325139794e9a7d0c9d123371f4f140859be261f3e"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1920/manifest.json",
+      "bytes": 3086,
+      "sha256": "1cf174038777fd5f0139260b598a18c7cee5c7357a73367328ecae4b6d641a57"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1930/manifest.json",
+      "bytes": 3086,
+      "sha256": "9ee0e74dd65e50b56f33f5d34d130b1dae0855e256664086509b84cddc7e8b3a"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1938/manifest.json",
+      "bytes": 3086,
+      "sha256": "7f0f99ead11267b32e013fbe0132f8d9f9cc5bbcc3b92088ed8fd36daf7e13e0"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1945/manifest.json",
+      "bytes": 3085,
+      "sha256": "195f4ab85d46d608c266e8021d5090cd1c46b9c59d81f0fcb2ac08e97f0612f8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1960/manifest.json",
+      "bytes": 2822,
+      "sha256": "ded5e593179d70f53df8bc0460f876ace7a10dbaf0a3d9b8b1784a6976ae60a1"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-1994/manifest.json",
+      "bytes": 3016,
+      "sha256": "95bb5d041fd27ae6d46eb7f985f5da3c1f542809d7089bfe2d9219f8a30641f5"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-200/manifest.json",
+      "bytes": 3086,
+      "sha256": "6422ff227ed423b02fa1fca6759e138a756488230e56e5db05fe8ddc029b1fef"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-2000/manifest.json",
+      "bytes": 3016,
+      "sha256": "e06ad7200eaee501669270b76571595b1995b10aebe7f60a02fe0a4569ed5d49"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-2010/manifest.json",
+      "bytes": 3016,
+      "sha256": "75d03a268e8f16ac3d3b4d90a1af5bed2c5bda1d8bc7ae03d4b281d738cbac09"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-300/manifest.json",
+      "bytes": 3086,
+      "sha256": "0729b95dfc1979493c1583ec529e248f985bc6d5cc21a104ed0048106c693bd4"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-400/manifest.json",
+      "bytes": 3086,
+      "sha256": "d31b9eff4a910d5ff592092e0c52b429863ac5739248f389e00e8dbdd9660fa1"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-500/manifest.json",
+      "bytes": 3086,
+      "sha256": "d12b48ff52a8cfca633d2ac83ff2f72528615aa3c60d30605775bed75d9e4c4f"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-600/manifest.json",
+      "bytes": 3086,
+      "sha256": "11c03d3dda665a9c7c8059ebf94a980b4f3e2f3eb81644cecf2af9ddb777ecb8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-700/manifest.json",
+      "bytes": 3086,
+      "sha256": "dfc905ca3fecec134ecf70914402326763e2f907363f282dd3909b765e44807f"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-800/manifest.json",
+      "bytes": 3086,
+      "sha256": "d213be1d2daf0dec89b44a2a13aef5810db102da0704e267b0e436202d748c61"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-900/manifest.json",
+      "bytes": 3086,
+      "sha256": "5f68427472546672486d530b7dfa5c9c2b0739f457870da7d9daaec1aa332433"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc1/manifest.json",
+      "bytes": 3085,
+      "sha256": "47bc492942ce26e2fd23fb0225f2bf6c147893e00b8631cc22373b1f4b2dc94e"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc100/manifest.json",
+      "bytes": 3089,
+      "sha256": "edbb2d180c1e0d326f44d76f82033c9c80d5f12d2218121775ed368fedd84880"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc1000/manifest.json",
+      "bytes": 3091,
+      "sha256": "5e5f04875d998b0efae18c3aaf3d0a5bec47dd40491750662580a400313aae53"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/diagnostics/ice-maximum.png",
+      "bytes": 64937,
+      "sha256": "6d69de52dda8d220a957f45ab26b13904349bdb0c9f9ed5997b6e14434aebe37"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/diagnostics/ice-minimum.png",
+      "bytes": 57414,
+      "sha256": "e90438a3a69504112a91d0731e6e4694a85917c9728f9356d81e87b861a84b76"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/ice.png",
+      "bytes": 63203,
+      "sha256": "0b515e4acdfe42cdcc960efa5dba194c43ef13164b4b33a1e9a75e04feb33f64"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/manifest.json",
+      "bytes": 24159,
+      "sha256": "8b9477dd993c922bf21124108a21835b7b2183a0e71fe1a6ac0be564ddc4d9e2"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/ice/provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc10000/manifest.json",
+      "bytes": 4589,
+      "sha256": "353dc46af59c8a3cb27b7e7155d293a7d61ebad13faf3a78df454202666776a8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc123000/manifest.json",
+      "bytes": 3115,
+      "sha256": "556866069af3710743d3194a8241e911d28b7bc93af3afbd83875e0865e6a03d"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc1500/manifest.json",
+      "bytes": 3091,
+      "sha256": "25bd1f20d67b764dea1d730219820fc4ea0f3ec7bf872afb4e7201dd12c5b4e9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc200/manifest.json",
+      "bytes": 3089,
+      "sha256": "7b44f660b39fb687445455b5517c2be3f7f7bc4a372ec29fe850a3f20d64feec"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc2000/manifest.json",
+      "bytes": 3091,
+      "sha256": "fe174534f8a8134b977b1929e31c317b6d9df96b305f9971d71b46f22d4ebcca"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc300/manifest.json",
+      "bytes": 3089,
+      "sha256": "1393547de824f517cba88f87c584c29a3ea14831317f65737acc669553cb4e69"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/diagnostics/ice-maximum.png",
+      "bytes": 53037,
+      "sha256": "df96bd80f06c2e70626356ecdb7d84010e475dab73a100c903c812ecf33060db"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/diagnostics/ice-minimum.png",
+      "bytes": 53007,
+      "sha256": "0ffd0816be8d739990568a5e454a52c9c9bede34490a750c047986fef917ebbb"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/ice.png",
+      "bytes": 54364,
+      "sha256": "2f9ec88e112066ab56bf9996557b8355bd10af93ebab6ec22716be4f83df10a8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/manifest.json",
+      "bytes": 31027,
+      "sha256": "9fd72784df8c1f22031d3b15756ec587ce59b745a8b6815efd53b410d5c56b2c"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/ice/provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc3000/manifest.json",
+      "bytes": 4120,
+      "sha256": "ad25a97a9ee5a3657b739ce7e256a8828639c30b5b960eacf37e2ed09571dd09"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc323/manifest.json",
+      "bytes": 3089,
+      "sha256": "73decf0895f8c714ac0a02cd62528f1764ae537978ad132e1e41ed4c7be9a57e"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc400/manifest.json",
+      "bytes": 3089,
+      "sha256": "ff346bc7733372144c02687a1ced4c4c00bf76cb257fc4fd1d006277528266b5"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/diagnostics/ice-maximum.png",
+      "bytes": 54296,
+      "sha256": "48e35b48f566c5e411e146ba38a446624d6eea4308a90382d69300107be98838"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/diagnostics/ice-minimum.png",
+      "bytes": 51826,
+      "sha256": "08dc7305c53fb26c9eaa6df4dee43c6e120237c3f9c07d1542bdf7fa924c6b6d"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/ice.png",
+      "bytes": 52777,
+      "sha256": "7dec96106a8b3c3cf7b63f9a6bd0f9f6d2b9576992cb50cb2d4900b3cf07b865"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/manifest.json",
+      "bytes": 29916,
+      "sha256": "323b6645f44f1fb9275fb56daa54d388ee1781bebfef9964dd559dc6d9669f24"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/ice/provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc4000/manifest.json",
+      "bytes": 4241,
+      "sha256": "4c2c79c2967862598699fc068f038724842573e108335251d9c29c6206eb4e35"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc500/manifest.json",
+      "bytes": 3089,
+      "sha256": "baa8f82955fba210bbe95c18d7053983f2e100530f0b2a51855018f933c02d74"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/diagnostics/ice-maximum.png",
+      "bytes": 57687,
+      "sha256": "b8a31ab9d030d86fb63ad8d1abaa32bf82f431fbb4ca02b884497ae749e23171"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/diagnostics/ice-minimum.png",
+      "bytes": 51212,
+      "sha256": "0083f22b22c2f60f66fdea28df7d60e74a7481677adf2b11222db55f7bc64e9d"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/ice.png",
+      "bytes": 54334,
+      "sha256": "fef7e707ce35022562c5d18beca93abb363c40d71357beff4b6dfa44751ce4a9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/manifest.json",
+      "bytes": 24081,
+      "sha256": "10bbfccb2220be677077bccd2f32cd25bf7efa30eaf3a456a49dc6e57bc692dd"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/ice/provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc5000/manifest.json",
+      "bytes": 4120,
+      "sha256": "1c3eff6330f1ddc282280aadcca3518f0132a69bc46b09fd3e1cebfb2a6f20d4"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc700/manifest.json",
+      "bytes": 3089,
+      "sha256": "06cd74ddae781ec643cbd7a41b9976c29eb166fb377228b1abba32a4970b4e15"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/diagnostics/ice-maximum.png",
+      "bytes": 57210,
+      "sha256": "4f29b4780a720468f78149cf26efaa50e4d9e46abef899b5f99c8fd5dee1a926"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/diagnostics/ice-minimum.png",
+      "bytes": 53857,
+      "sha256": "cbd99c28db7817391eec7797e97b7f3c4f68ea2b86b752b65d1272df3b05be5b"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/ice.png",
+      "bytes": 53693,
+      "sha256": "26692412a847cc5ab3aa51bca4dcdf462056581cccefba9c4c4993cd5413d769"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/manifest.json",
+      "bytes": 22979,
+      "sha256": "e2a93f36f48d499e25297bf88e4048b37e72ba90605e64d80897802e2f5b0f50"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/ice/provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "reconstruction-masks/evidence/eras/world-bc8000/manifest.json",
+      "bytes": 4469,
+      "sha256": "ed67f07fbba85f5e18808f3e475b8d03b67d74987c530f5a367c14e2fb910920"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/PHASE5-EVIDENCE.json",
+      "bytes": 5462,
+      "sha256": "fd2b295ba0019bc79a96776e9f8c92aab85e41ee3625bb9bf3aa0cef0432ff22"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/PHASE5-VALIDATION.json",
+      "bytes": 22799,
+      "sha256": "25f40a7f9c26c7666a0e5dd24cda56fd99f39ba85284d1f898d7426c2c0d4068"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/PHASE5-VALIDATION.md",
+      "bytes": 12305,
+      "sha256": "64f68708d378904fb1433c91de56dc07e6619de715f6f66060e72f400ab3aa7e"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "reconstruction-masks/evidence/provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "reconstruction-masks/requirements-masks.txt",
+      "bytes": 198,
+      "sha256": "1bbb528f96edd80856ee88fe776599778012b6c5d13ce0665da6ef6e2475ce79"
+    }
+  ]
+}
