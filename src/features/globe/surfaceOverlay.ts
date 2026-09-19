@@ -25,6 +25,19 @@ function loadImage(url: string): Promise<HTMLImageElement> {
   })
 }
 
+/** Blend before GPU filtering so transparent RGB cannot produce a coastline halo. */
+export async function createSurfaceUnderlayCanvas(baseUrl: string, underlayUrl: string): Promise<HTMLCanvasElement> {
+  const [base, underlay] = await Promise.all([loadImage(baseUrl), loadImage(underlayUrl)])
+  const canvas = document.createElement("canvas")
+  canvas.width = Math.max(base.naturalWidth, underlay.naturalWidth)
+  canvas.height = Math.max(base.naturalHeight, underlay.naturalHeight)
+  const context = canvas.getContext("2d")
+  if (!context) throw new Error("Canvas is unavailable for the surface underlay")
+  context.drawImage(base, 0, 0, canvas.width, canvas.height)
+  context.drawImage(underlay, 0, 0, canvas.width, canvas.height)
+  return canvas
+}
+
 /** Reproject only the decorative color; preserve the full-resolution coverage grid. */
 export async function createSurfaceOverlayCanvas(overlay: SurfaceOverlay): Promise<HTMLCanvasElement> {
   const [color, coverage] = await Promise.all([

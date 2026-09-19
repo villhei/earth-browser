@@ -7,7 +7,7 @@ interface ControlsOverlayProps {
   onChangeConfig: (config: GlobeConfig) => void
   onOpenAttribution?: () => void
   iceOverlayAvailable?: boolean
-  coastlinePrototypeAvailable?: boolean
+  terrainOverlayAvailable?: boolean
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
@@ -15,13 +15,14 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onChangeConfig,
   onOpenAttribution,
   iceOverlayAvailable = false,
-  coastlinePrototypeAvailable = false,
+  terrainOverlayAvailable = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const labelSize = config.labelSize ?? 14
   const labelTolerance = config.labelTolerance ?? 10
-  const canShowCoastlinePrototype = coastlinePrototypeAvailable && config.texture === GlobeTexture.EARTH_BLUE_MARBLE
+  const canShowTerrainOverlay = terrainOverlayAvailable && config.texture === GlobeTexture.EARTH_BLUE_MARBLE
+  const terrainOverlayEnabled = canShowTerrainOverlay && config.showTerrainOverlay !== false
 
   return (
     <div className="controls-overlay">
@@ -70,22 +71,18 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
 
           <div className="controls-group">
             <div className="controls-label-row">
-              <span className="controls-label" id="coastline-prototype-label">Coastline prototype</span>
+              <span className="controls-label" id="terrain-overlay-label">Terrain mask</span>
               <button
-                className={`controls-pill ${canShowCoastlinePrototype && config.showCoastlinePrototype ? "active" : ""}`}
-                aria-labelledby="coastline-prototype-label"
-                aria-pressed={canShowCoastlinePrototype && !!config.showCoastlinePrototype}
-                disabled={!canShowCoastlinePrototype}
-                onClick={() => onChangeConfig({ ...config, showCoastlinePrototype: !config.showCoastlinePrototype })}
+                className={`controls-pill ${terrainOverlayEnabled ? "active" : ""}`}
+                aria-labelledby="terrain-overlay-label"
+                aria-pressed={terrainOverlayEnabled}
+                disabled={!canShowTerrainOverlay}
+                onClick={() => onChangeConfig({ ...config, showTerrainOverlay: config.showTerrainOverlay === false })}
               >
-                {canShowCoastlinePrototype && config.showCoastlinePrototype ? "Enabled" : "Disabled"}
+                {terrainOverlayEnabled ? "Enabled" : "Disabled"}
               </button>
             </div>
-            <p className="controls-help">
-              {!canShowCoastlinePrototype
-                ? "Available with Blue Marble at 10,000 BCE."
-                : "Assumed sea level −55 m · illustrative coastlines, not a validated reconstruction."}
-            </p>
+            <p className="controls-help">Coastal terrain for 10,000, 8,000 and 5,000 BCE with Blue Marble.</p>
           </div>
 
           <div className="controls-group">

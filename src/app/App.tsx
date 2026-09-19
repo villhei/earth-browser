@@ -13,7 +13,7 @@ import { CountryDrawer } from "../components/CountryDrawer"
 import { ControlsOverlay } from "../components/ControlsOverlay"
 import { Attribution } from "../components/Attribution"
 import { getIceOverlay } from "../earthTextures/ice"
-import { getCoastlinePrototype, getCoastlineTextureOverride } from "../earthTextures/coasts"
+import { getTerrainOverlayUrl } from "../earthTextures/coasts"
 import { PuffLoader } from "react-spinners"
 import "./App.css"
 
@@ -34,7 +34,7 @@ export const App: React.FC = () => {
 
     texture: GlobeTexture.EARTH_BLUE_MARBLE,
     showIceOverlay: true,
-    showCoastlinePrototype: false,
+    showTerrainOverlay: true,
     layerAltitude: 0.002,
     elevationScale: 0.3,
     opacity: 0.55,
@@ -119,7 +119,7 @@ export const App: React.FC = () => {
             data={geoJsonData}
             isLoading={isLoadingGeoJson}
             texture={globeConfig.texture}
-            textureImageUrl={getCoastlineTextureOverride(currentEra?.slug, globeConfig.texture, globeConfig.showCoastlinePrototype)}
+            surfaceUnderlayUrl={getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture, globeConfig.showTerrainOverlay)}
             surfaceOverlay={globeConfig.showIceOverlay && globeConfig.texture === GlobeTexture.EARTH_BLUE_MARBLE ? iceOverlay : undefined}
             layerAltitude={globeConfig.layerAltitude}
             elevationScale={globeConfig.elevationScale}
@@ -140,7 +140,7 @@ export const App: React.FC = () => {
         <ControlsOverlay
           config={globeConfig}
           iceOverlayAvailable={!!iceOverlay}
-          coastlinePrototypeAvailable={!!getCoastlinePrototype(currentEra?.slug)}
+          terrainOverlayAvailable={!!getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture)}
           onChangeConfig={setGlobeConfig}
           onOpenAttribution={() => setIsAttributionOpen(true)}
         />

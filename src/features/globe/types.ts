@@ -29,6 +29,9 @@ export interface HistoricalGlobeProps {
   /** Optional equirectangular layer rendered above the globe and below territories. */
   surfaceOverlay?: SurfaceOverlay
 
+  /** Optional RGBA equirectangular layer above the base and below surfaceOverlay. */
+  surfaceUnderlayUrl?: string
+
   /**
    * Extrusion / altitude of country boundary polygons. Defaults to 0.002.
    */

@@ -62,7 +62,7 @@ export interface GlobeConfig {
   layerAltitude: number
   texture: GlobeTexture
   showIceOverlay?: boolean
-  showCoastlinePrototype?: boolean
+  showTerrainOverlay?: boolean
   sideColor: string
   strokeColor: string
   opacity: number

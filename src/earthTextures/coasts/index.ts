@@ -1,17 +1,21 @@
-import prototype from "./world-bc10000-prototype.jpg"
+import terrain10000 from "./earth-blue-marble-terrain-mask-bc10000.png"
+import terrain8000 from "./earth-blue-marble-terrain-mask-bc8000.png"
+import terrain5000 from "./earth-blue-marble-terrain-mask-bc5000.png"
 import { GlobeTexture } from "../../types"
 
-/** This illustrative scenario is offered only in its explicit preview era. */
-export function getCoastlinePrototype(eraSlug?: string): string | undefined {
-  return eraSlug === "world-bc10000" ? prototype : undefined
+const terrainOverlays: Record<string, string> = {
+  "world-bc10000": terrain10000,
+  "world-bc8000": terrain8000,
+  "world-bc5000": terrain5000,
 }
 
-export function getCoastlineTextureOverride(
+/** The supplied terrain artwork applies only to the matching Blue Marble era. */
+export function getTerrainOverlayUrl(
   eraSlug: string | undefined,
   texture: GlobeTexture,
-  enabled = false,
+  enabled = true,
 ): string | undefined {
-  return enabled && texture === GlobeTexture.EARTH_BLUE_MARBLE
-    ? getCoastlinePrototype(eraSlug)
+  return enabled && texture === GlobeTexture.EARTH_BLUE_MARBLE && eraSlug && Object.hasOwn(terrainOverlays, eraSlug)
+    ? terrainOverlays[eraSlug]
     : undefined
 }

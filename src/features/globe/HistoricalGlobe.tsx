@@ -6,7 +6,11 @@ import alpha from "color-alpha"
 import { PuffLoader } from "react-spinners"
 import { HistoricalGlobeProps, GlobeTexture } from "./types"
 import { getGlobeTextureUrl } from "./textures"
-import { createSurfaceOverlayCanvas, createSurfaceOverlayGeometry } from "./surfaceOverlay"
+import {
+  createSurfaceOverlayCanvas,
+  createSurfaceOverlayGeometry,
+  createSurfaceUnderlayCanvas,
+} from "./surfaceOverlay"
 import {
   getCountryColor,
   HIGHLIGHT_COLOR,
@@ -39,6 +43,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   texture = GlobeTexture.EARTH_BLUE_MARBLE,
   textureImageUrl,
   surfaceOverlay,
+  surfaceUnderlayUrl,
   layerAltitude = DEFAULT_ALTITUDE,
   elevationScale = DEFAULT_ELEVATION_SCALE,
   opacity = DEFAULT_OPACITY,
@@ -124,7 +129,11 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const dpr = Math.min(window.devicePixelRatio || 1, 2)
 
     // WebGL Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" })
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      alpha: true,
+      powerPreference: "high-performance",
+    })
     renderer.setPixelRatio(dpr)
     renderer.setSize(width || window.innerWidth, height || window.innerHeight)
     canvas.appendChild(renderer.domElement)
@@ -142,13 +151,18 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     globeRef.current = globe
     globe.globeImageUrl(textureImageUrl ?? getGlobeTextureUrl(texture))
     globe.polygonCapCurvatureResolution(polygonCapCurvatureResolution)
-    globe.rendererSize(new THREE.Vector2(width || window.innerWidth, height || window.innerHeight))
+    globe.rendererSize(
+      new THREE.Vector2(
+        width || window.innerWidth,
+        height || window.innerHeight,
+      ),
+    )
 
     // Scene & Lights
     const scene = new THREE.Scene()
     scene.add(globe)
-    scene.add(new THREE.AmbientLight(0xffffff, 0.75))
-    const dirLight = new THREE.DirectionalLight(0xffffff, 0.85)
+    scene.add(new THREE.AmbientLight(0xffffff, 3))
+    const dirLight = new THREE.DirectionalLight(0xffffff, 1)
     dirLight.position.set(200, 100, 200)
     scene.add(dirLight)
 
@@ -173,7 +187,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     controls.maxDistance = 700
 
     // Bounding sphere for fast raycast early exit (avoiding deep mesh traversal on space misses)
-    const globeBoundingSphere = new THREE.Sphere(new THREE.Vector3(0, 0, 0), 100 * 1.06)
+    const globeBoundingSphere = new THREE.Sphere(
+      new THREE.Vector3(0, 0, 0),
+      100 * 1.06,
+    )
 
     // Raycaster for 3D polygon pointer interactions
     const raycaster = new THREE.Raycaster()
@@ -207,7 +224,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         if (current && current.__data) {
           const raw = current.__data
           const feat = (raw.data || raw) as GeoJSONFeature
-          if (feat && (feat.geometry || feat.properties || feat.type === "Feature")) {
+          if (
+            feat &&
+            (feat.geometry || feat.properties || feat.type === "Feature")
+          ) {
             return {
               feature: feat,
               point: hit.point,
@@ -301,7 +321,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
 
         // 2. Fall back to 3D geometry click
         const hit = getIntersectedFeature(e.clientX, e.clientY)
-        if (onFeatureClickRef.current) onFeatureClickRef.current(hit?.feature || null)
+        if (onFeatureClickRef.current)
+          onFeatureClickRef.current(hit?.feature || null)
       }
     }
 
@@ -358,8 +379,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           if (curHovId !== nextHovId) {
             hoveredFeatureRef.current = nextHov
             setHoveredFeature(nextHov)
-            if (onFeatureHoverRef.current)
-              onFeatureHoverRef.current(nextHov)
+            if (onFeatureHoverRef.current) onFeatureHoverRef.current(nextHov)
           }
         } else {
           // 2. Fall back to 3D geometry hit
@@ -380,15 +400,12 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
               ? String(curHov.id)
               : curHov?.properties?.name || null
           const nextHovId =
-            feat?.id != null
-              ? String(feat.id)
-              : feat?.properties?.name || null
+            feat?.id != null ? String(feat.id) : feat?.properties?.name || null
 
           if (curHovId !== nextHovId) {
             hoveredFeatureRef.current = feat
             setHoveredFeature(feat)
-            if (onFeatureHoverRef.current)
-              onFeatureHoverRef.current(feat)
+            if (onFeatureHoverRef.current) onFeatureHoverRef.current(feat)
           }
           container.style.cursor = feat ? "pointer" : "grab"
         }
@@ -453,7 +470,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           const c2d = labelsCanvasRef.current
           const ctx = c2d.getContext("2d")
           if (ctx) {
-            const shouldRender = (curShowLabels || curHoveredId) && curFeatures.length > 0
+            const shouldRender =
+              (curShowLabels || curHoveredId) && curFeatures.length > 0
             if (shouldRender) {
               const placed = computePlacedLabels(
                 curFeatures,
@@ -547,45 +565,76 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   // 2. Texture update (zero WebGL context teardown!)
   useEffect(() => {
     if (globeRef.current) {
-      globeRef.current.globeImageUrl(textureImageUrl ?? getGlobeTextureUrl(texture))
+      globeRef.current.globeImageUrl(
+        textureImageUrl ?? getGlobeTextureUrl(texture),
+      )
     }
   }, [texture, textureImageUrl])
 
-  // Independent surface layer: era changes never recreate the WebGL context.
+  // Independent surface layers: era changes never recreate the WebGL context.
   useEffect(() => {
     const globe = globeRef.current
-    if (!globe || !surfaceOverlay) return
+    if (!globe || (!surfaceOverlay && !surfaceUnderlayUrl)) return
     let cancelled = false
-    let mesh: THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMaterial> | undefined
-    createSurfaceOverlayCanvas(surfaceOverlay).then((canvas) => {
-      if (cancelled) return
-      const map = new THREE.CanvasTexture(canvas)
+    const meshes: THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMaterial>[] =
+      []
+    const addLayer = (map: THREE.Texture, renderOrder: number) => {
+      if (cancelled) {
+        map.dispose()
+        return
+      }
       map.colorSpace = THREE.SRGBColorSpace
-      const geometry = createSurfaceOverlayGeometry(globe.getGlobeRadius(), globe.globeCurvatureResolution())
-      const material = new THREE.MeshPhongMaterial({ map, transparent: true, depthWrite: false })
-      mesh = new THREE.Mesh(geometry, material)
+      const geometry = createSurfaceOverlayGeometry(
+        globe.getGlobeRadius(),
+        globe.globeCurvatureResolution(),
+      )
+      // Both layers share the safe surface radius. Explicit draw order and no
+      // depth writes keep ice above terrain without coplanar depth conflicts.
+      const material = new THREE.MeshPhongMaterial({
+        map,
+        transparent: true,
+        depthWrite: false,
+      })
+      const mesh = new THREE.Mesh(geometry, material)
       mesh.rotation.y = -Math.PI / 2
-      mesh.renderOrder = -1
+      mesh.renderOrder = renderOrder
       mesh.raycast = () => {} // Surface decoration must not intercept country picking.
+      meshes.push(mesh)
       globe.add(mesh)
-    }).catch((error) => {
+    }
+    const onError = (error: unknown) => {
       if (!cancelled) console.error("Unable to display surface overlay", error)
-    })
+    }
+    if (surfaceUnderlayUrl) {
+      createSurfaceUnderlayCanvas(
+        textureImageUrl ?? getGlobeTextureUrl(texture),
+        surfaceUnderlayUrl,
+      )
+        .then((canvas) => addLayer(new THREE.CanvasTexture(canvas), -2))
+        .catch(onError)
+    }
+    if (surfaceOverlay) {
+      createSurfaceOverlayCanvas(surfaceOverlay)
+        .then((canvas) => addLayer(new THREE.CanvasTexture(canvas), -1))
+        .catch(onError)
+    }
     return () => {
       cancelled = true
-      if (mesh) {
+      for (const mesh of meshes) {
         globe.remove(mesh)
         mesh.material.map?.dispose()
         mesh.material.dispose()
         mesh.geometry.dispose()
       }
     }
-  }, [surfaceOverlay])
+  }, [surfaceOverlay, surfaceUnderlayUrl, texture, textureImageUrl])
 
   // 3. Polygon Cap Curvature Resolution update
   useEffect(() => {
     if (globeRef.current) {
-      globeRef.current.polygonCapCurvatureResolution(polygonCapCurvatureResolution)
+      globeRef.current.polygonCapCurvatureResolution(
+        polygonCapCurvatureResolution,
+      )
     }
   }, [polygonCapCurvatureResolution])
 
