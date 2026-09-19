@@ -82,7 +82,7 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
                 {terrainOverlayEnabled ? "Enabled" : "Disabled"}
               </button>
             </div>
-            <p className="controls-help">Coastal terrain for 10,000, 8,000 and 5,000 BCE with Blue Marble.</p>
+            <p className="controls-help">Coastal terrain for 123,000, 10,000, 8,000 and 5,000 BCE with Blue Marble.</p>
           </div>
 
           <div className="controls-group">

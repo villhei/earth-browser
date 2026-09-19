@@ -1,9 +1,11 @@
+import terrain123000 from "./earth-blue-marble-terrain-mask-bc123000.png"
 import terrain10000 from "./earth-blue-marble-terrain-mask-bc10000.png"
 import terrain8000 from "./earth-blue-marble-terrain-mask-bc8000.png"
 import terrain5000 from "./earth-blue-marble-terrain-mask-bc5000.png"
 import { GlobeTexture } from "../../types"
 
 const terrainOverlays: Record<string, string> = {
+  "world-bc123000": terrain123000,
   "world-bc10000": terrain10000,
   "world-bc8000": terrain8000,
   "world-bc5000": terrain5000,

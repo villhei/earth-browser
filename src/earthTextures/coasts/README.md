@@ -1,9 +1,10 @@
 # Blue Marble terrain masks
 
-The supplied `earth-blue-marble-terrain-mask-bc10000.png`,
+The supplied `earth-blue-marble-terrain-mask-bc123000.png`,
+`earth-blue-marble-terrain-mask-bc10000.png`,
 `earth-blue-marble-terrain-mask-bc8000.png` and
 `earth-blue-marble-terrain-mask-bc5000.png` are automatically displayed as
-additional textures for their matching 10,000, 8,000 and 5,000 BCE eras with
+additional textures for their matching 123,000, 10,000, 8,000 and 5,000 BCE eras with
 Blue Marble selected. **Visuals → Terrain mask** toggles the active mask on
 and off. Other eras have no terrain mask.
 
