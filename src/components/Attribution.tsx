@@ -127,6 +127,17 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
           </section>
 
           <section className="attribution-section">
+            <h4>Coastline Prototype</h4>
+            <p>
+              Shelf exposure uses NOAA NCEI&apos;s{" "}
+              <a href="https://doi.org/10.25921/fd45-gt74" target="_blank" rel="noopener noreferrer">ETOPO 2022</a>{" "}
+              60 arc-second bedrock grid and an assumed sea level of −55 m.
+              The 10,000 BCE preview illustrates exposed seabed with colours extended from Blue Marble.
+              It does not include regional land deformation or reconstructed vegetation and is not a validated historical coastline.
+            </p>
+          </section>
+
+          <section className="attribution-section">
             <h4>Experimental Ice Sheet Overlay</h4>
             <p>
               Regional ice coverage: Dalton et al. (2023),{" "}

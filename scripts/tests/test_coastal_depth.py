@@ -7,10 +7,35 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from paleomasks.coastal_depth import coastal_change, ocean_at_level, quantize, save_png, shoreline
+from paleomasks.coastal_depth import coastal_change, ocean_at_level, quantize, save_png, shoreline, white_overlay
 
 
 class CoastalDepthTests(unittest.TestCase):
+    def test_overlay_roundtrip_preserves_all_mask_values_in_alpha(self):
+        mask = np.arange(256, dtype=np.uint8).reshape(16, 16)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "overlay.png"
+            save_png(path, white_overlay(mask))
+            with Image.open(path) as image:
+                self.assertEqual(image.mode, "RGBA")
+                pixels = np.asarray(image)
+                np.testing.assert_array_equal(pixels[:, :, 3], mask)
+                self.assertTrue((pixels[:, :, :3] == 255).all())
+
+    def test_overlay_composites_transparently_without_squaring_strength(self):
+        mask = np.array([[0, 128, 255]], dtype=np.uint8)
+        overlay = Image.fromarray(white_overlay(mask))
+        background = Image.new("RGBA", overlay.size, (20, 60, 100, 255))
+        composite = np.asarray(Image.alpha_composite(background, overlay))
+        np.testing.assert_array_equal(composite[0], [
+            [20, 60, 100, 255], [138, 158, 178, 255], [255, 255, 255, 255],
+        ])
+
+    def test_overlay_rejects_non_8bit_or_multichannel_data(self):
+        for mask in (np.zeros((2, 2), np.uint16), np.zeros((2, 2, 4), np.uint8)):
+            with self.assertRaises(ValueError):
+                white_overlay(mask)
+
     def test_falling_sea_includes_exposure_and_submerged_shallows_with_smooth_taper(self):
         z = np.array([[-500, -455, -355, -255, -100, -55, -20, 0, 20]], np.float32)
         modern, era = ocean_at_level(z, 0), ocean_at_level(z, -55)

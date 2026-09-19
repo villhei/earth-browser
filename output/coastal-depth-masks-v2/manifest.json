@@ -1,0 +1,295 @@
+{
+  "kind": "illustrative_coastal_depth_change_masks",
+  "scientifically_validated": false,
+  "format_version": 2,
+  "sea_level_basis": "Inherited ERA_SPECS from generate_prehistoric_textures.py; not fitted historical dates",
+  "grid": {
+    "width": 4096,
+    "height": 2048,
+    "bounds": [
+      -180,
+      -90,
+      180,
+      90
+    ],
+    "projection": "WGS84 equirectangular",
+    "row_zero": "north",
+    "column_zero": "west",
+    "registration": "pixel areas; centres at half-cell offsets"
+  },
+  "encoding": {
+    "depth_change": {
+      "png_bits": 16,
+      "black_m": 0,
+      "white_m": 64.0,
+      "decode": "pixel / 65535 * 64 * era.depth_change_sign; tapered metres, positive is deeper"
+    },
+    "overlays": {
+      "mode": "RGBA",
+      "png_bits": 8,
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "alpha": "straight (unassociated); 0 transparent, 255 opaque; mask values stored only in alpha"
+    },
+    "depth_change_8bit": "alpha / 255 * era.preview_white_m; unsigned tapered metres",
+    "land_change": "8-bit alpha coverage: 0 absent, 255 full; class from era.land_change_class",
+    "shoreline": "8-bit binary alpha ocean-side line at output grid resolution",
+    "excluded": "alpha 255 = suppressed by modern bright snow or available empirical ice; 0 is not proof of valid reconstruction"
+  },
+  "method": {
+    "depth": "max(sea_level - elevation, 0); modern sea_level = 0",
+    "magnitude": "abs(era_depth - modern_depth)",
+    "coastal_taper": {
+      "depth": "min(modern_depth, era_depth)",
+      "full_strength_to_m": 200.0,
+      "zero_from_m": 400.0,
+      "transition": "1 - smoothstep(200, 400, depth)"
+    },
+    "connectivity": "Largest native four-neighbour ocean, with longitude union and no pole wrapping, independently at each level",
+    "resampling": "Classify and compute native fields first, Pillow BOX reduce, then round half up to unsigned integer PNG",
+    "exclusions": "Final pixels: baseline min(R,G,B)>150 and max-min<45; any available era ice alpha>0"
+  },
+  "inputs": {
+    "etopo": {
+      "path": "research-cache/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO2022/data/60s/60s_bed_elev_gtif/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "bytes": 478386633,
+      "sha256": "a2cc72f8a4292dee928f439069457cdefc1fba319876807c626edce40258ba7a"
+    },
+    "blue_marble": {
+      "repository_path": "src/earthTextures/earth-blue-marble.jpg",
+      "bytes": 1461877,
+      "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01",
+      "registration_status": "adopted conventional full-world registration; original georeferencing unauthenticated",
+      "source_identity_and_rights": "unresolved"
+    }
+  },
+  "eras": [
+    {
+      "slug": "world-bc123000",
+      "sea_level_m": 7.0,
+      "depth_change_sign": 1,
+      "direction": "deeper / flooding",
+      "land_change_class": "flooded",
+      "preview_white_m": 7.0,
+      "ice_exclusion": null,
+      "counts": {
+        "native_changed_land_cells_before_exclusion": 1056235,
+        "depth_change_pixels": 729660,
+        "land_change_pixels": 92581,
+        "shoreline_pixels": 64549,
+        "excluded_pixels": 1264667
+      },
+      "maximum_tapered_depth_change_m": 7.0
+    },
+    {
+      "slug": "world-bc10000",
+      "sea_level_m": -55.0,
+      "depth_change_sign": -1,
+      "direction": "shallower / exposure",
+      "land_change_class": "exposed",
+      "preview_white_m": 55.0,
+      "ice_exclusion": {
+        "path": "src/earthTextures/ice/world-bc10000-coverage.png",
+        "bytes": 63203,
+        "sha256": "0b515e4acdfe42cdcc960efa5dba194c43ef13164b4b33a1e9a75e04feb33f64"
+      },
+      "counts": {
+        "native_changed_land_cells_before_exclusion": 6640615,
+        "depth_change_pixels": 665729,
+        "land_change_pixels": 274054,
+        "shoreline_pixels": 55870,
+        "excluded_pixels": 1414847
+      },
+      "maximum_tapered_depth_change_m": 55.0
+    },
+    {
+      "slug": "world-bc8000",
+      "sea_level_m": -25.0,
+      "depth_change_sign": -1,
+      "direction": "shallower / exposure",
+      "land_change_class": "exposed",
+      "preview_white_m": 25.0,
+      "ice_exclusion": {
+        "path": "src/earthTextures/ice/world-bc8000-coverage.png",
+        "bytes": 53693,
+        "sha256": "26692412a847cc5ab3aa51bca4dcdf462056581cccefba9c4c4993cd5413d769"
+      },
+      "counts": {
+        "native_changed_land_cells_before_exclusion": 2959131,
+        "depth_change_pixels": 671234,
+        "land_change_pixels": 165695,
+        "shoreline_pixels": 59758,
+        "excluded_pixels": 1348753
+      },
+      "maximum_tapered_depth_change_m": 25.0
+    },
+    {
+      "slug": "world-bc5000",
+      "sea_level_m": -3.0,
+      "depth_change_sign": -1,
+      "direction": "shallower / exposure",
+      "land_change_class": "exposed",
+      "preview_white_m": 3.0,
+      "ice_exclusion": {
+        "path": "src/earthTextures/ice/world-bc5000-coverage.png",
+        "bytes": 54334,
+        "sha256": "fef7e707ce35022562c5d18beca93abb363c40d71357beff4b6dfa44751ce4a9"
+      },
+      "counts": {
+        "native_changed_land_cells_before_exclusion": 340171,
+        "depth_change_pixels": 698930,
+        "land_change_pixels": 58987,
+        "shoreline_pixels": 64821,
+        "excluded_pixels": 1269360
+      },
+      "maximum_tapered_depth_change_m": 3.0
+    }
+  ],
+  "generator": {
+    "scripts/paleomasks/coastal_depth.py": {
+      "bytes": 14120,
+      "sha256": "eb770a81b14c3e7e415a1b81d90ea3d98f4d6e1026703fbc243d29f7036a8097"
+    },
+    "scripts/paleomasks/coast_prototype.py": {
+      "bytes": 11699,
+      "sha256": "0f5ae51f507c2c85992d688a05e222af0d5389f424cf8edd1c1ad0026d711b6e"
+    },
+    "scripts/paleomasks/coastal_depth_README.md": {
+      "bytes": 7124,
+      "sha256": "bd1353dd439c4df7f853ea4b7cebd829f11871798759acb0ff575e26fe485518"
+    },
+    "scripts/generate_coastal_depth_masks.py": {
+      "bytes": 179,
+      "sha256": "8aa261157d31e3e610d01abc0d788d408e7c85cecb207bb6116ca3b4492d2243"
+    }
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "pillow": "12.3.0"
+  },
+  "limitations": [
+    "Uniform assumed sea levels on modern bedrock, without regional uplift/subsidence, sediment changes or calibrated sea-level curves.",
+    "Coastal taper is an artistic influence envelope, not evidence that sea-level change stops in deeper water.",
+    "ETOPO bedrock connectivity and RGB snow exclusions do not establish a surveyed coastline beneath ice.",
+    "No empirical ice exclusion is available for 123,000 BCE; modern bright snow protection still applies.",
+    "Disconnected modern basins and water isolated by falling seas are excluded; no reconstructed inland lakes.",
+    "Mixed coastline pixels are averaged; subpixel islands and straits may vanish, especially in the -3 m scenario.",
+    "Zero means no encoded effect, including exclusions; it does not prove absence of historical change."
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 7124,
+      "sha256": "bd1353dd439c4df7f853ea4b7cebd829f11871798759acb0ff575e26fe485518"
+    },
+    {
+      "path": "preview.png",
+      "bytes": 635544,
+      "sha256": "372db3b1f5fddd28102c3820529ee0a36ee828f63723b5395a10a2264b09123e"
+    },
+    {
+      "path": "world-bc10000-depth-change-8bit.png",
+      "bytes": 876191,
+      "sha256": "28946ffee64263617fd972ab983f01ed34407976fc59aeacc3cbbbed74b68466"
+    },
+    {
+      "path": "world-bc10000-depth-change.png",
+      "bytes": 1120814,
+      "sha256": "7876f90d0c618dc3edab15b9b511f766af44845833095291d370eff9e4ca6385"
+    },
+    {
+      "path": "world-bc10000-excluded.png",
+      "bytes": 84087,
+      "sha256": "d09b68891e7907d0cfe1458c475366515f256716aae5c1ded5da1bc513d6a3b4"
+    },
+    {
+      "path": "world-bc10000-land-change.png",
+      "bytes": 422031,
+      "sha256": "817e1cd562598daf0aef28dd3b04898da5b86cb617c5642f3f61d6cb521142c0"
+    },
+    {
+      "path": "world-bc10000-shoreline.png",
+      "bytes": 111229,
+      "sha256": "31dbaff27766be22dda4a25125902c1da174753fd750b6b566d344d62eb7e9b8"
+    },
+    {
+      "path": "world-bc123000-depth-change-8bit.png",
+      "bytes": 768621,
+      "sha256": "080da44b52cbb7e283ac52d43274ea7769e6e135e03cc48793c088f13d469950"
+    },
+    {
+      "path": "world-bc123000-depth-change.png",
+      "bytes": 841121,
+      "sha256": "3e5f12074bf9b88a101dfa67e4bff54f3f90a9b6e18eeb63383d93efbdc034e5"
+    },
+    {
+      "path": "world-bc123000-excluded.png",
+      "bytes": 90383,
+      "sha256": "e62f696e6540be537e3912b6cdcc94a88f28b899a829cc38b36f90947cd22e25"
+    },
+    {
+      "path": "world-bc123000-land-change.png",
+      "bytes": 295551,
+      "sha256": "22b3b0405d1a54a3ca02b9655bd07fe72d543c44a83bac3faeda8d8140eeac40"
+    },
+    {
+      "path": "world-bc123000-shoreline.png",
+      "bytes": 120847,
+      "sha256": "0a42e72b56072b17226966139791679eb7290c1584feffdeba013a46e74544aa"
+    },
+    {
+      "path": "world-bc5000-depth-change-8bit.png",
+      "bytes": 726438,
+      "sha256": "fa53a564febb1724dce7d63819652831f6da8757b7bab080180b608f6314e0c3"
+    },
+    {
+      "path": "world-bc5000-depth-change.png",
+      "bytes": 716416,
+      "sha256": "c46c602c932f773bf37910f5495618c8ccb25ce0cdb04c1254d03072b0ced9a9"
+    },
+    {
+      "path": "world-bc5000-excluded.png",
+      "bytes": 90474,
+      "sha256": "98ec1278a5e7c1a0f3a4ad565e754d080a7dda65331acc6d1fdf4ac2ff326f1c"
+    },
+    {
+      "path": "world-bc5000-land-change.png",
+      "bytes": 218414,
+      "sha256": "94c0ea44a57c60795cc170a5968bbe3d241ed56c72891bed3e6fad903781525a"
+    },
+    {
+      "path": "world-bc5000-shoreline.png",
+      "bytes": 118342,
+      "sha256": "b8f2733f6014522b3db3d7d181c296e57a4bcc762612d48eeae653ba5844098b"
+    },
+    {
+      "path": "world-bc8000-depth-change-8bit.png",
+      "bytes": 794394,
+      "sha256": "5ed6f619b0b1805d835a339d9b382c0c0292bec8acc7bd517392c601731fef34"
+    },
+    {
+      "path": "world-bc8000-depth-change.png",
+      "bytes": 949952,
+      "sha256": "c484221bb3c2c691c924fbd4111c5d9b8b251f276d679832e2eb79efc07deaf2"
+    },
+    {
+      "path": "world-bc8000-excluded.png",
+      "bytes": 86210,
+      "sha256": "270203e287c71643ba8efb25e5d6ddfa0dbb50420907c1900824f05b68c278bb"
+    },
+    {
+      "path": "world-bc8000-land-change.png",
+      "bytes": 381820,
+      "sha256": "f35aab16a183c87d506607e7f4079f8c1460a79bfe0dbfad0668d2ba6f095d56"
+    },
+    {
+      "path": "world-bc8000-shoreline.png",
+      "bytes": 114554,
+      "sha256": "6a4817fe9de1fb87608554ee8d026c84031428da123f56fb0c0c1a571ef106b8"
+    }
+  ]
+}

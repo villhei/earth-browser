@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate independent grayscale coastal depth-change scenarios."""
+"""Generate coastal depth data and transparent 8-bit overlay scenarios."""
 from paleomasks.coastal_depth import main
 
 if __name__ == "__main__":

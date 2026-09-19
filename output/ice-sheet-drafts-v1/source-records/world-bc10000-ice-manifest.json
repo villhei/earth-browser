@@ -1,0 +1,623 @@
+{
+  "contract_version": "2.0.0",
+  "kind": "static_ice_overlay",
+  "era": {
+    "slug": "world-bc10000",
+    "year_start": -10000,
+    "target_calendar_bp": 11949,
+    "age_system": "calendar BP (1950)"
+  },
+  "grid_id": "earth-equirectangular-4096-v1",
+  "baseline": {
+    "repository_path": "src/earthTextures/earth-blue-marble.jpg",
+    "bytes": 1461877,
+    "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01",
+    "registration_status": "adopted conventional full-world registration; original georeferencing unauthenticated",
+    "source_identity_and_rights": "unresolved"
+  },
+  "policy": {
+    "contract_version": "2.0.0",
+    "scope": "Operator-directed static overlays; replaces separate grounded/floating delivery for this workflow",
+    "grid_id": "earth-equirectangular-4096-v1",
+    "baseline": "BLUE_MARBLE",
+    "rejected_sources": [
+      "PALEOMAP"
+    ],
+    "ice": {
+      "filename": "ice.png",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "classes": [
+        "grounded_ice",
+        "floating_ice",
+        "empirical_ice_extent_without_grounding_split"
+      ],
+      "priority": "empirical_ice_over_gia_terrain_and_marine_predictions",
+      "merge": "polygon union before pixel coverage reduction",
+      "static_variant": "central",
+      "alternative_bounds": "separate diagnostic minimum/maximum overlays, not opacity probabilities",
+      "transparency": "leave Blue Marble unchanged; not a claim of ice absence"
+    },
+    "subpixel_policy": {
+      "disposition": "DROP_ARTIFACTS",
+      "operator_rule": "Discard the polygons/subpixels that round to 0",
+      "quantization": "floor(255*f+0.5)",
+      "rule": "A missed polygon may be discarded only if its geometric coverage rounds to zero in every covered pixel. Quantized zero pixels are transparent.",
+      "minimum_alpha_or_dilation": false,
+      "audit_required": true
+    },
+    "processing_scope": {
+      "coastal_outlines": true,
+      "inland_waterbodies": false,
+      "vegetation_biomes": false
+    },
+    "partial_coverage": "Preserve missing regions in metadata; no fabricated ice or coastlines",
+    "source_chronology": "Retain the seven pinned margin uses, all three bounds, signed offsets and the named TS10 exception",
+    "scientific_validation": "Phase 5 remains separate from implementation validation"
+  },
+  "sources": [
+    {
+      "id": "nadi-1",
+      "title": "Dalton et al. NADI-1 North American ice-margin reconstruction",
+      "version": "v1, 2023-11-09",
+      "citations": [
+        "https://doi.org/10.5281/zenodo.8161764",
+        "https://doi.org/10.1016/j.quascirev.2023.108345"
+      ],
+      "license": {
+        "id": "CC-BY-4.0",
+        "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Dalton et al. (2023), NADI-1 v1"
+      },
+      "source_role": "unclassified_margin_evidence",
+      "acquisition_status": "downloaded_and_inspected_not_classified",
+      "retrieved_at": null,
+      "retrieval_note": "Exact retrieval timestamp not recorded; phase-2 record date is 2026-09-16.",
+      "original_inputs": [
+        {
+          "path": "research-cache/NADI-1.zip",
+          "url": "https://zenodo.org/api/records/8161764/files/NADI-1%20shapefiles%20Dalton%20et%20al.%20QSR.zip/content",
+          "bytes": 54725237,
+          "sha256": "cbfdc0c14a8bd08eb13036ca488ec611de7d2d9b61bed22f03aec2e272b4cb44",
+          "archive_file_count": 588
+        }
+      ],
+      "native_horizontal_crs": "EPSG:4326",
+      "members": [
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 139056,
+              "sha256": "48dd143f2a92014f948ce9f659b7d7af6b95da9775e6640a3696b17c24c432d7"
+            },
+            "shx": {
+              "bytes": 364,
+              "sha256": "5ae5d219d75e3a81b365cce88e3a2e5a8a41145e29e2d1c8e134eb261c84bcb0"
+            },
+            "dbf": {
+              "bytes": 726,
+              "sha256": "a9fa3bad102cf2c8766635d246987482229762f95b30acca981d916f71b1cc80"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        },
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 80216,
+              "sha256": "c857b46b7c83d1a267acffc4c15813ca1f7e8e67abf08fdcac8a05d81d2358fb"
+            },
+            "shx": {
+              "bytes": 260,
+              "sha256": "11e61f95bddcc85e1077f427c7f4d610939e3cca46e50b378311080bd2b6a821"
+            },
+            "dbf": {
+              "bytes": 466,
+              "sha256": "b7494d66e9ab4c43629f5347ae59afe19c499da75c79f22b3d9f8ae959408c6d"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        },
+        {
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+          "components": {
+            "shp": {
+              "bytes": 162500,
+              "sha256": "44089a28b98996a202f1685175bcab5c995316e4a1f89cf4601de2696ffa0225"
+            },
+            "shx": {
+              "bytes": 396,
+              "sha256": "924046ee3a176cee9b8450af1356645c21cf4edce0daa864974dceead6e40509"
+            },
+            "dbf": {
+              "bytes": 806,
+              "sha256": "bed4d58d0e4c479a0d553f58b69beae216351986d6e4a6593340a7dd210a7fe7"
+            },
+            "prj": {
+              "bytes": 145,
+              "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+            }
+          }
+        }
+      ],
+      "chronology": {
+        "original_age": {
+          "value": 12.0,
+          "unit": "ka",
+          "system": "calendar BP (1950)"
+        },
+        "calibration": "Published chronology retained without recalibration. Authors use CALIB 8.1.0 with IntCal20/Marine20 for radiocarbon evidence alongside other dating methods.",
+        "target_calendar_bp": 11949,
+        "source_calendar_bp": 12000,
+        "source_minus_target_years": 51,
+        "match_policy": "nearest_slice_approximation",
+        "interpolation": "none",
+        "other_era_uses": [],
+        "temporal_uncertainty": "Not quantified as a single error here; +51 years is the slice offset, not an uncertainty interval."
+      },
+      "uncertainty": {
+        "source_variants": [
+          "OPTIMAL",
+          "MIN",
+          "MAX"
+        ],
+        "interpretation": "Alternative margin extents, not confidence probabilities.",
+        "classification": "Marine grounding and supported presence/absence domains unresolved."
+      },
+      "modifications": "Source polygons merged into unified static ice overlays before raster reduction; zero-rounding losses and ring closures recorded. Original input bytes preserved."
+    },
+    {
+      "id": "dated-1",
+      "title": "Hughes et al. DATED-1 Eurasian ice-margin reconstruction",
+      "version": "PANGAEA.848117, 2015 release",
+      "citations": [
+        "https://doi.org/10.1594/PANGAEA.848117",
+        "https://doi.org/10.1111/bor.12142"
+      ],
+      "license": {
+        "id": "CC-BY-3.0",
+        "terms_url": "https://creativecommons.org/licenses/by/3.0/",
+        "attribution": "Hughes et al. (2015 dataset; 2016 methods), DATED-1"
+      },
+      "source_role": "unclassified_margin_evidence",
+      "acquisition_status": "downloaded_and_inspected_not_classified",
+      "retrieved_at": null,
+      "retrieval_note": "Exact retrieval timestamp not recorded; phase-2 record date is 2026-09-16.",
+      "original_inputs": [
+        {
+          "path": "research-cache/DATED-1_TimeSlices_shp.zip",
+          "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_TimeSlices_shp.zip",
+          "bytes": 11545303,
+          "sha256": "a916de31ff31b0bb63863b82d61a6be02659ecfe36a7cab0fdf00034b38be1f1",
+          "archive_file_count": 464
+        }
+      ],
+      "native_horizontal_crs": "ESRI:102017",
+      "members": [
+        {
+          "member_stem": "DATED1 TimeSlices shp/TS12_max",
+          "components": {
+            "shp": {
+              "bytes": 258300,
+              "sha256": "6e0c4f42df1489c6364e8b5771fe386005b7a4678d3b20e0da36a31f2acda137"
+            },
+            "shx": {
+              "bytes": 140,
+              "sha256": "dc4392abf5d40f4d1b22182571077cee0a934d36fc5e4ec0209948732fd6d41b"
+            },
+            "dbf": {
+              "bytes": 547,
+              "sha256": "dc5a13bf6f94cb8234528e6f132c20addb5aba07250250819fceeddeda64f388"
+            },
+            "prj": {
+              "bytes": 390,
+              "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+            }
+          }
+        },
+        {
+          "member_stem": "DATED1 TimeSlices shp/TS12_mc",
+          "components": {
+            "shp": {
+              "bytes": 560912,
+              "sha256": "3c942f9afed730e1feb984f113d394a9b2ba158e01a718db6d6dc53a64c828d2"
+            },
+            "shx": {
+              "bytes": 140,
+              "sha256": "3241e67a576a35134d12c123c8bb66bc7b3b45af8573bbd2a0a7c2280b3302a0"
+            },
+            "dbf": {
+              "bytes": 547,
+              "sha256": "7324e718d474d2925a8f62fd33df759c496e17a1f33658b823a0085db7e585f4"
+            },
+            "prj": {
+              "bytes": 390,
+              "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+            }
+          }
+        },
+        {
+          "member_stem": "DATED1 TimeSlices shp/TS12_min",
+          "components": {
+            "shp": {
+              "bytes": 156452,
+              "sha256": "d59ac0a67eeb60ed8db6129a13b6bdcd17cafab6b6d540721f04784358a1cc81"
+            },
+            "shx": {
+              "bytes": 148,
+              "sha256": "bfdfece49d960652c65db6983fd80d466fba7b5f25829f349b0520fa3148e76b"
+            },
+            "dbf": {
+              "bytes": 624,
+              "sha256": "4954c7cd86a36393d89fcb1b3391c7bb63112f2b579afca0f1b98b4cf4668f41"
+            },
+            "prj": {
+              "bytes": 390,
+              "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+            }
+          }
+        }
+      ],
+      "chronology": {
+        "original_age": {
+          "value": 12.0,
+          "unit": "ka",
+          "system": "calendar BP (1950)"
+        },
+        "calibration": "Published calendar chronology retained without recalibration; see DATED-1 README and methods for underlying dating evidence.",
+        "target_calendar_bp": 11949,
+        "source_calendar_bp": 12000,
+        "source_minus_target_years": 51,
+        "match_policy": "nearest_slice_approximation",
+        "interpolation": "none",
+        "other_era_uses": [],
+        "temporal_uncertainty": "Not quantified as a single error here; +51 years is the slice offset, not an uncertainty interval."
+      },
+      "uncertainty": {
+        "source_variants": [
+          "mc",
+          "min",
+          "max"
+        ],
+        "interpretation": "Alternative margin extents, not confidence probabilities.",
+        "classification": "Marine grounding and supported presence/absence domains unresolved."
+      },
+      "modifications": "Source polygons merged into unified static ice overlays before raster reduction; zero-rounding losses and ring closures recorded. Original input bytes preserved."
+    }
+  ],
+  "provenance": [
+    {
+      "path": "provenance/OUTPUT-CONTRACT.json",
+      "bytes": 7118,
+      "sha256": "585f9fea08fcfe3cc50a7740a876bd2a8724c94f803550e6765ef60dceb2cdb9"
+    },
+    {
+      "path": "provenance/OUTPUT-CONTRACT.md",
+      "bytes": 20338,
+      "sha256": "01b65831147022b9f3d96110284097ee16eee4f7fbef5382cf6b3a34cb54b8b8"
+    },
+    {
+      "path": "provenance/SOURCE-SELECTION.json",
+      "bytes": 56672,
+      "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+    },
+    {
+      "path": "provenance/SOURCE-SELECTION.md",
+      "bytes": 20030,
+      "sha256": "215243e87989a77911c05dc7b125cf63e54f9784b398bed44f712b38fc09b474"
+    },
+    {
+      "path": "provenance/OUTPUT-OVERLAY-CONTRACT.json",
+      "bytes": 1602,
+      "sha256": "07c9ccda78429d7263c4e8fc7e31f334e0277f361eaac8f010b3702e7d673076"
+    },
+    {
+      "path": "provenance/PHASE4-OPERATOR-DIRECTIVES.md",
+      "bytes": 3293,
+      "sha256": "946e1388c316c359dabdebdd5a86a3c8dd55cd4a6439e2eca8e16b17282db26a"
+    }
+  ],
+  "overlays": {
+    "central": {
+      "path": "ice.png",
+      "bytes": 63203,
+      "sha256": "0b515e4acdfe42cdcc960efa5dba194c43ef13164b4b33a1e9a75e04feb33f64",
+      "samples_per_axis": 8,
+      "priority": "ice_over_terrain_and_marine",
+      "members": [
+        {
+          "dataset": "nadi-1",
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+          "first_polygon_index": 0,
+          "polygon_count": 38,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 10016,
+            "projected_vertices": 10016,
+            "native_crs": "EPSG:4326",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=noop ellps=GRS80",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        },
+        {
+          "dataset": "dated-1",
+          "member_stem": "DATED1 TimeSlices shp/TS12_mc",
+          "first_polygon_index": 38,
+          "polygon_count": 5,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 35033,
+            "projected_vertices": 35033,
+            "native_crs": "ESRI:102017",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=pipeline step inv proj=laea lat_0=90 lon_0=0 x_0=0 y_0=0 ellps=WGS84 step proj=unitconvert xy_in=rad xy_out=deg",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        }
+      ],
+      "discarded_polygons": [
+        {
+          "polygon_index": 0,
+          "area_pixel_units": 2.5921312152288323e-08,
+          "max_pixel_fraction": 2.5921312152288323e-08,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 349,
+              "column": 1314,
+              "fraction": 2.5921312152288323e-08,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        }
+      ],
+      "positive_pixels": 240724
+    },
+    "minimum": {
+      "path": "diagnostics/ice-minimum.png",
+      "bytes": 57414,
+      "sha256": "e90438a3a69504112a91d0731e6e4694a85917c9728f9356d81e87b861a84b76",
+      "samples_per_axis": 8,
+      "priority": "ice_over_terrain_and_marine",
+      "members": [
+        {
+          "dataset": "nadi-1",
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+          "first_polygon_index": 0,
+          "polygon_count": 21,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 4937,
+            "projected_vertices": 4937,
+            "native_crs": "EPSG:4326",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=noop ellps=GRS80",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        },
+        {
+          "dataset": "dated-1",
+          "member_stem": "DATED1 TimeSlices shp/TS12_min",
+          "first_polygon_index": 21,
+          "polygon_count": 6,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 9751,
+            "projected_vertices": 9751,
+            "native_crs": "ESRI:102017",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=pipeline step inv proj=laea lat_0=90 lon_0=0 x_0=0 y_0=0 ellps=WGS84 step proj=unitconvert xy_in=rad xy_out=deg",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        }
+      ],
+      "discarded_polygons": [
+        {
+          "polygon_index": 18,
+          "area_pixel_units": 3.107853226609614e-05,
+          "max_pixel_fraction": 3.107853226609614e-05,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 270,
+              "column": 1332,
+              "fraction": 3.107853226609614e-05,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        }
+      ],
+      "positive_pixels": 202941
+    },
+    "maximum": {
+      "path": "diagnostics/ice-maximum.png",
+      "bytes": 64937,
+      "sha256": "6d69de52dda8d220a957f45ab26b13904349bdb0c9f9ed5997b6e14434aebe37",
+      "samples_per_axis": 8,
+      "priority": "ice_over_terrain_and_marine",
+      "members": [
+        {
+          "dataset": "nadi-1",
+          "member_stem": "NADI-1 shapefiles Dalton et al. QSR/12ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+          "first_polygon_index": 0,
+          "polygon_count": 34,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 8569,
+            "projected_vertices": 8569,
+            "native_crs": "EPSG:4326",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=noop ellps=GRS80",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        },
+        {
+          "dataset": "dated-1",
+          "member_stem": "DATED1 TimeSlices shp/TS12_max",
+          "first_polygon_index": 34,
+          "polygon_count": 5,
+          "geometry": {
+            "lake_records_excluded": 0,
+            "native_vertices": 16120,
+            "projected_vertices": 16120,
+            "native_crs": "ESRI:102017",
+            "target_crs": "EPSG:4326",
+            "axis_order": "longitude,latitude",
+            "projection_pipeline": "proj=pipeline step inv proj=laea lat_0=90 lon_0=0 x_0=0 y_0=0 ellps=WGS84 step proj=unitconvert xy_in=rad xy_out=deg",
+            "edge_subdivision_tolerance_degrees": 0.00274658203125,
+            "ring_closure_repairs": [],
+            "topology_validation": "not scientifically validated; no self-intersection repair"
+          }
+        }
+      ],
+      "discarded_polygons": [
+        {
+          "polygon_index": 2,
+          "area_pixel_units": 0.0006326416154821823,
+          "max_pixel_fraction": 0.0006326416154821823,
+          "quantized_nonzero_pixels": 0,
+          "pixel_coverage": [
+            {
+              "row": 484,
+              "column": 1434,
+              "fraction": 0.0006326416154821823,
+              "quantized_alpha": 0
+            }
+          ],
+          "outcome": "below_encoding_resolution",
+          "disposition": "discarded_from_overlay",
+          "rule": "floor(255*f+0.5) == 0 in every covered pixel"
+        }
+      ],
+      "positive_pixels": 289749
+    }
+  },
+  "complete_global_reconstruction": false,
+  "transparency": "baseline_unchanged_not_confirmed_absence",
+  "coastlines": {
+    "enabled": true,
+    "status": "not_generated",
+    "baseline": "BLUE_MARBLE",
+    "reason": "Coastlines are a separate product. Current reference candidates failed baseline classification and regional seam acceptance; no coastline is delivered in this ice package."
+  },
+  "limitations": [
+    "Partial selected regional ice evidence only; unselected regions preserve the baseline.",
+    "Grounded and floating ice are merged; no new shelf front or seasonal sea ice is invented.",
+    "Source uncertainty bounds remain alternative geometries, not alpha probabilities.",
+    "Phase-5 ice scientific acceptance remains pending; reference coastlines failed acceptance."
+  ],
+  "processing": {
+    "command_argv": [
+      "/home/ville/src/web/earth-browser/.venv/bin/python",
+      "scripts/generate_reconstruction_masks.py",
+      "expand-eras",
+      "--output",
+      "data-sources/textures/masks/phase6-eras-verified"
+    ],
+    "git_revision": "b5a6aad25fbb74e6cfa0861116bbf8caaa2c66f4",
+    "tracked_dirty_patch_sha256": "419a07bf48a3e794d8ec1701f76e11c544fb303a4d98523208fae28ac831c272",
+    "generator_files_including_untracked": {
+      "scripts/paleomasks/__init__.py": {
+        "bytes": 87,
+        "sha256": "7e8ee77eae620fb57bef60fde7f82f7c1713f973ed6deec2cd6a830c4240413f"
+      },
+      "scripts/paleomasks/coasts.py": {
+        "bytes": 12912,
+        "sha256": "62f5703377366e038eebc0772e0858ae6731fb29808f6457247c252049e76e86"
+      },
+      "scripts/paleomasks/contract.py": {
+        "bytes": 13198,
+        "sha256": "1f8ea61fddda5375f4974d8919d1cc30bd2a7d44c1d502f492f749cd672f019b"
+      },
+      "scripts/paleomasks/expansion.py": {
+        "bytes": 12273,
+        "sha256": "2f54ce0dc27830f6d81058ed9f093605fcc4ffa08543cebde3a4bb1b9bb7e895"
+      },
+      "scripts/paleomasks/geometry.py": {
+        "bytes": 14946,
+        "sha256": "57a90999d94d59e56da5f22da5739a6fc0bbef6361f7bfeeca6a993582ebe211"
+      },
+      "scripts/paleomasks/native_arrays.py": {
+        "bytes": 1024,
+        "sha256": "61e6cb6936f617e6f815d6cdb58a94c5622456695cbe7d24c0d8981a70252a57"
+      },
+      "scripts/paleomasks/overlays.py": {
+        "bytes": 10078,
+        "sha256": "7552de3c9ee484177b25ef2ec28f5c4ca228008ba72f1b591a0fde917523046a"
+      },
+      "scripts/paleomasks/pipeline.py": {
+        "bytes": 23404,
+        "sha256": "f1448540d971306bdd19a5149b1d43a59196bd66f75e7cdd16b42fbd24492bec"
+      },
+      "scripts/paleomasks/reference.py": {
+        "bytes": 17749,
+        "sha256": "3c208fab1f9e406be6489948a75146e69f55f0043e80a8c8387c8083fcb916db"
+      },
+      "scripts/paleomasks/reference_gdal.py": {
+        "bytes": 3577,
+        "sha256": "b0b4e5336e6c1f7b3a42556b23433e2dfdcf2e1fde20edaf36c1360a4cc4b34a"
+      },
+      "scripts/paleomasks/surface_policy.py": {
+        "bytes": 2230,
+        "sha256": "4c633f3731c68b62a54377b618bdce3bd64f8477c87accfabffe82fa409bbb80"
+      },
+      "scripts/paleomasks/terrain.py": {
+        "bytes": 12577,
+        "sha256": "8d24f896ee6a3a50a96cf50be5fcdbfcbf507abe18d171dc2f6973dabb730fac"
+      },
+      "scripts/generate_reconstruction_masks.py": {
+        "bytes": 202,
+        "sha256": "25697b64c7f81eaaddbade8c245fefb33502cf11484becbe900b82b1efba1924"
+      }
+    },
+    "dependencies": {
+      "numpy": "2.5.2",
+      "pillow": "12.3.0",
+      "pyshp": "3.1.6",
+      "pyproj": "3.7.2"
+    },
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [GCC 12.3.0]",
+    "png_encoder": {
+      "compress_level": 9,
+      "optimize": false
+    },
+    "proj_version": "9.5.1",
+    "zlib_version": "1.3.1.zlib-ng",
+    "rasterization": "regular subcell centres, even/odd holes per polygon, polygon union, periodic longitude, box average",
+    "quantization": "floor(255*f+0.5)",
+    "scientific_validation": "pending"
+  }
+}

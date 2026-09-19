@@ -186,3 +186,7 @@
   background: #38bdf8;
   cursor: pointer;
 }
+.controls-pill:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

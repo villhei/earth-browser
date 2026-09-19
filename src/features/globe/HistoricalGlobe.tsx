@@ -37,6 +37,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   data,
   isLoading = false,
   texture = GlobeTexture.EARTH_BLUE_MARBLE,
+  textureImageUrl,
   surfaceOverlay,
   layerAltitude = DEFAULT_ALTITUDE,
   elevationScale = DEFAULT_ELEVATION_SCALE,
@@ -139,7 +140,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
 
     const globe = new ThreeGlobe()
     globeRef.current = globe
-    globe.globeImageUrl(getGlobeTextureUrl(texture))
+    globe.globeImageUrl(textureImageUrl ?? getGlobeTextureUrl(texture))
     globe.polygonCapCurvatureResolution(polygonCapCurvatureResolution)
     globe.rendererSize(new THREE.Vector2(width || window.innerWidth, height || window.innerHeight))
 
@@ -546,9 +547,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   // 2. Texture update (zero WebGL context teardown!)
   useEffect(() => {
     if (globeRef.current) {
-      globeRef.current.globeImageUrl(getGlobeTextureUrl(texture))
+      globeRef.current.globeImageUrl(textureImageUrl ?? getGlobeTextureUrl(texture))
     }
-  }, [texture])
+  }, [texture, textureImageUrl])
 
   // Independent surface layer: era changes never recreate the WebGL context.
   useEffect(() => {

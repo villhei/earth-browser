@@ -23,6 +23,9 @@ export interface HistoricalGlobeProps {
    */
   texture?: GlobeTexture
 
+  /** Optional equirectangular base image overriding the selected built-in texture. */
+  textureImageUrl?: string
+
   /** Optional equirectangular layer rendered above the globe and below territories. */
   surfaceOverlay?: SurfaceOverlay
 

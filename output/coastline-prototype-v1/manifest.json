@@ -1,0 +1,112 @@
+{
+  "kind": "illustrative_bathymetry_scenario",
+  "era_preview": "world-bc10000",
+  "scientifically_validated": false,
+  "sea_level_m": -55.0,
+  "sea_level_basis": "Explicit visual prototype assumption; not a selected historical curve",
+  "grid": {
+    "width": 4096,
+    "height": 2048,
+    "bounds": [
+      -180,
+      -90,
+      180,
+      90
+    ]
+  },
+  "inputs": {
+    "etopo": {
+      "path": "research-cache/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO2022/data/60s/60s_bed_elev_gtif/ETOPO_2022_v1_60s_N90W180_bed.tif",
+      "bytes": 478386633,
+      "sha256": "a2cc72f8a4292dee928f439069457cdefc1fba319876807c626edce40258ba7a"
+    },
+    "blue_marble": {
+      "repository_path": "src/earthTextures/earth-blue-marble.jpg",
+      "bytes": 1461877,
+      "sha256": "228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01",
+      "registration_status": "adopted conventional full-world registration; original georeferencing unauthenticated",
+      "source_identity_and_rights": "unresolved"
+    }
+  },
+  "generator": {
+    "bytes": 11088,
+    "sha256": "a07a544b28672f21bf27bb8c47e21686b5fc8214d2325dadd16790d7f681cd3c"
+  },
+  "numpy": "2.5.2",
+  "method": "Native negative ETOPO largest 4-connected component with longitude union; exposure where sea_level <= elevation < 0; Pillow BOX coverage reduction; inland RGB donors, smoothed colour, metric relief and seeded grain",
+  "counts": {
+    "native_ocean_cells": 164196437,
+    "native_exposed_cells": 6640615,
+    "exposed_cells_at_or_above_modern_zero": 0,
+    "applied_pixels": 299966,
+    "snow_protected_pixels": 87561,
+    "unmodified_pixels_changed": 0
+  },
+  "limitations": [
+    "Uniform sea-level scenario on modern bedrock; no regional land deformation correction.",
+    "10,000 BCE is the preview slot, not a validated date for the assumed sea level.",
+    "ETOPO connectivity is an approximate marine mask, not an independent coastline survey.",
+    "Bedrock beneath modern ice is not a coastline; bright baseline snow is conservatively protected.",
+    "No reconstructed inland lakes, vegetation, sediment change, or new ice extent.",
+    "Image/terrain registration and narrow-strait connectivity remain approximate.",
+    "The PNG preserves decoded baseline pixels outside applied coverage; JPEG is lossy."
+  ],
+  "artifacts": [
+    {
+      "path": "applied-coverage.png",
+      "bytes": 249261,
+      "sha256": "d1f8c2f4ce6699e4b1dbefd847858ba263d2363f3c462053349225c241ee0600"
+    },
+    {
+      "path": "blue-marble-coast-prototype.jpg",
+      "bytes": 2203384,
+      "sha256": "892bb14977a4efc1b130ec8dba81c0c916079940f44a09fb247c8a85b5dcc73d"
+    },
+    {
+      "path": "blue-marble-coast-prototype.png",
+      "bytes": 8461504,
+      "sha256": "22e3745aa08508b067e5913fbd12a5fbce362554a5fe5ed3981332e70601baf5"
+    },
+    {
+      "path": "comparison-beringia.png",
+      "bytes": 262870,
+      "sha256": "4ce648532075c40f0069451759d50eb086cc0c5ffaf0f789795090f2596a15f3"
+    },
+    {
+      "path": "comparison-doggerland.png",
+      "bytes": 288699,
+      "sha256": "6674dca828395875473b43ac305b58926c05b07ff96f8ac1328e8c6e1d2111de"
+    },
+    {
+      "path": "comparison-persian-gulf.png",
+      "bytes": 306489,
+      "sha256": "2bf7d6fac9722612cf5a0fec42981e83f476392bd1adfc7d90d6af525b34b026"
+    },
+    {
+      "path": "comparison-sahul.png",
+      "bytes": 401056,
+      "sha256": "334c62fe5f26ebc61aeeaf708351b60e95696c561a52b423906db70cef60258a"
+    },
+    {
+      "path": "comparison-sundaland.png",
+      "bytes": 546680,
+      "sha256": "8e0457d2f5f380d27e2964c1dcbb4699ff0c98bbae86801855958c74e50e55ae"
+    },
+    {
+      "path": "comparison-world.png",
+      "bytes": 299732,
+      "sha256": "ed29f1d92abb3458100a70785fa08a78e8073a0109e1cc4fcd81ac54e12d1f6c"
+    },
+    {
+      "path": "exposed-shelf.png",
+      "bytes": 342649,
+      "sha256": "c086f9dfac95fac6b0fcd1c05ad4cb2559c8ede67126c9bcaf7ce8cb7b13c255"
+    },
+    {
+      "path": "modern-ocean.png",
+      "bytes": 292796,
+      "sha256": "0dc545aa193ccc32d16dfe53854f4d01b3e1ccf64be3c26f1bb8eedd95f025b3"
+    }
+  ]
+}

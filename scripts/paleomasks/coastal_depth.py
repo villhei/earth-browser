@@ -74,6 +74,14 @@ def save_png(path, array):
     Image.fromarray(array).save(path, compress_level=9)
 
 
+def white_overlay(mask):
+    """Preserve 8-bit mask values as straight alpha, with white RGB throughout."""
+    require(mask.ndim == 2 and mask.dtype == np.uint8, "Expected an 8-bit mask")
+    rgba = np.full((*mask.shape, 4), 255, dtype=np.uint8)
+    rgba[:, :, 3] = mask
+    return rgba
+
+
 def make_preview(package, images):
     tile_w, tile_h = 1024, 512
     plate = Image.new("RGB", (tile_w * 2, (tile_h + 56) * 2 + 48), "#171b20")
@@ -82,8 +90,10 @@ def make_preview(package, images):
         x, y = (i % 2) * tile_w, (i // 2) * (tile_h + 56)
         label = f"{int(slug.split('bc')[1]):,} BCE | assumed sea level {ERAS[slug]:+g} m"
         draw.text((x + 16, y + 12), label, fill="white")
-        draw.text((x + 16, y + 30), f"Black = zero; white = {abs(ERAS[slug]):g} m tapered depth change", fill="#bfc6cd")
-        plate.paste(Image.fromarray(mask).resize((tile_w, tile_h), Image.Resampling.BOX), (x, y + 56))
+        draw.text((x + 16, y + 30), f"Transparent = zero; opaque white = {abs(ERAS[slug]):g} m tapered depth change", fill="#bfc6cd")
+        alpha = np.asarray(Image.fromarray(mask).resize((tile_w, tile_h), Image.Resampling.BOX))
+        overlay = Image.fromarray(white_overlay(alpha))
+        plate.paste(overlay, (x, y + 56), overlay)
     draw.text((16, plate.height - 32), "Illustrative uniform sea levels. Each panel uses its own scale. Not calibrated paleocoastlines.", fill="white")
     plate.save(package / "preview.png")
 
@@ -154,10 +164,10 @@ def generate(output):
             encoded = quantize(reduced, SCALE_M, 16)
             preview = quantize(reduced, abs(level), 8)
             save_png(package / f"{slug}-depth-change.png", encoded)
-            save_png(package / f"{slug}-depth-change-8bit.png", preview)
-            save_png(package / f"{slug}-land-change.png", coverage)
-            save_png(package / f"{slug}-shoreline.png", coast.astype(np.uint8) * 255)
-            save_png(package / f"{slug}-excluded.png", excluded.astype(np.uint8) * 255)
+            save_png(package / f"{slug}-depth-change-8bit.png", white_overlay(preview))
+            save_png(package / f"{slug}-land-change.png", white_overlay(coverage))
+            save_png(package / f"{slug}-shoreline.png", white_overlay(coast.astype(np.uint8) * 255))
+            save_png(package / f"{slug}-excluded.png", white_overlay(excluded.astype(np.uint8) * 255))
             previews[slug] = preview
             eras.append({"slug": slug, "sea_level_m": level,
                          "depth_change_sign": 1 if level > 0 else -1,
@@ -174,16 +184,19 @@ def generate(output):
         readme = Path(__file__).with_name("coastal_depth_README.md")
         (package / "README.md").write_text(readme.read_text())
         manifest = {"kind": "illustrative_coastal_depth_change_masks", "scientifically_validated": False,
+                    "format_version": 2,
                     "sea_level_basis": "Inherited ERA_SPECS from generate_prehistoric_textures.py; not fitted historical dates",
                     "grid": {"width": SIZE[0], "height": SIZE[1], "bounds": [-180, -90, 180, 90],
                              "projection": "WGS84 equirectangular", "row_zero": "north", "column_zero": "west",
                              "registration": "pixel areas; centres at half-cell offsets"},
                     "encoding": {"depth_change": {"png_bits": 16, "black_m": 0, "white_m": SCALE_M,
                                   "decode": "pixel / 65535 * 64 * era.depth_change_sign; tapered metres, positive is deeper"},
-                                 "depth_change_8bit": "pixel / 255 * era.preview_white_m; unsigned tapered metres",
-                                 "land_change": "8-bit coverage: 0 absent, 255 full; class from era.land_change_class",
-                                 "shoreline": "8-bit binary ocean-side line at output grid resolution",
-                                 "excluded": "255 = suppressed by modern bright snow or available empirical ice; 0 is not proof of valid reconstruction"},
+                                 "overlays": {"mode": "RGBA", "png_bits": 8, "rgb": [255, 255, 255],
+                                              "alpha": "straight (unassociated); 0 transparent, 255 opaque; mask values stored only in alpha"},
+                                 "depth_change_8bit": "alpha / 255 * era.preview_white_m; unsigned tapered metres",
+                                 "land_change": "8-bit alpha coverage: 0 absent, 255 full; class from era.land_change_class",
+                                 "shoreline": "8-bit binary alpha ocean-side line at output grid resolution",
+                                 "excluded": "alpha 255 = suppressed by modern bright snow or available empirical ice; 0 is not proof of valid reconstruction"},
                     "method": {"depth": "max(sea_level - elevation, 0); modern sea_level = 0",
                                "magnitude": "abs(era_depth - modern_depth)",
                                "coastal_taper": {"depth": "min(modern_depth, era_depth)",

@@ -7,6 +7,7 @@ interface ControlsOverlayProps {
   onChangeConfig: (config: GlobeConfig) => void
   onOpenAttribution?: () => void
   iceOverlayAvailable?: boolean
+  coastlinePrototypeAvailable?: boolean
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
@@ -14,11 +15,13 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onChangeConfig,
   onOpenAttribution,
   iceOverlayAvailable = false,
+  coastlinePrototypeAvailable = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const labelSize = config.labelSize ?? 14
   const labelTolerance = config.labelTolerance ?? 10
+  const canShowCoastlinePrototype = coastlinePrototypeAvailable && config.texture === GlobeTexture.EARTH_BLUE_MARBLE
 
   return (
     <div className="controls-overlay">
@@ -63,6 +66,26 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               <option value={GlobeTexture.EARTH_NIGHT}>Night Lights</option>
               <option value={GlobeTexture.EARTH_DARK}>Dark Planetary</option>
             </select>
+          </div>
+
+          <div className="controls-group">
+            <div className="controls-label-row">
+              <span className="controls-label" id="coastline-prototype-label">Coastline prototype</span>
+              <button
+                className={`controls-pill ${canShowCoastlinePrototype && config.showCoastlinePrototype ? "active" : ""}`}
+                aria-labelledby="coastline-prototype-label"
+                aria-pressed={canShowCoastlinePrototype && !!config.showCoastlinePrototype}
+                disabled={!canShowCoastlinePrototype}
+                onClick={() => onChangeConfig({ ...config, showCoastlinePrototype: !config.showCoastlinePrototype })}
+              >
+                {canShowCoastlinePrototype && config.showCoastlinePrototype ? "Enabled" : "Disabled"}
+              </button>
+            </div>
+            <p className="controls-help">
+              {!canShowCoastlinePrototype
+                ? "Available with Blue Marble at 10,000 BCE."
+                : "Assumed sea level −55 m · illustrative coastlines, not a validated reconstruction."}
+            </p>
           </div>
 
           <div className="controls-group">

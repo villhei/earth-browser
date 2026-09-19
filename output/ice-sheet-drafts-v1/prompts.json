@@ -1,0 +1,44 @@
+[
+  {
+    "era": "world-bc10000",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent RGBA ice-sheet color layer for the Earth Browser historical globe, era 10,000 BCE. Input image 1 is the exact edit target, a white RGBA geographic ice coverage mask. Input image 2 is a supporting Blue Marble color/style reference ONLY; do not include its land or oceans in the output. Create a visually pleasing, restrained satellite-style glacial surface ONLY inside the existing white shapes of image 1: luminous ivory/snow-white interiors, very subtle powder-blue shading, delicate low-contrast ice-flow striations and fine crevasse texture toward margins, broad smooth accumulation zones. This is a flat map texture, not a perspective scene or globe. Preserve the mask's entire original 4096 x 2048 canvas and 2:1 aspect ratio, north-up equirectangular coordinates, every ice shape location and outline, every hole and isolated component, and original alpha including fractional edge coverage. The large empty lower three quarters are intentional and must remain transparent. Preserve original alpha exactly; recolor RGB only. No added ice, no Greenland/Antarctic additions, no seasonal sea ice, no expanded margins, no blur/feathering/dilation, no drop shadows beyond shapes, no coastline changes, no text/labels/legend/watermark/borders. Output one full-canvas transparent PNG ice layer with genuine alpha, no black or white flattened background, no checkerboard baked in, no cropping or rescaling. Artistic interior detail is illustrative, not an ice thickness or confidence map.",
+    "inputs": [
+      "data-sources/textures/masks/phase7-delivery/reconstruction-masks/evidence/eras/world-bc10000/ice/ice.png",
+      "src/earthTextures/earth-blue-marble.jpg"
+    ]
+  },
+  {
+    "era": "world-bc8000",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent RGBA ice-sheet color layer for the Earth Browser historical globe, era 8,000 BCE. Input image 1 is the exact edit target, a white RGBA geographic ice coverage mask. Input image 2 is a supporting Blue Marble color/style reference ONLY; do not include its land or oceans in the output. Create a visually pleasing, restrained satellite-style glacial surface ONLY inside the existing white shapes of image 1: luminous ivory/snow-white interiors, very subtle powder-blue shading, delicate low-contrast ice-flow striations and fine crevasse texture toward margins, broad smooth accumulation zones. This is a flat map texture, not a perspective scene or globe. Preserve the mask's entire original 4096 x 2048 canvas and 2:1 aspect ratio, north-up equirectangular coordinates, every ice shape location and outline, every hole and isolated component, and original alpha including fractional edge coverage. The large empty lower three quarters are intentional and must remain transparent. Preserve original alpha exactly; recolor RGB only. No added ice, no Greenland/Antarctic additions, no seasonal sea ice, no expanded margins, no blur/feathering/dilation, no drop shadows beyond shapes, no coastline changes, no text/labels/legend/watermark/borders. Output one full-canvas transparent PNG ice layer with genuine alpha, no black or white flattened background, no checkerboard baked in, no cropping or rescaling. Artistic interior detail is illustrative, not an ice thickness or confidence map. Critical output dimension: 4096 pixels wide by 2048 pixels high. Keep the widely separated, very small white patches in exactly their original positions; do not enlarge them to fill the canvas.",
+    "inputs": [
+      "data-sources/textures/masks/phase7-delivery/reconstruction-masks/evidence/eras/world-bc8000/ice/ice.png",
+      "src/earthTextures/earth-blue-marble.jpg"
+    ]
+  },
+  {
+    "era": "world-bc5000",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Edit the supplied transparent white geographic mask for 5000 BCE. This is a sparse partial regional mask, NOT a whole-world reconstruction. Keep EXACTLY the existing small isolated white shapes in EXACTLY their input locations. Change ONLY the white RGB color into a beautiful delicate snow/ice texture: almost-white pearl ivory, subtle pale powder-blue shading, fine understated glacial striations. Preserve all transparent pixels and all original fractional edge alpha. Keep the entire 4096 x 2048 canvas with 2:1 aspect, no cropping, shifting or enlarging shapes. More than 99% of this canvas is supposed to be empty transparent. Absolutely no additions, no Greenland, no Eurasia, no Antarctica, no global polar ice band, no other new ice, no mountains outside the given silhouette. Output one transparent RGBA PNG, flat equirectangular layer. No map beneath, no ocean, no text, no shadows outside mask. Treat the input strictly as an alpha selection for interior recoloring.",
+    "inputs": [
+      "data-sources/textures/masks/phase7-delivery/reconstruction-masks/evidence/eras/world-bc5000/ice/ice.png"
+    ]
+  },
+  {
+    "era": "world-bc4000",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Edit the supplied transparent white geographic mask for 4000 BCE. This is a sparse partial regional mask, NOT a whole-world reconstruction. Keep EXACTLY the existing small isolated white shapes in EXACTLY their input locations. Change ONLY the white RGB color into a beautiful delicate snow/ice texture: almost-white pearl ivory, subtle pale powder-blue shading, fine understated glacial striations. Preserve all transparent pixels and all original fractional edge alpha. Keep the entire 4096 x 2048 canvas with 2:1 aspect, no cropping, shifting or enlarging shapes. More than 99% of this canvas is supposed to be empty transparent. Absolutely no additions, no Greenland, no Eurasia, no Antarctica, no global polar ice band, no other new ice, no mountains outside the given silhouette. Output one transparent RGBA PNG, flat equirectangular layer. No map beneath, no ocean, no text, no shadows outside mask. Treat the input strictly as an alpha selection for interior recoloring.",
+    "inputs": [
+      "data-sources/textures/masks/phase7-delivery/reconstruction-masks/evidence/eras/world-bc4000/ice/ice.png"
+    ]
+  },
+  {
+    "era": "world-bc3000",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Edit the supplied transparent white geographic mask for 3000 BCE. This is a sparse partial regional mask, NOT a whole-world reconstruction. Keep EXACTLY the existing small isolated white shapes in EXACTLY their input locations. Change ONLY the white RGB color into a beautiful delicate snow/ice texture: almost-white pearl ivory, subtle pale powder-blue shading, fine understated glacial striations. Preserve all transparent pixels and all original fractional edge alpha. Keep the entire 4096 x 2048 canvas with 2:1 aspect, no cropping, shifting or enlarging shapes. More than 99% of this canvas is supposed to be empty transparent. Absolutely no additions, no Greenland, no Eurasia, no Antarctica, no global polar ice band, no other new ice, no mountains outside the given silhouette. Output one transparent RGBA PNG, flat equirectangular layer. No map beneath, no ocean, no text, no shadows outside mask. Treat the input strictly as an alpha selection for interior recoloring.",
+    "inputs": [
+      "data-sources/textures/masks/phase7-delivery/reconstruction-masks/evidence/eras/world-bc3000/ice/ice.png"
+    ]
+  }
+]
