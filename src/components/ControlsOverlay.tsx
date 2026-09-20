@@ -21,7 +21,7 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
 
   const labelSize = config.labelSize ?? 14
   const labelTolerance = config.labelTolerance ?? 10
-  const canShowTerrainOverlay = terrainOverlayAvailable && config.texture === GlobeTexture.EARTH_BLUE_MARBLE
+  const canShowTerrainOverlay = terrainOverlayAvailable
   const terrainOverlayEnabled = canShowTerrainOverlay && config.showTerrainOverlay !== false
 
   return (
@@ -82,7 +82,7 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
                 {terrainOverlayEnabled ? "Enabled" : "Disabled"}
               </button>
             </div>
-            <p className="controls-help">Coastal terrain for 123,000, 10,000, 8,000 and 5,000 BCE with Blue Marble.</p>
+            <p className="controls-help">Coastal terrain for 10,000, 8,000 and 5,000 BCE with Day Map or Blue Marble; also 123,000 BCE with Blue Marble.</p>
           </div>
 
           <div className="controls-group">
@@ -98,8 +98,8 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               </button>
             </div>
             <p className="controls-help">
-              {config.texture !== GlobeTexture.EARTH_BLUE_MARBLE
-                ? "Select Blue Marble to view ice sheets."
+              {config.texture !== GlobeTexture.EARTH_BLUE_MARBLE && config.texture !== GlobeTexture.EARTH_DAY
+                ? "Select Blue Marble or Day Map to view ice sheets."
                 : !iceOverlayAvailable
                   ? "Available at 10,000, 8,000, 5,000, 4,000 and 3,000 BCE."
                   : "Experimental appearance · partial regional ice coverage."}

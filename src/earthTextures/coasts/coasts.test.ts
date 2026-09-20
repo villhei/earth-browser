@@ -22,7 +22,22 @@ describe("terrain overlay", () => {
     },
   )
 
-  it.each([GlobeTexture.EARTH_DAY, GlobeTexture.EARTH_NIGHT, GlobeTexture.EARTH_DARK])(
+  it.each([10000, 8000, 5000])("uses the matching Day Map mask for %i BCE and respects the toggle", (year) => {
+    const era = `world-bc${year}`
+    const enabled = getTerrainOverlayUrl(era, GlobeTexture.EARTH_DAY)
+    expect(enabled).toContain(`earth-daymap-may-terrain-mask-bc${year}.png`)
+    expect(enabled).not.toBe(getTerrainOverlayUrl(era, GlobeTexture.EARTH_BLUE_MARBLE))
+    expect(getTerrainOverlayUrl(era, GlobeTexture.EARTH_DAY, false)).toBeUndefined()
+    expect(getTerrainOverlayUrl(era, GlobeTexture.EARTH_DAY, true)).toBe(enabled)
+  })
+
+  it.each([undefined, "world-bc123000", "world-bc4000", "world-2010", "toString"])(
+    "does not apply Day Map masks to unsupported era %s", (era) => {
+      expect(getTerrainOverlayUrl(era, GlobeTexture.EARTH_DAY)).toBeUndefined()
+    },
+  )
+
+  it.each([GlobeTexture.EARTH_NIGHT, GlobeTexture.EARTH_DARK])(
     "removes the terrain overlay when switching to %s", (texture) => {
       for (const year of [123000, 10000, 8000, 5000]) {
         expect(getTerrainOverlayUrl(`world-bc${year}`, texture)).toBeUndefined()

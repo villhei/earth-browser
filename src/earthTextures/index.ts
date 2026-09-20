@@ -1,6 +1,6 @@
 import earthBlueMarble from "./earth-blue-marble.jpg"
 import earthDark from "./earth-dark.jpg"
-import earthDay from "./earth-day.jpg"
+import earthDay from "./earth-daymap-may.png"
 import earthNight from "./earth-night.jpg"
 
 export enum Texture {
@@ -29,4 +29,3 @@ export function getTexturePath(texture: Texture): string {
     }
   }
 }
-

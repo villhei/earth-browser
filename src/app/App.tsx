@@ -120,7 +120,7 @@ export const App: React.FC = () => {
             isLoading={isLoadingGeoJson}
             texture={globeConfig.texture}
             surfaceUnderlayUrl={getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture, globeConfig.showTerrainOverlay)}
-            surfaceOverlay={globeConfig.showIceOverlay && globeConfig.texture === GlobeTexture.EARTH_BLUE_MARBLE ? iceOverlay : undefined}
+            surfaceOverlay={globeConfig.showIceOverlay && (globeConfig.texture === GlobeTexture.EARTH_BLUE_MARBLE || globeConfig.texture === GlobeTexture.EARTH_DAY) ? iceOverlay : undefined}
             layerAltitude={globeConfig.layerAltitude}
             elevationScale={globeConfig.elevationScale}
             opacity={globeConfig.opacity}

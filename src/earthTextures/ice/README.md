@@ -1,6 +1,6 @@
 # Experimental ice surface overlays
 
-Ice sheets are enabled by default with **Blue Marble (Modern)** selected; use **Visuals → Ice sheet overlay** to toggle them. Coverage is available only for the exact 10,000, 8,000, 5,000, 4,000 and 3,000 BCE eras; other eras show the base texture.
+Ice sheets are enabled by default with **Blue Marble (Modern)** or **Day Map** selected; use **Visuals → Ice sheet overlay** to toggle them. Coverage is available only for the exact 10,000, 8,000, 5,000, 4,000 and 3,000 BCE eras; other eras show the base texture.
 
 `*-color.png` files are unmodified 1774 × 887 artistic drafts from the built-in image generator. Their boundaries are not reliable. `*-coverage.png` files are byte-for-byte copies of the original 4096 × 2048 central RGBA masks from `data-sources/textures/masks/phase7-delivery/reconstruction-masks/evidence/eras/<slug>/ice/ice.png`.
 

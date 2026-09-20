@@ -1,6 +1,6 @@
 import earthBlueMarble from "../../earthTextures/earth-blue-marble.jpg"
 import earthDark from "../../earthTextures/earth-dark.jpg"
-import earthDay from "../../earthTextures/earth-day.jpg"
+import earthDay from "../../earthTextures/earth-daymap-may.png"
 import earthNight from "../../earthTextures/earth-night.jpg"
 import { GlobeTexture } from "../../types"
 
@@ -18,4 +18,3 @@ export function getGlobeTextureUrl(texture: GlobeTexture = GlobeTexture.EARTH_BL
       return earthBlueMarble
   }
 }
-
