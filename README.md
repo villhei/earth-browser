@@ -54,6 +54,15 @@ npm start
 
 Open your browser at: **`http://localhost:5173`**
 
+### Sharing a view
+
+Select an era and rotate, zoom or pan the globe, then copy the browser URL.
+The query string updates automatically and restores the same view when opened
+or refreshed, for example `?era=world-1492&camera=0,80,320&target=0,0,0`.
+`era` is the dataset slug; `camera` and `target` are Three.js XYZ coordinates.
+Missing or invalid values fall back to the default era (1492 CE) and camera.
+View changes replace the current history entry so dragging does not fill browser history.
+
 ---
 
 ## Project Structure

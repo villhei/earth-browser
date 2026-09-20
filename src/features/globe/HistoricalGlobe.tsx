@@ -4,7 +4,14 @@ import ThreeGlobe from "three-globe"
 import { OrbitControls } from "three/addons/controls/OrbitControls.js"
 import alpha from "color-alpha"
 import { PuffLoader } from "react-spinners"
-import { HistoricalGlobeProps, GlobeTexture } from "./types"
+import { HistoricalGlobeProps, GlobeTexture, GlobeView } from "./types"
+import {
+  DEFAULT_GLOBE_VIEW,
+  MIN_VIEW_DISTANCE,
+  MAX_VIEW_DISTANCE,
+  captureGlobeView,
+  restoreGlobeView,
+} from "./view"
 import { getGlobeTextureUrl } from "./textures"
 import {
   createSurfaceOverlayCanvas,
@@ -38,6 +45,8 @@ const DEFAULT_CAP_CURVATURE_RESOLUTION = 1
 const DEFAULT_ELEVATION_SCALE = 0.3
 
 export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
+  view = DEFAULT_GLOBE_VIEW,
+  onViewChange,
   data,
   isLoading = false,
   texture = GlobeTexture.EARTH_BLUE_MARBLE,
@@ -66,6 +75,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const globeRef = useRef<ThreeGlobe | null>(null)
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null)
+  const restoreViewRef = useRef<((view: GlobeView) => void) | null>(null)
   const placedLabelsRef = useRef<PlacedLabel[]>([])
   const [hoveredFeature, setHoveredFeature] = useState<GeoJSONFeature | null>(
     null,
@@ -89,6 +99,13 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const hoveredFeatureRef = useRef(hoveredFeature)
   const onFeatureClickRef = useRef(onFeatureClick)
   const onFeatureHoverRef = useRef(onFeatureHover)
+  const viewRef = useRef(view)
+  const onViewChangeRef = useRef(onViewChange)
+
+  useEffect(() => {
+    viewRef.current = view
+    onViewChangeRef.current = onViewChange
+  }, [view, onViewChange])
 
   useEffect(() => {
     dataRef.current = data
@@ -175,16 +192,35 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       1,
       2000,
     )
-    camera.position.z = 320
-    camera.position.y = 80
+    camera.position.fromArray(viewRef.current.position)
     cameraRef.current = camera
 
     const controls = new OrbitControls(camera, container)
     controls.enableDamping = true
     controls.dampingFactor = 0.05
     controls.rotateSpeed = 0.6
-    controls.minDistance = 140
-    controls.maxDistance = 700
+    controls.minDistance = MIN_VIEW_DISTANCE
+    controls.maxDistance = MAX_VIEW_DISTANCE
+
+    // Throttle URL consumers without losing the final damped camera position.
+    let viewChangeTimer: ReturnType<typeof setTimeout> | undefined
+    const handleViewChange = () => {
+      if (viewChangeTimer !== undefined) return
+      viewChangeTimer = setTimeout(() => {
+        viewChangeTimer = undefined
+        onViewChangeRef.current?.(captureGlobeView(controls))
+      }, 150)
+    }
+    const restoreView = (nextView: GlobeView) => {
+      clearTimeout(viewChangeTimer)
+      viewChangeTimer = undefined
+      controls.removeEventListener("change", handleViewChange)
+      restoreGlobeView(controls, nextView)
+      controls.addEventListener("change", handleViewChange)
+      renderer.render(scene, camera)
+    }
+    restoreViewRef.current = restoreView
+    restoreView(viewRef.current)
 
     // Bounding sphere for fast raycast early exit (avoiding deep mesh traversal on space misses)
     const globeBoundingSphere = new THREE.Sphere(
@@ -547,6 +583,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animationFrameId)
       clearPolygonMaterialCache()
+      clearTimeout(viewChangeTimer)
+      controls.removeEventListener("change", handleViewChange)
+      restoreViewRef.current = null
       controls.dispose()
       renderer.dispose()
       if (
@@ -561,6 +600,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       cameraRef.current = null
     }
   }, []) // Mount once
+
+  useEffect(() => {
+    restoreViewRef.current?.(view)
+  }, [view])
 
   // 2. Texture update (zero WebGL context teardown!)
   useEffect(() => {

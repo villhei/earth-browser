@@ -7,7 +7,18 @@ export interface SurfaceOverlay {
   coverageUrl: string
 }
 
+export interface GlobeView {
+  position: [number, number, number]
+  target: [number, number, number]
+}
+
 export interface HistoricalGlobeProps {
+  /** Camera pose to restore on mount or external navigation. */
+  view?: GlobeView
+
+  /** Camera changes, including rotation, zoom and pan. */
+  onViewChange?: (view: GlobeView) => void
+
   /**
    * GeoJSON FeatureCollection to render on the globe.
    */

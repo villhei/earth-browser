@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useRef, useState } from "react"
 import {
   Era,
   GeoJSONFeature,
@@ -8,6 +8,8 @@ import {
 } from "../types"
 import { fetchEras, fetchEraGeoJson } from "../services/api"
 import { HistoricalGlobe } from "../features/globe"
+import type { GlobeView } from "../features/globe"
+import { readViewUrl, replaceViewUrl, resolveEra } from "./viewUrl"
 import { Timeline } from "../components/Timeline"
 import { CountryDrawer } from "../components/CountryDrawer"
 import { ControlsOverlay } from "../components/ControlsOverlay"
@@ -21,6 +23,13 @@ import "./App.css"
 export const App: React.FC = () => {
   const [eras, setEras] = useState<Era[]>([])
   const [currentEra, setCurrentEra] = useState<Era | null>(null)
+  const [cameraView, setCameraView] = useState(() => readViewUrl(window.location.search).view)
+  const latestViewRef = useRef(cameraView)
+
+  const handleViewChange = useCallback((view: GlobeView) => {
+    latestViewRef.current = view
+    replaceViewUrl(null, view)
+  }, [])
   const [geoJsonData, setGeoJsonData] =
     useState<GeoJSONFeatureCollection | null>(null)
   const [isLoadingEras, setIsLoadingEras] = useState(true)
@@ -53,10 +62,7 @@ export const App: React.FC = () => {
       .then((data) => {
         if (!isMounted) return
         setEras(data)
-        // Default to 1492 CE or first era
-        const defaultEra =
-          data.find((e) => e.slug === "world-1492") || data[0] || null
-        setCurrentEra(defaultEra)
+        setCurrentEra(resolveEra(data, readViewUrl(window.location.search).eraSlug))
       })
       .catch((err) => console.error("Error fetching eras:", err))
       .finally(() => {
@@ -66,6 +72,21 @@ export const App: React.FC = () => {
       isMounted = false
     }
   }, [])
+
+  useEffect(() => {
+    if (currentEra) replaceViewUrl(currentEra.slug, latestViewRef.current)
+  }, [currentEra])
+
+  useEffect(() => {
+    const restoreUrl = () => {
+      const { eraSlug, view } = readViewUrl(window.location.search)
+      latestViewRef.current = view
+      setCameraView({ ...view })
+      setCurrentEra(resolveEra(eras, eraSlug))
+    }
+    window.addEventListener("popstate", restoreUrl)
+    return () => window.removeEventListener("popstate", restoreUrl)
+  }, [eras])
 
   // 2. Fetch GeoJSON whenever currentEra changes
   useEffect(() => {
@@ -116,6 +137,8 @@ export const App: React.FC = () => {
       <main className="app-main">
         <div className="globe-viewport">
           <HistoricalGlobe
+            view={cameraView}
+            onViewChange={handleViewChange}
             data={geoJsonData}
             isLoading={isLoadingGeoJson}
             texture={globeConfig.texture}
