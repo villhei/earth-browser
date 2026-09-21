@@ -1,0 +1,294 @@
+[
+  {
+    "slug": "east-slavic-tribes",
+    "name": "Early East Slavic Tribes",
+    "name_fi": "Varhaiset itäslaavilaiset heimot",
+    "alternate_names": [
+      "Slavic tribes",
+      "East Slavs"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "slavic",
+    "historical_period": "Early Medieval Eastern Europe",
+    "year_start": 500,
+    "year_end": 988,
+    "period_label": "500 CE – 988 CE",
+    "period_label_fi": "500 jaa. – 988 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Early_East_Slavs",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/It%C3%A4slaavit",
+    "wikidata_id": "Q1209307",
+    "summary_en": "Pagan tribal groupings (Polans, Drevlians, Krivichs, Radimichs, Vyatichs, Severians) inhabiting the Dnieper, Dniester, and Volga river basins, practicing forest agriculture and nature worship prior to Christianization.",
+    "summary_fi": "Varhaiskeskiajan pakanalliset itäslaavilaiset heimoyhteisöt Dneprin ja Volgan vesistöissä, jotka elivät metsätaloudesta ja kaskiviljelystä ennen kristinuskon saapumista.",
+    "capital": "Dnieper basin settlements",
+    "feature_name_matches": [
+      "Slavic tribes"
+    ]
+  },
+  {
+    "slug": "kievan-rus",
+    "name": "Kievan Rus'",
+    "name_fi": "Kiovan Venäjä (Kievan Rus)",
+    "native_name": "Русь (Rus')",
+    "alternate_names": [
+      "Kievan Rus",
+      "Kievan Rus'"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "High Medieval Eastern Europe",
+    "year_start": 882,
+    "year_end": 1240,
+    "period_label": "882 CE – 1240 CE",
+    "period_label_fi": "882 jaa. – 1240 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kievan_Rus%27",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kiovan_Ven%C3%A4j%C3%A4",
+    "wikidata_id": "Q1108445",
+    "summary_en": "Powerful medieval federation of East Slavic and Finno-Ugric peoples ruled by the Rurik dynasty from Kyiv, Christianized in 988 under Vladimir the Great, serving as the cultural progenitor of Ukraine, Belarus, and Russia.",
+    "summary_fi": "Rurikin dynastian Kiovasta käsin johtama varhaiskeskiaikainen suurvalta, jonka Vladimir Suuri käänsi kristinuskoon vuonna 988 ja joka loi perustan Ukrainan, Valko-Venäjän ja Venäjän kulttuurille.",
+    "capital": "Kyiv, Novgorod",
+    "feature_name_matches": [
+      "Kievan Rus"
+    ]
+  },
+  {
+    "slug": "novgorod-republic",
+    "name": "Novgorod Republic & Principalities",
+    "name_fi": "Novgorodin tasavalta ja ruhtinaskunta",
+    "native_name": "Новгородская республика",
+    "alternate_names": [
+      "Novgorod",
+      "Principality of Novgorod",
+      "Novgorod-Seversky"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "Medieval Northern Rus'",
+    "year_start": 1136,
+    "year_end": 1478,
+    "period_label": "1136 CE – 1478 CE",
+    "period_label_fi": "1136 jaa. – 1478 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Novgorod_Republic",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Novgorodin_tasavalta",
+    "wikidata_id": "Q151055",
+    "summary_en": "Mercantile republic along the Volkhov River governed by a citizen town assembly (Veche) and elected Posadnik, controlling Baltic-White Sea fur trade networks and commissioning birch bark letters.",
+    "summary_fi": "Kauppiastasavalta Ilmajärven rannalla, jota kansankokous (vetše) johti ja joka hallitsi turkiskauppaa Itämereltä Vienanmerelle sekä tuotti ainutlaatuisia tuohikirjeitä.",
+    "capital": "Veliky Novgorod",
+    "feature_name_matches": [
+      "Novgorod",
+      "Principality of Novgorod",
+      "Novgorod-Seversky"
+    ]
+  },
+  {
+    "slug": "pskov-republic",
+    "name": "Pskov Republic",
+    "name_fi": "Pihkovan tasavalta",
+    "native_name": "Псковская республика",
+    "alternate_names": [
+      "Pskov"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "Late Medieval Western Rus'",
+    "year_start": 1348,
+    "year_end": 1510,
+    "period_label": "1348 CE – 1510 CE",
+    "period_label_fi": "1348 jaa. – 1510 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pskov_Republic",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pihkovan_tasavalta",
+    "wikidata_id": "Q737894",
+    "summary_en": "Democratic medieval merchant republic on Lake Peipus centered at the stone Krom (citadel), defending Rus' borders against the Livonian Order and codifying the progressive Pskov Judicial Charter.",
+    "summary_fi": "Keskiaikainen demokraattinen kauppiasvaltio Peipsijärven rannalla, jonka kivilinnoitus (Krom) suojeli venäläisiä maita Liivinmaan ritarikuntaa vastaan.",
+    "capital": "Pskov",
+    "feature_name_matches": [
+      "Pskov"
+    ]
+  },
+  {
+    "slug": "vladimir-suzdal",
+    "name": "Principality of Vladimir-Suzdal",
+    "name_fi": "Vladimir-Suzdalin ruhtinaskunta",
+    "native_name": "Владимиро-Суздальское княжество",
+    "alternate_names": [
+      "Principality of Vladimir-Suzdal",
+      "Grand Duchy of Vladimir"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "High Medieval Rus'",
+    "year_start": 1157,
+    "year_end": 1331,
+    "period_label": "1157 CE – 1331 CE",
+    "period_label_fi": "1157 jaa. – 1331 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Vladimir-Suzdal",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Vladimir-Suzdal",
+    "wikidata_id": "Q270766",
+    "summary_en": "Preeminent northeastern Rus' principality under princes Yuri Dolgorukiy and Andrei Bogolyubsky, famed for the Golden Ring white limestone church architecture including the Church of the Intercession on the Nerl.",
+    "summary_fi": "Koillis-Venäjän johtava ruhtinaskunta, joka siirsi poliittisen painopisteen Volga-Okan jokialueelle ja rakensi Unescon suojelemia valkokivikirkkoja.",
+    "capital": "Vladimir, Suzdal",
+    "feature_name_matches": [
+      "Principality of Vladimir-Suzdal"
+    ]
+  },
+  {
+    "slug": "principality-of-ryazan",
+    "name": "Principality of Ryazan",
+    "name_fi": "Rjazanin ruhtinaskunta",
+    "native_name": "Рязанское великое княжество",
+    "alternate_names": [
+      "Ryazan"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "Medieval Rus'",
+    "year_start": 1097,
+    "year_end": 1521,
+    "period_label": "1097 CE – 1521 CE",
+    "period_label_fi": "1097 jaa. – 1521 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Principality_of_Ryazan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Rjazan",
+    "wikidata_id": "Q934062",
+    "summary_en": "Frontier Rus' principality along the Oka River guarding the steppe border, the first Rus' city besieged and destroyed during Batu Khan's Mongol invasion in 1237, heroically chronicled in the Tale of the Destruction of Ryazan.",
+    "summary_fi": "Oka-joen varrella sijainnut ruhtinaskunta arojen rajalla, joka oli ensimmäinen mongolivalloituksen vuonna 1237 tuhoama venäläinen kaupunki.",
+    "capital": "Old Ryazan, Pereyaslavl-Ryazansky",
+    "feature_name_matches": [
+      "Ryazan"
+    ]
+  },
+  {
+    "slug": "grand-duchy-of-moscow",
+    "name": "Grand Duchy of Moscow & Tsardom",
+    "name_fi": "Moskovan suuriruhtinaskunta ja tsaarikunta",
+    "native_name": "Великое княжество Московское / Русское царство",
+    "alternate_names": [
+      "Grand Duchy of Moscow",
+      "Tsardom of Muscovy",
+      "Muscovy"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "Late Medieval to Early Modern Russia",
+    "year_start": 1283,
+    "year_end": 1721,
+    "period_label": "1283 CE – 1721 CE",
+    "period_label_fi": "1283 jaa. – 1721 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Moscow",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Moskovan_suuriruhtinaskunta",
+    "wikidata_id": "Q170770",
+    "summary_en": "The Muscovite state consolidated the Rus' lands under Ivan III (the Great), threw off the Tatar Yoke at the Ugra River (1480), and under Ivan IV (the Terrible) took the title of Tsar of All Russia, building Saint Basil's Cathedral.",
+    "summary_fi": "Iivana Suuren johdolla venäläiset maat yhdistänyt Moskovan valtio, joka vapautui tataariherruudesta 1480 ja perusti Venäjän tsaarikunnan rakentaen Punaisen torin pyhän Vasilin katedraalin.",
+    "capital": "Moscow",
+    "feature_name_matches": [
+      "Grand Duchy of Moscow",
+      "Tsardom of Muscovy"
+    ]
+  },
+  {
+    "slug": "russian-empire-state",
+    "name": "Russian Empire & Russian Federation",
+    "name_fi": "Venäjän keisarikunta ja Venäjän federaatio",
+    "native_name": "Российская империя / Российская Федерация",
+    "alternate_names": [
+      "Russian Empire",
+      "Russia",
+      "South Russia"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "Imperial to Modern Russia",
+    "year_start": 1721,
+    "year_end": 2026,
+    "period_label": "1721 CE – Present",
+    "period_label_fi": "1721 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Russian_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ven%C3%A4j%C3%A4n_keisarikunta",
+    "wikidata_id": "Q34266",
+    "summary_en": "Proclaimed by Peter the Great in 1721 after founding Saint Petersburg, expanding into a transcontinental Eurasian empire from the Baltic to the Pacific, producing literary titans (Tolstoy, Dostoevsky) and scientists.",
+    "summary_fi": "Pietari Suuren vuonna 1721 julistama keisarikunta, joka levittäytyi Itämereltä Tyynellemerelle ja loi maailmankuulun kirjallisuuden ja musiikin kultakauden.",
+    "capital": "Saint Petersburg, Moscow",
+    "feature_name_matches": [
+      "Russian Empire",
+      "Russia",
+      "South Russia"
+    ]
+  },
+  {
+    "slug": "soviet-union-ussr",
+    "name": "Union of Soviet Socialist Republics",
+    "name_fi": "Sosialististen neuvostotasavaltojen liitto (Neuvostoliitto)",
+    "native_name": "СССР (Союз Советских Социалистических Республик)",
+    "alternate_names": [
+      "USSR",
+      "Soviet Union"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "russia",
+    "historical_period": "20th Century Socialist Superpower",
+    "year_start": 1922,
+    "year_end": 1991,
+    "period_label": "1922 CE – 1991 CE",
+    "period_label_fi": "1922 jaa. – 1991 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Soviet_Union",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Neuvostoliitto",
+    "wikidata_id": "Q15180",
+    "summary_en": "Global socialist superpower forged after the 1917 Bolshevik Revolution under Vladimir Lenin, defeating Nazi Germany in World War II, pioneering space exploration (Sputnik, Yuri Gagarin), and dissolved in 1991.",
+    "summary_fi": "Vuoden 1917 vallankumouksen jälkeen perustettu sosialistinen supervalta, joka voitti toisen maailmansodan, laukaisi ensimmäisen satelliitin (Sputnik) ja ihmisen avaruuteen (Juri Gagarin) ennen hajoamistaan 1991.",
+    "capital": "Moscow",
+    "feature_name_matches": [
+      "USSR"
+    ]
+  },
+  {
+    "slug": "ukraine-nation",
+    "name": "Ukraine & Cossack Hetmanate",
+    "name_fi": "Ukrainan valtio ja kasakkahetmanaatti",
+    "native_name": "Україна / Військо Запорозьке",
+    "alternate_names": [
+      "Ukraine",
+      "Cossack Hetmanate"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "ukraine",
+    "historical_period": "Early Modern to Modern Ukraine",
+    "year_start": 1648,
+    "year_end": 2026,
+    "period_label": "1648 CE – Present",
+    "period_label_fi": "1648 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ukraine",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ukraina",
+    "wikidata_id": "Q212",
+    "summary_en": "Breadbasket of Europe along the Dnieper, home to Zaporozhian Cossacks who established the Hetmanate under Bohdan Khmelnytsky, gaining independent statehood in 1991 and defending sovereign democracy.",
+    "summary_fi": "Dneprin laakson viljava eurooppalainen maa, jossa zaporižžjalaiset kasakat loivat hetmanaatin Bohdan Hmelnytskyin johdolla ja joka itsenäistyi uudelleen vuonna 1991.",
+    "capital": "Kyiv, Chyhyryn, Baturyn",
+    "feature_name_matches": [
+      "Ukraine"
+    ]
+  },
+  {
+    "slug": "belarus-white-russia",
+    "name": "Belarus (White Ruthenia)",
+    "name_fi": "Valko-Venäjä (Belarus)",
+    "native_name": "Беларусь (Bielaruś)",
+    "alternate_names": [
+      "White Russia",
+      "Belarus",
+      "White Ruthenia"
+    ],
+    "culture_group": "Slavic",
+    "lineage_id": "belarus",
+    "historical_period": "Medieval to Modern Belarus",
+    "year_start": 1100,
+    "year_end": 2026,
+    "period_label": "1100 CE – Present",
+    "period_label_fi": "1100 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Belarus",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Valko-Ven%C3%A4j%C3%A4",
+    "wikidata_id": "Q184",
+    "summary_en": "East Slavic nation rooted in the medieval Principality of Polotsk and the Grand Duchy of Lithuania, famous for the Belovezhskaya Pushcha primeval forest (European bison) and Mir Castle.",
+    "summary_fi": "Itäslaavilainen maa, jonka juuret ovat Polatskin ruhtinaskunnassa ja Liettuan suuriruhtinaskunnassa ja joka tunnetaan Belovežskajan aarniometsästä ja visenteistään.",
+    "capital": "Minsk, Polotsk",
+    "feature_name_matches": [
+      "White Russia"
+    ]
+  }
+]

@@ -113,5 +113,60 @@ describe("Culture Metadata Batches", () => {
     const batchPath = path.resolve(__dirname, "../../data-sources/batches/east-asia.json")
     validateBatch(batchPath, "East Asia", 45)
   })
+
+  it("validates the South Asia batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/south-asia.json")
+    validateBatch(batchPath, "South Asia", 40)
+  })
+
+  it("validates the Southeast Asia batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/southeast-asia.json")
+    validateBatch(batchPath, "Southeast Asia", 25)
+  })
+
+  it("validates the West Africa batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/west-africa.json")
+    validateBatch(batchPath, "West Africa", 20)
+  })
+
+  it("validates the Central Africa batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/central-africa.json")
+    validateBatch(batchPath, "Central Africa", 10)
+  })
+
+  it("validates the East Africa batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/east-africa.json")
+    validateBatch(batchPath, "East Africa", 20)
+  })
+
+  it("validates the Southern Africa batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/southern-africa.json")
+    validateBatch(batchPath, "Southern Africa", 15)
+  })
+
+  it("validates the Western Europe batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/western-europe.json")
+    validateBatch(batchPath, "Western Europe", 25)
+  })
+
+  it("validates the Central Europe batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/central-europe.json")
+    validateBatch(batchPath, "Central Europe", 14)
+  })
+
+  it("validates the Nordic batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/nordic.json")
+    validateBatch(batchPath, "Nordic", 8)
+  })
+
+  it("validates the Slavic batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/slavic.json")
+    validateBatch(batchPath, "Slavic", 10)
+  })
+
+  it("validates the Baltic batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/baltic.json")
+    validateBatch(batchPath, "Baltic", 8)
+  })
 })
 

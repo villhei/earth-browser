@@ -43,11 +43,11 @@ Each record in `culture_metadata` adheres to the following specification:
 
 Progress is tracked dynamically via [`scripts/culture_metadata_status.ts`](file:///home/ville/src/web/earth-browser/scripts/culture_metadata_status.ts) and recorded in [`data-sources/culture_metadata_status.json`](file:///home/ville/src/web/earth-browser/data-sources/culture_metadata_status.json).
 
-* **Unique Named Entities Completed**: **330 / 2,999** (`11.0%`)
-* **Total Feature Records Linked**: **1,107 / 10,395** (`10.6%`)
+* **Unique Named Entities Completed**: **717 / 2,999** (`23.9%`)
+* **Total Feature Records Linked**: **3,138 / 10,395** (`30.2%`)
 * **Prototype Era (500 BCE / `world-bc500`)**: **32 / 77 features linked** (`41.6%`)
-* **Unlinked Features Remaining**: **9,288**
-* **Missing Entities Remaining**: **2,669**
+* **Unlinked Features Remaining**: **7,257**
+* **Missing Entities Remaining**: **2,282**
 
 
 ---
@@ -121,7 +121,6 @@ Below is the complete inventory of missing entities grouped into modular, parall
 * **Entities Resolved**:
   - `Abbasid Caliphate`, `Aghlabid Emirate`, `Almohad Caliphate`, `Ayyubid Sultanate`, `Caliphate of Córdoba`, `Fatimid Caliphate`, `Hafsid Caliphate`, `Idrisid dynasty`, `Mamluk Sultanate`, `Rashidun Caliphate`, `Seljuk Caliphate`, `Sokoto Caliphate`, `Toucouleur Empire`, `Umayyad Caliphate`, `Wattasid Caliphate`, `Zayyanid Caliphate`
 
-
 ### Work Unit 7: Central Asia & Steppe Nomads (COMPLETED)
 * **Total Entities**: 71 | **Completed**: 71 | **Missing**: 0 (`100% COMPLETE`)
 * **Batch File**: `data-sources/batches/central-asia.json` (53 cultures populated, 219 features linked across eras)
@@ -134,45 +133,45 @@ Below is the complete inventory of missing entities grouped into modular, parall
 * **Entities Resolved**:
   - `Ainu`, `Ainus`, `Balhae`, `Baekje (Paekche)`, `Baiyue (Yue)`, `China`, `Chinese Warlords`, `Cochin China`, `Dali Kingdom`, `Dutch Formosa`, `Empire of Japan`, `French Indochina`, `Gaya`, `Goguryeo (Koguryo)`, `Gojoseon`, `Goryeo`, `Hainan`, `Han Empire`, `Heian Japan (Fujiwara)`, `Hong Kong`, `Imperial Japan`, `Japan`, `Japan (Warring States)`, `Jin Dynasty (Jurchen)`, `Joseon (Korea)`, `Kamakura Shogunate`, `Khitans`, `Kushan Empire`, `Liao`, `Manchu Empire`, `Manchuria`, `Min-Yue`, `Ming Chinese Empire`, `Ming Empire`, `Nan-Yue`, `North Korea (DPRK)`, `Northern Wei`, `Paleo-Koreans`, `Parhae`, `Post-Ming Warlords`, `Qin`, `Qing Empire`, `Ryukyu Kingdom`, `Shang Dynasty (Sinic)`, `Silla (Silia)`, `Sixteen Kingdoms`, `Song Empire`, `South Korea (ROK)`, `Sui Dynasty`, `Taiwan`, `Tang Empire`, `Tokugawa shogunate`, `Western Xia (Tangut)`, `Wu (Eastern Wu)`, `Xia`, `Yamato`, `Yayoi`
 
-### Work Unit 9: South Asian Empires & Dynasties
-* **Total Entities**: 85 | **Completed**: 9 | **Missing**: 76
-* **Target Batch File**: `data-sources/batches/south-asia.json`
-* **Key Missing Entities**:
-  - `Bahmani Sultanate`, `Bengal Sultanate`, `Chalukya Dynasty`, `Chera Kingdom`, `Chola Empire`, `Deccan Sultanates`, `Delhi Sultanate`, `Dravidians`, `Gandhara`, `Gupta Empire`, `Harsha Empire`, `Hoysala Empire`, `Indus Valley Civilization`, `Kalinga`, `Kushite / Kushan Empire`, `Maratha Empire`, `Mauryan Empire`, `Mughal Empire`, `Nanda Empire`, `Pallava Dynasty`, `Pandya Dynasty`, `Rashtrakuta Dynasty`, `Satavahana Empire`, `Sikh Empire`, `Vakataka Dynasty`, `Vedic Aryans`, `Vijayanagara Empire`
+### Work Unit 9: South Asian Empires & Dynasties (COMPLETED)
+* **Total Entities**: 85 | **Completed**: 85 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/south-asia.json` (46 cultures populated, 276 features linked across eras)
+* **Entities Resolved**:
+  - `Ahmadnagar`, `Bahmani Kingdom`, `Bangladesh`, `Berar`, `Bhutan`, `Bidar`, `Bijapur`, `Ceylon`, `Ceylon (Dutch)`, `Chalukya Empire`, `Chalukyas`, `Cheras`, `Chola`, `Chola Empire`, `Cholas`, `Cochin`, `Dravidians`, `Gandhara grave culture`, `Golconda`, `Gujarat`, `Gupta Empire`, `Gurjara Pratihara`, `Hindu kingdoms`, `Hindu kingdoms and republics`, `India`, `Indus valley civilization`, `Kadambas`, `Kalinga`, `Kandy`, `Kashmir and Ladakh`, `Kingdom of Kashmir`, `Kushan Principalities`, `Maitraka Kingdom`, `Maratha`, `Maratha Confederacy`, `Mauryan Empire`, `Mughal Empire`, `Mysore`, `Mysore (Indian princely state)`, `Nepal`, `Nizam's Dominions`, `Orissa`, `Otoe-Missouri (Oklahoma)`, `Otoe-Missouria (Oklahoma)`, `Pakistan`, `Palas`, `Pallava`, `Pallava state`, `Pallavas`, `Pandya state`, `Pandyas`, `Peoria (Oklahoma)`, `Pratiharas`, `Punjab`, `Rajput Clans and Small States`, `Rajput kingdoms`, `Rajputana`, `Rajputs`, `Rashtrakuta`, `Rashtrakuta state`, `Sac and Fox (Oklahoma)`, `Satavahanihara`, `Sikhs`, `Sikkim (Indian princely state)`, `Simhala`, `Sindh`, `Solankis`, `Sri Lanka`, `Sultanate of Delhi`, `Travancore`, `Vakataka`, `Vedic Aryans`, `Vijayanagara`, `Western Chalukyas`, `Western Gangas`, `minor Hindu kingdoms`
 
-### Work Unit 10: Southeast Asian Kingdoms & Nusantara
-* **Total Entities**: 50 | **Completed**: 0 | **Missing**: 50
-* **Target Batch File**: `data-sources/batches/southeast-asia.json`
-* **Key Missing Entities**:
-  - `Aceh Sultanate`, `Ayutthaya Kingdom`, `Banten Sultanate`, `Bruneian Empire`, `Champa`, `Chenla`, `Dai Viet`, `Dvaravati`, `Funan`, `Khmer Empire`, `Lan Na`, `Lan Xang`, `Majapahit Empire`, `Mataram Kingdom`, `Melaka Sultanate`, `Pagan Kingdom`, `Pyu City-States`, `Rattanakosin`, `Srivijaya Empire`, `Sukhothai Kingdom`, `Sulu Sultanate`, `Sunda Kingdom`, `Toungoo Empire`
+### Work Unit 10: Southeast Asian Kingdoms & Nusantara (COMPLETED)
+* **Total Entities**: 50 | **Completed**: 50 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/southeast-asia.json` (27 cultures populated, 300 features linked across eras)
+* **Entities Resolved**:
+  - `Aceh`, `Annam`, `Arakan`, `Arakan (Indian princely state)`, `Austro-Asiatic rice cultures`, `Ava`, `Ayutthaya`, `Brunei`, `Burma`, `Burmese`, `Burmese kingdoms`, `Cambodia`, `Champa`, `Champa City States`, `Dutch East Indies`, `Dvaravati`, `Funan`, `Indonesia`, `Kediri`, `Khmer Empire`, `Kingdom of Pagan`, `Kungarakany`, `Lan Na`, `Laos`, `Lavo`, `Malacca`, `Malay`, `Malaya`, `Malays`, `Malaysia`, `Malaysian Islamic states`, `Mataram`, `Minang`, `Mon-Khmer`, `Pagan`, `Pegu`, `Philippines`, `Proto-Thai cultures`, `Pyu state`, `Rattanakosin Kingdom`, `Siam`, `Slavonic tribes`, `Srivijaya Empire`, `Sukhothai`, `Thai`, `Thai Kingdoms`, `Thailand`, `Tonkin`, `Vietnam`, `Đại Việt`
 
-### Work Unit 11: African Civilizations (West, Central, East & Southern)
-* **Total Entities**: 124 | **Completed**: 3 | **Missing**: 121
-* **Target Batch Files**:
-  - `data-sources/batches/west-africa.json`
-  - `data-sources/batches/central-africa.json`
-  - `data-sources/batches/east-africa.json`
-  - `data-sources/batches/southern-africa.json`
-* **Key Missing Entities**:
-  - *West Africa*: `Ashanti Empire`, `Benin Kingdom`, `Dahomey`, `Empire of Ghana (Wagadou)`, `Hausa Kingdoms`, `Jolof Empire`, `Kanem-Bornu Empire`, `Mali Empire`, `Mossi Kingdoms`, `Nok culture`, `Oyo Empire`, `Songhai Empire`, `Yoruba`
-  - *Central Africa*: `Kingdom of Kongo`, `Kuba Kingdom`, `Loango`, `Luba Empire`, `Lunda Empire`, `Matamba`, `Ndongo`
-  - *East Africa*: `Adal Sultanate`, `Ajuran Sultanate`, `Aksumite Empire (Axum)`, `Buganda`, `Bunyoro`, `Da'amat (D'mt)`, `Geledi Sultanate`, `Kilwa Sultanate`, `Mombasa`, `Rwanda`, `Swahili Coast`, `Zagwe Dynasty`
-  - *Southern Africa*: `Butua / Rozvi Empire`, `Great Zimbabwe`, `Kingdom of Mutapa`, `Mapungubwe`, `Zulu Kingdom`
+### Work Unit 11: African Civilizations (West, Central, East & Southern) (COMPLETED)
+* **Total Entities**: 124 | **Completed**: 124 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch Files**:
+  - `data-sources/batches/west-africa.json` (24 cultures populated, 299 features linked across eras)
+  - `data-sources/batches/central-africa.json` (11 cultures populated, 90 features linked across eras)
+  - `data-sources/batches/east-africa.json` (23 cultures populated, 252 features linked across eras)
+  - `data-sources/batches/southern-africa.json` (19 cultures populated, 154 features linked across eras)
+* **Entities Resolved**:
+  - *West Africa*: `Akan`, `Asante`, `Bantu`, `Bantu peoples`, `Benin`, `Burkina Faso`, `Dahomey`, `Empire of Ghana`, `Fante`, `Fulani Empire`, `Gambia`, `Ghana`, `Gold Coast`, `Gold Coast (GB)`, `Guinea`, `Guinea-Bissau`, `Guinea-Bissau (Portugal)`, `Hausa States`, `Ivory Coast`, `Kanem`, `Kanem-Bornu`, `Liberia`, `Mali`, `Mossi States`, `Niger`, `Nigeria`, `Oyo`, `Portuguese Guinea`, `Senegal`, `Senegal (FR)`, `Sierra Leone`, `Songhai`, `Togo`, `Wadai`, `Wadai Empire`, `Wassoulou Empire`, `West African cereal farmers`
+  - *Central Africa*: `Belgian Congo`, `Cameroon`, `Central African Republic`, `Chad`, `Congo`, `Congo (France)`, `Equatorial Guinea`, `Gabon`, `Kazembe`, `Kuba`, `Luba`, `Lunda`, `Ndongo`, `Spanish Guinea`, `Zaire`, `Zaire (Belgium)`
+  - *East Africa*: `Abyssinia`, `Adal`, `Alwa`, `Axum`, `Blemmyes`, `British Somaliland`, `Buganda`, `Bunyoro`, `Burundi`, `Damot`, `Darfur`, `Djibouti`, `Eritrea`, `Eritrea (Italy)`, `Ethiopia`, `Ethiopia (Italy)`, `Ethiopian Highland Peoples`, `Ethiopian highland farmers`, `French Somaliland`, `Funj`, `Futa Toro`, `Ifat`, `Imerina`, `Italian Somaliland`, `Kenya`, `Kerma`, `Madagascar`, `Madagascar (France)`, `Makkura`, `Merina Kingdom`, `Nobatia`, `Oromo`, `Rwanda`, `Rwanda (Belgium)`, `Shoa`, `Shoalwater Bay`, `Somalia`, `Sultanate of Zanzibar`, `Sultinate of Zanzibar`, `Toromona`, `Uganda`, `Zanzibar`
+  - *Southern Africa*: `Angola`, `Angola (Portugal)`, `Basutoland`, `Botswana`, `Gitx̱san Lax̱yip`, `Great Zimbabwe`, `Khoisan`, `Lesotho`, `Malawi`, `Mozambique`, `Mozambique (Portugal)`, `Mwenemutapa`, `Namibia`, `Northern Rhodesia`, `Nyasaland`, `Rhodesia`, `Rozwi`, `San Carlos Apache`, `San Poil`, `South Africa`, `Swaziland`, `Xhosa`, `Zambia`, `Zimbabwe`, `Zulu`, `Zululand`
 
-### Work Unit 12: European Medieval & Early Modern Realms
-* **Total Entities**: 170 | **Completed**: 15 | **Missing**: 155
-* **Target Batch Files**:
-  - `data-sources/batches/western-europe.json`
-  - `data-sources/batches/central-europe.json`
-  - `data-sources/batches/nordic.json`
-  - `data-sources/batches/slavic.json`
-  - `data-sources/batches/baltic.json`
-* **Key Missing Entities**:
-  - *Western Europe*: `Anglo-Saxons`, `Carolingian Empire`, `Celts / Gauls`, `Celtiberians`, `Franks / Merovingian`, `Kingdom of England`, `Kingdom of France`, `Kingdom of Scotland`, `Picts`, `Visigothic Kingdom`, `Ostrogothic Kingdom`, `Vandal Kingdom`
-  - *Central Europe*: `Austrian Empire`, `Austro-Hungarian Empire`, `Holy Roman Empire`, `Kingdom of Bohemia`, `Kingdom of Prussia`, `Polish-Lithuanian Commonwealth`, `Swiss Confederacy`, `Teutonic Order`
-  - *Nordic*: `Kalmar Union`, `Kingdom of Denmark-Norway`, `Norse / Vikings`, `Swedish Empire`
-  - *Slavic*: `Kievan Rus'`, `Novgorod Republic`, `Principality of Vladimir-Suzdal`, `Grand Duchy of Moscow`, `Tsardom of Russia`, `Russian Empire`
-  - *Baltic*: `Curonians`, `Early Combware`, `Narva culture`, `Old Prussians`, `Brushed Pottery culture`
+### Work Unit 12: European Medieval & Early Modern Realms (COMPLETED)
+* **Total Entities**: 170 | **Completed**: 170 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch Files**:
+  - `data-sources/batches/western-europe.json` (26 cultures populated, 264 features linked across eras)
+  - `data-sources/batches/central-europe.json` (15 cultures populated, 185 features linked across eras)
+  - `data-sources/batches/nordic.json` (8 cultures populated, 115 features linked across eras)
+  - `data-sources/batches/slavic.json` (11 cultures populated, 52 features linked across eras)
+  - `data-sources/batches/baltic.json` (8 cultures populated, 74 features linked across eras)
+* **Entities Resolved**:
+  - *Western Europe*: `Anglo-Saxons`, `Belgium`, `Britany`, `Burgundians`, `Carolingian Empire`, `Celtiberians`, `Celtic kingdoms`, `Celts`, `Dutch Brazil`, `Dutch Guiana`, `Dutch Guinea`, `Dutch Republic`, `Dutch settlements`, `England`, `England and Ireland`, `France`, `Frankish Kingdom`, `Franks`, `French Cameroons`, `French Equatorial Africa`, `French West Africa`, `Frisians`, `Germanic tribes`, `Goths`, `Hallstatt culture`, `Ireland`, `Kingdom of France`, `Kingdom of Ireland`, `La Tène culture`, `Lombard duchies`, `Lombard principalities`, `Lombardy`, `Luxembourg`, `Netherlands`, `Netherlands Indies`, `New France`, `New South Wales`, `New South Wales (UK)`, `Ostrogoths`, `Penobscot`, `Picts`, `Saxons`, `Saxony`, `Scotland`, `Scots`, `Suebi`, `Swedes and Goths`, `United Kingdom`, `United Kingdom of Great Britain and Ireland`, `Vandals`, `Visigothic Kingdom`, `Visigoths`, `Welsh`
+  - *Central Europe*: `Austria`, `Austria Hungary`, `Austrian Empire`, `Austrian Netherlands`, `Austro-Hungarian Empire`, `Baden`, `Bavaria`, `Brandenburg`, `Czech Republic`, `Czechoslovakia`, `Czechs`, `East Germany`, `East Prussia`, `Electoral Hesse`, `German Empire`, `Germany`, `Germany (France)`, `Germany (Soviet)`, `Germany (UK)`, `Germany (USA)`, `Grand Duchy of Hesse`, `Great Moravia`, `Habsburg Netherlands`, `Hanover`, `Holy Roman Empire`, `Hungary`, `Imperial Hungary`, `Kingdom of Hungary`, `Liechtenstein`, `Lusatian culture`, `Milano (Austria)`, `Moravians`, `Palatinate`, `Poland`, `Poland-Lithuania`, `Polish–Lithuanian Commonwealth`, `Prussia`, `Prussians`, `Republic of the Seven Zenden`, `Slovakia`, `Swiss Confederation`, `Switzerland`, `Teutonic Knights`, `West Germany`, `Württemberg`
+  - *Nordic*: `Denmark`, `Denmark-Norway`, `Finland`, `Greenland`, `Iceland`, `Icelandic Commonwealth`, `Kalmar Union`, `Kingdom of Norway`, `Norsemen`, `Norway`, `Suomi`, `Sweden`, `Sweden–Norway`
+  - *Slavic*: `Grand Duchy of Moscow`, `Kievan Rus`, `Novgorod`, `Novgorod-Seversky`, `Principality of Novgorod`, `Principality of Vladimir-Suzdal`, `Pskov`, `Russia`, `Russian Empire`, `Ryazan`, `Slavic tribes`, `South Russia`, `Tsardom of Muscovy`, `USSR`, `Ukraine`, `White Russia`
+  - *Baltic*: `Baltic tribes`, `Brushed Pottery culture`, `Curonians`, `Early combware`, `Eastern Masurian culture`, `Estonia`, `Latvia`, `Lithuania`, `Narva`, `Plain-Pottery culture`, `Sambian-Nothangian culture`, `Volga-Kamm`, `Western Masurian culture`
 
 ---
 
