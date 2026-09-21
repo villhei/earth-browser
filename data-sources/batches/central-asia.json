@@ -1,0 +1,1319 @@
+[
+  {
+    "slug": "afanasevo-culture",
+    "name": "Afanasievo Culture",
+    "name_fi": "Afanasjevon kulttuuri",
+    "native_name": "Афанасьевская культура",
+    "alternate_names": [
+      "Afanasevo",
+      "Afanasevo culture"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "steppe-pastoral-archaeological",
+    "historical_period": "Chalcolithic / Early Bronze Age",
+    "year_start": -3300,
+    "year_end": -2500,
+    "period_label": "3300 BCE – 2500 BCE",
+    "period_label_fi": "3300 eaa. – 2500 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Afanasievo_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Afanasjevon_kulttuuri",
+    "wikidata_id": "Q382329",
+    "summary_en": "An early archaeological culture of the Minusinsk Basin and Altai Mountains in southern Siberia, widely linked to early Proto-Tocharians. The Afanasievo people practiced pastoralism, bred sheep, cattle, and horses, and were among the earliest metallurgists in Inner Asia.",
+    "summary_fi": "Varhainen arkeologinen kulttuuri Etelä-Siperiassa Altain vuoristossa ja Minusinskin altaassa, joka yhdistetään usein varhaisiin prototokaareihin. Afanasjevon väestö harjoitti karjataloutta ja oli Sisä-Aasian varhaisimpia kuparin ja pronssin työstäjiä.",
+    "capital": "Bateni / Minusinsk Basin",
+    "feature_name_matches": [
+      "Afanasevo",
+      "Afanasievo culture",
+      "Afanasevo culture"
+    ]
+  },
+  {
+    "slug": "yamnaya-culture",
+    "name": "Yamnaya Culture",
+    "name_fi": "Jamnan kulttuuri",
+    "native_name": "Ямная культура",
+    "alternate_names": [
+      "Pit Grave Culture",
+      "Yamnaya Horizon"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "steppe-pastoral-archaeological",
+    "historical_period": "Late Copper Age / Early Bronze Age",
+    "year_start": -3300,
+    "year_end": -2600,
+    "period_label": "3300 BCE – 2600 BCE",
+    "period_label_fi": "3300 eaa. – 2600 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yamnaya_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Jamnan_kulttuuri",
+    "wikidata_id": "Q845187",
+    "summary_en": "A late Copper Age to early Bronze Age archaeological culture in the Pontic-Caspian steppe, regarded as the primary vector for Proto-Indo-European expansion across Eurasia. Characterized by kurgans (burial mounds) and wheeled ox-cart pastoralism.",
+    "summary_fi": "Myöhäisen kuparikauden ja varhaisen pronssikauden kulttuuri Pontoksen ja Kaspian aroilla, jota pidetään indoeurooppalaisten kielten ja paimentolaisuuden keskeisenä alkukotina ja levittäjänä Euraasiaan.",
+    "capital": "Pontic-Caspian Steppe",
+    "feature_name_matches": [
+      "Yamnaya culture",
+      "Yamnaya"
+    ]
+  },
+  {
+    "slug": "catacomb-culture",
+    "name": "Catacomb Culture",
+    "name_fi": "Katakombikulttuuri",
+    "native_name": "Катакомбная культура",
+    "alternate_names": [
+      "Catacomb Grave Culture"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "steppe-pastoral-archaeological",
+    "historical_period": "Middle Bronze Age",
+    "year_start": -2800,
+    "year_end": -1700,
+    "period_label": "2800 BCE – 1700 BCE",
+    "period_label_fi": "2800 eaa. – 1700 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Catacomb_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Katakombikulttuuri",
+    "wikidata_id": "Q1355444",
+    "summary_en": "A Middle Bronze Age culture succeeding the Yamnaya horizon across the Pontic-Caspian steppe, distinguished by underground burial chambers (catacombs) beneath kurgans, advanced bronze casting, and intensive nomadic cattle herding.",
+    "summary_fi": "Keskisen pronssikauden arokulttuuri Pontoksen ja Kaspian aroilla, joka seurasi Jamna-kulttuuria ja tunnettiin kumpuhautoihin rakennetuista katakombeista, kehittyneestä metallurgiasta ja karjanhoitopaimentolaisuudesta.",
+    "capital": "Don-Volga Steppe",
+    "feature_name_matches": [
+      "Catacomb culture"
+    ]
+  },
+  {
+    "slug": "kelteminar-culture",
+    "name": "Kelteminar Culture",
+    "name_fi": "Kelteminarin kulttuuri",
+    "native_name": "Кельтеминарская культура",
+    "alternate_names": [
+      "Kelteminar"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "steppe-pastoral-archaeological",
+    "historical_period": "Neolithic to Chalcolithic",
+    "year_start": -5500,
+    "year_end": -3500,
+    "period_label": "5500 BCE – 3500 BCE",
+    "period_label_fi": "5500 eaa. – 3500 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kelteminar_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kelteminarin_kulttuuri",
+    "wikidata_id": "Q1738363",
+    "summary_en": "A Neolithic archaeological culture of sedentary fishermen and hunters centered in the Amu Darya delta and Kyzylkum Desert in Central Asia. Known for large communal wooden houses and distinct trapezoidal microlith tools.",
+    "summary_fi": "Neoliittinen kalastaja- ja metsästäjäyhteisöjen kulttuuri Keski-Aasiassa Amudarjan suistossa ja Kyzylkumin aavikolla. Tunnetaan suurista puurakenteisista yhteistaloistaan ja geometrisista mikroliittityökaluistaan.",
+    "capital": "Amu Darya Delta / Kyzylkum",
+    "feature_name_matches": [
+      "Kelteminar",
+      "Kelteminar culture"
+    ]
+  },
+  {
+    "slug": "sintashta-culture",
+    "name": "Sintashta Culture",
+    "name_fi": "Sintaštan kulttuuri",
+    "native_name": "Синташтинская культура",
+    "alternate_names": [
+      "Sintashta-Petrovka Horizon"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "steppe-pastoral-archaeological",
+    "historical_period": "Middle Bronze Age",
+    "year_start": -2200,
+    "year_end": -1800,
+    "period_label": "2200 BCE – 1800 BCE",
+    "period_label_fi": "2200 eaa. – 1800 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sintashta_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sinta%C5%A1tan_kulttuuri",
+    "wikidata_id": "Q1427509",
+    "summary_en": "A Middle Bronze Age culture of the northern Eurasian steppe on the borders of Eastern Europe and Central Asia, famous for inventing the spoked-wheel horse chariot and fortified proto-urban settlements.",
+    "summary_fi": "Keskisen pronssikauden kulttuuri Etelä-Uralilla ja Pohjois-Kazakstanissa, joka kehitti maailman varhaisimmat puolapyöräiset sotavaunut ja perusti linnoitettuja pyöreitä asuinpaikkoja.",
+    "capital": "Sintashta / Arkaim",
+    "feature_name_matches": [
+      "Sintashta"
+    ]
+  },
+  {
+    "slug": "andronovo-culture",
+    "name": "Andronovo Culture",
+    "name_fi": "Andronovon kulttuuri",
+    "native_name": "Андроновская культура",
+    "alternate_names": [
+      "Andronovo Horizon"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "steppe-pastoral-archaeological",
+    "historical_period": "Bronze Age",
+    "year_start": -2000,
+    "year_end": -900,
+    "period_label": "2000 BCE – 900 BCE",
+    "period_label_fi": "2000 eaa. – 900 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Andronovo_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Andronovon_kulttuuri",
+    "wikidata_id": "Q41212",
+    "summary_en": "A vast Bronze Age archaeological horizon spanning Western Siberia, Kazakhstan, and the Central Asian steppe, associated with the Proto-Indo-Iranian peoples, bronze technology, horse breeding, and kurgan burials.",
+    "summary_fi": "Laaja pronssikautinen kulttuuripiiri Länsi-Siperiassa ja Keski-Aasiassa, joka yhdistetään indoiranilaisten kielten puhujiin, vaunujen käyttöön, pronssimetallurgiaan ja kumpuhautauksiin.",
+    "capital": "Tobol-Ishim Steppes",
+    "feature_name_matches": [
+      "Andronovo"
+    ]
+  },
+  {
+    "slug": "karasuk-culture",
+    "name": "Karasuk Culture",
+    "name_fi": "Karasukin kulttuuri",
+    "native_name": "Карасукская культура",
+    "alternate_names": [
+      "Karasuk"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "karasuk",
+    "historical_period": "Late Bronze Age to Early Iron Age",
+    "year_start": -1500,
+    "year_end": -800,
+    "period_label": "1500 BCE – 800 BCE",
+    "period_label_fi": "1500 eaa. – 800 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Karasuk_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Karasukin_kulttuuri",
+    "wikidata_id": "Q1511283",
+    "summary_en": "A late Bronze Age archaeological culture of eastern Central Asia and the Upper Yenisei basin, noted for masterfully curved bronze daggers, knives, and horse harnesses linking northern China with the Eurasian steppe.",
+    "summary_fi": "Myöhäispronssikautinen kulttuuri Minusinskin laaksossa ja Jenisein yläjuoksulla, joka tunnetaan erityisesti kaarevista pronssiveitsistään, hevosvaljaistaan ja yhteyksistään muinaiseen Kiinaan.",
+    "capital": "Yenisei Basin",
+    "feature_name_matches": [
+      "Karasuk culture"
+    ]
+  },
+  {
+    "slug": "proto-altaic-pastoralists",
+    "name": "Proto-Altaic Pastoralists",
+    "name_fi": "Proto-altailaiset pastoralistit",
+    "culture_group": "Central Asia",
+    "lineage_id": "proto-altaic-pastoralists",
+    "historical_period": "Bronze to Early Iron Age",
+    "year_start": -2000,
+    "year_end": -400,
+    "period_label": "2000 BCE – 400 BCE",
+    "period_label_fi": "2000 eaa. – 400 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Altaic_languages",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Altailaiset_kielet",
+    "wikidata_id": "Q37848",
+    "summary_en": "Early nomadic pastoral communities across the Mongolian plateau and southern Siberian steppe zones, ancestral to subsequent Turkic, Mongolic, and Tungusic steppe polities and mobile cavalry traditions.",
+    "summary_fi": "Varhaiset paimentolaisyhteisöt Mongolian ylängöllä ja Etelä-Siperiassa, jotka muodostivat turkkilaisten, mongolialaisten ja tunguusilaisten hevoskulttuurien ja aroyhteiskuntien varhaisen perustan.",
+    "capital": "Orkhon Valley / Altai Mountains",
+    "feature_name_matches": [
+      "Proto-Altaic pastoralists"
+    ]
+  },
+  {
+    "slug": "cimmerians",
+    "name": "Cimmerians",
+    "name_fi": "Kimmerialaiset",
+    "native_name": "Κιμμέριοι (Kimmérioi)",
+    "alternate_names": [
+      "Cimmeria"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Early Iron Age",
+    "year_start": -1200,
+    "year_end": -600,
+    "period_label": "1200 BCE – 600 BCE",
+    "period_label_fi": "1200 eaa. – 600 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cimmerians",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kimmerialaiset",
+    "wikidata_id": "Q192730",
+    "summary_en": "An ancient nomadic equestrian people of the Pontic-Caspian steppe and northern Caucasus who raided Anatolia and the Near East, destroying the Phrygian kingdom before being displaced by the Scythians.",
+    "summary_fi": "Muinainen ratsastajakansa Mustanmeren pohjoispuolisilta aroilta ja Kaukasukselta. He tekivät sotaretkiä Lähi-itään ja Vähään-Aasiaan tuhoten Fryygian kuningaskunnan ennen väistymistään skyyttien tieltä.",
+    "capital": "Crimean Steppes / Cimmerian Bosporus",
+    "feature_name_matches": [
+      "Cimerians"
+    ]
+  },
+  {
+    "slug": "scythians",
+    "name": "Scythians",
+    "name_fi": "Skyytit",
+    "native_name": "Skolotoi / Σκύθαι",
+    "alternate_names": [
+      "Scythia",
+      "Pontic Scythians"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Classical Antiquity / Iron Age",
+    "year_start": -900,
+    "year_end": -100,
+    "period_label": "900 BCE – 100 BCE",
+    "period_label_fi": "900 eaa. – 100 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Scythians",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Skyytit",
+    "wikidata_id": "Q131802",
+    "summary_en": "Renowned Iranian equestrian nomads dominating the Pontic steppe from the Danube to the Don. Famous for composite horse archery, elaborate gold animal-style art, and fierce resistance against Darius the Great.",
+    "summary_fi": "Legendaarinen iranilainen ratsastajakansa, joka hallitsi Euraasian aroja Tonavalta Donille. He olivat tunnettuja hevosjousiampujistaan, eläintyylisestä kultataiteestaan ja Dareios Suuren armeijan torjumisesta.",
+    "capital": "Kamenskoe / Neapolis Scythica",
+    "feature_name_matches": [
+      "Scythians",
+      "Proto-Scythian culture"
+    ]
+  },
+  {
+    "slug": "saka",
+    "name": "Saka",
+    "name_fi": "Sakat",
+    "native_name": "𐎿𐎣𐎠 (Sakā)",
+    "alternate_names": [
+      "Saka Kingdom",
+      "Indo-Scythians"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Iron Age / Classical Antiquity",
+    "year_start": -700,
+    "year_end": 400,
+    "period_label": "700 BCE – 400 CE",
+    "period_label_fi": "700 eaa. – 400 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saka",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sakat",
+    "wikidata_id": "Q673004",
+    "summary_en": "Eastern Scythian nomadic confederations inhabiting the Kazakh steppe, Tarim Basin, and Pamir mountains. They founded kingdoms in Khotan and migrated into northwestern India establishing the Indo-Scythian realms.",
+    "summary_fi": "Itäskyytalaiset paimentolaisheimot Kazakstanin aroilla, Tarimin altaassa ja Pamirilla. Sakat perustivat valtakuntia muun muassa Hotaniin ja levittäytyivät Luoteis-Intiaan perustaen indoskyyttien dynastioita.",
+    "capital": "Issyk / Khotan / Taxila",
+    "feature_name_matches": [
+      "Saka Kingdom",
+      "Saces"
+    ]
+  },
+  {
+    "slug": "sarmatians",
+    "name": "Sarmatians",
+    "name_fi": "Sarmaatit",
+    "native_name": "Σαρμάται (Sarmatai)",
+    "alternate_names": [
+      "Sarmatia"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Hellenistic to Roman Era",
+    "year_start": -500,
+    "year_end": 400,
+    "period_label": "500 BCE – 400 CE",
+    "period_label_fi": "500 eaa. – 400 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sarmatians",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sarmaatit",
+    "wikidata_id": "Q162858",
+    "summary_en": "A confederation of Iranian nomadic horsemen that supplanted the Scythians across the Pontic-Caspian steppe, pioneering heavy lance-armed cataphract cavalry that profoundly influenced Roman and medieval warfare.",
+    "summary_fi": "Iranilaisten ratsastajakansojen liitto, joka korvasi skyytit Mustanmeren pohjoispuolella. Sarmaatit kehittivät raskaasti panssaroidun katafraktiratsuväen ja pitkän peitsen käytön.",
+    "capital": "Tanais / Volga-Don Steppe",
+    "feature_name_matches": [
+      "Sarmates"
+    ]
+  },
+  {
+    "slug": "yuezhi",
+    "name": "Yuezhi Confederation",
+    "name_fi": "Yuezhi",
+    "native_name": "月氏 (Yuèzhī)",
+    "alternate_names": [
+      "Da Yuezhi",
+      "Greater Yuezhi",
+      "Tokharians"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Classical Antiquity",
+    "year_start": -500,
+    "year_end": 100,
+    "period_label": "500 BCE – 100 CE",
+    "period_label_fi": "500 eaa. – 100 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yuezhi",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yuezhi",
+    "wikidata_id": "Q468641",
+    "summary_en": "An ancient nomadic confederation in the Hexi Corridor pushed westward into Central Asia and Bactria by the Xiongnu. Their five principalities subsequently unified to establish the influential Kushan Empire.",
+    "summary_fi": "Muinainen paimentolaiskansa Gansun ja Hexin käytävältä, joka siirtyi xiongnujen tieltä Keski-Aasiaan ja Baktriaan. Yuezhien heimoruhtinaskunnat loivat myöhemmin mahtavan Kushan-valtakunnan.",
+    "capital": "Dunhuang / Balkh",
+    "feature_name_matches": [
+      "Yuezhi"
+    ]
+  },
+  {
+    "slug": "xiongnu",
+    "name": "Xiongnu Empire",
+    "name_fi": "Xiongnujen valtakunta",
+    "native_name": "匈奴 (Xiōngnú)",
+    "alternate_names": [
+      "Hsiung-nu",
+      "Xiongnu Confederation"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Warring States to Han Dynasty Era",
+    "year_start": -300,
+    "year_end": 450,
+    "period_label": "300 BCE – 450 CE",
+    "period_label_fi": "300 eaa. – 450 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Xiongnu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Xiongnu",
+    "wikidata_id": "Q174530",
+    "summary_en": "The first great steppe empire, founded by Modu Chanyu, uniting nomadic pastoralist tribes across Mongolia and southern Siberia. They fought prolonged wars with the Han Dynasty, shaping East Asian diplomacy and defenses.",
+    "summary_fi": "Ensimmäinen suuri arojen paimentolaisvaltakunta, jonka Modu Chanyu yhdisti Mongolian ylängöllä. Xiongnut kävivät vuosisatoja sotia Han-dynastiaa vastaan ja vaikuttivat Kiinan muurin rakentamiseen.",
+    "capital": "Luut Hot (Dragon City)",
+    "feature_name_matches": [
+      "Xiongnu",
+      "Southern Xiongnu"
+    ]
+  },
+  {
+    "slug": "donghu",
+    "name": "Donghu Confederation",
+    "name_fi": "Donghu",
+    "native_name": "東胡 (Eastern Barbarians)",
+    "alternate_names": [
+      "Donghu tribes"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "proto-altaic-pastoralists",
+    "historical_period": "Bronze to Iron Age",
+    "year_start": -700,
+    "year_end": -150,
+    "period_label": "700 BCE – 150 BCE",
+    "period_label_fi": "700 eaa. – 150 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Donghu_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Donghu",
+    "wikidata_id": "Q1151608",
+    "summary_en": "A tribal confederation of pastoral nomadic peoples in eastern Inner Mongolia and Manchuria. Defeated by the Xiongnu around 209 BCE, their survivors split into the Xianbei and Wuhuan confederacies.",
+    "summary_fi": "Itäisen Sisä-Mongolian ja Mantšurian paimentolaiskansojen liitto. Xiongnujen kukistettua Donghun noin 209 eaa. sen jälkeläisheimot muodostivat xianbei- ja wuhuan-liittoutumat.",
+    "capital": "Xilamulun River Basin",
+    "feature_name_matches": [
+      "Donghu tribes"
+    ]
+  },
+  {
+    "slug": "alans",
+    "name": "Alans",
+    "name_fi": "Alaanit",
+    "native_name": "Alani / Алантæ",
+    "alternate_names": [
+      "Kingdom of Alania",
+      "Caucasian Alans"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Late Antiquity to Middle Ages",
+    "year_start": 50,
+    "year_end": 1239,
+    "period_label": "50 CE – 1239 CE",
+    "period_label_fi": "50 jaa. – 1239 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Alans",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Alaanit",
+    "wikidata_id": "Q170246",
+    "summary_en": "An Iranian nomadic people who migrated from the Kazakh steppe into the northern Caucasus, later participating in the Migration Period across Western Europe and North Africa, while their Caucasian branch established medieval Alania.",
+    "summary_fi": "Iranilainen paimentolaiskansa, joka siirtyi Keski-Aasiasta Pohjois-Kaukasukselle. Osa alaaneista vaelsi kansainvaellusaikana Hispaniaan ja Pohjois-Afrikkaan, kun taas Kaukasukselle jääneet perustivat kristityn Alanian kuningaskunnan.",
+    "capital": "Maghas",
+    "feature_name_matches": [
+      "Alans",
+      "Caucasian Alans"
+    ]
+  },
+  {
+    "slug": "huns",
+    "name": "Hunnic Empire",
+    "name_fi": "Hunnivaltakunta",
+    "native_name": "Huns",
+    "alternate_names": [
+      "Huns"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Migration Period",
+    "year_start": 370,
+    "year_end": 469,
+    "period_label": "370 CE – 469 CE",
+    "period_label_fi": "370 jaa. – 469 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hunnic_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hunnit",
+    "wikidata_id": "Q179929",
+    "summary_en": "A formidable nomadic warrior confederation originating in Central Asia whose invasion of Eastern Europe triggered the Migration Period. Under Attila, the Huns raided the Eastern and Western Roman empires.",
+    "summary_fi": "Keski-Aasiasta länteen vyörynyt sotaisa ratsastajakansojen liitto, jonka saapuminen Eurooppaan laukaisi suuret kansainvaellukset. Attilan johdolla hunnit uhkasivat sekä Itä- että Länsi-Roomaa.",
+    "capital": "Pannonian Plain / Tisza",
+    "feature_name_matches": [
+      "Huns"
+    ]
+  },
+  {
+    "slug": "avars",
+    "name": "Avar Khaganate",
+    "name_fi": "Avaarien kaanikunta",
+    "alternate_names": [
+      "Pannonian Avars"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Early Middle Ages",
+    "year_start": 567,
+    "year_end": 804,
+    "period_label": "567 CE – 804 CE",
+    "period_label_fi": "567 jaa. – 804 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Avar_Khaganate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Avaarien_kaanikunta",
+    "wikidata_id": "Q201633",
+    "summary_en": "A nomadic empire established in the Pannonian Basin by Eurasian Avars after fleeing the Göktürks. Ruling over Slavic and Germanic populations, they besieged Constantinople before being subjugated by Charlemagne.",
+    "summary_fi": "Pannonian altaaseen perustettu paimentolaisvaltakunta, joka hallitsi slaavilaisia ja germaanisia kansoja kahdensadan vuoden ajan ja piiritti Konstantinopolia ennen Kaarle Suuren valloitusta.",
+    "capital": "The Ring (Pannonia)",
+    "feature_name_matches": [
+      "Avars"
+    ]
+  },
+  {
+    "slug": "gokturk-khaganate",
+    "name": "First Turkic Khaganate",
+    "name_fi": "Ensimmäinen turkkilainen kaanikunta",
+    "native_name": "𐱅𐰇𐰼𐰰 (Türk)",
+    "alternate_names": [
+      "Göktürks",
+      "Gokturks",
+      "Turkic Khaganate"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Early Middle Ages",
+    "year_start": 552,
+    "year_end": 603,
+    "period_label": "552 CE – 603 CE",
+    "period_label_fi": "552 jaa. – 603 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/First_Turkic_Khaganate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/G%C3%B6kt%C3%BCrkkil%C3%A4iset",
+    "wikidata_id": "Q1135246",
+    "summary_en": "The first trans-Eurasian empire founded by the Ashina clan, stretching from Manchuria to the Black Sea. They introduced the Old Turkic Orkhon script and dominated Silk Road commerce.",
+    "summary_fi": "Ashina-klaanin perustama ensimmäinen trans-euraasialainen suurvalta, joka ulottui Mantšuriasta Mustallemerelle. He loivat varhaisimman turkkilaisen riimukirjoituksen ja hallitsivat silkkitien kauppaa.",
+    "capital": "Ötüken",
+    "feature_name_matches": [
+      "Göktürks",
+      "Turcik tribes"
+    ]
+  },
+  {
+    "slug": "western-turkic-khaganate",
+    "name": "Western Turkic Khaganate",
+    "name_fi": "Länsiturkkilainen kaanikunta",
+    "native_name": "On Oq (Ten Arrows)",
+    "alternate_names": [
+      "Western Gokturks"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Early Middle Ages",
+    "year_start": 581,
+    "year_end": 659,
+    "period_label": "581 CE – 659 CE",
+    "period_label_fi": "581 jaa. – 659 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Western_Turkic_Khaganate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/L%C3%A4nsiturkkilainen_kaanikunta",
+    "wikidata_id": "Q837936",
+    "summary_en": "The western successor of the Göktürk Empire, controlling Central Asian oases from the Tarim Basin to the Aral Sea. Allied with the Byzantine Empire against the Sasanians before falling to the Tang Dynasty.",
+    "summary_fi": "Göktürkkiläisten läntinen seuraajavaltio, joka hallitsi Keski-Aasian keitaita Tarimista Araljärvelle. He liittoutuivat Bysantin kanssa sassanideja vastaan ennen joutumistaan Tang-dynastian valtaan.",
+    "capital": "Suyab / Navekat",
+    "feature_name_matches": [
+      "Western Gokturk Khaganate"
+    ]
+  },
+  {
+    "slug": "khazar-khaganate",
+    "name": "Khazar Khaganate",
+    "name_fi": "Kasaarien kaanikunta",
+    "native_name": "Хазарский каганат",
+    "alternate_names": [
+      "Khazaria",
+      "Khazars"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Early Middle Ages",
+    "year_start": 650,
+    "year_end": 969,
+    "period_label": "650 CE – 969 CE",
+    "period_label_fi": "650 jaa. – 969 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Khazars",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kasaarit",
+    "wikidata_id": "Q173289",
+    "summary_en": "A major semi-nomadic Turkic empire controlling the Pontic-Caspian steppe and Caucasus, whose ruling elite famously converted to Judaism. They halted Arab expansion into Eastern Europe and fostered extensive trade.",
+    "summary_fi": "Puolipaimentolainen turkkilainen suurvalta Volgan ja Donin välisillä aroilla, jonka yläluokka kääntyi juutalaisuuteen. Kasaarit pysäyttivät arabien etenemisen Kaukasuksen yli ja hallitsivat kauppareittejä.",
+    "capital": "Atil / Sarkel / Balanjar",
+    "feature_name_matches": [
+      "Khazars"
+    ]
+  },
+  {
+    "slug": "bulgar-khanate",
+    "name": "Volga Bulgaria & Old Great Bulgaria",
+    "name_fi": "Volgan Bulgaria",
+    "native_name": "Идел Болгары",
+    "alternate_names": [
+      "Bulgar Khanate",
+      "Volga Bulgars"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Middle Ages",
+    "year_start": 632,
+    "year_end": 1236,
+    "period_label": "632 CE – 1236 CE",
+    "period_label_fi": "632 jaa. – 1236 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Volga_Bulgaria",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Volgan_Bulgaria",
+    "wikidata_id": "Q185488",
+    "summary_en": "A medieval Turkic state situated at the confluence of the Volga and Kama rivers. Converting to Islam in 922 CE, it flourished as a premier Northern trading hub before being destroyed by the Mongol invasion.",
+    "summary_fi": "Keskiaikainen turkkilainen valtio Volgan ja Kaman yhtymäkohdassa. Se kääntyi islamiin vuonna 922 ja toimi vauraana pohjoisen kauppasolmuna ennen mongolivalloitusta vuonna 1236.",
+    "capital": "Bolghar / Bilyar",
+    "feature_name_matches": [
+      "Bulgar Khanate",
+      "Volga Bulgars"
+    ]
+  },
+  {
+    "slug": "uyghur-khaganate",
+    "name": "Uyghur Khaganate",
+    "name_fi": "Uiguurien kaanikunta",
+    "native_name": "𐰆𐰖𐰍𐰆𐰺 (Uyghur)",
+    "alternate_names": [
+      "Uyghurs"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Early Middle Ages",
+    "year_start": 744,
+    "year_end": 840,
+    "period_label": "744 CE – 840 CE",
+    "period_label_fi": "744 jaa. – 840 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Uyghur_Khaganate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Uiguurivaltakunta",
+    "wikidata_id": "Q831454",
+    "summary_en": "A Turkic empire based in the Orkhon Valley that succeeded the Göktürks. Adopting Manichaeism as the state religion, the Uyghurs built walled cities like Ordu-Baliq and maintained vital alliances with the Tang Dynasty.",
+    "summary_fi": "Turkkilainen suurvalta Mongolian Orkhon-laaksossa, joka omaksui manikealaisuuden valtionuskonnokseen, rakensi suuria linnoitettuja kaupunkeja ja toimi Tang-dynastian keskeisenä sotilasliittolaisena.",
+    "capital": "Ordu-Baliq",
+    "feature_name_matches": [
+      "Uyghurs"
+    ]
+  },
+  {
+    "slug": "karluks",
+    "name": "Karluk Yabghu State",
+    "name_fi": "Karlukit",
+    "native_name": "Qarluq",
+    "alternate_names": [
+      "Karluks",
+      "Karluk Confederation"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Early to High Middle Ages",
+    "year_start": 756,
+    "year_end": 940,
+    "period_label": "756 CE – 940 CE",
+    "period_label_fi": "756 jaa. – 940 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Karluks",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Karlukit",
+    "wikidata_id": "Q46927",
+    "summary_en": "A prominent Turkic tribal confederation in the Zhetysu region of Central Asia whose decisive intervention at the Battle of Talas (751 CE) secured Islamic predominance in Central Asia, leading to the Kara-Khanid Khanate.",
+    "summary_fi": "Merkittävä turkkilainen heimoliitto Semiretšjen alueella. Heidän ratkaiseva kääntymisensä Talasin taistelussa (751 jaa.) arabien puolelle varmisti islamin leviämisen Keski-Aasiaan ja johti Karahanidien nousuun.",
+    "capital": "Suyab / Balasagun",
+    "feature_name_matches": [
+      "Karluks"
+    ]
+  },
+  {
+    "slug": "kimek-kipchak-khaganate",
+    "name": "Cuman–Kipchak Confederation",
+    "name_fi": "Kumaanien ja kiptšakkien liittoutuma",
+    "alternate_names": [
+      "Cumania",
+      "Kipchak Khanate",
+      "Kimek Khaganate"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "High Middle Ages",
+    "year_start": 850,
+    "year_end": 1241,
+    "period_label": "850 CE – 1241 CE",
+    "period_label_fi": "850 jaa. – 1241 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cumania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kumaanit",
+    "wikidata_id": "Q1065776",
+    "summary_en": "A vast confederation of Turkic nomadic tribes ruling the Pontic steppe and Kazakh plains (Desht-i Qipchaq). They played pivotal roles in Kievan Rus' and Balkan medieval politics before the Mongol conquests.",
+    "summary_fi": "Laaja turkkilaisten paimentolaisten liitto Mustanmeren pohjoispuolisilla aroilla ja Kazakstanissa (Dešt-i Kiptšak). Heillä oli keskeinen rooli Kiovan Venäjän ja Balkanin keskiaikaisessa historiassa.",
+    "capital": "Desht-i Qipchaq",
+    "feature_name_matches": [
+      "Cuman Khanates",
+      "Cuman-Kipchak confederation",
+      "Kimek-Kipchak khaganate"
+    ]
+  },
+  {
+    "slug": "pechenegs",
+    "name": "Pechenegs",
+    "name_fi": "Petšenegit",
+    "alternate_names": [
+      "Patzinaks"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "High Middle Ages",
+    "year_start": 860,
+    "year_end": 1091,
+    "period_label": "860 CE – 1091 CE",
+    "period_label_fi": "860 jaa. – 1091 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pechenegs",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pet%C5%A1enegit",
+    "wikidata_id": "Q181752",
+    "summary_en": "A warlike semi-nomadic Turkic people of the steppe north of the Black Sea who dominated trade routes around the Dnieper cataracts, frequently clashing with Kievan Rus' and the Byzantine Empire.",
+    "summary_fi": "Sotaisa turkkilainen paimentolaiskansa Mustanmeren pohjoispuolella, joka hallitsi Dneprin jokireittejä ja kävi jatkuvia sotia Kiovan Venäjää ja Bysanttia vastaan aina Levounionin taisteluun asti.",
+    "capital": "Pontic Steppe",
+    "feature_name_matches": [
+      "Pechenegs"
+    ]
+  },
+  {
+    "slug": "oghuz-turks",
+    "name": "Oghuz Yabgu State",
+    "name_fi": "Oghuz-turkkilaiset",
+    "native_name": "Oğuz Yabgu Devleti",
+    "alternate_names": [
+      "Oghuz Turks",
+      "Oghuz"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Early to High Middle Ages",
+    "year_start": 766,
+    "year_end": 1055,
+    "period_label": "766 CE – 1055 CE",
+    "period_label_fi": "766 jaa. – 1055 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Oghuz_Yabgu_State",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Oguzit",
+    "wikidata_id": "Q1798993",
+    "summary_en": "A western Turkic state situated between the Caspian and Aral seas. The ancestral confederation of modern Turks, Azerbaijanis, and Turkmens, giving birth to the Seljuk and Ottoman empires.",
+    "summary_fi": "Länsiturkkilainen valtakunta Kaspian- ja Araljärven välisellä arolla. Oghuzit ovat nykyisten turkkilaisten, azerien ja turkmeenien suoria esi-isiä ja loivat myöhemmin seldžukkien ja osmanien valtakunnat.",
+    "capital": "Yangikent",
+    "feature_name_matches": [
+      "Oghuz",
+      "Oghuz Turks"
+    ]
+  },
+  {
+    "slug": "mongol-empire",
+    "name": "Mongol Empire",
+    "name_fi": "Mongolivaltakunta",
+    "native_name": "Их Монгол Улс (Ikh Mongol Uls)",
+    "alternate_names": [
+      "Great Khanate",
+      "Mongols"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "High to Late Middle Ages",
+    "year_start": 1206,
+    "year_end": 1368,
+    "period_label": "1206 CE – 1368 CE",
+    "period_label_fi": "1206 jaa. – 1368 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mongol_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mongolivaltakunta",
+    "wikidata_id": "Q12557",
+    "summary_en": "The largest contiguous land empire in history, unified by Genghis Khan in 1206. Spanning from Eastern Europe to the Pacific Ocean, it facilitated global trade, technology exchange, and cultural transmission under the Pax Mongolica.",
+    "summary_fi": "Historian suurin yhtenäinen maa-alueen kattanut valtakunta, jonka Tšingis-kaani perusti vuonna 1206. Se ulottui Itä-Euroopasta Tyynellemerelle ja loi laajan kauppa- ja viestintäverkoston (Pax Mongolica).",
+    "capital": "Avarga / Karakorum / Khanbaliq",
+    "feature_name_matches": [
+      "Mongol Empire",
+      "Mongols",
+      "Great Khanate"
+    ]
+  },
+  {
+    "slug": "golden-horde",
+    "name": "Golden Horde",
+    "name_fi": "Kultainen orda",
+    "native_name": "Алтан Орд (Altan Ord)",
+    "alternate_names": [
+      "Kipchak Khanate",
+      "Khanate of the Golden Horde"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Late Middle Ages",
+    "year_start": 1242,
+    "year_end": 1502,
+    "period_label": "1242 CE – 1502 CE",
+    "period_label_fi": "1242 jaa. – 1502 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Golden_Horde",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kultainen_orda",
+    "wikidata_id": "Q79965",
+    "summary_en": "The northwestern division of the Mongol Empire founded by Batu Khan, ruling the Russian principalities and Pontic-Caspian steppes for over two centuries from its capital at Sarai on the lower Volga.",
+    "summary_fi": "Mongolivaltakunnan luoteinen seuraajavaltio, jonka Batu-kaani perusti ja joka hallitsi Venäjän ruhtinaskuntia ja Kaspian aroja yli kahdensadan vuoden ajan Volgan varrella sijainneesta Saraista käsin.",
+    "capital": "Sarai Batu / Sarai Berke",
+    "feature_name_matches": [
+      "Golden Horde",
+      "Khanate of the Golden Horde"
+    ]
+  },
+  {
+    "slug": "chagatai-khanate",
+    "name": "Chagatai Khanate",
+    "name_fi": "Tšagatai-kaanikunta",
+    "native_name": "Цагаадайн улс",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Late Middle Ages",
+    "year_start": 1225,
+    "year_end": 1687,
+    "period_label": "1225 CE – 1687 CE",
+    "period_label_fi": "1225 jaa. – 1687 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chagatai_Khanate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/T%C5%A1agatain_kaanikunta",
+    "wikidata_id": "Q178707",
+    "summary_en": "The Mongol successor realm ruled by the descendants of Chagatai Khan, covering Transoxiana and the Tarim Basin. It later divided into western Mawarannahr and eastern Moghulistan.",
+    "summary_fi": "Tšingis-kaanin toisen pojan Tšagatain jälkeläisten hallitsema mongolivaltio Keski-Aasiassa, joka hallitsi Transoxianaa ja Tarimin allasta ennen jakautumistaan läntiseen ja itäiseen osaan.",
+    "capital": "Almaliq / Qarshi",
+    "feature_name_matches": [
+      "Chagatai Khanate"
+    ]
+  },
+  {
+    "slug": "ilkhanate",
+    "name": "Ilkhanate",
+    "name_fi": "Il-kaanien valtakunta",
+    "native_name": "Ил Хан Улс (Hulagu Ulus)",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Late Middle Ages",
+    "year_start": 1256,
+    "year_end": 1335,
+    "period_label": "1256 CE – 1335 CE",
+    "period_label_fi": "1256 jaa. – 1335 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ilkhanate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Il-kaanien_valtakunta",
+    "wikidata_id": "Q178084",
+    "summary_en": "The southwestern khanate of the Mongol Empire founded by Hulagu Khan after conquering Baghdad. Centered in Iran, Azerbaijan, and Iraq, it became a major patron of Persian culture, science, and Islamic architecture.",
+    "summary_fi": "Hülegü-kaanin Bagdadin valtauksen jälkeen perustama mongolivaltakunnan lounainen osa Iranissa ja Mesopotamiassa. Kääntyi myöhemmin islamiin ja suosi suuresti persialaista taidetta ja tiedettä.",
+    "capital": "Maragheh / Tabriz / Soltaniyeh",
+    "feature_name_matches": [
+      "Ilkhanate"
+    ]
+  },
+  {
+    "slug": "blue-horde",
+    "name": "Blue Horde",
+    "name_fi": "Sininen orda",
+    "native_name": "Kök Orda",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Late Middle Ages",
+    "year_start": 1227,
+    "year_end": 1428,
+    "period_label": "1227 CE – 1428 CE",
+    "period_label_fi": "1227 jaa. – 1428 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Blue_Horde",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sininen_orda",
+    "wikidata_id": "Q862215",
+    "summary_en": "The eastern wing of the Jochid Ulus (Golden Horde) established by Orda Khan, governing the Kazakh steppes and southern Siberia east of the Ural River before consolidating with the White Horde.",
+    "summary_fi": "Kultaisen ordan itäinen osa, jonka Džotšin vanhin poika Orda-kaani perusti hallitsemaan Länsi-Siperian ja Kazakstanin aroja Uraljoen itäpuolella.",
+    "capital": "Sygnaq",
+    "feature_name_matches": [
+      "Blue Horde"
+    ]
+  },
+  {
+    "slug": "white-horde",
+    "name": "White Horde",
+    "name_fi": "Valkoinen orda",
+    "native_name": "Ak Orda",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Late Middle Ages",
+    "year_start": 1226,
+    "year_end": 1428,
+    "period_label": "1226 CE – 1428 CE",
+    "period_label_fi": "1226 jaa. – 1428 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/White_Horde",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Valkoinen_orda",
+    "wikidata_id": "Q844111",
+    "summary_en": "A major constituent division of the Golden Horde ruling the steppes of modern Kazakhstan and western Siberia, which played a critical role in the unification of the Golden Horde under Tokhtamysh.",
+    "summary_fi": "Kultaisen ordan merkittävä valtakeskus nykyisen Kazakstanin arolla, joka yhdisti arovallat Toktamyš-kaanin johdolla 1300-luvun lopulla.",
+    "capital": "Sygnaq / Saraychik",
+    "feature_name_matches": [
+      "White Horde"
+    ]
+  },
+  {
+    "slug": "timurid-empire",
+    "name": "Timurid Empire",
+    "name_fi": "Timuridien valtakunta",
+    "native_name": "تیموریان (Gūrkāniyān)",
+    "alternate_names": [
+      "Timurids",
+      "Timurid Emirates"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Late Middle Ages to Early Modern",
+    "year_start": 1370,
+    "year_end": 1507,
+    "period_label": "1370 CE – 1507 CE",
+    "period_label_fi": "1370 jaa. – 1507 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Timurid_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Timuridien_valtakunta",
+    "wikidata_id": "Q484195",
+    "summary_en": "A Turco-Mongol empire founded by Timur (Tamerlane) spanning Central Asia, Iran, and Afghanistan. Under Timur and Ulugh Beg, it ignited the Timurid Renaissance in art, astronomy, and Persianate architecture.",
+    "summary_fi": "Timurin (Tamerlanin) perustama turkkilais-mongolilainen suurvalta, joka hallitsi Keski-Aasiaa ja Irania. Timuridien renessanssi loi loisteliasta arkkitehtuuria ja tähtitiedettä Samarkandissa ja Heratissa.",
+    "capital": "Samarkand / Herat",
+    "feature_name_matches": [
+      "Timurid Empire",
+      "Timurid Emirates"
+    ]
+  },
+  {
+    "slug": "nogai-horde",
+    "name": "Nogai Horde",
+    "name_fi": "Nogain orda",
+    "native_name": "Noğay Ordaсы",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern",
+    "year_start": 1440,
+    "year_end": 1634,
+    "period_label": "1440 CE – 1634 CE",
+    "period_label_fi": "1440 jaa. – 1634 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nogai_Horde",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nogain_orda",
+    "wikidata_id": "Q853906",
+    "summary_en": "A confederation of Turkic-speaking pastoral nomadic tribes occupying the Pontic-Caspian steppe between the Volga and Irtysh rivers, named after Nogai Khan of the Golden Horde.",
+    "summary_fi": "Turkkilaiskielisten paimentolaisten liitto Kaspianmeren pohjoispuolella Volgan ja Irtyšin välillä, joka muodostui Kultaisen ordan hajoamisen jälkeen Nogai-kaanin nimikkokansaksi.",
+    "capital": "Saraychik",
+    "feature_name_matches": [
+      "Nogai Horde"
+    ]
+  },
+  {
+    "slug": "khanate-of-kazan",
+    "name": "Khanate of Kazan",
+    "name_fi": "Kazanin kaanikunta",
+    "native_name": "Qazan xanlığı / Казанское ханство",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern",
+    "year_start": 1438,
+    "year_end": 1552,
+    "period_label": "1438 CE – 1552 CE",
+    "period_label_fi": "1438 jaa. – 1552 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Khanate_of_Kazan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kazanin_kaanikunta",
+    "wikidata_id": "Q185488",
+    "summary_en": "A Tatar Turkic successor state of the Golden Horde on the middle Volga, occupying former Volga Bulgarian lands until conquered by Ivan the Terrible of Russia in 1552.",
+    "summary_fi": "Kultaisen ordan hajoamisen jälkeen syntynyt tataarivaltio Keski-Volgalla vanhoilla Volgan Bulgarian mailla. Iivana Julma liitti sen Venäjään piirityksen jälkeen vuonna 1552.",
+    "capital": "Kazan",
+    "feature_name_matches": [
+      "Kazan Khanate"
+    ]
+  },
+  {
+    "slug": "crimean-khanate",
+    "name": "Crimean Khanate",
+    "name_fi": "Krimin kaanikunta",
+    "native_name": "Qırım Hanlığı",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern",
+    "year_start": 1441,
+    "year_end": 1783,
+    "period_label": "1441 CE – 1783 CE",
+    "period_label_fi": "1441 jaa. – 1783 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Crimean_Khanate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Krimin_kaanikunta",
+    "wikidata_id": "Q160440",
+    "summary_en": "A Crimean Tatar state ruled by the Giray dynasty. An autonomous protectorate of the Ottoman Empire, it dominated the Black Sea northern coast until annexed by Catherine the Great.",
+    "summary_fi": "Giray-dynastian hallitsema Krimin tataarien valtio, joka toimi pitkään Osmanien valtakunnan liittolaisena ja Mustanmeren pohjoispuolisten arojen mahtina ennen Katariina Suuren tekemää liitosta.",
+    "capital": "Bakhchysarai",
+    "feature_name_matches": [
+      "Crimean Khanate"
+    ]
+  },
+  {
+    "slug": "astrakhan-khanate",
+    "name": "Astrakhan Khanate",
+    "name_fi": "Astrahanin kaanikunta",
+    "native_name": "Xacitarxan xanlığı",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern",
+    "year_start": 1466,
+    "year_end": 1556,
+    "period_label": "1466 CE – 1556 CE",
+    "period_label_fi": "1466 jaa. – 1556 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Astrakhan_Khanate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Astrahanin_kaanikunta",
+    "wikidata_id": "Q386801",
+    "summary_en": "A Tatar state established in the Volga delta around modern Astrakhan following the fragmentation of the Golden Horde, controlling key Caspian-Volga maritime trading routes until Russian annexation.",
+    "summary_fi": "Volgan suistoon syntynyt tataarikaanikunta Kultaisen ordan hajottua. Hallitsi Kaspianmeren ja Volgan keskeisiä kauppareittejä ennen kuin Moskovan Venäjä valloitti sen vuonna 1556.",
+    "capital": "Xacitarxan (Astrakhan)",
+    "feature_name_matches": [
+      "Astrakhan Khanate"
+    ]
+  },
+  {
+    "slug": "khanate-of-sibir",
+    "name": "Khanate of Sibir",
+    "name_fi": "Siperian kaanikunta",
+    "native_name": "Seber xanlığı",
+    "alternate_names": [
+      "Sibir Khanate"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern",
+    "year_start": 1468,
+    "year_end": 1598,
+    "period_label": "1468 CE – 1598 CE",
+    "period_label_fi": "1468 jaa. – 1598 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Khanate_of_Sibir",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Siperian_kaanikunta",
+    "wikidata_id": "Q210048",
+    "summary_en": "A northern Turco-Mongol khanate in western Siberia that gave Siberia its name. Governed by Khan Kuchum until conquered by Russian Cossack forces led by Yermak Timofeyevich.",
+    "summary_fi": "Turkkilais-mongolilainen kaanikunta Länsi-Siperiassa, josta koko Siperian maantieteellinen nimi juontuu. Kasakkapäällikkö Jermak kukisti kaani Kutšumin ja avasi Siperian Venäjälle.",
+    "capital": "Qashliq (Sibir)",
+    "feature_name_matches": [
+      "Khanate of Sibir"
+    ]
+  },
+  {
+    "slug": "khanate-of-khiva",
+    "name": "Khanate of Khiva",
+    "name_fi": "Hivan kaanikunta",
+    "native_name": "Xiva xonligi",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern to Modern",
+    "year_start": 1511,
+    "year_end": 1920,
+    "period_label": "1511 CE – 1920 CE",
+    "period_label_fi": "1511 jaa. – 1920 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hivan_kaanikunta",
+    "wikidata_id": "Q46313",
+    "summary_en": "An Uzbek state in historic Khwarazm along the lower Amu Darya. It resisted multiple Persian and Russian invasions until becoming a Russian protectorate in 1873.",
+    "summary_fi": "Uzbekkivaltio historiallisessa Horezmissa Amudarjan alajuoksulla. Tunnetaan Ichan Qal'an upeasta linnoituskaupungista ja vuosisataisesta itsenäisyydestään ennen Venäjän protektoraatiksi joutumista.",
+    "capital": "Khiva",
+    "feature_name_matches": [
+      "Khiva Khanate"
+    ]
+  },
+  {
+    "slug": "khanate-of-bukhara",
+    "name": "Khanate of Bukhara",
+    "name_fi": "Buharan kaanikunta",
+    "native_name": "Buxoro xonligi / Emirate of Bukhara",
+    "alternate_names": [
+      "Bokhara Khanate",
+      "Emirate of Bukhara"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern to Modern",
+    "year_start": 1500,
+    "year_end": 1920,
+    "period_label": "1500 CE – 1920 CE",
+    "period_label_fi": "1500 jaa. – 1920 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Buharan_kaanikunta",
+    "wikidata_id": "Q863777",
+    "summary_en": "An Uzbek state established by the Shaybanids in Transoxiana that became Central Asia's spiritual and intellectual center, maintaining prestigious madrasas and Silk Road bazaar networks.",
+    "summary_fi": "Šaibanidien Keski-Aasiaan perustama uzbekkivaltio, josta kehittyi alueen uskonnollinen ja henkinen keskus maineikkaine madrasoineen ja basaareineen aina vuoteen 1920 asti.",
+    "capital": "Bukhara",
+    "feature_name_matches": [
+      "Bokhara Khanate",
+      "Bukara Khanate"
+    ]
+  },
+  {
+    "slug": "oirat-confederation",
+    "name": "Oirat Confederation & Dzungar Khanate",
+    "name_fi": "Oiraattien liittoutuma",
+    "native_name": "Дөрвөн Ойрад (Dörben Oirad)",
+    "alternate_names": [
+      "Dzungars",
+      "Four Oirats"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern",
+    "year_start": 1399,
+    "year_end": 1755,
+    "period_label": "1399 CE – 1755 CE",
+    "period_label_fi": "1399 jaa. – 1755 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Four_Oirat",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Oiraatit",
+    "wikidata_id": "Q1192261",
+    "summary_en": "The western Mongol confederation that rose after the collapse of the Yuan Dynasty. Their Dzungar Khanate formed the last great nomadic steppe empire before being subjugated by the Qing Dynasty.",
+    "summary_fi": "Länsimongolien liittoutuma, jonka perustama Džungarian kaanikunta muodosti Euraasian viimeisen suuren paimentolaisvaltakunnan ennen Qing-dynastian ankaraa valloitusta 1750-luvulla.",
+    "capital": "Ghulja / Dzungaria",
+    "feature_name_matches": [
+      "Oirat Confederation"
+    ]
+  },
+  {
+    "slug": "central-asian-khanates",
+    "name": "Central Asian Khanates",
+    "name_fi": "Keski-Aasian kaanikunnat",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Early Modern to Russian Conquest",
+    "year_start": 1530,
+    "year_end": 1900,
+    "period_label": "1530 CE – 1900 CE",
+    "period_label_fi": "1530 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Russian_conquest_of_Central_Asia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Keski-Aasian_historia",
+    "wikidata_id": "Q4113840",
+    "summary_en": "The diverse regional Uzbek, Kazakh, and Turkmen feudal khanates and emirates across Transoxiana and the Fergana Valley (including Kokand, Bukhara, and Khiva) prior to the Russian conquest.",
+    "summary_fi": "Keski-Aasian uzbekkien, kazakkien ja turkmeenien paikalliset kaanikunnat ja emiirikunnat (mukaan lukien Kokandin kaanikunta) ennen Venäjän keisarikunnan toteuttamaa Keski-Aasian valloitusta.",
+    "capital": "Kokand / Bukhara / Khiva",
+    "feature_name_matches": [
+      "central Asian khanates"
+    ]
+  },
+  {
+    "slug": "zhangzhung",
+    "name": "Zhangzhung Kingdom",
+    "name_fi": "Zhangzhung",
+    "native_name": "ཞང་ཞུང (Zhangzhung)",
+    "culture_group": "Central Asia",
+    "lineage_id": "tibet",
+    "historical_period": "Iron Age to Early Middle Ages",
+    "year_start": -500,
+    "year_end": 645,
+    "period_label": "500 BCE – 645 CE",
+    "period_label_fi": "500 eaa. – 645 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Zhangzhung",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zhangzhung",
+    "wikidata_id": "Q197368",
+    "summary_en": "An ancient realm and culture centered in western Tibet around Mount Kailash and Lake Manasarovar, recognized as the original cradle of the indigenous Bön spiritual tradition before being annexed by the Tibetan Empire.",
+    "summary_fi": "Muinainen korkeakulttuuri ja kuningaskunta Länsi-Tiibetissä pyhän Kailash-vuoren ympärillä. Se oli Tiibetin alkuperäisen bön-uskonnon kehto ennen kuin Songtsen Gampo liitti sen Tiibetin valtakuntaan.",
+    "capital": "Khyunglung Ngulkhar (Silver Castle of Garuda)",
+    "feature_name_matches": [
+      "Zhangzhung Kingdom"
+    ]
+  },
+  {
+    "slug": "tibetan-empire",
+    "name": "Tibetan Empire",
+    "name_fi": "Tiibetin valtakunta",
+    "native_name": "བོད་ཆེན་པོ (Bod Chen po)",
+    "culture_group": "Central Asia",
+    "lineage_id": "tibet",
+    "historical_period": "Early Middle Ages",
+    "year_start": 618,
+    "year_end": 842,
+    "period_label": "618 CE – 842 CE",
+    "period_label_fi": "618 jaa. – 842 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tibetan_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tiibetin_keisarikunta",
+    "wikidata_id": "Q844898",
+    "summary_en": "A powerful imperial realm founded by Songtsen Gampo that unified the Tibetan Plateau and conquered vast territories across Central Asia and northwestern China, temporarily seizing the Tang capital of Chang'an.",
+    "summary_fi": "Songtsen Gampon yhdistämä mahtava valtakunta, joka hallitsi Tiibetin ylänköä ja Silkkitien keitaita ja valtasi lyhyesti jopa Tang-dynastian pääkaupungin Chang'anin vuonna 763.",
+    "capital": "Lhasa / Yarlung Valley",
+    "feature_name_matches": [
+      "Tibetan Empire"
+    ]
+  },
+  {
+    "slug": "tibet",
+    "name": "Tibet",
+    "name_fi": "Tiibet",
+    "native_name": "བོད (Bod)",
+    "alternate_names": [
+      "Ganden Phodrang",
+      "Tibetan Realm"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "tibet",
+    "historical_period": "Era of Fragmentation to Modern Era",
+    "year_start": 842,
+    "year_end": 1951,
+    "period_label": "842 CE – 1951 CE",
+    "period_label_fi": "842 jaa. – 1951 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tibet_(1912%E2%80%931951)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tiibet",
+    "wikidata_id": "Q17252",
+    "summary_en": "The historic civilization and theocratic polity of the Tibetan Plateau, governed by the Dalai Lamas from the Potala Palace under the Ganden Phodrang administration until the 1950s.",
+    "summary_fi": "Tiibetin ylängön historiallinen sivilisaatio ja teokraattinen hallitus, jota dalai-lamat johtivat Potalan palatsista Lhasasta käsin aina 1950-luvun tapahtumiin asti.",
+    "capital": "Lhasa",
+    "feature_name_matches": [
+      "Tibet",
+      "Tibetans",
+      "Proto-Tibetan cultures",
+      "Tibeto-Burmanese"
+    ]
+  },
+  {
+    "slug": "afghanistan",
+    "name": "Afghanistan",
+    "name_fi": "Afganistan",
+    "native_name": "افغانستان (Afghānistān)",
+    "alternate_names": [
+      "Durrani Empire",
+      "Emirate of Afghanistan"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Durrani Empire to Modern State",
+    "year_start": 1747,
+    "year_end": 2026,
+    "period_label": "1747 CE – Present",
+    "period_label_fi": "1747 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Afghanistan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Afganistan",
+    "wikidata_id": "Q889",
+    "summary_en": "A historic sovereign state at the crossroads of Central and South Asia, founded as a modern empire by Ahmad Shah Durrani in 1747 and renowned for preserving its sovereignty amid 19th-century colonial rivalry.",
+    "summary_fi": "Keski- ja Etelä-Aasian risteyskohdassa sijaitseva valtio, jonka Ahmad Šah Durrani perusti modernina valtakuntana vuonna 1747 ja joka säilytti itsenäisyytensä siirtomaavaltojen puristuksessa.",
+    "capital": "Kandahar / Kabul",
+    "feature_name_matches": [
+      "Afghanistan"
+    ]
+  },
+  {
+    "slug": "mongolia",
+    "name": "Mongolia",
+    "name_fi": "Mongolia",
+    "native_name": "Монгол Улс (Mongol Uls)",
+    "alternate_names": [
+      "Bogd Khanate",
+      "Mongolian People's Republic"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Bogd Khanate to Modern Republic",
+    "year_start": 1911,
+    "year_end": 2026,
+    "period_label": "1911 CE – Present",
+    "period_label_fi": "1911 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mongolia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mongolia",
+    "wikidata_id": "Q711",
+    "summary_en": "A modern East-Central Asian nation declaring independence from the Qing Dynasty in 1911 under the Bogd Khan, later becoming the world's second socialist state before transitioning to a parliamentary republic.",
+    "summary_fi": "Sisä-Aasian valtio, joka julistautui itsenäiseksi Qing-dynastiasta vuonna 1911 Bogd-kaanin johdolla. Toimi myöhemmin sosialistisena kansantasavaltana ennen siirtymistään demokratiaan.",
+    "capital": "Ulaanbaatar",
+    "feature_name_matches": [
+      "Mongolia"
+    ]
+  },
+  {
+    "slug": "kazakhstan",
+    "name": "Kazakhstan",
+    "name_fi": "Kazakstan",
+    "native_name": "Қазақстан (Qazaqstan)",
+    "alternate_names": [
+      "Kazakh Khanate"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Kazakh Khanate to Modern Republic",
+    "year_start": 1465,
+    "year_end": 2026,
+    "period_label": "1465 CE – Present",
+    "period_label_fi": "1465 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kazakhstan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kazakstan",
+    "wikidata_id": "Q232",
+    "summary_en": "The vast transcontinental steppe nation founded as the Kazakh Khanate in 1465 by Janibek and Kerei Khan, maintaining pastoral nomadic traditions organized into three Jüz clans before modern statehood.",
+    "summary_fi": "Maailman suurin sisämaavaltio ja arokansa, jonka Žanibek- ja Kerei-kaanit perustivat vuonna 1465. Kazakkien paimentolaisuus ja klaanijako säilyivät elinvoimaisina aina moderniin valtioon asti.",
+    "capital": "Turkistan / Almaty / Astana",
+    "feature_name_matches": [
+      "Kazakhstan"
+    ]
+  },
+  {
+    "slug": "uzbekistan",
+    "name": "Uzbekistan",
+    "name_fi": "Uzbekistan",
+    "native_name": "Oʻzbekiston",
+    "culture_group": "Central Asia",
+    "lineage_id": "mongol-post-mongol-khanates",
+    "historical_period": "Shaybanid / Uzbek Khanate to Modern Republic",
+    "year_start": 1500,
+    "year_end": 2026,
+    "period_label": "1500 CE – Present",
+    "period_label_fi": "1500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Uzbekistan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Uzbekistan",
+    "wikidata_id": "Q265",
+    "summary_en": "A Central Asian nation home to legendary Silk Road oasis metropolises including Samarkand, Bukhara, and Khiva, blending rich Islamic scholarship and monumental architectural heritage.",
+    "summary_fi": "Keski-Aasian sydänmaa, jossa sijaitsevat Silkkitien tarunhohtoiset keidaskaupungit Samarkand, Buhara ja Hiva upeine arkkitehtuureineen ja islamilaisine oppiperinteineen.",
+    "capital": "Tashkent / Samarkand",
+    "feature_name_matches": [
+      "Uzbekistan"
+    ]
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "name_fi": "Kirgisia",
+    "native_name": "Кыргызстан (Kyrgyzstan)",
+    "alternate_names": [
+      "Kyrgyz Khaganate"
+    ],
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Yenisei Kyrgyz to Modern Republic",
+    "year_start": 840,
+    "year_end": 2026,
+    "period_label": "840 CE – Present",
+    "period_label_fi": "840 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kyrgyzstan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kirgisia",
+    "wikidata_id": "Q813",
+    "summary_en": "A mountainous Central Asian country along the Tian Shan range, renowned for its ancient epic traditions, particularly the Epic of Manas, and strong nomadic equestrian heritage.",
+    "summary_fi": "Vuoristoinen Keski-Aasian valtio Tienšan-vuoristossa, joka tunnetaan eeppisestä Manas-runoelmastaan, ratsastusperinteistään ja korkeiden vuoristolaaksojen paimentolaiselämästä.",
+    "capital": "Bishkek",
+    "feature_name_matches": [
+      "Kyrgyzstan"
+    ]
+  },
+  {
+    "slug": "tajikistan",
+    "name": "Tajikistan",
+    "name_fi": "Tadžikistan",
+    "native_name": "Тоҷикистон (Tojikiston)",
+    "culture_group": "Central Asia",
+    "lineage_id": "ancient-steppe-nomads",
+    "historical_period": "Sogdia to Modern Republic",
+    "year_start": 819,
+    "year_end": 2026,
+    "period_label": "819 CE – Present",
+    "period_label_fi": "819 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tajikistan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tad%C5%BEikistan",
+    "wikidata_id": "Q863",
+    "summary_en": "A Persianate nation nestled in the Pamir Mountains of Central Asia, descending from ancient eastern Iranian peoples such as the Sogdians and Bactrians and flourishing under the medieval Samanid dynasty.",
+    "summary_fi": "Persialaiskielinen valtio Pamirin vuoristossa Keski-Aasiassa. Se polveutuu muinaisista itäiranilaisista sogdialaisista ja kukoisti erityisesti keskiaikaisen Samanidien dynastian aikana.",
+    "capital": "Dushanbe",
+    "feature_name_matches": [
+      "Tajikistan"
+    ]
+  },
+  {
+    "slug": "turkmenistan",
+    "name": "Turkmenistan",
+    "name_fi": "Turkmenistan",
+    "native_name": "Türkmenistan",
+    "culture_group": "Central Asia",
+    "lineage_id": "turkic-khaganates",
+    "historical_period": "Seljuk / Oghuz to Modern Republic",
+    "year_start": 1037,
+    "year_end": 2026,
+    "period_label": "1037 CE – Present",
+    "period_label_fi": "1037 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Turkmenistan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Turkmenistan",
+    "wikidata_id": "Q874",
+    "summary_en": "A desert nation between the Caspian Sea and Amu Darya, containing ancient Merv—once among the largest cities on the Silk Road—and home to the historic nomadic Turkmen tribes and Akhal-Teke horses.",
+    "summary_fi": "Kaspianmeren ja Karakumin aavikon ympäröimä valtio, jossa sijaitsi muinainen silkkitien suurkaupunki Merv. Tunnetaan historiallisista turkmeeniheimoistaan ja ahaltekhevosistaan.",
+    "capital": "Ashgabat / Merv",
+    "feature_name_matches": [
+      "Turkmenistan"
+    ]
+  }
+]

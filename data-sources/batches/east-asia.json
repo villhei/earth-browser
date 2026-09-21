@@ -1,0 +1,1254 @@
+[
+  {
+    "slug": "ainu-peoples",
+    "name": "Ainu Peoples",
+    "name_fi": "Ainut",
+    "native_name": "アイヌ (Aynu)",
+    "alternate_names": [
+      "Ainu",
+      "Ainus",
+      "Emishi",
+      "Ezo"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "ainu",
+    "historical_period": "Prehistoric to Modern",
+    "year_start": -5000,
+    "year_end": 2026,
+    "period_label": "5000 BCE – Present",
+    "period_label_fi": "5000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ainu_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ainut",
+    "wikidata_id": "Q101828",
+    "summary_en": "An indigenous people of northern Japan (Hokkaido), Sakhalin, and the Kuril Islands with distinct language isolates, bear ritual spiritualism (iomante), intricate clothing patterns, and maritime hunting-gathering traditions.",
+    "summary_fi": "Pohjois-Japanin (Hokkaidon), Sahalinin ja Kuriilien alkuperäiskansa, jolla on oma isolaattikieli, rikas karhukultti (iomante), omaleimaiset tekstiiliperinteet ja vuosituhantinen metsästys- ja keräilykulttuuri.",
+    "capital": "Ezo / Hokkaido",
+    "feature_name_matches": [
+      "Ainu",
+      "Ainus"
+    ]
+  },
+  {
+    "slug": "xia-dynasty",
+    "name": "Xia Dynasty",
+    "name_fi": "Xia-dynastia",
+    "native_name": "夏朝 (Xià Cháo)",
+    "alternate_names": [
+      "Xia"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Early Bronze Age / Erlitou Horizon",
+    "year_start": -2070,
+    "year_end": -1600,
+    "period_label": "2070 BCE – 1600 BCE",
+    "period_label_fi": "2070 eaa. – 1600 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Xia_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Xia-dynastia",
+    "wikidata_id": "Q35350",
+    "summary_en": "The first hereditary dynasty of traditional Chinese historiography, founded by Yu the Great following his control of legendary Yellow River floods. Archaeologically correlated with the Erlitou urban bronze culture.",
+    "summary_fi": "Kiinan perinteisen historiankirjoituksen ensimmäinen dynastia, jonka Yu Suuri perusti hillittyään Keltaisenjoen tulvat. Yhdistetään arkeologisesti Erlitoun varhaiseen pronssikautiseen kaupunkikulttuuriin.",
+    "capital": "Erlitou / Yangcheng",
+    "feature_name_matches": [
+      "Xia"
+    ]
+  },
+  {
+    "slug": "shang-dynasty",
+    "name": "Shang Dynasty",
+    "name_fi": "Shang-dynastia",
+    "native_name": "商朝 (Shāng Cháo)",
+    "alternate_names": [
+      "Yin Dynasty",
+      "Sinic Bronze Age"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Bronze Age China",
+    "year_start": -1600,
+    "year_end": -1046,
+    "period_label": "1600 BCE – 1046 BCE",
+    "period_label_fi": "1600 eaa. – 1046 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Shang_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Shang-dynastia",
+    "wikidata_id": "Q174780",
+    "summary_en": "The earliest Chinese dynasty supported by archaeological and contemporary written records, famed for sophisticated bronze ritual vessels, oracle bone inscriptions, and royal subterranean tombs at Anyang.",
+    "summary_fi": "Varhaisin kiinalainen dynastia, josta on säilynyt aikalaiskirjoituksia oraakkeliluissa. Tunnetaan erittäin kehittyneestä pronssivalutaiteestaan ja Anyangin kuninkaallisista haudoista.",
+    "capital": "Yin / Anyang / Zhengzhou",
+    "feature_name_matches": [
+      "Sinic"
+    ]
+  },
+  {
+    "slug": "qin-dynasty",
+    "name": "Qin Dynasty",
+    "name_fi": "Qin-dynastia",
+    "native_name": "秦朝 (Qín Cháo)",
+    "alternate_names": [
+      "State of Qin",
+      "Qin Empire"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Imperial China (First Empire)",
+    "year_start": -221,
+    "year_end": -206,
+    "period_label": "221 BCE – 206 BCE",
+    "period_label_fi": "221 eaa. – 206 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Qin_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Qin-dynastia",
+    "wikidata_id": "Q7183",
+    "summary_en": "The first imperial dynasty of China, unified by Qin Shi Huang following the Warring States period. Standardized writing, currency, and measurements, connected the Great Wall, and left the monumental Terracotta Army.",
+    "summary_fi": "Kiinan ensimmäinen keisarillinen dynastia, jonka Qin Shi Huang perusti yhdistettyään taistelevat läänitysvaltiot. Yhtenäisti kirjoitusjärjestelmän, mitat ja rakennutti Kiinan muurin ja terrakotta-armeijan.",
+    "capital": "Xianyang",
+    "feature_name_matches": [
+      "Qin"
+    ]
+  },
+  {
+    "slug": "han-dynasty",
+    "name": "Han Dynasty",
+    "name_fi": "Han-dynastia",
+    "native_name": "漢朝 (Hàn Cháo)",
+    "alternate_names": [
+      "Han Empire",
+      "Western Han",
+      "Eastern Han"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Classical Imperial China",
+    "year_start": -202,
+    "year_end": 220,
+    "period_label": "202 BCE – 220 CE",
+    "period_label_fi": "202 eaa. – 220 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Han_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Han-dynastia",
+    "wikidata_id": "Q7209",
+    "summary_en": "Considered a golden age in Chinese history, the Han Dynasty established Confucianism as the state ideology, opened the overland Silk Road to the West, and established the ethnic cultural identity of the Han Chinese.",
+    "summary_fi": "Kiinan historian kultakausi, jonka aikana kungfutselaisuudesta tuli valtionideologia, Silkkitien kauppayhteydet länteen avattiin ja han-kiinalainen kulttuuri-identiteetti vakiintui.",
+    "capital": "Chang'an / Luoyang",
+    "feature_name_matches": [
+      "Han Empire"
+    ]
+  },
+  {
+    "slug": "kingdom-of-wu",
+    "name": "Eastern Wu",
+    "name_fi": "Itäinen Wu",
+    "native_name": "東吳 (Dōng Wú)",
+    "alternate_names": [
+      "Wu",
+      "Sun Wu"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Three Kingdoms Period",
+    "year_start": 222,
+    "year_end": 280,
+    "period_label": "222 CE – 280 CE",
+    "period_label_fi": "222 jaa. – 280 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Eastern_Wu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/It%C3%A4inen_Wu",
+    "wikidata_id": "Q332845",
+    "summary_en": "One of the Three Kingdoms contesting rule over China, established by Sun Quan in the Yangtze River basin and southern China. Wu developed maritime trade across Southeast Asia and transformed southern China into an economic hub.",
+    "summary_fi": "Yksi Kiinan kolmesta kuningaskunnasta, jonka Sun Quan perusti Jangtse-joen suulle ja Etelä-Kiinaan. Wu kehitti merikauppaa Kaakkois-Aasiaan ja teki etelästä taloudellisen mahtialueen.",
+    "capital": "Jianye (Nanjing)",
+    "feature_name_matches": [
+      "Wu"
+    ]
+  },
+  {
+    "slug": "sixteen-kingdoms",
+    "name": "Sixteen Kingdoms",
+    "name_fi": "Kuusitoista kuningaskuntaa",
+    "native_name": "十六國 (Shíliù Guó)",
+    "alternate_names": [
+      "Sixteen States",
+      "Wu Hu Period"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Northern and Southern Dynasties Era",
+    "year_start": 304,
+    "year_end": 439,
+    "period_label": "304 CE – 439 CE",
+    "period_label_fi": "304 jaa. – 439 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kuusitoista_kuningaskuntaa",
+    "wikidata_id": "Q210328",
+    "summary_en": "A chaotic period of political fragmentation in northern China where non-Han Five Barbarian peoples (Xiongnu, Xianbei, Jie, Di, Qiang) founded short-lived dynasties, fostering the spread of Mahayana Buddhism.",
+    "summary_fi": "Poliittisen hajaannuksen aikakausi Pohjois-Kiinassa, jolloin viisi arokansaa (wuhu) perustivat kilpailevia dynastioita ja buddhalaisuus levisi voimakkaasti Pohjois-Kiinaan.",
+    "capital": "Luoyang / Ye / Chang'an",
+    "feature_name_matches": [
+      "Sixteen Kingdoms"
+    ]
+  },
+  {
+    "slug": "northern-wei",
+    "name": "Northern Wei",
+    "name_fi": "Pohjoinen Wei",
+    "native_name": "北魏 (Běi Wèi)",
+    "alternate_names": [
+      "Tuoba Wei"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Northern and Southern Dynasties",
+    "year_start": 386,
+    "year_end": 535,
+    "period_label": "386 CE – 535 CE",
+    "period_label_fi": "386 jaa. – 535 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Northern_Wei",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pohjoinen_Wei",
+    "wikidata_id": "Q8753",
+    "summary_en": "A dynasty founded by the Tuoba clan of the Xianbei people that reunified northern China. Known for intense sinicization policies under Emperor Xiaowen and monumental Buddhist rock art at Yungang and Longmen Grottoes.",
+    "summary_fi": "Xianbei-kansan Tuoba-klaanin perustama dynastia, joka yhdisti Pohjois-Kiinan. Tunnetaan voimakkaasta kiinalaistumispolitiikastaan sekä Yungangin ja Longmenin monumentaalisista buddhalaisista luolatemppeleistä.",
+    "capital": "Pingcheng (Datong) / Luoyang",
+    "feature_name_matches": [
+      "Northern Wei"
+    ]
+  },
+  {
+    "slug": "sui-dynasty",
+    "name": "Sui Dynasty",
+    "name_fi": "Sui-dynastia",
+    "native_name": "隋朝 (Suí Cháo)",
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Imperial China (Reunification)",
+    "year_start": 581,
+    "year_end": 618,
+    "period_label": "581 CE – 618 CE",
+    "period_label_fi": "581 jaa. – 618 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sui_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sui-dynastia",
+    "wikidata_id": "Q7398",
+    "summary_en": "A short-lived but pivotal imperial dynasty that reunified China after nearly four centuries of division. Built the Grand Canal linking northern and southern agricultural heartlands and reestablished imperial examinations.",
+    "summary_fi": "Lyhyt mutta käänteentekevä dynastia, joka yhdisti Kiinan lähes neljän vuosisadan hajaannuksen jälkeen, rakennutti Keisarinkanavan ja loi pohjan Tang-dynastian kukoistukselle.",
+    "capital": "Daxing (Chang'an) / Luoyang",
+    "feature_name_matches": [
+      "Sui Dynasty",
+      "Sui"
+    ]
+  },
+  {
+    "slug": "tang-dynasty",
+    "name": "Tang Dynasty",
+    "name_fi": "Tang-dynastia",
+    "native_name": "唐朝 (Táng Cháo)",
+    "alternate_names": [
+      "Tang Empire"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Cosmopolitan Imperial Golden Age",
+    "year_start": 618,
+    "year_end": 907,
+    "period_label": "618 CE – 907 CE",
+    "period_label_fi": "618 jaa. – 907 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tang_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tang-dynastia",
+    "wikidata_id": "Q9683",
+    "summary_en": "An apex of Chinese civilization celebrated for cosmopolitan culture, territorial expansion into Central Asia, flourishing poetry by Li Bai and Du Fu, and Chang'an becoming the world's largest metropolis.",
+    "summary_fi": "Kiinan keisarikunnan kukoistuskausi, joka tunnetaan kosmopoliittisesta kulttuuristaan, runoudestaan (Li Bai, Du Fu) ja silkkitien kansainvälisestä kaupasta Chang'anin loistavasta pääkaupungista käsin.",
+    "capital": "Chang'an / Luoyang",
+    "feature_name_matches": [
+      "Tang Empire"
+    ]
+  },
+  {
+    "slug": "liao-dynasty",
+    "name": "Liao Dynasty",
+    "name_fi": "Liao-dynastia",
+    "native_name": "遼朝 / Mos Jælud (Khitan)",
+    "alternate_names": [
+      "Khitan Empire",
+      "Liao",
+      "Khitans"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Song-Liao Era",
+    "year_start": 916,
+    "year_end": 1125,
+    "period_label": "916 CE – 1125 CE",
+    "period_label_fi": "916 jaa. – 1125 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Liao_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Liao-dynastia",
+    "wikidata_id": "Q7522",
+    "summary_en": "An empire in northern China and Manchuria founded by the nomadic Khitan Yelü clan. Operating a dual administration for nomads and sedentary Chinese, the word 'Cathay' derives from the Khitans.",
+    "summary_fi": "Kitaanien perustama voimakas valtakunta Pohjois-Kiinassa ja Mantšuriassa. He sovelsivat kaksoishallintoa arokansoille ja kiinalaisille; eurooppalainen Kiinan nimitys 'Cathay' juontuu kitaaneista.",
+    "capital": "Shangjing (Linhuang)",
+    "feature_name_matches": [
+      "Liao",
+      "Khitans"
+    ]
+  },
+  {
+    "slug": "song-dynasty",
+    "name": "Song Dynasty",
+    "name_fi": "Song-dynastia",
+    "native_name": "宋朝 (Sòng Cháo)",
+    "alternate_names": [
+      "Song Empire",
+      "Northern Song",
+      "Southern Song"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Medieval Economic Revolution",
+    "year_start": 960,
+    "year_end": 1279,
+    "period_label": "960 CE – 1279 CE",
+    "period_label_fi": "960 jaa. – 1279 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Song_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Song-dynastia",
+    "wikidata_id": "Q7462",
+    "summary_en": "A period of unprecedented economic, scientific, and cultural advancement in China. Pioneered paper money (jiaozi), magnetic compass navigation, gunpowder weapons, and movable type printing before falling to the Mongols.",
+    "summary_fi": "Taloudellisen ja tieteellisen kukoistuksen aika Kiinassa. Song-dynastian aikana keksittiin seteliraha, magneettikompassi, ruutiaseet ja irtokirjasinpaino ennen mongolivalloitusta vuonna 1279.",
+    "capital": "Bianjing (Kaifeng) / Lin'an (Hangzhou)",
+    "feature_name_matches": [
+      "Song Empire"
+    ]
+  },
+  {
+    "slug": "western-xia",
+    "name": "Western Xia",
+    "name_fi": "Läntinen Xia",
+    "native_name": "Tangut Empire / 白高大夏國",
+    "alternate_names": [
+      "Tangut Empire"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Song-Xia Era",
+    "year_start": 1038,
+    "year_end": 1227,
+    "period_label": "1038 CE – 1227 CE",
+    "period_label_fi": "1038 jaa. – 1227 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Western_Xia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/L%C3%A4ntinen_Xia",
+    "wikidata_id": "Q7517",
+    "summary_en": "A Tibetan-Burman Tangut empire controlling the Hexi Corridor along the Silk Road. Developing their own complex script and thriving on Buddhist culture, they resisted Genghis Khan until their destruction in 1227.",
+    "summary_fi": "Tiibetiläis-burmalaisen tangut-kansan valtakunta Hexin käytävällä Silkkitien varrella. Tangutit kehittivät oman monimutkaisen kirjoitusjärjestelmänsä ja puolustautuivat vuosia Tšingis-kaania vastaan.",
+    "capital": "Xingqing (Yinchuan)",
+    "feature_name_matches": [
+      "Western Xia",
+      "Tangut"
+    ]
+  },
+  {
+    "slug": "jin-dynasty-jurchen",
+    "name": "Jin Dynasty (Jurchen)",
+    "name_fi": "Jin-dynastia (džurtšenit)",
+    "native_name": "金朝 / Anchu Gurun",
+    "alternate_names": [
+      "Jurchen Jin Empire"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Song-Jin Era",
+    "year_start": 1115,
+    "year_end": 1234,
+    "period_label": "1115 CE – 1234 CE",
+    "period_label_fi": "1115 jaa. – 1234 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Jin-dynastia_(1115%E2%80%931234)",
+    "wikidata_id": "Q7483",
+    "summary_en": "An empire established by the Tungusic Jurchen people of Manchuria who overthrew the Liao Dynasty and conquered northern China from the Song, capturing Kaifeng in 1227 before being conquered by the Mongols.",
+    "summary_fi": "Tunguusilaisten džurtšenien Mantšuriasta käsin perustama dynastia, joka tuhosi Liao-valtakunnan ja valtasi Pohjois-Kiinan Song-dynastialta ennen kuin mongolit kukistivat sen vuonna 1234.",
+    "capital": "Shangjing / Zhongdu (Beijing)",
+    "feature_name_matches": [
+      "Jin Dynasty (Jurchen)",
+      "Jin"
+    ]
+  },
+  {
+    "slug": "ming-dynasty",
+    "name": "Ming Dynasty",
+    "name_fi": "Ming-dynastia",
+    "native_name": "大明 (Dà Míng)",
+    "alternate_names": [
+      "Ming Chinese Empire",
+      "Ming Empire",
+      "Post-Ming Warlords"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Late Imperial China",
+    "year_start": 1368,
+    "year_end": 1644,
+    "period_label": "1368 CE – 1644 CE",
+    "period_label_fi": "1368 jaa. – 1644 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ming_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ming-dynastia",
+    "wikidata_id": "Q9903",
+    "summary_en": "Restoring native Han Chinese governance after Mongol rule, the Ming rebuilt the Great Wall in stone, constructed Beijing's Forbidden City, dispatched Zheng He's maritime treasure fleets, and dominated global silver trade.",
+    "summary_fi": "Palautti han-kiinalaisen vallan mongolien jälkeen. Ming-dynastia rakensi Kielletyn kaupungin, vahvisti Kiinan muurin kivilinnoituksin ja lähetti Zheng Hen suuret aarrelaivastot Intian valtamerelle.",
+    "capital": "Nanjing / Beijing",
+    "feature_name_matches": [
+      "Ming Chinese Empire",
+      "Ming Empire",
+      "Post-Ming Warlords"
+    ]
+  },
+  {
+    "slug": "qing-dynasty",
+    "name": "Qing Dynasty",
+    "name_fi": "Qing-dynastia",
+    "native_name": "大清 / Daicing Gurun",
+    "alternate_names": [
+      "Manchu Empire",
+      "Qing Empire",
+      "Great Qing"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Last Imperial Chinese Dynasty",
+    "year_start": 1636,
+    "year_end": 1912,
+    "period_label": "1636 CE – 1912 CE",
+    "period_label_fi": "1636 jaa. – 1912 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Qing_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Qing-dynastia",
+    "wikidata_id": "Q8007",
+    "summary_en": "The last imperial dynasty of China, founded by the Manchu Aisin Gioro clan. Incorporating Tibet, Xinjiang, Mongolia, and Taiwan, it established the modern territorial boundaries of China before the 1911 Revolution.",
+    "summary_fi": "Kiinan viimeinen keisarillinen dynastia, jonka mantšut perustivat. Liitti valtakuntaan Tiibetin, Xinjiangin, Mongolian ja Taiwanin ja loi modernin Kiinan alueelliset rajat ennen vuoden 1911 vallankumousta.",
+    "capital": "Mukden (Shenyang) / Beijing",
+    "feature_name_matches": [
+      "Manchu Empire",
+      "Qing Empire"
+    ]
+  },
+  {
+    "slug": "chinese-warlords",
+    "name": "Chinese Warlord Era",
+    "name_fi": "Kiinan sotapäälliköiden aikakausi",
+    "native_name": "軍閥時代 (Jūnfá Shídài)",
+    "alternate_names": [
+      "Chinese Warlords",
+      "Beiyang Government"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Early Republic of China",
+    "year_start": 1916,
+    "year_end": 1928,
+    "period_label": "1916 CE – 1928 CE",
+    "period_label_fi": "1916 jaa. – 1928 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Warlord_Era",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sotap%C3%A4%C3%A4llik%C3%B6iden_aika_(Kiina)",
+    "wikidata_id": "Q1076132",
+    "summary_en": "A turbulent period following the death of Yuan Shikai when regional military cliques (Zhili, Fengtian, Anhui) fragmented control of the Republic of China until the Kuomintang's Northern Expedition.",
+    "summary_fi": "Yuan Shikain kuolemaa seurannut hajaannuksen aika, jolloin kilpailevat sotilasjohtajat ja klikit jakoivat Kiinan hallinnan omiin valtapiireihinsä ennen Kuomintangin pohjoista sotaretkeä.",
+    "capital": "Beijing / Guangzhou",
+    "feature_name_matches": [
+      "Chinese Warlords",
+      "Chinese warlords"
+    ]
+  },
+  {
+    "slug": "china",
+    "name": "China",
+    "name_fi": "Kiina",
+    "native_name": "中华人民共和国 / 中華民國",
+    "alternate_names": [
+      "People's Republic of China",
+      "Republic of China"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Modern Era",
+    "year_start": 1912,
+    "year_end": 2026,
+    "period_label": "1912 CE – Present",
+    "period_label_fi": "1912 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/China",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kiina",
+    "wikidata_id": "Q148",
+    "summary_en": "The modern Chinese state succeeding the Qing Dynasty in 1912 as a republic and proclaimed as the People's Republic of China in 1949 by Mao Zedong, becoming a global economic and technological superpower.",
+    "summary_fi": "Moderni kiinalainen valtio, joka syntyi tasavaltana vuonna 1912 ja julistettiin Kiinan kansantasavallaksi vuonna 1949 Mao Zedongin johdolla nousten maailman johtavaksi talous- ja teknologiamadiksi.",
+    "capital": "Beijing / Nanjing",
+    "feature_name_matches": [
+      "China"
+    ]
+  },
+  {
+    "slug": "hong-kong",
+    "name": "Hong Kong",
+    "name_fi": "Hongkong",
+    "native_name": "香港 (Heūng Góng)",
+    "alternate_names": [
+      "British Hong Kong",
+      "Hong Kong SAR"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Colonial to Special Administrative Region",
+    "year_start": 1841,
+    "year_end": 2026,
+    "period_label": "1841 CE – Present",
+    "period_label_fi": "1841 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hong_Kong",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hongkong",
+    "wikidata_id": "Q8646",
+    "summary_en": "A global financial metropolis at the Pearl River Delta, established as a British colony following the First Opium War in 1841 and transferred to Chinese sovereignty in 1997 under the 'One Country, Two Systems' framework.",
+    "summary_fi": "Helmijoen suiston kansainvälinen finanssimetropoli, joka perustettiin brittiläisenä kruununsiirtomaana ensimmäisen oopiumisodan jälkeen 1841 ja palautettiin Kiinalle vuonna 1997 erityishallintoalueena.",
+    "capital": "Victoria City",
+    "feature_name_matches": [
+      "Hong Kong"
+    ]
+  },
+  {
+    "slug": "taiwan",
+    "name": "Taiwan",
+    "name_fi": "Taiwan",
+    "native_name": "臺灣 / 台湾 (Tâi-oân)",
+    "alternate_names": [
+      "Formosa",
+      "Republic of China (Taiwan)",
+      "Dutch Formosa"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Colonial to Modern Democratic State",
+    "year_start": 1624,
+    "year_end": 2026,
+    "period_label": "1624 CE – Present",
+    "period_label_fi": "1624 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Taiwan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Taiwan",
+    "wikidata_id": "Q865",
+    "summary_en": "An East Asian island nation home to indigenous Austronesian peoples, experiencing Dutch colonial rule, the Kingdom of Tungning, Qing rule, Japanese administration, and becoming a flourishing democratic semiconductor leader.",
+    "summary_fi": "Itäaasialainen saarivaltio, joka on austroneesialaisten kansojen alkukoti. Kokenut Hollannin siirtomaavallan, Tungningin kuningaskunnan, Qing-hallinnon ja noussut moderniksi teknologiakeskukseksi.",
+    "capital": "Tainan / Taipei",
+    "feature_name_matches": [
+      "Taiwan",
+      "Dutch Formosa"
+    ]
+  },
+  {
+    "slug": "hainan",
+    "name": "Hainan",
+    "name_fi": "Hainan",
+    "native_name": "海南 (Hái-nâm)",
+    "alternate_names": [
+      "Qiongzhou"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Ancient to Modern Maritime Frontier",
+    "year_start": -110,
+    "year_end": 2026,
+    "period_label": "110 BCE – Present",
+    "period_label_fi": "110 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hainan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hainan",
+    "wikidata_id": "Q42200",
+    "summary_en": "China's southernmost island province, historically inhabited by the Hlai (Li) people and integrated into the Han Empire in 110 BCE. It served as a maritime Silk Road station and major naval gateway to the South China Sea.",
+    "summary_fi": "Kiinan eteläisin suursaari, jonka alkuperäisasukkaita ovat li-kansa. Liitettiin Han-dynastiaan 110 eaa. ja toimi vuosisatoja merisilkkitien keskeisenä etappina ja Etelä-Kiinan meren väylänä.",
+    "capital": "Haikou",
+    "feature_name_matches": [
+      "Hainan"
+    ]
+  },
+  {
+    "slug": "minyue",
+    "name": "Minyue",
+    "name_fi": "Minyue",
+    "native_name": "閩越 (Mǐnyuè)",
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Warring States to Han Dynasty",
+    "year_start": -334,
+    "year_end": -110,
+    "period_label": "334 BCE – 110 BCE",
+    "period_label_fi": "334 eaa. – 110 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Minyue",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Minyue",
+    "wikidata_id": "Q6871217",
+    "summary_en": "An ancient non-Han Yue kingdom centered in modern Fujian. Following the defeat of the state of Yue by Chu, descendants established Minyue as a powerful maritime power until annexed by Emperor Wu of Han.",
+    "summary_fi": "Muinainen yue-kansojen kuningaskunta nykyisen Fujianin vuoristoisella rannikolla. Se säilytti itsenäisen merellisen voimansa aina Han-dynastian keisari Wun toteuttamaan liitokseen asti.",
+    "capital": "Dongye (Fuzhou)",
+    "feature_name_matches": [
+      "Min-Yue"
+    ]
+  },
+  {
+    "slug": "nanyue",
+    "name": "Nanyue",
+    "name_fi": "Nanyue",
+    "native_name": "南越 / Nam Việt",
+    "alternate_names": [
+      "Southern Yue"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Qin-Han Transition",
+    "year_start": -204,
+    "year_end": -111,
+    "period_label": "204 BCE – 111 BCE",
+    "period_label_fi": "204 eaa. – 111 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nanyue",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nanyue",
+    "wikidata_id": "Q865561",
+    "summary_en": "An ancient kingdom encompassing Guangdong, Guangxi, and northern Vietnam, founded by Qin general Zhao Tuo. Blending Chinese and indigenous Yue cultures, it stood as a powerful regional state before Han conquest.",
+    "summary_fi": "Muinainen kuningaskunta Guangdongissa, Guangxissa ja Pohjois-Vietnamissa, jonka Qin-kenraali Zhao Tuo perusti. Yhdisti kiinalaista ja yue-kulttuuria ennen Han-dynastian valloitusta.",
+    "capital": "Panyu (Guangzhou)",
+    "feature_name_matches": [
+      "Nan-Yue"
+    ]
+  },
+  {
+    "slug": "baiyue",
+    "name": "Baiyue Peoples",
+    "name_fi": "Baiyue-kansat",
+    "native_name": "百越 (Hundred Yue)",
+    "alternate_names": [
+      "Yue Tribes",
+      "Yue"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Antiquity",
+    "year_start": -1000,
+    "year_end": -111,
+    "period_label": "1000 BCE – 111 BCE",
+    "period_label_fi": "1000 eaa. – 111 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Baiyue",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Baiyue",
+    "wikidata_id": "Q803874",
+    "summary_en": "Diverse non-Sinitic indigenous coastal peoples who inhabited southern China and northern Vietnam before sinicization, practicing wet-rice agriculture, bronze drum casting, and seafaring navigation.",
+    "summary_fi": "Etelä-Kiinan ja Pohjois-Vietnamin muinaiset alkuperäiskansat, jotka tunnettiin märkäriisiviljelystään, pronssirummuistaan, tatuoinneistaan ja merenkulkutaidoistaan ennen han-kiinalaistumista.",
+    "capital": "Kuaiji / Lingnan",
+    "feature_name_matches": [
+      "Yue"
+    ]
+  },
+  {
+    "slug": "manchuria",
+    "name": "Manchuria",
+    "name_fi": "Mantšuria",
+    "native_name": "Manju / 滿洲",
+    "alternate_names": [
+      "Manchukuo"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Early Modern to World War II",
+    "year_start": 1616,
+    "year_end": 1945,
+    "period_label": "1616 CE – 1945 CE",
+    "period_label_fi": "1616 jaa. – 1945 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Manchuria",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mant%C5%A1uria",
+    "wikidata_id": "Q81126",
+    "summary_en": "The historic homeland of the Jurchen and Manchu peoples northeast of the Great Wall, later organized as the Japanese client state of Manchukuo (1932–1945) under Emperor Puyi before full reintegration into China.",
+    "summary_fi": "Džurtšenien ja mantšujen historiallinen kotimaa Kiinan muurin koillispuolella. Toimi toisen maailmansodan aikana Japanin nukkevaltiona (Mantšukuo) ennen palautumistaan Kiinan yhteyteen.",
+    "capital": "Xinjing (Changchun) / Shenyang",
+    "feature_name_matches": [
+      "Manchuria"
+    ]
+  },
+  {
+    "slug": "french-indochina",
+    "name": "French Indochina",
+    "name_fi": "Ranskan Indokiina",
+    "native_name": "Indochine française",
+    "alternate_names": [
+      "French Indo-China",
+      "Cochin China"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "vietnam",
+    "historical_period": "Colonial Era",
+    "year_start": 1887,
+    "year_end": 1954,
+    "period_label": "1887 CE – 1954 CE",
+    "period_label_fi": "1887 jaa. – 1954 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/French_Indochina",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ranskan_Indokiina",
+    "wikidata_id": "Q185682",
+    "summary_en": "A grouping of French colonial territories in Southeast Asia comprising Cochinchina, Annam, Tonkin, Cambodia, and Laos, dissolving after the First Indochina War and the Battle of Dien Bien Phu.",
+    "summary_fi": "Ranskan siirtomaaliitto Kaakkois-Aasiassa, johon kuuluivat Kotšinkiina, Annam, Tonkin, Kambodža ja Laos. Päättyi ensimmäiseen Indokiinan sotaan ja Điện Biên Phủn taisteluun vuonna 1954.",
+    "capital": "Saigon / Hanoi",
+    "feature_name_matches": [
+      "French Indochina",
+      "French Indo-China",
+      "Cochin China"
+    ]
+  },
+  {
+    "slug": "yayoi-period",
+    "name": "Yayoi Period",
+    "name_fi": "Yayoi-kausi",
+    "native_name": "弥生時代 (Yayoi Jidai)",
+    "alternate_names": [
+      "Yayoi Culture"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Iron Age Japan",
+    "year_start": -300,
+    "year_end": 300,
+    "period_label": "300 BCE – 300 CE",
+    "period_label_fi": "300 eaa. – 300 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yayoi_period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yayoi-kausi",
+    "wikidata_id": "Q207865",
+    "summary_en": "An iron-age era in Japanese history marked by the arrival of wet-rice paddy agriculture, metallurgy (bronze bells and iron weaponry), and social stratification, laying the foundations for the Yamato state.",
+    "summary_fi": "Japanin rautakautinen kulttuurikausi, jonka aikana märkäriisin viljely, pronssi- ja rautateknologia saapuivat mantereelta Japaniin luoden pohjan varhaiselle Yamato-valtiolle.",
+    "capital": "Yoshinogari",
+    "feature_name_matches": [
+      "Yayoi"
+    ]
+  },
+  {
+    "slug": "yamato-period",
+    "name": "Yamato Period",
+    "name_fi": "Yamato-kausi",
+    "native_name": "大和時代 (Yamato Jidai)",
+    "alternate_names": [
+      "Kofun Period",
+      "Asuka Period"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Protohistoric to Classical Japan",
+    "year_start": 250,
+    "year_end": 710,
+    "period_label": "250 CE – 710 CE",
+    "period_label_fi": "250 jaa. – 710 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yamato_period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yamato-kausi",
+    "wikidata_id": "Q855239",
+    "summary_en": "The period when the Japanese imperial court emerged in the Kinai plain, constructing enormous keyhole-shaped kofun burial mounds, adopting Chinese writing and Buddhism, and centralizing sovereign rule.",
+    "summary_fi": "Japanin keisarihuoneen varhainen valtakeskittymä Kinaissa. Aikakautta leimasivat valtavat avaimenreikähaudat (kofun), buddhalaisuuden ja kiinalaisen kirjoitusjärjestelmän omaksuminen.",
+    "capital": "Asuka / Sakurai",
+    "feature_name_matches": [
+      "Yamato"
+    ]
+  },
+  {
+    "slug": "heian-period",
+    "name": "Heian Period",
+    "name_fi": "Heian-kausi",
+    "native_name": "平安時代 (Heian Jidai)",
+    "alternate_names": [
+      "Imperial Japan (Fujiwara)",
+      "Heian Japan"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Classical Japanese Golden Age",
+    "year_start": 794,
+    "year_end": 1185,
+    "period_label": "794 CE – 1185 CE",
+    "period_label_fi": "794 jaa. – 1185 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Heian_period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Heian-kausi",
+    "wikidata_id": "Q192497",
+    "summary_en": "The peak of the Japanese classical imperial court in Kyoto, dominated by the Fujiwara clan. Famed for native kana literature, Murasaki Shikibu's Tale of Genji, and refined aesthetic culture.",
+    "summary_fi": "Japanin klassisen hovikulttuurin kultakausi Kiotossa, jota hallitsi Fujiwara-klaani. Tunnetaan hienostuneesta estetiikastaan ja maailman ensimmäisestä romaanista (Genjin tarina).",
+    "capital": "Heian-kyō (Kyoto)",
+    "feature_name_matches": [
+      "Imperial Japan (Fujiwara)"
+    ]
+  },
+  {
+    "slug": "kamakura-shogunate",
+    "name": "Kamakura Shogunate",
+    "name_fi": "Kamakura-shōgunaatti",
+    "native_name": "鎌倉幕府 (Kamakura Bakufu)",
+    "alternate_names": [
+      "Shogun Japan (Kamakura)"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Feudal Japan (First Shogunate)",
+    "year_start": 1185,
+    "year_end": 1333,
+    "period_label": "1185 CE – 1333 CE",
+    "period_label_fi": "1185 jaa. – 1333 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kamakura_shogunate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kamakura-sh%C5%8Dgunaatti",
+    "wikidata_id": "Q206177",
+    "summary_en": "The first warrior military government of Japan founded by Minamoto no Yoritomo. It established the samurai class as ruling lords, adopted Zen Buddhism, and successfully repelled two Mongol invasions in 1274 and 1281.",
+    "summary_fi": "Japanin ensimmäinen sotilashallitus (bakufu), jonka Minamoto no Yoritomo perusti Kamakuraan. Vakiinnutti samurailuokan vallan ja torjui mongolien maihinnousuyritykset vuosina 1274 ja 1281.",
+    "capital": "Kamakura",
+    "feature_name_matches": [
+      "Shogun Japan (Kamakura)"
+    ]
+  },
+  {
+    "slug": "sengoku-period",
+    "name": "Sengoku Period",
+    "name_fi": "Sengoku-kausi",
+    "native_name": "戦国時代 (Warring States Period)",
+    "alternate_names": [
+      "Japan (Warring States)"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Feudal Japan",
+    "year_start": 1467,
+    "year_end": 1603,
+    "period_label": "1467 CE – 1603 CE",
+    "period_label_fi": "1467 jaa. – 1603 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sengoku_period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sengoku-kausi",
+    "wikidata_id": "Q206180",
+    "summary_en": "A century of near-constant civil war in feudal Japan following the Ōnin War, marked by rival daimyō warlords, castle building, matchlock firearms, and eventual unification by Oda Nobunaga, Toyotomi Hideyoshi, and Tokugawa Ieyasu.",
+    "summary_fi": "Japanin feodaaliajan sotaisa hajoamiskausi, jolloin daimiot sotivat vallasta linnoituskaupungeistaan käsin, kunnes Nobunaga, Hideyoshi ja Ieyasu yhdistivät valtakunnan.",
+    "capital": "Kyoto / Azuchi / Osaka",
+    "feature_name_matches": [
+      "Japan (Warring States)"
+    ]
+  },
+  {
+    "slug": "tokugawa-shogunate",
+    "name": "Tokugawa Shogunate",
+    "name_fi": "Tokugawa-shōgunaatti",
+    "native_name": "徳川幕府 / 江戸幕府 (Edo Bakufu)",
+    "alternate_names": [
+      "Edo Period",
+      "Tokugawa Bakufu"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Early Modern Japan",
+    "year_start": 1603,
+    "year_end": 1867,
+    "period_label": "1603 CE – 1867 CE",
+    "period_label_fi": "1603 jaa. – 1867 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tokugawa_shogunate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tokugawa-sh%C5%8Dgunaatti",
+    "wikidata_id": "Q205662",
+    "summary_en": "The final feudal military government of Japan, ruling over 250 years of peace and stability from Edo (Tokyo) under national seclusion (sakoku), fostering ukiyo-e woodblock art, kabuki, and urban merchant culture.",
+    "summary_fi": "Japanin viimeinen sotilashallitus, joka takasi yli 250 vuoden rauhan ja eristäytymisen (sakoku) Edosta (Tokiosta) käsin. Aikakaudella syntyi rikas kaupunkilaiskulttuuri, kabuki ja puupiirrostaide.",
+    "capital": "Edo (Tokyo)",
+    "feature_name_matches": [
+      "Tokugawa shogunate"
+    ]
+  },
+  {
+    "slug": "empire-of-japan",
+    "name": "Empire of Japan",
+    "name_fi": "Japanin keisarikunta",
+    "native_name": "大日本帝國 (Dai Nippon Teikoku)",
+    "alternate_names": [
+      "Imperial Japan"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Meiji to World War II",
+    "year_start": 1868,
+    "year_end": 1945,
+    "period_label": "1868 CE – 1945 CE",
+    "period_label_fi": "1868 jaa. – 1945 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Empire_of_Japan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Japanin_keisarikunta",
+    "wikidata_id": "Q188712",
+    "summary_en": "The modernizing Japanese constitutional empire beginning with the Meiji Restoration, rapidly industrializing to defeat China and Russia and forming a pan-Asian empire before unconditional surrender in World War II.",
+    "summary_fi": "Meiji-restauraatiosta alkanut Japanin keisarikunta, joka teollistui ennätysvauhtia suurvallaksi, voitti Venäjän ja Kiinan ja laajeni Tyynenmeren alueella toisen maailmansodan loppuun asti.",
+    "capital": "Tokyo",
+    "feature_name_matches": [
+      "Empire of Japan",
+      "Imperial Japan"
+    ]
+  },
+  {
+    "slug": "modern-japan",
+    "name": "Japan",
+    "name_fi": "Japani",
+    "native_name": "日本国 (Nihon-koku)",
+    "alternate_names": [
+      "State of Japan",
+      "Japan (USA)"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Postwar to Modern Era",
+    "year_start": 1945,
+    "year_end": 2026,
+    "period_label": "1945 CE – Present",
+    "period_label_fi": "1945 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Japan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Japani",
+    "wikidata_id": "Q17",
+    "summary_en": "A democratic island nation in East Asia renowned for its post-war economic miracle, cutting-edge technology, automotive excellence, anime and gaming culture, and preservation of ancient shrines and temples.",
+    "summary_fi": "Itäaasialainen demokraattinen saarivaltio, joka tunnetaan sotienjälkeisestä talousihmeestään, huipputeknologiastaan, autoteollisuudestaan, populaarikulttuuristaan ja vanhoista temppeleistään.",
+    "capital": "Tokyo",
+    "feature_name_matches": [
+      "Japan",
+      "Japan (USA)"
+    ]
+  },
+  {
+    "slug": "proto-korean",
+    "name": "Proto-Korean Cultures",
+    "name_fi": "Varhaiskorealaiset kulttuurit",
+    "alternate_names": [
+      "Paleo-Koreans",
+      "Mumun Pottery Period"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Bronze to Early Iron Age",
+    "year_start": -1500,
+    "year_end": -300,
+    "period_label": "1500 BCE – 300 BCE",
+    "period_label_fi": "1500 eaa. – 300 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mumun_pottery_period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Korean_pronssikausi",
+    "wikidata_id": "Q494582",
+    "summary_en": "Archaeological cultures of the Korean Peninsula during the Mumun pottery period, marked by intensive wet-field rice farming, megalithic dolmen construction, and bronze metallurgy that gave rise to early Korean chiefdoms.",
+    "summary_fi": "Korean niemimaan pronssi- ja varhaisrautakautiset kulttuurit (Mumun-keramiikka), joille olivat ominaisia dolmen-hautakummut, riisinviljely ja pronssiesineistö.",
+    "capital": "Liaodong / Taedong River",
+    "feature_name_matches": [
+      "Paleo-Koreans",
+      "Koreans"
+    ]
+  },
+  {
+    "slug": "gojoseon",
+    "name": "Gojoseon",
+    "name_fi": "Gojoseon",
+    "native_name": "고조선 (古朝鮮)",
+    "alternate_names": [
+      "Ancient Joseon"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "First Korean Kingdom",
+    "year_start": -700,
+    "year_end": -108,
+    "period_label": "700 BCE – 108 BCE",
+    "period_label_fi": "700 eaa. – 108 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Gojoseon",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Gojoseon",
+    "wikidata_id": "Q28405",
+    "summary_en": "The first recorded kingdom of Korean history, founded according to mythology by Dangun Wanggeom in 2333 BCE. Ruled Liaodong and northern Korea until its fall to Emperor Wu of Han in 108 BCE.",
+    "summary_fi": "Korean historian ensimmäinen tunnettu kuningaskunta, jonka myyttinen Dangun perusti. Hallitsi Liaodongia ja Pohjois-Koreaa ennen joutumistaan Han-dynastian valtaan vuonna 108 eaa.",
+    "capital": "Asadal / Wanggeom-seong (Pyongyang)",
+    "feature_name_matches": [
+      "Gojoseon"
+    ]
+  },
+  {
+    "slug": "gaya-confederacy",
+    "name": "Gaya Confederacy",
+    "name_fi": "Gayan liittoutuma",
+    "native_name": "가야 (伽倻)",
+    "alternate_names": [
+      "Gaya",
+      "Kaya"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Three Kingdoms Era",
+    "year_start": 42,
+    "year_end": 562,
+    "period_label": "42 CE – 562 CE",
+    "period_label_fi": "42 jaa. – 562 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Gaya_confederacy",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Gaya_(kuningaskunta)",
+    "wikidata_id": "Q28370",
+    "summary_en": "A confederacy of territorial polities in the Nakdong River basin of southern Korea, renowned for its rich iron metallurgy, master armors, and maritime trade with Wa (ancient Japan) before annexation by Silla.",
+    "summary_fi": "Pienten kaupunkivaltioiden liitto Etelä-Koreassa Nakdong-joen laaksossa. Tunnetaan korkeatasoisesta raudantuotannostaan, haarniskoistaan ja kauppayhteyksistään muinaiseen Japaniin.",
+    "capital": "Gimhae / Daegaya",
+    "feature_name_matches": [
+      "Gaya"
+    ]
+  },
+  {
+    "slug": "goguryeo",
+    "name": "Goguryeo",
+    "name_fi": "Goguryeo",
+    "native_name": "고구려 (高句麗)",
+    "alternate_names": [
+      "Koguryo",
+      "Goryeo"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Three Kingdoms of Korea",
+    "year_start": -37,
+    "year_end": 668,
+    "period_label": "37 BCE – 668 CE",
+    "period_label_fi": "37 eaa. – 668 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Goguryeo",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Goguryeo",
+    "wikidata_id": "Q28373",
+    "summary_en": "The northernmost and most militaristic of the Three Kingdoms of Korea, controlling Manchuria and the northern Korean peninsula. Defeated massive invasions by the Sui Dynasty before falling to a Silla-Tang alliance.",
+    "summary_fi": "Pohjoisin ja sotaisin Korean kolmesta kuningaskunnasta, joka hallitsi Mantšuriaa ja Pohjois-Koreaa. Torjui Kiinan Sui-dynastian jättiarmeijat ennen kukistumistaan Silla-Tang-liitolle.",
+    "capital": "Jolbon / Gungnae / Pyongyang",
+    "feature_name_matches": [
+      "Koguryo"
+    ]
+  },
+  {
+    "slug": "baekje",
+    "name": "Baekje",
+    "name_fi": "Baekje",
+    "native_name": "백제 (百濟)",
+    "alternate_names": [
+      "Paekche"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Three Kingdoms of Korea",
+    "year_start": -18,
+    "year_end": 660,
+    "period_label": "18 BCE – 660 CE",
+    "period_label_fi": "18 eaa. – 660 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Baekje",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Baekje",
+    "wikidata_id": "Q28378",
+    "summary_en": "A maritime kingdom in southwestern Korea that served as a vital cultural bridge transmitting Buddhism, Chinese writing, and advanced architecture to Asuka-period Japan before being conquered by Silla and Tang in 660.",
+    "summary_fi": "Lounais-Korean merellinen kuningaskunta, joka toimi merkittävänä kulttuurisiltana välittäen buddhalaisuuden, kirjoitustaidon ja arkkitehtuurin Asuka-ajan Japaniin.",
+    "capital": "Hanseong (Seoul) / Ungjin / Sabi",
+    "feature_name_matches": [
+      "Paekche"
+    ]
+  },
+  {
+    "slug": "silla",
+    "name": "Silla",
+    "name_fi": "Silla",
+    "native_name": "신라 (新羅)",
+    "alternate_names": [
+      "Silia",
+      "Unified Silla"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Three Kingdoms to Unified Silla",
+    "year_start": -57,
+    "year_end": 935,
+    "period_label": "57 BCE – 935 CE",
+    "period_label_fi": "57 eaa. – 935 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Silla",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Silla",
+    "wikidata_id": "Q28437",
+    "summary_en": "The southeastern Korean kingdom that allied with the Tang Dynasty to conquer Baekje and Goguryeo, creating Unified Silla and initiating a golden age of Buddhist art and architecture centered at Gyeongju.",
+    "summary_fi": "Kaakkois-Korean kuningaskunta, joka yhdisti niemimaan liittouduttuaan Tang-dynastian kanssa. Sillan pääkaupunki Gyeongju muodostui kultakauden loistavaksi buddhalaiseksi taidekeskukseksi.",
+    "capital": "Seorabeol (Gyeongju)",
+    "feature_name_matches": [
+      "Silla",
+      "Silia"
+    ]
+  },
+  {
+    "slug": "balhae",
+    "name": "Balhae",
+    "name_fi": "Balhae",
+    "native_name": "발해 (渤海 / Bohai)",
+    "alternate_names": [
+      "Parhae"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "North-South States Period",
+    "year_start": 698,
+    "year_end": 926,
+    "period_label": "698 CE – 926 CE",
+    "period_label_fi": "698 jaa. – 926 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Balhae",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Balhae",
+    "wikidata_id": "Q28392",
+    "summary_en": "A multi-ethnic kingdom established by Dae Jo-yeong following the fall of Goguryeo, ruling Manchuria, the Russian Maritime Province, and northern Korea until conquered by the Khitan Liao Empire in 926.",
+    "summary_fi": "Dae Jo-yeongin Goguryeon tuhon jälkeen perustama valtakunta Mantšuriassa ja Pohjois-Koreassa. Kukoisti kukoistavana sivistysvaltiona ennen kuin kitaanit valloittivat sen vuonna 926.",
+    "capital": "Sanggyeong",
+    "feature_name_matches": [
+      "Balhae",
+      "Parhae"
+    ]
+  },
+  {
+    "slug": "goryeo",
+    "name": "Goryeo Dynasty",
+    "name_fi": "Goryeo",
+    "native_name": "고려 (高麗)",
+    "alternate_names": [
+      "Koryo"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Medieval Korea",
+    "year_start": 918,
+    "year_end": 1392,
+    "period_label": "918 CE – 1392 CE",
+    "period_label_fi": "918 jaa. – 1392 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Goryeo",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Goryeo",
+    "wikidata_id": "Q28208",
+    "summary_en": "The Korean kingdom founded by Taejo Wang Geon that gave modern 'Korea' its English name. Renowned for celadon ceramics, creating the Tripitaka Koreana woodblocks, and inventing metal movable type in 1234.",
+    "summary_fi": "Taejo Wang Geonin perustama dynastia, josta maan nykyinen nimi Korea juontuu. Tunnetaan upeasta sinooperilasitteisesta keramiikastaan, puupainolaatoistaan ja metalli-irtokirjasimista (1234).",
+    "capital": "Gaegyeong (Kaesong)",
+    "feature_name_matches": [
+      "Goryeo"
+    ]
+  },
+  {
+    "slug": "joseon-dynasty",
+    "name": "Joseon Dynasty",
+    "name_fi": "Joseon-dynastia",
+    "native_name": "조선 (朝鮮)",
+    "alternate_names": [
+      "Choson",
+      "Kingdom of Great Joseon",
+      "Korea"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Early Modern Korea",
+    "year_start": 1392,
+    "year_end": 1910,
+    "period_label": "1392 CE – 1910 CE",
+    "period_label_fi": "1392 jaa. – 1910 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Joseon",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Joseon",
+    "wikidata_id": "Q28179",
+    "summary_en": "The longest-ruling Confucian dynasty in East Asian history, founded by Yi Seong-gye. Under King Sejong the Great, the Hangul alphabet was invented in 1443, establishing Korea's modern linguistic identity.",
+    "summary_fi": "Itä-Aasian pitkäikäisin uuskungfutselainen dynastia, jonka Yi Seong-gye perusti. Kuningas Sejong Suuren johdolla luotiin korealainen hangul-kirjoitusjärjestelmä vuonna 1443.",
+    "capital": "Hanseong (Seoul)",
+    "feature_name_matches": [
+      "Korea"
+    ]
+  },
+  {
+    "slug": "south-korea",
+    "name": "Republic of Korea",
+    "name_fi": "Korean tasavalta",
+    "native_name": "대한민국 (Daehan Minguk)",
+    "alternate_names": [
+      "South Korea",
+      "Korea (USA)"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Modern Democratic Republic",
+    "year_start": 1948,
+    "year_end": 2026,
+    "period_label": "1948 CE – Present",
+    "period_label_fi": "1948 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/South_Korea",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Korea",
+    "wikidata_id": "Q884",
+    "summary_en": "A high-tech democratic powerhouse in southern Korea, rising from the devastation of the Korean War through the 'Miracle on the Han River' to become a global leader in semiconductors, automobiles, and Hallyu pop culture.",
+    "summary_fi": "Demokraattinen huipputeknologiamaa niemimaan eteläosassa. Nousi Korean sodan raunioista Han-joen talousihmeeksi ja maailman johtavaksi puolijohde-, elektroniikka- ja kulttuuriviejäksi.",
+    "capital": "Seoul",
+    "feature_name_matches": [
+      "Korea, Republic of",
+      "Korea (USA)"
+    ]
+  },
+  {
+    "slug": "north-korea",
+    "name": "Democratic People's Republic of Korea",
+    "name_fi": "Korean demokraattinen kansantasavalta",
+    "native_name": "조선민주주의인민공화국",
+    "alternate_names": [
+      "North Korea",
+      "Korea (USSR)"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "korea",
+    "historical_period": "Modern Socialist State",
+    "year_start": 1948,
+    "year_end": 2026,
+    "period_label": "1948 CE – Present",
+    "period_label_fi": "1948 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/North_Korea",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pohjois-Korea",
+    "wikidata_id": "Q423",
+    "summary_en": "A highly centralized, isolated socialist state in northern Korea established in 1948 under Kim Il Sung, organized under the state ideology of Juche (self-reliance) and Songun (military-first).",
+    "summary_fi": "Eristäytynyt sosialistinen valtio niemimaan pohjoisosassa, jonka Kim Il-sung perusti vuonna 1948 ja jota ohjaavat juche-aate (omavaraisuus) ja songun-politiikka (armeija ensin).",
+    "capital": "Pyongyang",
+    "feature_name_matches": [
+      "Korea, Democratic People's Republic of",
+      "Korea (USSR)"
+    ]
+  },
+  {
+    "slug": "kushan-empire",
+    "name": "Kushan Empire",
+    "name_fi": "Kušan-valtakunta",
+    "native_name": "Kushan / 貴霜",
+    "alternate_names": [
+      "Kushans",
+      "Guishuang"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "gupta",
+    "historical_period": "Classical Antiquity",
+    "year_start": 30,
+    "year_end": 375,
+    "period_label": "30 CE – 375 CE",
+    "period_label_fi": "30 jaa. – 375 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kushan_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ku%C5%A1an-valtakunta",
+    "wikidata_id": "Q25979",
+    "summary_en": "A syncretic empire founded by the Yuezhi in Bactria, expanding across Gandhara and northern India. King Kanishka fostered Greco-Buddhist art and facilitated the transmission of Buddhism along the Silk Road into China.",
+    "summary_fi": "Yuezhi-heimojen Baktriaan ja Pohjois-Intiaan perustama synkreettinen suurvalta. Kuningas Kanishkan aikana kreikkalais-buddhalainen taide kukoisti ja buddhalaisuus levisi Kiinaan.",
+    "capital": "Peshawar (Purushapura) / Mathura / Bagram",
+    "feature_name_matches": [
+      "Kushan Empire"
+    ]
+  },
+  {
+    "slug": "dali-kingdom",
+    "name": "Dali Kingdom",
+    "name_fi": "Dalin kuningaskunta",
+    "native_name": "大理國 (Dàlǐ Guó)",
+    "alternate_names": [
+      "Kingdom of Dali"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Song Era Regional Kingdom",
+    "year_start": 937,
+    "year_end": 1253,
+    "period_label": "937 CE – 1253 CE",
+    "period_label_fi": "937 jaa. – 1253 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dali_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dalin_kuningaskunta",
+    "wikidata_id": "Q1154884",
+    "summary_en": "A Bai-ruled Buddhist kingdom based around Erhai Lake in modern Yunnan, succeeding Nanzhao. Maintained peaceful tributary ties with the Song Dynasty before being conquered by Kublai Khan in 1253.",
+    "summary_fi": "Bai-kansan buddhalainen kuningaskunta Yunnanissa Erhai-järven rannalla Nanzhaon jälkeen. Säilytti itsenäisyytensä yli kolmesataa vuotta ennen Kublai-kaanin valloitusta.",
+    "capital": "Dali",
+    "feature_name_matches": [
+      "Dali Kingdom",
+      "Dali"
+    ]
+  },
+  {
+    "slug": "ryukyu-kingdom",
+    "name": "Ryukyu Kingdom",
+    "name_fi": "Ryūkyū-kuningaskunta",
+    "native_name": "琉球國 / ルーチュー",
+    "alternate_names": [
+      "Ryukyu",
+      "Okinawa"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "japan",
+    "historical_period": "Maritime Trading Realm",
+    "year_start": 1429,
+    "year_end": 1879,
+    "period_label": "1429 CE – 1879 CE",
+    "period_label_fi": "1429 jaa. – 1879 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ry%C5%ABky%C5%ABn_kuningaskunta",
+    "wikidata_id": "Q28025",
+    "summary_en": "An independent maritime kingdom based in Okinawa, linking East and Southeast Asian trade networks through Shuri Castle before being subjugated by Satsuma and formally annexed into Meiji Japan.",
+    "summary_fi": "Itsenäinen merikaupan kuningaskunta Okinawalla, joka toimi solmuna Kiinan, Japanin ja Kaakkois-Aasian välillä Shurin linnasta käsin ennen liittämistään Meiji-kauden Japaniin.",
+    "capital": "Shuri (Naha)",
+    "feature_name_matches": [
+      "Ryukyu Kingdom",
+      "Ryukyu"
+    ]
+  }
+]

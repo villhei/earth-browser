@@ -103,5 +103,15 @@ describe("Culture Metadata Batches", () => {
     const batchPath = path.resolve(__dirname, "../../data-sources/batches/andean.json")
     validateBatch(batchPath, "Andean", 30)
   })
+
+  it("validates the Central Asia batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/central-asia.json")
+    validateBatch(batchPath, "Central Asia", 50)
+  })
+
+  it("validates the East Asia batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/east-asia.json")
+    validateBatch(batchPath, "East Asia", 45)
+  })
 })
 

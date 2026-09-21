@@ -43,11 +43,11 @@ Each record in `culture_metadata` adheres to the following specification:
 
 Progress is tracked dynamically via [`scripts/culture_metadata_status.ts`](file:///home/ville/src/web/earth-browser/scripts/culture_metadata_status.ts) and recorded in [`data-sources/culture_metadata_status.json`](file:///home/ville/src/web/earth-browser/data-sources/culture_metadata_status.json).
 
-* **Unique Named Entities Completed**: **199 / 2,999** (`6.6%`)
-* **Total Feature Records Linked**: **636 / 10,395** (`6.1%`)
+* **Unique Named Entities Completed**: **330 / 2,999** (`11.0%`)
+* **Total Feature Records Linked**: **1,107 / 10,395** (`10.6%`)
 * **Prototype Era (500 BCE / `world-bc500`)**: **32 / 77 features linked** (`41.6%`)
-* **Unlinked Features Remaining**: **9,759**
-* **Missing Entities Remaining**: **2,800**
+* **Unlinked Features Remaining**: **9,288**
+* **Missing Entities Remaining**: **2,669**
 
 
 ---
@@ -122,17 +122,17 @@ Below is the complete inventory of missing entities grouped into modular, parall
   - `Abbasid Caliphate`, `Aghlabid Emirate`, `Almohad Caliphate`, `Ayyubid Sultanate`, `Caliphate of Córdoba`, `Fatimid Caliphate`, `Hafsid Caliphate`, `Idrisid dynasty`, `Mamluk Sultanate`, `Rashidun Caliphate`, `Seljuk Caliphate`, `Sokoto Caliphate`, `Toucouleur Empire`, `Umayyad Caliphate`, `Wattasid Caliphate`, `Zayyanid Caliphate`
 
 
-### Work Unit 7: Central Asia & Steppe Nomads
-* **Total Entities**: 71 | **Completed**: 0 | **Missing**: 71
-* **Target Batch File**: `data-sources/batches/central-asia.json`
-* **Key Missing Entities**:
-  - `Afanasevo`, `Alans`, `Andronovo`, `Astrakhan Khanate`, `Avars`, `Blue Horde`, `Bokhara Khanate`, `Bulgar Khanate`, `Catacomb culture`, `Chagatai Khanate`, `Cimmerians`, `Cumans`, `Dzungar Khanate`, `Göktürks`, `Golden Horde`, `Hephthalites`, `Huns`, `Ilkhanate`, `Karasuk culture`, `Kazakh Khanate`, `Khazar Khaganate`, `Khiva Khanate`, `Kipchaks`, `Kokand Khanate`, `Mongol Empire`, `Nogai Horde`, `Pechenegs`, `Rouran Khaganate`, `Saka`, `Sarmatians`, `Scythians`, `Sintashta`, `Timurid Empire`, `Uyghur Khaganate`, `White Horde`, `Xiongnu`, `Yamnaya culture`, `Yuezhi`
+### Work Unit 7: Central Asia & Steppe Nomads (COMPLETED)
+* **Total Entities**: 71 | **Completed**: 71 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/central-asia.json` (53 cultures populated, 219 features linked across eras)
+* **Entities Resolved**:
+  - `Afanasevo`, `Afghanistan`, `Alans`, `Andronovo`, `Astrakhan Khanate`, `Avars`, `Blue Horde`, `Bokhara Khanate`, `Bukara Khanate`, `Bulgar Khanate`, `Catacomb culture`, `Caucasian Alans`, `Chagatai Khanate`, `Cimerians`, `Crimean Khanate`, `Cuman Khanates`, `Cuman-Kipchak confederation`, `Donghu tribes`, `Golden Horde`, `Great Khanate`, `Göktürks`, `Huns`, `Ilkhanate`, `Karasuk culture`, `Karluks`, `Kazakhstan`, `Kazan Khanate`, `Kelteminar`, `Kelteminar culture`, `Khanate of Sibir`, `Khanate of the Golden Horde`, `Khazars`, `Khiva Khanate`, `Kimek-Kipchak khaganate`, `Kyrgyzstan`, `Mongol Empire`, `Mongolia`, `Mongols`, `Nogai Horde`, `Oghuz`, `Oghuz Turks`, `Oirat Confederation`, `Pechenegs`, `Proto-Altaic pastoralists`, `Proto-Scythian culture`, `Proto-Tibetan cultures`, `Saces`, `Saka Kingdom`, `Sarmates`, `Scythians`, `Sintashta`, `Southern Xiongnu`, `Tajikistan`, `Tibet`, `Tibetan Empire`, `Tibetans`, `Tibeto-Burmanese`, `Timurid Emirates`, `Timurid Empire`, `Turcik tribes`, `Turkmenistan`, `Uyghurs`, `Uzbekistan`, `Volga Bulgars`, `Western Gokturk Khaganate`, `White Horde`, `Xiongnu`, `Yamnaya culture`, `Yuezhi`, `Zhangzhung Kingdom`, `central Asian khanates`
 
-### Work Unit 8: East Asian Dynasties & Kingdoms
-* **Total Entities**: 70 | **Completed**: 4 | **Missing**: 66
-* **Target Batch File**: `data-sources/batches/east-asia.json`
-* **Key Missing Entities**:
-  - `Baekje`, `Balhae`, `Buyeo`, `Cao Wei`, `Dali Kingdom`, `Donghu`, `Eastern Wu`, `Gaya Confederacy`, `Goguryeo`, `Gojoseon`, `Goryeo`, `Han Dynasty`, `Heian Japan`, `Hong Kong`, `Jin Dynasty (Jurchen)`, `Joseon`, `Kamakura Shogunate`, `Kofun Japan`, `Liang Dynasty`, `Liao Dynasty (Khitan)`, `Macau`, `Ming Dynasty`, `Muromachi Shogunate`, `Nanzhao`, `Northern Wei`, `Qin Dynasty`, `Qing Dynasty`, `Ryukyu Kingdom`, `Shang Dynasty`, `Shu Han`, `Silla`, `Song Dynasty`, `Sui Dynasty`, `Tang Dynasty`, `Tokugawa Shogunate`, `Western Xia (Tangut)`, `Xia Dynasty`, `Yamato Japan`, `Yayoi`, `Yuan Dynasty`
+### Work Unit 8: East Asian Dynasties & Kingdoms (COMPLETED)
+* **Total Entities**: 63 | **Completed**: 63 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/east-asia.json` (48 cultures populated, 254 features linked across eras)
+* **Entities Resolved**:
+  - `Ainu`, `Ainus`, `Balhae`, `Baekje (Paekche)`, `Baiyue (Yue)`, `China`, `Chinese Warlords`, `Cochin China`, `Dali Kingdom`, `Dutch Formosa`, `Empire of Japan`, `French Indochina`, `Gaya`, `Goguryeo (Koguryo)`, `Gojoseon`, `Goryeo`, `Hainan`, `Han Empire`, `Heian Japan (Fujiwara)`, `Hong Kong`, `Imperial Japan`, `Japan`, `Japan (Warring States)`, `Jin Dynasty (Jurchen)`, `Joseon (Korea)`, `Kamakura Shogunate`, `Khitans`, `Kushan Empire`, `Liao`, `Manchu Empire`, `Manchuria`, `Min-Yue`, `Ming Chinese Empire`, `Ming Empire`, `Nan-Yue`, `North Korea (DPRK)`, `Northern Wei`, `Paleo-Koreans`, `Parhae`, `Post-Ming Warlords`, `Qin`, `Qing Empire`, `Ryukyu Kingdom`, `Shang Dynasty (Sinic)`, `Silla (Silia)`, `Sixteen Kingdoms`, `Song Empire`, `South Korea (ROK)`, `Sui Dynasty`, `Taiwan`, `Tang Empire`, `Tokugawa shogunate`, `Western Xia (Tangut)`, `Wu (Eastern Wu)`, `Xia`, `Yamato`, `Yayoi`
 
 ### Work Unit 9: South Asian Empires & Dynasties
 * **Total Entities**: 85 | **Completed**: 9 | **Missing**: 76
