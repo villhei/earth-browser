@@ -18,6 +18,40 @@ import {
 import { GeoJSONFeature } from "../../types"
 
 describe("labels: coordinate & geometry utilities", () => {
+  it("reuses geometry metadata between frames and refreshes it for replaced inputs", () => {
+    let reads = 0
+    const feature: GeoJSONFeature = {
+      type: "Feature", id: "cached", properties: { name: "Cached country" },
+      geometry: {
+        type: "Polygon",
+        get coordinates() {
+          reads++
+          return [[[-2, -2], [2, -2], [2, 2], [-2, 2], [-2, -2]]]
+        },
+      },
+    }
+    const camera = new THREE.PerspectiveCamera(45, 800 / 600, 1, 2000)
+    camera.position.z = 320
+    camera.lookAt(0, 0, 0)
+    camera.updateMatrixWorld()
+    const first = computePlacedLabels([feature], camera, 800, 600)
+    expect(first).toHaveLength(1)
+    const initialReads = reads
+    expect(initialReads).toBeGreaterThan(0)
+    expect(computePlacedLabels([feature], camera, 800, 600)).toEqual(first)
+    expect(reads).toBe(initialReads)
+    const highlighted = computePlacedLabels([feature], camera, 800, 600, { hoveredFeatureId: "cached", elevationScale: 2 })
+    expect(highlighted[0].isHovered).toBe(true)
+    expect(reads).toBe(initialReads)
+    feature.properties = { name: "New name", labelLat: 0, labelLng: 20, AREA: 100 }
+    const changed = computePlacedLabels([feature], camera, 800, 600)
+    expect(changed[0].name).toBe("New name")
+    expect(changed[0].x).not.toBe(first[0].x)
+    feature.properties = { name: "New geometry" }
+    feature.geometry = { type: "Point", coordinates: [30, 0] }
+    expect(computePlacedLabels([feature], camera, 800, 600)[0].x).not.toBe(changed[0].x)
+  })
+
   it("converts polar coordinates to cartesian accurately", () => {
     // North pole
     const north = polar2Cartesian(90, 0, 0, GLOBE_RADIUS)
@@ -570,5 +604,4 @@ describe("labels: computePlacedLabels algorithm", () => {
     expect(placed[0].isHovered).toBe(true)
   })
 })
-
 

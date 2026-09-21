@@ -18,12 +18,7 @@ import {
   createSurfaceOverlayGeometry,
   createSurfaceUnderlayCanvas,
 } from "./surfaceOverlay"
-import {
-  getCountryColor,
-  HIGHLIGHT_COLOR,
-  isNeutralOrUnclaimed,
-  NEUTRAL_TERRITORY_COLOR,
-} from "./colors"
+import { isNeutralOrUnclaimed } from "./colors"
 import {
   getPolygonCapMaterial,
   clearPolygonMaterialCache,
@@ -35,6 +30,7 @@ import {
   cartesian2Polar,
 } from "./labels"
 import { sanitizeRenderableFeatures } from "./geometrySanitizer"
+import { PolygonScene } from "./polygonScene"
 import { GeoJSONFeature } from "../../types"
 
 const DEFAULT_ALTITUDE = 0.002
@@ -77,6 +73,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null)
   const restoreViewRef = useRef<((view: GlobeView) => void) | null>(null)
   const placedLabelsRef = useRef<PlacedLabel[]>([])
+  const renderDirtyRef = useRef(true)
   const [hoveredFeature, setHoveredFeature] = useState<GeoJSONFeature | null>(
     null,
   )
@@ -93,6 +90,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const labelSizeRef = useRef(labelSize)
   const labelToleranceRef = useRef(labelTolerance)
   const layerAltitudeRef = useRef(layerAltitude)
+  const opacityRef = useRef(opacity)
   const elevationScaleRef = useRef(elevationScale)
   const selectedFeatureIdRef = useRef(selectedFeatureId)
   const hoveredFeatureIdRef = useRef(hoveredFeatureId)
@@ -114,12 +112,14 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     labelSizeRef.current = labelSize
     labelToleranceRef.current = labelTolerance
     layerAltitudeRef.current = layerAltitude
+    opacityRef.current = opacity
     elevationScaleRef.current = elevationScale
     selectedFeatureIdRef.current = selectedFeatureId
     hoveredFeatureIdRef.current = hoveredFeatureId
     hoveredFeatureRef.current = hoveredFeature
     onFeatureClickRef.current = onFeatureClick
     onFeatureHoverRef.current = onFeatureHover
+    renderDirtyRef.current = true
   }, [
     data,
     renderableFeatures,
@@ -127,6 +127,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     labelSize,
     labelTolerance,
     layerAltitude,
+    opacity,
     elevationScale,
     selectedFeatureId,
     hoveredFeatureId,
@@ -155,6 +156,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     renderer.setSize(width || window.innerWidth, height || window.innerHeight)
     canvas.appendChild(renderer.domElement)
     rendererRef.current = renderer
+    const handleContextRestored = () => { renderDirtyRef.current = true }
+    renderer.domElement.addEventListener("webglcontextrestored", handleContextRestored)
 
     // 2D Labels Canvas setup
     labelsCanvas.width = (width || window.innerWidth) * dpr
@@ -202,10 +205,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     controls.minDistance = MIN_VIEW_DISTANCE
     controls.maxDistance = MAX_VIEW_DISTANCE
 
-    // Throttle URL consumers without losing the final damped camera position.
+    // Wait for camera movement, including damping after release, to settle.
     let viewChangeTimer: ReturnType<typeof setTimeout> | undefined
     const handleViewChange = () => {
-      if (viewChangeTimer !== undefined) return
+      clearTimeout(viewChangeTimer)
       viewChangeTimer = setTimeout(() => {
         viewChangeTimer = undefined
         onViewChangeRef.current?.(captureGlobeView(controls))
@@ -231,6 +234,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     // Raycaster for 3D polygon pointer interactions
     const raycaster = new THREE.Raycaster()
     const mouse = new THREE.Vector2()
+    const polygonScene = new PolygonScene()
+    const earthSphere = new THREE.Sphere(new THREE.Vector3(), globe.getGlobeRadius())
+    const earthHit = new THREE.Vector3()
 
     const getIntersectedFeature = (
       clientX: number,
@@ -246,7 +252,14 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         return null
       }
 
-      const intersects = raycaster.intersectObjects(globe.children, true)
+      // Only country meshes participate. Stop at Earth's surface so a far-side
+      // territory cannot be selected through an uncovered patch of ocean.
+      earthSphere.center.setFromMatrixPosition(globe.matrixWorld)
+      earthSphere.radius = globe.getGlobeRadius() * globe.scale.x
+      raycaster.far = raycaster.ray.intersectSphere(earthSphere, earthHit)
+        ? raycaster.ray.origin.distanceTo(earthHit) + 0.01
+        : Infinity
+      const intersects = raycaster.intersectObjects(polygonScene.pickableMeshes, false)
       for (const hit of intersects) {
         let current: any = hit.object
         while (
@@ -389,9 +402,25 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     let lastShowLabels = true
 
     let animationFrameId: number
+    let lastGlobeMap: THREE.Texture | null = null
     const animate = () => {
-      controls.update()
-      renderer.render(scene, camera)
+      const cameraChanged = controls.update()
+      const polygonsChanged = polygonScene.update(globe, camera, globe.getGlobeRadius(), {
+        opacity: opacityRef.current,
+        selectedFeatureId: selectedFeatureIdRef.current,
+        hoveredFeatureId: hoveredFeatureIdRef.current ??
+          (hoveredFeatureRef.current?.id != null
+            ? String(hoveredFeatureRef.current.id)
+            : hoveredFeatureRef.current?.properties?.name || null),
+      })
+      // Texture loading and ThreeGlobe's deferred geometry/altitude updates can
+      // finish after React effects. Observe them before skipping an idle frame.
+      const globeMap = (globe.globeMaterial() as THREE.MeshPhongMaterial).map
+      if (cameraChanged || polygonsChanged || renderDirtyRef.current || globeMap !== lastGlobeMap) {
+        renderer.render(scene, camera)
+        renderDirtyRef.current = false
+        lastGlobeMap = globeMap
+      }
 
       // Process throttled pointer hover test (at most once per frame)
       if (hasPendingPointer && pendingPointer && !isDragging) {
@@ -553,6 +582,9 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       camera.aspect = w / h
       camera.updateProjectionMatrix()
       renderer.setSize(w, h)
+      renderer.setPixelRatio(curDpr)
+      renderDirtyRef.current = true
+      lastW = 0 // Repaint labels even when only device pixel ratio changed.
       if (globeRef.current) {
         globeRef.current.rendererSize(new THREE.Vector2(w, h))
       }
@@ -582,11 +614,13 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       resizeObserver.disconnect()
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animationFrameId)
+      globe.pauseAnimation()
       clearPolygonMaterialCache()
       clearTimeout(viewChangeTimer)
       controls.removeEventListener("change", handleViewChange)
       restoreViewRef.current = null
       controls.dispose()
+      renderer.domElement.removeEventListener("webglcontextrestored", handleContextRestored)
       renderer.dispose()
       if (
         canvas &&
@@ -644,6 +678,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       mesh.raycast = () => {} // Surface decoration must not intercept country picking.
       meshes.push(mesh)
       globe.add(mesh)
+      renderDirtyRef.current = true
     }
     const onError = (error: unknown) => {
       if (!cancelled) console.error("Unable to display surface overlay", error)
@@ -669,6 +704,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         mesh.material.dispose()
         mesh.geometry.dispose()
       }
+      renderDirtyRef.current = true
     }
   }, [surfaceOverlay, surfaceUnderlayUrl, texture, textureImageUrl])
 
@@ -728,7 +764,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     }
   }, [strokeColor])
 
-  // 6. Polygon cap material: handles solid colors, PARTOF parent color, and SUBJECTO striping
+  // 6. Stable cap accessor. Interactive highlights are applied by PolygonScene
+  // without triggering ThreeGlobe's full polygon layer update on every hover.
   useEffect(() => {
     if (!globeRef.current) return
     const globe = globeRef.current
@@ -736,13 +773,12 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     globe.polygonCapMaterial((d: any) => {
       const feat = d as GeoJSONFeature
       return getPolygonCapMaterial(feat, {
-        opacity,
-        selectedFeatureId,
-        hoveredFeatureId:
-          hoveredFeature?.id || hoveredFeature?.properties?.name || null,
+        opacity: opacityRef.current,
+        selectedFeatureId: selectedFeatureIdRef.current,
+        hoveredFeatureId: hoveredFeatureIdRef.current ?? null,
       })
     })
-  }, [opacity, selectedFeatureId, hoveredFeature])
+  }, [])
 
   // 7. Polygons Data Synchronization
   useEffect(() => {

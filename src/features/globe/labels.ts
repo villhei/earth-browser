@@ -423,6 +423,41 @@ export function measureTextWidth(
   return width
 }
 
+// GeoJSON props/geometry are immutable inputs. Weak keys release old eras when
+// their features are released, without retaining an ever-growing geometry cache.
+const labelMetadataCache = new WeakMap<GeoJSONFeature, {
+  properties: GeoJSONFeature["properties"]
+  geometry: GeoJSONFeature["geometry"]
+  lat: number | undefined
+  lng: number | undefined
+  anchor: THREE.Vector3 | null
+  priority: number
+}>()
+
+function getLabelMetadata(feature: GeoJSONFeature) {
+  const cached = labelMetadataCache.get(feature)
+  if (cached && cached.properties === feature.properties && cached.geometry === feature.geometry) {
+    return cached
+  }
+  const props = feature.properties || {}
+  let lat = props.labelLat ?? props.label_lat ?? props.lat ?? props.LAT
+  let lng = props.labelLng ?? props.label_lng ?? props.lng ?? props.LNG
+  if (lat == null || lng == null) {
+    const centroid = computeGeometryCentroid(feature.geometry)
+    if (centroid) ({ lat, lng } = centroid)
+  }
+  const metadata = {
+    properties: feature.properties,
+    geometry: feature.geometry,
+    lat,
+    lng,
+    anchor: lat != null && lng != null ? polar2Cartesian(lat, lng, 0, 1) : null,
+    priority: getFeaturePriority(feature),
+  }
+  labelMetadataCache.set(feature, metadata)
+  return metadata
+}
+
 /**
  * Computes non-overlapping, fixed-scaling country labels projected onto 2D screen space.
  */
@@ -504,16 +539,8 @@ export function computePlacedLabels(
       continue
     }
 
-    let lat = props.labelLat ?? props.label_lat ?? props.lat ?? props.LAT
-    let lng = props.labelLng ?? props.label_lng ?? props.lng ?? props.LNG
-
-    if (lat == null || lng == null) {
-      const centroid = computeGeometryCentroid(feat.geometry)
-      if (centroid) {
-        lat = centroid.lat
-        lng = centroid.lng
-      }
-    }
+    const metadata = getLabelMetadata(feat)
+    let { lat, lng } = metadata
 
     const tier = Number(props.elevation_tier ?? props.elevationTier ?? 0)
     const tierStep = 0.0025 * (options.elevationScale ?? 0.3)
@@ -522,12 +549,9 @@ export function computePlacedLabels(
     let worldPos: THREE.Vector3 | null = null
     let screenPos: { x: number; y: number; z: number } | null = null
 
-    if (lat != null && lng != null) {
-      const candidateWorldPos = polar2Cartesian(
-        lat,
-        lng,
-        featureAlt + 0.002,
-        GLOBE_RADIUS,
+    if (metadata.anchor) {
+      const candidateWorldPos = metadata.anchor.clone().multiplyScalar(
+        GLOBE_RADIUS * (1 + featureAlt + 0.002),
       )
       const isBehind = isPointBehindGlobe(candidateWorldPos, cameraPos, GLOBE_RADIUS)
       if (!isBehind) {
@@ -569,11 +593,7 @@ export function computePlacedLabels(
       continue
     }
 
-    const priority = getFeaturePriority(
-      feat,
-      selectedFeatureId,
-      hoveredFeatureId,
-    )
+    const priority = isHovered ? 1_000_000_000 : isSelected ? 500_000_000 : metadata.priority
 
     const dx = screenPos.x - centerX
     const dy = screenPos.y - centerY
@@ -584,8 +604,8 @@ export function computePlacedLabels(
       id,
       name,
       formalName: props.formal_name || props.FORMAL_EN || null,
-      lat,
-      lng,
+      lat: lat ?? 0,
+      lng: lng ?? 0,
       worldPos,
       screenPos,
       priority,

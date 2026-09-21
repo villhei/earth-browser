@@ -16,7 +16,7 @@ export interface HistoricalGlobeProps {
   /** Camera pose to restore on mount or external navigation. */
   view?: GlobeView
 
-  /** Camera changes, including rotation, zoom and pan. */
+  /** Camera pose after rotation, zoom or pan (including damping) settles. */
   onViewChange?: (view: GlobeView) => void
 
   /**
