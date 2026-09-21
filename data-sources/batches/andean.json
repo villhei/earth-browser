@@ -1,0 +1,937 @@
+[
+  {
+    "slug": "inca-empire",
+    "name": "Inca Empire",
+    "name_fi": "Inkkavaltakunta",
+    "native_name": "Tawantinsuyu",
+    "alternate_names": [
+      "Inca Empire (Tawantinsuyu)",
+      "Four United Regions",
+      "Inca"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "inca",
+    "historical_period": "Late Horizon (Late Andean Period)",
+    "year_start": 1438,
+    "year_end": 1533,
+    "period_label": "1438 CE – 1533 CE",
+    "period_label_fi": "1438 jaa. – 1533 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Inca_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Inkkavaltakunta",
+    "wikidata_id": "Q28573",
+    "summary_en": "The largest empire in pre-Columbian America, extending over 4,000 kilometers along the spine of the Andes from modern Colombia to central Chile. Renowned for its masterwork polygonal masonry (Machu Picchu, Sacsayhuamán), an extensive 40,000-kilometer paved Qhapaq Ñan road network, quipu knotted string accounting records, and centralized labor tribute (mit'a), the empire was fractured by civil war before falling to Francisco Pizarro in 1533.",
+    "summary_fi": "Esikolumbiaanisen Amerikan suurin valtakunta, joka ulottui yli 4 000 kilometrin matkalla Andien harjanteita pitkin nykyisestä Kolumbiasta Keski-Chileen saakka. Inkat loivat vertaansa vailla olevan kivirakennustaidon (Machu Picchu, Sacsayhuamán), 40 000 kilometrin pituisen kivetyn Qhapaq Ñan -tieverkoston sekä solmukirjoitusjärjestelmän (khipu) ennen valtakunnan luhistumista sisällissodan ja espanjalaisvalloituksen myötä vuonna 1533.",
+    "capital": "Cusco",
+    "feature_name_matches": [
+      "Inca Empire",
+      "Inca Empire (Tawantinsuyu)",
+      "Inca"
+    ]
+  },
+  {
+    "slug": "tiwanaku",
+    "name": "Tiwanaku Empire",
+    "name_fi": "Tiwanakun valtakunta",
+    "native_name": "Tiwanaku / Tiahuanaco",
+    "alternate_names": [
+      "Tiahuanaco Empire",
+      "Taypikala"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Middle Horizon (Altiplano Classic)",
+    "year_start": 110,
+    "year_end": 1000,
+    "period_label": "c. 110 CE – 1000 CE",
+    "period_label_fi": "n. 110 jaa. – 1000 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tiwanaku_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tiwanaku",
+    "wikidata_id": "Q61853",
+    "summary_en": "A monumental pre-Columbian civilization centered near the southern shores of Lake Titicaca in western Bolivia. Renowned for colossal megalithic architecture including the Gate of the Sun, Kalasasaya courtyard, Pumapunku precision-carved andesite blocks, and innovative raised-field agriculture (suka kollu), Tiwanaku held vast religious and economic dominion over the high Altiplano.",
+    "summary_fi": "Merkittävä korkeakulttuuri Titicacajärven etelärannalla Bolivian ylängöllä (Altiplano). Tiwanaku oli aikansa johtava uskonnollinen ja poliittinen keskus, joka tunnetaan monumentaalisista kivirakennelmistaan, kuten Auringon portista, Kalasasayan temppelistä, Pumapunkun äärimmäisen tarkoista andesiittilohkareista sekä tehokkaasta korotettujen peltosaarekkeiden keinokastelujärjestelmästä.",
+    "capital": "Tiwanaku",
+    "feature_name_matches": [
+      "Tiahuanaco Empire",
+      "Tiwanaku",
+      "Tiahuanaco"
+    ]
+  },
+  {
+    "slug": "wari-empire",
+    "name": "Wari Empire",
+    "name_fi": "Wari-valtakunta",
+    "native_name": "Wari / Huari",
+    "alternate_names": [
+      "Huari Empire",
+      "Huari Culture"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Middle Horizon (Central Andes)",
+    "year_start": 600,
+    "year_end": 1100,
+    "period_label": "c. 600 CE – 1100 CE",
+    "period_label_fi": "n. 600 jaa. – 1100 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Wari_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Wari-kulttuuri",
+    "wikidata_id": "Q613689",
+    "summary_en": "A sophisticated expansionist state centered in the Ayacucho Basin of highland Peru that, alongside Tiwanaku, defined the Middle Horizon. The Wari pioneered centralized provincial administrative enclaves, rectilinear walled compounds, terraced agricultural hillsides, and a paved highway network that anticipated the imperial infrastructure of the later Inca.",
+    "summary_fi": "Andien ylängöllä Ayacuchon laaksossa syntynyt keskitetty ja sotilaallinen valtakunta, joka hallitsi suuria osia nykyisestä Perusta Tiwanakun rinnalla. Warit rakensivat laajoja suorakulmaisia hallintokaupunkeja (kuten Pikillacta), maatalouden porrasteryhmiä ja kattavan tieverkoston, jotka loivat pohjan myöhemmälle inkkainfrastruktuurille.",
+    "capital": "Huari (Ayacucho)",
+    "feature_name_matches": [
+      "Huari Empire",
+      "Wari",
+      "Wari’",
+      "Huari"
+    ]
+  },
+  {
+    "slug": "chimu-culture",
+    "name": "Chimú Empire",
+    "name_fi": "Chimú-valtakunta",
+    "native_name": "Chimor",
+    "alternate_names": [
+      "Kingdom of Chimor",
+      "Chimú Culture",
+      "Chimú"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (North Coast of Peru)",
+    "year_start": 900,
+    "year_end": 1470,
+    "period_label": "c. 900 CE – 1470 CE",
+    "period_label_fi": "n. 900 jaa. – 1470 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chim%C3%BA_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chim%C3%BA",
+    "wikidata_id": "Q728189",
+    "summary_en": "A powerful coastal empire centered at Chan Chan in the Moche Valley of northern Peru, the largest adobe brick city in the pre-Columbian world. Successors to the Moche, the Chimú developed immense irrigation aqueducts connecting coastal river valleys and produced iconic polished blackware pottery and exquisite gold metallurgy before their conquest by the Inca around 1470 CE.",
+    "summary_fi": "Perun pohjoisrannikolla Moche-joen laaksossa kukoistanut voimakas rannikkovaltakunta, jonka pääkaupunki Chan Chan oli maailman suurin savitiilikaupunki. Chimút loivat satojen kilometrien pituisia kastelukanavia yhdistämään aavikon jokilaaksoja ja olivat kuuluisia mustapintaisesta keramiikastaan sekä kultasepäntaidoistaan ennen kuin inkat valloittivat heidät noin vuonna 1470.",
+    "capital": "Chan Chan",
+    "feature_name_matches": [
+      "Chimú Empire",
+      "Chimú",
+      "Chimu",
+      "Kingdom of Chimor"
+    ]
+  },
+  {
+    "slug": "moche-culture",
+    "name": "Moche Culture",
+    "name_fi": "Moche-kulttuuri",
+    "native_name": "Mochica",
+    "alternate_names": [
+      "Mochica",
+      "Early Chimú"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Early Intermediate Period (Northern Peru)",
+    "year_start": 100,
+    "year_end": 700,
+    "period_label": "c. 100 CE – 700 CE",
+    "period_label_fi": "n. 100 jaa. – 700 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Moche_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Moche-kulttuuri",
+    "wikidata_id": "Q207797",
+    "summary_en": "A vibrant coastal Andean civilization centered in northern Peru's arid river valleys. Celebrated for astounding naturalistic portrait head stirrup-spout ceramics, monumental adobe mud-brick pyramids such as the Huaca del Sol and Huaca de la Luna, and opulent royal burials like the Lord of Sipán, the Moche sustained a complex stratified society reliant on maritime wealth and canal irrigation.",
+    "summary_fi": "Perun pohjoisrannikon aavikkolaaksoissa kukoistanut esikolumbiaaninen korkeakulttuuri. Mochet tunnetaan poikkeuksellisen realistisesta muotokuva- ja keramiikkataiteestaan, massiivisista savitiilisistä temppelipyramideistaan (kuten Auringon ja Kuun huacat) sekä Sipánin herran kaltaisista loisteliaista kultaa ja turkoosia pursuavista eliittihudoistaan.",
+    "capital": "Huacas del Sol y de la Luna, Sipán",
+    "feature_name_matches": [
+      "Moche",
+      "Mochica"
+    ]
+  },
+  {
+    "slug": "nazca-culture",
+    "name": "Nazca Culture",
+    "name_fi": "Nazcan kulttuuri",
+    "native_name": "Nasca",
+    "alternate_names": [
+      "Nasca",
+      "Nazca Lines Civilization"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Early Intermediate Period (South Coast of Peru)",
+    "year_start": -100,
+    "year_end": 800,
+    "period_label": "c. 100 BCE – 800 CE",
+    "period_label_fi": "n. 100 eaa. – 800 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nazca_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nazcan_kulttuuri",
+    "wikidata_id": "Q211186",
+    "summary_en": "An archaeological culture of southern coastal Peru world-renowned for the monumental Nazca Lines—enormous desert geoglyphs depicting animals, plants, and geometric designs. Inhabiting hyper-arid desert valleys, the Nazca engineered puquios (underground spiral aqueduct systems) and produced brilliant polychrome ceramics and fine woven textiles.",
+    "summary_fi": "Etelä-Perun rannikon aavikoilla vaikuttanut sivilisaatio, joka tunnetaan ennen kaikkea valtavista aavikkopiirroksistaan (Nazcan linjat), jotka esittävät eläimiä, kasveja ja geometrisia kuvioita. Selviytyäkseen äärimmäisen kuivassa ilmastossa nazcat kehittivät spiraalimaisia maanalaisia vesikanavia (puquios) sekä loisteliaan moniväristä keramiikkaa.",
+    "capital": "Cahuachi",
+    "feature_name_matches": [
+      "Nazca",
+      "Nasca"
+    ]
+  },
+  {
+    "slug": "paracas-culture",
+    "name": "Paracas Culture",
+    "name_fi": "Paracasin kulttuuri",
+    "native_name": "Paracas",
+    "alternate_names": [
+      "Paracas Cavernas",
+      "Paracas Necropolis"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Early Horizon (South Coast of Peru)",
+    "year_start": -800,
+    "year_end": 100,
+    "period_label": "c. 800 BCE – 100 CE",
+    "period_label_fi": "n. 800 eaa. – 100 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Paracas_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Paracasin_kulttuuri",
+    "wikidata_id": "Q528701",
+    "summary_en": "An influential Early Horizon society on the Paracas Peninsula of southern Peru. Famed for producing the most sophisticated and intricate embroidered polychrome funerary textiles in the ancient Americas, the Paracas were also pioneers in advanced surgical trepanation and cranial elongation before evolving into the Nazca culture.",
+    "summary_fi": "Etelä-Perun rannikolla Paracasin niemimaalla kukoistanut varhainen kulttuuri. Paracas tunnetaan muinaisen Amerikan upeimmista ja taidokkaimmin kirjailluista monivärisistä hautajaistekstiileistään, pääkallonmuotoilusta sekä edistyneistä aivokoppaleikkauksista (trepanaatio), joista suuri osa potilaista selvisi hengissä.",
+    "capital": "Wari Kayan, Cerro Colorado",
+    "feature_name_matches": [
+      "Paracas"
+    ]
+  },
+  {
+    "slug": "chavin-culture",
+    "name": "Chavín Culture",
+    "name_fi": "Chavínin kulttuuri",
+    "native_name": "Chavín",
+    "alternate_names": [
+      "Chavin",
+      "Chavín Horizon"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Early Horizon (Andean Pre-Inca)",
+    "year_start": -900,
+    "year_end": -200,
+    "period_label": "c. 900 BCE – 200 BCE",
+    "period_label_fi": "n. 900 eaa. – 200 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chav%C3%ADn_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chav%C3%ADnin_kulttuuri",
+    "wikidata_id": "Q728168",
+    "summary_en": "The foundational highland civilization of the northern Peruvian Andes centered at the monumental pilgrimage complex of Chavín de Huántar. Featuring labyrinthine stone galleries, carved tenon heads, the Lanzón deity monolith, and feline-serpent iconography, Chavín established a unified religious and artistic horizon across the Andes.",
+    "summary_fi": "Pohjois-Perun Andien vuoristossa sijainnut varhainen sivilisaatio, jonka monumentaalinen kivitemppelialue Chavín de Huántar toimi pan-andisena uskonnollisena pyhiinvaelluskeskuksena. Sen maanalaiset sokkelogalleriat, kiviset Lanzón-monoliitit ja jaguaari-käärme-ikonografia loivat taiteellisen pohjan myöhemmille Andien kulttuureille.",
+    "capital": "Chavín de Huántar",
+    "feature_name_matches": [
+      "Chavin",
+      "Chavín",
+      "Chavín Culture"
+    ]
+  },
+  {
+    "slug": "norte-chico-civilization",
+    "name": "Norte Chico Civilization",
+    "name_fi": "Norte Chicon sivilisaatio",
+    "native_name": "Caral-Supe",
+    "alternate_names": [
+      "Caral Civilization",
+      "Caral"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Preceramic (Oldest Civilization in the Americas)",
+    "year_start": -3500,
+    "year_end": -1800,
+    "period_label": "c. 3500 BCE – 1800 BCE",
+    "period_label_fi": "n. 3500 eaa. – 1800 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Norte_Chico_civilization",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Norte_Chicon_kulttuuri",
+    "wikidata_id": "Q754593",
+    "summary_en": "The oldest known civilization in the Americas, flourishing in north-central coastal Peru along the Supe, Pativilca, and Fortaleza valleys. Developing contemporaneously with the Pyramids of Egypt, Norte Chico encompassed over thirty major urban centers including the sacred city of Caral, boasting monumental terraced platform mounds and sunken circular plazas devoid of visual signs of warfare.",
+    "summary_fi": "Amerikan mantereen vanhin tunnettu sivilisaatio Perun keskipohjoisrannikolla, joka kukoisti samaan aikaan kuin Egyptin pyramidit. Norte Chicon kulttuuriin kuului yli 30 asutuskeskusta, joista tunnetuin on pyhä kaupunki Caral valtavine porrastettuine tasanteineen ja pyöreine seremoniakuoppineen ilman merkkejä sotilaallisista linnoitteista.",
+    "capital": "Caral, Aspero",
+    "feature_name_matches": [
+      "Norte Chico",
+      "Caral-Supe",
+      "Caral"
+    ]
+  },
+  {
+    "slug": "el-paraiso",
+    "name": "El Paraíso Settlement",
+    "name_fi": "El Paraíson asutus",
+    "native_name": "El Paraíso",
+    "alternate_names": [
+      "Chuquitanta"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Preceramic Period (Central Coast Peru)",
+    "year_start": -2500,
+    "year_end": -1500,
+    "period_label": "c. 2500 BCE – 1500 BCE",
+    "period_label_fi": "n. 2500 eaa. – 1500 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/El_Para%C3%ADso,_Peru",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/El_Para%C3%ADso",
+    "wikidata_id": "Q1324449",
+    "summary_en": "A massive Late Preceramic architectural complex located in the Chillón River Valley near modern Lima. Covering over 58 hectares with stone-masonry U-shaped ceremonial platforms and residential quarters, El Paraíso stands as one of the largest early urban settlements on the Pacific coast, supported by marine foraging and irrigated cotton agriculture.",
+    "summary_fi": "Massiivinen esikeraamisen kauden arkkitehtoninen keskus Chillón-joen laaksossa lähellä nykyistä Limaa. Yli 58 hehtaarin alueelle levittäytyvä El Paraíso oli rannikon varhaisimpia suuria asutuskeskuksia, jonka kivilouhoksista rakennetut U-muotoiset temppelikompleksit kukoistivat merikalastuksen ja puuvillanviljelyn varassa.",
+    "capital": "El Paraíso",
+    "feature_name_matches": [
+      "El Paraiso",
+      "El Paraíso"
+    ]
+  },
+  {
+    "slug": "valdivia-culture",
+    "name": "Valdivia Culture",
+    "name_fi": "Valdivian kulttuuri",
+    "native_name": "Valdivia",
+    "alternate_names": [
+      "Valdivian Culture"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Early Formative Period (Ecuador Coast)",
+    "year_start": -3500,
+    "year_end": -1800,
+    "period_label": "c. 3500 BCE – 1800 BCE",
+    "period_label_fi": "n. 3500 eaa. – 1800 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Valdivia_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Valdivian_kulttuuri",
+    "wikidata_id": "Q1371908",
+    "summary_en": "One of the earliest settled ceramic-producing cultures in the Americas, emerging along the Santa Elena Peninsula and coastal Guayas in Ecuador. Renowned for finely modeled ceramic 'Venus of Valdivia' female figurines and circular planned villages like Real Alto, the Valdivia combined early maize agriculture with rich marine exploitation.",
+    "summary_fi": "Yksi Amerikan varhaisimmista keramiikkaa valmistaneista maanviljelyskulttuureista Ecuadorin rannikolla. Valdivian kulttuuri tunnetaan erityisesti pienistä savisista naishahmoista ('Valdivian Venus'), pyöreistä kyläyhteisöistään (kuten Real Alto) sekä varhaisesta maissinviljelystä rannikon kalastuksen rinnalla.",
+    "capital": "Real Alto",
+    "feature_name_matches": [
+      "Valdivia"
+    ]
+  },
+  {
+    "slug": "chorrera-culture",
+    "name": "Chorrera Culture",
+    "name_fi": "Chorreran kulttuuri",
+    "native_name": "Chorrera",
+    "alternate_names": [
+      "Late Formative Ecuador"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Formative Period (Guayas Basin, Ecuador)",
+    "year_start": -1300,
+    "year_end": -300,
+    "period_label": "c. 1300 BCE – 300 BCE",
+    "period_label_fi": "n. 1300 eaa. – 300 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chorrera_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chorreran_kulttuuri",
+    "wikidata_id": "Q1076595",
+    "summary_en": "A widespread Late Formative culture centered in the Guayas River Basin of coastal Ecuador. Celebrated for technically exquisite whistling animal bottles, iridescent slip-decorated vessels, and realistic naturalist ceramic sculptures, Chorrera artistic styles exerted a pervasive influence across northern South America.",
+    "summary_fi": "Ecuadorin Guayas-joen laaksossa kukoistanut myöhäisen muodostavan kauden kulttuuri. Chorrera tunnetaan teknisesti hämmästyttävän hienostuneista viheltävistä eläinruukuistaan, hohtavapintaisesta maalatusta keramiikastaan sekä laaja-alaisesta kauppaverkostostaan aina Kolumbiaan ja Peruun.",
+    "capital": "Babahoyo River Basin",
+    "feature_name_matches": [
+      "Chorrera"
+    ]
+  },
+  {
+    "slug": "chinchorro-culture",
+    "name": "Chinchorro Culture",
+    "name_fi": "Chinchorron kulttuuri",
+    "native_name": "Chinchorro",
+    "alternate_names": [
+      "Chinchoros",
+      "Atacama Mummies Culture"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Archaic Period (Atacama Desert Coast)",
+    "year_start": -7000,
+    "year_end": -1500,
+    "period_label": "c. 7000 BCE – 1500 BCE",
+    "period_label_fi": "n. 7000 eaa. – 1500 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chinchorro_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chinchorron_kulttuuri",
+    "wikidata_id": "Q1074404",
+    "summary_en": "A sedentary marine foraging and fishing culture of the hyper-arid Atacama Desert coast spanning northern Chile and southern Peru. The Chinchorro developed the world's oldest known artificial mummification practices around 5000 BCE—predating Egyptian mummies by over two millennia—applying black and red manganese clay masks and reed armature preservation across all social classes.",
+    "summary_fi": "Pohjois-Chilen ja Etelä-Perun Atacaman aavikkorannikolla asunut kalastuskulttuuri. Chinchorrot kehittivät maailman vanhimman tunnetun keinotekoisen muumiointimenetelmän jo noin 5000 eaa. – yli kaksi vuosituhatta ennen muinaista Egyptiä – valmistaen huolellisia savinaamioita ja käsitellen kaikkien yhteisön jäsenten ruumiit sukupuolesta tai iästä riippumatta.",
+    "capital": "Arica, Camarones",
+    "feature_name_matches": [
+      "Chinchorro culture",
+      "Chinchoros"
+    ]
+  },
+  {
+    "slug": "wankarani-culture",
+    "name": "Wankarani Culture",
+    "name_fi": "Wankaranin kulttuuri",
+    "native_name": "Wankarani",
+    "alternate_names": [
+      "Early Altiplano Culture"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Formative Period (Bolivian Altiplano)",
+    "year_start": -1500,
+    "year_end": 400,
+    "period_label": "c. 1500 BCE – 400 CE",
+    "period_label_fi": "n. 1500 eaa. – 400 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Wankarani_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Wankaranin_kulttuuri",
+    "wikidata_id": "Q2605335",
+    "summary_en": "An early sedentary agro-pastoral culture of the central Bolivian Altiplano, situated north and northeast of Lake Poopó. Characterized by artificial habitation mounds, circular adobe domestic dwellings, llama and alpaca pastoralism, and carved stone camelid heads, Wankarani was a vital precursor to the urban development of Tiwanaku.",
+    "summary_fi": "Varhainen kylä- ja paimentolaiskulttuuri Bolivian ylängöllä Poopó-järven pohjoispuolella. Wankaranit asuivat pyöreissä savitiilitaloissa kumpuasutuksilla, kasvattivat laamoja ja alpakoita, viljelivät kvinoaa sekä kaiversivat kivisiä laamojen päitä ennakoiden myöhempää Tiwanakun kehitystä.",
+    "capital": "Lake Poopó Mounds",
+    "feature_name_matches": [
+      "Wankarani"
+    ]
+  },
+  {
+    "slug": "muisca-confederation",
+    "name": "Muisca Confederation",
+    "name_fi": "Muisca-konfederaatio",
+    "native_name": "Muysca (Chibcha)",
+    "alternate_names": [
+      "Chibcha Confederation",
+      "Muisca",
+      "Bacatá & Hunza"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Late Intermediate to Postclassic Northern Andes",
+    "year_start": 800,
+    "year_end": 1537,
+    "period_label": "c. 800 CE – 1537 CE",
+    "period_label_fi": "n. 800 jaa. – 1537 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Muisca_Confederation",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Muiscat",
+    "wikidata_id": "Q828604",
+    "summary_en": "An advanced Chibchan-speaking confederation situated on the high Altiplano Cundiboyacense in the Eastern Range of the Colombian Andes. Ruled by the Zipa of Bacatá and Zaque of Hunza, the Muisca were famed for exquisite tumbaga gold votive figurines (tunjos), salt and emerald trade, and the sacred ritual at Lake Guatavita that birthed the legend of El Dorado.",
+    "summary_fi": "Andien itäisellä ylängöllä (Altiplano Cundiboyacense) nykyisen Kolumbian alueella kukoistanut chibcha-kielinen valtioliitto, jota hallitsivat Bacatán Zipa ja Hunzan Zaque. Muiscat tunnettiin korkeatasoisesta kulta- ja kupariseoksesta (tumbaga) tehdyistä uhriesineistään, suola- ja smaragdikaivoksistaan sekä Guatavita-järven pyhästä rituaalista, josta sai alkunsa legenda El Doradosta.",
+    "capital": "Bacatá (Bogotá), Hunza (Tunja)",
+    "feature_name_matches": [
+      "Muisca",
+      "Muisca Confederation",
+      "Chibcha / Muisca"
+    ]
+  },
+  {
+    "slug": "huancas",
+    "name": "Huanca Kingdom",
+    "name_fi": "Huancojen kuningaskunta",
+    "native_name": "Wanka",
+    "alternate_names": [
+      "Huancas",
+      "Wankas"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (Mantaro Valley)",
+    "year_start": 1000,
+    "year_end": 1460,
+    "period_label": "c. 1000 CE – 1460 CE",
+    "period_label_fi": "n. 1000 jaa. – 1460 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Huanca_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Huancat",
+    "wikidata_id": "Q1482068",
+    "summary_en": "A fiercely independent Quechua-speaking warrior nation of the fertile Mantaro Valley in the central Peruvian highlands. Fortified in hilltop stone citadel strongholds such as Tunanmarca, the Huanca resisted Inca conquest under Pachacuti and later allied decisively with the Spanish conquistadors to dismantle the Inca Empire.",
+    "summary_fi": "Perun keskismaan Mantaron laaksossa elänyt sotaisa ketsuakansa. Huancat asuivat jyrkille vuorenhuipuille rakennetuissa kivisissä linnoituskaupungeissa (kuten Tunanmarca) ja tekivät ankaraa vastarintaa inkojen valloitukselle ennen kuin liittoutuivat espanjalaisten kanssa inkkavallan murtamiseksi.",
+    "capital": "Tunanmarca (Siquillapucara)",
+    "feature_name_matches": [
+      "Huancas",
+      "Huanca"
+    ]
+  },
+  {
+    "slug": "pasto-people",
+    "name": "Pasto Chiefdoms",
+    "name_fi": "Pastojen päällikkökunnat",
+    "native_name": "Pasto",
+    "alternate_names": [
+      "Pastos"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Late Intermediate Period (Carchi & Nariño)",
+    "year_start": 800,
+    "year_end": 1540,
+    "period_label": "c. 800 CE – 1540 CE",
+    "period_label_fi": "n. 800 jaa. – 1540 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pasto_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pastot",
+    "wikidata_id": "Q2699709",
+    "summary_en": "An indigenous ethnic nation inhabiting the volcanic high plateaus of Carchi in Ecuador and Nariño in southern Colombia. Skilled agriculturalists cultivating tubers and maize on vertical ecological niches, the Pasto fiercely defended their northern frontier, successfully repulsing the northern military expansion of the Inca Empire under Huayna Capac.",
+    "summary_fi": "Etelä-Kolumbian Nariñon ja Pohjois-Ecuadorin Carchin vulkaanisilla ylängöillä asunut alkuperäiskansa. Pastot olivat taitavia maanviljelijöitä ja keramiikkataiteilijoita, jotka onnistuivat pysäyttämään inkkavaltakunnan pohjoisen laajentumisen ankarissa taisteluissa Huayna Capacin joukkoja vastaan.",
+    "capital": "Ipiales, Tulcán",
+    "feature_name_matches": [
+      "Pasto"
+    ]
+  },
+  {
+    "slug": "zenu-culture",
+    "name": "Zenú Culture",
+    "name_fi": "Zenú-kulttuuri",
+    "native_name": "Zenú / Sinú",
+    "alternate_names": [
+      "Sinú Culture",
+      "Zenú Hydraulic Society"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Classic to Late Northern Colombia",
+    "year_start": -200,
+    "year_end": 1600,
+    "period_label": "c. 200 BCE – 1600 CE",
+    "period_label_fi": "n. 200 eaa. – 1600 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Zen%C3%BA",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zen%C3%BA",
+    "wikidata_id": "Q189700",
+    "summary_en": "A pre-Columbian civilization in the floodplains of the Sinú and San Jorge river valleys of northern Colombia. Renowned as the greatest hydraulic engineers of South America, the Zenú constructed an astonishing 500,000-hectare grid network of drainage canals to manage seasonal flooding, and created filigree gold casting masterpieces.",
+    "summary_fi": "Pohjois-Kolumbian Sinú- ja San Jorge -jokien tulvatasangoilla vaikuttanut sivilisaatio. Zenút olivat muinaisen Etelä-Amerikan etevimpiä vesirakentajia, jotka loivat yli 500 000 hehtaarin laajuisen kanava- ja pengerrysverkoston tulvien hallitsemiseksi, ja heidät tunnettiin myös mestarillisista kultafil splice -koruistaan.",
+    "capital": "Finzenú",
+    "feature_name_matches": [
+      "Zenú",
+      "Zenu"
+    ]
+  },
+  {
+    "slug": "manteno-huancavilca",
+    "name": "Manteño-Huancavilca Culture",
+    "name_fi": "Manteño-Huancavilca-kulttuuri",
+    "native_name": "Manteño / Huancavilca",
+    "alternate_names": [
+      "Manteño Culture",
+      "Maritime Traders of Ecuador"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Integration Period (Ecuador Coast)",
+    "year_start": 500,
+    "year_end": 1532,
+    "period_label": "c. 500 CE – 1532 CE",
+    "period_label_fi": "n. 500 jaa. – 1532 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mante%C3%B1o-Huancavilca_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mante%C3%B1o-kulttuuri",
+    "wikidata_id": "Q2264560",
+    "summary_en": "The final major pre-Columbian culture of the Ecuadorian coast, renowned as the premier long-distance maritime merchants of the Pacific. Navigating large balsa-wood sailing rafts equipped with guara centerboards, they traded precious Spondylus thorny oyster shells, gold, and textiles between Peru and Mesoamerica, and carved iconic U-shaped ceremonial stone thrones.",
+    "summary_fi": "Ecuadorin rannikon viimeinen suuri esikolumbiaaninen kulttuuri, joka tunnetaan Tyynenmeren johtavana merikauppakansana. He purjehtivat kookkailla balsapuisilla purjelautoilla käyden kauppaa arvokkailla Spondylus-simpukoilla ja kankailla Mesoamerikan ja Perun välillä sekä veistivät kuuluisia U-muotoisia seremoniakivituoleja.",
+    "capital": "Jocay (Manta), Agua Blanca",
+    "feature_name_matches": [
+      "Manteño-Huancavilca"
+    ]
+  },
+  {
+    "slug": "kichwa-peoples",
+    "name": "Kichwa Peoples",
+    "name_fi": "Kichwakansat",
+    "native_name": "Runa Shimi / Kichwa",
+    "alternate_names": [
+      "Highland & Amazonian Kichwa"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Inca to Modern Northern Andean & Amazonian Expansion",
+    "year_start": 1450,
+    "year_end": 1900,
+    "period_label": "c. 1450 CE – 1900 CE",
+    "period_label_fi": "n. 1450 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kichwa_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ket%C5%A1uat",
+    "wikidata_id": "Q1333069",
+    "summary_en": "Northern Quechua-speaking indigenous nations spanning the Andean cordillera and upper Amazon basin of Ecuador, Peru, and Colombia. Spreading originally during Inca imperial resettlement policies and subsequent colonial trade, the Kichwa developed rich weaving industries (Otavalo) and resilient Amazonian agroforestry communities along the Napo, Pastaza, and Tigre rivers.",
+    "summary_fi": "Ecuadorin ja Perun Andien ylängöillä sekä Amazonian yläjuoksulla asuvat ketsuan kielen pohjoismurteita puhuvat alkuperäiskansat. Kichwat kehittivät maailmankuulun Otavalon tekstiilikudontaperinteen sekä kestävät sademetsän viljelyjärjestelmät Napo-, Pastaza- ja Tigre-jokien varsilla.",
+    "capital": "Otavalo, Tena",
+    "feature_name_matches": [
+      "Kichwa",
+      "Kichwa (Amazónico)",
+      "Kichwa Lamista",
+      "Kichwa Santarrosino",
+      "Kichwa del Río Napo",
+      "Kichwa del Río Pastaza",
+      "Kichwa del Río Tigre"
+    ]
+  },
+  {
+    "slug": "cayubaba",
+    "name": "Cayubaba People",
+    "name_fi": "Cayubabat",
+    "native_name": "Kayuvava",
+    "alternate_names": [
+      "Cayuwaba"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Moxos Plains Chiefdoms",
+    "year_start": 500,
+    "year_end": 1900,
+    "period_label": "c. 500 CE – 1900 CE",
+    "period_label_fi": "n. 500 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cayubaba_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Cayubabat",
+    "wikidata_id": "Q3100234",
+    "summary_en": "An indigenous ethnic group of the Llanos de Moxos wetlands in the Beni Department of northeastern Bolivia. Master agriculturalists and fisherfolk, they historically maintained extensive earthwork causeways, canals, and raised agricultural ridges to thrive in seasonally inundated savannah environments.",
+    "summary_fi": "Koillis-Bolivian Benin departementin Moxosin tulvatasangolla elävä alkuperäiskansa. Cayubabat rakensivat laajoja maavalleja, kanavia ja korotettuja peltosaarekkeita sopeutuakseen savannien vuodenaikaistulviin ja harjoittivat maissin ja maniokin viljelyä.",
+    "capital": "Exaltación",
+    "feature_name_matches": [
+      "Cayubaba"
+    ]
+  },
+  {
+    "slug": "andean-hunter-gatherers",
+    "name": "Andean Hunter-Gatherers & Early Pastoralists",
+    "name_fi": "Andien metsästäjä-keräilijät ja varhaiset paimentolaiset",
+    "native_name": "Puna Pastoralists",
+    "alternate_names": [
+      "Lithic to Archaic Andean Populations",
+      "Andean states and chiefdoms"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Lithic and Archaic Andean Periods",
+    "year_start": -12000,
+    "year_end": -2500,
+    "period_label": "c. 12000 BCE – 2500 BCE",
+    "period_label_fi": "n. 12000 eaa. – 2500 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Preceramic_Period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Andien_esikeraaminen_kausi",
+    "wikidata_id": "Q2605380",
+    "summary_en": "The pioneering early Holocene human populations of the Andes who colonized high-altitude punas and coastal valleys. Initially big-game hunters of camelids and deer, these communities domesticated the llama, alpaca, guinea pig, and potato, establishing the transhumant pastoralism and tuber horticulture fundamental to Andean civilization.",
+    "summary_fi": "Andien vuoriston varhaisimmat asuttajat, jotka sopeutuivat korkeiden ylänköjen (puna) ankariin oloihin. Nämä metsästäjä-keräilijät kesyttivät laaman, alpakan, marsun ja perunan, luoden pohjan Andien vuoristolaiduntamiselle ja varhaisille asutuskeskuksille.",
+    "capital": "Guitarrero Cave, Telarmachay",
+    "feature_name_matches": [
+      "Andean hunter-gatherers",
+      "Andean states and chiefdoms"
+    ]
+  },
+  {
+    "slug": "chachapoya-culture",
+    "name": "Chachapoya Culture",
+    "name_fi": "Chachapoyasin kulttuuri",
+    "native_name": "Chachapoya",
+    "alternate_names": [
+      "Warriors of the Clouds",
+      "Chachapoyas"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (Cloud Forests of Northern Peru)",
+    "year_start": 800,
+    "year_end": 1470,
+    "period_label": "c. 800 CE – 1470 CE",
+    "period_label_fi": "n. 800 jaa. – 1470 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chachapoya_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chachapoyat",
+    "wikidata_id": "Q753956",
+    "summary_en": "A highland civilization that flourished in the cloud forests of the Amazonian slope of the northern Peruvian Andes. Known as the 'Warriors of the Clouds', the Chachapoya constructed monumental stone cliff sarcophagi (Karajía), circular cliffside dwellings, and the colossal fortified mountain citadel of Kuélap before falling to the Inca in the late 15th century.",
+    "summary_fi": "Pohjois-Perun Andien ja Amazonin sademetsän rinteiden pilvimetsissä kukoistanut sivilisaatio ('pilvisoturit'). Chachapoyat rakensivat jyrkänteille pystytettyjä kivisiä sarkofageja (Karajía), pyöreitä kivitaloja sekä Kuélapin valtavan vuoristolinnoituksen, jonka massiiviset kiviluiskat kohoavat pilvien yläpuolelle.",
+    "capital": "Kuélap, Gran Pajatén",
+    "feature_name_matches": [
+      "Chachapoya",
+      "Chachapoyas"
+    ]
+  },
+  {
+    "slug": "chanca-confederacy",
+    "name": "Chanca Confederation",
+    "name_fi": "Chancojen konfederaatio",
+    "native_name": "Chanka",
+    "alternate_names": [
+      "Chanka Confederacy",
+      "Chancas"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (Central Peruvian Highlands)",
+    "year_start": 1200,
+    "year_end": 1438,
+    "period_label": "c. 1200 CE – 1438 CE",
+    "period_label_fi": "n. 1200 jaa. – 1438 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chanka",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chankat",
+    "wikidata_id": "Q1062272",
+    "summary_en": "A formidable and aggressive ethnic confederation of the central Peruvian Andes in Ayacucho, Huancavelica, and Apurímac. The historic rivals of the fledgling Inca state, their dramatic siege of Cusco in 1438 CE ended in defeat by Prince Cusi Yupanqui (Pachacuti), triggering the imperial expansion of Tawantinsuyu.",
+    "summary_fi": "Sotaisa ja pelätty heimoliitto Perun keskiselänteellä Apurímacin ja Ayacuchon seuduilla. Chancat olivat inkkavaltakunnan verisimpiä kilpailijoita; heidän vuonna 1438 tekemänsä hyökkäys Cuscoon johti kuitenkin tappioon, jonka seurauksena prinssi Pachacuti nousi valtaan ja aloitti inkkain imperiumin luomisen.",
+    "capital": "Andahuaylas",
+    "feature_name_matches": [
+      "Chanca",
+      "Chankas"
+    ]
+  },
+  {
+    "slug": "chancay-culture",
+    "name": "Chancay Culture",
+    "name_fi": "Chancayn kulttuuri",
+    "native_name": "Chancay",
+    "alternate_names": [
+      "Chancay Civilization"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (Central Coast Peru)",
+    "year_start": 1000,
+    "year_end": 1470,
+    "period_label": "c. 1000 CE – 1470 CE",
+    "period_label_fi": "n. 1000 jaa. – 1470 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chancay_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chancayn_kulttuuri",
+    "wikidata_id": "Q1062145",
+    "summary_en": "A pre-Columbian civilization centered in the Chancay and Chillón river valleys of the central coast of Peru. Renowned for its distinctive black-on-white ceramic vessels, large standing anthropomorphic terracotta figurines (cuchimilcos), and delicate open-weave gauze textiles, the Chancay prospered through intense marine commerce.",
+    "summary_fi": "Perun keskimmäisellä rannikolla Chancay-joen laaksossa vaikuttanut kulttuuri. Chancayn kulttuuri tunnetaan erityisesti mustavalkoisesta keramiikastaan, avosylin seisovista terrakottahahmoistaan (cuchimilcos) sekä poikkeuksellisen hienoista harso- ja pitsikankaistaan, joita valmistettiin rannikon runsaasta puuvillasta.",
+    "capital": "Pisquillo Chico",
+    "feature_name_matches": [
+      "Chancay"
+    ]
+  },
+  {
+    "slug": "chincha-culture",
+    "name": "Chincha Kingdom",
+    "name_fi": "Chinchan kuningaskunta",
+    "native_name": "Chinchay",
+    "alternate_names": [
+      "Lordship of Chincha"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (Southern Coast Peru)",
+    "year_start": 1000,
+    "year_end": 1476,
+    "period_label": "c. 1000 CE – 1476 CE",
+    "period_label_fi": "n. 1000 jaa. – 1476 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chincha_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chinchan_kulttuuri",
+    "wikidata_id": "Q2636287",
+    "summary_en": "A wealthy mercantile maritime kingdom of the Chincha Valley on the south-central coast of Peru. Commanding a fleet of thousands of trading balsas, the Chincha dominated long-distance sea trade in Spondylus shells, gold, and dried fish, enjoying such immense prestige that the Lord of Chincha was the only lord carried in a litter alongside Atahualpa at Cajamarca.",
+    "summary_fi": "Rikas rannikon kauppiaiden kuningaskunta Etelä-Perussa Chinchan laaksossa. Chinchoilla oli tuhansien kauppaveneiden laivasto, joka hallitsi Tyynenmeren rannikkokauppaa Ecuadoriin ja Chileen asti; Chinchan kuninkaan arvovalta oli niin suuri, että hän oli ainoa hallitsija, jota kannettiin kultaisessa kantotuolissa inkkakeisari Atahualpan rinnalla.",
+    "capital": "La Centinela",
+    "feature_name_matches": [
+      "Chincha"
+    ]
+  },
+  {
+    "slug": "colla-kingdom",
+    "name": "Colla Kingdom",
+    "name_fi": "Collan kuningaskunta",
+    "native_name": "Qulla",
+    "alternate_names": [
+      "Qulla Kingdom",
+      "Collasuyu Realm"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (Lake Titicaca Basin)",
+    "year_start": 1100,
+    "year_end": 1450,
+    "period_label": "c. 1100 CE – 1450 CE",
+    "period_label_fi": "n. 1100 jaa. – 1450 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Colla_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Collat",
+    "wikidata_id": "Q2719266",
+    "summary_en": "One of the major Aymara kingdoms that arose around Lake Titicaca following the collapse of Tiwanaku. Possessing vast herds of alpacas and llamas, the Colla constructed imposing cylindrical stone funerary towers (chullpas) at Sillustani and fiercely contested regional supremacy with their Lupaca neighbors before conquest by Pachacuti.",
+    "summary_fi": "Yksi Titicacajärven ympärille Tiwanakun romahdettua syntyneistä mahtavista aymarakuningaskunnista. Collat omistivat valtavia laama- ja alpakkatokkia, rakensivat mahtavia pyöreitä kivisiä hautatorneja (chullpas) Sillustaniin ja taistelivat järvialueen herruudesta naapurinsa Lupacan kanssa ennen inkojen alaisuuteen joutumista.",
+    "capital": "Hatunqulla (Sillustani)",
+    "feature_name_matches": [
+      "Colla",
+      "Qulla"
+    ]
+  },
+  {
+    "slug": "lupaca-kingdom",
+    "name": "Lupaca Kingdom",
+    "name_fi": "Lupacan kuningaskunta",
+    "native_name": "Lupaka",
+    "alternate_names": [
+      "Lupaka Aymara State"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Late Intermediate Period (Lake Titicaca Basin)",
+    "year_start": 1100,
+    "year_end": 1450,
+    "period_label": "c. 1100 CE – 1450 CE",
+    "period_label_fi": "n. 1100 jaa. – 1450 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Lupaca",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Lupacat",
+    "wikidata_id": "Q1877478",
+    "summary_en": "A powerful Aymara kingdom situated on the southwestern shore of Lake Titicaca in the high Altiplano. Masters of the 'vertical archipelago' economic model, the Lupaca controlled ecological colonies spanning coastal Pacific valleys to lowland eastern coca fields while maintaining massive pastoral herds in their high-altitude homeland.",
+    "summary_fi": "Titicacajärven lounaisrannalla Chucuiton ympärillä sijainnut vahva aymarakuningaskunta. Lupacat kehittivät 'vertikaalisen saariston' talousmallin, jossa ylängön paimentolaiskeskus hallitsi siirtokuntia niin Tyynenmeren rannikon laaksoissa kuin itäisillä kokapensasalueillakin.",
+    "capital": "Chucuito",
+    "feature_name_matches": [
+      "Lupaca",
+      "Lupaka"
+    ]
+  },
+  {
+    "slug": "canari-confederacy",
+    "name": "Cañari Confederacy",
+    "name_fi": "Cañarien konfederaatio",
+    "native_name": "Kañari",
+    "alternate_names": [
+      "Canari Nation"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Integration Period (Southern Ecuadorian Highlands)",
+    "year_start": 500,
+    "year_end": 1533,
+    "period_label": "c. 500 CE – 1533 CE",
+    "period_label_fi": "n. 500 jaa. – 1533 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ca%C3%B1ari",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ca%C3%B1arit",
+    "wikidata_id": "Q1052163",
+    "summary_en": "An indigenous ethnic confederacy native to the southern Andean highlands of Ecuador in Azuay and Cañar. Revered as tenacious fighters with sacred moon and serpent totems, the Cañari fiercely resisted the Inca conquest for decades before allying with the Spanish against Atahualpa.",
+    "summary_fi": "Etelä-Ecuadorin Andien laaksoissa Azuayn ja Cañarin alueilla elänyt urhea alkuperäiskansa. Cañarit pitivät kuuta ja käärmettä pyhinä esi-isinään ja taistelivat vuosikymmeniä inkojen valloitusta vastaan; myöhemmin he liittyivät espanjalaisten puolelle Atahualpan armeijaa vastaan.",
+    "capital": "Guapondelig (Tomebamba), Ingapirca",
+    "feature_name_matches": [
+      "Cañari",
+      "Canari"
+    ]
+  },
+  {
+    "slug": "quitu-culture",
+    "name": "Quitu Culture",
+    "name_fi": "Quitujen kulttuuri",
+    "native_name": "Kitu",
+    "alternate_names": [
+      "Kingdom of Quito",
+      "Quitu-Cara"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Integration Period (Northern Ecuadorian Andes)",
+    "year_start": 850,
+    "year_end": 1533,
+    "period_label": "c. 850 CE – 1533 CE",
+    "period_label_fi": "n. 850 jaa. – 1533 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Quitu_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Quitut",
+    "wikidata_id": "Q2636289",
+    "summary_en": "A pre-Inca civilization that occupied the highland Pichincha basin of northern Ecuador. A crucial northern trade hub connecting Pacific coastal merchants with Amazonian tribes, the Quitu built stepped tolas (earthen mounds) and gave their name to the modern capital of Ecuador.",
+    "summary_fi": "Pohjois-Ecuadorin Pichinchan ylänkölaaksossa vaikuttanut esikolumbiaaninen kulttuuri. Quitut loivat vilkkaan kauppakeskuksen Tyynenmeren ja Amazonin välille, rakensivat maavallikumpuja (tolas) ja antoivat nimensä Ecuadorin nykyiselle pääkaupungille Quitolle.",
+    "capital": "Quito",
+    "feature_name_matches": [
+      "Quitu",
+      "Kingdom of Quito"
+    ]
+  },
+  {
+    "slug": "san-agustin-culture",
+    "name": "San Agustín Culture",
+    "name_fi": "San Agustínin kulttuuri",
+    "native_name": "San Agustín",
+    "alternate_names": [
+      "Megalithic Sculptors of Huila"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Regional Classic Northern Andes",
+    "year_start": -1000,
+    "year_end": 1000,
+    "period_label": "c. 1000 BCE – 1000 CE",
+    "period_label_fi": "n. 1000 eaa. – 1000 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/San_Agust%C3%ADn_Archaeological_Park",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/San_Agust%C3%ADnin_arkeologinen_puisto",
+    "wikidata_id": "Q852335",
+    "summary_en": "A mysterious megalithic civilization situated in the upper Magdalena River Basin in the Huila Department of southwestern Colombia. Renowned for creating hundreds of imposing freestanding volcanic stone statues depicting deities with feline fangs, alter-ego spirits, warriors, and burial dolmens across sacred mounds.",
+    "summary_fi": "Lounais-Kolumbian Magdalenajoen yläjuoksulla kukoistanut mystinen megaliittikulttuuri. San Agustín tunnetaan sadoista monumentaalisista vulkaanisesta kivestä veistetyistä patsaistaan, jotka kuvaavat kissapedonhampaisia jumalia, sotureita ja suojelevia alter ego -henkiä hautaustoimintaan liittyvillä kummuilla.",
+    "capital": "San Agustín",
+    "feature_name_matches": [
+      "San Agustín",
+      "San Agustin"
+    ]
+  },
+  {
+    "slug": "tairona-culture",
+    "name": "Tairona Civilization",
+    "name_fi": "Taironan sivilisaatio",
+    "native_name": "Teyuna (Tairona)",
+    "alternate_names": [
+      "Tayrona",
+      "Lost City Builders"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Classic to Contact Sierra Nevada de Santa Marta",
+    "year_start": 200,
+    "year_end": 1600,
+    "period_label": "c. 200 CE – 1600 CE",
+    "period_label_fi": "n. 200 jaa. – 1600 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tairona",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Taironat",
+    "wikidata_id": "Q948574",
+    "summary_en": "An advanced pre-Columbian civilization in the steep mountain jungle of the Sierra Nevada de Santa Marta in northern Colombia. Master engineers in stone terrace architecture and paved mountain stairways, they built Ciudad Perdida (Teyuna) and crafted extraordinary lost-wax cast gold and tumbaga jewelry.",
+    "summary_fi": "Pohjois-Kolumbian Sierra Nevada de Santa Martan rinteillä kukoistanut korkeakulttuuri. Taironat olivat mestarillisia kivipengerrysten, teiden ja portaiden rakentajia, joiden suurin kaupunki Ciudad Perdida ('Kadonnut kaupunki') kätkeytyi vuoristosademetsään; heidät tunnettiin myös upeista valetuista kultakoruistaan.",
+    "capital": "Ciudad Perdida (Teyuna), Pueblito",
+    "feature_name_matches": [
+      "Tairona",
+      "Tayrona"
+    ]
+  },
+  {
+    "slug": "calima-culture",
+    "name": "Calima Culture",
+    "name_fi": "Caliman kulttuuri",
+    "native_name": "Calima",
+    "alternate_names": [
+      "Ilama, Yotoco & Sonso"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Formative to Classic Cauca Valley",
+    "year_start": -1600,
+    "year_end": 1000,
+    "period_label": "c. 1600 BCE – 1000 CE",
+    "period_label_fi": "n. 1600 eaa. – 1000 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Calima_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Calima-kulttuuri",
+    "wikidata_id": "Q2636284",
+    "summary_en": "A series of sequential pre-Columbian cultures (Ilama, Yotoco, Sonso) centered in the Calima River Valley and Western Cordillera of Colombia. Famed for producing the most spectacular hammered gold pectoral ornaments, nose-rings, and mask sheets in the Americas, Calima metallurgy demonstrated unsurpassed technical mastery.",
+    "summary_fi": "Kolumbian läntisen vuoriston ja Calima-joen laaksossa peräkkäin kehittyneet kulttuurit (Ilama, Yotoco ja Sonso). Calima tunnetaan Etelä-Amerikan upeimmista vasaroiduista kultaisista rintakilvistä, kultanaamioista ja nenärenkaista, jotka kuvastavat poikkeuksellisen korkeaa metallurgista taituruutta.",
+    "capital": "Calima River Valley",
+    "feature_name_matches": [
+      "Calima"
+    ]
+  },
+  {
+    "slug": "quimbaya-civilization",
+    "name": "Quimbaya Civilization",
+    "name_fi": "Quimbayan sivilisaatio",
+    "native_name": "Quimbaya",
+    "alternate_names": [
+      "Quimbaya Gold Culture"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Classic to Contact Middle Cauca River",
+    "year_start": 100,
+    "year_end": 1540,
+    "period_label": "c. 100 CE – 1540 CE",
+    "period_label_fi": "n. 100 jaa. – 1540 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Quimbaya",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Quimbayat",
+    "wikidata_id": "Q2636280",
+    "summary_en": "An iconic pre-Columbian civilization centered along the Middle Cauca River valley in the coffee-growing heartland of Colombia. Universally celebrated for supreme lost-wax gold and tumbaga casting, exemplified by the seated poporo lime flask figurines and stylized aerodynamic zoomorphic pectorals.",
+    "summary_fi": "Kolumbian Cauca-joen laaksossa nykyisen kahvinviljelyalueen sydämessä kukoistanut korkeakulttuuri. Quimbayat olivat esikolumbiaanisen maailman arvostetuimpia kultaseppiä, jotka loivat hämmästyttävän hienoja onttoja kultaveistoksia, kuten seremoniallisia poporo-kalkkiastioita ja kultaisia riipuksia.",
+    "capital": "Chinchiná, Armenia",
+    "feature_name_matches": [
+      "Quimbaya"
+    ]
+  },
+  {
+    "slug": "xinca-people",
+    "name": "Xinca People",
+    "name_fi": "Xincat",
+    "native_name": "Xinka",
+    "alternate_names": [
+      "Xincas"
+    ],
+    "culture_group": "Andean",
+    "lineage_id": "chibcha-colombian",
+    "historical_period": "Indigenous Southern Guatemala & Salvadoran Coast",
+    "year_start": 500,
+    "year_end": 1800,
+    "period_label": "c. 500 CE – 1800 CE",
+    "period_label_fi": "n. 500 jaa. – 1800 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Xinca_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Xincat",
+    "wikidata_id": "Q1537233",
+    "summary_en": "An indigenous, non-Mayan ethnolinguistic nation native to the Pacific coastal plains and highlands of southern Guatemala and western El Salvador. Speaking an isolated language family, the Xinca fiercely opposed the Spanish invasion under Pedro de Alvarado at the fortified town of Atiquipaque in 1524.",
+    "summary_fi": "Etelä-Guatemalan Tyynenmeren rannikkotasangoilla elävä ei-mayalainen alkuperäiskansa, joka puhuu erillistä isolaattikieliperhettä. Xincat tekivät sitkeää sotilaallista vastarintaa Pedro de Alvaradon espanjalaisjoukoille Atiquipaquen linnoitetussa kaupungissa vuonna 1524.",
+    "capital": "Atiquipaque, Guazacapán",
+    "feature_name_matches": [
+      "Xinca"
+    ]
+  }
+]

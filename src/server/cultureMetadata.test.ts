@@ -88,5 +88,20 @@ describe("Culture Metadata Batches", () => {
     const batchPath = path.resolve(__dirname, "../../data-sources/batches/islamic-caliphates.json")
     validateBatch(batchPath, "Islamic Caliphates", 15)
   })
+
+  it("validates the Iranian batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/iranian.json")
+    validateBatch(batchPath, "Iranian", 14)
+  })
+
+  it("validates the Mesoamerican batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/mesoamerican.json")
+    validateBatch(batchPath, "Mesoamerican", 30)
+  })
+
+  it("validates the Andean batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/andean.json")
+    validateBatch(batchPath, "Andean", 30)
+  })
 })
 

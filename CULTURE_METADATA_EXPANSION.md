@@ -43,11 +43,11 @@ Each record in `culture_metadata` adheres to the following specification:
 
 Progress is tracked dynamically via [`scripts/culture_metadata_status.ts`](file:///home/ville/src/web/earth-browser/scripts/culture_metadata_status.ts) and recorded in [`data-sources/culture_metadata_status.json`](file:///home/ville/src/web/earth-browser/data-sources/culture_metadata_status.json).
 
-* **Unique Named Entities Completed**: **110 / 2,999** (`3.7%`)
-* **Total Feature Records Linked**: **389 / 10,395** (`3.7%`)
+* **Unique Named Entities Completed**: **199 / 2,999** (`6.6%`)
+* **Total Feature Records Linked**: **636 / 10,395** (`6.1%`)
 * **Prototype Era (500 BCE / `world-bc500`)**: **32 / 77 features linked** (`41.6%`)
-* **Unlinked Features Remaining**: **10,006**
-* **Missing Entities Remaining**: **2,889**
+* **Unlinked Features Remaining**: **9,759**
+* **Missing Entities Remaining**: **2,800**
 
 
 ---
@@ -85,17 +85,17 @@ To avoid race conditions, merge conflicts, and table-lock contention, work is pa
 
 Below is the complete inventory of missing entities grouped into modular, parallelizable work units.
 
-### Work Unit 1: Mesoamerican Civilizations
-* **Total Entities**: 56 | **Completed**: 1 | **Missing**: 55
-* **Target Batch File**: `data-sources/batches/mesoamerican.json`
-* **Missing Entities to Populate**:
-  - `Ayuukjä'äy (Mixe)`, `Aztec Empire`, `Ben 'Zaa/Binnizá/Mén Diiste/Bene Xhon (Zapoteco)`, `Chorotega`, `Coyutecos (Nahua)`, `Guachichil`, `Guachichiles`, `Guaymí`, `Huastecs`, `K'iche'`, `Kaqchikel`, `Kuna/Guna`, `Lenca`, `Maize farmers`, `Maya`, `Maya (Chiapas, Guatemala and Honduras)`, `Maya (Chiapas, Guatemala and Tabasco)`, `Maya (Chiapas, Guatemala, El Salvador and Honduras)`, `Maya (Chiapas, Guatemala, Quintana Roo, Tabasco and Campeche)`, `Maya (Chiapas, Tabasco, Quintana Roo and Campeche)`, `Maya (Petén and Yucatán)`, `Maya (Yucatan, Campeche and Quintana Roo)`, `Maya (Yucatán, Campeche and Quintana Roo)`, `Maya (highlands)`, `Maya (lowlands)`, `Maya chiefdoms and states`, `Maya city-states`, `Maya civilization`, `Mesoamerican hunter-gatherers and maïze farmers`, `Mesoamerican hunters-gatherers`, `Mexicanero (Nahua)`, `Miskitu`, `Mixtec`, `Mixtecs`, `Monte Albán`, `Nicarao`, `Nahua`, `Náyari (Cora)`, `Pipil`, `Pipiles`, `Poqomam`, `Purepecha`, `Purépecha`, `Q'eqchi'`, `Tarascan Empire`, `Teotihuacan`, `Teotihuacan Empire`, `Tlaxcala`, `Toltec`, `Toltec Empire`, `Totonac`, `Totonacs`, `Wixarika (Huichol)`, `Zapotec`, `Zapotecs`
+### Work Unit 1: Mesoamerican Civilizations (COMPLETED)
+* **Total Entities**: 50 | **Completed**: 50 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/mesoamerican.json` (32 cultures populated, 138 features linked across eras)
+* **Entities Resolved**:
+  - `Ayuukjä'äy (Mixe)`, `Aztec Empire`, `Ben 'Zaa/Binnizá/Mén Diiste/Bene Xhon (Zapoteco)`, `Chorotega`, `Coyutecos (Nahua)`, `Guachichil`, `Guachichiles`, `Guna of Madugandí`, `Guna of Wargandí`, `Guna Yala`, `Gunadule (Kuna-Tule)`, `Huasteco/Teenek`, `Ikoots/Kunajts/Ikoojts (Huave)`, `K'iche'`, `Kamejeya (Yukuna)`, `Kaqchikel`, `Lenca`, `Maize farmers`, `Maya`, `Maya chiefdoms and states`, `Maya city-states`, `Maya states`, `Maya Yucateco`, `Mayaimi`, `Mayangna`, `Mayas`, `Mesoamerican hunter-gatherers and maïze farmers`, `Mexicanero (Nahuas)`, `Mexihcah (Triple Alliance)`, `Miskito`, `Mixtec Empire`, `Mixtecs`, `Monte Albán`, `Nahua`, `Nahua (Guerrero)`, `Nahua (Mexico)`, `Nahua (Michoacan)`, `Nahuas`, `Nicarao/Nahoa`, `Náayerite (Cora)`, `Olmec`, `P’urhépecha`, `Q'eqchi'`, `Teotihuacan`, `Toltec Empire`, `Totonac`, `Totonaco`, `Zapotec`, `Zapotec Empire`, `Ñuu Savi (Mixtecapan)`
 
-### Work Unit 2: Andean Civilizations & Chiefdoms
-* **Total Entities**: 34 | **Completed**: 1 | **Missing**: 33
-* **Target Batch File**: `data-sources/batches/andean.json`
-* **Missing Entities to Populate**:
-  - `Andean hunter-gatherers`, `Andean states and chiefdoms`, `Calima`, `Cañari`, `Cayubaba`, `Chachapoya`, `Chanca`, `Chancay`, `Chincha`, `Chinchoros`, `Chinchorro culture`, `Chibcha / Muisca`, `Chorrera`, `Colla`, `El Paraiso`, `Huanca`, `Huari Empire`, `Inca Empire (Tawantinsuyu)`, `Lupaca`, `Moche`, `Muisca Confederation`, `Nazca`, `Norte Chico`, `Paracas`, `Pasto`, `Quimbaya`, `Quitu`, `San Agustín`, `Tairona`, `Tiahuanaco Empire`, `Tiwanaku`, `Valdivia`, `Wankarani`
+### Work Unit 2: Andean Civilizations & Chiefdoms (COMPLETED)
+* **Total Entities**: 33 | **Completed**: 33 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/andean.json` (35 cultures populated, 134 features linked across eras)
+* **Entities Resolved**:
+  - `Andean hunter-gatherers`, `Cayubaba`, `Chavin`, `Chimú`, `Chimú Empire`, `Chinchoros`, `Chinchorro culture`, `Chorrera`, `El Paraiso`, `Huancas`, `Huari Empire`, `Inca Empire`, `Kichwa`, `Kichwa (Amazónico)`, `Kichwa Lamista`, `Kichwa Santarrosino`, `Kichwa del Río Napo`, `Kichwa del Río Pastaza`, `Kichwa del Río Tigre`, `Manteño-Huancavilca`, `Moche`, `Muisca`, `Nazca`, `Norte Chico`, `Paracas`, `Pasto`, `Tiahuanaco Empire`, `Valdivia`, `Wankarani`, `Wari`, `Wari’`, `Xinca`, `Zenú`
 
 ### Work Unit 3: Greco-Roman & Classical Mediterranean (COMPLETED)
 * **Total Entities**: 17 | **Completed**: 17 | **Missing**: 0 (`100% COMPLETE`)

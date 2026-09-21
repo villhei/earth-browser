@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-09-21T17:27:14.103Z",
+  "timestamp": "2026-09-21T17:47:07.166Z",
   "overall": {
     "totalEntities": 2999,
-    "completedEntities": 110,
-    "missingEntities": 2889,
-    "pctEntitiesComplete": 3.7,
+    "completedEntities": 199,
+    "missingEntities": 2800,
+    "pctEntitiesComplete": 6.6,
     "totalFeatures": 10395,
-    "linkedFeatures": 389,
-    "unlinkedFeatures": 10006,
-    "pctFeaturesLinked": 3.7
+    "linkedFeatures": 636,
+    "unlinkedFeatures": 9759,
+    "pctFeaturesLinked": 6.1
   },
   "cultureGroups": [
     {
@@ -310,9 +310,9 @@
     {
       "cultureGroup": "Southern Africa",
       "totalEntities": 27,
-      "completedEntities": 0,
-      "missingEntitiesCount": 27,
-      "pctComplete": 0,
+      "completedEntities": 1,
+      "missingEntitiesCount": 26,
+      "pctComplete": 3.7,
       "missingEntities": [
         "Angola",
         "Angola (Portugal)",
@@ -326,7 +326,6 @@
         "Mozambique",
         "Mozambique (Portugal)",
         "Mwenemutapa",
-        "Nahua ( Morelos, Puebla, Tlaxcala, Veracruz, Hidalgo, San Luis Potosi)",
         "Namibia",
         "Northern Rhodesia",
         "Nyasaland",
@@ -382,45 +381,11 @@
     },
     {
       "cultureGroup": "Andean",
-      "totalEntities": 34,
-      "completedEntities": 1,
-      "missingEntitiesCount": 33,
-      "pctComplete": 2.9,
-      "missingEntities": [
-        "Andean hunter-gatherers",
-        "Cayubaba",
-        "Chimú",
-        "Chimú Empire",
-        "Chinchoros",
-        "Chinchorro culture",
-        "Chorrera",
-        "El Paraiso",
-        "Huancas",
-        "Huari Empire",
-        "Inca Empire",
-        "Kichwa",
-        "Kichwa (Amazónico)",
-        "Kichwa del Río Napo",
-        "Kichwa del Río Pastaza",
-        "Kichwa del Río Tigre",
-        "Kichwa Lamista",
-        "Kichwa Santarrosino",
-        "Manteño-Huancavilca",
-        "Moche",
-        "Muisca",
-        "Muruwari",
-        "Nazca",
-        "Norte Chico",
-        "Paracas",
-        "Pasto",
-        "Tiahuanaco Empire",
-        "Valdivia",
-        "Wankarani",
-        "Wari",
-        "Wari’",
-        "Xinca",
-        "Zenú"
-      ]
+      "totalEntities": 33,
+      "completedEntities": 33,
+      "missingEntitiesCount": 0,
+      "pctComplete": 100,
+      "missingEntities": []
     },
     {
       "cultureGroup": "Middle East",
@@ -503,52 +468,6 @@
         "Taino",
         "Trinidad",
         "United States Virgin Islands"
-      ]
-    },
-    {
-      "cultureGroup": "South American Indigenous",
-      "totalEntities": 37,
-      "completedEntities": 0,
-      "missingEntitiesCount": 37,
-      "pctComplete": 0,
-      "missingEntities": [
-        "Ahé (Kawahib)",
-        "Amazon hunter-gatherers",
-        "Aónikenk (Tehuelche)",
-        "Ashaninka",
-        "Awaeté",
-        "Awaeté (Asurini of the Xingu)",
-        "Cabiyari/Kawiyarí",
-        "Charrúa",
-        "Da’naxda’xw Awaetlatla",
-        "Diaguita",
-        "Envuga (Kawahib)",
-        "Juma (Kawahib)",
-        "Jupaú (Kawahib)",
-        "Kawahib (Jiahui)",
-        "Kawahib (Parintintin)",
-        "Kawahib (Tenharim)",
-        "Magüta/Ticuna",
-        "Manioc farmers",
-        "Mapuche",
-        "Miranha",
-        "Pampas cultures",
-        "Paspahegh",
-        "Pintupi",
-        "Savanna hunter-gatherers",
-        "Selk'nam",
-        "Selkirk",
-        "Shipibo-Konibo",
-        "Shuar",
-        "Shuar-Wampis",
-        "Tekohá (Guarani)",
-        "Tupinambá",
-        "Tupis",
-        "Waiwai",
-        "Wallmapu (Mapuche)",
-        "Warao",
-        "Yanomami",
-        "Yeba-masã"
       ]
     },
     {
@@ -636,6 +555,55 @@
         "Tuscany",
         "Venice",
         "Viceroyalty of New Spain"
+      ]
+    },
+    {
+      "cultureGroup": "South American Indigenous",
+      "totalEntities": 40,
+      "completedEntities": 0,
+      "missingEntitiesCount": 40,
+      "pctComplete": 0,
+      "missingEntities": [
+        "Ahé (Kawahib)",
+        "Amazon hunter-gatherers",
+        "Aónikenk (Tehuelche)",
+        "Ashaninka",
+        "Awaeté",
+        "Awaeté (Asurini of the Xingu)",
+        "Cabiyari/Kawiyarí",
+        "Charrúa",
+        "Chitonahua/Murunahua",
+        "Da’naxda’xw Awaetlatla",
+        "Diaguita",
+        "Envuga (Kawahib)",
+        "Juma (Kawahib)",
+        "Jupaú (Kawahib)",
+        "Kawahib (Jiahui)",
+        "Kawahib (Parintintin)",
+        "Kawahib (Tenharim)",
+        "Magüta/Ticuna",
+        "Manioc farmers",
+        "Mapuche",
+        "Marinahua",
+        "Miranha",
+        "Pampas cultures",
+        "Paspahegh",
+        "Pintupi",
+        "Savanna hunter-gatherers",
+        "Selk'nam",
+        "Selkirk",
+        "Sharanahua",
+        "Shipibo-Konibo",
+        "Shuar",
+        "Shuar-Wampis",
+        "Tekohá (Guarani)",
+        "Tupinambá",
+        "Tupis",
+        "Waiwai",
+        "Wallmapu (Mapuche)",
+        "Warao",
+        "Yanomami",
+        "Yeba-masã"
       ]
     },
     {
@@ -797,6 +765,14 @@
       ]
     },
     {
+      "cultureGroup": "Mesoamerican",
+      "totalEntities": 50,
+      "completedEntities": 50,
+      "missingEntitiesCount": 0,
+      "pctComplete": 100,
+      "missingEntities": []
+    },
+    {
       "cultureGroup": "Southeast Asia",
       "totalEntities": 50,
       "completedEntities": 0,
@@ -918,75 +894,11 @@
       ]
     },
     {
-      "cultureGroup": "Mesoamerican",
-      "totalEntities": 56,
-      "completedEntities": 1,
-      "missingEntitiesCount": 55,
-      "pctComplete": 1.8,
-      "missingEntities": [
-        "Ayuukjä'äy (Mixe)",
-        "Aztec Empire",
-        "Ben 'Zaa/Binnizá/Mén Diiste/Bene Xhon (Zapoteco)",
-        "Chitonahua/Murunahua",
-        "Chorotega",
-        "Coyutecos (Nahua)",
-        "Guachichil",
-        "Guachichiles",
-        "Guna of Madugandí",
-        "Guna of Wargandí",
-        "Guna Yala",
-        "Gunadule (Kuna-Tule)",
-        "Huasteco/Teenek",
-        "Ikoots/Kunajts/Ikoojts (Huave)",
-        "K'iche'",
-        "Kalaamaya",
-        "Kamejeya (Yukuna)",
-        "Kaqchikel",
-        "Lenca",
-        "Maize farmers",
-        "Marinahua",
-        "Maya",
-        "Maya chiefdoms and states",
-        "Maya city-states",
-        "Maya states",
-        "Maya Yucateco",
-        "Mayaimi",
-        "Mayangna",
-        "Mayas",
-        "Mesoamerican hunter-gatherers and maïze farmers",
-        "Mexicanero (Nahuas)",
-        "Mexihcah (Triple Alliance)",
-        "Miskito",
-        "Mixtec Empire",
-        "Mixtecs",
-        "Monte Albán",
-        "Náayerite (Cora)",
-        "Nahua",
-        "Nahua (Guerrero)",
-        "Nahua (Mexico)",
-        "Nahua (Michoacan)",
-        "Nahuas",
-        "Ngunawal",
-        "Nicarao/Nahoa",
-        "Ñuu Savi (Mixtecapan)",
-        "P’urhépecha",
-        "Q'eqchi'",
-        "Sharanahua",
-        "Teotihuacan",
-        "Tokugawa shogunate",
-        "Toltec Empire",
-        "Totonac",
-        "Totonaco",
-        "Zapotec",
-        "Zapotec Empire"
-      ]
-    },
-    {
       "cultureGroup": "East Asia",
-      "totalEntities": 70,
+      "totalEntities": 71,
       "completedEntities": 5,
-      "missingEntitiesCount": 65,
-      "pctComplete": 7.1,
+      "missingEntitiesCount": 66,
+      "pctComplete": 7,
       "missingEntities": [
         "Ainu",
         "Ainus",
@@ -1048,6 +960,7 @@
         "Song Empire",
         "Taiwan",
         "Tang Empire",
+        "Tokugawa shogunate",
         "Wu",
         "Xia",
         "Yamato",
@@ -1137,9 +1050,9 @@
     },
     {
       "cultureGroup": "Oceania",
-      "totalEntities": 71,
+      "totalEntities": 74,
       "completedEntities": 0,
-      "missingEntitiesCount": 71,
+      "missingEntitiesCount": 74,
       "pctComplete": 0,
       "missingEntities": [
         "Aboriginal Tasmanians",
@@ -1181,6 +1094,7 @@
         "Jurruru",
         "Kadjerong",
         "Kalaako/Malpa",
+        "Kalaamaya",
         "Kaniyang",
         "Karajarri",
         "Karangpurru",
@@ -1192,9 +1106,11 @@
         "Maoris",
         "Mayi-Yapi",
         "Mebêngôkre (Kayapó)",
+        "Muruwari",
         "New Caledonia",
         "New Hebrides",
         "New Zealand",
+        "Ngunawal",
         "Niue",
         "Papua New Guinea",
         "Papuan",
@@ -1584,9 +1500,9 @@
     {
       "cultureGroup": "Historical Culture",
       "totalEntities": 1655,
-      "completedEntities": 6,
-      "missingEntitiesCount": 1649,
-      "pctComplete": 0.4,
+      "completedEntities": 13,
+      "missingEntitiesCount": 1642,
+      "pctComplete": 0.8,
       "missingEntities": [
         "?",
         "'Amuwu",
@@ -1634,7 +1550,6 @@
         "Amorúa",
         "Amuq D",
         "Anambé",
-        "Andean states and chiefdoms",
         "Andegerebenha",
         "Andoa",
         "Andyamathanha",
@@ -1805,7 +1720,6 @@
         "Chandellas",
         "Chané",
         "Chango",
-        "Chankas",
         "Chaparra",
         "Chapra",
         "Charka",
@@ -2693,10 +2607,8 @@
         "Pomerania",
         "Pontremoli",
         "Popeloutchom (Amah Mutsun)",
-        "Popoluca (mixe-zoque)",
         "Popti'",
         "Popũkare",
-        "Poqomam",
         "Poqomchi’",
         "Poquonook",
         "Porter",
@@ -2891,7 +2803,6 @@
         "Tanimuka",
         "Tano",
         "Tanzania, United Republic of",
-        "Tapachulteco (mixe-zoque)",
         "Tapieté/Guaraní-Ñandeva",
         "Tariana",
         "Tashir",
@@ -3131,7 +3042,6 @@
         "Wirangu",
         "Wisijsa",
         "Wiwa",
-        "Wixárika (Huichol)",
         "Wiyot",
         "Wongaibon",
         "Wonnarua",
@@ -3149,7 +3059,6 @@
         "Wurundjeri",
         "Wuthathi",
         "Xakriabá",
-        "Xecora",
         "Xetá",
         "Xinjiang",
         "Xixia",
@@ -3273,351 +3182,351 @@
       "year_label": "5000 BCE",
       "year_start": -5000,
       "total_features": 28,
-      "linked_features": 4,
-      "unlinked_features": 24,
-      "pct_linked": 14.3
+      "linked_features": 6,
+      "unlinked_features": 22,
+      "pct_linked": 21.4
     },
     {
       "slug": "world-bc4000",
       "year_label": "4000 BCE",
       "year_start": -4000,
       "total_features": 23,
-      "linked_features": 7,
-      "unlinked_features": 16,
-      "pct_linked": 30.4
+      "linked_features": 9,
+      "unlinked_features": 14,
+      "pct_linked": 39.1
     },
     {
       "slug": "world-bc3000",
       "year_label": "3000 BCE",
       "year_start": -3000,
       "total_features": 25,
-      "linked_features": 7,
-      "unlinked_features": 18,
-      "pct_linked": 28
+      "linked_features": 9,
+      "unlinked_features": 16,
+      "pct_linked": 36
     },
     {
       "slug": "world-bc2000",
       "year_label": "2000 BCE",
       "year_start": -2000,
       "total_features": 45,
-      "linked_features": 10,
-      "unlinked_features": 35,
-      "pct_linked": 22.2
+      "linked_features": 14,
+      "unlinked_features": 31,
+      "pct_linked": 31.1
     },
     {
       "slug": "world-bc1500",
       "year_label": "1500 BCE",
       "year_start": -1500,
       "total_features": 69,
-      "linked_features": 20,
-      "unlinked_features": 49,
-      "pct_linked": 29
+      "linked_features": 25,
+      "unlinked_features": 44,
+      "pct_linked": 36.2
     },
     {
       "slug": "world-bc1000",
       "year_label": "1000 BCE",
       "year_start": -1000,
       "total_features": 70,
-      "linked_features": 21,
-      "unlinked_features": 49,
-      "pct_linked": 30
+      "linked_features": 26,
+      "unlinked_features": 44,
+      "pct_linked": 37.1
     },
     {
       "slug": "world-bc700",
       "year_label": "700 BCE",
       "year_start": -700,
       "total_features": 80,
-      "linked_features": 22,
-      "unlinked_features": 58,
-      "pct_linked": 27.5
+      "linked_features": 27,
+      "unlinked_features": 53,
+      "pct_linked": 33.8
     },
     {
       "slug": "world-bc500",
       "year_label": "500 BCE",
       "year_start": -500,
       "total_features": 77,
-      "linked_features": 32,
-      "unlinked_features": 45,
-      "pct_linked": 41.6
+      "linked_features": 37,
+      "unlinked_features": 40,
+      "pct_linked": 48.1
     },
     {
       "slug": "world-bc400",
       "year_label": "400 BCE",
       "year_start": -400,
       "total_features": 81,
-      "linked_features": 25,
-      "unlinked_features": 56,
-      "pct_linked": 30.9
+      "linked_features": 32,
+      "unlinked_features": 49,
+      "pct_linked": 39.5
     },
     {
       "slug": "world-bc323",
       "year_label": "323 BCE",
       "year_start": -323,
       "total_features": 75,
-      "linked_features": 20,
-      "unlinked_features": 55,
-      "pct_linked": 26.7
+      "linked_features": 27,
+      "unlinked_features": 48,
+      "pct_linked": 36
     },
     {
       "slug": "world-bc300",
       "year_label": "300 BCE",
       "year_start": -300,
       "total_features": 79,
-      "linked_features": 20,
-      "unlinked_features": 59,
-      "pct_linked": 25.3
+      "linked_features": 27,
+      "unlinked_features": 52,
+      "pct_linked": 34.2
     },
     {
       "slug": "world-bc200",
       "year_label": "200 BCE",
       "year_start": -200,
       "total_features": 86,
-      "linked_features": 19,
-      "unlinked_features": 67,
-      "pct_linked": 22.1
+      "linked_features": 27,
+      "unlinked_features": 59,
+      "pct_linked": 31.4
     },
     {
       "slug": "world-bc100",
       "year_label": "100 BCE",
       "year_start": -100,
       "total_features": 85,
-      "linked_features": 15,
-      "unlinked_features": 70,
-      "pct_linked": 17.6
+      "linked_features": 22,
+      "unlinked_features": 63,
+      "pct_linked": 25.9
     },
     {
       "slug": "world-bc1",
       "year_label": "1 BCE",
       "year_start": -1,
       "total_features": 80,
-      "linked_features": 13,
-      "unlinked_features": 67,
-      "pct_linked": 16.3
+      "linked_features": 19,
+      "unlinked_features": 61,
+      "pct_linked": 23.8
     },
     {
       "slug": "world-100",
       "year_label": "100 CE",
       "year_start": 100,
       "total_features": 85,
-      "linked_features": 12,
-      "unlinked_features": 73,
-      "pct_linked": 14.1
+      "linked_features": 18,
+      "unlinked_features": 67,
+      "pct_linked": 21.2
     },
     {
       "slug": "world-200",
       "year_label": "200 CE",
       "year_start": 200,
       "total_features": 70,
-      "linked_features": 9,
-      "unlinked_features": 61,
-      "pct_linked": 12.9
+      "linked_features": 15,
+      "unlinked_features": 55,
+      "pct_linked": 21.4
     },
     {
       "slug": "world-300",
       "year_label": "300 CE",
       "year_start": 300,
       "total_features": 71,
-      "linked_features": 9,
-      "unlinked_features": 62,
-      "pct_linked": 12.7
+      "linked_features": 15,
+      "unlinked_features": 56,
+      "pct_linked": 21.1
     },
     {
       "slug": "world-400",
       "year_label": "400 CE",
       "year_start": 400,
       "total_features": 80,
-      "linked_features": 7,
-      "unlinked_features": 73,
-      "pct_linked": 8.8
+      "linked_features": 13,
+      "unlinked_features": 67,
+      "pct_linked": 16.3
     },
     {
       "slug": "world-500",
       "year_label": "500 CE",
       "year_start": 500,
       "total_features": 92,
-      "linked_features": 5,
-      "unlinked_features": 87,
-      "pct_linked": 5.4
+      "linked_features": 11,
+      "unlinked_features": 81,
+      "pct_linked": 12
     },
     {
       "slug": "world-600",
       "year_label": "600 CE",
       "year_start": 600,
       "total_features": 88,
-      "linked_features": 4,
-      "unlinked_features": 84,
-      "pct_linked": 4.5
+      "linked_features": 11,
+      "unlinked_features": 77,
+      "pct_linked": 12.5
     },
     {
       "slug": "world-700",
       "year_label": "700 CE",
       "year_start": 700,
       "total_features": 132,
-      "linked_features": 5,
-      "unlinked_features": 127,
-      "pct_linked": 3.8
+      "linked_features": 12,
+      "unlinked_features": 120,
+      "pct_linked": 9.1
     },
     {
       "slug": "world-800",
       "year_label": "800 CE",
       "year_start": 800,
       "total_features": 122,
-      "linked_features": 7,
-      "unlinked_features": 115,
-      "pct_linked": 5.7
+      "linked_features": 13,
+      "unlinked_features": 109,
+      "pct_linked": 10.7
     },
     {
       "slug": "world-900",
       "year_label": "900 CE",
       "year_start": 900,
       "total_features": 138,
-      "linked_features": 10,
-      "unlinked_features": 128,
-      "pct_linked": 7.2
+      "linked_features": 16,
+      "unlinked_features": 122,
+      "pct_linked": 11.6
     },
     {
       "slug": "world-1000",
       "year_label": "1000 CE",
       "year_start": 1000,
       "total_features": 132,
-      "linked_features": 6,
-      "unlinked_features": 126,
-      "pct_linked": 4.5
+      "linked_features": 12,
+      "unlinked_features": 120,
+      "pct_linked": 9.1
     },
     {
       "slug": "world-1100",
       "year_label": "1100 CE",
       "year_start": 1100,
       "total_features": 150,
-      "linked_features": 7,
-      "unlinked_features": 143,
-      "pct_linked": 4.7
+      "linked_features": 13,
+      "unlinked_features": 137,
+      "pct_linked": 8.7
     },
     {
       "slug": "world-1200",
       "year_label": "1200 CE",
       "year_start": 1200,
       "total_features": 136,
-      "linked_features": 8,
-      "unlinked_features": 128,
-      "pct_linked": 5.9
+      "linked_features": 14,
+      "unlinked_features": 122,
+      "pct_linked": 10.3
     },
     {
       "slug": "world-1279",
       "year_label": "1279 CE",
       "year_start": 1279,
       "total_features": 116,
-      "linked_features": 7,
-      "unlinked_features": 109,
-      "pct_linked": 6
+      "linked_features": 13,
+      "unlinked_features": 103,
+      "pct_linked": 11.2
     },
     {
       "slug": "world-1300",
       "year_label": "1300 CE",
       "year_start": 1300,
       "total_features": 115,
-      "linked_features": 6,
-      "unlinked_features": 109,
-      "pct_linked": 5.2
+      "linked_features": 12,
+      "unlinked_features": 103,
+      "pct_linked": 10.4
     },
     {
       "slug": "world-1400",
       "year_label": "1400 CE",
       "year_start": 1400,
       "total_features": 122,
-      "linked_features": 7,
-      "unlinked_features": 115,
-      "pct_linked": 5.7
+      "linked_features": 13,
+      "unlinked_features": 109,
+      "pct_linked": 10.7
     },
     {
       "slug": "world-1492",
       "year_label": "1492 CE",
       "year_start": 1492,
       "total_features": 1317,
-      "linked_features": 7,
-      "unlinked_features": 1310,
-      "pct_linked": 0.5
+      "linked_features": 64,
+      "unlinked_features": 1253,
+      "pct_linked": 4.9
     },
     {
       "slug": "world-1500",
       "year_label": "1500 CE",
       "year_start": 1500,
       "total_features": 143,
-      "linked_features": 6,
-      "unlinked_features": 137,
-      "pct_linked": 4.2
+      "linked_features": 11,
+      "unlinked_features": 132,
+      "pct_linked": 7.7
     },
     {
       "slug": "world-1530",
       "year_label": "1530 CE",
       "year_start": 1530,
       "total_features": 278,
-      "linked_features": 3,
-      "unlinked_features": 275,
-      "pct_linked": 1.1
+      "linked_features": 8,
+      "unlinked_features": 270,
+      "pct_linked": 2.9
     },
     {
       "slug": "world-1600",
       "year_label": "1600 CE",
       "year_start": 1600,
       "total_features": 661,
-      "linked_features": 2,
-      "unlinked_features": 659,
-      "pct_linked": 0.3
+      "linked_features": 8,
+      "unlinked_features": 653,
+      "pct_linked": 1.2
     },
     {
       "slug": "world-1650",
       "year_label": "1650 CE",
       "year_start": 1650,
       "total_features": 598,
-      "linked_features": 2,
-      "unlinked_features": 596,
-      "pct_linked": 0.3
+      "linked_features": 4,
+      "unlinked_features": 594,
+      "pct_linked": 0.7
     },
     {
       "slug": "world-1700",
       "year_label": "1700 CE",
       "year_start": 1700,
       "total_features": 591,
-      "linked_features": 2,
-      "unlinked_features": 589,
-      "pct_linked": 0.3
+      "linked_features": 4,
+      "unlinked_features": 587,
+      "pct_linked": 0.7
     },
     {
       "slug": "world-1715",
       "year_label": "1715 CE",
       "year_start": 1715,
       "total_features": 606,
-      "linked_features": 2,
-      "unlinked_features": 604,
-      "pct_linked": 0.3
+      "linked_features": 4,
+      "unlinked_features": 602,
+      "pct_linked": 0.7
     },
     {
       "slug": "world-1783",
       "year_label": "1783 CE",
       "year_start": 1783,
       "total_features": 564,
-      "linked_features": 2,
-      "unlinked_features": 562,
-      "pct_linked": 0.4
+      "linked_features": 4,
+      "unlinked_features": 560,
+      "pct_linked": 0.7
     },
     {
       "slug": "world-1800",
       "year_label": "1800 CE",
       "year_start": 1800,
       "total_features": 558,
-      "linked_features": 2,
-      "unlinked_features": 556,
-      "pct_linked": 0.4
+      "linked_features": 3,
+      "unlinked_features": 555,
+      "pct_linked": 0.5
     },
     {
       "slug": "world-1815",
       "year_label": "1815 CE",
       "year_start": 1815,
       "total_features": 327,
-      "linked_features": 2,
-      "unlinked_features": 325,
-      "pct_linked": 0.6
+      "linked_features": 3,
+      "unlinked_features": 324,
+      "pct_linked": 0.9
     },
     {
       "slug": "world-1878",

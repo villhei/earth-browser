@@ -1,0 +1,895 @@
+[
+  {
+    "slug": "maya-civilization",
+    "name": "Maya Civilization",
+    "name_fi": "Mayojen sivilisaatio",
+    "native_name": "Maya / Mayab'",
+    "alternate_names": [
+      "Classic Maya",
+      "Maya City-States",
+      "Mayas"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "maya",
+    "historical_period": "Preclassic to Postclassic Mesoamerica",
+    "year_start": -2000,
+    "year_end": 1697,
+    "period_label": "c. 2000 BCE – 1697 CE",
+    "period_label_fi": "n. 2000 eaa. – 1697 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Maya_civilization",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mayat",
+    "wikidata_id": "Q28567",
+    "summary_en": "One of the preeminent indigenous civilizations of Mesoamerica, renowned for its fully developed logosyllabic hieroglyphic script, sophisticated mathematical and vigesimal astronomy, calendar systems, and monumental limestone stepped pyramids. Spanning southern Mexico, Guatemala, Belize, and western Honduras, the Maya flourished through autonomous yet trade-connected city-states before decentralized kingdoms persisted until the Spanish conquest of Nojpetén in 1697.",
+    "summary_fi": "Yksi Mesoamerikan merkittävimmistä alkuperäiskansojen korkeakulttuureista, joka tunnetaan kehittyneestä hieroglyfikirjoituksestaan, matemaattisesta nollan käsitteestä, tarkoista tähtitieteellisistä kalentereistaan sekä monumentaalisista porraspyramideistaan. Mayojen kaupunkivaltiot kukoistivat Jukatanin niemimaalla, Guatemalassa, Belizessä ja Hondurasissa, ja itsenäiset mayavallat säilyivät aina Nojpeténin valloitukseen vuonna 1697 asti.",
+    "capital": "Tikal, Calakmul, Palenque, Chichen Itza, Nojpetén",
+    "feature_name_matches": [
+      "Maya",
+      "Mayas",
+      "Maya city-states",
+      "Maya chiefdoms and states",
+      "Maya states",
+      "Maya civilization",
+      "Maya Yucateco",
+      "Maya (Chiapas, Guatemala and Honduras)",
+      "Maya (Chiapas, Guatemala and Tabasco)",
+      "Maya (Chiapas, Guatemala, El Salvador and Honduras)",
+      "Maya (Chiapas, Guatemala, Quintana Roo, Tabasco and Campeche)",
+      "Maya (Chiapas, Tabasco, Quintana Roo and Campeche)",
+      "Maya (Petén and Yucatán)",
+      "Maya (Yucatan, Campeche and Quintana Roo)",
+      "Maya (Yucatán, Campeche and Quintana Roo)",
+      "Maya (highlands)",
+      "Maya (lowlands)"
+    ]
+  },
+  {
+    "slug": "aztec-empire",
+    "name": "Aztec Empire",
+    "name_fi": "Asteekkivaltakunta",
+    "native_name": "Ēxcān Tlahtōlōyān (Mexihcatl)",
+    "alternate_names": [
+      "Triple Alliance",
+      "Mexica Empire",
+      "Tenochtitlan"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "aztec",
+    "historical_period": "Late Postclassic Mesoamerica",
+    "year_start": 1428,
+    "year_end": 1521,
+    "period_label": "1428 CE – 1521 CE",
+    "period_label_fi": "1428 jaa. – 1521 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Aztec_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Asteekkivaltakunta",
+    "wikidata_id": "Q12542",
+    "summary_en": "A formidable military and political alliance forged in the Valley of Mexico between Tenochtitlan, Texcoco, and Tlacopan. Dominating central Mexico from the Gulf Coast to the Pacific through conquest, tribute networks, and intricate chinampa floating agriculture, the Aztec state collapsed in 1521 following the Spanish-indigenous siege led by Hernán Cortés and Tlaxcalan allies.",
+    "summary_fi": "Meksikon laakson kolmiliitosta (Tenochtitlán, Texcoco ja Tlacopan) vuonna 1428 syntynyt sotilaallinen suurvalta, joka alisti laajoja alueita Meksikonlahdelta Tyynellemerelle. Asteekit loivat kehittyneen kanava- ja keinosaarijärjestelmän (chinampas), verotushallinnon sekä rikkaan uskonnollisen seremoniallisen kulttuurin ennen valtakunnan romahtamista espanjalaisten ja tlaxcalalaisten piirityksessä vuonna 1521.",
+    "capital": "Tenochtitlan",
+    "feature_name_matches": [
+      "Aztec Empire",
+      "Mexihcah (Triple Alliance)",
+      "Tenochtitlan",
+      "Aztec"
+    ]
+  },
+  {
+    "slug": "teotihuacan",
+    "name": "Teotihuacan",
+    "name_fi": "Teotihuacán",
+    "native_name": "Teōtīhuacān",
+    "alternate_names": [
+      "Teotihuacan Empire",
+      "City of the Gods"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "teotihuacan",
+    "historical_period": "Classic Mesoamerica",
+    "year_start": -100,
+    "year_end": 650,
+    "period_label": "c. 100 BCE – 650 CE",
+    "period_label_fi": "n. 100 eaa. – 650 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Teotihuacan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Teotihuac%C3%A1n",
+    "wikidata_id": "Q172613",
+    "summary_en": "The largest pre-Columbian metropolis in the Americas, located in the central Valley of Mexico. Renowned for the colossal Pyramid of the Sun, Pyramid of the Moon, Avenue of the Dead, and multi-family apartment compounds, Teotihuacan exercised immense economic, cultural, and military hegemony throughout Mesoamerica, directly influencing Maya dynastic politics as far away as Tikal and Copán.",
+    "summary_fi": "Esikolumbiaanisen Amerikan suurin metropoli Meksikon laaksossa, joka oli aikansa merkittävin uskonnollinen, poliittinen ja taloudellinen keskus. Kaupungin monumentaaliset Aurinko- ja Kuupyramidit, Kuolleiden tie sekä laajat moniperheasuntokompleksit heijastivat valtakuntaa, jonka poliittinen ja kulttuurinen vaikutus ulottui syvälle mayojen maihin asti.",
+    "capital": "Teotihuacan",
+    "feature_name_matches": [
+      "Teotihuacan",
+      "Teotihuacan Empire"
+    ]
+  },
+  {
+    "slug": "zapotec-civilization",
+    "name": "Zapotec Civilization",
+    "name_fi": "Zapotekkien sivilisaatio",
+    "native_name": "Ben 'Zaa / Binnizá",
+    "alternate_names": [
+      "Cloud People",
+      "Zapotec Empire",
+      "Zapotecs"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "zapotec",
+    "historical_period": "Preclassic to Postclassic Oaxaca",
+    "year_start": -700,
+    "year_end": 1521,
+    "period_label": "c. 700 BCE – 1521 CE",
+    "period_label_fi": "n. 700 eaa. – 1521 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Zapotec_civilization",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zapotekit",
+    "wikidata_id": "Q801299",
+    "summary_en": "An indigenous civilization of the Central Valleys of Oaxaca in southern Mexico. Emerging in the late Preclassic period, the Zapotecs developed one of Mesoamerica's earliest written scripts and calendar glyphs, constructed the mountaintop capital of Monte Albán, and maintained vibrant city-state confederations and exquisite mosaic tombs through the Postclassic era.",
+    "summary_fi": "Etelä-Meksikon Oaxacan laaksoissa kukoistanut alkuperäiskansan korkeakulttuuri ('pilvien kansa'). Zapotekit kehittivät Mesoamerikan varhaisimpiin kuuluneen hieroglyfikirjoituksen, perustivat vuorenharjalle Monte Albánin pääkaupungin ja hallitsivat alueellisia kauppateitä ja uskonnollisia keskuksia aina espanjalaisten tuloon asti.",
+    "capital": "Monte Albán, Mitla, Zaachila",
+    "feature_name_matches": [
+      "Zapotec",
+      "Zapotecs",
+      "Zapotec Empire",
+      "Ben 'Zaa/Binnizá/Mén Diiste/Bene Xhon (Zapoteco)"
+    ]
+  },
+  {
+    "slug": "monte-alban",
+    "name": "Monte Albán Polity",
+    "name_fi": "Monte Albánin valtio",
+    "native_name": "Dani Baá",
+    "alternate_names": [
+      "Monte Alban",
+      "White Mountain"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "zapotec",
+    "historical_period": "Classic Zapotec Period",
+    "year_start": -500,
+    "year_end": 850,
+    "period_label": "c. 500 BCE – 850 CE",
+    "period_label_fi": "n. 500 eaa. – 850 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Monte_Alb%C3%A1n",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Monte_Alb%C3%A1n",
+    "wikidata_id": "Q272990",
+    "summary_en": "The grand hilltop ceremonial and administrative capital of the Zapotec state in the Valley of Oaxaca. Built on a flattened mountain ridge overlooking three valley branches, Monte Albán featured monumental civic-ceremonial plazas, ballcourts, carved bas-relief Danzantes stone slabs, and astronomical observatories before political fragmentation led to its gradual abandonment.",
+    "summary_fi": "Zapotekkivaltakunnan monumentaalinen seremonia- ja hallintokeskus Oaxacan laakson keskellä tasoitetulla vuorenharjanteella. Monte Albán toimi vuosisatojen ajan alueen poliittisena sydämenä sisältäen laajoja aukioita, pallokenttiä, kiveen kaiverrettuja tanssijareliefijä (Danzantes) ja tähtitieteellisiä observatorioita.",
+    "capital": "Monte Albán",
+    "feature_name_matches": [
+      "Monte Albán",
+      "Monte Alban"
+    ]
+  },
+  {
+    "slug": "mixtec-civilization",
+    "name": "Mixtec Civilization",
+    "name_fi": "Mixteekkien sivilisaatio",
+    "native_name": "Ñuu Savi / Ñuu Dzaui",
+    "alternate_names": [
+      "Mixtec Empire",
+      "Mixtecs",
+      "People of the Rain"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mixtec",
+    "historical_period": "Classic to Postclassic Mesoamerica",
+    "year_start": -1500,
+    "year_end": 1523,
+    "period_label": "c. 1500 BCE – 1523 CE",
+    "period_label_fi": "n. 1500 eaa. – 1523 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mixtec",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mixteekit",
+    "wikidata_id": "Q201121",
+    "summary_en": "A prominent Mesoamerican civilization centered in the mountainous La Mixteca region of Oaxaca, Puebla, and Guerrero. Famed as master goldsmiths, mosaic lapidaries, and creators of magnificent pictorial deer-skin codices, the Mixtecs unified regional señoríos under charismatic rulers like Eight Deer Jaguar Claw and expanded their dominion over formerly Zapotec cities like Mitla.",
+    "summary_fi": "Vuoristoisella La Mixtecan alueella Oaxacassa kukoistanut mesoamerikkalainen sivilisaatio ('sateen kansa'). Mixteekit olivat poikkeuksellisen taitavia kultaseppiä, turkoosimosaiikkien tekijöitä sekä kuvakirjoitettujen peurannahkaisten koodeksien laatijoita, jotka yhdistivät alueen kaupunkivaltiot sotapäällikkö Kahdeksan Peuran johdolla.",
+    "capital": "Tilantongo, Tututepec, Yanhuitlán",
+    "feature_name_matches": [
+      "Mixtec",
+      "Mixtecs",
+      "Mixtec Empire",
+      "Ñuu Savi (Mixtecapan)"
+    ]
+  },
+  {
+    "slug": "toltec-empire",
+    "name": "Toltec Empire",
+    "name_fi": "Tolteekkien valtakunta",
+    "native_name": "Tōltēcatl",
+    "alternate_names": [
+      "Toltecs",
+      "Tula Realm"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "toltec",
+    "historical_period": "Early Postclassic Mesoamerica",
+    "year_start": 900,
+    "year_end": 1168,
+    "period_label": "c. 900 CE – 1168 CE",
+    "period_label_fi": "n. 900 jaa. – 1168 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Toltec",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tolteekit",
+    "wikidata_id": "Q125343",
+    "summary_en": "An influential militaristic culture centered at Tollan (Tula) in central Mexico during the Early Postclassic period. Revered by the later Aztecs as paragon craftsmen and the fountainhead of civilizing culture, the Toltecs disseminated feathered serpent (Quetzalcoatl) iconography, monumental basalt Atlantean warrior columns, and artistic motifs that profoundly resonated across Mesoamerica, including Chichen Itza.",
+    "summary_fi": "Varhaisen jälkiklassisen kauden sotilaallinen valtakunta Keski-Meksikossa, jonka pääkaupunkina toimi Tollan (Tula). Myöhemmät asteekit ihannoivat tolteekkeja taiteiden ja sivistyksen esikuvina. Tolteekkien kulttuuri levitti Sulkakäärmeen (Quetzalcoatl) kulttia, valtavia basalttisia soturipylväitä (atlantit) ja arkkitehtonisia vaikutteita aina Jukatanin Chichén Itzáan asti.",
+    "capital": "Tollan (Tula)",
+    "feature_name_matches": [
+      "Toltec",
+      "Toltec Empire"
+    ]
+  },
+  {
+    "slug": "purepecha-empire",
+    "name": "Purépecha Empire",
+    "name_fi": "Purépecha-valtakunta",
+    "native_name": "Iréchikwa Zapichu (Tarascan)",
+    "alternate_names": [
+      "Tarascan Empire",
+      "Purepecha",
+      "Michoacán Realm"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "purepecha",
+    "historical_period": "Postclassic Mesoamerica",
+    "year_start": 1300,
+    "year_end": 1530,
+    "period_label": "1300 CE – 1530 CE",
+    "period_label_fi": "1300 jaa. – 1530 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pur%C3%A9pecha_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tarascojen_valtakunta",
+    "wikidata_id": "Q568864",
+    "summary_en": "A powerful and centralized indigenous state centered around Lake Pátzcuaro in Michoacán, contemporary with the Aztec Empire. Master metallurgists in copper, bronze, and gold weapons and tools, the Purépecha repeatedly repelled Aztec invasions, maintained heavily fortified borders, and constructed unique semi-circular keyhole step pyramids known as yácatas.",
+    "summary_fi": "Meksikon länsiosassa Pátzcuaro-järven ympärille syntynyt voimakas ja keskitetty valtakunta (taraskit), joka oli asteekkien merkittävin kilpailija. Purépechat olivat Mesoamerikan taitavimpia pronssi- ja kupariaseiden valmistajia, torjuivat toistuvasti asteekkien valloitusyritykset ja rakensivat ainutlaatuisia puolipyöreitä yácata-porraspyramideja.",
+    "capital": "Tzintzuntzan, Pátzcuaro, Ihuatzio",
+    "feature_name_matches": [
+      "Purepecha",
+      "Purépecha",
+      "P’urhépecha",
+      "Tarascan Empire"
+    ]
+  },
+  {
+    "slug": "tlaxcala-confederacy",
+    "name": "Tlaxcala Confederacy",
+    "name_fi": "Tlaxcalan konfederaatio",
+    "native_name": "Tlaxcallān",
+    "alternate_names": [
+      "Republic of Tlaxcala",
+      "Tlaxcalteca"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "tlaxcala",
+    "historical_period": "Late Postclassic Mesoamerica",
+    "year_start": 1348,
+    "year_end": 1520,
+    "period_label": "1348 CE – 1520 CE",
+    "period_label_fi": "1348 jaa. – 1520 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tlaxcala_(Nahua_state)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tlaxcala_(valtioliitto)",
+    "wikidata_id": "Q132204",
+    "summary_en": "A confederation of four autonomous Nahua city-states (altepetl) in central Mexico that successfully resisted Aztec encirclement and conquest during the grueling Flower Wars. Ruled collectively by a supreme council of lords (tatoque), Tlaxcala allied decisively with Hernán Cortés in 1519, supplying tens of thousands of warriors essential to the overthrow of Tenochtitlan.",
+    "summary_fi": "Neljän itsenäisen nahua-kaupunkivaltion muodostama tasavaltainen konfederaatio Keski-Meksikossa, joka säilytti itsenäisyytensä asteekkien saarron ja kukkasotien keskellä. Hallitsijoiden neuvoston johtama Tlaxcala solmi ratkaisevan sotilasliiton Hernán Cortésin kanssa vuonna 1519 ja tarjosi valtaosan sotureista Tenochtitlánin valloitukseen.",
+    "capital": "Ocotelulco, Quiahuiztlan, Tepeticpac, Tizatlan",
+    "feature_name_matches": [
+      "Tlaxcala",
+      "Tlaxcala Confederacy"
+    ]
+  },
+  {
+    "slug": "totonac-culture",
+    "name": "Totonac Culture",
+    "name_fi": "Totonakkien kulttuuri",
+    "native_name": "Totonaca / Tutunakú",
+    "alternate_names": [
+      "Totonacs",
+      "El Tajín Culture"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Classic to Postclassic Veracruz",
+    "year_start": 600,
+    "year_end": 1519,
+    "period_label": "c. 600 CE – 1519 CE",
+    "period_label_fi": "n. 600 jaa. – 1519 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Totonac_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Totonakit",
+    "wikidata_id": "Q260555",
+    "summary_en": "An indigenous culture of the central Gulf Coast in modern Veracruz and Puebla. Builders of the magnificent Classic period metropolis of El Tajín with its famous Pyramid of the Niches and numerous ritual ballcourts, the Totonacs were later subject to Aztec tribute until their capital of Cempoala welcomed Spanish conquistadors as allies in 1519.",
+    "summary_fi": "Meksikonlahden rannikkoseudulla Veracruzissa vaikuttanut alkuperäiskansa, joka tunnetaan klassisen kauden El Tajínin loistavasta rauniokaupungista, sen 365 syvennyksen Niche-pyramidista sekä monista pallopelikentistä. Asteekkien verotukseen kyllästyneet totonakit olivat ensimmäisiä, jotka solmivat liiton Cortésin kanssa Cempoalassa vuonna 1519.",
+    "capital": "El Tajín, Cempoala",
+    "feature_name_matches": [
+      "Totonac",
+      "Totonaco",
+      "Totonacs"
+    ]
+  },
+  {
+    "slug": "huastec-civilization",
+    "name": "Huastec Civilization",
+    "name_fi": "Huasteekkien sivilisaatio",
+    "native_name": "Teenek",
+    "alternate_names": [
+      "Huastecs",
+      "Huaxteca"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Classic to Postclassic Gulf Coast",
+    "year_start": -1000,
+    "year_end": 1521,
+    "period_label": "c. 1000 BCE – 1521 CE",
+    "period_label_fi": "n. 1000 eaa. – 1521 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Huastec_civilization",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Huasteekit",
+    "wikidata_id": "Q852331",
+    "summary_en": "A Mayan-speaking civilization geographically isolated along the northeastern Gulf Coast of Mexico in the Huasteca region. Developing distinct artistic and ceremonial traditions independent of southern Maya realms, the Huastecs were celebrated for circular step platforms, intricate shell carvings, and distinctive standing stone sculptures depicting deities and tattooed priests.",
+    "summary_fi": "Meksikon koillisellalahden rannikolla La Huastecan alueella elänyt maya-kielinen kansa, joka erkaantui muista mayoista jo varhain. Huasteekit loivat oman omintakeisen kulttuurinsa, johon kuuluivat pyöreät seremoniakorokkeet, taidokkaat simpukkakaiverrukset sekä tunnusomaiset jumalia ja tatuoituja pappeja esittävät kiviveistokset.",
+    "capital": "Tamtok, Tamohi",
+    "feature_name_matches": [
+      "Huasteco/Teenek",
+      "Huastecs",
+      "Huastec"
+    ]
+  },
+  {
+    "slug": "pipil-kingdoms",
+    "name": "Pipil Kingdoms",
+    "name_fi": "Pipilien kuningaskunnat",
+    "native_name": "Nāwat (Cuzcatlan)",
+    "alternate_names": [
+      "Lordship of Cuzcatlan",
+      "Pipiles"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Postclassic Central America",
+    "year_start": 900,
+    "year_end": 1528,
+    "period_label": "c. 900 CE – 1528 CE",
+    "period_label_fi": "n. 900 jaa. – 1528 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pipil_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pipilit",
+    "wikidata_id": "Q1140939",
+    "summary_en": "Nahua-speaking peoples who migrated south from central Mexico into modern El Salvador during the Postclassic Toltec era. Establishing the wealthy Lordship of Cuzcatlan and extensive cacao plantations, the Pipils resisted Pedro de Alvarado's initial Spanish expedition in 1524 before falling to protracted colonial conquest in 1528.",
+    "summary_fi": "Nahua-kieliset siirtolaiset, jotka vaelsivat Keski-Meksikosta nykyisen El Salvadorin alueelle tolteekkikaudella. Pipilit perustivat vauraita kaupunkivaltioita ja Cuzcatlanin herruuden, harjoittivat laajaa kaakaonviljelyä ja tekivät ankaraa vastarintaa espanjalaisille valloittajille ennen alistumistaan vuonna 1528.",
+    "capital": "Cuzcatlan",
+    "feature_name_matches": [
+      "Pipil",
+      "Pipiles"
+    ]
+  },
+  {
+    "slug": "kiche-kingdom",
+    "name": "K'iche' Kingdom of Q'umarkaj",
+    "name_fi": "K'iche'-kuningaskunta",
+    "native_name": "Q'umarkaj (K'iche')",
+    "alternate_names": [
+      "Quiché Kingdom",
+      "Utatlán"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "maya",
+    "historical_period": "Postclassic Highland Maya",
+    "year_start": 1225,
+    "year_end": 1524,
+    "period_label": "1225 CE – 1524 CE",
+    "period_label_fi": "1225 jaa. – 1524 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/K%27iche%27_Kingdom_of_Q%27umarkaj",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/K%27it%C5%A1eet",
+    "wikidata_id": "Q1670985",
+    "summary_en": "The dominant highland Maya kingdom in Guatemala prior to the Spanish conquest, centered at the fortified mountain redoubt of Q'umarkaj (Utatlán). Preservers of the sacred Popol Vuh creation epic, the K'iche' built an empire subjugating neighboring highland tribes until their defeat by Pedro de Alvarado and his Kaqchikel allies at the Battle of Quetzaltenango in 1524.",
+    "summary_fi": "Guatemalan ylänköjen vahvin mayavaltakunta ennen eurooppalaisten saapumista, jonka linnoitettuna pääkaupunkina toimi Q'umarkaj (Utatlán). K'icheet loivat laajan ylänköimperiumin ja säilyttivät mayojen mytologian keskeisimmän luomiskertomuksen Popol Vuhin ennen kuin Pedro de Alvarado kukisti heidät vuonna 1524.",
+    "capital": "Q'umarkaj (Utatlán)",
+    "feature_name_matches": [
+      "K'iche'",
+      "Quiché"
+    ]
+  },
+  {
+    "slug": "kaqchikel-kingdom",
+    "name": "Kaqchikel Kingdom of Iximche",
+    "name_fi": "Kaqchikel-kuningaskunta",
+    "native_name": "Iximche' (Kaqchikel)",
+    "alternate_names": [
+      "Kaqchikel Maya",
+      "Iximche Realm"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "maya",
+    "historical_period": "Late Postclassic Highland Maya",
+    "year_start": 1470,
+    "year_end": 1524,
+    "period_label": "1470 CE – 1524 CE",
+    "period_label_fi": "1470 jaa. – 1524 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Iximche",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kaqchikelit",
+    "wikidata_id": "Q216666",
+    "summary_en": "A formidable highland Maya kingdom established after breaking away from the K'iche' state around 1470 CE. Headquartered at the naturally fortified ridge of Iximche', the Kaqchikel initially allied with Spanish forces to vanquish their K'iche' rivals, before launching fierce anti-colonial guerilla warfare against excessive Spanish gold extortions.",
+    "summary_fi": "Guatemalan ylängöllä vaikuttanut voimakas mayakansa ja valtio, joka itsenäistyi k'icheiden alaisuudesta vuoden 1470 tienoilla. Pääkaupunkinaan jyrkkärinteinen Iximche' kaqchikelit liittoutuivat aluksi espanjalaisten kanssa vanhoja vihollisiaan vastaan, mutta nousivat myöhemmin sitkeään sissisotaan siirtomaavallan ankaraa verotusta vastaan.",
+    "capital": "Iximche",
+    "feature_name_matches": [
+      "Kaqchikel"
+    ]
+  },
+  {
+    "slug": "qeqchi-people",
+    "name": "Q'eqchi' Maya",
+    "name_fi": "Q'eqchi'-mayat",
+    "native_name": "Q'eqchi'",
+    "alternate_names": [
+      "Kekchi",
+      "K'ekchi'"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "maya",
+    "historical_period": "Postclassic to Colonial Highland Maya",
+    "year_start": 1000,
+    "year_end": 1821,
+    "period_label": "c. 1000 CE – 1821 CE",
+    "period_label_fi": "n. 1000 jaa. – 1821 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Q%27eqchi%27_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kekch%C3%ADt",
+    "wikidata_id": "Q683100",
+    "summary_en": "A major Maya ethnolinguistic group inhabiting the cloud-forest mountains and valleys of Alta Verapaz, Izabal, and southern Petén in Guatemala. Resisting direct military conquest in their densely forested territory then known as Tezulutlán ('Land of War'), the Q'eqchi' were peacefully proselytized under Bartolomé de las Casas, preserving ancient agricultural traditions.",
+    "summary_fi": "Guatemalan Alta Verapazin vuoristoisilla ja pilvimetsäisillä seuduilla elävä mayakansa. Q'eqchit torjuivat espanjalaisten suorat sotilaalliset valloitusyritykset 'sodan maassa' (Tezulutlán), kunnes Bartolomé de las Casas toteutti alueella rauhanomaisen käännytystyön, jolloin seudun nimeksi tuli Verapaz ('todellinen rauha').",
+    "capital": "Cobán, Carchá",
+    "feature_name_matches": [
+      "Q'eqchi'"
+    ]
+  },
+  {
+    "slug": "poqomam",
+    "name": "Poqomam Maya",
+    "name_fi": "Poqomam-mayat",
+    "native_name": "Poqomam",
+    "alternate_names": [
+      "Pocomam"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "maya",
+    "historical_period": "Postclassic Highland Maya",
+    "year_start": 1200,
+    "year_end": 1525,
+    "period_label": "c. 1200 CE – 1525 CE",
+    "period_label_fi": "n. 1200 jaa. – 1525 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Poqomam_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pocomamit",
+    "wikidata_id": "Q2412435",
+    "summary_en": "A highland Maya people inhabiting the central valleys and eastern mountains of Guatemala. Defending their territory from the impregnable promontory fortress of Chinautla Viejo (Mixco Viejo), the Poqomam withstood a protracted siege by Spanish and indigenous auxiliaries in 1525 before their city was betrayed and burned.",
+    "summary_fi": "Guatemalan itäisillä ylängöillä ja laaksoissa asunut mayakansa. Heidän linnoitettu pääkaupunkinsa Chinautla Viejo (tunnetaan myös nimellä Mixco Viejo) kesti pitkään espanjalaisten piiritystä vuonna 1525 jyrkänteisen sijaintinsa ansiosta ennen kuin salainen luolasisäänkäynti paljastui vihollisille.",
+    "capital": "Chinautla Viejo (Mixco Viejo)",
+    "feature_name_matches": [
+      "Poqomam"
+    ]
+  },
+  {
+    "slug": "lenca-people",
+    "name": "Lenca Chiefdoms",
+    "name_fi": "Lenkojen päällikkökunnat",
+    "native_name": "Lenca",
+    "alternate_names": [
+      "Lencas"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Classic to Postclassic Central America",
+    "year_start": 300,
+    "year_end": 1540,
+    "period_label": "c. 300 CE – 1540 CE",
+    "period_label_fi": "n. 300 jaa. – 1540 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Lenca",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Lencat",
+    "wikidata_id": "Q663242",
+    "summary_en": "An indigenous people of southwestern Honduras and eastern El Salvador who established organized chiefdoms bridging the Mesoamerican and Intermediate culture areas. Famous for resisting Spanish colonial subjugation under war chief Lempira during the major uprising of 1537–1539, the Lenca maintain rich ceramic and communal syncretic traditions.",
+    "summary_fi": "Hondurasin lounaisosissa ja El Salvadorin itäosissa asunut alkuperäiskansa, joka muodosti itsenäisiä päällikkökuntia Mesoamerikan ja Andien välivyöhykkeellä. Lenkat nousivat kapinaan espanjalaisia vastaan legendaarisen päällikkö Lempiran johdolla vuosina 1537–1539 ja ovat säilyttäneet omaleimaisen keramiikkaperinteensä.",
+    "capital": "Yarumela, Cerquín",
+    "feature_name_matches": [
+      "Lenca"
+    ]
+  },
+  {
+    "slug": "chorotega",
+    "name": "Chorotega Culture",
+    "name_fi": "Chorotegan kulttuuri",
+    "native_name": "Mangue / Chorotega",
+    "alternate_names": [
+      "Chorotegas"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Postclassic Central America",
+    "year_start": 800,
+    "year_end": 1524,
+    "period_label": "c. 800 CE – 1524 CE",
+    "period_label_fi": "n. 800 jaa. – 1524 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chorotega",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chorotegat",
+    "wikidata_id": "Q2638848",
+    "summary_en": "An Oto-Manguean language group that migrated from southern Mexico to settle along the Pacific coast of Nicaragua and Costa Rica's Nicoya Peninsula. The Chorotega constituted the southernmost frontier of high Mesoamerican culture, cultivating maize and cacao, crafting polychrome ceramics, and participating in regional circum-Pacific trade networks.",
+    "summary_fi": "Meksikosta Tyynenmeren rannikkoa pitkin Nicaraguaan ja Costa Rican Nicoyan niemimaalle vaeltanut alkuperäiskansa. Chorotegat muodostivat Mesoamerikan kulttuuripiirin eteläisimmän rajan ja heidät tunnettiin korkeatasoisesta monivärikeramiikastaan, kaakaokaupastaan ja kehittyneistä kaupunkiyhteisöistään.",
+    "capital": "Nicoya",
+    "feature_name_matches": [
+      "Chorotega"
+    ]
+  },
+  {
+    "slug": "nicarao",
+    "name": "Nicarao Chiefdom",
+    "name_fi": "Nicaraon päällikkökunta",
+    "native_name": "Nahoa (Nicarao)",
+    "alternate_names": [
+      "Nicaraos",
+      "Niquirano"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Postclassic Central America",
+    "year_start": 1200,
+    "year_end": 1523,
+    "period_label": "c. 1200 CE – 1523 CE",
+    "period_label_fi": "n. 1200 jaa. – 1523 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nicarao_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nicaraot",
+    "wikidata_id": "Q2034873",
+    "summary_en": "A Nahua-speaking polity that migrated from central Mexico to settle the fertile isthmus between Lake Nicaragua and the Pacific Ocean. Led by cacique Nicarao when first encountered by Gil González Dávila in 1522, this thriving trading society gave its name to the modern nation of Nicaragua.",
+    "summary_fi": "Nahua-kielinen kansa, joka asettui Keski-Meksikosta vaellettuaan Nicaragua-järven ja Tyynenmeren väliselle hedelmälliselle kannakselle. Espanjalaisen tutkimusmatkailija Gil González Dávilan vuonna 1522 kohtaama päällikkö Nicarao antoi nimensä koko nykyiselle Nicaraguan valtiolle.",
+    "capital": "Quauhcapolca",
+    "feature_name_matches": [
+      "Nicarao",
+      "Nicarao/Nahoa"
+    ]
+  },
+  {
+    "slug": "miskito-people",
+    "name": "Miskito Nation",
+    "name_fi": "Miskitokansa",
+    "native_name": "Mískitu",
+    "alternate_names": [
+      "Miskito Kingdom",
+      "Mosquito Coast"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Pre-Columbian to Kingdom Period",
+    "year_start": 1000,
+    "year_end": 1894,
+    "period_label": "c. 1000 CE – 1894 CE",
+    "period_label_fi": "n. 1000 jaa. – 1894 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Miskito_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Miskitot",
+    "wikidata_id": "Q856272",
+    "summary_en": "An indigenous people of the Caribbean lowlands along the Mosquito Coast of eastern Nicaragua and Honduras. Expert coastal canoe navigators and hunters, the Miskito formed an enduring British protectorate kingdom in the 17th to 19th centuries that fiercely resisted Spanish hegemony.",
+    "summary_fi": "Nicaraguan ja Hondurasin itäisellä Moskiittorannikolla elävä alkuperäiskansa. Taitavina merenkulkijoina ja kalastajina tunnetut miskitot säilyttivät itsenäisyytensä Espanjan valtaa vastaan muodostaen 1600-luvulla Ison-Britannian tukeman Moskiittovaltakunnan.",
+    "capital": "Sandy Bay, Bluefields",
+    "feature_name_matches": [
+      "Miskito",
+      "Miskitu"
+    ]
+  },
+  {
+    "slug": "guna-people",
+    "name": "Guna (Kuna) People",
+    "name_fi": "Gunat (kunat)",
+    "native_name": "Gunadule (Guna-Tule)",
+    "alternate_names": [
+      "Kuna Yala",
+      "San Blas Indians"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Pre-Columbian to Modern Indigenous Isthmus",
+    "year_start": 500,
+    "year_end": 1925,
+    "period_label": "c. 500 CE – 1925 CE",
+    "period_label_fi": "n. 500 jaa. – 1925 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Guna_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kunat",
+    "wikidata_id": "Q686237",
+    "summary_en": "A Chibchan-speaking indigenous nation native to eastern Panama and northwestern Colombia, particularly the San Blas archipelago (Guna Yala). World-famous for their vibrant hand-sewn mola textile appliqué art and matrilineal social structure, the Guna vigorously maintained self-governance, culminating in the 1925 Dule Revolution.",
+    "summary_fi": "Itäisen Panaman ja Kolumbian rajaseuduilla sekä San Blasin saaristossa (Guna Yala) asuva chibcha-kielinen alkuperäiskansa. Gunat tunnetaan kansainvälisesti värikkäistä käsinommelluista mola-tekstiileistään ja itsenäisestä yhteisöhallinnostaan, jonka he turvasivat vuoden 1925 vallankumouksessa.",
+    "capital": "Guna Yala, Gaigirgordub",
+    "feature_name_matches": [
+      "Gunadule (Kuna-Tule)",
+      "Guna Yala",
+      "Guna of Madugandí",
+      "Guna of Wargandí",
+      "Kuna/Guna"
+    ]
+  },
+  {
+    "slug": "guaymi-people",
+    "name": "Ngäbe (Guaymí) People",
+    "name_fi": "Ngäbet (guaymít)",
+    "native_name": "Ngäbe",
+    "alternate_names": [
+      "Guaymí",
+      "Ngöbe"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Pre-Columbian to Modern Lower Central America",
+    "year_start": 500,
+    "year_end": 1900,
+    "period_label": "c. 500 CE – 1900 CE",
+    "period_label_fi": "n. 500 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ng%C3%A4be",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Guaym%C3%ADt",
+    "wikidata_id": "Q948564",
+    "summary_en": "The largest indigenous population of western Panama and southeastern Costa Rica, inhabiting the rugged cordillera of Chiriquí and Bocas del Toro. Historically organized into autonomous chiefdoms, the Ngäbe mounted fierce resistance to Spanish conquistadors under legendary chieftains like Urracá.",
+    "summary_fi": "Läntisen Panaman vuoristoseuduilla ja Costa Rican rajalla elävä alueensa suurin alkuperäiskansa. Ngäbet muodostivat vuoristoalueilla itsenäisiä päällikkökuntia ja tekivät sitkeää vastarintaa espanjalaisille valloittajille legendaarisen päällikkö Urracán johdolla.",
+    "capital": "Chiriquí Highlands",
+    "feature_name_matches": [
+      "Guaymí",
+      "Guaymi"
+    ]
+  },
+  {
+    "slug": "guachichil-people",
+    "name": "Guachichil People",
+    "name_fi": "Guachichilit",
+    "native_name": "Cuachichiltin",
+    "alternate_names": [
+      "Guachichiles",
+      "Chichimeca Guachichil"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Chichimeca / Aridoamerica Borderland",
+    "year_start": 1000,
+    "year_end": 1600,
+    "period_label": "c. 1000 CE – 1600 CE",
+    "period_label_fi": "n. 1000 jaa. – 1600 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Guachichil",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Guachichilit",
+    "wikidata_id": "Q2636592"
+,
+    "summary_en": "A nomadic and semi-nomadic Chichimeca people who inhabited the vast El Tunal Grande plateau across San Luis Potosí, Zacatecas, and Jalisco. Renowned as the fiercest warriors in northern Mexico who dyed their hair and bodies red, the Guachichil were central protagonists in the fifty-year Chichimeca War against the Spanish empire.",
+    "summary_fi": "Pohjois-Meksikon ylängöillä San Luis Potosín ja Zacatecasin alueilla vaeltanut chichimeekkeihin kuulunut puolipaimentolainen soturikansa ('punapäät'). Guachichilit värjäsivät hiuksensa ja ihonsa punaisella värillä ja johtivat puoli vuosisataa kestänyttä ankaraa chichimeekkisotaa espanjalaisia vastaan.",
+    "capital": "El Tunal Grande",
+    "feature_name_matches": [
+      "Guachichil",
+      "Guachichiles"
+    ]
+  },
+  {
+    "slug": "cora-people",
+    "name": "Cora (Náayerite) Kingdom",
+    "name_fi": "Corien kuningaskunta",
+    "native_name": "Náayerite",
+    "alternate_names": [
+      "Náyari",
+      "Xecora"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Sierra del Nayar Indigenous State",
+    "year_start": 1200,
+    "year_end": 1722,
+    "period_label": "c. 1200 CE – 1722 CE",
+    "period_label_fi": "n. 1200 jaa. – 1722 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cora_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Corat",
+    "wikidata_id": "Q926888",
+    "summary_en": "An indigenous Uto-Aztecan people of the rugged Sierra del Nayar mountains in western Mexico. Maintaining an unconquered sovereign enclave deep in the canyon highlands for over two centuries after the fall of Tenochtitlan, the Cora defended their solar cult and sacred ancestral shrines until the Spanish conquest of Mesa del Nayar in 1722.",
+    "summary_fi": "Länsi-Meksikon Sierra del Nayarin vuoristossa elävä uto-asteekkilainen alkuperäiskansa. Corat säilyttivät täyden itsenäisyytensä ja muinaisen aurinkouskontonsa lähes kaksi vuosisataa Tenochtitlánin kukistumisen jälkeen, kunnes heidän vuoristolinnoituksensa Mesa del Nayar vallattiin vuonna 1722.",
+    "capital": "Mesa del Nayar",
+    "feature_name_matches": [
+      "Náayerite (Cora)",
+      "Náyari (Cora)",
+      "Xecora"
+    ]
+  },
+  {
+    "slug": "huichol-people",
+    "name": "Huichol (Wixárika) People",
+    "name_fi": "Huicholit",
+    "native_name": "Wixárika",
+    "alternate_names": [
+      "Wixarika",
+      "Wixaritari"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Sierra Madre Occidental Indigenous Community",
+    "year_start": 1000,
+    "year_end": 1900,
+    "period_label": "c. 1000 CE – 1900 CE",
+    "period_label_fi": "n. 1000 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Huichol",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Huicholit",
+    "wikidata_id": "Q594589",
+    "summary_en": "An indigenous people residing in the remote canyons of the Sierra Madre Occidental in Nayarit and Jalisco. Celebrated for vibrant yarn paintings, intricate beaded artwork, and unbroken shamanic pilgrimage traditions to the sacred desert plateau of Wirikuta, the Huichol successfully sheltered their culture from assimilation.",
+    "summary_fi": "Sierra Madre Occidentalin syrjäisissä rotkoissa ja vuoristossa elävä alkuperäiskansa. Huicholit tunnetaan maailmanlaajuisesti värikkäistä lankamaalauksistaan, helmikirjailuistaan sekä katkeamattomasta shamaanilaisesta pyhiinvaellusperinteestään pyhälle Wirikutan aavikolle.",
+    "capital": "Wirikuta",
+    "feature_name_matches": [
+      "Wixárika (Huichol)",
+      "Wixarika (Huichol)"
+    ]
+  },
+  {
+    "slug": "mixe-people",
+    "name": "Mixe (Ayuukjä'äy) People",
+    "name_fi": "Mixet",
+    "native_name": "Ayuukjä'äy",
+    "alternate_names": [
+      "Mixe-Zoque",
+      "The Unconquered"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Highland Oaxaca Indigenous Traditions",
+    "year_start": -500,
+    "year_end": 1900,
+    "period_label": "c. 500 BCE – 1900 CE",
+    "period_label_fi": "n. 500 eaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mixe_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mixet",
+    "wikidata_id": "Q948529",
+    "summary_en": "An indigenous people inhabiting the rugged Sierra Mixe mountains of eastern Oaxaca. Descended from the ancient Mixe-Zoquean linguistic family linked to the Olmec civilization, the Mixe proudly call themselves 'the never conquered' (los jamás conquistados) for repelling both Zapotec, Aztec, and early Spanish military incursions.",
+    "summary_fi": "Itä-Oaxacan jyrkillä Sierra Mixen vuorilla asuva alkuperäiskansa, jonka juuret juontuvat muinaisesta olmeekkeihin liitetystä mixe-zoque-kieliperheestä. Mixet kutsuvat itseään ylpeästi 'koskaan valloittamattomiksi', sillä he torjuivat niin zapoteekkien, asteekkien kuin espanjalaistenkin valloitusyritykset.",
+    "capital": "Totontepec, Cempoaltepetl",
+    "feature_name_matches": [
+      "Ayuukjä'äy (Mixe)",
+      "Popoluca (mixe-zoque)",
+      "Tapachulteco (mixe-zoque)"
+    ]
+  },
+  {
+    "slug": "huave-people",
+    "name": "Huave (Ikoots) People",
+    "name_fi": "Huavet",
+    "native_name": "Ikoots / Kunajts",
+    "alternate_names": [
+      "Mareños"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Isthmus of Tehuantepec Coastal Societies",
+    "year_start": 500,
+    "year_end": 1900,
+    "period_label": "c. 500 CE – 1900 CE",
+    "period_label_fi": "n. 500 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Huave_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Huavet",
+    "wikidata_id": "Q611680",
+    "summary_en": "An indigenous fishing and salt-gathering community inhabiting the coastal lagoons of the Gulf of Tehuantepec in southern Oaxaca. Speaking an unclassified language isolate, the Huave adapted successfully to a specialized maritime and mangrove ecology alongside expanding Zapotec neighbors.",
+    "summary_fi": "Tehuantepecinkannaksen laguunien ja rannikoiden äärellä Etelä-Oaxacassa elävä alkuperäiskansa. Huavet puhuvat isolaattikieltä ja ovat perinteisesti saaneet elantonsa kalastuksesta, katkarapujen pyynnistä ja suolankeruusta matalilla rannikkovesillä.",
+    "capital": "San Mateo del Mar",
+    "feature_name_matches": [
+      "Ikoots/Kunajts/Ikoojts (Huave)"
+    ]
+  },
+  {
+    "slug": "nahua-peoples",
+    "name": "Nahua Peoples",
+    "name_fi": "Nahuat",
+    "native_name": "Nāhuatlācah",
+    "alternate_names": [
+      "Nahuas",
+      "Mexicaneros",
+      "Coyutecos"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "aztec",
+    "historical_period": "Postclassic Central Mexican Nations",
+    "year_start": 500,
+    "year_end": 1900,
+    "period_label": "c. 500 CE – 1900 CE",
+    "period_label_fi": "n. 500 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nahuas",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nahuat",
+    "wikidata_id": "Q217277",
+    "summary_en": "The largest indigenous linguistic family of Mesoamerica, whose speakers founded iconic postclassic city-states including Cholula, Texcoco, Chalco, and Tlaxcala. Originating in northwestern Mexico, Nahua migrations transformed the central valleys into centers of high literature, philosophy, codified jurisprudence, and monumental ceremonial architecture.",
+    "summary_fi": "Mesoamerikan laajin alkuperäiskansojen kieliryhmä, johon kuuluivat muun muassa asteekit, tlaxcalalaiset ja texcocolaiset. Nahuat loivat Keski-Meksikoon rikkaan kaupunkivaltioiden verkoston, jolle oli ominaista korkeatasoinen runous, filosofia, lainsäädäntö ja arkkitehtuuri.",
+    "capital": "Cholula, Texcoco, Chalco",
+    "feature_name_matches": [
+      "Nahua",
+      "Nahuas",
+      "Nahua (Mexico)",
+      "Nahua (Guerrero)",
+      "Nahua (Michoacan)",
+      "Nahua ( Morelos, Puebla, Tlaxcala, Veracruz, Hidalgo, San Luis Potosi)",
+      "Mexicanero (Nahuas)",
+      "Coyutecos (Nahua)"
+    ]
+  },
+  {
+    "slug": "mesoamerican-early-farmers",
+    "name": "Mesoamerican Early Farmers & Foragers",
+    "name_fi": "Mesoamerikan varhaiset maanviljelijät",
+    "native_name": "Centli Cultivators",
+    "alternate_names": [
+      "Maize Farmers",
+      "Archaic Mesoamericans"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-agriculturalists",
+    "historical_period": "Archaic to Early Formative Mesoamerica",
+    "year_start": -7000,
+    "year_end": -1500,
+    "period_label": "c. 7000 BCE – 1500 BCE",
+    "period_label_fi": "n. 7000 eaa. – 1500 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mesoamerica#Chronology_and_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mesoamerikan_kronologia",
+    "wikidata_id": "Q1370",
+    "summary_en": "The foundational archaic and formative populations of Mesoamerica who domesticated maize (teosinte), beans, squash, and chili peppers. Transitioning from seasonal hunter-gatherer bands to sedentary village agriculturalists, they laid the economic and nutritional cornerstone for all subsequent Mesoamerican civilizations.",
+    "summary_fi": "Mesoamerikan arkaaiset ja varhaiset muodostavan kauden väestöt, jotka kesyttivät maissin (teosintti), pavut, kurpitsat ja chilin. Siirtyminen metsästäjä-keräilystä pysyviin maanviljelyskyliin loi taloudellisen ja ravitsemuksellisen pohjan kaikille myöhemmille Mesoamerikan korkeakulttuureille.",
+    "capital": "Guilá Naquitz, Coxcatlan",
+    "feature_name_matches": [
+      "Mesoamerican hunter-gatherers and maïze farmers",
+      "Mesoamerican hunters-gatherers",
+      "Maize farmers"
+    ]
+  },
+  {
+    "slug": "mayangna",
+    "name": "Mayangna (Sumo) People",
+    "name_fi": "Mayangnat (sumot)",
+    "native_name": "Mayangna",
+    "alternate_names": [
+      "Sumo Indians",
+      "Twahka"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Pre-Columbian to Colonial Central America",
+    "year_start": 500,
+    "year_end": 1900,
+    "period_label": "c. 500 CE – 1900 CE",
+    "period_label_fi": "n. 500 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mayangna",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sumot",
+    "wikidata_id": "Q1341052",
+    "summary_en": "A Misumalpan indigenous people native to the inland tropical rainforests of eastern Nicaragua and Honduras, centered around the Bosawás Biosphere Reserve. Historically dwelling along river networks in semi-sedentary villages, the Mayangna maintained ancient forestry, hunting, and canoeing traditions.",
+    "summary_fi": "Nicaraguan ja Hondurasin itäisten sademetsien sisämaassa Bosawásin biosfäärialueella elävä alkuperäiskansa. Jokivarsien sademetsissä asuneet mayangnat ovat perinteisesti harjoittaneet pienviljelyä, metsästystä ja jokiveneilyä.",
+    "capital": "Musawas",
+    "feature_name_matches": [
+      "Mayangna"
+    ]
+  },
+  {
+    "slug": "mayaimi",
+    "name": "Mayaimi Tribe",
+    "name_fi": "Mayaimit",
+    "native_name": "Mayaimi",
+    "alternate_names": [
+      "Lake Okeechobee People"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Indigenous Florida Archaic & Ceramic Periods",
+    "year_start": 200,
+    "year_end": 1750,
+    "period_label": "c. 200 CE – 1750 CE",
+    "period_label_fi": "n. 200 jaa. – 1750 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mayaimi",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mayaimit",
+    "wikidata_id": "Q1914264",
+    "summary_en": "A Native American people who inhabited the Lake Okeechobee basin in southern Florida from antiquity until the 18th century. Expert fisherfolk and mound builders, they constructed extensive earthwork ceremonial mounds, canals, and raised platforms across the Everglades wetlands before disappearing following European contact.",
+    "summary_fi": "Etelä-Floridassa Okeechobee-järven ympäristössä ja Evergladesin suoalueilla elänyt muinainen alkuperäiskansa. Mayaimit rakensivat laajoja maavalleja, kanavia ja kumpuja sekä elivät kalastuksella ja keräilyllä ennen häviämistään 1700-luvulla.",
+    "capital": "Lake Okeechobee",
+    "feature_name_matches": [
+      "Mayaimi"
+    ]
+  },
+  {
+    "slug": "yukuna-people",
+    "name": "Yukuna (Kamejeya) People",
+    "name_fi": "Yukunat (kamejeyat)",
+    "native_name": "Kamejeya / Yukuna",
+    "alternate_names": [
+      "Kamejeya"
+    ],
+    "culture_group": "Mesoamerican",
+    "lineage_id": "mesoamerican-states",
+    "historical_period": "Indigenous Northwest Amazon Traditions",
+    "year_start": 500,
+    "year_end": 1900,
+    "period_label": "c. 500 CE – 1900 CE",
+    "period_label_fi": "n. 500 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yukuna_language",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yukunat",
+    "wikidata_id": "Q3573215",
+    "summary_en": "An Arawakan-speaking indigenous people of the Mirití-Paraná and Caquetá river basins in northwestern Amazonia. Organized around communal maloca longhouses and sacred yuruparí flutes, the Yukuna preserved elaborate ritual shamanic cosmologies and cassava horticulture.",
+    "summary_fi": "Luoteis-Amazonian Mirití-Paraná- ja Caquetá-jokien varsilla asuva arawak-kielinen alkuperäiskansa. Suurissa maloca-yhteistaloissa asuneet yukunat tunnetaan rikkaista mytologisista seremonioistaan, pyhistä soittimistaan sekä maniokin viljelystä.",
+    "capital": "Mirití-Paraná",
+    "feature_name_matches": [
+      "Kamejeya (Yukuna)"
+    ]
+  }
+]
