@@ -28,6 +28,7 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
   const continent = props.CONTINENT || props.REGION_UN || props.REGION_WB
   const economy = props.ECONOMY
   const sovereignty = props.SOVEREIGNT || props.CONTROLLIN
+  const cultureMeta = props.culture_metadata
 
   const meta = getEntityMetadata(name, props)
   const color = meta.color
@@ -124,6 +125,36 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
           <div className="drawer-row">
             <span className="drawer-label">Civilization / Lineage:</span>
             <span className="drawer-value">{canonicalName}</span>
+          </div>
+        )}
+
+        {cultureMeta?.historical_period && (
+          <div className="drawer-row">
+            <span className="drawer-label">Historical Period:</span>
+            <span className="drawer-value">{cultureMeta.historical_period}</span>
+          </div>
+        )}
+
+        {cultureMeta?.period_label && (
+          <div className="drawer-row">
+            <span className="drawer-label">Documented Era:</span>
+            <span
+              className="drawer-value badge"
+              style={{
+                backgroundColor: "rgba(168, 85, 247, 0.15)",
+                color: "#c084fc",
+                border: "1px solid rgba(168, 85, 247, 0.3)",
+              }}
+            >
+              {cultureMeta.period_label}
+            </span>
+          </div>
+        )}
+
+        {cultureMeta?.capital && (
+          <div className="drawer-row">
+            <span className="drawer-label">Capital / Center:</span>
+            <span className="drawer-value">{cultureMeta.capital}</span>
           </div>
         )}
 
@@ -238,6 +269,40 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
             <span className="drawer-value">
               {Number(props.AREA).toLocaleString()} sq km
             </span>
+          </div>
+        )}
+
+        {cultureMeta?.summary_en && (
+          <div className="drawer-summary-box">
+            <div className="drawer-summary-header">
+              <span className="drawer-summary-title">About this Culture</span>
+              {cultureMeta.wikipedia_url_en && (
+                <a
+                  href={cultureMeta.wikipedia_url_en}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="drawer-wiki-link"
+                  title="Open in Wikipedia"
+                >
+                  Wikipedia ↗
+                </a>
+              )}
+            </div>
+            <p className="drawer-summary-text">{cultureMeta.summary_en}</p>
+          </div>
+        )}
+
+        {!cultureMeta?.summary_en && cultureMeta?.wikipedia_url_en && (
+          <div className="drawer-row" style={{ marginTop: "4px" }}>
+            <span className="drawer-label">Wikipedia:</span>
+            <a
+              href={cultureMeta.wikipedia_url_en}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="drawer-wiki-link"
+            >
+              Wikipedia Article ↗
+            </a>
           </div>
         )}
 

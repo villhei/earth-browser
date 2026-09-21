@@ -1,0 +1,429 @@
+[
+  {
+    "slug": "rashidun-caliphate",
+    "name": "Rashidun Caliphate",
+    "name_fi": "Oikeaan johdettujen kalifien valtakunta",
+    "native_name": "الخلافة الراشدة (al-Khilāfah ar-Rāshidah)",
+    "alternate_names": [
+      "Rightly Guided Caliphate",
+      "Early Caliphate",
+      "First Caliphate"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Early Islamic Conquests",
+    "year_start": 632,
+    "year_end": 661,
+    "period_label": "632 CE – 661 CE",
+    "period_label_fi": "632 jaa. – 661 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Rashidun_Caliphate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Oikeaan_johdetut_kalifit",
+    "wikidata_id": "Q12490507",
+    "summary_en": "The first of the major Islamic caliphates established after the death of the Prophet Muhammad in 632 CE, governed successively by the four 'Rightly Guided' Caliphs: Abu Bakr, Umar, Uthman, and Ali. Through rapid and disciplined military campaigns, the caliphate decisively toppled the Sasanian Persian Empire and wrested Syria, Palestine, and Egypt from the Byzantine Empire.",
+    "summary_fi": "Ensimmäinen islamin neljän varhaisen kalifin (Abu Bakr, Umar, Uthman ja Ali) johtama valtakunta profeetta Muhammadin kuoleman jälkeen. Huomattavan nopeiden sotaretkien ansiosta kalifaatti valloitti Persian sassanidivaltakunnan ja riisti Bysantilta Syyrian, Palestiinan ja Egyptin luoden perustan laajalle islamilaiselle valtakunnalle.",
+    "capital": "Medina, Kufa",
+    "feature_name_matches": [
+      "Rashidun Caliphate",
+      "Rightly Guided Caliphate"
+    ]
+  },
+  {
+    "slug": "umayyad-caliphate",
+    "name": "Umayyad Caliphate",
+    "name_fi": "Umaijadien kalifaatti",
+    "native_name": "الخلافة الأموية (al-Khilāfah al-ʾUmawiyyah)",
+    "alternate_names": [
+      "Umayyads",
+      "Damascus Caliphate"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Classical Islamic Caliphates",
+    "year_start": 661,
+    "year_end": 750,
+    "period_label": "661 CE – 750 CE",
+    "period_label_fi": "661 jaa. – 750 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Umayyad_Caliphate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Umaijadit",
+    "wikidata_id": "Q8575586",
+    "summary_en": "The second major Islamic caliphate, established by Mu'awiya I with its capital at Damascus. Expanding across three continents from the Iberian Peninsula and the Maghreb through the Levant, Mesopotamia, and Persia to the borders of Tang China and the Indus Valley, the Umayyads standardized Arabic as the imperial administrative language and commissioned the Dome of the Rock in Jerusalem.",
+    "summary_fi": "Toinen suuri islamilainen kalifaatti, jonka Muawija I perusti siirtäen pääkaupungin Damaskokseen. Valtakunta laajeni kolmelle mantereelle ulottuen Espanjasta ja Pohjois-Afrikasta aina Keski-Aasiaan ja Indus-joelle saakka. Umaijadit vakiinnuttivat arabian kielen hallintokieleksi, ottivat käyttöön yhtenäisen islamilaisen rahalaitoksen ja rakennuttivat Kalliomoskeijan Jerusalemiin.",
+    "capital": "Damascus, Harran",
+    "feature_name_matches": [
+      "Umayyad Caliphate"
+    ]
+  },
+  {
+    "slug": "abbasid-caliphate",
+    "name": "Abbasid Caliphate",
+    "name_fi": "Abbasidien kalifaatti",
+    "native_name": "الخلافة العباسية (al-Khilāfah al-ʿAbbāsiyyah)",
+    "alternate_names": [
+      "Abbasids",
+      "Baghdad Caliphate"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Islamic Golden Age",
+    "year_start": 750,
+    "year_end": 1258,
+    "period_label": "750 CE – 1258 CE",
+    "period_label_fi": "750 jaa. – 1258 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Abbasid_Caliphate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Abbasidit",
+    "wikidata_id": "Q12536",
+    "summary_en": "The third major Islamic caliphate, founded by descendants of Muhammad's uncle Abbas ibn Abd al-Muttalib after overthrowing the Umayyads in 750 CE. Centered at the newly built round city of Baghdad, the Abbasid era ignited the Islamic Golden Age with the House of Wisdom (Bayt al-Hikma), pioneering monumental advances in mathematics, astronomy, medicine, philosophy, and global trade until the Mongol sack of Baghdad in 1258 CE.",
+    "summary_fi": "Kolmas suuri islamilainen kalifaatti, joka nousi valtaan kukistettuaan umaijadit vuonna 750 jaa. Uudesta pääkaupungistaan Bagdadista käsin hallinnut dynastia aloitti islamin kultakauden. Bagdadin Viisauden talo (Bait al-Hikma) muodostui tieteiden, filosofian, matematiikan ja lääketieteen maailmanlaajuiseksi keskukseksi aina mongolien suorittamaan kaupungin hävitykseen (1258 jaa.) saakka.",
+    "capital": "Baghdad, Samarra, Cairo",
+    "feature_name_matches": [
+      "Abbasid Caliphate"
+    ]
+  },
+  {
+    "slug": "caliphate-of-cordoba",
+    "name": "Caliphate of Córdoba",
+    "name_fi": "Córdoban kalifaatti",
+    "native_name": "خلافة قرطبة (Khilāfat Qurṭubah)",
+    "alternate_names": [
+      "Caliphate of Cordoba",
+      "Umayyad Caliphate of Córdoba",
+      "Al-Andalus"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Islamic Iberia (Al-Andalus)",
+    "year_start": 929,
+    "year_end": 1031,
+    "period_label": "929 CE – 1031 CE",
+    "period_label_fi": "929 jaa. – 1031 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Caliphate_of_C%C3%B3rdoba",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/C%C3%B3rdoban_kalifaatti",
+    "wikidata_id": "Q171740",
+    "summary_en": "An Islamic state in the Iberian Peninsula and parts of North Africa ruled by the Umayyad dynasty, proclaimed by Abd al-Rahman III in 929 CE. Córdoba became Western Europe's most populous and culturally sophisticated metropolis, renowned for the Great Mosque (Mezquita), the palace city of Madinat al-Zahra, immense public libraries, and a thriving intellectual synthesis of Muslim, Christian, and Jewish scholarship.",
+    "summary_fi": "Islamilainen valtio Pyreneiden niemimaalla ja Pohjois-Afrikassa, jonka Abd ar-Rahman III julisti kalifaatiksi vuonna 929 jaa. Córdobasta kehittyi Länsi-Euroopan väkirikkain ja kulttuurisesti kukoistavin metropoli, joka tunnettiin suuresta moskeijastaan (Mezquita), loisteliaasta Madinat al-Zahran palatsista sekä tieteiden, lääketieteen ja filosofian kukoistuksesta eri uskontokuntien rinnakkaiselossa.",
+    "capital": "Córdoba",
+    "feature_name_matches": [
+      "Caliphate of Córdoba",
+      "Caliphate of Cordoba"
+    ]
+  },
+  {
+    "slug": "fatimid-caliphate",
+    "name": "Fatimid Caliphate",
+    "name_fi": "Fatimidi-kalifaatti",
+    "native_name": "الخلافة الفاطمية (al-Khilāfah al-Fāṭimiyyah)",
+    "alternate_names": [
+      "Fatimids",
+      "Fatimid Empire"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Isma'ili Shi'a Caliphate",
+    "year_start": 909,
+    "year_end": 1171,
+    "period_label": "909 CE – 1171 CE",
+    "period_label_fi": "909 jaa. – 1171 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Fatimid_Caliphate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Fatimidi-kalifaatti",
+    "wikidata_id": "Q33405",
+    "summary_en": "An Isma'ili Shi'a Islamic caliphate originating in Ifriqiya (modern Tunisia) that expanded to govern vast territories spanning North Africa, Egypt, the Levant, and the Hejaz. Establishing Cairo as their imperial capital in 969 CE, the Fatimids founded the historic Al-Azhar University, controlled Red Sea and Mediterranean trade routes, and fostered distinct rock crystal, ceramic, and architectural arts.",
+    "summary_fi": "Ismailiittinen šiialainen kalifaatti, joka sai alkunsa Pohjois-Afrikasta (Ifriqiyasta) ja valloitti Egyptin, Levantin ja Hijazin alueet. Fatimidit perustivat Kairon uudeksi pääkaupungikseen vuonna 969 jaa. ja rakennuttivat maineikkaan Al-Azharin yliopiston ja moskeijan halliten Punaisenmeren ja Välimeren vauraita kauppareittejä ennen Saladdinin valtaannousua.",
+    "capital": "Mahdia, Cairo",
+    "feature_name_matches": [
+      "Fatimid Caliphate"
+    ]
+  },
+  {
+    "slug": "almohad-caliphate",
+    "name": "Almohad Caliphate",
+    "name_fi": "Almohadien kalifaatti",
+    "native_name": "الموَحِّدون (al-Muwaḥḥidūn) / ⵉⵎⵡⴻⵃⵃⴷⵉⵢⴻⵏ (Imweḥḥdiyen)",
+    "alternate_names": [
+      "Almohads",
+      "Almohad Empire"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Medieval Berber Caliphate",
+    "year_start": 1121,
+    "year_end": 1269,
+    "period_label": "1121 CE – 1269 CE",
+    "period_label_fi": "1121 jaa. – 1269 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Almohad_Caliphate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Almohadit",
+    "wikidata_id": "Q179053",
+    "summary_en": "A North African Berber Muslim empire founded by Ibn Tumart in the High Atlas mountains of Morocco. Uniting all of the Maghreb and Islamic al-Andalus under a single centralized crown, the Almohads built monumental architectural masterpieces including the Koutoubia Mosque in Marrakesh, the Giralda in Seville, and the Hassan Tower in Rabat before succumbing to Christian advances after the Battle of Las Navas de Tolosa.",
+    "summary_fi": "Marokkolainen berberiläinen islamilainen suurvalta, jonka uskonnollisena perustajana toimi Ibn Tumart. Almohadit yhdistivät koko Pohjois-Afrikan lännen (Maghrebin) ja Al-Andalusin Espanjassa yhden valtakunnan alaisuuteen rakentaen Sevillan Giraldan ja Marrakechin Koutoubia-moskeijan kaltaisia arkkitehtonisia maamerkkejä ennen heikentymistään kristittyjen valloitusten myötä.",
+    "capital": "Marrakesh, Seville",
+    "feature_name_matches": [
+      "Almohad Caliphate"
+    ]
+  },
+  {
+    "slug": "hafsid-caliphate",
+    "name": "Hafsid Caliphate",
+    "name_fi": "Hafsidien kalifaatti",
+    "native_name": "الحفصيون (al-Ḥafṣiyyūn)",
+    "alternate_names": [
+      "Hafsid dynasty",
+      "Sultanate of Tunis"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Late Medieval Ifriqiya",
+    "year_start": 1229,
+    "year_end": 1574,
+    "period_label": "1229 CE – 1574 CE",
+    "period_label_fi": "1229 jaa. – 1574 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hafsid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hafsidit",
+    "wikidata_id": "Q536256",
+    "summary_en": "A Berber Muslim dynasty that ruled Ifriqiya (modern Tunisia, eastern Algeria, and western Libya) after declaring independence from the Almohad Caliphate in 1229 CE. Taking the title of Caliph, the Hafsids established Tunis as a prominent Mediterranean cultural and commercial hub, sheltered refugees from the Spanish Reconquista, and successfully withstood the Eighth Crusade led by Louis IX of France.",
+    "summary_fi": "Berberiläinen islamilainen dynastia, joka hallitsi Ifriqiyaa (nykyistä Tunisiaa, Itä-Algeriaa ja Länsi-Libyaa) irtauduttuaan Almohadien valtakunnasta vuonna 1229 jaa. Kalifin arvonimen ottaneet hafsidit kehittivät Tunisista kukoistavan Välimeren kaupan ja sivistyksen keskuksen, torjuivat Ranskan Ludvig IX:n johtaman kahdeksannen ristiretken ja säilyttivät valtansa osmanien valloitukseen (1574) saakka.",
+    "capital": "Tunis",
+    "feature_name_matches": [
+      "Hafsid Caliphate"
+    ]
+  },
+  {
+    "slug": "idrisid-caliphate",
+    "name": "Idrisid Caliphate",
+    "name_fi": "Idrisidien dynastia",
+    "native_name": "الأدارسة (al-Adārisah)",
+    "alternate_names": [
+      "Idrisid dynasty",
+      "Emirate of Fez"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Early Islamic Maghreb",
+    "year_start": 788,
+    "year_end": 974,
+    "period_label": "788 CE – 974 CE",
+    "period_label_fi": "788 jaa. – 974 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Idrisid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Idrisidit",
+    "wikidata_id": "Q261055",
+    "summary_en": "An Arab-Berber Muslim dynasty in Morocco founded by Idris I, a great-grandson of Hasan ibn Ali fleeing Abbasid persecution. Considered the founders of the Moroccan state, the Idrisids converted local Berber tribes, founded the imperial city of Fez, and established the University of al-Qarawiyyin, the oldest continually operating institution of higher learning in the world.",
+    "summary_fi": "Marokon ensimmäinen islamilainen arabialais-berberiläinen dynastia, jonka profeetta Muhammadin jälkeläinen Idris I perusti paettuaan abbasidien vainoja vuonna 788 jaa. Idrisidit yhdistivät berberiheimot islamin alaisuuteen, perustivat Fèsin kaupungin pääkaupungikseen ja loivat pohjan Al-Qarawiyyin-yliopistolle, jota pidetään maailman vanhimpana yhtäjaksoisesti toimineena yliopistona.",
+    "capital": "Fez, Walili (Volubilis)",
+    "feature_name_matches": [
+      "Idrisid Caliphate"
+    ]
+  },
+  {
+    "slug": "seljuk-caliphate",
+    "name": "Great Seljuk Empire",
+    "name_fi": "Seldžukkien valtakunta",
+    "native_name": "دولت سلجوقیان (Dowlat-e Saljūqiyān)",
+    "alternate_names": [
+      "Seljuk Caliphate",
+      "Seljuk Empire",
+      "Seljuk Turks"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "High Middle Ages Islamic World",
+    "year_start": 1037,
+    "year_end": 1194,
+    "period_label": "1037 CE – 1194 CE",
+    "period_label_fi": "1037 jaa. – 1194 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Seljuk_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Selddzukit",
+    "wikidata_id": "Q37082",
+    "summary_en": "A vast Turko-Persian Sunni Muslim empire founded by Tughril Beg, uniting Central Asia, Iran, Mesopotamia, and the Levant. Winning custody of the Sunni caliphate by liberating the Abbasid caliph in Baghdad from Buyid control, the Seljuks famously defeated the Byzantine Empire at the Battle of Manzikert in 1071 CE, opening Anatolia to widespread Turkic settlement.",
+    "summary_fi": "Suuri turkkilais-persialainen sunnalainen valtakunta, jonka Tughril Beg perusti valloittaen Keski-Aasian, Iranin, Mesopotamian ja Levantin. Pelastettuaan abbasidikalifin Bagdadissa seldžukit saivat sulttaanin ja uskonnollisten puolustajien arvon. Vuoden 1071 Manzikertin taistelussa he murskasivat Bysantin armeijan avaten Anatolian pysyvälle turkkilaiselle asutukselle.",
+    "capital": "Nishapur, Rey, Isfahan, Hamadan, Merv",
+    "feature_name_matches": [
+      "Seljuk Caliphate",
+      "Seljuk Empire"
+    ]
+  },
+  {
+    "slug": "mamluk-sultanate",
+    "name": "Mamluk Sultanate",
+    "name_fi": "Mamelukkisulttaanikunta",
+    "native_name": "سلطنة المماليك (Salṭanat al-Mamālīk)",
+    "alternate_names": [
+      "Mamluke Sultanate",
+      "Cairo Sultanate",
+      "Bahri and Burji Mamluks"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Late Medieval Near East",
+    "year_start": 1250,
+    "year_end": 1517,
+    "period_label": "1250 CE – 1517 CE",
+    "period_label_fi": "1250 jaa. – 1517 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mamluk_Sultanate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mamelukkisulttaanikunta",
+    "wikidata_id": "Q207328",
+    "summary_en": "A formidable military regime ruled by a caste of emancipated warrior-slaves (Mamluks) that governed Egypt, the Levant, and the Hejaz from Cairo. The Mamluks famously checked the western advance of the Mongol Empire at the decisive Battle of Ain Jalut in 1260 CE, expelled the final Crusader states from the Levant, and hosted the shadow Abbasid caliphs until falling to the Ottomans in 1517 CE.",
+    "summary_fi": "Egyptiä, Levanttia ja Hijazin pyhiä kaupunkeja Kairosta käsin hallinnut sotilaseliitti, joka koostui vapautetuista sotilasorjista (mamelukeista). He pysäyttivät mongolien valloituksen länteen ratkaisevassa Ain Jalutin taistelussa vuonna 1260 ja ajoivat viimeiset ristiretkeläiset Levantista toimien sunnalaisen islamin johtavana suojelijana aina osmanien valloitukseen (1517) saakka.",
+    "capital": "Cairo",
+    "feature_name_matches": [
+      "Mamluke Sultanate",
+      "Mamluk Sultanate"
+    ]
+  },
+  {
+    "slug": "ayyubid-sultanate",
+    "name": "Ayyubid Sultanate",
+    "name_fi": "Ajjubidien sulttaanikunta",
+    "native_name": "الدولة الأيوبية (al-Dawlah al-Ayyūbiyyah)",
+    "alternate_names": [
+      "Ayyubid dynasty",
+      "Saladin's Empire"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Crusader Era Near East",
+    "year_start": 1171,
+    "year_end": 1260,
+    "period_label": "1171 CE – 1260 CE",
+    "period_label_fi": "1171 jaa. – 1260 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ayyubid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ajjubidit",
+    "wikidata_id": "Q180197",
+    "summary_en": "A Sunni Muslim dynasty of Kurdish origin founded by Salah ad-Din (Saladin) after ending the Fatimid Caliphate in Egypt in 1171 CE. Unifying Egypt, Syria, northern Mesopotamia, and western Arabia, Saladin decisively defeated the Crusader Kingdom of Jerusalem at the Battle of Hattin in 1187 CE, reconquering Jerusalem and establishing Cairo and Damascus as preeminent administrative centers.",
+    "summary_fi": "Kurdilaistaustainen sunnalainen dynastia, jonka Salah al-Din (Saladdin) perusti syrjäytettyään Egyptin fatimidit vuonna 1171 jaa. Yhdistettyään Egyptin, Syyrian ja Hijazin Saladdin murskasi ristiretkeläisarmeijan Hattinin taistelussa (1187) ja palautti Jerusalemin islamin hallintaan tehden Kairosta ja Damaskoksesta kulttuurin ja linnoitustaidon keskuksia.",
+    "capital": "Cairo, Damascus",
+    "feature_name_matches": [
+      "Ayyubid Sultanate",
+      "Ayyubids"
+    ]
+  },
+  {
+    "slug": "sokoto-caliphate",
+    "name": "Sokoto Caliphate",
+    "name_fi": "Sokoton kalifaatti",
+    "native_name": "Daular Daular Usmaniyya / خلافة صكتو",
+    "alternate_names": [
+      "Sokoto Empire",
+      "Fulani Caliphate"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "19th Century West African Jihad",
+    "year_start": 1804,
+    "year_end": 1903,
+    "period_label": "1804 CE – 1903 CE",
+    "period_label_fi": "1804 jaa. – 1903 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sokoto_Caliphate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sokoton_kalifaatti",
+    "wikidata_id": "Q265738",
+    "summary_en": "A powerful Sunni Muslim caliphate in West Africa founded during the Fulani jihads by the Islamic scholar and jurist Usman dan Fodio. One of the largest pre-colonial African states, Sokoto incorporated the Hausa kingdoms, enforced Sharia legal codes, promoted literacy and Islamic scholarship, and presided over a massive trans-Saharan commercial boom until British conquest in 1903.",
+    "summary_fi": "Länsi-Afrikan suurin esi-koloniaalinen valtio, jonka uskonnollinen oppinut Usman dan Fodio perusti fulanien jihadin seurauksena vuonna 1804. Hausavaltiot yhdistänyt kalifaatti nojasi šaria-lakiin, edisti laajamittaista lukutaitoa ja islamilaista teologiaa sekä hallitsi tuottoisaa Saharan ylittävää kauppaa aina brittien siirtomaavalloitukseen (1903) saakka.",
+    "capital": "Sokoto",
+    "feature_name_matches": [
+      "Sokoto Caliphate"
+    ]
+  },
+  {
+    "slug": "toucouleur-caliphate",
+    "name": "Toucouleur Empire",
+    "name_fi": "Tukolor-valtakunta",
+    "native_name": "Laamu Tukloor / خلافة تكرور",
+    "alternate_names": [
+      "Tukular Caliphate",
+      "Tijaniyya Jihad State",
+      "Segou Caliphate"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "19th Century Western Sahel",
+    "year_start": 1848,
+    "year_end": 1893,
+    "period_label": "1848 CE – 1893 CE",
+    "period_label_fi": "1848 jaa. – 1893 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Toucouleur_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tukolor-valtakunta",
+    "wikidata_id": "Q854446",
+    "summary_en": "An Islamic reformist empire in the Western Sahel (modern Mali, Senegal, and Guinea) founded by the Tijaniyya Sufi leader El Hadj Umar Tall. Waging campaigns armed with European firearms, Umar Tall conquered the Bambara kingdoms of Kaarta and Segou, creating a centralized state that fiercely resisted French colonial expansion until its capture by French forces in 1893.",
+    "summary_fi": "Länsi-Sahelissa nykyisen Malin, Senegalin ja Guinean alueella vaikuttanut islamilainen valtakunta, jonka suufilainen johtaja Umar Tall perusti 1800-luvun puolivälissä. Tuliaseilla varustautunut valtio alisti bambaravaltiot Kaartan ja Ségoun ja teki sitkeää aseellista vastarintaa Ranskan siirtomaajoukkoja vastaan aina vuoteen 1893 saakka.",
+    "capital": "Segou, Bandiagara",
+    "feature_name_matches": [
+      "Tukular Caliphate"
+    ]
+  },
+  {
+    "slug": "wattasid-caliphate",
+    "name": "Wattasid Dynasty",
+    "name_fi": "Wattasidien dynastia",
+    "native_name": "الوطاسيون (al-Waṭṭāsiyyūn)",
+    "alternate_names": [
+      "Wattasid Caliphate",
+      "Wattasid Sultanate"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Early Modern Morocco",
+    "year_start": 1472,
+    "year_end": 1554,
+    "period_label": "1472 CE – 1554 CE",
+    "period_label_fi": "1472 jaa. – 1554 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Wattasid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Wattasidit",
+    "wikidata_id": "Q958043",
+    "summary_en": "A Zenata Berber dynasty that ruled northern Morocco from Fez following the collapse of the Marinid Sultanate. Confronting extensive Portuguese coastal incursions in Tangier, Ceuta, and Safi, the Wattasids navigated internal religious insurgencies until they were eclipsed by the Sharifian Saadi dynasty in 1554.",
+    "summary_fi": "Berberiläinen dynastia, joka hallitsi Pohjois-Marokkoa Fèsistä käsin marinidien dynastian jälkeen. Wattasidit joutuivat jatkuvaan puolustustaisteluun Portugalin rannikkovalloituksia vastaan Tangerissa ja Ceutassa, kunnes etelästä noussut sharifilainen Saadi-dynastia syrjäytti heidät vuonna 1554.",
+    "capital": "Fez",
+    "feature_name_matches": [
+      "Wattasid Caliphate"
+    ]
+  },
+  {
+    "slug": "zayyanid-caliphate",
+    "name": "Kingdom of Tlemcen",
+    "name_fi": "Tlemcenin kuningaskunta (Zayyanidit)",
+    "native_name": "الزيانيون (al-Zayyāniyyūn)",
+    "alternate_names": [
+      "Zayyanid Caliphate",
+      "Zayyanid dynasty",
+      "Abdalwadid Kingdom"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Late Medieval Central Maghreb",
+    "year_start": 1235,
+    "year_end": 1556,
+    "period_label": "1235 CE – 1556 CE",
+    "period_label_fi": "1235 jaa. – 1556 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Tlemcen",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zayyanidit",
+    "wikidata_id": "Q1521742",
+    "summary_en": "A Zenata Berber Muslim kingdom centered at the fortified city of Tlemcen in northwestern Algeria. Founded by Yaghmurasen Ibn Zyan following the collapse of the Almohads, the Zayyanids occupied a vital junction of Mediterranean maritime trade and Saharan gold caravan routes, fostering vibrant Andalusian architecture until incorporated into the Ottoman Regency of Algiers.",
+    "summary_fi": "Keski-Maghrebin berberiläinen kuningaskunta nykyisen Luoteis-Algerian alueella, jonka keskus oli linnoitettu Tlemcenin kaupunki. Yaghmurasen ibn Zyanin perustama valtio toimi Saharan kultakaravaanien ja Välimeren satamien vilkkaana solmukohtana vaalien andalusialaista taidetta ja arkkitehtuuria aina osmanivalloitukseen (1556) saakka.",
+    "capital": "Tlemcen",
+    "feature_name_matches": [
+      "Zayyanid Caliphate"
+    ]
+  },
+  {
+    "slug": "aghlabid-emirate",
+    "name": "Aghlabid Emirate",
+    "name_fi": "Aglabidien emiraatti",
+    "native_name": "الأغالبة (al-Aghālibah)",
+    "alternate_names": [
+      "Aghlabids",
+      "Emirate of Ifriqiya"
+    ],
+    "culture_group": "Islamic Caliphates",
+    "lineage_id": "islamic-caliphates",
+    "historical_period": "Early Medieval Central Mediterranean",
+    "year_start": 800,
+    "year_end": 909,
+    "period_label": "800 CE – 909 CE",
+    "period_label_fi": "800 jaa. – 909 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Aghlabids",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Aglabidit",
+    "wikidata_id": "Q207600",
+    "summary_en": "An autonomous hereditary Arab Muslim dynasty that ruled Ifriqiya (Tunisia and eastern Algeria) nominally on behalf of the Abbasid caliphs. Headquartered at the holy city of Kairouan, the Aghlabids constructed the monumental Great Mosque of Kairouan, built massive hydraulic reservoirs, and launched the maritime conquests of Sicily and southern Italy before being supplanted by the Fatimids in 909 CE.",
+    "summary_fi": "Puoli-itsenäinen arabialainen emiirikunta Pohjois-Afrikassa, joka hallitsi Ifriqiyaa muodollisesti Bagdadin abbasidikalifien alaisuudessa. Kairouanista käsin toiminut dynastia rakennutti Kairouanin suuren moskeijan ja suuret vesisäiliöt sekä käynnisti Sisilian valloituksen vuonna 827 luoden islamilaisen Sisilian emiraatin ennen fatimidien nousua.",
+    "capital": "Kairouan, al-Abbasiyya, Raqqada",
+    "feature_name_matches": [
+      "Aghlabid Emirate"
+    ]
+  }
+]

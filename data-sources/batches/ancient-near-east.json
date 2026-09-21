@@ -1,0 +1,601 @@
+[
+  {
+    "slug": "sumer-city-states",
+    "name": "Sumer",
+    "name_fi": "Sumerilainen sivilisaatio",
+    "native_name": "𒆠𒂗𒄀 (Ki-en-g̃ir)",
+    "alternate_names": [
+      "Sumerian City-States",
+      "Sumerians",
+      "Land of Sumer"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Early Dynastic to Ur III Period",
+    "year_start": -4500,
+    "year_end": -1900,
+    "period_label": "c. 4500 BCE – 1900 BCE",
+    "period_label_fi": "n. 4500 eaa. – 1900 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sumer",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sumer",
+    "wikidata_id": "Q35355",
+    "summary_en": "The earliest known civilization in historical Mesopotamia, established between the Tigris and Euphrates rivers in modern southern Iraq. The Sumerians pioneered cuneiform writing, the sexagesimal numerical system, monumental mud-brick ziggurats, complex irrigation canal networks, and the legal and bureaucratic structures of sovereign city-states such as Uruk, Ur, and Lagash.",
+    "summary_fi": "Muinainen korkeakulttuuri eteläisessä Mesopotamiassa nykyisen Irakin alueella, jota pidetään yhtenä ihmiskunnan varhaisimmista sivilisaatioista. Sumerilaiset kehittivät nuolenpääkirjoituksen, kuusikymmenjärjestelmän, keinokastelujärjestelmät sekä monumentaaliset zikkurat-temppelit ja loivat itsenäisten kaupunkivaltioiden, kuten Urukin, Urin ja Lagašin, kukoistavan verkoston.",
+    "capital": "Ur, Uruk, Kish, Lagash, Nippur",
+    "feature_name_matches": [
+      "Sumer",
+      "Sumerian City-States",
+      "Ur",
+      "city-states"
+    ]
+  },
+  {
+    "slug": "akkadian-empire",
+    "name": "Akkadian Empire",
+    "name_fi": "Akkadin valtakunta",
+    "native_name": "𒆳𒌵𒆠 (māt Akkadi)",
+    "alternate_names": [
+      "Akkad",
+      "Empire of Akkad"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Early Bronze Age / Akkadian Period",
+    "year_start": -2334,
+    "year_end": -2154,
+    "period_label": "c. 2334 BCE – 2154 BCE",
+    "period_label_fi": "n. 2334 eaa. – 2154 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Akkadian_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Akkadin_valtakunta",
+    "wikidata_id": "Q27593",
+    "summary_en": "The first ancient empire of Mesopotamia, founded by Sargon of Akkad after uniting the Semitic and Sumerian city-states under a centralized dynastic crown. At its height, the Akkadian realm stretched across Mesopotamia, the Levant, and parts of Anatolia and the Persian Gulf, institutionalizing standard weights, cuneiform Akkadian governance, and widespread royal portraiture.",
+    "summary_fi": "Historian ensimmäisenä tunnettuna imperiumina pidetty mesopotamialainen suurvalta, jonka Sargon Suuri perusti yhdistettyään sumerilaiset ja seemiläiset kaupunkivaltiot keskitetyn vallan alle. Valtakunta ulottui Persianlahdelta Välimerelle ja Anatolian rajoille saakka levittäen akkadin kieltä hallinnon ja diplomatian valtakieleksi ennen romahtamistaan gutien hyökkäyksiin.",
+    "capital": "Akkad (Agade)",
+    "feature_name_matches": [
+      "Akkad",
+      "Akkadian Empire"
+    ]
+  },
+  {
+    "slug": "babylonian-empire",
+    "name": "Babylonia",
+    "name_fi": "Babylonia",
+    "native_name": "𒆳𒆍𒀭𒊏𒆠 (māt Kādungirra)",
+    "alternate_names": [
+      "Old Babylonian Empire",
+      "Neo-Babylonian Empire",
+      "Chaldean Empire",
+      "Babylon"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Bronze to Iron Age Mesopotamia",
+    "year_start": -1894,
+    "year_end": -539,
+    "period_label": "1894 BCE – 539 BCE",
+    "period_label_fi": "1894 eaa. – 539 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Babylonia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Babylonia",
+    "wikidata_id": "Q47690",
+    "summary_en": "An ancient Akkadian-speaking Mesopotamian state and cultural powerhouse centered on the city of Babylon. Renowned under Hammurabi for one of history's earliest codified legal texts and later under Nebuchadnezzar II for monumental architecture, the Ishtar Gate, and astronomical mathematics, Babylonia remained the intellectual and religious core of the Ancient Near East until falling to Cyrus the Great.",
+    "summary_fi": "Keski- ja Etelä-Mesopotamiassa sijainnut muinainen valtakunta, jonka keskus oli Eufratin varrella sijaitseva Babylon. Hammurabin lakikokoelmasta ja myöhemmin Uus-Babylonian aikana Nebukadnessar II:n rakennuttamasta Ištarin portista sekä tähtitieteen ja matematiikan saavutuksista tunnettu sivilisaatio oli Lähi-idän kulttuurin ja uskonnon henkinen keskus Persian valloitukseen (539 eaa.) asti.",
+    "capital": "Babylon",
+    "feature_name_matches": [
+      "Babylonia",
+      "Babylon",
+      "Neo-Babylonian Empire"
+    ]
+  },
+  {
+    "slug": "assyrian-empire",
+    "name": "Assyria",
+    "name_fi": "Assyrian valtakunta",
+    "native_name": "𒆳𒀸𒋩𒆠 (māt Aššur)",
+    "alternate_names": [
+      "Neo-Assyrian Empire",
+      "Middle Assyrian Empire",
+      "Old Assyrian Empire"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Bronze to Iron Age / Neo-Assyrian Period",
+    "year_start": -2025,
+    "year_end": -609,
+    "period_label": "c. 2025 BCE – 609 BCE",
+    "period_label_fi": "n. 2025 eaa. – 609 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Assyria",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Assyria",
+    "wikidata_id": "Q41137",
+    "summary_en": "A major Mesopotamian empire centered on the upper Tigris River with capitals at Ashur and Nineveh. During the Neo-Assyrian era, it fielded the world's most formidable standing army with iron weapons, siege engines, and cavalry, subjugating Egypt, Babylon, Elam, and the Levant while compiling Ashurbanipal's legendary royal library.",
+    "summary_fi": "Pohjois-Mesopotamiassa Tigris-joen yläjuoksulla sijainnut sotilaallinen suurvalta, jonka pääkaupunkeja olivat Assur, Kalhu ja Niinive. Uus-Assyrian aikana rauta-aseilla, piirityskoneilla ja kurinalaisella armeijalla varustettu valtakunta alisti valtaansa Mesopotamian, Levantin ja Egyptin kooten samalla kuningas Assurbanipalin suuren savitaulukirjaston.",
+    "capital": "Nineveh, Assur, Nimrud, Dur-Sharrukin",
+    "feature_name_matches": [
+      "Assyria",
+      "Neo-Assyrian Empire",
+      "Assyrian Empire"
+    ]
+  },
+  {
+    "slug": "elamite-kingdom",
+    "name": "Elam",
+    "name_fi": "Elamin valtakunta",
+    "native_name": "𒁹𒄬𒋫ម្ត𒋾 (Haltamti)",
+    "alternate_names": [
+      "Elamite Civilization",
+      "Susiana"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Bronze to Iron Age Elamite Dynasties",
+    "year_start": -3200,
+    "year_end": -539,
+    "period_label": "c. 3200 BCE – 539 BCE",
+    "period_label_fi": "n. 3200 eaa. – 539 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Elam",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Elam",
+    "wikidata_id": "Q128958",
+    "summary_en": "An ancient pre-Iranian civilization centered in the lowlands of Khuzestan and the Zagros highlands with its capital at Susa. Possessing its own unique linear script before adopting cuneiform, Elam interacted, competed, and frequently went to war with the empires of Sumer, Babylon, and Assyria for three millennia until its absorption into the Achaemenid Persian Empire.",
+    "summary_fi": "Muinainen sivilisaatio Lounais-Iranissa ja Zagros-vuoriston kupeessa, jonka keskus oli historiallinen Susan kaupunki. Elamilaisilla oli oma kieli ja varhainen kirjoitusjärjestelmä ennen nuolenpääkirjoituksen omaksumista. He olivat vuosituhansien ajan Mesopotamian kaupunkien ja suurvaltojen merkittävä kauppakumppani ja sotilaallinen vastustaja aina Persian nousuun saakka.",
+    "capital": "Susa, Anshan",
+    "feature_name_matches": [
+      "Elam",
+      "Kingdom of Elam"
+    ]
+  },
+  {
+    "slug": "hittite-empire",
+    "name": "Hittite Empire",
+    "name_fi": "Heettiläisten valtakunta",
+    "native_name": "𒆳𒌷𒄩𒀜𒋾 (māt Hatti)",
+    "alternate_names": [
+      "Hittites",
+      "Kingdom of Hatti"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-anatolia",
+    "historical_period": "Late Bronze Age Anatolia",
+    "year_start": -1650,
+    "year_end": -1180,
+    "period_label": "c. 1650 BCE – 1180 BCE",
+    "period_label_fi": "n. 1650 eaa. – 1180 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hittites",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Heettil%C3%A4iset",
+    "wikidata_id": "Q82495",
+    "summary_en": "An Indo-European imperial civilization established on the central Anatolian plateau with its fortified capital at Hattusa. The Hittites mastered early iron metallurgy, three-man war chariot tactics, and cuneiform state treaties, contesting control of Syria and the Levant directly against New Kingdom Egypt at the monumental Battle of Kadesh in 1274 BCE.",
+    "summary_fi": "Indoeurooppalainen muinainen suurvalta, jonka keskus sijaitsi Keski-Anatolian ylängöllä Hattusan linnoitetussa kaupungissa. Heettiläiset olivat varhaisen raudanvalmistuksen pioneereja ja hyödynsivät kolmihenkisiä sotavaunuja. He haastoivat Uuden valtakunnan Egyptin herruudesta Syyriassa ja solmivat Kadeshin taistelun (1274 eaa.) jälkeen historian ensimmäisen säilyneen rauhansopimuksen.",
+    "capital": "Hattusa",
+    "feature_name_matches": [
+      "Hittites",
+      "Hittite Empire",
+      "Hatti"
+    ]
+  },
+  {
+    "slug": "hurrian-kingdoms",
+    "name": "Hurrian Kingdoms",
+    "name_fi": "Hurrilaisten kuningaskunnat",
+    "native_name": "Ḫur-wo-ḫe",
+    "alternate_names": [
+      "Hurrians",
+      "Urkesh"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Bronze Age Northern Mesopotamia & Levant",
+    "year_start": -2500,
+    "year_end": -1200,
+    "period_label": "c. 2500 BCE – 1200 BCE",
+    "period_label_fi": "n. 2500 eaa. – 1200 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hurrians",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hurrilaiset",
+    "wikidata_id": "Q185011",
+    "summary_en": "An Ancient Near Eastern ethnolinguistic group who established numerous principalities and city-states across northern Mesopotamia, eastern Anatolia, and northern Syria. Speaking the Hurro-Urartian language, the Hurrians were acclaimed horse breeders, chariot tacticians, and metallurgists who formed the foundational cultural layer of the later Mitanni kingdom.",
+    "summary_fi": "Muinainen kansa Pohjois-Mesopotamiassa, Syyriassa ja Kaakkois-Anatoliassa, joka perusti lukuisia itsenäisiä ruhtinaskuntia pronssikaudella. Hurrinkieliset yhteisöt olivat taitavia hevoskasvattajia ja metallurgeja, joiden mytologia ja kulttuuri sulautuivat osaksi heettiläistä maailmaa ja muodostivat Mitannin suurvallan väestöllisen ytimen.",
+    "capital": "Urkesh",
+    "feature_name_matches": [
+      "Hurrian Kingdoms",
+      "Hurrians"
+    ]
+  },
+  {
+    "slug": "mitanni-kingdom",
+    "name": "Mitanni",
+    "name_fi": "Mitannin valtakunta",
+    "native_name": "𒆳𒈪𒋫𒀭𒉌 (māt Mitanni)",
+    "alternate_names": [
+      "Hanigalbat",
+      "Nahrima"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Late Bronze Age Hurrian Empire",
+    "year_start": -1600,
+    "year_end": -1200,
+    "period_label": "c. 1600 BCE – 1200 BCE",
+    "period_label_fi": "n. 1600 eaa. – 1200 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mitanni",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mitanni",
+    "wikidata_id": "Q180736",
+    "summary_en": "A Hurrian-speaking empire of northern Mesopotamia and Syria ruled by an Indo-Aryan warrior aristocracy known as Maryannu. A prominent great power in the Amarna diplomatic letters alongside Egypt, Babylonia, and Hatti, Mitanni dominated ancient trade routes until it was fractured by internal civil discord and conquered by the Middle Assyrian Empire.",
+    "summary_fi": "Hurrinkielinen pronssikauden suurvalta Pohjois-Mesopotamiassa ja Syyriassa, jota johti indoiranilaisperäinen maryannu-soturiaatelisto. Mitanni oli 1400-luvulla eaa. Lähi-idän johtavia valtoja ja kävi diplomaattista kirjeenvaihtoa Egyptin faaraoiden kanssa, kunnes valtakunta joutui heettiläisten ja keskiassyrialaisten valloitusten puristukseen.",
+    "capital": "Washukanni",
+    "feature_name_matches": [
+      "Mitanni",
+      "Hanigalbat"
+    ]
+  },
+  {
+    "slug": "amorites",
+    "name": "Amorites",
+    "name_fi": "Amorilaiset",
+    "native_name": "𒈥𒌅 (Martu / Amurru)",
+    "alternate_names": [
+      "Amurru",
+      "Kingdom of Amurru"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Bronze Age Semitic Dynasties",
+    "year_start": -2400,
+    "year_end": -1200,
+    "period_label": "c. 2400 BCE – 1200 BCE",
+    "period_label_fi": "n. 2400 eaa. – 1200 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Amorites",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Amorilaiset",
+    "wikidata_id": "Q203597",
+    "summary_en": "An ancient Semitic-speaking pastoralist and urbanized population originating from the Syrian desert and Levant who migrated extensively into Mesopotamia during the late third and early second millennium BCE. Amorite leaders founded renowned Mesopotamian dynasties, most notably Hammurabi's First Dynasty of Babylon and the kingdoms of Mari and Yamhad.",
+    "summary_fi": "Luoteisseemiläinen paimentolais- ja kaupunkilaiskansa, joka vaelsi Syyriasta Mesopotamiaan 2000-luvun eaa. lopulla. Amorilaiset perustivat useita Lähi-idän merkittävimmistä dynastioista, mukaan lukien Babylonin ensimmäisen dynastian, jota johti Hammurabi, sekä Marin ja Jamhadin mahtavat kuningaskunnat.",
+    "capital": "Mari, Babylon, Aleppo",
+    "feature_name_matches": [
+      "Amorites",
+      "Amurru"
+    ]
+  },
+  {
+    "slug": "aramean-kingdoms",
+    "name": "Arameans",
+    "name_fi": "Aramilaiset",
+    "native_name": "ܐܪ̈ܡܝܐ (Ārāmāyē)",
+    "alternate_names": [
+      "Aramaean Kingdoms",
+      "Aram-Damascus",
+      "Aram"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-levant",
+    "historical_period": "Iron Age Levantine Kingdoms",
+    "year_start": -1200,
+    "year_end": -732,
+    "period_label": "c. 1200 BCE – 732 BCE",
+    "period_label_fi": "n. 1200 eaa. – 732 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Arameans",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Aramilaiset",
+    "wikidata_id": "Q200549",
+    "summary_en": "A Northwest Semitic confederation of pastoralist tribes and monarchies that emerged throughout the Levant, Syria, and Mesopotamia following the Bronze Age Collapse. Establishing influential kingdoms such as Aram-Damascus and Bit-Adini, their alphabetic Aramaic tongue spread so widely through overland trade that it became the lingua franca of the entire Near East for over a millennium.",
+    "summary_fi": "Luoteisseemiläinen kansa ja kuningaskuntien verkosto, joka nousi merkittävään asemaan Syyriassa ja Mesopotamiassa pronssikauden romahduksen jälkeen. Heidän keskeisiä valtioitaan oli Aram-Damaskos. Heidän helppokäyttöinen aakkosellinen aramean kielensä levisi kaupan myötä koko Lähi-idän valtakieleksi ja diplomatian kieleksi vuosisatojen ajaksi.",
+    "capital": "Damascus, Hamath, Guzana",
+    "feature_name_matches": [
+      "Arameans",
+      "state societies and Aramaean kingdoms"
+    ]
+  },
+  {
+    "slug": "kingdom-of-david-and-solomon",
+    "name": "Kingdom of David and Solomon",
+    "name_fi": "Daavidin ja Salomon kuningaskunta",
+    "native_name": "מַמְלֶכֶת יִשְׂרָאֵל וִיהוּדָה (Mamlekhet Yisra'el vi-Yhudah)",
+    "alternate_names": [
+      "United Monarchy",
+      "Kingdom of Israel and Judah",
+      "United Monarchy of Israel"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-levant",
+    "historical_period": "Iron Age IIA Levant",
+    "year_start": -1050,
+    "year_end": -930,
+    "period_label": "c. 1050 BCE – 930 BCE",
+    "period_label_fi": "n. 1050 eaa. – 930 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Israelin_ja_Juudan_yhdistynyt_kuningaskunta",
+    "wikidata_id": "Q1339069",
+    "summary_en": "The biblical United Monarchy established in the highlands of Canaan under kings Saul, David, and Solomon according to the Hebrew Bible and Levantine archaeology. Headquartered in Jerusalem, the kingdom unified the twelve tribes, fortified key strategic gateways like Megiddo and Hazor, and erected the First Temple before fracturing into the separate northern Kingdom of Israel and southern Kingdom of Judah.",
+    "summary_fi": "Raamatullinen ja historiallinen yhdistynyt kuningaskunta Kanaanin ylängöllä, joka yhdisti Israelin ja Juudan heimot kuningas Daavidin ja Salomon hallituskausilla. Pääkaupungistaan Jerusalemista käsin valtakunta hallitsi Levantin keskeisiä kauppareittejä ja rakensi ensimmäisen temppelin ennen jakautumistaan pohjoiseen Israeliin ja eteläiseen Juudaan.",
+    "capital": "Jerusalem, Hebron",
+    "feature_name_matches": [
+      "Kingdom of David and Solomon"
+    ]
+  },
+  {
+    "slug": "kingdom-of-judah",
+    "name": "Kingdom of Judah",
+    "name_fi": "Juudan kuningaskunta",
+    "native_name": "מַמְלֶכֶת יְהוּדָה (Mamlekhet Yehudah)",
+    "alternate_names": [
+      "Judea",
+      "Judah",
+      "Hasmonean Judea"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-levant",
+    "historical_period": "Iron Age to Hellenistic Levant",
+    "year_start": -930,
+    "year_end": -63,
+    "period_label": "930 BCE – 63 BCE",
+    "period_label_fi": "930 eaa. – 63 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Judah",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Juudan_kuningaskunta",
+    "wikidata_id": "Q45309",
+    "summary_en": "An Iron Age Levantine state ruled by the Davidic dynasty in the Judean highlands with its temple sanctuary in Jerusalem. After surviving the Neo-Assyrian conquest that obliterated northern Israel, Judah was sacked by Nebuchadnezzar II of Babylon in 586 BCE, precipitating the Babylonian Exile, before reconstituting in the Second Temple era and briefly regaining full sovereignty under the Hasmoneans.",
+    "summary_fi": "Daavidin suvun hallitsema valtio Juudean vuoristossa, jonka uskonnollisena ja poliittisena keskuksena toimi Jerusalemin temppeli. Valtakunta säilyi Assurin tuhotessa pohjoisen Israelin, kunnes Uus-Babylonia valloitti sen vuonna 586 eaa. aloittaen Babylonin vankeuden. Juutalaisten palattua alue kukoisti toisen temppelin aikana ja itsenäistyi uudelleen makkabilaiskapinan myötä hasmonealaisten johdolla.",
+    "capital": "Jerusalem",
+    "feature_name_matches": [
+      "Judea"
+    ]
+  },
+  {
+    "slug": "canaanite-civilization",
+    "name": "Canaan",
+    "name_fi": "Kanaanilainen kulttuuri",
+    "native_name": "𐤊𐤍𐤏𐤍 (Kna'an)",
+    "alternate_names": [
+      "Canaanites",
+      "Land of Canaan"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-levant",
+    "historical_period": "Bronze Age Levant",
+    "year_start": -3000,
+    "year_end": -1200,
+    "period_label": "c. 3000 BCE – 1200 BCE",
+    "period_label_fi": "n. 3000 eaa. – 1200 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Canaan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kanaaninmaa",
+    "wikidata_id": "Q13526191",
+    "summary_en": "The Semitic culture and confederation of city-states that populated the coastal Levant and interior plains from the Sinai to northern Syria during the Bronze Age. Known for prosperous Mediterranean maritime commerce, purple dye production, and early proto-Sinaitic alphabetic scripts, Canaan served as the cultural bridge between dynastic Egypt and Mesopotamia.",
+    "summary_fi": "Seemiläinen kulttuuripiiri ja itsenäisten kaupunkivaltioiden verkosto Levantin rannikolla ja sisämaassa pronssikaudella. Kanaanilaiset olivat taitavia kauppiaita ja merenkulkijoita, jotka kehittivät varhaisen aakkoskirjoituksen ja purppuravärjäyksen sekä muodostivat keskeisen kulttuurisillan muinaisen Egyptin ja Mesopotamian välille.",
+    "capital": "Megiddo, Hazor, Byblos, Ugarit",
+    "feature_name_matches": [
+      "Canaan"
+    ]
+  },
+  {
+    "slug": "phoenician-civilization",
+    "name": "Phoenicia",
+    "name_fi": "Foinikia",
+    "native_name": "𐤐𐤕 (Pūt) / 𐤊𐤍𐤏𐤍 (Kna'an)",
+    "alternate_names": [
+      "Phoenicians",
+      "Phoenician City-States"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-levant",
+    "historical_period": "Iron Age Maritime Mediterranean",
+    "year_start": -1500,
+    "year_end": -332,
+    "period_label": "c. 1500 BCE – 332 BCE",
+    "period_label_fi": "n. 1500 eaa. – 332 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Phoenicia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Foinikia",
+    "wikidata_id": "Q26961",
+    "summary_en": "A prominent seafaring Semitic civilization originating from coastal cities including Tyre, Sidon, and Byblos in modern Lebanon. Acclaimed as the premier navigators and traders of the Mediterranean, the Phoenicians founded colonies across North Africa and Iberia (notably Carthage) and disseminated the phonetic Phoenician alphabet, the ancestor of modern Greek and Latin scripts.",
+    "summary_fi": "Muinainen seemiläinen merenkulkijakansa nykyisen Libanonin ja Syyrian rannikolta, jonka tärkeimpiä kaupunkivaltioita olivat Tyros, Sidon ja Byblos. Foinikialaiset hallitsivat Välimeren kauppaverkostoja, perustivat siirtokuntia aina Karthagoon ja Espanjaan asti sekä levittivät 22-merkkisen foinikialaisen aakkoston, josta kehittyivät kreikkalainen ja latinalainen kirjaimisto.",
+    "capital": "Tyre, Sidon, Byblos",
+    "feature_name_matches": [
+      "Phoenicia",
+      "Phoenicians"
+    ]
+  },
+  {
+    "slug": "nabataean-kingdom",
+    "name": "Nabataean Kingdom",
+    "name_fi": "Nabatealaisten kuningaskunta",
+    "native_name": "𐢕𐢁𐢋𐢈 (Nabaṭū)",
+    "alternate_names": [
+      "Nabataea",
+      "Nabataeans"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-levant",
+    "historical_period": "Hellenistic to Early Roman Era",
+    "year_start": -312,
+    "year_end": 106,
+    "period_label": "312 BCE – 106 CE",
+    "period_label_fi": "312 eaa. – 106 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nabataean_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nabatealaiset",
+    "wikidata_id": "Q11053",
+    "summary_en": "An affluent ancient Arab commercial kingdom established in the arid desert crossroads of Jordan, southern Syria, and the Negev. With their world-famous rock-carved capital of Petra, the Nabataeans engineered revolutionary water-harvesting hydraulic cisterns and held a lucrative monopoly over the incense, spice, and silk caravan routes until annexing into the Roman Empire under Trajan.",
+    "summary_fi": "Vauras muinainen arabivaltakunta, jonka keskus oli kallioon louhittu lumoava Petran kaupunki nykyisessä Jordaniassa. Nabatealaiset hallitsivat aavikon vaativia oloja nerokkailla vesisäiliö- ja kanavajärjestelmillään ja valvoivat suitsuke- ja maustekaupan tärkeitä karavaanireittejä aina siihen saakka, kun keisari Trajanus liitti alueen Rooman valtakuntaan Arabian provinssina vuonna 106 jaa.",
+    "capital": "Petra, Bostra",
+    "feature_name_matches": [
+      "Nabatean Kingdom",
+      "Nabataean Kingdom"
+    ]
+  },
+  {
+    "slug": "palmyrene-empire",
+    "name": "Palmyrene Empire",
+    "name_fi": "Palmyran valtakunta",
+    "native_name": "ܬܕܡܘܪ (Tadmor)",
+    "alternate_names": [
+      "Palmyra",
+      "Kingdom of Palmyra"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-levant",
+    "historical_period": "Crisis of the Third Century",
+    "year_start": 260,
+    "year_end": 273,
+    "period_label": "260 CE – 273 CE",
+    "period_label_fi": "260 jaa. – 273 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Palmyrene_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Palmyran_valtakunta",
+    "wikidata_id": "Q1295240",
+    "summary_en": "A short-lived breakaway Roman-Syrian empire centered on the wealthy desert oasis city of Palmyra during the Crisis of the Third Century. Led famously by Queen Zenobia following Odaenathus's death, Palmyra rapidly seized control of Roman Syria, Egypt, and southern Anatolia before being defeated and recaptured by Emperor Aurelian in 273 CE.",
+    "summary_fi": "Syyrian aavikolla sijainneesta rikkaasta Palmyran keidaskaupungista käsin hallittu lyhytaikainen suurvalta, joka irtautui Roomasta 200-luvun kriisin aikana. Kuningatar Zenobian johdolla Palmyra laajentui kattamaan Syyrian, Egyptin ja suuria osia Anatoliasta, kunnes Rooman keisari Aurelianus murskasi kapinan ja palautti alueet keisarikunnan yhteyteen vuonna 273 jaa.",
+    "capital": "Palmyra (Tadmor)",
+    "feature_name_matches": [
+      "Palmyrene Empire",
+      "Palmyra"
+    ]
+  },
+  {
+    "slug": "urartu-kingdom",
+    "name": "Kingdom of Urartu",
+    "name_fi": "Urartun valtakunta",
+    "native_name": "𒆳𒌒𒊏𒅈𒌅 (māt Urartu) / 𒆳𒁉𒀀𒄿𒈾 (Biainili)",
+    "alternate_names": [
+      "Urartu",
+      "Kingdom of Van",
+      "Ararat"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-anatolia",
+    "historical_period": "Iron Age Armenian Highlands",
+    "year_start": -860,
+    "year_end": -590,
+    "period_label": "860 BCE – 590 BCE",
+    "period_label_fi": "860 eaa. – 590 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Urartu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Urartu",
+    "wikidata_id": "Q185247",
+    "summary_en": "An Iron Age highland civilization centered around Lake Van in the Armenian Highlands, eastern Anatolia, and northwestern Iran. Urartu built cyclopean stone mountain fortresses, elaborate irrigation aqueducts, and mastered sophisticated bronze and iron metallurgy, serving as the northern geopolitical rival to the Neo-Assyrian Empire.",
+    "summary_fi": "Rautakautinen korkeakulttuuri Armenian ylängöllä Vanjärven ympärillä nykyisen Itä-Turkin, Armenian ja Luoteis-Iranin alueella. Urartulaiset olivat mestarillisia pronssin- ja raudanvalajia, jotka rakensivat jylhiä kivilinnoituksia ja kehittyneitä keinokastelukanavia toimien Uus-Assyrian merkittävimpänä pohjoisena kilpailijana.",
+    "capital": "Tushpa (Van)",
+    "feature_name_matches": [
+      "Urartu"
+    ]
+  },
+  {
+    "slug": "phrygian-kingdom",
+    "name": "Phrygia",
+    "name_fi": "Fryygian kuningaskunta",
+    "native_name": "Phrygía",
+    "alternate_names": [
+      "Phrygians",
+      "Kingdom of Phrygia"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-anatolia",
+    "historical_period": "Iron Age Anatolian Kingdom",
+    "year_start": -1200,
+    "year_end": -675,
+    "period_label": "c. 1200 BCE – 675 BCE",
+    "period_label_fi": "n. 1200 eaa. – 675 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Phrygia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Fryygia",
+    "wikidata_id": "Q130253",
+    "summary_en": "An ancient Indo-European kingdom established in west-central Anatolia along the Sangarios River following the collapse of the Hittite Empire. Famed in classical Greek mythology for legendary rulers like King Midas and Gordias (of the Gordian Knot), Phrygia dominated trade across Anatolia before being devastated by Cimmerian nomadic incursions in the 7th century BCE.",
+    "summary_fi": "Muinainen indoeurooppalainen valtio Länsi- ja Keski-Anatoliassa heettiläisen valtakunnan romahtamisen jälkeen. Pääkaupungistaan Gordionista käsin hallinnut Fryygia tuli tunnetuksi kreikkalaisessa mytologiassa kuningas Midaksen kultaisesta kosketuksesta ja Gordionin solmusta. Valtakunta kukoisti kaupan ja metallitöiden keskuksena kimmerialaisten valloitukseen saakka.",
+    "capital": "Gordion",
+    "feature_name_matches": [
+      "Phrygians",
+      "Phrygia"
+    ]
+  },
+  {
+    "slug": "kingdom-of-cappadocia",
+    "name": "Kingdom of Cappadocia",
+    "name_fi": "Kappadokian kuningaskunta",
+    "native_name": "𐎣𐎫𐎱𐎬𐎢𐎣 (Katpatuka)",
+    "alternate_names": [
+      "Cappadocia",
+      "Ariarathid Cappadocia"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-anatolia",
+    "historical_period": "Hellenistic Anatolia",
+    "year_start": -320,
+    "year_end": 17,
+    "period_label": "320 BCE – 17 CE",
+    "period_label_fi": "320 eaa. – 17 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Cappadocia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kappadokian_kuningaskunta",
+    "wikidata_id": "Q737703",
+    "summary_en": "An Iranian and Hellenistic kingdom established in the rugged tablelands of central Anatolia by the Ariarathid dynasty following the campaigns of Alexander the Great. Navigating alliances between the Seleucids, Pergamon, Pontus, and the Roman Republic, Cappadocia maintained autonomy until its peaceful incorporation into the Roman Empire under Tiberius in 17 CE.",
+    "summary_fi": "Hellenistinen ja persialaisvaikutteinen kuningaskunta Keski-Anatolian ylängöllä, jonka Ariarathes I:n dynastia perusti Aleksanteri Suuren valloitusten jälkeen. Strategisella vuoristoalueella sijainnut valtio säilytti itsenäisyytensä taitavalla diplomatialla seleukidien ja Pontoksen välissä, kunnes keisari Tiberius liitti sen Rooman provinssiksi vuonna 17 jaa.",
+    "capital": "Mazaca (Caesarea)",
+    "feature_name_matches": [
+      "Cappadocia"
+    ]
+  },
+  {
+    "slug": "colchis-kingdom",
+    "name": "Kingdom of Colchis",
+    "name_fi": "Kolkhiksen kuningaskunta",
+    "native_name": "კოლხეთი (Kolkheti)",
+    "alternate_names": [
+      "Colchis",
+      "Egrisi"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-anatolia",
+    "historical_period": "Classical Antiquity in the South Caucasus",
+    "year_start": -1300,
+    "year_end": -164,
+    "period_label": "c. 1300 BCE – 164 BCE",
+    "period_label_fi": "n. 1300 eaa. – 164 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Colchis",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kolkhis",
+    "wikidata_id": "Q170532",
+    "summary_en": "An ancient Kartvelian kingdom and region located on the eastern coast of the Black Sea in modern western Georgia. Renowned throughout classical antiquity as the mythical destination of Jason and the Argonauts in search of the Golden Fleece, Colchis possessed advanced metallurgy, gold panning, and thriving trade relationships with coastal Greek colonies.",
+    "summary_fi": "Muinainen eteläkaukasialainen kuningaskunta Mustanmeren itärannikolla nykyisen Georgian alueella. Kreikkalaisessa mytologiassa se tunnettiin Jasonin ja argonauttien kultaisen taljan etsinnän määränpäänä. Kolkhis oli kuuluisa kehittyneestä kulta- ja pronssisepäntyöstään sekä kaupallisista suhteistaan kreikkalaisiin siirtokuntiin.",
+    "capital": "Phasis, Kutaisi",
+    "feature_name_matches": [
+      "Colchis"
+    ]
+  },
+  {
+    "slug": "ebla-civilization",
+    "name": "Kingdom of Ebla",
+    "name_fi": "Eblan valtakunta",
+    "native_name": "𒌈𒆷 (Ebla)",
+    "alternate_names": [
+      "Ebla",
+      "Tell Mardikh"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Early to Middle Bronze Age Syria",
+    "year_start": -3500,
+    "year_end": -1600,
+    "period_label": "c. 3500 BCE – 1600 BCE",
+    "period_label_fi": "n. 3500 eaa. – 1600 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ebla",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ebla",
+    "wikidata_id": "Q5743",
+    "summary_en": "One of the earliest kingdoms of northern Syria, excavated at Tell Mardikh south of Aleppo. Ebla controlled crucial trade networks linking the Mediterranean coast with Mesopotamia, and its royal palace archives yielded over 20,000 cuneiform tablets inscribed in Sumerian and the distinct Semitic Eblaite language.",
+    "summary_fi": "Varhainen muinainen seemiläinen kuningaskunta ja kaupunkivaltio Pohjois-Syyriassa lähellä nykyistä Aleppoa. Ebla hallitsi tärkeitä kauppareittejä Mesopotamian ja Välimeren välillä. Sen kuninkaallisen palatsin raunioista löydetyt yli 20 000 savitaulua sisältävät vanhimmat tunnetut todisteet eblan kielestä ja Lähi-idän laajasta diplomaattisesta verkostosta.",
+    "capital": "Ebla",
+    "feature_name_matches": [
+      "Ebla"
+    ]
+  },
+  {
+    "slug": "ubaid-culture",
+    "name": "Ubaid Culture",
+    "name_fi": "Ubaid-kulttuuri",
+    "native_name": "Ubaid",
+    "alternate_names": [
+      "Ubaid period",
+      "Tell al-'Ubaid"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "ancient-mesopotamia",
+    "historical_period": "Chalcolithic Southern Mesopotamia",
+    "year_start": -6500,
+    "year_end": -3800,
+    "period_label": "c. 6500 BCE – 3800 BCE",
+    "period_label_fi": "n. 6500 eaa. – 3800 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ubaid_period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ubaid-kausi",
+    "wikidata_id": "Q245159",
+    "summary_en": "A prehistoric Chalcolithic culture of Mesopotamia centered in the alluvial plains of southern Iraq. The Ubaid horizon marked the emergence of the earliest planned urban communities, distinctive painted pottery, large tripartite mudbrick temple structures at Eridu, and the hydraulic irrigation agriculture that set the stage for Sumerian civilization.",
+    "summary_fi": "Esihistoriallinen kalkoliittinen (kuparikautinen) kulttuuri Etelä-Mesopotamiassa, joka edelsi Sumerin kaupunkivaltioita. Ubaid-kaudella kehitettiin Mesopotamian ensimmäiset laajamittaiset keinokastelujärjestelmät, tunnusomainen maalattu keramiikka sekä Eridun varhaiset mutatiilitemppelit, jotka loivat perustan kaupungistumiselle.",
+    "capital": "Eridu",
+    "feature_name_matches": [
+      "Ubaid"
+    ]
+  }
+]

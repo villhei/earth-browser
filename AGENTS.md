@@ -26,14 +26,18 @@ This guide provides technical specifications, architectural patterns, and develo
 │       └── ice-sheets/                        # Reconstructed vector shapefiles
 │           ├── north-america/                 # Laurentide & Cordilleran ice sheets (Dyke et al., WGS84)
 │           └── eurasia/                       # Scandinavian & Barents ice sheets (DATED-1, Lambert Azimuthal)
+├── CULTURE_METADATA_EXPANSION.md          # Multi-agent parallel task guide & missing entries inventory
 ├── migrations/
 │   ├── 20260828000000_create_eras_and_features.ts # Base schema (eras & era_features with PostGIS geom)
 │   ├── 20260831000000_add_border_precision_partof_subjecto.ts # Lineage & precision columns
 │   ├── 20260831010000_add_elevation_tier.ts       # Precalculated 3D elevation tiers for overlapping polygons
+│   ├── 20260921000000_create_culture_metadata.ts  # Canonical culture metadata table & era_features linkage
 │   └── seed/                                      # 54 Historical GeoJSON datasets (world_*.geojson)
 ├── scripts/
 │   ├── generate_prehistoric_textures.py       # Python pipeline for bathymetry & ice sheet texture generation
-│   └── update_geojson_datasets.ts             # Automated dataset sync & validation from upstream repository
+│   ├── update_geojson_datasets.ts             # Automated dataset sync & validation from upstream repository
+│   ├── seed_culture_metadata_batch.ts         # Parallel batch seeder for culture metadata
+│   └── culture_metadata_status.ts             # Completion tracking and missing entries generator
 ├── src/
 │   ├── app/
 │   │   ├── App.tsx             # Root layout, state orchestration, era fetching & feature selection

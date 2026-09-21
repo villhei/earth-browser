@@ -1,0 +1,422 @@
+[
+  {
+    "slug": "sasanian-empire",
+    "name": "Sasanian Empire",
+    "name_fi": "Sassanidien valtakunta",
+    "native_name": "𐭠𐭩𐭥𐭠𐭭𐭱𐭲𐭥𐭩 (Ērānshahr)",
+    "alternate_names": [
+      "Sassanian Empire",
+      "Neo-Persian Empire",
+      "Empire of the Iranians"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Late Antiquity",
+    "year_start": 224,
+    "year_end": 651,
+    "period_label": "224 CE – 651 CE",
+    "period_label_fi": "224 jaa. – 651 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sasanian_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sassanidit",
+    "wikidata_id": "Q83891",
+    "summary_en": "The last pre-Islamic Persian empire, founded by Ardashir I after overthrowing the Parthian Arsacid dynasty. Ruling from Mesopotamia to Central Asia, the Sasanian state elevated Zoroastrianism to official state religion, contested hegemony with the Roman and Byzantine empires for over four centuries, and established sophisticated court traditions, monumental rock reliefs, and urban centers.",
+    "summary_fi": "Viimeinen esi-islamilainen persialainen suurvalta, jonka Ardašir I perusti syrjäytettyään parthialaiset arsakidit vuonna 224 jaa. Sassanidit nostivat zarathustralaisuuden valtionuskonnoksi, kävivät vuosisataisia kamppailuja Roomaa ja Bysanttia vastaan ja loivat loisteliaan persialaisen hovikulttuurin aina arabivalloitukseen (651 jaa.) asti.",
+    "capital": "Ctesiphon, Istakhr",
+    "feature_name_matches": [
+      "Sasanian Empire",
+      "Sassanid Empire",
+      "Sasanian dependencies",
+      "Sassanian Empire"
+    ]
+  },
+  {
+    "slug": "parthian-empire",
+    "name": "Parthian Empire",
+    "name_fi": "Parthian valtakunta",
+    "native_name": "𐭀𐭓𐭔𐭊 (Aršak)",
+    "alternate_names": [
+      "Arsacid Empire",
+      "Parthia"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Classical Antiquity / Hellenistic to Roman Era",
+    "year_start": -247,
+    "year_end": 224,
+    "period_label": "247 BCE – 224 CE",
+    "period_label_fi": "247 eaa. – 224 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Parthian_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Parthia",
+    "wikidata_id": "Q190060",
+    "summary_en": "A major ancient Iranian empire founded by Arsaces I of the Parni tribe after conquering Parthia from the Hellenistic Seleucid Empire. Controlling the Iranian Plateau and Mesopotamia, the Parthians controlled Silk Road trade, built an empire supported by devastating horse archer armies, and formed Rome's primary geopolitical rival in the East.",
+    "summary_fi": "Merkittävä muinainen persialainen suurvalta, jonka Aršakes I perusti parnien heimon vallattua Parthian maakunnan hellenistisiltä seleukideilta. Halliten Iranin ylänköä ja Mesopotamiaa valtakunta valvoi silkkitien kauppaa, nojasi legendaarisiin hevosjousiampujiinsa ja toimi Rooman merkittävimpänä itäisenä kilpailijana vuosisatojen ajan.",
+    "capital": "Nisa, Hecatompylos, Ctesiphon, Ecbatana",
+    "feature_name_matches": [
+      "Parthian Empire",
+      "Parthia",
+      "Arsacid Empire"
+    ]
+  },
+  {
+    "slug": "safavid-empire",
+    "name": "Safavid Empire",
+    "name_fi": "Safavidien valtakunta",
+    "native_name": "دولت صفویه (Dowlat-e Safaviyeh)",
+    "alternate_names": [
+      "Safavid Iran",
+      "Safavid Dynasty"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Early Modern Period",
+    "year_start": 1501,
+    "year_end": 1736,
+    "period_label": "1501 CE – 1736 CE",
+    "period_label_fi": "1501 jaa. – 1736 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Safavid_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Safavidit",
+    "wikidata_id": "Q170595",
+    "summary_en": "One of the most consequential dynasties of early modern Iran, established by Shah Ismail I in 1501. The Safavids established Twelver Shia Islam as the official religion, unified the Iranian realm under indigenous Persian sovereignty, and presided over a golden age of architecture, miniature painting, and commerce centered at Isfahan under Shah Abbas the Great.",
+    "summary_fi": "Uuden ajan alun merkittävimpiä persialaisia suurvaltoja, jonka šaahi Ismail I perusti vuonna 1501. Safavidit vakiinnuttivat 12-šiialaisuuden valtionuskonnoksi, yhdistivät Iranin ylängön ja loivat Isfahaniin kukoistavan pääkaupungin, joka tunnetaan loisteliaasta arkkitehtuuristaan, matonkudonnastaan ja miniatyyritaiteestaan.",
+    "capital": "Tabriz, Qazvin, Isfahan",
+    "feature_name_matches": [
+      "Safavid Empire",
+      "Safavids"
+    ]
+  },
+  {
+    "slug": "suren-kingdom",
+    "name": "Suren Kingdom",
+    "name_fi": "Surenoikeuksien kuningaskunta",
+    "native_name": "House of Suren / Indo-Parthian",
+    "alternate_names": [
+      "Indo-Parthian Kingdom",
+      "House of Suren",
+      "Gondopharid Dynasty"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Classical Antiquity",
+    "year_start": 19,
+    "year_end": 226,
+    "period_label": "19 CE – 226 CE",
+    "period_label_fi": "19 jaa. – 226 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Indo-Parthian_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Indoparthialaiset",
+    "wikidata_id": "Q1139414",
+    "summary_en": "An autonomous Parthian splinter state established by Gondophares of the aristocratic House of Suren across Arachosia, Seistan, and the northwestern Indus Valley. Merging Iranian feudal rule with Greco-Buddhist and Indian culture, the kingdom controlled vital commercial mountain passes between Persia and India until subjugated by the Kushans.",
+    "summary_fi": "Arsakidien valtakunnasta irtautunut valtakunta Arakhosiassa, Seistanissa ja Luoteis-Intiassa, jonka perusti Surenoikeuksien mahtisukuun kuulunut Gondofares. Valtakunta yhdisti iranilaista feodaalihallintoa intialaiseen ja hellenistiseen kulttuuriin halliten tärkeitä kauppasolia ennen sulautumistaan Kušana-valtakuntaan.",
+    "capital": "Taxila, Kabul",
+    "feature_name_matches": [
+      "Suren Kingdom",
+      "Indo-Parthian Kingdom"
+    ]
+  },
+  {
+    "slug": "samanid-empire",
+    "name": "Samanid Empire",
+    "name_fi": "Samanidien valtakunta",
+    "native_name": "سامانیان (Sāmāniyān)",
+    "alternate_names": [
+      "Samanid Dynasty",
+      "Samanid Emirate"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Islamic Golden Age",
+    "year_start": 819,
+    "year_end": 999,
+    "period_label": "819 CE – 999 CE",
+    "period_label_fi": "819 jaa. – 999 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Samanid_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Samanidit",
+    "wikidata_id": "Q206219",
+    "summary_en": "A Sunni Muslim Iranian empire centered in Khorasan and Transoxiana that ignited the medieval Persian Cultural Renaissance. Claiming descent from Sasanian nobility, the Samanid court in Bukhara patronized the rebirth of Persian literature, sponsoring polymaths like Ibn Sina (Avicenna) and poets like Rudaki and Ferdowsi.",
+    "summary_fi": "Sunnalainen persialainen valtakunta Horasanissa ja Transoxianassa, jonka kukoistus käynnisti persialaisen kulttuurirenessanssin. Samanidien hovissa Buharassa elvytettiin uusi persian kirjakieli ja runous sekä tuettiin aikakauden suuria tieteilijöitä kuten Avicennaa ja runoilijoita kuten Rudakia ja Ferdousia.",
+    "capital": "Bukhara, Samarkand",
+    "feature_name_matches": [
+      "Samanid Empire",
+      "Samanids"
+    ]
+  },
+  {
+    "slug": "buyid-dynasty",
+    "name": "Buyid Dynasty",
+    "name_fi": "Bujidit",
+    "native_name": "آل بویه (Āl-e Buyeh)",
+    "alternate_names": [
+      "Buyid Emirate",
+      "Buyid Empire",
+      "Buwayhids"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Islamic Golden Age / Iranian Intermezzo",
+    "year_start": 934,
+    "year_end": 1062,
+    "period_label": "934 CE – 1062 CE",
+    "period_label_fi": "934 jaa. – 1062 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Buyid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bujidit",
+    "wikidata_id": "Q271810",
+    "summary_en": "A Shia Iranian dynasty originating from Daylam in northern Iran that ruled central and southern Iran and captured the Abbasid capital of Baghdad. Dominating the 'Iranian Intermezzo', the Buyids treated the Sunni Caliph as a figurehead while actively reviving ancient Persian imperial ceremonies and the title of Shahanshah (King of Kings).",
+    "summary_fi": "Pohjois-Iranin Daylamista peräisin ollut šiialainen dynastia, joka valloitti läntisen ja eteläisen Iranin sekä Bagdadin kalifin kaupungin. 'Iranilaisen välinäytöksen' huipentumana bujidit säilyttivät kalifin nimellisenä hengellisenä johtajana samalla kun he ottivat uudelleen käyttöön muinaisen šaahien šaahin arvonimen.",
+    "capital": "Shiraz, Rayy, Baghdad",
+    "feature_name_matches": [
+      "Buyid dynasty",
+      "Buyid Emirate",
+      "Buyids"
+    ]
+  },
+  {
+    "slug": "saffarid-dynasty",
+    "name": "Saffarid Dynasty",
+    "name_fi": "Saffaridit",
+    "native_name": "صفاریان (Saffāriyān)",
+    "alternate_names": [
+      "Saffarids",
+      "Saffarid Emirate"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Islamic Golden Age / Iranian Intermezzo",
+    "year_start": 861,
+    "year_end": 1003,
+    "period_label": "861 CE – 1003 CE",
+    "period_label_fi": "861 jaa. – 1003 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saffarid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saffaridit",
+    "wikidata_id": "Q219446",
+    "summary_en": "An Iranian Muslim dynasty founded by Ya'qub ibn al-Layth al-Saffar, who rose from coppersmithing in Sistan to conquering vast swathes of Iran and Afghanistan. The Saffarid state was groundbreaking in re-establishing Persian language as the courtly medium of administration and literature, challenging Abbasid political dominance.",
+    "summary_fi": "Persialainen muslimidynastia, jonka perusti kuparisepästä sotapäälliköksi noussut Ja'qub ibn al-Laith Sistanissa. Saffaridit valloittivat laajoja alueita Iranista ja Afganistanista ja olivat ensimmäinen valtakunta, joka palautti persian kielen viralliseksi hovi- ja hallintokieleksi arabian ohi.",
+    "capital": "Zaranj",
+    "feature_name_matches": [
+      "Saffarids",
+      "Saffarid Dynasty"
+    ]
+  },
+  {
+    "slug": "greco-bactrian-kingdom",
+    "name": "Greco-Bactrian Kingdom",
+    "name_fi": "Kreikkalais-baktrialainen kuningaskunta",
+    "native_name": "Βασιλεία τῆς Βακτριανῆς",
+    "alternate_names": [
+      "Bactria",
+      "Greco-Bactria"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Hellenistic Period",
+    "year_start": -256,
+    "year_end": -120,
+    "period_label": "256 BCE – 120 BCE",
+    "period_label_fi": "256 eaa. – 120 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Greco-Bactrian_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kreikkalais-baktrialainen_kuningaskunta",
+    "wikidata_id": "Q188981",
+    "summary_en": "An eastern Hellenistic kingdom formed when Diodotus I declared independence from the Seleucid Empire in ancient Bactria and Sogdiana. Known anciently as the 'empire of a thousand cities', it merged Greek administrative systems and urban classical arts with eastern Iranian civilizations before expanding across the Hindu Kush into India.",
+    "summary_fi": "Antiikin maailman itäisin hellenistinen valtio, joka syntyi Diodotos I:n irtaannuttua Seleukidien valtakunnasta Baktriassa ja Sogdianassa (nykyisen Afganistanin ja Keski-Aasian alueella). 'Tuhannen kaupungin maaksi' kutsuttu kuningaskunta yhdisti kreikkalaista kulttuuria ja taidetta itäiranilaisiin sivilisaatioihin.",
+    "capital": "Bactra, Ai-Khanoum",
+    "feature_name_matches": [
+      "Bactria",
+      "Greco-Bactrian Kingdom"
+    ]
+  },
+  {
+    "slug": "iranian-pastoralists",
+    "name": "Iranian Pastoralists",
+    "name_fi": "Iranilaiset paimentolaiset",
+    "native_name": "Proto-Iranian Pastoralists",
+    "alternate_names": [
+      "Early Iranian Tribes",
+      "Proto-Iranians"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Bronze Age / Early Iron Age",
+    "year_start": -2000,
+    "year_end": -550,
+    "period_label": "2000 BCE – 550 BCE",
+    "period_label_fi": "2000 eaa. – 550 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Iranian_peoples",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Iranilaiset_kansat",
+    "wikidata_id": "Q41746",
+    "summary_en": "Pastoralist Indo-European groups migrating from the Eurasian steppes into the Iranian plateau during the second and early first millennia BCE. Possessing skilled metallurgy, chariot warfare, and equestrian pastoralism, these populations introduced Indo-Iranian languages and established the cultural bedrock for the Medes and Persians.",
+    "summary_fi": "Puolinomadisia indoeurooppalaisia paimentolaisheimoja, jotka vaelsivat Keski-Aasian aroilta Iranin ylängölle toisella ja ensimmäisellä vuosituhannella eaa. He toivat mukanaan hevoskasvatus- ja metallurgiataitonsa sekä indoiranilaiset kielet luoden pohjan meedialaisten ja persialaisten sivilisaatioille.",
+    "capital": null,
+    "feature_name_matches": [
+      "Iranian pastoralists",
+      "Proto-Iranian tribes"
+    ]
+  },
+  {
+    "slug": "median-empire",
+    "name": "Median Empire",
+    "name_fi": "Meedian valtakunta",
+    "native_name": "Māda",
+    "alternate_names": [
+      "Medes",
+      "Media"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Iron Age / Ancient Near East",
+    "year_start": -678,
+    "year_end": -549,
+    "period_label": "678 BCE – 549 BCE",
+    "period_label_fi": "678 eaa. – 549 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Median_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Meedia",
+    "wikidata_id": "Q46325",
+    "summary_en": "An ancient Iranian confederation and empire centered in Ecbatana. Under King Cyaxares, the Medes allied with the Neo-Babylonian Empire to overthrow the Neo-Assyrian Empire at the sack of Nineveh in 612 BCE, creating a regional superpower spanning from central Iran to the Halys River before falling to Cyrus the Great.",
+    "summary_fi": "Antiikin luoteis-iranilainen kuningaskunta, jonka pääkaupunkina toimi Ekbatana. Kuningas Kyaksareen johdolla meedialaiset liittoutuivat Uus-Babylonian kanssa ja tuhosivat Assyrian valtakunnan valloittaen Niniven vuonna 612 eaa., kunnes Kyyros Suuri yhdisti meedialaiset ja persialaiset Akemenidien valtakunnaksi.",
+    "capital": "Ecbatana",
+    "feature_name_matches": [
+      "Medes",
+      "Median Empire",
+      "Media"
+    ]
+  },
+  {
+    "slug": "ghaznavid-empire",
+    "name": "Ghaznavid Empire",
+    "name_fi": "Ghaznavidien valtakunta",
+    "native_name": "غزنویان (Ġaznaviyān)",
+    "alternate_names": [
+      "Ghaznavids",
+      "Ghaznavid Dynasty",
+      "Ghaznavid Emirate"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Islamic Golden Age",
+    "year_start": 977,
+    "year_end": 1186,
+    "period_label": "977 CE – 1186 CE",
+    "period_label_fi": "977 jaa. – 1186 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ghaznavids",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ghaznavidit",
+    "wikidata_id": "Q181580",
+    "summary_en": "A Persianate Muslim empire founded by Turkic mamluk commander Sabuktigin that ruled across eastern Iran, Afghanistan, and northwestern India. Under Mahmud of Ghazni, the empire launched military campaigns across northern India while lavishly patronizing Persian art, history, and science at its cosmopolitan capital of Ghazni.",
+    "summary_fi": "Turkkilaistaustaisen sotilasorjan Sabuktiginin perustama persialaistunut muslimivaltakunta, joka hallitsi Afganistania, itäistä Irania ja Luoteis-Intiaa. Mahmud Ghaznilaisen johdolla valtakunnasta kehittyi mahtava sotilasmahti ja persialaisen kulttuurin keskus, jonka hovissa vaikuttivat muun muassa Al-Biruni ja runoilija Ferdousi.",
+    "capital": "Ghazni, Lahore",
+    "feature_name_matches": [
+      "Ghaznavid Emirate",
+      "Ghaznavids",
+      "Ghaznavid Empire"
+    ]
+  },
+  {
+    "slug": "khwarazmian-empire",
+    "name": "Khwarazmian Empire",
+    "name_fi": "Horezmin valtakunta",
+    "native_name": "خوارزمشاهیان (Khwārazmshāhiyān)",
+    "alternate_names": [
+      "Khwarazmian dynasty",
+      "Khwarezmian Empire",
+      "Khwarizm"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "High Middle Ages",
+    "year_start": 1077,
+    "year_end": 1231,
+    "period_label": "1077 CE – 1231 CE",
+    "period_label_fi": "1077 jaa. – 1231 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Khwarazmian_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Horezmin_valtakunta",
+    "wikidata_id": "Q631343",
+    "summary_en": "A vast Persianate Sunni Muslim empire ruled by the Anushtegin dynasty from Khwarazm on the Amu Darya river. Subjugating the Seljuks and Qara Khitai across Iran and Transoxiana, the empire reached immense territorial breadth before catastrophic annihilation during the Mongol invasion led by Genghis Khan between 1219 and 1221.",
+    "summary_fi": "Laaja persialais-turkkilainen muslimivaltakunta Keski-Aasiassa ja Iranissa, jonka keskus sijaitsi Horezmissa Amudarja-joen suistossa. Valtakunta kohosi 1200-luvun alussa alueen johtavaksi mahdiksi syrjäytettyään seldžukit, kunnes Tšingis-kaanin johtamat mongolit hävittivät sen vuosina 1219–1221.",
+    "capital": "Gurganj, Samarkand, Tabriz",
+    "feature_name_matches": [
+      "Khwarazmian dynasty",
+      "Khwarazmian Empire",
+      "Khwarizm"
+    ]
+  },
+  {
+    "slug": "afsharid-empire",
+    "name": "Afsharid Empire",
+    "name_fi": "Afšaridien valtakunta",
+    "native_name": "سلسله افشار (Afshār)",
+    "alternate_names": [
+      "Afsharid Iran",
+      "Afsharid Dynasty"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Early Modern Period",
+    "year_start": 1736,
+    "year_end": 1796,
+    "period_label": "1736 CE – 1796 CE",
+    "period_label_fi": "1736 jaa. – 1796 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Afsharid_Iran",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Af%C5%A1aridit",
+    "wikidata_id": "Q38861",
+    "summary_en": "An Iranian empire founded by brilliant military strategist Nader Shah of the Afshar tribe after expelling Afghan invaders and replacing the Safavids. Renowned as the 'Sword of Persia', Nader Shah launched victorious campaigns against the Ottomans, Russians, and the Mughal Empire—capturing Delhi in 1739 and returning with the Peacock Throne.",
+    "summary_fi": "Nadir Šahin perustama iranilainen dynastia ja suurvalta, joka syrjäytti heikentyneet safavidit vuonna 1736. 'Persian miekkana' tunnettu Nadir Šah teki menestyksekkäitä sotaretkiä Osmanien valtakuntaa, Venäjää ja Suurmogulien valtakuntaa vastaan ryöstäen Delhin vuonna 1739 ja tuoden mukanaan riikinkukkovaltaistuimen.",
+    "capital": "Mashhad",
+    "feature_name_matches": [
+      "Afsharid Empire",
+      "Afsharids"
+    ]
+  },
+  {
+    "slug": "qajar-iran",
+    "name": "Qajar Iran",
+    "name_fi": "Qajar-dynastia",
+    "native_name": "دولت علیّه ایران (Dowlat-e 'Aliyye-ye Irān)",
+    "alternate_names": [
+      "Qajar Dynasty",
+      "Qajar Empire",
+      "Sublime State of Persia"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Modern Era / 18th to early 20th Century",
+    "year_start": 1789,
+    "year_end": 1925,
+    "period_label": "1789 CE – 1925 CE",
+    "period_label_fi": "1789 jaa. – 1925 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Qajar_Iran",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Qajar-dynastia",
+    "wikidata_id": "Q189326",
+    "summary_en": "An Iranian royal dynasty founded by Agha Mohammad Khan, who reunified the Iranian realm and established Tehran as the imperial capital. Traversing imperial rivalry between the British and Russian empires during the Great Game, Qajar Persia initiated administrative and educational reforms culminating in the Persian Constitutional Revolution of 1906.",
+    "summary_fi": "Agha Muhammad Khanin perustama hallitsijasuku, joka yhdisti Persian ja siirsi maan pääkaupungin Teheraniin. 1800-luvulla Qajar-Iran joutui Venäjän ja Ison-Britannian etupiirikamppailun keskelle 'Suuressa pelissä', mikä johti modernisaatiopyrintöihin ja vuoden 1906 perustuslailliseen vallankumoukseen.",
+    "capital": "Tehran",
+    "feature_name_matches": [
+      "Qajar Iran",
+      "Qajar Dynasty",
+      "Qajars"
+    ]
+  },
+  {
+    "slug": "azande-kingdom",
+    "name": "Azande Kingdom",
+    "name_fi": "Azande-valtakunta",
+    "native_name": "Azande / Avongara",
+    "alternate_names": [
+      "Azandes",
+      "Zande Kingdom",
+      "Zande"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Medieval to Early Modern Central Africa",
+    "year_start": 900,
+    "year_end": 1905,
+    "period_label": "c. 900 CE – 1905 CE",
+    "period_label_fi": "n. 900 jaa. – 1905 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Zande_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zandet",
+    "wikidata_id": "Q838948",
+    "summary_en": "A historical kingdom and ethnic society centered in the Uele and Mbomu river basins of Central Africa, led by the noble Vongara clan. Known for skilled ironworking and military chiefdoms, this feature is mapped under Iranian/Persian in the legacy upstream dataset due to historical classification mapping.",
+    "summary_fi": "Keski-Afrikassa Uele- ja Mbomu-jokien vesistöalueilla kukoistanut historiallinen kuningaskunta ja kansa, jota johti Vongara-aatelissuku. Se tunnettiin taitavasta raudankäsittelystään ja linnoitetuista päällikkökunnistaan; kohde on luokiteltu historiallisista syistä vanhassa pohja-aineistossa persialais-iranilaiseen ryhmään.",
+    "capital": null,
+    "feature_name_matches": [
+      "Azandes",
+      "Azande"
+    ]
+  }
+]

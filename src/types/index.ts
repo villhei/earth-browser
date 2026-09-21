@@ -29,7 +29,31 @@ export interface GeoJSONProperties {
   elevationTier?: number | null
   labelLng?: number
   labelLat?: number
+  culture_metadata?: CultureMetadata | null
   [key: string]: any
+}
+
+export interface CultureMetadata {
+  id?: string
+  slug: string
+  name: string
+  name_fi?: string | null
+  native_name?: string | null
+  alternate_names?: string[]
+  culture_group: string
+  lineage_id?: string | null
+  historical_period?: string | null
+  year_start?: number | null
+  year_end?: number | null
+  period_label?: string | null
+  period_label_fi?: string | null
+  wikipedia_url_en?: string | null
+  wikipedia_url_fi?: string | null
+  wikidata_id?: string | null
+  summary_en?: string | null
+  summary_fi?: string | null
+  capital?: string | null
+  metadata?: Record<string, any>
 }
 
 export interface GeoJSONGeometry {

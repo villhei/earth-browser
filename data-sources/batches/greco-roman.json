@@ -1,0 +1,424 @@
+[
+  {
+    "slug": "roman-empire",
+    "name": "Roman Empire",
+    "name_fi": "Rooman keisarikunta",
+    "native_name": "Imperium Rōmānum",
+    "alternate_names": [
+      "Imperial Rome",
+      "Principate",
+      "Dominate"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "rome",
+    "historical_period": "Classical Antiquity / Roman Imperial Period",
+    "year_start": -27,
+    "year_end": 395,
+    "period_label": "27 BCE – 395 CE",
+    "period_label_fi": "27 eaa. – 395 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Roman_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Rooman_keisarikunta",
+    "wikidata_id": "Q2277",
+    "summary_en": "The post-republican period of ancient Rome, established under Augustus in 27 BCE following the fall of the Roman Republic. At its peak under Trajan, the empire encircled the Mediterranean Sea and governed territories spanning Europe, North Africa, and the Near East with sophisticated civil infrastructure, legions, and codified law.",
+    "summary_fi": "Antiikin Rooman historian keisarillinen aikakausi, joka alkoi Augustuksen noustua valtaan vuonna 27 eaa. tasavallan kaaduttua. Laajimmillaan keisari Trajanuksen aikana valtakunta hallitsi koko Välimeren aluetta kattaen osia Euroopasta, Pohjois-Afrikasta ja Lähi-idästä kehittyneen lainsäädännön ja infrastruktuurin turvin.",
+    "capital": "Rome, Ravenna, Mediolanum",
+    "feature_name_matches": [
+      "Roman Empire"
+    ]
+  },
+  {
+    "slug": "western-roman-empire",
+    "name": "Western Roman Empire",
+    "name_fi": "Länsi-Rooman valtakunta",
+    "native_name": "Imperium Rōmānum Occidentāle",
+    "alternate_names": [
+      "Western Empire",
+      "Occidental Roman Empire"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "western-rome",
+    "historical_period": "Late Antiquity",
+    "year_start": 395,
+    "year_end": 476,
+    "period_label": "395 CE – 476 CE",
+    "period_label_fi": "395 jaa. – 476 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Western_Roman_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/L%C3%A4nsi-Rooman_valtakunta",
+    "wikidata_id": "Q182844",
+    "summary_en": "The western half of the Roman Empire following the administrative division by Emperor Theodosius I in 395 CE. Beset by severe economic strain, political fragmentation, and successive Migration Period invasions, the Western Empire collapsed in 476 CE when Romulus Augustulus was deposed by Odoacer.",
+    "summary_fi": "Rooman valtakunnan läntinen puolisko, joka syntyi keisari Theodosius I:n jaettua valtakunnan vuonna 395 jaa. Talouskriisien, sisäisen hajaannuksen ja kansainvaellusten heikentämä Länsi-Rooma luhistui lopullisesti vuonna 476 jaa., kun Odoaker syrjäytti keisari Romulus Augustuluksen.",
+    "capital": "Mediolanum, Ravenna, Rome",
+    "feature_name_matches": [
+      "Western Roman Empire"
+    ]
+  },
+  {
+    "slug": "roman-tetrarchy",
+    "name": "Roman Tetrarchy",
+    "name_fi": "Rooman tetrarkia",
+    "native_name": "Tetrarchia",
+    "alternate_names": [
+      "Rule of Four",
+      "Diocletian's Tetrarchy"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "rome",
+    "historical_period": "Late Antiquity / Dominate",
+    "year_start": 293,
+    "year_end": 324,
+    "period_label": "293 CE – 324 CE",
+    "period_label_fi": "293 jaa. – 324 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tetrarchy",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tetrarkia",
+    "wikidata_id": "Q179679",
+    "summary_en": "The system of fourfold imperial government established by Emperor Diocletian in 293 CE to resolve the Crisis of the Third Century. Power was divided between two senior Augusti and two junior Caesars across strategic border theaters, stabilizing administrative and military governance until Constantine reunified the empire in 324 CE.",
+    "summary_fi": "Keisari Diocletianuksen vuonna 293 jaa. perustama nelihallintajärjestelmä 200-luvun kriisin ratkaisemiseksi ja imperiumin vakauttamiseksi. Valta jaettiin kahden vanhemman hallitsijan (Augustus) ja kahden nuoremman apukeisarin (Caesar) kesken, kunnes Konstantinus Suuri yhdisti valtakunnan jälleen vuonna 324 jaa.",
+    "capital": "Nicomedia, Mediolanum, Sirmium, Augusta Treverorum",
+    "feature_name_matches": [
+      "Rome (Constantinus)",
+      "Rome (Diocletianus)",
+      "Rome (Galerius)",
+      "Rome (Maximian)",
+      "Roman Tetrarchy"
+    ]
+  },
+  {
+    "slug": "byzantine-empire",
+    "name": "Byzantine Empire",
+    "name_fi": "Bysantin valtakunta",
+    "native_name": "Βασιλεία Ῥωμαίων (Basileia Rhōmaiōn)",
+    "alternate_names": [
+      "Eastern Roman Empire",
+      "Byzantium",
+      "Empire of the Greeks"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "byzantium",
+    "historical_period": "Middle Ages / Late Antiquity to Late Medieval",
+    "year_start": 395,
+    "year_end": 1453,
+    "period_label": "395 CE – 1453 CE",
+    "period_label_fi": "395 jaa. – 1453 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bysantin_valtakunta",
+    "wikidata_id": "Q12544",
+    "summary_en": "The direct continuation of the Roman Empire in its eastern provinces throughout the Middle Ages, centered on Constantinople. Characterized by Greek language, Orthodox Christian theology, and Justinian Roman law, Byzantium stood as a beacon of culture and defense against eastern expansions until its fall to the Ottomans in 1453.",
+    "summary_fi": "Rooman valtakunnan kreikankielinen ja kristillinen itäinen puolisko, jonka pääkaupunkina toimi Konstantinopoli läpi keskiajan. Bysantti säilytti roomalaisen oikeuden ja kreikkalais-roomalaisen kulttuuriperinnön yhdistäen sen ortodoksiseen uskoon aina vuoteen 1453 saakka, jolloin osmanit valloittivat sen pääkaupungin.",
+    "capital": "Constantinople",
+    "feature_name_matches": [
+      "Byzantine Empire",
+      "Byzantine Empire (Eastern Roman Empire)",
+      "Eastern Roman Empire"
+    ]
+  },
+  {
+    "slug": "macedonian-empire",
+    "name": "Macedonian Empire",
+    "name_fi": "Makedonian valtakunta",
+    "native_name": "Βασιλεία Μακεδόνων (Basileia Makedonōn)",
+    "alternate_names": [
+      "Empire of Alexander",
+      "Argead Empire",
+      "Macedon"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "macedon",
+    "historical_period": "Classical Antiquity / Hellenistic Period",
+    "year_start": -808,
+    "year_end": -168,
+    "period_label": "808 BCE – 168 BCE",
+    "period_label_fi": "808 eaa. – 168 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Makedonia_(antiikin_valtakunta)",
+    "wikidata_id": "Q83958",
+    "summary_en": "An ancient kingdom on the northern periphery of Classical Greece, elevated by Philip II and his son Alexander the Great into an intercontinental world empire. Alexander's lightning conquests from Greece and Egypt to the Indus Valley inaugurated the Hellenistic period, fundamentally diffusing Greek culture, language, and urban architecture.",
+    "summary_fi": "Antiikin kreikkalainen kuningaskunta pohjoisella Balkanilla, jonka Filippos II ja hänen poikansa Aleksanteri Suuri nostivat maailmanvallaksi. Aleksanterin sotaretkien myötä valtakunta ulottui Kreikasta ja Egyptistä aina Indus-joelle asti käynnistäen hellenistisen kulttuurin ja kreikan kielen leviämisen kautta Lähi-idän.",
+    "capital": "Aigai, Pella, Babylon",
+    "feature_name_matches": [
+      "Empire of Alexander",
+      "Macedon",
+      "Macedonia",
+      "Macedon and Hellenic League",
+      "Macedonian Empire"
+    ]
+  },
+  {
+    "slug": "seleucid-empire",
+    "name": "Seleucid Empire",
+    "name_fi": "Seleukidien valtakunta",
+    "native_name": "Βασιλεία τῶν Σελευκιδῶν (Basileia tōn Seleukidōn)",
+    "alternate_names": [
+      "Seleucid Kingdom",
+      "Seleucid Realm",
+      "Syro-Macedonian Empire"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "macedon",
+    "historical_period": "Hellenistic Period",
+    "year_start": -312,
+    "year_end": -63,
+    "period_label": "312 BCE – 63 BCE",
+    "period_label_fi": "312 eaa. – 63 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Seleucid_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Seleukidit",
+    "wikidata_id": "Q93180",
+    "summary_en": "A major Hellenistic realm founded by Seleucus I Nicator during the Partition of Babylon following the death of Alexander the Great. Spanning from Anatolia and Syria across Mesopotamia to the borders of India, the Seleucids blended Greek urban polis traditions with ancient Near Eastern and Persian institutions.",
+    "summary_fi": "Hellenistinen suurvalta, jonka Seleukos I Nikator perusti Aleksanteri Suuren valtakunnan jakautuessa. Anatoliasta ja Syyriasta aina Mesopotamiaan ja Persiaan ulottunut valtakunta yhdisti kreikkalaista kaupunkikulttuuria ja hallintoa itämaisiin perinteisiin ennen Rooman ja Parthian suorittamaa valloitusta.",
+    "capital": "Seleucia on the Tigris, Antioch",
+    "feature_name_matches": [
+      "Seleucid Kingdom",
+      "Seleucid Empire",
+      "Seleucids"
+    ]
+  },
+  {
+    "slug": "ptolemaic-kingdom",
+    "name": "Ptolemaic Kingdom",
+    "name_fi": "Ptolemaiosten hallitsijasuku",
+    "native_name": "Πτολεμαϊκὴ βασιλεία (Ptolemaïkḕ basileía)",
+    "alternate_names": [
+      "Ptolemaic Empire",
+      "Ptolemaic Egypt",
+      "Lagid Kingdom"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "macedon",
+    "historical_period": "Hellenistic Period",
+    "year_start": -305,
+    "year_end": -30,
+    "period_label": "305 BCE – 30 BCE",
+    "period_label_fi": "305 eaa. – 30 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ptolemaiosten_hallitsijasuku",
+    "wikidata_id": "Q125447",
+    "summary_en": "A prominent Hellenistic dynasty based in Egypt founded by Ptolemy I Soter, general of Alexander the Great. Centered at Alexandria, renowned for its Mouseion, Library, and Great Lighthouse, the kingdom effectively fused Greek administrative mastery with traditional Egyptian pharaonic legitimacy until Cleopatra VII's defeat in 30 BCE.",
+    "summary_fi": "Aleksanteri Suuren sotapäällikön Ptolemaios I Soterin Egyptiin perustama hellenistinen kuningaskunta. Sen pääkaupunki Aleksandria nousi maailman sivistyksen ja tieteen keskukseksi kuuluisine kirjastoineen ja majakoineen, kunnes valtakunta liitettiin Rooman keisarikuntaan Kleopatra VII:n kuoltua vuonna 30 eaa.",
+    "capital": "Alexandria",
+    "feature_name_matches": [
+      "Ptolemaic Kingdom",
+      "Ptolemaic Empire",
+      "Ptolemaic Egypt"
+    ]
+  },
+  {
+    "slug": "bosporan-kingdom",
+    "name": "Bosporan Kingdom",
+    "name_fi": "Bosporoksen valtakunta",
+    "native_name": "Βασίλειον τοῦ Κιμμερικοῦ Βοσπόρου",
+    "alternate_names": [
+      "Bosporian Kingdom",
+      "Kingdom of the Cimmerian Bosporus"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "macedon",
+    "historical_period": "Classical Antiquity / Hellenistic to Roman Era",
+    "year_start": -438,
+    "year_end": 370,
+    "period_label": "438 BCE – 370 CE",
+    "period_label_fi": "438 eaa. – 370 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bosporan_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bosporoksen_valtakunta",
+    "wikidata_id": "Q212629",
+    "summary_en": "An ancient Greco-Scythian kingdom situated in the eastern Crimea and Taman Peninsula across the Kerch Strait. As the longest-surviving Roman client kingdom, the Bosporan realm was essential for supplying grain to Aegean cities and synthesized Hellenic colonial culture with steppe Sarmatian and Scythian customs.",
+    "summary_fi": "Antiikin kreikkalais-skyyttiläinen valtio Krimin niemimaan itäosassa ja Tamanin niemimaalla. Se säilyi vuosisatoja merkittävänä Rooman vasallivaltiona ja Välimeren vilja-aittana, jossa yhdistyivät kreikkalainen kaupunkikulttuuri sekä sarmaattien ja skyyttien aroperinteet.",
+    "capital": "Panticapaeum",
+    "feature_name_matches": [
+      "Bosporan Kingdom",
+      "Bosporian Kingdom"
+    ]
+  },
+  {
+    "slug": "kingdom-of-pergamon",
+    "name": "Kingdom of Pergamon",
+    "name_fi": "Pergamonin valtakunta",
+    "native_name": "Βασίλειον τοῦ Περγάμου",
+    "alternate_names": [
+      "Pergamon",
+      "Attalid Kingdom"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "macedon",
+    "historical_period": "Hellenistic Period",
+    "year_start": -281,
+    "year_end": -133,
+    "period_label": "281 BCE – 133 BCE",
+    "period_label_fi": "281 eaa. – 133 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Attalid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Attalidit",
+    "wikidata_id": "Q271887",
+    "summary_en": "A rich Hellenistic state in western Anatolia governed by the Attalid dynasty. Celebrated for its dramatic hilltop acropolis, the colossal Great Altar of Pergamon, and a legendary library of parchment manuscripts, the realm allied closely with the Roman Republic before King Attalus III peacefully willed it to Rome in 133 BCE.",
+    "summary_fi": "Attalidien hallitsijasuvun johtama vauras hellenistinen kuningaskunta Vähän-Aasian länsirannikolla. Se tunnettiin mahtavasta akropoliistaan, Pergamonin alttarista sekä laajasta pergamenttikokoelmastaan, kunnes kuningas Attalos III testamenttasi valtakuntansa Rooman tasavallalle vuonna 133 eaa.",
+    "capital": "Pergamon",
+    "feature_name_matches": [
+      "Pergamon",
+      "Kingdom of Pergamon"
+    ]
+  },
+  {
+    "slug": "minoan-civilization",
+    "name": "Minoan Civilization",
+    "name_fi": "Minolainen kulttuuri",
+    "native_name": "Μινωικός πολιτισμός",
+    "alternate_names": [
+      "Minoans",
+      "Cretan Bronze Age"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "greece",
+    "historical_period": "Bronze Age Aegean",
+    "year_start": -3000,
+    "year_end": -1100,
+    "period_label": "3000 BCE – 1100 BCE",
+    "period_label_fi": "3000 eaa. – 1100 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Minoan_civilization",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Minolainen_kulttuuri",
+    "wikidata_id": "Q134178",
+    "summary_en": "A Bronze Age Aegean civilization on the island of Crete, regarded as Europe's earliest literate civilization. Renowned for its labyrinthine multi-story palace complexes such as Knossos and Phaistos, vibrant naturalistic fresco frescoes, maritime thalassocracy, and the undeciphered Linear A script, it shaped ancient Mediterranean culture.",
+    "summary_fi": "Pronssikautinen egealainen korkeakulttuuri Kreetan saarella, jota pidetään Euroopan varhaisimpana kehittyneenä sivilisaationa. Se tunnettiin laajoista palatsikeskuksistaan kuten Knossoksesta, värikkäistä luontoaiheisista freskoistaan, merimahdistaan sekä toistaiseksi tulkitsemattomasta Linear A -kirjoituksestaan.",
+    "capital": "Knossos, Phaistos, Malia",
+    "feature_name_matches": [
+      "Minoan",
+      "Minoan Civilization",
+      "Minoans"
+    ]
+  },
+  {
+    "slug": "cycladic-culture",
+    "name": "Cycladic Culture",
+    "name_fi": "Kykladinen kulttuuri",
+    "native_name": "Κυκλαδικός πολιτισμός",
+    "alternate_names": [
+      "Cycladic Civilization",
+      "Early Cycladic"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "greece",
+    "historical_period": "Early Bronze Age Aegean",
+    "year_start": -3300,
+    "year_end": -1100,
+    "period_label": "3300 BCE – 1100 BCE",
+    "period_label_fi": "3300 eaa. – 1100 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cycladic_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kykladinen_kulttuuri",
+    "wikidata_id": "Q319080",
+    "summary_en": "An early Bronze Age culture that developed across the Cyclades islands in the Aegean Sea. Cycladic society is universally recognized for its minimalist, flat-faced white marble female figurines, advanced maritime seafaring, and metallurgy, serving as a primary cultural conduit between Anatolia and mainland Greece.",
+    "summary_fi": "Varhaispronssikautinen saaristokulttuuri Egeanmeren Kykladeilla. Se tunnetaan erityisesti minimalistisista ja geometrisista valkoisista marmoripatsaistaan, kehittyneestä merenkulustaan ja varhaisesta metallurgiastaan, toimien keskeisenä kulttuurisiltana Manner-Kreikan, Kreetan ja Anatolian välillä.",
+    "capital": "Akrotiri, Phylakopi, Skarkos",
+    "feature_name_matches": [
+      "Cycladic",
+      "Cycladic culture",
+      "Cycladic Culture"
+    ]
+  },
+  {
+    "slug": "mycenaean-greece",
+    "name": "Mycenaean Greece",
+    "name_fi": "Mykeneläinen kulttuuri",
+    "native_name": "Μυκηναϊκός πολιτισμός",
+    "alternate_names": [
+      "Mycenaean Civilization",
+      "Achaean Greece"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "greece",
+    "historical_period": "Late Bronze Age Aegean",
+    "year_start": -1750,
+    "year_end": -1050,
+    "period_label": "1750 BCE – 1050 BCE",
+    "period_label_fi": "1750 eaa. – 1050 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mykenel%C3%A4inen_kulttuuri",
+    "wikidata_id": "Q174780",
+    "summary_en": "The final stage of the Bronze Age in ancient mainland Greece, celebrated as the heroic age immortalized in Homer's Iliad. Led by warrior aristocracies ruling from fortified citadel palaces with cyclopean masonry, the Mycenaeans developed the Linear B script, recording the earliest known written Greek language.",
+    "summary_fi": "Pronssikauden loppuvaiheen kreikkalainen korkeakulttuuri Manner-Kreikassa, jota heijastavat Homeroksen eepokset Ilias ja Odysseia. Soturieliitin johtamat linnoitetut palatsikeskukset kuten Mykene ja Tiryns hallitsivat aluetta käyttäen Lineaari-B-kirjoitusta, joka tallensi varhaisinta tunnettua kreikan kieltä.",
+    "capital": "Mycenae, Tiryns, Pylos",
+    "feature_name_matches": [
+      "Mycenaean Greece",
+      "Mycenaean",
+      "Mycenaeans"
+    ]
+  },
+  {
+    "slug": "kingdom-of-epirus",
+    "name": "Kingdom of Epirus",
+    "name_fi": "Epeiroksen kuningaskunta",
+    "native_name": "Βασίλειον τῆς Ἠπείρου (Basileion tēs Epeirou)",
+    "alternate_names": [
+      "Epirus",
+      "Molossian Kingdom",
+      "Epirote League"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "greece",
+    "historical_period": "Classical Antiquity / Hellenistic Period",
+    "year_start": -470,
+    "year_end": -146,
+    "period_label": "470 BCE – 146 BCE",
+    "period_label_fi": "470 eaa. – 146 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Epirus_(ancient_state)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Epeiros_(antiikin_alue)",
+    "wikidata_id": "Q538328",
+    "summary_en": "An ancient Greek regional state located in northwestern Greece and southern Albania, governed by the Molossian Aeacidae dynasty. Under King Pyrrhus, Epirus launched ambitious military interventions in southern Italy and Sicily against Rome and Carthage, famous for hard-won tactical victories that caused irreparable strategic losses.",
+    "summary_fi": "Luoteis-Kreikassa ja Etelä-Albaniassa sijainnut antiikin kreikkalainen valtio, jota hallitsi Aiakidien dynastia. Kuningas Pyrrhoksen johdolla Epeiros haastoi nousevan Rooman ja Karthagon sotaretkillään Italiassa ja Sisiliassa, synnyttäen historiallisen käsitteen raskaasti maksetusta 'Pyrrhoksen voitosta'.",
+    "capital": "Passaron, Ambracia",
+    "feature_name_matches": [
+      "Epirus",
+      "Kingdom of Epirus"
+    ]
+  },
+  {
+    "slug": "latin-empire",
+    "name": "Latin Empire",
+    "name_fi": "Latinalainen keisarikunta",
+    "native_name": "Imperium Romaniae",
+    "alternate_names": [
+      "Empire of Romania",
+      "Frankish Empire of Constantinople"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "byzantium",
+    "historical_period": "High Middle Ages / Crusades",
+    "year_start": 1204,
+    "year_end": 1261,
+    "period_label": "1204 CE – 1261 CE",
+    "period_label_fi": "1204 jaa. – 1261 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Latin_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Latinalainen_keisarikunta",
+    "wikidata_id": "Q125514",
+    "summary_en": "A feudal Crusader state founded in Constantinople following the sack of the Byzantine capital by western knights of the Fourth Crusade in 1204. Supported by the Republic of Venice, the Latin Empire sought to establish Roman Catholic hegemony over the Byzantine realm until Constantinople was liberated by the Empire of Nicaea in 1261.",
+    "summary_fi": "Neljännen ristiretken ritarien ja venetsialaisten Konstantinopolin valloituksen jälkeen vuonna 1204 perustama katolinen ristiretkivaltio. Sen tavoitteena oli alistaa Bysantti paavilliselle ja frankkilaiselle vallalle, kunnes Nikaian keisarikunta valtasi Konstantinopolin takaisin vuonna 1261 palauttaen Bysantin keisarikunnan.",
+    "capital": "Constantinople",
+    "feature_name_matches": [
+      "Latin Empire",
+      "Latin Empire of Constantinople"
+    ]
+  },
+  {
+    "slug": "empire-of-trebizond",
+    "name": "Empire of Trebizond",
+    "name_fi": "Trapezuntin keisarikunta",
+    "native_name": "Βασίλειον τῶν Μεγάλων Κομνηνῶν",
+    "alternate_names": [
+      "Trebizond",
+      "Trapezuntine Empire",
+      "Grand Komnenoi"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "byzantium",
+    "historical_period": "Late Middle Ages",
+    "year_start": 1204,
+    "year_end": 1461,
+    "period_label": "1204 CE – 1461 CE",
+    "period_label_fi": "1204 jaa. – 1461 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Empire_of_Trebizond",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Trapezuntin_keisarikunta",
+    "wikidata_id": "Q178895",
+    "summary_en": "A Greek Byzantine successor state established in the Pontic Alps along the Black Sea coast following the Fourth Crusade. Ruled by descendants of the imperial Komnenos dynasty, Trebizond flourished as a wealthy mercantile terminal for eastern silk trade routes until falling to Ottoman Sultan Mehmed II in 1461.",
+    "summary_fi": "Bysantin seuraajavaltio Mustanmeren etelärannikolla Pontoksen alueella, jonka Komnenosten hallitsijasuku perusti neljännen ristiretken jälkeen. Trapezunt toimi vauraana silkkitien kauppasatamana ja Bysantin kulttuuriperinnön linnakkeena aina vuoteen 1461 saakka, jolloin osmanit valloittivat sen kahdeksan vuotta Konstantinopolin jälkeen.",
+    "capital": "Trebizond",
+    "feature_name_matches": [
+      "Trebizond",
+      "Empire of Trebizond"
+    ]
+  }
+]

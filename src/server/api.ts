@@ -79,6 +79,27 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
                 'elevationTier', f.elevation_tier,
                 'labelLng', ROUND(f.label_lng::numeric, 4),
                 'labelLat', ROUND(f.label_lat::numeric, 4)
+              ) || (
+                CASE WHEN cm.id IS NOT NULL THEN jsonb_build_object(
+                  'culture_metadata', jsonb_build_object(
+                    'id', cm.id,
+                    'slug', cm.slug,
+                    'name', cm.name,
+                    'name_fi', cm.name_fi,
+                    'native_name', cm.native_name,
+                    'culture_group', cm.culture_group,
+                    'historical_period', cm.historical_period,
+                    'year_start', cm.year_start,
+                    'year_end', cm.year_end,
+                    'period_label', cm.period_label,
+                    'period_label_fi', cm.period_label_fi,
+                    'wikipedia_url_en', cm.wikipedia_url_en,
+                    'wikipedia_url_fi', cm.wikipedia_url_fi,
+                    'summary_en', cm.summary_en,
+                    'summary_fi', cm.summary_fi,
+                    'capital', cm.capital
+                  )
+                ) ELSE '{}'::jsonb END
               )
             )
           ),
@@ -87,6 +108,7 @@ apiRouter.get("/eras/:idOrSlug/geojson", async (req: Request, res: Response) => 
       ) AS geojson
       FROM eras e
       LEFT JOIN era_features f ON f.era_id = e.id
+      LEFT JOIN culture_metadata cm ON f.culture_id = cm.id
       WHERE ${whereClause}
       GROUP BY e.id, e.name, e.slug, e.year_start, e.year_end, e.year_label, e.description;
     `
