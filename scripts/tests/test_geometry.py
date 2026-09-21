@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from paleomasks.contract import ContractError
 from paleomasks.geometry import (analyze_sampling_losses, close_diagnostic_ring, coverage_rgba,
                                 filter_category, marine_changes, point_pixel, polygon_pixel_coverage,
-                                project_ring, rasterize, unwrap_ring)
+                                project_ring, rasterize, refine_sampling_misses, unwrap_ring)
 
 
 def ring(west, south, east, north):
@@ -18,6 +18,32 @@ def ring(west, south, east, north):
 
 
 class GeometryTests(unittest.TestCase):
+    def test_local_window_matches_global_union_with_holes_and_longitude_wrap(self):
+        polygons = [[unwrap_ring(ring(170, -20, -170, 20)),
+                     unwrap_ring(ring(175, -10, -175, 10))], [ring(179.25, -.75, 180.5, .75)]]
+        full, _ = rasterize(polygons, 360, 180, 8)
+        for column, row in ((0, 90), (359, 90), (0, 75), (180, 90)):
+            local, _ = rasterize(polygons, 360, 180, 8, window=(column, row, 1, 1))
+            self.assertEqual(local[0, 0], full[row, column])
+        dense, _ = rasterize([[ring(0, -1, 1, 0)]], 360, 180, 256, window=(180, 90, 1, 1))
+        self.assertEqual(dense[0, 0], 255)  # 65,536 hits must not overflow uint16.
+
+    def test_refinement_retains_tiny_features_and_unions_overlaps_without_alpha_addition(self):
+        tiny = [ring(.001, -.051, .051, -.001)]
+        polygons = [[ring(.75, -1, 1, 0)], tiny, tiny]
+        alpha, hits = rasterize(polygons, 360, 180, 8)
+        self.assertEqual(hits[1:], [0, 0])
+        before = alpha.copy()
+        alpha, hits, report = refine_sampling_misses(polygons, alpha, hits, 360, 180)
+        self.assertTrue(hits[1] and hits[2])
+        self.assertEqual(len(report), 1)
+        samples = report[0]["samples_per_axis"]
+        expected, _ = rasterize(polygons[:2], 360, 180, samples, window=(180, 90, 1, 1))
+        self.assertEqual(alpha[90, 180], expected[0, 0])
+        self.assertGreater(alpha[90, 180], before[90, 180])
+        alpha[90, 180] = before[90, 180]
+        np.testing.assert_array_equal(alpha, before)
+
     def test_unclosed_ring_fails_unless_diagnostic_repair_is_explicit(self):
         unclosed = ring(0, 0, 1, 1)[:-1]
         with self.assertRaisesRegex(ContractError, "Unclosed source ring"):

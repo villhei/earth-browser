@@ -113,16 +113,23 @@ def project_ring(coordinates, crs, tolerance_degrees=360 / 4096 / 32):
     return unwrap_ring(out, pole=pole)
 
 
-def rasterize(polygons, width=4096, height=2048, samples=4):
+def rasterize(polygons, width=4096, height=2048, samples=4, window=None):
     """List of polygons, each a list of unwrapped exterior/interior rings.
 
     Holes are subtracted within each polygon before union, so another polygon's
     island inside a hole survives. Longitude is periodic; latitude never wraps.
     Returns coverage plus per-polygon subpixel hits for quantization diagnostics.
     """
-    require(type(samples) is int and 1 <= samples <= 8, "Sampling factor must be 1..8")
+    require(type(samples) is int and 1 <= samples <= (256 if window is not None else 8),
+            "Sampling factor must be 1..8 globally or 1..256 for a local window")
+    left, top, out_width, out_height = window if window is not None else (0, 0, width, height)
+    require(all(type(v) is int for v in (left, top, out_width, out_height))
+            and 0 <= left < left + out_width <= width and 0 <= top < top + out_height <= height,
+            "Invalid raster window")
+    require(window is None or out_width * out_height <= 64, "Refinement window must be at most 64 pixels")
     w, h = width * samples, height * samples
-    canvas = np.zeros((h, w), dtype=bool)
+    x0, y0 = left * samples, top * samples
+    canvas = np.zeros((out_height * samples, out_width * samples), dtype=bool)
     hits = []
     for polygon in polygons:
         edges = []
@@ -145,8 +152,8 @@ def rasterize(polygons, width=4096, height=2048, samples=4):
             hits.append(0)
             continue
         ymin, ymax = np.minimum(a[:, 1], b[:, 1]), np.maximum(a[:, 1], b[:, 1])
-        row_start = max(0, math.ceil(float(ymin.min()) - .5))
-        row_end = min(h, math.ceil(float(ymax.max()) - .5))
+        row_start = max(y0, math.ceil(float(ymin.min()) - .5))
+        row_end = min(y0 + out_height * samples, math.ceil(float(ymax.max()) - .5))
         count = 0
         for r in range(row_start, row_end):
             y = r + .5
@@ -154,7 +161,7 @@ def rasterize(polygons, width=4096, height=2048, samples=4):
             aa, bb = a[select], b[select]
             intersections = aa[:, 0] + (y - aa[:, 1]) * (bb[:, 0] - aa[:, 0]) / (bb[:, 1] - aa[:, 1])
             ids = ring_ids[select]
-            interior = np.zeros(w, dtype=bool)
+            interior = np.zeros(out_width * samples, dtype=bool)
             # Apply periodicity BEFORE ring parity: polar shells and their holes
             # can start at different longitudes and span different unwrapped worlds.
             for ring_index in np.unique(ids):
@@ -164,14 +171,46 @@ def rasterize(polygons, width=4096, height=2048, samples=4):
                     start, end = math.ceil(float(lo) - .5), math.ceil(float(hi) - .5)
                     require(end - start <= w, "Polygon spans more than one world")
                     for shift in range(math.floor(start / w), math.floor((end - 1) / w) + 1):
-                        left, right = max(0, start - shift * w), min(w, end - shift * w)
-                        interior[left:right] ^= True
+                        lo_col = max(x0, start - shift * w)
+                        hi_col = min(x0 + out_width * samples, end - shift * w)
+                        if lo_col < hi_col:
+                            interior[lo_col - x0:hi_col - x0] ^= True
             count += int(np.count_nonzero(interior))
-            canvas[r] |= interior
+            canvas[r - y0] |= interior
         hits.append(count)
-    counts = canvas.reshape(height, samples, width, samples).sum(axis=(1, 3), dtype=np.uint16)
+    counts = canvas.reshape(out_height, samples, out_width, samples).sum(axis=(1, 3), dtype=np.uint32)
     alpha = np.floor(255 * counts.astype(np.float64) / samples ** 2 + .5).astype(np.uint8)
     return alpha, hits
+
+
+def refine_sampling_misses(polygons, alpha, hits, width, height):
+    """Recompute affected pixels as a polygon union with denser local sampling.
+
+    Include all polygons and holes, not just the missed feature, to retain
+    overlaps correctly. Never add alpha values or impose a visibility floor.
+    """
+    losses = analyze_sampling_losses(polygons, hits, width, height)
+    cells = sorted({(p["row"], p["column"]) for loss in losses if loss["outcome"] == "sampling_miss"
+                    for p in loss["pixel_coverage"]})
+    report = []
+    hits = list(hits)
+    for row, column in cells:
+        targets = {loss["polygon_index"] for loss in losses if loss["outcome"] == "sampling_miss"
+                   and any(p["row"] == row and p["column"] == column and p["quantized_alpha"] > 0
+                           for p in loss["pixel_coverage"])}
+        for samples in (32, 64, 128, 256):
+            local, local_hits = rasterize(polygons, width, height, samples, window=(column, row, 1, 1))
+            if all(local_hits[index] > 0 for index in targets):
+                break
+        require(all(local_hits[index] > 0 for index in targets), "Local raster refinement still misses visible geometry")
+        report.append({"row": row, "column": column, "samples_per_axis": samples,
+                       "previous_alpha": int(alpha[row, column]), "refined_alpha": int(local[0, 0]),
+                       "missed_polygon_indices": sorted(targets)})
+        alpha[row, column] = local[0, 0]
+        # Only presence is consumed by the subsequent loss audit; counts at
+        # different sampling resolutions are not added or compared as areas.
+        hits = [max(old, int(new > 0)) for old, new in zip(hits, local_hits)]
+    return alpha, hits, report
 
 
 def _clipped_ring_area(ring, column, row):

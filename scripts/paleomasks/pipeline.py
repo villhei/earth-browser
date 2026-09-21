@@ -125,7 +125,7 @@ def variant(layer):
     raise ContractError(f"Unknown source variant: {name}")
 
 
-def render_member(cache, layer, close_open_rings=False):
+def render_member(cache, layer, close_open_rings=False, tolerance_degrees=360 / 4096 / 32):
     import shapefile
     from pyproj import CRS, Transformer
     from .geometry import close_diagnostic_ring, filter_category, project_ring
@@ -151,7 +151,7 @@ def render_member(cache, layer, close_open_rings=False):
             for ring_index, ring in enumerate(polygon):
                 try:
                     ring, repair = close_diagnostic_ring(ring, close_open_rings)
-                    rings.append(project_ring(ring, layer["crs"]))
+                    rings.append(project_ring(ring, layer["crs"], tolerance_degrees=tolerance_degrees))
                 except ContractError as error:
                     raise ContractError(f"{layer['member_stem']}, record {record_index}, polygon {polygon_index}, ring {ring_index}: {error}") from error
                 if repair:
@@ -162,7 +162,7 @@ def render_member(cache, layer, close_open_rings=False):
                       "projected_vertices": sum(len(r) for p in polygons for r in p),
                       "native_crs": layer["crs"], "target_crs": "EPSG:4326", "axis_order": "longitude,latitude",
                       "projection_pipeline": Transformer.from_crs(layer["crs"], "EPSG:4326", always_xy=True).definition,
-                      "edge_subdivision_tolerance_degrees": 360 / 4096 / 32,
+                      "edge_subdivision_tolerance_degrees": tolerance_degrees,
                       "ring_closure_repairs": repairs,
                       "topology_validation": "not scientifically validated; no self-intersection repair"}
 
@@ -294,6 +294,8 @@ def main(argv=None):
     scope.add_argument("--era")
     scope.add_argument("--all-supported", action="store_true")
     p.add_argument("--output", type=Path, default=DATA / "masks/overlays-v2")
+    p.add_argument("--width", type=int, choices=(4096, 8192), default=4096,
+                   help="Output width; height is half the width. Rasterize original source geometry.")
     p = sub.add_parser("validate-overlay")
     p.add_argument("manifest", type=Path)
     p = sub.add_parser("review-reference", help="Review 10,000 BCE source transfer, coastal coverage and diagnostic previews")
@@ -323,6 +325,9 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         contract, selection, catalog = load_contract()
+        if args.command in ("generate-overlays", "validate-overlay"):
+            from .additional_eras import load_overlay_contract
+            contract, selection, catalog = load_overlay_contract()
         if args.command == "plan":
             print(json.dumps({"era_count": len(catalog), "permitted_margin_uses": contract["permitted_margin_uses"],
                               "legacy_v1_production_masks_supported": 0,
@@ -368,7 +373,7 @@ def main(argv=None):
             from .overlays import generate_overlays
             slugs = {u["era_slug"] for u in contract["permitted_margin_uses"]} if args.all_supported else {args.era}
             require(slugs <= set(catalog), "Unknown catalog era")
-            generate_overlays([e for slug, e in catalog.items() if slug in slugs], contract, selection, catalog, args.cache, args.output)
+            generate_overlays([e for slug, e in catalog.items() if slug in slugs], contract, selection, catalog, args.cache, args.output, width=args.width)
         elif args.command == "coastline-candidates":
             from .coasts import coastline_candidates
             coastline_candidates(args.era, args.ice_package, args.terrain_root, args.output, contract, args.gdal_python)

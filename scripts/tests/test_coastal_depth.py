@@ -7,10 +7,48 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from paleomasks.coastal_depth import coastal_change, ocean_at_level, quantize, save_png, shoreline, white_overlay
+from paleomasks.coastal_depth import ERAS, coastal_change, make_preview, ocean_at_level, quantize, save_png, shoreline, white_overlay
 
 
 class CoastalDepthTests(unittest.TestCase):
+    def test_glacial_depth_change_is_not_clipped_at_old_64_metre_limit(self):
+        z = np.array([[-200., -130., -100., 0.]], np.float32)
+        change, exposed = coastal_change(z, ocean_at_level(z, 0), ocean_at_level(z, -130), -130)
+        np.testing.assert_array_equal(change, [[130, 130, 100, 0]])
+        np.testing.assert_array_equal(exposed, [[False, True, True, False]])
+        encoded = quantize(change, 160, 16)
+        np.testing.assert_allclose(encoded.astype(float) / 65535 * 160, change, atol=160 / 65535 / 2)
+        self.assertLess(int(encoded.max()), 65535)
+
+    def test_preview_adds_a_third_row_for_five_eras(self):
+        with tempfile.TemporaryDirectory() as temp:
+            make_preview(Path(temp), {slug: np.full((4, 8), 255, np.uint8) for slug in ERAS})
+            with Image.open(Path(temp) / "preview.png") as im:
+                self.assertEqual(im.size, (2048, 1752))
+                self.assertEqual(im.getpixel((100, 1300)), (255, 255, 255))
+
+    def test_generated_masks_restore_ice_covered_coasts_without_changing_other_pixels(self):
+        root = Path(__file__).resolve().parents[2] / "output"
+        for slug in ERAS:
+            with self.subTest(era=slug):
+                old = root / "coastal-depth-masks-v4" / slug
+                new = root / "coastal-depth-masks-v5" / slug
+                with Image.open(f"{old}-excluded.png") as im:
+                    excluded = np.asarray(im)[:, :, 3] > 0
+                with Image.open(f"{new}-excluded.png") as im:
+                    self.assertFalse(np.asarray(im)[:, :, 3].any())
+                for suffix in ("depth-change", "depth-change-8bit", "land-change", "shoreline"):
+                    with self.subTest(mask=suffix):
+                        with Image.open(f"{old}-{suffix}.png") as im:
+                            before = np.array(im)
+                        with Image.open(f"{new}-{suffix}.png") as im:
+                            after = np.array(im)
+                        if before.ndim == 3:
+                            before, after = before[:, :, 3], after[:, :, 3]
+                        np.testing.assert_array_equal(after[~excluded], before[~excluded])
+                        self.assertFalse(before[excluded].any())
+                        self.assertGreater(np.count_nonzero(after[excluded]), 0)
+
     def test_overlay_roundtrip_preserves_all_mask_values_in_alpha(self):
         mask = np.arange(256, dtype=np.uint8).reshape(16, 16)
         with tempfile.TemporaryDirectory() as directory:
@@ -83,7 +121,7 @@ class CoastalDepthTests(unittest.TestCase):
         ocean = ocean_at_level(z, 0)
         change, land = coastal_change(z, ocean, ocean, 0)
         self.assertFalse(change.any() or land.any())
-        for level in (float("nan"), float("inf"), -65, 65):
+        for level in (float("nan"), float("inf"), -161, 161):
             with self.assertRaises(ValueError):
                 ocean_at_level(z, level)
             with self.assertRaises(ValueError):

@@ -2,6 +2,12 @@
 
 Recorded: 2026-09-16. Updated during phase-7 editing delivery on 2026-09-17.
 
+New ice-only expansion requested 2026-09-20:
+[Ice masks from 38,000 BCE onwards](ICE-MASK-EXPANSION-PLAN.md). Extend the existing
+8192-pixel workflow across available DATED-1 and NADI-1 dates, combine matching
+ages, and skip missing regions, dates or variants. This follow-up is independent
+of the older coastal acceptance work below; implementation remains pending.
+
 **Latest operator override:** [PHASE4-OPERATOR-DIRECTIVES.md](PHASE4-OPERATOR-DIRECTIVES.md)
 supersedes conflicting earlier requirements: empirical ice takes precedence
 over GIA/marine conflicts; grounded and floating ice merge into one static

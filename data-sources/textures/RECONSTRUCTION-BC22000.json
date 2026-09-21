@@ -1,0 +1,314 @@
+{
+  "record_version": "1.0.0",
+  "scope": "Additional reconstruction dates only; not historical territory catalog entries",
+  "base_selection": {
+    "bytes": 56672,
+    "sha256": "08b1b735d88be04a91fb806408e4361cea74c98d1190c3144da78f645eb92f40"
+  },
+  "era": {
+    "slug": "world-bc22000",
+    "year_start": -22000,
+    "target_calendar_bp": 23949,
+    "age_system": "calendar BP (1950)"
+  },
+  "permitted_margin_uses": [
+    {
+      "era_slug": "world-bc22000",
+      "target_calendar_bp": 23949,
+      "dataset": "nadi-1",
+      "source_calendar_bp": 24000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "OPTIMAL",
+        "MIN",
+        "MAX"
+      ],
+      "policy": "nearest_slice_approximation"
+    },
+    {
+      "era_slug": "world-bc22000",
+      "target_calendar_bp": 23949,
+      "dataset": "dated-1",
+      "source_calendar_bp": 24000,
+      "source_minus_target_years": 51,
+      "bounds": [
+        "mc",
+        "min",
+        "max"
+      ],
+      "policy": "nearest_slice_approximation"
+    }
+  ],
+  "inspected_layers": [
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/24ka_cal_MAX_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 24000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 130,
+      "native_bbox": [
+        -168.9238939045199,
+        39.09991484732865,
+        -38.28892736876992,
+        84.35002661710882
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 546024,
+          "sha256": "28ca67ed930cbdf44abf60d1d263f0ead345890fae41a97e6605cb62fd991185"
+        },
+        "shx": {
+          "bytes": 1140,
+          "sha256": "a7a9f1179e63551d532e80de2fbd41f1a484cd75ae04bfe57bf6b9079ffcbc3b"
+        },
+        "dbf": {
+          "bytes": 2666,
+          "sha256": "5926a303067a52dc8cba024caeffe0f3dc6d5f934e38483cea2b1a0af4cf41cc"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/24ka_cal_MIN_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 24000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 384,
+      "native_bbox": [
+        -166.10779827228234,
+        41.17042735461308,
+        -39.90636851496441,
+        83.91427283749653
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 634496,
+          "sha256": "8fdedf687fe2c843e3e50751a9be9f43d974c79661225011f65aeab12294e6fa"
+        },
+        "shx": {
+          "bytes": 3172,
+          "sha256": "89156138a417568dbc8961f75487cbcde61febf07a5e8a6a8e11a3be9ed17e22"
+        },
+        "dbf": {
+          "bytes": 7746,
+          "sha256": "d974fc44706df7c449aa4c2a131eb4e595f63df886e2aa67c63cb7e10a687a1d"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "nadi-1",
+      "archive": "NADI-1.zip",
+      "member_stem": "NADI-1 shapefiles Dalton et al. QSR/24ka_cal_OPTIMAL_NADI-1_Dalton_etal_QSR",
+      "source_calendar_bp": 24000,
+      "crs": "EPSG:4326",
+      "shape_type": 5,
+      "record_count": 390,
+      "native_bbox": [
+        -168.75678077418078,
+        39.09992229961637,
+        -38.81560279737147,
+        84.19452793978911
+      ],
+      "fields": [
+        "Area_Km2"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 928812,
+          "sha256": "b809da2b9c9d7fda5f11e28812dc23be54091079cd33ca073ae22fd3c3e52872"
+        },
+        "shx": {
+          "bytes": 3220,
+          "sha256": "bd085899e184c29f2e0b7531f7c3d3f186eb5f290fe17f971b11fa865f0f1201"
+        },
+        "dbf": {
+          "bytes": 7866,
+          "sha256": "6e02d3e675cabf6b1b3c11393b0c2a8dec2c092211954bf76ff0693ca68da0c1"
+        },
+        "prj": {
+          "bytes": 145,
+          "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS24_max",
+      "source_calendar_bp": 24000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 1,
+      "native_bbox": [
+        -809192.3761999998,
+        -4248335.909399999,
+        1884694.8353000004,
+        -61177.22249999922
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 89980,
+          "sha256": "e517b254f1b12842bcf329bf406f9f5662a284fca18c9e502dc8707a7f37028c"
+        },
+        "shx": {
+          "bytes": 108,
+          "sha256": "4a58092a676c00853e3c242f7a6f21551d1ee6f83bf568748e9981f7411a775b"
+        },
+        "dbf": {
+          "bytes": 239,
+          "sha256": "fb6191b34b2911fec6a5052270f1ac0594f86e8dd847cd103ceea52004c687cf"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS24_mc",
+      "source_calendar_bp": 24000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 1,
+      "native_bbox": [
+        -801551.2826000005,
+        -4208126.6719,
+        1847285.4039999996,
+        -147229.51410000026
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 96732,
+          "sha256": "d6c8b2ca6a7f48cfe6ef9181017ad11d694a7da01c0cf780a291b317e7151eea"
+        },
+        "shx": {
+          "bytes": 108,
+          "sha256": "17324a434d0204803bb3b48a173668349c9d145a1800c1ff0f8457f35f007f24"
+        },
+        "dbf": {
+          "bytes": 239,
+          "sha256": "3e51852142d4f39d8896a58207485899a881e4edeee6c8104bdcff8a9d499306"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    },
+    {
+      "source": "dated-1",
+      "archive": "DATED-1_TimeSlices_shp.zip",
+      "member_stem": "DATED1 TimeSlices shp/TS24_min",
+      "source_calendar_bp": 24000,
+      "crs": "ESRI:102017",
+      "shape_type": 5,
+      "record_count": 3,
+      "native_bbox": [
+        -794950.7134000007,
+        -4203527.759299999,
+        1843222.0240999996,
+        -379282.4846999999
+      ],
+      "fields": [
+        "ID1",
+        "AV_Time",
+        "Shape_Leng",
+        "Shape_Area"
+      ],
+      "components": {
+        "shp": {
+          "bytes": 105948,
+          "sha256": "e03aa32e00586a64b62e7581f3a8b61893fc482bb64fa4e56e42b9928da024ed"
+        },
+        "shx": {
+          "bytes": 124,
+          "sha256": "fc6569cfa8283c5663df0ab659534e3513fb617b32ea1efc927e40d73b9d2a9a"
+        },
+        "dbf": {
+          "bytes": 393,
+          "sha256": "7e2bc3438a2636d2a87a93477924583f11f6089db68c2e25d84951426d032392"
+        },
+        "prj": {
+          "bytes": 390,
+          "sha256": "c6b1c62133cea8a8d3af29cd3eebf3141d057b1e0e9c40609e34948521c5d601"
+        }
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "path": "research-cache/NADI-1.zip",
+      "url": "https://zenodo.org/api/records/8161764/files/NADI-1%20shapefiles%20Dalton%20et%20al.%20QSR.zip/content",
+      "bytes": 54725237,
+      "sha256": "cbfdc0c14a8bd08eb13036ca488ec611de7d2d9b61bed22f03aec2e272b4cb44",
+      "archive_file_count": 588
+    },
+    {
+      "path": "research-cache/DATED-1_TimeSlices_shp.zip",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_TimeSlices_shp.zip",
+      "bytes": 11545303,
+      "sha256": "a916de31ff31b0bb63863b82d61a6be02659ecfe36a7cab0fdf00034b38be1f1",
+      "archive_file_count": 464
+    }
+  ],
+  "sea_level": {
+    "source": "Spratt and Lisiecki (2016), seven-record short PC1 stack",
+    "publication_doi": "10.5194/cp-12-1079-2016",
+    "dataset_doi": "10.25921/rd66-5820",
+    "url": "https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/spratt2016/spratt2016-noaa.txt",
+    "landing_page": "https://www.ncei.noaa.gov/access/paleo-search/study/19982",
+    "retrieved": "2026-09-19",
+    "path": "sea-levels/spratt2016-noaa.txt",
+    "bytes": 51519,
+    "sha256": "02f56f02f709b70ac70fe5e403326272e19b42bf34ee9b1bba3b8322e1375dc1",
+    "column": "SeaLev_shortPC1",
+    "source_calendar_bp": 24000,
+    "target_calendar_bp": 23949,
+    "source_minus_target_years": 51,
+    "policy": "nearest_slice_approximation",
+    "interpolation": "none",
+    "sea_level_m": -130.0,
+    "standard_deviation_m": 4.38,
+    "source_95_percent_interval_m": [
+      -134.58,
+      -118.09
+    ],
+    "reference": "Published source scaling, described as metres above modern sea level; no additional zero-age rebasing.",
+    "limitations": [
+      "The source is a scaled proxy stack, not a direct observation at 22,000 BCE.",
+      "Source confidence interval does not include all regional shoreline or terrain-model uncertainties.",
+      "Uniform sea-level offset on modern bedrock; no GIA correction."
+    ]
+  }
+}
