@@ -173,6 +173,100 @@ Below is the complete inventory of missing entities grouped into modular, parall
   - *Slavic*: `Grand Duchy of Moscow`, `Kievan Rus`, `Novgorod`, `Novgorod-Seversky`, `Principality of Novgorod`, `Principality of Vladimir-Suzdal`, `Pskov`, `Russia`, `Russian Empire`, `Ryazan`, `Slavic tribes`, `South Russia`, `Tsardom of Muscovy`, `USSR`, `Ukraine`, `White Russia`
   - *Baltic*: `Baltic tribes`, `Brushed Pottery culture`, `Curonians`, `Early combware`, `Eastern Masurian culture`, `Estonia`, `Latvia`, `Lithuania`, `Narva`, `Plain-Pottery culture`, `Sambian-Nothangian culture`, `Volga-Kamm`, `Western Masurian culture`
 
+### Work Unit 13: North African & Maghreb Dynasties
+* **Culture Groups**: `North Africa` (28 missing), `Mediterranean` (1 missing)
+* **Total Entities**: 34 | **Completed**: 5 | **Missing**: 29
+* **Target Batch File**: `data-sources/batches/north-africa.json`
+* **Key Missing Entities**:
+  - `Algeria`, `Algeria (FR)`, `Algeria (France)`, `Almoravid dynasty`, `Berber Tribes`, `Berbers`, `Cyprus`, `Egypt`, `Harer (Egypt)`, `Kingdom of Gala`, `Kingdom of Syphax`, `Libya`, `Libya (IT)`, `Mauretania`, `Mauritania`, `Morocco`, `Morocco (France)`, `Numidia`, `Saharan Nomadic Tribes`, `Saharan pastoral nomads`, `Spanish Morocco`, `Sudan`, `Tripolitana (UK Lybia)`, `Tripolitania`, `Tuareg Nomadic Tribes`, `Tuaregs`, `Tunisia`, `Watassid Morocco`, `Western Sahara`
+
+### Work Unit 14: Middle East, Ottoman Empire & Levant
+* **Culture Groups**: `Middle East` (31 missing), `Ancient Near East` (5 missing)
+* **Total Entities**: 57 | **Completed**: 21 | **Missing**: 36
+* **Target Batch File**: `data-sources/batches/middle-east.json`
+* **Key Missing Entities**:
+  - *Middle East*: `Arabian pastoral nomads`, `Arabs`, `Bedouins`, `Emirate of the White Sheep Turks`, `Hadramaut`, `Himyarite Kingdom`, `Iran`, `Iraq`, `Islamic city-states`, `Israel`, `Jordan`, `Kuwait`, `Lebanon`, `Maan`, `Muscat`, `Muscat and Oman`, `Oman`, `Oman (British Raj)`, `Ottoman Empire`, `Ottoman Sultanate`, `Qataban`, `Qatar`, `Republic of Turkey`, `Saudi Arabia`, `Syria`, `Syria (France)`, `Trucial Oman`, `Turkey`, `United Arab Emirates`, `Yemen`, `Yemen (UK)`
+  - *Ancient Near East*: `Anatolian tribes`, `Chelamela`, `Mari`, `Mundurukânia (Wuy jugu)`, `Wulgurukaba`
+
+### Work Unit 15: Southern Europe, Iberia & Italian Maritime Republics
+* **Culture Group**: `Southern Europe` (33 missing)
+* **Total Entities**: 39 | **Completed**: 6 | **Missing**: 33
+* **Target Batch File**: `data-sources/batches/southern-europe.json`
+* **Key Missing Entities**:
+  - `Andorra`, `Aragón`, `Asturias`, `Castile`, `Castille`, `Dumonii`, `Emirate of Sicily`, `Florence`, `Florida (Spain)`, `Genoa`, `Greece`, `Hispaniola (Spain)`, `Italy`, `Kingdom of Italy`, `Kingdom of Sardinia`, `Kingdom of the Two Sicilies`, `León`, `Malta`, `Milan`, `Naples`, `Navarre`, `Papal States`, `Portugal`, `San Marino`, `Santo Domingo (Spain)`, `Sardinia`, `Sardinia-Piedmont`, `Savoy`, `Sicily`, `Spain`, `Tuscany`, `Venice`, `Viceroyalty of New Spain`
+
+### Work Unit 16: Balkans, Eastern Europe, Caucasus & Finno-Ugric Frontiers
+* **Culture Groups**: `Balkans` (16 missing), `Eastern Europe` (4 missing), `Caucasus` (3 missing), `Finno-Ugric` (4 missing)
+* **Total Entities**: 37 | **Completed**: 6 | **Missing**: 31
+* **Target Batch Files**: `data-sources/batches/balkans-eastern-europe.json`
+* **Key Missing Entities**:
+  - *Balkans*: `Albania`, `Bosnia`, `Bosnia and Herzegovina`, `Bosnia-Herzegovina`, `Caucasian Albania`, `Croatia`, `Croatian kingdom`, `Dacia`, `Dacians`, `Dardania`, `Montenegro`, `Odrysian Kingdom`, `Principality of Wallachia`, `Serbia`, `Slovenia`, `Thrace`
+  - *Eastern Europe*: `Bulgaria`, `Chernoles culture`, `Moldova`, `Romania`
+  - *Caucasus*: `Armenia`, `Azerbaijan`, `Georgia`
+  - *Finno-Ugric*: `Finno-Ugric taiga hunter-gatherers`, `Pisamira`, `Samis`, `Samish`
+
+### Work Unit 17: Post-Colonial Nation States of the Americas
+* **Culture Groups**: `Latin America` (15 missing), `Central America` (7 missing), `North America` (3 missing)
+* **Total Entities**: 25 | **Completed**: 0 | **Missing**: 25
+* **Target Batch File**: `data-sources/batches/americas-states.json`
+* **Key Missing Entities**:
+  - *Latin America*: `Argentina`, `Bolivia`, `Brazil`, `Chile`, `Colombia`, `Ecuador`, `French Guiana`, `Guyana`, `Guyana (Netherlands)`, `Mexico`, `Paraguay`, `Peru`, `Suriname`, `Uruguay`, `Venezuela`
+  - *Central America*: `Belize`, `Costa Rica`, `El Salvador`, `Guatemala`, `Honduras`, `Nicaragua`, `Panama`
+  - *North America*: `Canada`, `United States`, `United States of America`
+
+### Work Unit 18: Caribbean Island Polities & Maritime Chiefdoms
+* **Culture Group**: `Caribbean` (35 missing)
+* **Total Entities**: 35 | **Completed**: 0 | **Missing**: 35
+* **Target Batch File**: `data-sources/batches/caribbean.json`
+* **Key Missing Entities**:
+  - `Anguilla`, `Antigua and Barbuda`, `Arawaks`, `Bahamas`, `Barbados`, `Barbados (UK)`, `Boriken Taino`, `Caribbean hunter-gatherers`, `Ciboney`, `Cuba`, `Cuba (Spain)`, `Dominica`, `Dominican Republic`, `Grenada`, `Guadeloupe`, `Haiti`, `Jamaica`, `Jamaica (UK)`, `Kalinago`, `Kalinago (Island Carib)`, `Lokono (Arawak)`, `Martinique`, `Martinique (France)`, `Montserrat`, `Netherlands Antilles`, `Puerto Rico`, `Saint Barthelemy`, `Saint Kitts and Nevis`, `Saint Kitts and Nevis (UK)`, `Saint Lucia`, `Saint Martin`, `Saint Vincent and the Grenadines`, `Taino`, `Trinidad`, `United States Virgin Islands`
+
+### Work Unit 19: Global Prehistoric Horizons & Archaeological Complexes
+* **Culture Groups**: `Prehistoric & Archaeological` (17 missing), `Western & Central Europe` (4 missing)
+* **Total Entities**: 23 | **Completed**: 2 | **Missing**: 21
+* **Target Batch File**: `data-sources/batches/prehistoric-archaeological.json`
+* **Key Missing Entities**:
+  - `Alluvial Lowland Mesolithic Hunter-Foragers`, `Coastal and Woodland Mesolithic Hunter-Foragers`, `Dimini`, `Ghassul`, `Highland Mesolithic Hunter-Foragers`, `Homo erectus`, `Homo heidelbergensis`, `Hunters-gatherers`, `La Almagra culture`, `Levantine Corridor (Neolithic Farmers)`, `Naquada I`, `Neanderthal`, `Neolithic Farmers`, `Patagonian shellfish and marine mammal hunters`, `Shellfish gatherers`, `Stentinello culture`, `Steppe Mesolithic Hunter-Foragers`, `Funnel-Beaker`, `N. European Bronze Age cultures`, `Únětice`, `Urnfield cultures`
+
+### Work Unit 20: Oceania, Australian Aboriginal & Pacific Island Nations
+* **Culture Group**: `Oceania` (74 missing)
+* **Total Entities**: 74 | **Completed**: 0 | **Missing**: 74
+* **Target Batch File**: `data-sources/batches/oceania.json`
+* **Key Missing Entities**:
+  - `Aboriginal Tasmanians`, `Aboriginal tribes`, `Arrernte`, `Australia`, `Australian aboriginal hunter-gatherers`, `Austronesians`, `Badimaya`, `Bardi`, `Bibbulman`, `Dakapeng culture`, `Dapenkeng culture`, `Eora`, `Fiji`, `Gagudju`, `Gamberre`, `Gooniyandi`, `Goreng`, `Gugu-Badhun`, `Gunbalang`, `Gunwinggu`, `Gurindji`, `Iwaidja`, `Kingdom of Hawaii`, `Kō Hawaiʻi Paeʻāina (Hawaiian Kingdom)`, `Maori / Māori`, `Mebêngôkre (Kayapó)`, `Muruwari`, `New Caledonia`, `New Hebrides`, `New Zealand`, `Ngunawal`, `Niue`, `Papua New Guinea`, `Papuan`, `Papuan neolithic farmers`, `Papuans`, `Pinikura`, `Polynesians`, `Rapa Nui`, `Samoa`, `Taiwanese Tribes`, `Tasmanian hunter-gatherers`, `Tonga`, `Tuʻi Tonga Empire`, `Wallis and Futuna Islands`, `Yiiji`
+
+### Work Unit 21: Arctic, Subarctic & Circumpolar Indigenous Peoples
+* **Culture Group**: `Arctic & Subarctic` (44 missing)
+* **Total Entities**: 44 | **Completed**: 0 | **Missing**: 44
+* **Target Batch File**: `data-sources/batches/arctic-subarctic.json`
+* **Key Missing Entities**:
+  - `Acho Dene Koe`, `Alutiiq (Sugpiaq)`, `Arctic marine mammal hunters`, `Athabaskan`, `Beothuk`, `Champagne & Aishihik`, `Chukchi`, `Dehcho Dene`, `Dene Tha'`, `Dorset`, `Eyak`, `Eyaq`, `Gwich'in Nành`, `Innu`, `Inuit`, `Inupiaq`, `Inupiat`, `Itelmen`, `Kaska Dena Kayeh`, `Kaskaskia`, `Koryaks`, `Montagnais Innu`, `Naskapi Innu`, `Nitassinan (Innu)`, `Okhotsk culture`, `Paleo-Inuit`, `Paleo-Siberian hunter-gatherers`, `Sahtu`, `Sahtu Dene and Metis`, `Siberians`, `Siginygmit (Sireniki) Yupik`, `Sivuqaq (St. Lawrence Island) Yupik`, `Subarctic forest hunter-gatherers`, `Suspiaq`, `T'atsaot'ine`, `Tāłtān Konelīne (Tahltan)`, `Teslin Tlingit Council (BC / Yukon)`, `Tetlit Gwich’in`, `Thule`, `Unangam Tanangin (Unangax̂ / Aleut)`, `Ungazigmit (Chaplino) Yupik`, `Yup'ik & Cup'ik`
+
+### Work Unit 22: South American Indigenous Peoples (Amazonia, Chaco & Southern Cone)
+* **Culture Group**: `South American Indigenous` (40 missing)
+* **Total Entities**: 40 | **Completed**: 0 | **Missing**: 40
+* **Target Batch File**: `data-sources/batches/south-american-indigenous.json`
+* **Key Missing Entities**:
+  - `Ahé (Kawahib)`, `Amazon hunter-gatherers`, `Aónikenk (Tehuelche)`, `Ashaninka`, `Awaeté (Asurini of the Xingu)`, `Cabiyari/Kawiyarí`, `Charrúa`, `Chitonahua/Murunahua`, `Diaguita`, `Envuga (Kawahib)`, `Juma (Kawahib)`, `Jupaú (Kawahib)`, `Kawahib`, `Magüta/Ticuna`, `Manioc farmers`, `Mapuche`, `Marinahua`, `Miranha`, `Pampas cultures`, `Paspahegh`, `Savanna hunter-gatherers`, `Selk'nam`, `Sharanahua`, `Shipibo-Konibo`, `Shuar`, `Shuar-Wampis`, `Tekohá (Guarani)`, `Tupinambá`, `Tupis`, `Waiwai`, `Wallmapu (Mapuche)`, `Warao`, `Yanomami`, `Yeba-masã`
+
+### Work Unit 23: North American Indigenous Nations (Eastern Woodlands & Great Plains)
+* **Culture Group**: `North American Indigenous` (Eastern Woodlands & Great Plains focus, ~135 missing)
+* **Target Batch File**: `data-sources/batches/north-america-east-plains.json`
+* **Key Missing Entities**:
+  - `Abenaki / Abénaquis`, `Algonquin`, `Apalachee`, `Apsaalooké (Crow)`, `Arapaho`, `Arikara`, `Assiniboine`, `Atakapa`, `Blackfoot / Niitsítapi`, `Bodéwadmiakiwen (Potawatomi)`, `Caddo`, `Catawba`, `Cherokee`, `Cheyenne`, `Chickasaw`, `Choctaw`, `Comanche`, `Cree / Nêhiyaw`, `Crow`, `Delaware / Lenni-Lenape`, `Eastern North American hunter-gatherers`, `Gros Ventre`, `Haudenosaunee (Iroquois)`, `Ho-Chunk`, `Hopewell Culture`, `Huron / Wendat`, `Illinois`, `Iowa`, `Kanienʼkehá꞉ka (Mohawk)`, `Kansa / Kaw`, `Kickapoo`, `Kiowa`, `Mandan`, `Mattaponi`, `Menominee`, `Miami`, `Mi'kma'ki`, `Mohegan`, `Muscogee (Creek)`, `Narragansett`, `Omaha`, `Oneida`, `Onondaga`, `Osage`, `Ottawa`, `Pawnee`, `Pequot`, `Plain bison hunters`, `Potawatomi`, `Powhatan`, `Quapaw`, `Sauk and Meskwaki`, `Seminole`, `Seneca`, `Shawnee`, `Susquehannock`, `Tuscarora`, `Wampanoag`, `Wyandot`
+
+### Work Unit 24: North American Indigenous Nations (Southwest, Pacific Northwest & California)
+* **Culture Group**: `North American Indigenous` (Southwest, California, Great Basin & Northwest focus, ~137 missing)
+* **Target Batch File**: `data-sources/batches/north-america-west.json`
+* **Key Missing Entities**:
+  - `Achumawi`, `Acjachemen (Juaneño)`, `Akimel O'odham (Pima)`, `Anasazi`, `Apache (Chiricahua, Jicarilla, Lipan, Mescalero, Western)`, `Cahuilla`, `Chinook`, `Chumash`, `Coast Salish`, `Coos`, `Desert hunter-gatherers`, `Flathead / Salish`, `Gitxaała`, `Goshute`, `Haida Gwaii`, `Havasupai`, `Heiltsuk`, `Hohokam`, `Hopi`, `Hualapai`, `Kalispel`, `Karuk`, `Klamath`, `Kwakwaka'wakw`, `Makah`, `Miwok`, `Modoc`, `Mogollon`, `Mojave`, `Navajo / Diné Bikéyah`, `Nez Perce / Nimiipuu`, `Nuu-chah-nulth`, `Nuxalk`, `Okanagan / Syilx`, `Paiute (Northern, Southern)`, `Pomo`, `Pueblos`, `Quechan`, `Quileute`, `Quinault`, `Secwépemc`, `Shoshone (Eastern, Western)`, `Spokane`, `Taos Pueblo`, `Tillamook`, `Tlingit / Lingít Aaní`, `Tongva`, `Tsimshian`, `Umatilla`, `Ute`, `Washoe`, `Yakama`, `Yavapai`, `Yokuts`, `Yurok`, `Zuni`
+
+### Work Unit 25: Historical Culture Residue — Contact-Era Polities & Pre-Modern Feudal Realms
+* **Culture Group**: `Historical Culture` (1,646 missing, prioritized by feature occurrences in 1492–1800 CE eras)
+* **Target Batch Files**:
+  - `data-sources/batches/historical-contact-nations.json` (First Nations / Indigenous polities recorded in 1492–1800 CE basemaps: e.g. `Sewee`, `Chinantla`, `Eduria`, `Westo`, `Mazahua`, `Abipones`, `Terena`, `Chané`, `Yukpa`, `Tututni`, `Ramaytush`, `Arrohatec`)
+  - `data-sources/batches/historical-feudal-polities.json` (Pre-modern feudal principalities, sultanates & regional domains: e.g. `Abdelouadides`, `Algiers`, `Alamans`, `Golkonda`, `Bengal`, `Sinhalese kingdoms`)
+
 ---
 
 ## 5. Automated Verification & Quality Gates
