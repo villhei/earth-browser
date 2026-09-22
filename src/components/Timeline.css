@@ -4,7 +4,7 @@
   top: 80px;
   left: var(--space-12);
   bottom: var(--space-12);
-  width: 290px;
+  width: 310px;
   max-height: calc(100vh - 104px);
   background: var(--color-bg-panel);
   backdrop-filter: blur(var(--blur-lg));
@@ -54,7 +54,7 @@
   background: var(--gradient-accent-badge);
   color: var(--color-text-on-accent);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-wider);
   padding: 3px var(--space-4);
@@ -63,7 +63,7 @@
 }
 
 .timeline-era-count {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   font-family: var(--font-family-mono);
 }
@@ -196,7 +196,7 @@
 
 /* Chevron */
 .timeline-epoch-chevron {
-  font-size: 8px;
+  font-size: var(--font-size-xs);
   color: var(--color-text-dim);
   transition: transform var(--transition-cubic), color var(--transition-fast);
   display: inline-flex;
@@ -226,7 +226,7 @@
 }
 
 .timeline-epoch-title {
-  font-size: 11.5px;
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-secondary);
   white-space: nowrap;
@@ -240,7 +240,7 @@
 }
 
 .timeline-epoch-dates {
-  font-size: var(--font-size-2xs);
+  font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   font-family: var(--font-family-mono);
   letter-spacing: var(--letter-spacing-snug);
@@ -275,7 +275,7 @@
 }
 
 .timeline-epoch-count {
-  font-size: var(--font-size-2xs);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-muted);
   background: var(--color-bg-badge);
@@ -393,10 +393,10 @@
 /* Year */
 .timeline-item-year {
   font-family: var(--font-family-mono);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-secondary);
-  min-width: 82px;
+  min-width: 96px;
   flex-shrink: 0;
   text-align: left;
   letter-spacing: var(--letter-spacing-tight);
@@ -411,7 +411,7 @@
 .timeline-item-label {
   flex: 1;
   min-width: 0;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-text-muted);
   white-space: nowrap;
   overflow: hidden;

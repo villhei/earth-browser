@@ -13,7 +13,7 @@
   color: var(--color-text-primary);
   padding: var(--space-4) var(--space-8);
   border-radius: var(--radius-pill);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
   box-shadow: var(--shadow-md);

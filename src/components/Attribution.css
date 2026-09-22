@@ -47,7 +47,7 @@
   color: var(--color-text-secondary);
   text-decoration: none;
   font-family: var(--font-family-mono);
-  font-size: var(--font-size-2xs);
+  font-size: var(--font-size-xs);
 }
 
 .attribution-license:hover {
@@ -159,7 +159,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   transition: all var(--transition-fast);
 }
 
@@ -186,7 +186,7 @@
 
 .attribution-section p {
   margin: 0;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
   color: var(--color-text-muted);
 }
@@ -255,7 +255,7 @@
   color: var(--color-text-on-accent);
   padding: var(--space-4) var(--space-9);
   border-radius: var(--radius-md);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -269,7 +269,7 @@
   .app-attribution {
     bottom: var(--space-4);
     right: var(--space-4);
-    font-size: var(--font-size-2xs);
+    font-size: var(--font-size-xs);
     padding: var(--space-2) var(--space-4);
   }
 }

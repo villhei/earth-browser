@@ -50,13 +50,13 @@
 
 .drawer-title {
   margin: var(--space-2) 0 0 0;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
 }
 
 .drawer-subtitle {
-  font-size: 13.5px;
+  font-size: var(--font-size-base);
   color: var(--color-text-muted);
   margin-top: var(--space-1);
 }
@@ -72,7 +72,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: var(--font-size-base);
   transition: all var(--transition-fast);
 }
 
@@ -91,7 +91,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14.5px;
+  font-size: var(--font-size-base);
   gap: var(--space-4);
 }
 
@@ -110,7 +110,7 @@
   color: var(--color-text-accent);
   padding: 3px 9px;
   border-radius: var(--radius-sm);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   font-family: var(--font-family-mono);
 }
 
@@ -171,7 +171,7 @@
 }
 
 .drawer-wiki-link {
-  font-size: 12.5px;
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-accent);
   background: var(--color-bg-badge-accent);
