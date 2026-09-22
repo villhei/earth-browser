@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react"
 import "./Attribution.css"
 
+export const CREATOR_INFO = {
+  name: "Ville Heikkinen",
+  githubUrl: "https://github.com/villhei/",
+  linkedinUrl: "https://www.linkedin.com/in/ville-heikkinen-40363847/",
+}
+
 export const DATA_SOURCE_INFO = {
   name: "historical-basemaps",
   author: "André Ourednik",
@@ -48,9 +54,9 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
       >
         <div className="attribution-modal-header">
           <div className="attribution-modal-title-group">
-            <span className="attribution-modal-tag">Dataset & Legal Notices</span>
+            <span className="attribution-modal-tag">Credits & Sources</span>
             <h3 id="attribution-dialog-title" className="attribution-modal-title">
-              Data Attribution & Sources
+              Attributions
             </h3>
           </div>
           <button
@@ -64,9 +70,48 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
 
         <div className="attribution-modal-body">
           <section className="attribution-section">
+            <h4>Application & Creator</h4>
+            <p>
+              Historical Earth Browser created and developed by <strong>{CREATOR_INFO.name}</strong>.
+            </p>
+            <div className="attribution-meta-card">
+              <div className="attribution-meta-row">
+                <span className="meta-label">Creator:</span>
+                <span className="meta-val">
+                  <strong>{CREATOR_INFO.name}</strong>
+                </span>
+              </div>
+              <div className="attribution-meta-row">
+                <span className="meta-label">GitHub:</span>
+                <span className="meta-val">
+                  <a
+                    href={CREATOR_INFO.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github.com/villhei
+                  </a>
+                </span>
+              </div>
+              <div className="attribution-meta-row">
+                <span className="meta-label">LinkedIn:</span>
+                <span className="meta-val">
+                  <a
+                    href={CREATOR_INFO.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    linkedin.com/in/ville-heikkinen-40363847
+                  </a>
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section className="attribution-section">
             <h4>Historical Boundaries & Geodata</h4>
             <p>
-              The historical world country borders, empires, and cultural regions visualized across all 53 historical eras (123,000 BCE – 2010 CE) are sourced from the{" "}
+              The historical world country borders, empires, and cultural regions visualized across all 54 historical eras (123,000 BCE – 2010 CE) are sourced from the{" "}
               <strong>historical-basemaps</strong> project created and curated by{" "}
               <strong>{DATA_SOURCE_INFO.author}</strong>.
             </p>
@@ -186,37 +231,15 @@ export const Attribution: React.FC<AttributionProps> = ({
 
   return (
     <>
-      <div className="app-attribution" aria-label="Map Data Attribution">
-        <span className="attribution-text">
-          Map data:{" "}
-          <a
-            href={DATA_SOURCE_INFO.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="attribution-link"
-          >
-            {DATA_SOURCE_INFO.author} / {DATA_SOURCE_INFO.name}
-          </a>{" "}
-          (
-          <a
-            href={DATA_SOURCE_INFO.licenseUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="attribution-license"
-          >
-            {DATA_SOURCE_INFO.license}
-          </a>
-          )
-        </span>
-        <button
-          className="attribution-info-btn"
-          onClick={handleOpen}
-          title="Data Sources & Attribution"
-          aria-label="View data sources and attribution"
-        >
-          ℹ
-        </button>
-      </div>
+      <button
+        type="button"
+        className="app-attribution-btn app-attribution"
+        onClick={handleOpen}
+        title="Attributions & Data Sources"
+        aria-label="View attributions and data sources"
+      >
+        Attributions
+      </button>
 
       <AttributionModal
         isOpen={isModalOpen}
