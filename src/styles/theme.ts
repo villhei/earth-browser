@@ -2,12 +2,7 @@
  * Design Token System — Theme & Color Scheme Types and Utilities
  */
 
-export type ColorSchemeId =
-  | "slate"
-  | "obsidian-gold"
-  | "emerald"
-  | "amethyst"
-  | "parchment"
+export type ColorSchemeId = "slate" | "parchment"
 
 export interface ColorSchemeOption {
   id: ColorSchemeId
@@ -20,21 +15,6 @@ export const COLOR_SCHEMES: readonly ColorSchemeOption[] = [
     id: "slate",
     name: "Oceanic Slate",
     description: "Deep space with cyan accents",
-  },
-  {
-    id: "obsidian-gold",
-    name: "Obsidian & Gold",
-    description: "Warm astronomical atlas with golden accents",
-  },
-  {
-    id: "emerald",
-    name: "Emerald Abyss",
-    description: "Abyssal forest with vibrant jade aurora accents",
-  },
-  {
-    id: "amethyst",
-    name: "Midnight Amethyst",
-    description: "Cosmic violet with radiant amethyst accents",
   },
   {
     id: "parchment",

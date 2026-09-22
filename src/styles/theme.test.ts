@@ -57,17 +57,13 @@ describe("Design Token System & Color Schemes", () => {
     vi.unstubAllGlobals()
   })
 
-  it("registers all supported color schemes", () => {
+  it("registers only Oceanic Slate and Historical Parchment color schemes", () => {
     const ids = COLOR_SCHEMES.map((s) => s.id)
-    expect(ids).toContain("slate")
-    expect(ids).toContain("obsidian-gold")
-    expect(ids).toContain("emerald")
-    expect(ids).toContain("amethyst")
-    expect(ids).toContain("parchment")
-    expect(COLOR_SCHEMES.length).toBe(5)
+    expect(ids).toEqual(["slate", "parchment"])
+    expect(COLOR_SCHEMES.length).toBe(2)
   })
 
-  it("provides human-readable names and descriptions for every theme", () => {
+  it("provides human-readable names and descriptions for both themes", () => {
     for (const scheme of COLOR_SCHEMES) {
       expect(scheme.name.length).toBeGreaterThan(0)
       expect(scheme.description.length).toBeGreaterThan(0)
@@ -75,13 +71,13 @@ describe("Design Token System & Color Schemes", () => {
   })
 
   it("applies theme attribute to document root and saves to localStorage", () => {
-    applyTheme("emerald")
-    expect(document.documentElement.getAttribute("data-theme")).toBe("emerald")
-    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("emerald")
+    applyTheme("parchment")
+    expect(document.documentElement.getAttribute("data-theme")).toBe("parchment")
+    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("parchment")
 
-    applyTheme("obsidian-gold")
-    expect(document.documentElement.getAttribute("data-theme")).toBe("obsidian-gold")
-    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("obsidian-gold")
+    applyTheme("slate")
+    expect(document.documentElement.getAttribute("data-theme")).toBe("slate")
+    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("slate")
   })
 
   it("resolves default theme when no stored preference exists", () => {
@@ -96,10 +92,10 @@ describe("Design Token System & Color Schemes", () => {
   it("reads theme preference from URL search params", () => {
     vi.stubGlobal("window", {
       location: {
-        search: "?theme=emerald",
+        search: "?theme=parchment",
       },
     })
-    expect(getInitialTheme()).toBe("emerald")
+    expect(getInitialTheme()).toBe("parchment")
   })
 
   it("ignores invalid values in localStorage and falls back to slate", () => {
@@ -138,7 +134,7 @@ describe("Design Token System & Color Schemes", () => {
     }
   })
 
-  it("verifies themes.css defines all semantic tokens across alternate themes", () => {
+  it("verifies themes.css defines semantic tokens for Oceanic Slate and Historical Parchment", () => {
     const themesPath = resolve(__dirname, "themes.css")
     const themesContent = readFileSync(themesPath, "utf-8")
 
@@ -165,11 +161,12 @@ describe("Design Token System & Color Schemes", () => {
       expect(themesContent).toContain(token)
     }
 
-    // Verify each theme selector is declared in themes.css
+    // Verify only slate and parchment themes exist in themes.css
     expect(themesContent).toContain('[data-theme="slate"]')
-    expect(themesContent).toContain('[data-theme="obsidian-gold"]')
-    expect(themesContent).toContain('[data-theme="emerald"]')
-    expect(themesContent).toContain('[data-theme="amethyst"]')
     expect(themesContent).toContain('[data-theme="parchment"]')
+
+    expect(themesContent).not.toContain('[data-theme="obsidian-gold"]')
+    expect(themesContent).not.toContain('[data-theme="emerald"]')
+    expect(themesContent).not.toContain('[data-theme="amethyst"]')
   })
 })
