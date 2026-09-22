@@ -374,7 +374,7 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
                 }}
                 onClick={onOpenAttribution}
               >
-                ℹ Data Sources & Attribution
+                ℹ Credits & Sources
               </button>
             </div>
           )}

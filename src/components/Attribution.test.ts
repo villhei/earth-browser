@@ -20,10 +20,12 @@ describe("Attribution metadata", () => {
 })
 
 describe("Attribution button and modal rendering", () => {
-  it("renders the map data attribution button displaying just 'Attributions'", () => {
+  it("renders the button displaying 'Credits & Sources' with an information symbol", () => {
     const html = renderToStaticMarkup(React.createElement(Attribution))
-    expect(html).toContain("Attributions")
+    expect(html).toContain("Credits &amp; Sources")
     expect(html).toContain("app-attribution-btn")
+    expect(html).toContain("attribution-icon")
+    expect(html).toContain("<circle")
     // Should not contain inline author or long license text in the button itself
     expect(html).not.toContain("Map data:")
     expect(html).not.toContain("André Ourednik")
@@ -36,7 +38,7 @@ describe("Attribution button and modal rendering", () => {
         onClose: () => {},
       })
     )
-    expect(html).toContain("Attributions")
+    expect(html).toContain("Credits &amp; Sources")
     expect(html).toContain("Application &amp; Creator")
     expect(html).toContain("Ville Heikkinen")
     expect(html).toContain("https://github.com/villhei/")
