@@ -18,10 +18,12 @@ import { ActiveEraBanner } from "../components/ActiveEraBanner"
 import { getIceOverlay } from "../earthTextures/ice"
 import { getTerrainOverlayUrl } from "../earthTextures/coasts"
 import { PuffLoader } from "react-spinners"
+import { ColorSchemeId, getInitialTheme, applyTheme } from "../styles/theme"
 import "./App.css"
 
 
 export const App: React.FC = () => {
+  const [colorScheme, setColorScheme] = useState<ColorSchemeId>(() => getInitialTheme())
   const [eras, setEras] = useState<Era[]>([])
   const [currentEra, setCurrentEra] = useState<Era | null>(null)
   const [cameraView, setCameraView] = useState(() => readViewUrl(window.location.search).view)
@@ -31,6 +33,15 @@ export const App: React.FC = () => {
     latestViewRef.current = view
     replaceViewUrl(null, view)
   }, [])
+
+  const handleColorSchemeChange = useCallback((scheme: ColorSchemeId) => {
+    setColorScheme(scheme)
+    applyTheme(scheme)
+  }, [])
+
+  useEffect(() => {
+    applyTheme(colorScheme)
+  }, [colorScheme])
   const [geoJsonData, setGeoJsonData] =
     useState<GeoJSONFeatureCollection | null>(null)
   const [isLoadingEras, setIsLoadingEras] = useState(true)
@@ -168,12 +179,13 @@ export const App: React.FC = () => {
         {/* Visual Settings Controls */}
 
         <ControlsOverlay
-
           config={globeConfig}
           iceOverlayAvailable={!!iceOverlay}
           terrainOverlayAvailable={!!getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture)}
           onChangeConfig={setGlobeConfig}
           onOpenAttribution={() => setIsAttributionOpen(true)}
+          colorScheme={colorScheme}
+          onChangeColorScheme={handleColorSchemeChange}
         />
 
         {/* Country / Culture Inspector Drawer */}

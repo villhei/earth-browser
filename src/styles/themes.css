@@ -1,0 +1,465 @@
+/**
+ * Earth Browser Design Tokens — Semantic Themes & Color Schemes
+ * Defines contextual semantic tokens for the UI, enabling instant switching
+ * between alternate color schemes.
+ */
+
+/* ==========================================================================
+   1. Default Theme: Oceanic Slate (Deep Space & Cyan)
+   ========================================================================== */
+:root,
+[data-theme="slate"],
+[data-theme="default"] {
+  /* Surfaces & Backgrounds */
+  --color-bg-app: #050811;
+  --color-bg-header-start: rgba(5, 8, 17, 0.85);
+  --color-bg-header-end: rgba(5, 8, 17, 0);
+  --color-bg-panel: rgba(15, 23, 42, 0.88);
+  --color-bg-panel-solid: #0f172a;
+  --color-bg-panel-elevated: rgba(15, 23, 42, 0.92);
+  --color-bg-panel-dense: rgba(15, 23, 42, 0.96);
+  --color-bg-panel-hover: rgba(15, 23, 42, 0.95);
+  --color-bg-panel-subtle: rgba(30, 41, 59, 0.65);
+  --color-bg-card: rgba(255, 255, 255, 0.025);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-card-expanded: rgba(255, 255, 255, 0.04);
+  --color-bg-card-active: rgba(56, 189, 248, 0.08);
+  --color-bg-item-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-item-active: rgba(56, 189, 248, 0.14);
+  --color-bg-control: rgba(255, 255, 255, 0.08);
+  --color-bg-control-hover: rgba(255, 255, 255, 0.15);
+  --color-bg-control-active: #3b82f6;
+  --color-bg-control-active-hover: #2563eb;
+  --color-bg-badge: rgba(255, 255, 255, 0.08);
+  --color-bg-badge-hover: rgba(255, 255, 255, 0.2);
+  --color-bg-badge-accent: rgba(56, 189, 248, 0.1);
+  --color-bg-meta-card: rgba(0, 0, 0, 0.25);
+  --color-bg-modal-backdrop: rgba(5, 8, 17, 0.75);
+  --color-bg-loading-overlay: rgba(5, 8, 17, 0.6);
+  --color-slider-track: rgba(255, 255, 255, 0.15);
+
+  /* Typography & Foreground */
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --color-text-dim: #64748b;
+  --color-text-accent: #38bdf8;
+  --color-text-accent-hover: #7dd3fc;
+  --color-text-inverse: #0f172a;
+  --color-text-on-accent: #ffffff;
+  --color-divider: #475569;
+
+  /* Accents & Brand */
+  --color-accent: #38bdf8;
+  --color-accent-hover: #7dd3fc;
+  --color-accent-active: #0284c7;
+  --color-accent-active-hover: #0369a1;
+  --color-accent-subtle: rgba(56, 189, 248, 0.1);
+  --color-accent-muted: rgba(56, 189, 248, 0.15);
+  --color-accent-glow: rgba(56, 189, 248, 0.4);
+  --color-accent-secondary: #3b82f6;
+  --color-accent-secondary-hover: #60a5fa;
+  --gradient-accent-badge: linear-gradient(135deg, #3b82f6, #6366f1);
+  --gradient-brand-title: linear-gradient(135deg, #f8fafc, #94a3b8);
+  --gradient-header: linear-gradient(180deg, var(--color-bg-header-start) 0%, var(--color-bg-header-end) 100%);
+  --gradient-timeline-rail: linear-gradient(
+    180deg,
+    rgba(56, 189, 248, 0.4) 0%,
+    rgba(255, 255, 255, 0.12) 15%,
+    rgba(255, 255, 255, 0.12) 85%,
+    rgba(56, 189, 248, 0.4) 100%
+  );
+
+  /* Borders & Outlines */
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-divider: rgba(255, 255, 255, 0.1);
+  --color-border-default: rgba(255, 255, 255, 0.14);
+  --color-border-strong: rgba(255, 255, 255, 0.25);
+  --color-border-accent: #38bdf8;
+  --color-border-accent-subtle: rgba(56, 189, 248, 0.4);
+  --color-border-accent-subtler: rgba(56, 189, 248, 0.25);
+  --color-border-control: rgba(255, 255, 255, 0.15);
+  --color-border-control-subtle: rgba(255, 255, 255, 0.1);
+  --color-border-control-active: #60a5fa;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
+  --shadow-2xl: 0 25px 60px rgba(0, 0, 0, 0.7);
+  --shadow-panel-highlight: 0 0 1px 1px rgba(255, 255, 255, 0.05);
+  --shadow-accent-glow: 0 0 8px #38bdf8;
+  --shadow-accent-glow-subtle: 0 2px 10px rgba(56, 189, 248, 0.15);
+  --shadow-badge: 0 2px 8px rgba(59, 130, 246, 0.35);
+
+  /* Status Indicators */
+  --color-status-exact-bg: rgba(34, 197, 94, 0.15);
+  --color-status-exact-text: #4ade80;
+  --color-status-exact-border: rgba(34, 197, 94, 0.3);
+  --color-status-approx-bg: rgba(245, 158, 11, 0.15);
+  --color-status-approx-text: #fbbf24;
+  --color-status-approx-border: rgba(245, 158, 11, 0.3);
+  --color-status-frontier-bg: rgba(148, 163, 184, 0.15);
+  --color-status-frontier-text: #cbd5e1;
+  --color-status-frontier-border: rgba(148, 163, 184, 0.3);
+  --color-status-era-bg: rgba(168, 85, 247, 0.15);
+  --color-status-era-text: #c084fc;
+  --color-status-era-border: rgba(168, 85, 247, 0.3);
+
+  /* Scrollbars */
+  --color-scrollbar-thumb: rgba(255, 255, 255, 0.2);
+  --color-scrollbar-thumb-hover: rgba(255, 255, 255, 0.4);
+}
+
+/* ==========================================================================
+   2. Alternate Theme: Obsidian & Gold (Warm Antique Astronomical Atlas)
+   ========================================================================== */
+[data-theme="obsidian-gold"],
+[data-theme="gold"] {
+  /* Surfaces & Backgrounds */
+  --color-bg-app: #0c0a09;
+  --color-bg-header-start: rgba(12, 10, 9, 0.9);
+  --color-bg-header-end: rgba(12, 10, 9, 0);
+  --color-bg-panel: rgba(28, 25, 23, 0.9);
+  --color-bg-panel-solid: #1c1917;
+  --color-bg-panel-elevated: rgba(28, 25, 23, 0.95);
+  --color-bg-panel-dense: rgba(28, 25, 23, 0.98);
+  --color-bg-panel-hover: rgba(41, 37, 36, 0.96);
+  --color-bg-panel-subtle: rgba(41, 37, 36, 0.7);
+  --color-bg-card: rgba(255, 255, 255, 0.025);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-card-expanded: rgba(255, 255, 255, 0.04);
+  --color-bg-card-active: rgba(245, 158, 11, 0.1);
+  --color-bg-item-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-item-active: rgba(245, 158, 11, 0.16);
+  --color-bg-control: rgba(255, 255, 255, 0.08);
+  --color-bg-control-hover: rgba(255, 255, 255, 0.15);
+  --color-bg-control-active: #d97706;
+  --color-bg-control-active-hover: #b45309;
+  --color-bg-badge: rgba(255, 255, 255, 0.08);
+  --color-bg-badge-hover: rgba(255, 255, 255, 0.2);
+  --color-bg-badge-accent: rgba(245, 158, 11, 0.12);
+  --color-bg-meta-card: rgba(0, 0, 0, 0.35);
+  --color-bg-modal-backdrop: rgba(12, 10, 9, 0.8);
+  --color-bg-loading-overlay: rgba(12, 10, 9, 0.65);
+  --color-slider-track: rgba(255, 255, 255, 0.15);
+
+  /* Typography & Foreground */
+  --color-text-primary: #fafaf9;
+  --color-text-secondary: #e7e5e4;
+  --color-text-muted: #a8a29e;
+  --color-text-dim: #78716c;
+  --color-text-accent: #f59e0b;
+  --color-text-accent-hover: #fbbf24;
+  --color-text-inverse: #1c1917;
+  --color-text-on-accent: #ffffff;
+  --color-divider: #57534e;
+
+  /* Accents & Brand */
+  --color-accent: #f59e0b;
+  --color-accent-hover: #fbbf24;
+  --color-accent-active: #d97706;
+  --color-accent-active-hover: #b45309;
+  --color-accent-subtle: rgba(245, 158, 11, 0.12);
+  --color-accent-muted: rgba(245, 158, 11, 0.18);
+  --color-accent-glow: rgba(245, 158, 11, 0.4);
+  --color-accent-secondary: #d97706;
+  --color-accent-secondary-hover: #f59e0b;
+  --gradient-accent-badge: linear-gradient(135deg, #d97706, #b45309);
+  --gradient-brand-title: linear-gradient(135deg, #fafaf9, #d6d3d1);
+  --gradient-timeline-rail: linear-gradient(
+    180deg,
+    rgba(245, 158, 11, 0.4) 0%,
+    rgba(255, 255, 255, 0.12) 15%,
+    rgba(255, 255, 255, 0.12) 85%,
+    rgba(245, 158, 11, 0.4) 100%
+  );
+
+  /* Borders & Outlines */
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-divider: rgba(255, 255, 255, 0.1);
+  --color-border-default: rgba(251, 191, 36, 0.16);
+  --color-border-strong: rgba(251, 191, 36, 0.28);
+  --color-border-accent: #f59e0b;
+  --color-border-accent-subtle: rgba(245, 158, 11, 0.4);
+  --color-border-accent-subtler: rgba(245, 158, 11, 0.25);
+  --color-border-control: rgba(255, 255, 255, 0.14);
+  --color-border-control-subtle: rgba(255, 255, 255, 0.09);
+  --color-border-control-active: #fbbf24;
+
+  /* Elevation & Shadows */
+  --shadow-accent-glow: 0 0 8px #f59e0b;
+  --shadow-accent-glow-subtle: 0 2px 10px rgba(245, 158, 11, 0.18);
+  --shadow-badge: 0 2px 8px rgba(217, 119, 6, 0.35);
+}
+
+/* ==========================================================================
+   3. Alternate Theme: Emerald Abyss (Deep Abyssal Forest & Jade Aurora)
+   ========================================================================== */
+[data-theme="emerald"] {
+  /* Surfaces & Backgrounds */
+  --color-bg-app: #02140e;
+  --color-bg-header-start: rgba(2, 20, 14, 0.9);
+  --color-bg-header-end: rgba(2, 20, 14, 0);
+  --color-bg-panel: rgba(6, 32, 23, 0.88);
+  --color-bg-panel-solid: #062017;
+  --color-bg-panel-elevated: rgba(6, 32, 23, 0.94);
+  --color-bg-panel-dense: rgba(6, 32, 23, 0.98);
+  --color-bg-panel-hover: rgba(8, 42, 30, 0.95);
+  --color-bg-panel-subtle: rgba(13, 50, 37, 0.7);
+  --color-bg-card: rgba(255, 255, 255, 0.025);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-card-expanded: rgba(255, 255, 255, 0.04);
+  --color-bg-card-active: rgba(16, 185, 129, 0.1);
+  --color-bg-item-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-item-active: rgba(16, 185, 129, 0.16);
+  --color-bg-control: rgba(255, 255, 255, 0.08);
+  --color-bg-control-hover: rgba(255, 255, 255, 0.15);
+  --color-bg-control-active: #059669;
+  --color-bg-control-active-hover: #047857;
+  --color-bg-badge: rgba(255, 255, 255, 0.08);
+  --color-bg-badge-hover: rgba(255, 255, 255, 0.2);
+  --color-bg-badge-accent: rgba(16, 185, 129, 0.12);
+  --color-bg-meta-card: rgba(0, 0, 0, 0.35);
+  --color-bg-modal-backdrop: rgba(2, 20, 14, 0.8);
+  --color-bg-loading-overlay: rgba(2, 20, 14, 0.65);
+  --color-slider-track: rgba(255, 255, 255, 0.15);
+
+  /* Typography & Foreground */
+  --color-text-primary: #f0fdf4;
+  --color-text-secondary: #dcfce7;
+  --color-text-muted: #86efac;
+  --color-text-dim: #4ade80;
+  --color-text-accent: #10b981;
+  --color-text-accent-hover: #34d399;
+  --color-text-inverse: #062017;
+  --color-text-on-accent: #ffffff;
+  --color-divider: #065f46;
+
+  /* Accents & Brand */
+  --color-accent: #10b981;
+  --color-accent-hover: #34d399;
+  --color-accent-active: #059669;
+  --color-accent-active-hover: #047857;
+  --color-accent-subtle: rgba(16, 185, 129, 0.12);
+  --color-accent-muted: rgba(16, 185, 129, 0.18);
+  --color-accent-glow: rgba(16, 185, 129, 0.4);
+  --color-accent-secondary: #059669;
+  --color-accent-secondary-hover: #10b981;
+  --gradient-accent-badge: linear-gradient(135deg, #059669, #0d9488);
+  --gradient-brand-title: linear-gradient(135deg, #f0fdf4, #a7f3d0);
+  --gradient-timeline-rail: linear-gradient(
+    180deg,
+    rgba(16, 185, 129, 0.4) 0%,
+    rgba(255, 255, 255, 0.12) 15%,
+    rgba(255, 255, 255, 0.12) 85%,
+    rgba(16, 185, 129, 0.4) 100%
+  );
+
+  /* Borders & Outlines */
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-divider: rgba(255, 255, 255, 0.1);
+  --color-border-default: rgba(16, 185, 129, 0.18);
+  --color-border-strong: rgba(16, 185, 129, 0.3);
+  --color-border-accent: #10b981;
+  --color-border-accent-subtle: rgba(16, 185, 129, 0.4);
+  --color-border-accent-subtler: rgba(16, 185, 129, 0.25);
+  --color-border-control: rgba(255, 255, 255, 0.14);
+  --color-border-control-subtle: rgba(255, 255, 255, 0.09);
+  --color-border-control-active: #34d399;
+
+  /* Elevation & Shadows */
+  --shadow-accent-glow: 0 0 8px #10b981;
+  --shadow-accent-glow-subtle: 0 2px 10px rgba(16, 185, 129, 0.18);
+  --shadow-badge: 0 2px 8px rgba(5, 150, 105, 0.35);
+}
+
+/* ==========================================================================
+   4. Alternate Theme: Midnight Amethyst (Cosmic Violet & Radiant Orchid)
+   ========================================================================== */
+[data-theme="amethyst"],
+[data-theme="midnight-amethyst"],
+[data-theme="violet"] {
+  /* Surfaces & Backgrounds */
+  --color-bg-app: #090514;
+  --color-bg-header-start: rgba(9, 5, 20, 0.9);
+  --color-bg-header-end: rgba(9, 5, 20, 0);
+  --color-bg-panel: rgba(24, 15, 38, 0.88);
+  --color-bg-panel-solid: #180f26;
+  --color-bg-panel-elevated: rgba(24, 15, 38, 0.94);
+  --color-bg-panel-dense: rgba(24, 15, 38, 0.98);
+  --color-bg-panel-hover: rgba(34, 20, 52, 0.95);
+  --color-bg-panel-subtle: rgba(38, 24, 60, 0.7);
+  --color-bg-card: rgba(255, 255, 255, 0.025);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-card-expanded: rgba(255, 255, 255, 0.04);
+  --color-bg-card-active: rgba(168, 85, 247, 0.1);
+  --color-bg-item-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-item-active: rgba(168, 85, 247, 0.16);
+  --color-bg-control: rgba(255, 255, 255, 0.08);
+  --color-bg-control-hover: rgba(255, 255, 255, 0.15);
+  --color-bg-control-active: #7c3aed;
+  --color-bg-control-active-hover: #6d28d9;
+  --color-bg-badge: rgba(255, 255, 255, 0.08);
+  --color-bg-badge-hover: rgba(255, 255, 255, 0.2);
+  --color-bg-badge-accent: rgba(168, 85, 247, 0.12);
+  --color-bg-meta-card: rgba(0, 0, 0, 0.35);
+  --color-bg-modal-backdrop: rgba(9, 5, 20, 0.8);
+  --color-bg-loading-overlay: rgba(9, 5, 20, 0.65);
+  --color-slider-track: rgba(255, 255, 255, 0.15);
+
+  /* Typography & Foreground */
+  --color-text-primary: #faf5ff;
+  --color-text-secondary: #f3e8ff;
+  --color-text-muted: #c084fc;
+  --color-text-dim: #9333ea;
+  --color-text-accent: #a855f7;
+  --color-text-accent-hover: #c084fc;
+  --color-text-inverse: #180f26;
+  --color-text-on-accent: #ffffff;
+  --color-divider: #581c87;
+
+  /* Accents & Brand */
+  --color-accent: #a855f7;
+  --color-accent-hover: #c084fc;
+  --color-accent-active: #7c3aed;
+  --color-accent-active-hover: #6d28d9;
+  --color-accent-subtle: rgba(168, 85, 247, 0.12);
+  --color-accent-muted: rgba(168, 85, 247, 0.18);
+  --color-accent-glow: rgba(168, 85, 247, 0.4);
+  --color-accent-secondary: #7c3aed;
+  --color-accent-secondary-hover: #a855f7;
+  --gradient-accent-badge: linear-gradient(135deg, #7c3aed, #ec4899);
+  --gradient-brand-title: linear-gradient(135deg, #faf5ff, #d8b4fe);
+  --gradient-timeline-rail: linear-gradient(
+    180deg,
+    rgba(168, 85, 247, 0.4) 0%,
+    rgba(255, 255, 255, 0.12) 15%,
+    rgba(255, 255, 255, 0.12) 85%,
+    rgba(168, 85, 247, 0.4) 100%
+  );
+
+  /* Borders & Outlines */
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-divider: rgba(255, 255, 255, 0.1);
+  --color-border-default: rgba(168, 85, 247, 0.18);
+  --color-border-strong: rgba(168, 85, 247, 0.3);
+  --color-border-accent: #a855f7;
+  --color-border-accent-subtle: rgba(168, 85, 247, 0.4);
+  --color-border-accent-subtler: rgba(168, 85, 247, 0.25);
+  --color-border-control: rgba(255, 255, 255, 0.14);
+  --color-border-control-subtle: rgba(255, 255, 255, 0.09);
+  --color-border-control-active: #c084fc;
+
+  /* Elevation & Shadows */
+  --shadow-accent-glow: 0 0 8px #a855f7;
+  --shadow-accent-glow-subtle: 0 2px 10px rgba(168, 85, 247, 0.18);
+  --shadow-badge: 0 2px 8px rgba(124, 58, 237, 0.35);
+}
+
+/* ==========================================================================
+   5. Alternate Theme: Historical Parchment (Warm Aged Ivory & Antique Ink)
+   ========================================================================== */
+[data-theme="parchment"],
+[data-theme="light"] {
+  /* Surfaces & Backgrounds */
+  --color-bg-app: #f2ece1;
+  --color-bg-header-start: rgba(242, 236, 225, 0.95);
+  --color-bg-header-end: rgba(242, 236, 225, 0);
+  --color-bg-panel: rgba(255, 252, 245, 0.92);
+  --color-bg-panel-solid: #faf7f0;
+  --color-bg-panel-elevated: rgba(255, 252, 245, 0.96);
+  --color-bg-panel-dense: rgba(255, 252, 245, 0.98);
+  --color-bg-panel-hover: rgba(255, 255, 255, 0.98);
+  --color-bg-panel-subtle: rgba(238, 231, 219, 0.85);
+  --color-bg-card: rgba(0, 0, 0, 0.03);
+  --color-bg-card-hover: rgba(0, 0, 0, 0.06);
+  --color-bg-card-expanded: rgba(0, 0, 0, 0.04);
+  --color-bg-card-active: rgba(180, 83, 9, 0.09);
+  --color-bg-item-hover: rgba(0, 0, 0, 0.05);
+  --color-bg-item-active: rgba(180, 83, 9, 0.14);
+  --color-bg-control: rgba(0, 0, 0, 0.05);
+  --color-bg-control-hover: rgba(0, 0, 0, 0.1);
+  --color-bg-control-active: #b45309;
+  --color-bg-control-active-hover: #92400e;
+  --color-bg-badge: rgba(0, 0, 0, 0.06);
+  --color-bg-badge-hover: rgba(0, 0, 0, 0.12);
+  --color-bg-badge-accent: rgba(180, 83, 9, 0.1);
+  --color-bg-meta-card: rgba(0, 0, 0, 0.04);
+  --color-bg-modal-backdrop: rgba(41, 37, 36, 0.5);
+  --color-bg-loading-overlay: rgba(242, 236, 225, 0.7);
+  --color-slider-track: rgba(0, 0, 0, 0.15);
+
+  /* Typography & Foreground */
+  --color-text-primary: #1c1917;
+  --color-text-secondary: #44403c;
+  --color-text-muted: #78716c;
+  --color-text-dim: #a8a29e;
+  --color-text-accent: #b45309;
+  --color-text-accent-hover: #92400e;
+  --color-text-inverse: #ffffff;
+  --color-text-on-accent: #ffffff;
+  --color-divider: #d6d3d1;
+
+  /* Accents & Brand */
+  --color-accent: #b45309;
+  --color-accent-hover: #92400e;
+  --color-accent-active: #78350f;
+  --color-accent-active-hover: #451a03;
+  --color-accent-subtle: rgba(180, 83, 9, 0.1);
+  --color-accent-muted: rgba(180, 83, 9, 0.15);
+  --color-accent-glow: rgba(180, 83, 9, 0.25);
+  --color-accent-secondary: #9a3412;
+  --color-accent-secondary-hover: #c2410c;
+  --gradient-accent-badge: linear-gradient(135deg, #b45309, #9a3412);
+  --gradient-brand-title: linear-gradient(135deg, #1c1917, #78716c);
+  --gradient-timeline-rail: linear-gradient(
+    180deg,
+    rgba(180, 83, 9, 0.4) 0%,
+    rgba(0, 0, 0, 0.1) 15%,
+    rgba(0, 0, 0, 0.1) 85%,
+    rgba(180, 83, 9, 0.4) 100%
+  );
+
+  /* Borders & Outlines */
+  --color-border-subtle: rgba(0, 0, 0, 0.07);
+  --color-border-divider: rgba(0, 0, 0, 0.1);
+  --color-border-default: rgba(68, 64, 60, 0.16);
+  --color-border-strong: rgba(68, 64, 60, 0.3);
+  --color-border-accent: #b45309;
+  --color-border-accent-subtle: rgba(180, 83, 9, 0.4);
+  --color-border-accent-subtler: rgba(180, 83, 9, 0.25);
+  --color-border-control: rgba(0, 0, 0, 0.15);
+  --color-border-control-subtle: rgba(0, 0, 0, 0.1);
+  --color-border-control-active: #b45309;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 2px 8px rgba(41, 37, 36, 0.1);
+  --shadow-md: 0 4px 15px rgba(41, 37, 36, 0.12);
+  --shadow-lg: 0 16px 36px rgba(41, 37, 36, 0.15);
+  --shadow-xl: 0 20px 40px rgba(41, 37, 36, 0.18);
+  --shadow-2xl: 0 25px 60px rgba(41, 37, 36, 0.22);
+  --shadow-panel-highlight: 0 0 1px 1px rgba(255, 255, 255, 0.8);
+  --shadow-accent-glow: 0 0 8px rgba(180, 83, 9, 0.3);
+  --shadow-accent-glow-subtle: 0 2px 10px rgba(180, 83, 9, 0.15);
+  --shadow-badge: 0 2px 8px rgba(180, 83, 9, 0.25);
+
+  /* Status Indicators */
+  --color-status-exact-bg: rgba(22, 101, 52, 0.12);
+  --color-status-exact-text: #15803d;
+  --color-status-exact-border: rgba(22, 101, 52, 0.25);
+  --color-status-approx-bg: rgba(180, 83, 9, 0.12);
+  --color-status-approx-text: #b45309;
+  --color-status-approx-border: rgba(180, 83, 9, 0.25);
+  --color-status-frontier-bg: rgba(100, 116, 139, 0.12);
+  --color-status-frontier-text: #475569;
+  --color-status-frontier-border: rgba(100, 116, 139, 0.25);
+  --color-status-era-bg: rgba(126, 34, 206, 0.12);
+  --color-status-era-text: #7e22ce;
+  --color-status-era-border: rgba(126, 34, 206, 0.25);
+
+  /* Scrollbars */
+  --color-scrollbar-thumb: rgba(0, 0, 0, 0.15);
+  --color-scrollbar-thumb-hover: rgba(0, 0, 0, 0.3);
+}

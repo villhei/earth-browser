@@ -798,7 +798,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         width: "100%",
         height: "100%",
         overflow: "hidden",
-        backgroundColor: "#050811",
+        backgroundColor: "var(--color-bg-app, #050811)",
         cursor: "grab",
         ...style,
       }}
@@ -833,14 +833,14 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "rgba(5, 8, 17, 0.6)",
-            backdropFilter: "blur(4px)",
+            backgroundColor: "var(--color-bg-loading-overlay, rgba(5, 8, 17, 0.6))",
+            backdropFilter: "blur(var(--blur-xs, 4px))",
             zIndex: 10,
             gap: "16px",
-            color: "#e2e8f0",
+            color: "var(--color-text-secondary, #e2e8f0)",
           }}
         >
-          <PuffLoader color="#38bdf8" size={70} />
+          <PuffLoader color="var(--color-accent, #38bdf8)" size={70} />
           <span style={{ fontSize: "14px", letterSpacing: "0.05em" }}>
             Loading Historical Boundaries...
           </span>
@@ -854,16 +854,16 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
             bottom: "80px",
             left: "50%",
             transform: "translateX(-50%)",
-            backgroundColor: "rgba(15, 23, 42, 0.85)",
-            backdropFilter: "blur(8px)",
-            border: "1px solid rgba(255, 255, 255, 0.15)",
+            backgroundColor: "var(--color-bg-panel, rgba(15, 23, 42, 0.85))",
+            backdropFilter: "blur(var(--blur-sm, 8px))",
+            border: "1px solid var(--color-border-control, rgba(255, 255, 255, 0.15))",
             padding: "8px 18px",
-            borderRadius: "20px",
-            color: "#f8fafc",
+            borderRadius: "var(--radius-pill, 20px)",
+            color: "var(--color-text-primary, #f8fafc)",
             fontSize: "14px",
             fontWeight: 500,
             pointerEvents: "none",
-            boxShadow: "0 10px 25px rgba(0,0,0,0.5)",
+            boxShadow: "var(--shadow-md, 0 10px 25px rgba(0,0,0,0.5))",
             zIndex: 5,
           }}
         >

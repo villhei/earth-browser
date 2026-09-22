@@ -1,94 +1,94 @@
 .app-attribution {
   position: absolute;
-  bottom: 16px;
-  right: 16px;
-  z-index: 20;
+  bottom: var(--space-8);
+  right: var(--space-8);
+  z-index: var(--z-panel);
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  padding: 5px 12px;
-  font-size: 11px;
-  color: #94a3b8;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  gap: var(--space-4);
+  background: var(--color-bg-panel);
+  backdrop-filter: blur(var(--blur-md));
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-pill);
+  padding: 5px var(--space-6);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  box-shadow: var(--shadow-md);
   pointer-events: auto;
   user-select: none;
-  transition: all 0.2s ease;
+  transition: all var(--transition-smooth);
 }
 
 .app-attribution:hover {
-  background: rgba(15, 23, 42, 0.95);
-  border-color: rgba(56, 189, 248, 0.4);
-  color: #cbd5e1;
+  background: var(--color-bg-panel-hover);
+  border-color: var(--color-border-accent-subtle);
+  color: var(--color-text-secondary);
 }
 
 .attribution-text {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: var(--space-2);
 }
 
 .attribution-link {
-  color: #38bdf8;
+  color: var(--color-text-accent);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast);
 }
 
 .attribution-link:hover {
-  color: #7dd3fc;
+  color: var(--color-text-accent-hover);
   text-decoration: underline;
 }
 
 .attribution-license {
-  color: #cbd5e1;
+  color: var(--color-text-secondary);
   text-decoration: none;
-  font-family: monospace;
-  font-size: 10px;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-2xs);
 }
 
 .attribution-license:hover {
-  color: #f8fafc;
+  color: var(--color-text-primary);
   text-decoration: underline;
 }
 
 .attribution-info-btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--color-bg-badge);
   border: none;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   width: 18px;
   height: 18px;
-  border-radius: 50%;
-  font-size: 11px;
-  font-weight: 700;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.15s ease;
-  margin-left: 2px;
+  transition: all var(--transition-fast);
+  margin-left: var(--space-1);
 }
 
 .attribution-info-btn:hover {
-  background: #38bdf8;
-  color: #0f172a;
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
 }
 
 /* Attribution Modal Dialog */
 .attribution-modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(5, 8, 17, 0.75);
-  backdrop-filter: blur(8px);
-  z-index: 100;
+  background: var(--color-bg-modal-backdrop);
+  backdrop-filter: blur(var(--blur-sm));
+  z-index: var(--z-modal-backdrop);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  animation: modalFadeIn 0.2s ease-out;
+  padding: var(--space-10);
+  animation: modalFadeIn var(--transition-smooth);
 }
 
 @keyframes modalFadeIn {
@@ -101,17 +101,17 @@
 }
 
 .attribution-modal-content {
-  background: rgba(15, 23, 42, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 18px;
+  background: var(--color-bg-panel-dense);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-2xl);
   max-width: 540px;
   width: 100%;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  box-shadow: var(--shadow-2xl);
   display: flex;
   flex-direction: column;
-  color: #f8fafc;
+  color: var(--color-text-primary);
   overflow: hidden;
-  animation: modalSlideUp 0.2s ease-out;
+  animation: modalSlideUp var(--transition-smooth);
 }
 
 @keyframes modalSlideUp {
@@ -129,70 +129,70 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 24px 16px 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-10) var(--space-12) var(--space-8) var(--space-12);
+  border-bottom: 1px solid var(--color-border-divider);
 }
 
 .attribution-modal-tag {
-  font-size: 11px;
+  font-size: var(--font-size-xs);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #38bdf8;
-  font-weight: 700;
+  letter-spacing: var(--letter-spacing-widest);
+  color: var(--color-text-accent);
+  font-weight: var(--font-weight-bold);
 }
 
 .attribution-modal-title {
-  margin: 4px 0 0 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #f8fafc;
+  margin: var(--space-2) 0 0 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
 }
 
 .attribution-modal-close {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--color-bg-badge);
   border: none;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   width: 28px;
   height: 28px;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
-  transition: all 0.15s ease;
+  font-size: var(--font-size-md);
+  transition: all var(--transition-fast);
 }
 
 .attribution-modal-close:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: var(--color-bg-badge-hover);
+  color: var(--color-text-on-accent);
 }
 
 .attribution-modal-body {
-  padding: 20px 24px;
+  padding: var(--space-10) var(--space-12);
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: var(--space-9);
   max-height: 60vh;
   overflow-y: auto;
 }
 
 .attribution-section h4 {
-  margin: 0 0 6px 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: #f8fafc;
+  margin: 0 0 var(--space-3) 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
 }
 
 .attribution-section p {
   margin: 0;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #94a3b8;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-muted);
 }
 
 .attribution-section p a {
-  color: #38bdf8;
+  color: var(--color-text-accent);
   text-decoration: none;
 }
 
@@ -201,30 +201,30 @@
 }
 
 .attribution-meta-card {
-  margin-top: 10px;
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  padding: 12px;
+  margin-top: var(--space-5);
+  background: var(--color-bg-meta-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--space-4);
 }
 
 .attribution-meta-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: var(--font-size-sm);
 }
 
 .attribution-meta-row .meta-label {
-  color: #94a3b8;
-  font-weight: 500;
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-medium);
 }
 
 .attribution-meta-row .meta-val a {
-  color: #38bdf8;
+  color: var(--color-text-accent);
   text-decoration: none;
 }
 
@@ -233,43 +233,43 @@
 }
 
 .license-badge {
-  background: rgba(56, 189, 248, 0.15);
-  color: #38bdf8 !important;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 11px;
-  font-family: monospace;
-  font-weight: 600;
+  background: var(--color-accent-muted);
+  color: var(--color-text-accent) !important;
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-xs);
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-semibold);
 }
 
 .attribution-modal-footer {
-  padding: 14px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-7) var(--space-12);
+  border-top: 1px solid var(--color-border-divider);
   display: flex;
   justify-content: flex-end;
 }
 
 .attribution-btn-primary {
-  background: #0284c7;
-  border: 1px solid #38bdf8;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
+  background: var(--color-accent-active);
+  border: 1px solid var(--color-border-accent);
+  color: var(--color-text-on-accent);
+  padding: var(--space-4) var(--space-9);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all var(--transition-fast);
 }
 
 .attribution-btn-primary:hover {
-  background: #0369a1;
+  background: var(--color-accent-active-hover);
 }
 
 @media (max-width: 768px) {
   .app-attribution {
-    bottom: 8px;
-    right: 8px;
-    font-size: 10px;
-    padding: 4px 8px;
+    bottom: var(--space-4);
+    right: var(--space-4);
+    font-size: var(--font-size-2xs);
+    padding: var(--space-2) var(--space-4);
   }
 }

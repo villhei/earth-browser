@@ -1,32 +1,33 @@
 .controls-overlay {
   position: absolute;
-  top: 24px;
-  right: 24px;
-  z-index: 30;
+  top: var(--space-12);
+  right: var(--space-12);
+  z-index: var(--z-controls);
 }
 
 .controls-toggle-btn {
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #f8fafc;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 600;
+  background: var(--color-bg-panel);
+  backdrop-filter: blur(var(--blur-md));
+  -webkit-backdrop-filter: blur(var(--blur-md));
+  border: 1px solid var(--color-border-control);
+  color: var(--color-text-primary);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  transition: all 0.2s ease;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-smooth);
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: var(--space-3);
 }
 
 .controls-toggle-btn:hover,
 .controls-toggle-btn.active {
-  background: rgba(30, 41, 59, 0.95);
-  border-color: #38bdf8;
-  color: #38bdf8;
+  background: var(--color-bg-panel-elevated);
+  border-color: var(--color-border-accent);
+  color: var(--color-text-accent);
 }
 
 .controls-panel {
@@ -36,17 +37,18 @@
   width: 260px;
   max-height: calc(100dvh - 112px);
   overflow-y: auto;
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  background: var(--color-bg-panel-elevated);
+  backdrop-filter: blur(var(--blur-lg));
+  -webkit-backdrop-filter: blur(var(--blur-lg));
+  border: 1px solid var(--color-border-control);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-xl);
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  animation: panelSlideDown 0.2s ease-out;
-  color: #f8fafc;
+  gap: var(--space-8);
+  animation: panelSlideDown var(--transition-smooth);
+  color: var(--color-text-primary);
 }
 
 @keyframes panelSlideDown {
@@ -64,29 +66,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border-divider);
+  padding-bottom: var(--space-4);
 }
 
 .controls-header h4 {
   margin: 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: #f8fafc;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
 }
 
 .controls-close {
   background: none;
   border: none;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   cursor: pointer;
-  font-size: 12px;
+  font-size: var(--font-size-sm);
 }
 
 .controls-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--space-4);
 }
 
 .controls-label-row {
@@ -96,84 +98,84 @@
 }
 
 .controls-label {
-  font-size: 12px;
-  color: #94a3b8;
-  font-weight: 500;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-medium);
 }
 
 .controls-val {
-  font-size: 12px;
-  color: #38bdf8;
-  font-family: monospace;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-accent);
+  font-family: var(--font-family-mono);
 }
 
 .controls-help {
   margin: 0;
-  color: #94a3b8;
-  font-size: 11px;
-  line-height: 1.5;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
 }
 
 .controls-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px;
+  gap: var(--space-3);
 }
 
 .controls-pill {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #cbd5e1;
-  padding: 6px 10px;
-  border-radius: 8px;
-  font-size: 12px;
+  background: var(--color-bg-control);
+  border: 1px solid var(--color-border-control-subtle);
+  color: var(--color-text-secondary);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all var(--transition-fast);
 }
 
 .controls-pill:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: var(--color-bg-control-hover);
+  color: var(--color-text-on-accent);
 }
 
 .controls-pill.active {
-  background: #3b82f6;
-  border-color: #60a5fa;
-  color: #fff;
-  font-weight: 600;
+  background: var(--color-bg-control-active);
+  border-color: var(--color-border-control-active);
+  color: var(--color-text-on-accent);
+  font-weight: var(--font-weight-semibold);
 }
 
 .controls-select {
   width: 100%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  color: #f8fafc;
-  padding: 6px 10px;
-  font-size: 12px;
+  background: var(--color-bg-control);
+  border: 1px solid var(--color-border-control);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--font-size-sm);
   font-family: inherit;
   outline: none;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all var(--transition-fast);
 }
 
 .controls-select:hover,
 .controls-select:focus {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: #38bdf8;
+  background: var(--color-bg-control-hover);
+  border-color: var(--color-border-accent);
 }
 
 .controls-select option {
-  background: #0f172a;
-  color: #f8fafc;
+  background: var(--color-bg-panel-solid);
+  color: var(--color-text-primary);
 }
 
 .controls-slider {
   width: 100%;
   appearance: none;
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--color-slider-track);
   height: 4px;
-  border-radius: 2px;
+  border-radius: var(--radius-xs);
   outline: none;
   cursor: pointer;
 }
@@ -182,11 +184,18 @@
   appearance: none;
   width: 14px;
   height: 14px;
-  border-radius: 50%;
-  background: #38bdf8;
+  border-radius: var(--radius-round);
+  background: var(--color-accent);
   cursor: pointer;
 }
+
 .controls-pill:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+.controls-divider {
+  border-top: 1px solid var(--color-border-divider);
+  padding-top: var(--space-5);
+  margin-top: var(--space-1);
 }

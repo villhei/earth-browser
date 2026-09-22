@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { GlobeConfig, GlobeTexture } from "../types"
+import { ColorSchemeId, COLOR_SCHEMES } from "../styles/theme"
 import "./ControlsOverlay.css"
 
 interface ControlsOverlayProps {
@@ -8,6 +9,8 @@ interface ControlsOverlayProps {
   onOpenAttribution?: () => void
   iceOverlayAvailable?: boolean
   terrainOverlayAvailable?: boolean
+  colorScheme?: ColorSchemeId
+  onChangeColorScheme?: (scheme: ColorSchemeId) => void
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
@@ -16,6 +19,8 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onOpenAttribution,
   iceOverlayAvailable = false,
   terrainOverlayAvailable = false,
+  colorScheme = "slate",
+  onChangeColorScheme,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -44,6 +49,26 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
             >
               ✕
             </button>
+          </div>
+
+          <div className="controls-group">
+            <div className="controls-label-row">
+              <label className="controls-label">UI Color Scheme</label>
+            </div>
+            <select
+              className="controls-select"
+              value={colorScheme}
+              onChange={(e) =>
+                onChangeColorScheme?.(e.target.value as ColorSchemeId)
+              }
+              aria-label="UI Color Scheme"
+            >
+              {COLOR_SCHEMES.map((scheme) => (
+                <option key={scheme.id} value={scheme.id}>
+                  {scheme.name}
+                </option>
+              ))}
+            </select>
           </div>
 
           <div className="controls-group">
@@ -233,13 +258,7 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
           )}
 
           {onOpenAttribution && (
-            <div
-              style={{
-                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
-                paddingTop: "10px",
-                marginTop: "2px",
-              }}
-            >
+            <div className="controls-divider">
               <button
                 className="controls-pill"
                 style={{
