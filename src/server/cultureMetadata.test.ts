@@ -207,5 +207,30 @@ describe("Culture Metadata Batches", () => {
     const batchPath = path.resolve(__dirname, "../../data-sources/batches/prehistoric-archaeological.json")
     validateBatch(batchPath, ["Prehistoric & Archaeological", "Western & Central Europe"], 21)
   })
+
+  it("validates the Oceania batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/oceania.json")
+    validateBatch(batchPath, "Oceania", 50)
+  })
+
+  it("validates the Arctic & Subarctic batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/arctic-subarctic.json")
+    validateBatch(batchPath, "Arctic & Subarctic", 25)
+  })
+
+  it("validates the South American Indigenous batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/south-american-indigenous.json")
+    validateBatch(batchPath, "South American Indigenous", 25)
+  })
+
+  it("validates the North America East & Plains batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/north-america-east-plains.json")
+    validateBatch(batchPath, "North American Indigenous", 65)
+  })
+
+  it("validates the North America West batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/north-america-west.json")
+    validateBatch(batchPath, "North American Indigenous", 45)
+  })
 })
 

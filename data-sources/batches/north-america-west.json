@@ -1,0 +1,1358 @@
+[
+  {
+    "slug": "ancestral-puebloans-anasazi",
+    "name": "Ancestral Puebloans (Anasazi)",
+    "name_fi": "Muinaiset pueblointiaanit (Anasazi)",
+    "native_name": "Hisatsinom / Ancestral Pueblo",
+    "alternate_names": [
+      "Anasazi"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pueblo",
+    "historical_period": "Oasisamerica Cliff-Dwelling Civilization",
+    "year_start": -1200,
+    "year_end": 1300,
+    "period_label": "1200 BCE – 1300 CE",
+    "period_label_fi": "1200 eaa. – 1300 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ancestral_Puebloans",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Anasazit",
+    "wikidata_id": "Q111860",
+    "summary_en": "Ancient Southwestern civilization centered in the Four Corners region renowned for monumental multi-story sandstone cliff dwellings at Mesa Verde, Chaco Canyon great houses, and kiva ceremonial chambers.",
+    "summary_fi": "Four Cornersin alueen muinainen korkeakulttuuri, joka tunnetaan Chaco Canyonin valtavista kivitaloista, Mesa Verden kallionkielekejyrkännetaloista ja maanalaisista kiva-seremoniakammioistaan.",
+    "capital": "Chaco Canyon (Pueblo Bonito) / Mesa Verde",
+    "feature_name_matches": [
+      "Anasazi"
+    ]
+  },
+  {
+    "slug": "hohokam-tradition",
+    "name": "Hohokam Tradition",
+    "name_fi": "Hohokam-kulttuuri",
+    "native_name": "Huhugam / Those Who Have Gone",
+    "alternate_names": [
+      "Hohokam"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pueblo",
+    "historical_period": "Sonoran Desert Canal Engineering Civilization",
+    "year_start": 300,
+    "year_end": 1450,
+    "period_label": "300 CE – 1450 CE",
+    "period_label_fi": "300 jaa. – 1450 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hohokam",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hohokam-kulttuuri",
+    "wikidata_id": "Q1144208",
+    "summary_en": "Ingenious agricultural civilization of the Sonoran Desert that engineered over 500 miles of large gravity-fed irrigation canals along the Salt and Gila rivers to sustain massive desert population centers.",
+    "summary_fi": "Sonoran aavikon hämmästyttävä maanviljelyskulttuuri, joka rakensi yli 800 kilometriä kastelukanavia Salt- ja Gila-jokien laaksoihin ja pystytti suuria Casa Granden kaltaisia savitiilirakennuksia.",
+    "capital": "Snaketown / Casa Grande Ruins",
+    "feature_name_matches": [
+      "Hohokam"
+    ]
+  },
+  {
+    "slug": "mogollon-culture",
+    "name": "Mogollon Culture (Mimbres)",
+    "name_fi": "Mogollon-kulttuuri (Mimbres)",
+    "native_name": "Mogollon & Mimbres Tradition",
+    "alternate_names": [
+      "Mogollon"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pueblo",
+    "historical_period": "Oasisamerica Mountain Ceramic Civilization",
+    "year_start": 200,
+    "year_end": 1450,
+    "period_label": "200 CE – 1450 CE",
+    "period_label_fi": "200 jaa. – 1450 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mogollon_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mogollonin_kulttuuri",
+    "wikidata_id": "Q1341071",
+    "summary_en": "Mountain Oasisamerican culture of southern New Mexico and Arizona celebrated worldwide for Mimbres black-on-white painted ceramic bowls depicting stylized animals, humans, and geometric cosmology.",
+    "summary_fi": "Eteläisen New Mexicon ja Arizonan vuoristoinen esikolumbiaaninen kulttuuri, joka tunnetaan maailmanlaajuisesti mustavalkoisista Mimbres-kulhoistaan eläin- ja ihmiskuvineen.",
+    "capital": "Gila Cliff Dwellings / Paquimé (Casas Grandes)",
+    "feature_name_matches": [
+      "Mogollon"
+    ]
+  },
+  {
+    "slug": "pueblo-nations",
+    "name": "Pueblo Nations of the Southwest",
+    "name_fi": "Pueblo-kansat",
+    "native_name": "Pueblo Peoples / Rio Grande Pueblos",
+    "alternate_names": [
+      "Pueblos",
+      "Taos Pueblo"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pueblo",
+    "historical_period": "Continuous Adobe Architecture & 1680 Pueblo Revolt",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Puebloans",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pueblo-intiaanit",
+    "wikidata_id": "Q852430",
+    "summary_en": "Sedentary adobe town-dwelling nations of New Mexico and Arizona who united under Po'pay in the successful 1680 Pueblo Revolt, driving the Spanish Empire out of New Mexico for twelve years.",
+    "summary_fi": "New Mexicon ja Arizonan pysyvissä savitiilikaupungeissa asuvat kansat, jotka nousivat Po'payn johdolla vuoden 1680 pueblokapinaan ja karkottivat Espanjan vallanpitäjät 12 vuodeksi.",
+    "capital": "Taos Pueblo / Santa Fe Basin",
+    "feature_name_matches": [
+      "Pueblos",
+      "Taos Pueblo"
+    ]
+  },
+  {
+    "slug": "hopi-nation",
+    "name": "Hopi Nation (Hopitutskwa)",
+    "name_fi": "Hopi-kansa (Hopitutskwa)",
+    "native_name": "Hopituh Shi-nu-mu / Peaceful People",
+    "alternate_names": [
+      "Hopi",
+      "Hopie",
+      "Hopitutskwa"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pueblo",
+    "historical_period": "Black Mesa Sacred Hopi Mesas",
+    "year_start": 1100,
+    "year_end": 2026,
+    "period_label": "1100 CE – Present",
+    "period_label_fi": "1100 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hopi",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hopit",
+    "wikidata_id": "Q201560",
+    "summary_en": "Deeply spiritual agricultural nation of northern Arizona continuously inhabiting cliff-top villages like Oraibi (inhabited since 1100 CE), practicing dry-farming maize agriculture and Katsina doll traditions.",
+    "summary_fi": "Pohjois-Arizonan Black Mesan jyrkännetörmillä asuva syvällisen henkinen kansa, jonka Oraibi-kylä on ollut asuttu yhtäjaksoisesti 1100-luvulta lähtien; tunnetaan katsina-veistoksistaan.",
+    "capital": "Kykotsmovi / Oraibi (Third Mesa)",
+    "feature_name_matches": [
+      "Hopi",
+      "Hopie",
+      "Hopitutskwa"
+    ]
+  },
+  {
+    "slug": "zuni-nation",
+    "name": "Zuni Nation (A:shiwi)",
+    "name_fi": "Zuni-kansa (A:shiwi)",
+    "native_name": "A:shiwi / Shiwinna",
+    "alternate_names": [
+      "Zuni",
+      "Shiwinna (Zuni)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pueblo",
+    "historical_period": "Seven Cities of Cibola Indigenous Nation",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Zuni_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zunit",
+    "wikidata_id": "Q229910",
+    "summary_en": "Pueblo nation speaking a unique linguistic isolate in western New Mexico, whose ancestral town Hawikuh was mistakenly sought by Coronado in 1540 as the legendary golden Seven Cities of Cíbola.",
+    "summary_fi": "Länsi-New Mexicon isolaattikieltä puhuva pueblokansa, jonka Hawikuh-kaupunkiin espanjalainen valloittaja Coronado hyökkäsi 1540 luullessaan sitä myyttiseksi Cíbolan kultakaupungiksi.",
+    "capital": "Halona Idiwan’a (Zuni Pueblo)",
+    "feature_name_matches": [
+      "Zuni",
+      "Shiwinna (Zuni)"
+    ]
+  },
+  {
+    "slug": "navajo-nation",
+    "name": "Navajo Nation (Diné Bikéyah)",
+    "name_fi": "Navajo-kansa (Diné Bikéyah)",
+    "native_name": "Diné / Diné Bikéyah",
+    "alternate_names": [
+      "Navajo",
+      "Diné Bikéyah"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "navajo",
+    "historical_period": "Sacred Four Mountains Sovereign Nation",
+    "year_start": 1400,
+    "year_end": 2026,
+    "period_label": "1400 CE – Present",
+    "period_label_fi": "1400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Navajo",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Navajot",
+    "wikidata_id": "Q131101",
+    "summary_en": "Largest federally recognized tribe in the United States, bounded by four sacred mountains in the Southwest, renowned for silver jewelry, sandpainting ceremonies, and WWII Navajo Code Talkers.",
+    "summary_fi": "Yhdysvaltain suurin intiaanikansa lounaisilla neljän pyhän vuoren mailla; maailmankuulu taidokkaista hopeakoruistaan, hiekkamaalauksistaan ja toisen maailmansodan navajo-koodinpuhujista.",
+    "capital": "Window Rock (Tségháhoodzání, Arizona)",
+    "feature_name_matches": [
+      "Navajo",
+      "Diné Bikéyah"
+    ]
+  },
+  {
+    "slug": "apache-nations",
+    "name": "Apache Nations (Ndé)",
+    "name_fi": "Apache-kansat (Ndé)",
+    "native_name": "Ndé / Indé / The People",
+    "alternate_names": [
+      "Apache"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "apache",
+    "historical_period": "Southwestern Mountain & Desert Athabaskan Nations",
+    "year_start": 1400,
+    "year_end": 2026,
+    "period_label": "1400 CE – Present",
+    "period_label_fi": "1400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Apache",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Apassit",
+    "wikidata_id": "Q41151",
+    "summary_en": "Southern Athabaskan warrior society of the Southwest mountains and deserts, celebrated for unparalleled guerrilla mobility, tracking mastery, and resistance against Spanish, Mexican, and U.S. forces.",
+    "summary_fi": "Lounais-Yhdysvaltain ja Pohjois-Meksikon vuoristojen athabascalainen soturikansa, joka tunnettiin mestarillisesta sissisodankäynnistään ja sitkeästä vastarinnastaan siirtomaajoukkoja vastaan.",
+    "capital": "Chiricahua, White Mountain & Mescalero Mountains",
+    "feature_name_matches": [
+      "Apache"
+    ]
+  },
+  {
+    "slug": "chiricahua-apache",
+    "name": "Chiricahua Apache Nation",
+    "name_fi": "Chiricahua-apassit",
+    "native_name": "Chókénén / Chiricahua",
+    "alternate_names": [
+      "Chiricahua",
+      "Chiricahua Apache"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "apache",
+    "historical_period": "Chiricahua Mountains Apache Resistance",
+    "year_start": 1400,
+    "year_end": 2026,
+    "period_label": "1400 CE – Present",
+    "period_label_fi": "1400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chiricahua",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Apassit",
+    "wikidata_id": "Q1074744",
+    "summary_en": "Southwestern Apache band of southeastern Arizona, southwestern New Mexico, and northern Sonora led by legendary leaders Cochise, Mangas Coloradas, Victorio, and Geronimo.",
+    "summary_fi": "Kaakkois-Arizonan ja Pohjois-Meksikon apassiheimo, josta nousivat legendaariset vapaustaistelijat Cochise, Mangas Coloradas, Victorio ja Geronimo.",
+    "capital": "Chiricahua Mountains / Fort Sill",
+    "feature_name_matches": [
+      "Chiricahua",
+      "Chiricahua Apache"
+    ]
+  },
+  {
+    "slug": "jicarilla-apache",
+    "name": "Jicarilla Apache Nation",
+    "name_fi": "Jicarilla-apassit",
+    "native_name": "Ha'úsh / Jicarilla",
+    "alternate_names": [
+      "Jicarilla",
+      "Jicarilla Apache"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "apache",
+    "historical_period": "Northern New Mexico Basketmakers",
+    "year_start": 1400,
+    "year_end": 2026,
+    "period_label": "1400 CE – Present",
+    "period_label_fi": "1400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Jicarilla",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Apassit",
+    "wikidata_id": "Q1255877",
+    "summary_en": "Athabaskan nation of northern New Mexico living across mountains (Olleros) and plains (Llaneros), celebrated for coil-woven basketry, clay bean pots, and the annual Gojiiya footrace festival.",
+    "summary_fi": "Pohjois-New Mexicon vuoristoissa ja tasangoilla elävä apassikansa, joka tunnetaan taidokkaista punotuista koreistaan ja vuosittaisesta Gojiiya-juoksujuhlastaan.",
+    "capital": "Dulce (New Mexico)",
+    "feature_name_matches": [
+      "Jicarilla",
+      "Jicarilla Apache"
+    ]
+  },
+  {
+    "slug": "mescalero-apache",
+    "name": "Mescalero Apache Tribe",
+    "name_fi": "Mescalero-apassit",
+    "native_name": "Mashgalénde / People of the Mescal Agave",
+    "alternate_names": [
+      "Mescalero",
+      "Mescalero Apache"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "apache",
+    "historical_period": "Sierra Blanca Sacred Mountain Guardians",
+    "year_start": 1400,
+    "year_end": 2026,
+    "period_label": "1400 CE – Present",
+    "period_label_fi": "1400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mescalero",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Apassit",
+    "wikidata_id": "Q1417551",
+    "summary_en": "Apache nation of south-central New Mexico centered on the sacred volcanic peak Sierra Blanca, harvesting and roasting nutritious wild mescal agave hearts in subterranean rock ovens.",
+    "summary_fi": "Etelä-New Mexicon apassikansa pyhän Sierra Blanca -vuoren ympärillä, joka valmisti ravinnokseen villiä mescal-agaavea maakuoppauuneissa paahtamalla.",
+    "capital": "Mescalero (New Mexico)",
+    "feature_name_matches": [
+      "Mescalero",
+      "Mescalero Apache"
+    ]
+  },
+  {
+    "slug": "lipan-apache",
+    "name": "Lipan Apache Tribe",
+    "name_fi": "Lipan-apassit",
+    "native_name": "Ndé Kónitsąąíí / Plains Apache",
+    "alternate_names": [
+      "Lipan",
+      "Ndé Kónitsąąíí Gokíyaa (Lipan Apache)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "apache",
+    "historical_period": "Texas Hill Country to Rio Grande Nation",
+    "year_start": 1400,
+    "year_end": 2026,
+    "period_label": "1400 CE – Present",
+    "period_label_fi": "1400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Lipan_Apache_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Apassit",
+    "wikidata_id": "Q1417546",
+    "summary_en": "Easternmost Apache nation who ranged across the Texas Hill Country and Rio Grande borderlands, navigating conflicts with the Comanche and Spanish San Sabá mission expeditions.",
+    "summary_fi": "Itäisin apassikansa Texasin kukkulamailla ja Rio Granden laaksossa, joka liikkui laajalla alueella ja taisteli comancheja ja espanjalaisia vastaan.",
+    "capital": "Texas Hill Country / McAllen",
+    "feature_name_matches": [
+      "Lipan",
+      "Ndé Kónitsąąíí Gokíyaa (Lipan Apache)"
+    ]
+  },
+  {
+    "slug": "western-apache-nations",
+    "name": "Western Apache (Ndee / White Mountain)",
+    "name_fi": "Läntiset apassit (Ndee / White Mountain)",
+    "native_name": "Nnēē / Ndee / Western Apache",
+    "alternate_names": [
+      "Ndee/Nnēē: (Western Apache)",
+      "White Mountain Apache",
+      "Yavapaiv Apache"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "apache",
+    "historical_period": "Mogollon Rim & White Mountains Apache Nation",
+    "year_start": 1400,
+    "year_end": 2026,
+    "period_label": "1400 CE – Present",
+    "period_label_fi": "1400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Western_Apache",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Apassit",
+    "wikidata_id": "Q544342",
+    "summary_en": "Western Apache bands (White Mountain, Cibecue, San Carlos, Tonto) along Arizona's Mogollon Rim, known for the Crown Dance (Gaan) spirit ceremonies and Fort Apache historic stewardship.",
+    "summary_fi": "Arizonan Mogollon Rimin ja White Mountainsin apassiryhmät, jotka vaalivat kruununtanssia (Gaan-vuorenhenget) ja hallinnoivat laajoja mäntymetsäalueitaan.",
+    "capital": "Whiteriver / San Carlos (Arizona)",
+    "feature_name_matches": [
+      "Ndee/Nnēē: (Western Apache)",
+      "White Mountain Apache",
+      "Yavapaiv Apache"
+    ]
+  },
+  {
+    "slug": "oodham-pima-nations",
+    "name": "O'odham (Pima & Tohono O'odham) Nations",
+    "name_fi": "O'odham-kansat (Pima ja Tohono O'odham)",
+    "native_name": "Akimel O'odham & Tohono O'odham / Desert People",
+    "alternate_names": [
+      "Pima",
+      "Akimel O'odham (Upper Pima)",
+      "Lower Tohono O’odham (Lower Pima)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pima",
+    "historical_period": "Sonoran Desert Riverine & Saguaro Stewards",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/O%27odham",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pimat",
+    "wikidata_id": "Q206584",
+    "summary_en": "Indigenous peoples of the Sonoran Desert in Arizona and Sonora descended from the Hohokam, harvesting saguaro cactus fruit (bahidaj) and cultivating drought-resistant tepary beans.",
+    "summary_fi": "Sonoran aavikon alkuperäiskansa Arizonassa ja Meksikossa; polveutuvat hohokameista ja korjaavat saguarokaktusten satoa viininvalmistukseen ja viljelevät kuivuutta kestävää papua.",
+    "capital": "Sacaton (Gila River) / Sells (Tohono O'odham)",
+    "feature_name_matches": [
+      "Pima",
+      "Akimel O'odham (Upper Pima)",
+      "Lower Tohono O’odham (Lower Pima)"
+    ]
+  },
+  {
+    "slug": "havasupai-hualapai-nations",
+    "name": "Havasupai & Hualapai Nations",
+    "name_fi": "Havasupai- ja Hualapai-kansat",
+    "native_name": "Havasu Baaja & Hwal'bay / Grand Canyon Peoples",
+    "alternate_names": [
+      "Havasupai",
+      "Havasu Baaja (Havasupai)",
+      "Hualapai"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "yuman",
+    "historical_period": "Grand Canyon Cataract & Rim Custodians",
+    "year_start": 1100,
+    "year_end": 2026,
+    "period_label": "1100 CE – Present",
+    "period_label_fi": "1100 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Havasupai",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Havasupait",
+    "wikidata_id": "Q1353289",
+    "summary_en": "Yuman peoples of the Grand Canyon; the Havasupai ('People of the Blue-Green Waters') farm corn below travertine waterfalls in Havasu Canyon, while the Hualapai steward the South Rim plateau.",
+    "summary_fi": "Grand Canyonin rotkon yuman-kieliset kansat; havasupait viljelevät maissia sinivihreiden vesiputousten alla Havasu Canyonissa ja hualapait hallitsevat kanjonin eteläreunaa.",
+    "capital": "Supai (Grand Canyon) / Peach Springs",
+    "feature_name_matches": [
+      "Havasupai",
+      "Havasu Baaja (Havasupai)",
+      "Hualapai"
+    ]
+  },
+  {
+    "slug": "yavapai-nation",
+    "name": "Yavapai Nation",
+    "name_fi": "Yavapai-kansa",
+    "native_name": "Yavapai / People of the Sun",
+    "alternate_names": [
+      "Yavapai"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "yuman",
+    "historical_period": "Central Arizona Highland Yuman Nation",
+    "year_start": 1100,
+    "year_end": 2026,
+    "period_label": "1100 CE – Present",
+    "period_label_fi": "1100 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yavapai",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yavapait",
+    "wikidata_id": "Q1353293",
+    "summary_en": "Upland Yuman nation inhabiting central Arizona around Prescott, Sedona's red rocks, and the Verde River, resiliently maintaining cultural life across four tribal reservations.",
+    "summary_fi": "Keski-Arizonan Sedonan punakallioiden ja Verde-joen alueen yuman-kansa, joka selviytyi 1870-luvun pakkosiirroista ja asuu nykyään neljässä heimoyhteisössä.",
+    "capital": "Fort McDowell / Prescott (Arizona)",
+    "feature_name_matches": [
+      "Yavapai"
+    ]
+  },
+  {
+    "slug": "colorado-river-yuman-nations",
+    "name": "Mojave, Quechan, Cocopah & Maricopa",
+    "name_fi": "Mojave-, Quechan-, Cocopah- ja Maricopa-kansat",
+    "native_name": "Pipa Aha Macav, Kwatsáan, Xawiƚƚ kwñchawaay & Piipaash",
+    "alternate_names": [
+      "Pipa Aha Macav (Mojave)",
+      "Quechan (Kwatsáan)",
+      "Piipaash (Maricopa)",
+      "Xawiƚƚ kwñchawaay (Cocopah)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "yuman",
+    "historical_period": "Lower Colorado River Valley Agriculturalists",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mohave_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mojavet",
+    "wikidata_id": "Q1140030",
+    "summary_en": "River Yuman nations who farmed the annual floodplains of the Lower Colorado and Gila rivers, renowned for sacred dream journeys, running prowess, and geometric geoglyph earth art.",
+    "summary_fi": "Colorado- ja Gila-jokien alajuoksun yuman-kansat, jotka viljelivät tulvatasankoja ja tunnettiin uniin perustuvasta hengellisestä perinteestään ja aavikkogeoglyfeistään.",
+    "capital": "Needles / Fort Yuma / Somerton",
+    "feature_name_matches": [
+      "Pipa Aha Macav (Mojave)",
+      "Quechan (Kwatsáan)",
+      "Piipaash (Maricopa)",
+      "Xawiƚƚ kwñchawaay (Cocopah)"
+    ]
+  },
+  {
+    "slug": "great-basin-desert-hunter-gatherers",
+    "name": "Great Basin Desert Hunter-Gatherers",
+    "name_fi": "Ison altaan aavikkometsästäjä-keräilijät",
+    "native_name": "Numic Desert Foragers",
+    "alternate_names": [
+      "Desert hunter-gatherers"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "great-basin-indigenous",
+    "historical_period": "Archaic to Historic Great Basin Foraging Horizon",
+    "year_start": -9000,
+    "year_end": 2026,
+    "period_label": "9000 BCE – Present",
+    "period_label_fi": "9000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Indigenous_peoples_of_the_Great_Basin",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Great_Basinin_intiaanit",
+    "wikidata_id": "Q2634358",
+    "summary_en": "Indigenous foraging cultures adapted to the harsh interior desert basins between the Sierra Nevada and Rocky Mountains, utilizing specialized seed-beaters to harvest piñon pine nuts and grass seeds.",
+    "summary_fi": "Sierra Nevadan ja Kalliovuorten välisen kuivan Ison altaan intiaaniyhteisöt, jotka sopeutuivat ankariin oloihin korjaamalla pähkinämännyn siemeniä ja pyytämällä jäniksiä verkoilla.",
+    "capital": "Great Basin & Intermountain Deserts",
+    "feature_name_matches": [
+      "Desert hunter-gatherers"
+    ]
+  },
+  {
+    "slug": "ute-nation",
+    "name": "Ute Nation (Núu-agha-tʉvʉ-pʉ̱)",
+    "name_fi": "Ute-kansa (Núu-agha-tʉvʉ-pʉ̱)",
+    "native_name": "Nóochew / Núu-agha-tʉvʉ-pʉ̱",
+    "alternate_names": [
+      "Ute",
+      "Núu-agha-tʉvʉ-pʉ̱ (Ute)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "ute",
+    "historical_period": "Rocky Mountain Numic Nation",
+    "year_start": 1200,
+    "year_end": 2026,
+    "period_label": "1200 CE – Present",
+    "period_label_fi": "1200 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ute_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Utet",
+    "wikidata_id": "Q1146747",
+    "summary_en": "Numic-speaking people who gave their name to the state of Utah, dominating the Colorado and Utah Rockies as early equestrian hunters and performing the sacred Bear Dance.",
+    "summary_fi": "Utah-osavaltiolle nimensä antanut Kalliovuorten intiaanikansa Coloradossa ja Utahissa, joka otti varhain käyttöön espanjalaiset hevoset ja tanssii pyhää Karhutanssia.",
+    "capital": "Fort Duchesne / Ignacio (Colorado)",
+    "feature_name_matches": [
+      "Ute",
+      "Núu-agha-tʉvʉ-pʉ̱ (Ute)"
+    ]
+  },
+  {
+    "slug": "shoshone-nations",
+    "name": "Shoshone Nations (Newe)",
+    "name_fi": "Shoshone-kansat (Newe)",
+    "native_name": "Newe / Neme / The People",
+    "alternate_names": [
+      "Eastern Shoshone",
+      "Newe (Western Shoshone)",
+      "Lemhi-Shoshone",
+      "Shoshone-Bannock"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "shoshone",
+    "historical_period": "Great Basin & Snake River Shoshone Confederacy",
+    "year_start": 1200,
+    "year_end": 2026,
+    "period_label": "1200 CE – Present",
+    "period_label_fi": "1200 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Shoshone",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Shoshonit",
+    "wikidata_id": "Q26806",
+    "summary_en": "Extensive Numic nation spanning Nevada, Idaho, Utah, and Wyoming; famous figures include Sacagawea of the Lemhi Shoshone and Chief Washakie of the Wind River Eastern Shoshone.",
+    "summary_fi": "Laajalle levinnyt Iso altaan ja Snake-joen numic-kansa Nevadasta Wyomingiin; tunnettuja henkilöitä ovat Sacagawea sekä Wind Riverin maineikas päällikkö Washakie.",
+    "capital": "Fort Hall (Idaho) / Wind River (Wyoming)",
+    "feature_name_matches": [
+      "Eastern Shoshone",
+      "Newe (Western Shoshone)",
+      "Lemhi-Shoshone",
+      "Shoshone-Bannock"
+    ]
+  },
+  {
+    "slug": "paiute-nations",
+    "name": "Northern & Southern Paiute Nations",
+    "name_fi": "Pohjoiset ja eteläiset paiutet",
+    "native_name": "Numu & Nuwuvi",
+    "alternate_names": [
+      "Northern Paiute",
+      "Numu (Northern Paiute)",
+      "Southern Paiute",
+      "Nuwuvi (Southern Paiute)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "paiute",
+    "historical_period": "Great Basin Numic Nations & Ghost Dance",
+    "year_start": 1200,
+    "year_end": 2026,
+    "period_label": "1200 CE – Present",
+    "period_label_fi": "1200 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Paiute",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Paiutet",
+    "wikidata_id": "Q1140034",
+    "summary_en": "Numic peoples of Nevada, California, and Utah; Sarah Winnemucca advocated for Native rights, while spiritual prophet Wovoka founded the 1890 Ghost Dance movement at Walker Lake.",
+    "summary_fi": "Nevadan, Kalifornian ja Utahin alkuperäiskansat; kirjailija Sarah Winnemucca puolusti heimon oikeuksia ja Walker Laken profeetta Wovoka perusti 1890 aavetanssiliikkeen.",
+    "capital": "Pyramid Lake / Moapa River",
+    "feature_name_matches": [
+      "Northern Paiute",
+      "Numu (Northern Paiute)",
+      "Southern Paiute",
+      "Nuwuvi (Southern Paiute)"
+    ]
+  },
+  {
+    "slug": "goshute-and-washoe",
+    "name": "Goshute & Washoe Nations",
+    "name_fi": "Goshute- ja Washoe-kansat",
+    "native_name": "Gosiute & Wašišiw Ɂítdeʔ",
+    "alternate_names": [
+      "Goshute",
+      "Wašišiw Ɂítdeʔ (Washoe)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "great-basin-indigenous",
+    "historical_period": "Lake Tahoe & Great Salt Lake Desert Nations",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Washoe_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Washot",
+    "wikidata_id": "Q2141505",
+    "summary_en": "Indigenous custodians of Lake Tahoe (Washoe / Wašišiw) and the Deep Creek Desert (Goshute), celebrated for Dat So La Lee's legendary degikup fine willow baskets.",
+    "summary_fi": "Tahoe-järven pyhien rantojen (washoet) ja Suuren Suola-aavikon (goshutet) intiaanikansat; washoet tunnetaan Dat So La Leen valmistamista korinpunonnan mestariteoksista.",
+    "capital": "Dresslerville (Nevada) / Ibapah (Utah)",
+    "feature_name_matches": [
+      "Goshute",
+      "Wašišiw Ɂítdeʔ (Washoe)"
+    ]
+  },
+  {
+    "slug": "columbia-plateau-fishers",
+    "name": "Columbia Plateau Fisher-Gatherers",
+    "name_fi": "Columbian ylätasangon kalastajat ja keräilijät",
+    "native_name": "Plateau Indigenous Fisher-Foragers",
+    "alternate_names": [
+      "Plateau fichers and hunter gatherers"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "plateau-indigenous",
+    "historical_period": "Ancient Columbia River Salmon Harvesting Horizon",
+    "year_start": -9000,
+    "year_end": 2026,
+    "period_label": "9000 BCE – Present",
+    "period_label_fi": "9000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Indigenous_peoples_of_the_Northwest_Plateau",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Luoteisen_tasangon_intiaanit",
+    "wikidata_id": "Q2634360",
+    "summary_en": "Indigenous nations of the Columbia River and Fraser River drainage basins, centered around great salmon fishery falls like Celilo and harvesting edible blue camas bulbs.",
+    "summary_fi": "Columbia- ja Fraser-jokien ylätasangon intiaaniyhteisöt, joiden elämä keskittyi Celilon kaltaisten lohiputousten ympärille sekä sinisen kamas-liljan syötävien mukuloiden keruuseen.",
+    "capital": "Celilo Falls / Kettle Falls",
+    "feature_name_matches": [
+      "Plateau fichers and hunter gatherers"
+    ]
+  },
+  {
+    "slug": "nez-perce-nation",
+    "name": "Nez Perce Nation (Nimíipuu)",
+    "name_fi": "Nez Perce -kansa (Nimíipuu)",
+    "native_name": "Nimíipuu / The Real People",
+    "alternate_names": [
+      "Nez Perce",
+      "Nimiipuu (Nez Perce)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "nez-perce",
+    "historical_period": "Wallowa Valley Appaloosa Horse Breeders",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nez_Perce",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nez_percet",
+    "wikidata_id": "Q27757",
+    "summary_en": "Renowned Plateau breeders of the spotted Appaloosa horse; in 1877 Chief Joseph conducted a brilliant 1,170-mile fighting retreat across Idaho and Montana toward Canada.",
+    "summary_fi": "Täplikkään appaloosa-hevosrodun jalostanut kansa Idahossa ja Oregonissa; päällikkö Joseph johti vuonna 1877 loistavaa 1 900 kilometrin perääntymistaistelua kohti Kanadaa.",
+    "capital": "Lapwai (Idaho) / Wallowa Valley",
+    "feature_name_matches": [
+      "Nez Perce",
+      "Nimiipuu (Nez Perce)"
+    ]
+  },
+  {
+    "slug": "umatilla-yakama-confederacies",
+    "name": "Umatilla, Walla Walla, Cayuse & Yakama",
+    "name_fi": "Umatilla-, Walla Walla-, Cayuse- ja Yakama-liitot",
+    "native_name": "Imatalamlama & Wana-pum & Yakama",
+    "alternate_names": [
+      "Umatilla",
+      "Cayuse, Umatilla and Walla Walla",
+      "Yakama"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "plateau-indigenous",
+    "historical_period": "Columbia River Treaty Confederations",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yakama",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yakamat",
+    "wikidata_id": "Q2593452",
+    "summary_en": "Sahaptin-speaking Plateau nations of eastern Washington and Oregon who harvested salmon at Celilo Falls, retaining treaty fishing sovereignty across the Columbia River basin.",
+    "summary_fi": "Itäisen Washingtonin ja Oregonin sahaptin-kieliset liittokunnat Columbia-joen varrella, jotka ylläpitävät sopimukseen perustuvaa kalastusoikeuttaan perinteisillä lohipaikoillaan.",
+    "capital": "Toppenish (Yakama) / Mission (Umatilla)",
+    "feature_name_matches": [
+      "Umatilla",
+      "Cayuse, Umatilla and Walla Walla",
+      "Yakama"
+    ]
+  },
+  {
+    "slug": "salish-kootenai-flathead",
+    "name": "Salish & Kootenai (Flathead) Nations",
+    "name_fi": "Salish- ja Kootenai-kansat (Flathead)",
+    "native_name": "Séliš, Ql̓ispé & Ktunaxa",
+    "alternate_names": [
+      "Flathead",
+      "Salish Kootenai (Flathead)",
+      "Salish & Kootenai Tribes",
+      "Kalispel",
+      "Spokane"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "salishan",
+    "historical_period": "Bitterroot & Clark Fork Interior Salish Nations",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bitterroot_Salish",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Lattap%C3%A4%C3%A4t",
+    "wikidata_id": "Q1427389",
+    "summary_en": "Interior Salish and Kootenai peoples of the Bitterroot and Clark Fork valleys in Montana and Washington, combining Columbia River fishing with seasonal bison hunting across the Rockies.",
+    "summary_fi": "Montanan ja Washingtonin sisämaan salish- ja kootenai-kansat Bitterroot-vuorten laaksoissa, jotka yhdistivät lohenkalastuksen kausittaiseen biisoninpyyntiin Kalliovuorten yli.",
+    "capital": "Pablo (Flathead Indian Reservation) / Usk",
+    "feature_name_matches": [
+      "Flathead",
+      "Salish Kootenai (Flathead)",
+      "Salish & Kootenai Tribes",
+      "Kalispel",
+      "Spokane"
+    ]
+  },
+  {
+    "slug": "syilx-secwepemc-nations",
+    "name": "Syilx (Okanagan) & Secwépemc Nations",
+    "name_fi": "Syilx- (Okanagan) ja Secwépemc-kansat",
+    "native_name": "Syilx tmixʷ & Secwepemcúl'ecw",
+    "alternate_names": [
+      "Okanagan",
+      "Syilx tmixʷ (Okanagan)",
+      "Secwepemcúl'ecw (Secwépemc)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "salishan",
+    "historical_period": "Okanagan & Thompson River Interior Salish",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Okanagan_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Salishit",
+    "wikidata_id": "Q2017366",
+    "summary_en": "Interior Salish nations spanning the interior plateau of British Columbia and Washington along the Okanagan and Thompson rivers, managing ancestral salmon runs and kekuli pit-houses.",
+    "summary_fi": "Brittiläisen Kolumbian ja Washingtonin sisämaan salish-kansat Okanagan- ja Thompson-jokien laaksoissa, jotka asuivat talvisin maahan kaivetuissa kekuli-kuoppataloissa.",
+    "capital": "Kelowna / Kamloops (Tk’emlúps)",
+    "feature_name_matches": [
+      "Okanagan",
+      "Syilx tmixʷ (Okanagan)",
+      "Secwepemcúl'ecw (Secwépemc)"
+    ]
+  },
+  {
+    "slug": "pacific-northwest-coastal-foragers",
+    "name": "Pacific Northwest Coastal Peoples",
+    "name_fi": "Tyynenmeren luoteisrannikon intiaanit",
+    "native_name": "Northwest Coast Maritime Civilizations",
+    "alternate_names": [
+      "North American Pacific foraging, hunting and fishing peoples"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Megalithic Woodworking & Potlatch Civilizations",
+    "year_start": -8000,
+    "year_end": 2026,
+    "period_label": "8000 BCE – Present",
+    "period_label_fi": "8000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Indigenous_peoples_of_the_Pacific_Northwest_Coast",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Luoteisrannikon_intiaanit",
+    "wikidata_id": "Q1283626",
+    "summary_en": "Sedentary maritime hunter-fisher societies of the Pacific Northwest who built monumental red cedar plank houses, carved soaring crest totem poles, and celebrated the lavish potlatch.",
+    "summary_fi": "Luoteisrannikon varakkaat merelliset pyyntiyhteiskunnat, jotka rakensivat monumentaalisia jättiläistuijataloja, veistivät toteemipaaluja ja jakoivat omaisuutta potlatch-juhlissa.",
+    "capital": "Pacific Northwest Coast (Alaska to Oregon)",
+    "feature_name_matches": [
+      "North American Pacific foraging, hunting and fishing peoples"
+    ]
+  },
+  {
+    "slug": "tlingit-nation",
+    "name": "Tlingit Nation (Lingít Aaní)",
+    "name_fi": "Tlingit-kansa (Lingít Aaní)",
+    "native_name": "Lingít / Lingít Aaní",
+    "alternate_names": [
+      "Lingít Aaní (Tlingit)",
+      "Taku River Tlingit"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "tlingit",
+    "historical_period": "Alexander Archipelago Coastal Nation",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tlingit",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tlingitit",
+    "wikidata_id": "Q26810",
+    "summary_en": "Indigenous maritime nation of southeast Alaska's Alexander Archipelago and the Taku River, divided into Raven (Yéil) and Eagle/Wolf (Ch'aak'/G̱ooch) moieties and celebrated for Chilkat weaving.",
+    "summary_fi": "Kaakkois-Alaskan Alexanderin saariston tlingitit, jotka jakautuivat korppi- ja kotka-klaaneihin ja tunnetaan maailmankuuluista geometrisista Chilkat-villaviitoistaan.",
+    "capital": "Sitka (Sheetʼká) / Juneau (Dzántikʼi Héeni)",
+    "feature_name_matches": [
+      "Lingít Aaní (Tlingit)",
+      "Taku River Tlingit"
+    ]
+  },
+  {
+    "slug": "haida-nation",
+    "name": "Haida Nation (Haida Gwaii)",
+    "name_fi": "Haida-kansa (Haida Gwaii)",
+    "native_name": "X̱aayda / Haida Gwaii",
+    "alternate_names": [
+      "Haida Gwaii"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "haida",
+    "historical_period": "Haida Gwaii Archipelago Thalassocracy",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Haida_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Haidat",
+    "wikidata_id": "Q645486",
+    "summary_en": "Famed oceanic voyagers of Haida Gwaii (Queen Charlotte Islands) who sailed massive 60-foot red cedar canoes across open seas, pioneering monumental sculpture and argillite carving.",
+    "summary_fi": "Haida Gwaiin saariston taitavat valtamerinavigoijat, jotka rakensivat jopa 20-metrisiä sotakanoootteja ja loivat poikkeuksellisen hienostunutta puu- ja argilliittiveistostaidetta.",
+    "capital": "Old Massett (G̱aw Tlagée) / Skidegate",
+    "feature_name_matches": [
+      "Haida Gwaii"
+    ]
+  },
+  {
+    "slug": "tsimshian-gitxaala-nations",
+    "name": "Tsimshian & Gitxaała Nations",
+    "name_fi": "Tsimshian- ja Gitxaała-kansat",
+    "native_name": "Ts'msyen La̱xyuup & Gitxaała",
+    "alternate_names": [
+      "Ts'msyen La̱xyuup (Tsimshian)",
+      "Gitxaała"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Skeena River Maritime Confederacy",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tsimshian",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tsimshit",
+    "wikidata_id": "Q592262",
+    "summary_en": "Indigenous maritime people of the Skeena River and Prince Rupert in British Columbia, whose clan system and hereditary chiefs (Sm'ooygit) governed wealth and grease trails.",
+    "summary_fi": "Brittiläisen Kolumbian Skeena-joen ja Prince Rupertin rannikon kansa, jonka perinnölliset päälliköt (Sm'ooygit) hallitsivat tuottoisia eulakonrasvan kauppareittejä.",
+    "capital": "Metlakatla / Lax Kw'alaams",
+    "feature_name_matches": [
+      "Ts'msyen La̱xyuup (Tsimshian)",
+      "Gitxaała"
+    ]
+  },
+  {
+    "slug": "haisla-heiltsuk-nuxalk",
+    "name": "Haisla, Heiltsuk & Nuxalk Nations",
+    "name_fi": "Haisla-, Heiltsuk- ja Nuxalk-kansat",
+    "native_name": "x̣àʼisla, Haíɫzaqv & Nuxalkmc",
+    "alternate_names": [
+      "x̣àʼisla w̓áwís (Haisla)",
+      "Heiltsuk",
+      "Nuxalk"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Great Bear Rainforest Coastal Nations",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Heiltsuk",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Luoteisrannikon_intiaanit",
+    "wikidata_id": "Q1417558",
+    "summary_en": "First Nations of the Great Bear Rainforest in British Columbia; archaeological digs at Heiltsuk Triquet Island confirmed human habitation dating over 14,000 continuous years.",
+    "summary_fi": "Brittiläisen Kolumbian Suuren karhun sademetsän First Nationit; Triquet-saaren arkeologiset kaivaukset todistivat heiltsukien yhtäjaksoisen asutuksen yli 14 000 vuoden ajalta.",
+    "capital": "Bella Bella (Waglisla) / Kitamaat / Bella Coola",
+    "feature_name_matches": [
+      "x̣àʼisla w̓áwís (Haisla)",
+      "Heiltsuk",
+      "Nuxalk"
+    ]
+  },
+  {
+    "slug": "kwakwakawakw-nation",
+    "name": "Kwakwaka'wakw Nation",
+    "name_fi": "Kwakwaka'wakw-kansa",
+    "native_name": "Kwakwaka'wakw / Kwak'wala Speakers",
+    "alternate_names": [
+      "Kwakwaka'wakw",
+      "Kwakwaka’wakw"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Queen Charlotte Strait Potlatch Masters",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kwakwaka%27wakw",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kwakwaka%E2%80%99wakw",
+    "wikidata_id": "Q1417573",
+    "summary_en": "Renowned First Nations of northern Vancouver Island and the adjacent mainland coast, celebrated for the Hamatsa cannibal-spirit secret society, transformation masks, and resilient potlatches.",
+    "summary_fi": "Pohjoisen Vancouverinsaaren First Nationit, jotka ovat kuuluisia Hamatsa-salaseuroistaan, aukeavista transformaationaamioistaan ja potlatch-perinteen säilyttämisestä kielloista huolimatta.",
+    "capital": "Alert Bay ('Yalis) / Fort Rupert",
+    "feature_name_matches": [
+      "Kwakwaka'wakw",
+      "Kwakwaka’wakw"
+    ]
+  },
+  {
+    "slug": "nuu-chah-nulth-makah",
+    "name": "Nuu-chah-nulth & Makah Nations",
+    "name_fi": "Nuu-chah-nulth- ja Makah-kansat",
+    "native_name": "nuučaan̓uuɫɁatḥ nism̓a / Qʷidiččaʔa·tx̌",
+    "alternate_names": [
+      "nuučaan̓uuɫɁatḥ nism̓a (Nuu-chah-nulth)",
+      "Hupacasath",
+      "Makah"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Open-Ocean Whaling Civilizations",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nuu-chah-nulth",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nootkat",
+    "wikidata_id": "Q1140037",
+    "summary_en": "Master open-ocean whaling nations of west coast Vancouver Island and Washington's Olympic Peninsula (Makah), hunting gray and humpback whales using cedar canoes and mussel-shell harpoons.",
+    "summary_fi": "Läntisen Vancouverinsaaren ja Washingtonin rannikon avomerivalaanpyytäjät, jotka saalistivat harmaavalaita tuijakanoottein ja simpukankuorikärkisillä harppuunoilla.",
+    "capital": "Nootka Sound (Yuquot) / Neah Bay (Washington)",
+    "feature_name_matches": [
+      "nuučaan̓uuɫɁatḥ nism̓a (Nuu-chah-nulth)",
+      "Hupacasath",
+      "Makah"
+    ]
+  },
+  {
+    "slug": "olympic-peninsula-nations",
+    "name": "Quileute & Quinault Nations",
+    "name_fi": "Quileute- ja Quinault-kansat",
+    "native_name": "Kwe-di-le-ch-oosh & Kwi'n-a-ł",
+    "alternate_names": [
+      "Quileute",
+      "Quinault"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Washington Pacific Coast Rainforest Nations",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Quileute",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Quileutet",
+    "wikidata_id": "Q1353298",
+    "summary_en": "Indigenous coastal nations of Washington's Olympic Peninsula; the Chimakuan-speaking Quileute are famed for seal hunting, while the Quinault steward the prized blueback salmon.",
+    "summary_fi": "Washingtonin osavaltion Olympic-niemimaan rannikkokansat; quileutet tunnetaan hylkeenpyyntitaidoistaan ja quinaultit vaalivat arvokasta Quinault-joen lohikantaa.",
+    "capital": "La Push (Quileute) / Taholah (Quinault)",
+    "feature_name_matches": [
+      "Quileute",
+      "Quinault"
+    ]
+  },
+  {
+    "slug": "salish-sea-coast-salish",
+    "name": "Coast Salish Nations",
+    "name_fi": "Rannikkosalishit",
+    "native_name": "Coast Salish / Salish Sea",
+    "alternate_names": [
+      "Coast Salish",
+      "Twana/Skokomish",
+      "Sauk Suiattle",
+      "Chehalis"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "salishan",
+    "historical_period": "Puget Sound & Georgia Strait Maritime Confederacy",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Coast_Salish",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Rannikkosalishit",
+    "wikidata_id": "Q1105574",
+    "summary_en": "Extensive family of indigenous nations surrounding the Salish Sea in Washington and British Columbia, famous for reef-net salmon fishing, cedar longhouses, and dog-hair woven blankets.",
+    "summary_fi": "Puget Soundin ja Salishinmeren laaja intiaaniperhe Washingtonissa ja Kanadassa; tunnettuja riuttaverkoin tapahtuvasta lohenkalastuksestaan ja koirankarvapeitoistaan.",
+    "capital": "Seattle / Vancouver / Skokomish",
+    "feature_name_matches": [
+      "Coast Salish",
+      "Twana/Skokomish",
+      "Sauk Suiattle",
+      "Chehalis"
+    ]
+  },
+  {
+    "slug": "chinook-nation",
+    "name": "Chinook Nation",
+    "name_fi": "Chinook-kansa",
+    "native_name": "Tsinúk / Lower Chinook",
+    "alternate_names": [
+      "Chinook",
+      "Lower Chinook"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Columbia River Maritime Trade Lords",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chinookan_peoples",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chinookit",
+    "wikidata_id": "Q1074390",
+    "summary_en": "Indigenous masters of the Columbia River entrance who controlled vast regional trading networks and whose tongue formed the basis of Chinook Jargon, the universal trade lingua franca of the Pacific Northwest.",
+    "summary_fi": "Columbia-joen suiston mahtava kauppiaskansa, jonka kieli loi pohjan chinook jargoonille, koko Luoteisrannikon yleiselle kauppakielelle 1800-luvulla.",
+    "capital": "Wappato Island (Portland) / Baker Bay",
+    "feature_name_matches": [
+      "Chinook",
+      "Lower Chinook"
+    ]
+  },
+  {
+    "slug": "oregon-coastal-nations",
+    "name": "Oregon Coast & Willamette Nations",
+    "name_fi": "Oregonin rannikon ja Willametten kansat",
+    "native_name": "Tillamook, Coos, Siuslaw, Coquille & Kalapuya",
+    "alternate_names": [
+      "Tillamook",
+      "Coos, Lower Umpqua, Siuslaw",
+      "Hanis Coos",
+      "Miluk Coos",
+      "Quuiich (Lower Umpqua)",
+      "Coquille",
+      "Cow Creek Umpqua",
+      "Mohawk (Kalapuya)",
+      "Confederated Tribes of Grand Ronde",
+      "Confederated Tribes of Siletz Indians",
+      "Siletz"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "pacific-northwest-indigenous",
+    "historical_period": "Oregon Maritime & Riverine Confederacies",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Confederated_Tribes_of_Siletz_Indians",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Luoteisrannikon_intiaanit",
+    "wikidata_id": "Q5159784",
+    "summary_en": "Diverse indigenous maritime and river valley nations of western Oregon (Tillamook, Coos, Umpqua, Kalapuya), today federated under the sovereign Grand Ronde and Siletz confederated nations.",
+    "summary_fi": "Länsi-Oregonin rannikon ja Willamette-joen monimuotoiset kansat, jotka asuvat nykyään suvereenisti organisoituneina Grand Ronden ja Siletzin liittokunnissa.",
+    "capital": "Siletz / Grand Ronde (Oregon)",
+    "feature_name_matches": [
+      "Tillamook",
+      "Coos, Lower Umpqua, Siuslaw",
+      "Hanis Coos",
+      "Miluk Coos",
+      "Quuiich (Lower Umpqua)",
+      "Coquille",
+      "Cow Creek Umpqua",
+      "Mohawk (Kalapuya)",
+      "Confederated Tribes of Grand Ronde",
+      "Confederated Tribes of Siletz Indians",
+      "Siletz"
+    ]
+  },
+  {
+    "slug": "miwok-nation",
+    "name": "Miwok Nation (Me-Wuk)",
+    "name_fi": "Miwok-kansa (Me-Wuk)",
+    "native_name": "Miwok / Me-Wuk / People",
+    "alternate_names": [
+      "Miwok",
+      "Plains Miwok",
+      "Me-Wuk (Coast Miwok)",
+      "Me-Wuk (Bay Miwok)",
+      "Me-Wuk (Lake Miwok)",
+      "Me-Wuk (Northern Sierra Miwok)",
+      "Me-Wuk (Central Sierra Miwok)",
+      "Me-Wuk (Southern Sierra Miwok)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "San Francisco Bay & Sierra Nevada Acorn Harvesters",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Miwok",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Miwokit",
+    "wikidata_id": "Q1417554",
+    "summary_en": "Four distinct Miwok groups who inhabited northern California from the San Francisco Bay and Marin County up through the Yosemite Valley and Sierra Nevada foothills, gathering black oak acorns in granaries.",
+    "summary_fi": "Pohjois-Kalifornian ja Sierra Nevadan laaksojen (kuten Yosemiten) alkuperäiskansa, joka keräsi tammenterhoja varastoihin ja asui pyöreissä maapeitteisissä taloissa.",
+    "capital": "Tuolumne / Marin County",
+    "feature_name_matches": [
+      "Miwok",
+      "Plains Miwok",
+      "Me-Wuk (Coast Miwok)",
+      "Me-Wuk (Bay Miwok)",
+      "Me-Wuk (Lake Miwok)",
+      "Me-Wuk (Northern Sierra Miwok)",
+      "Me-Wuk (Central Sierra Miwok)",
+      "Me-Wuk (Southern Sierra Miwok)"
+    ]
+  },
+  {
+    "slug": "pomo-nations",
+    "name": "Pomo Nations",
+    "name_fi": "Pomo-kansat",
+    "native_name": "Pomo / People of the Red Earth",
+    "alternate_names": [
+      "Pomo",
+      "Central Pomo",
+      "Eastern Pomo",
+      "Northern Pomo",
+      "Northeastern Pomo",
+      "Southeastern Pomo",
+      "Southern Pomo"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "Russian River & Clear Lake Basket Weavers",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pomo",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pomot",
+    "wikidata_id": "Q1478146",
+    "summary_en": "Seven related indigenous nations of the Russian River, Clear Lake, and Mendocino coast, universally celebrated for crafting the finest feathered jewel-baskets in the world.",
+    "summary_fi": "Seitsemän kieliryhmän muodostama kansa Pohjois-Kalifornian Clear Laken ja Mendocinon alueella, joka tunnetaan maailman hienoimmista höyhenin koristelluista punontakoreista.",
+    "capital": "Clear Lake / Ukiah Valley",
+    "feature_name_matches": [
+      "Pomo",
+      "Central Pomo",
+      "Eastern Pomo",
+      "Northern Pomo",
+      "Northeastern Pomo",
+      "Southeastern Pomo",
+      "Southern Pomo"
+    ]
+  },
+  {
+    "slug": "yokuts-nation",
+    "name": "Yokuts Nation (Mariposa)",
+    "name_fi": "Yokuts-kansa",
+    "native_name": "Yokuts / The People",
+    "alternate_names": [
+      "Yokuts"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "San Joaquin Valley & Tulare Lake Civilization",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yokuts",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yokutsit",
+    "wikidata_id": "Q1273934",
+    "summary_en": "Large confederation of over sixty dialect tribes inhabiting the fertile San Joaquin Valley and former Tulare Lake in central California, utilizing tule-reed canoes to harvest fish and waterfowl.",
+    "summary_fi": "Yli 60 heimoryhmää käsittänyt suuri kansa Kalifornian San Joaquin -laaksossa ja entisen Tulare-järven rannoilla, joka liikkui kaislaveneillä ja kalasti runsailla sisävesillä.",
+    "capital": "Fresno & Tulare Basin (Tachi Yokut)",
+    "feature_name_matches": [
+      "Yokuts"
+    ]
+  },
+  {
+    "slug": "chumash-nation",
+    "name": "Chumash Nation",
+    "name_fi": "Chumash-kansa",
+    "native_name": "Chumash / Coastal Island Voyagers",
+    "alternate_names": [
+      "Chumash"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "Santa Barbara Channel Plank Canoe Thalassocracy",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chumash_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chumashit",
+    "wikidata_id": "Q1089606",
+    "summary_en": "Maritime civilization of the Santa Barbara Channel and Channel Islands who engineered asphaltum-caulked redwood plank tomol canoes to navigate open ocean and operated olivella shell currency.",
+    "summary_fi": "Santa Barbaran kanaalin ja saariston merellinen korkeakulttuuri, joka rakensi asvaltilla tiivistettyjä tomol-lautakanoootteja ja hallitsi eteläisen Kalifornian simpukkarahakauppaa.",
+    "capital": "Syukhtun (Santa Barbara) / Limuw (Santa Cruz Island)",
+    "feature_name_matches": [
+      "Chumash"
+    ]
+  },
+  {
+    "slug": "tongva-acjachemen-nations",
+    "name": "Tongva (Gabrieleño) & Acjachemen",
+    "name_fi": "Tongva- ja Acjachemen-kansat",
+    "native_name": "Kizh / Tongva & Acjachemen",
+    "alternate_names": [
+      "Tongva",
+      "Acjachemen (Juaneño)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "Los Angeles & Orange County Indigenous Basin",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tongva",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tongvat",
+    "wikidata_id": "Q1471378",
+    "summary_en": "Indigenous caretakers of the Los Angeles Basin, San Gabriel Valley, Orange County, and southern Channel Islands (Santa Catalina), voyaging in ti'at plank canoes.",
+    "summary_fi": "Los Angelesin altaan, Orangen piirikunnan ja Santa Catalinan saaren alkuperäisasukkaat, jotka purjehtivat ti'at-lautakanooteilla ja asuivat vilkkaissa rannikkokylissä.",
+    "capital": "Yaanga (Los Angeles) / Puvunga (Long Beach)",
+    "feature_name_matches": [
+      "Tongva",
+      "Acjachemen (Juaneño)"
+    ]
+  },
+  {
+    "slug": "luiseno-cahuilla-nations",
+    "name": "Luiseño (Payómkawichum) & Cahuilla",
+    "name_fi": "Luiseño- ja Cahuilla-kansat",
+    "native_name": "Payómkawichum & ʔíviɬyʉŋam (Cahuilla)",
+    "alternate_names": [
+      "Payómkawichum (Luiseño)",
+      "Cahuilla"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "Southern California Oasis & Palm Canyon Guardians",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cahuilla",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Cahuillat",
+    "wikidata_id": "Q1025797",
+    "summary_en": "Takic-speaking nations of southern California; the Cahuilla engineered desert palm oasis villages in the Coachella Valley, while the Luiseño guarded sacred Mount San Jacinto.",
+    "summary_fi": "Etelä-Kalifornian aavikko- ja vuoristoheimot; cahuillat viljelivät Coachella Valleyn keitaita ja luiseñot vaalivat pyhän San Jacinto -vuoren ympäristöä.",
+    "capital": "Palm Springs (Cahuilla) / Pechanga (Luiseño)",
+    "feature_name_matches": [
+      "Payómkawichum (Luiseño)",
+      "Cahuilla"
+    ]
+  },
+  {
+    "slug": "yurok-karuk-nations",
+    "name": "Yurok & Karuk Nations",
+    "name_fi": "Yurok- ja Karuk-kansat",
+    "native_name": "Puliklah & Karuk / Klamath River Peoples",
+    "alternate_names": [
+      "Yurok",
+      "Resighini Rancheria (Yurok)",
+      "Karuk"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "Lower Klamath River World Renewal Civilizations",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yurok",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yurokit",
+    "wikidata_id": "Q927429",
+    "summary_en": "Largest tribe in California, living along the Lower Klamath River and Pacific coastline, renowned for red cedar dugout canoes, dentalium shell wealth, and the World Renewal White Deerskin Dance.",
+    "summary_fi": "Kalifornian suurin alkuperäiskansa Klamath-joen alajuoksulla; tunnettuja punapuisista jokikanooteistaan, hammaskotiloista valuuttana ja Valkoisen peuranahan maailmanuudistustanssista.",
+    "capital": "Klamath / Weitchpec / Happy Camp",
+    "feature_name_matches": [
+      "Yurok",
+      "Resighini Rancheria (Yurok)",
+      "Karuk"
+    ]
+  },
+  {
+    "slug": "klamath-modoc-nations",
+    "name": "Klamath & Modoc Nations",
+    "name_fi": "Klamath- ja Modoc-kansat",
+    "native_name": "Maqlaqs & Módoc",
+    "alternate_names": [
+      "Klamath",
+      "Modoc",
+      "Modoc (Oklahoma)"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "klamath",
+    "historical_period": "Upper Klamath Lake & Lava Beds Nation",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Klamath_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Klamathit",
+    "wikidata_id": "Q1140028",
+    "summary_en": "Plateau-California borderland nations around Upper Klamath Lake; in the 1872–1873 Modoc War, Captain Jack (Kintpuash) held off 1,000 U.S. troops in the volcanic Lava Beds National Monument.",
+    "summary_fi": "Kalifornian ja Oregonin rajaseudun kansat; Modoc-sodassa 1872–1873 kapteeni Jack (Kintpuash) piti 53 soturinsa kanssa puoliaan tuhatta Yhdysvaltain sotilasta vastaan laavakentillä.",
+    "capital": "Chiloquin (Oregon) / Miami (Oklahoma)",
+    "feature_name_matches": [
+      "Klamath",
+      "Modoc",
+      "Modoc (Oklahoma)"
+    ]
+  },
+  {
+    "slug": "pit-river-achumawi-maidu",
+    "name": "Achumawi, Maidu & Wailaki",
+    "name_fi": "Achumawi-, Maidu- ja Wailaki-kansat",
+    "native_name": "Achumawi, Maidu & Wailaki",
+    "alternate_names": [
+      "Achumawi",
+      "Mountain Maidu",
+      "Wailaki"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "california-indigenous",
+    "historical_period": "Cascade Foothills & Feather River Indigenous Nations",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Achomawi",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kalifornian_intiaanit",
+    "wikidata_id": "Q340698",
+    "summary_en": "Northeastern California nations of Mount Shasta and the Pit and Feather rivers, adapting pit-fall game trapping and acorn-grinding technologies in mountain forests.",
+    "summary_fi": "Koillis-Kalifornian Mount Shastan ja Pit-joen vuoristokansat, jotka kehittivät riistanpyyntikuoppia ja tammenterhon jauhantamenetelmiä vuoristometsissä.",
+    "capital": "Alturas / Susanville / Round Valley",
+    "feature_name_matches": [
+      "Achumawi",
+      "Mountain Maidu",
+      "Wailaki"
+    ]
+  },
+  {
+    "slug": "susquehannock-nation",
+    "name": "Susquehannock Nation (Conestoga)",
+    "name_fi": "Susquehannock-kansa (Conestoga)",
+    "native_name": "Sasquesahanough / Conestoga",
+    "alternate_names": [
+      "Susquehannock"
+    ],
+    "culture_group": "North American Indigenous",
+    "lineage_id": "haudenosaunee",
+    "historical_period": "Susquehanna River Valley Iroquoian Power",
+    "year_start": 1200,
+    "year_end": 1763,
+    "period_label": "1200 CE – 1763 CE",
+    "period_label_fi": "1200 jaa. – 1763 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Susquehannock",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Susquehannockit",
+    "wikidata_id": "Q546282",
+    "summary_en": "Formidable Iroquoian nation dominating the lower Susquehanna River valley in Pennsylvania and Maryland, controlling major regional fur trade routes until destroyed by disease and the Paxton Boys in 1763.",
+    "summary_fi": "Pennsylvanian ja Marylandin suuri irokeesikansa Susquehanna-joen laaksossa, joka hallitsi alueellista turkiskauppaa aseistettuine paaluvarustuksineen aina vuoteen 1763.",
+    "capital": "Conestoga (Lancaster County, Pennsylvania)",
+    "feature_name_matches": [
+      "Susquehannock"
+    ]
+  }
+]

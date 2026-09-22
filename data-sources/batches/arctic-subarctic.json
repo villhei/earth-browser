@@ -1,0 +1,666 @@
+[
+  {
+    "slug": "subarctic-forest-hunter-gatherers",
+    "name": "Subarctic Forest Hunter-Gatherers",
+    "name_fi": "Subarktisen metsävyöhykkeen metsästäjä-keräilijät",
+    "native_name": "Subarctic Taiga Foragers",
+    "alternate_names": [
+      "Subarctic forest hunter-gatherers"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "arctic-subarctic",
+    "historical_period": "Ancient to Traditional Boreal Taiga Adaptation",
+    "year_start": -12000,
+    "year_end": 2026,
+    "period_label": "12,000 BCE – Present",
+    "period_label_fi": "12 000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Indigenous_peoples_of_the_Subarctic",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Subarktisen_alueen_intiaanit",
+    "wikidata_id": "Q2642531",
+    "summary_en": "Indigenous boreal forest peoples spanning the northern taiga of North America and Eurasia, who developed seasonal snowshoe mobility, caribou interception fences, and birchbark canoe technologies.",
+    "summary_fi": "Pohjois-Amerikan ja Euraasian pohjoisen havumetsävyöhykkeen alkuperäiskansat, jotka kehittivät lumikenkiin perustuvan liikkuvuuden, peuranpyyntiaidat ja koivuntuohesta tehdyt kanootit.",
+    "capital": "Boreal Taiga Zone",
+    "feature_name_matches": [
+      "Subarctic forest hunter-gatherers"
+    ]
+  },
+  {
+    "slug": "arctic-marine-mammal-hunters",
+    "name": "Arctic Marine Mammal Hunters",
+    "name_fi": "Arktiset merinisäkkäiden pyytäjät",
+    "native_name": "Circumpolar Coastal Maritime Hunters",
+    "alternate_names": [
+      "Arctic marine mammal hunters"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "arctic-subarctic",
+    "historical_period": "Circumpolar Maritime Adaptation",
+    "year_start": -6000,
+    "year_end": 2026,
+    "period_label": "6000 BCE – Present",
+    "period_label_fi": "6000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Inuit_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Inuiitit",
+    "wikidata_id": "Q1891901",
+    "summary_en": "Specialized maritime hunting cultures across the circumpolar Arctic shoreline adapted to hunting seal, walrus, narwhal, and bowhead whale using skin kayaks, umiaks, and toggling harpoons.",
+    "summary_fi": "Pohjoisen napapiirin erikoistuneet meripyytäjäyhteisöt, jotka sopeutuivat hylkeiden, mursujen ja valaiden metsästykseen nahkakajakein, umiakein ja harppuunoin.",
+    "capital": "Circumpolar Arctic Coasts",
+    "feature_name_matches": [
+      "Arctic marine mammal hunters"
+    ]
+  },
+  {
+    "slug": "paleo-siberian-hunter-gatherers",
+    "name": "Paleo-Siberian Hunter-Gatherers & Siberians",
+    "name_fi": "Paleosiperialaiset metsästäjä-keräilijät ja siperialaiset",
+    "native_name": "Ancient Northeast Asian & Siberian Peoples",
+    "alternate_names": [
+      "Paleo-Siberian hunter-gatherers",
+      "Siberians"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "siberian",
+    "historical_period": "Ancient Northeast Asian Horizon",
+    "year_start": -20000,
+    "year_end": 2026,
+    "period_label": "20,000 BCE – Present",
+    "period_label_fi": "20 000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Paleosiberian_languages",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Paleosiperialaiset_kielet",
+    "wikidata_id": "Q33900",
+    "summary_en": "Indigenous peoples of Siberia and Beringia whose ancient lineages maintained reindeer pastoralism, river salmon fishing, and tundra hunting through extreme sub-zero permafrost conditions.",
+    "summary_fi": "Siperian ja Beringian muinaiset alkuperäiskansat, joiden perinteiset elinkeinot poronhoidosta lohenkalastukseen ja tundrametsästykseen selviytyivät ikiroudan äärimmäisissä oloissa.",
+    "capital": "Northeastern Siberia & Lena-Kolyma basins",
+    "feature_name_matches": [
+      "Paleo-Siberian hunter-gatherers",
+      "Siberians"
+    ]
+  },
+  {
+    "slug": "dorset-culture",
+    "name": "Dorset Culture (Tuniit)",
+    "name_fi": "Dorsetin kulttuuri (Tuniit)",
+    "native_name": "Tuniit / Sivullirmiut",
+    "alternate_names": [
+      "Dorset",
+      "Paleo-Inuit"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "arctic-subarctic",
+    "historical_period": "Paleo-Inuit Arctic Horizon",
+    "year_start": -500,
+    "year_end": 1500,
+    "period_label": "500 BCE – 1500 CE",
+    "period_label_fi": "500 eaa. – 1500 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dorset_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dorsetin_kulttuuri",
+    "wikidata_id": "Q391605",
+    "summary_en": "Paleo-Inuit culture that flourished across the eastern Canadian Arctic and Greenland, known for soapstone lamps (qulliq), exquisite walrus-ivory miniature carvings, and sled hand-hauling without dogs.",
+    "summary_fi": "Itäisessä Kanadan arktiksessa ja Grönlannissa kukoistanut paleo-inuiittikulttuuri, joka tunnetaan vuolukivestä veistetyistä lampuistaan (qulliq) ja taidokkaista norsunluuveistoksistaan.",
+    "capital": "Hudson Strait / Foxe Basin",
+    "feature_name_matches": [
+      "Dorset",
+      "Paleo-Inuit"
+    ]
+  },
+  {
+    "slug": "thule-tradition",
+    "name": "Thule Tradition (Ancestral Inuit)",
+    "name_fi": "Thulen kulttuuri (Varhaiset inuiitit)",
+    "native_name": "Thule / Proto-Inuit",
+    "alternate_names": [
+      "Thule",
+      "Inuit"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "inuit",
+    "historical_period": "Neo-Eskimo Arctic Expansion",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Thule_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Thulen_kulttuuri",
+    "wikidata_id": "Q645163",
+    "summary_en": "Ancestors of all modern Canadian, Alaskan, and Greenlandic Inuit, the Thule expanded rapidly eastward from the Bering Strait around 1000 CE armed with dog sleds, large umiaks, and bowhead whaling expertise.",
+    "summary_fi": "Kaikkien nykyisten Kanadan, Alaskan ja Grönlannin inuiittien esivanhemmat; Thule-kansa levittäytyi Beringinsalmelta itään koiravaljakoiden ja suuren valaanpyynnin siivittämänä.",
+    "capital": "Bering Strait / Thule (Qaanaaq)",
+    "feature_name_matches": [
+      "Thule",
+      "Inuit"
+    ]
+  },
+  {
+    "slug": "okhotsk-culture",
+    "name": "Okhotsk Culture",
+    "name_fi": "Ohotan kulttuuri",
+    "native_name": "Okhotsk Culture / オホーツク文化",
+    "alternate_names": [
+      "Okhotsk culture"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "siberian",
+    "historical_period": "Sea of Okhotsk Maritime Culture",
+    "year_start": 500,
+    "year_end": 1300,
+    "period_label": "500 CE – 1300 CE",
+    "period_label_fi": "500 jaa. – 1300 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Okhotsk_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ohotan_kulttuuri",
+    "wikidata_id": "Q1435275",
+    "summary_en": "Maritime archaeological culture around the Sea of Okhotsk, Sakhalin, Kuril Islands, and northern Hokkaido centered on seal hunting, pig breeding, and bear-cult rituals that influenced the Ainu.",
+    "summary_fi": "Ohotanmeren, Sahalinin, Kuriilien ja Pohjois-Hokkaidon merellinen pyyntikulttuuri, joka tunnettiin hylkeenpyynnistä, siankasvatuksesta ja ainuille periytyneistä karhuseremonioistaan.",
+    "capital": "Sakhalin & Northern Hokkaido coasts",
+    "feature_name_matches": [
+      "Okhotsk culture"
+    ]
+  },
+  {
+    "slug": "inupiaq-nation",
+    "name": "Iñupiaq People",
+    "name_fi": "Iñupiat-kansa",
+    "native_name": "Iñupiat / Iñupiaq",
+    "alternate_names": [
+      "Inupiaq",
+      "Inupiat"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "inuit",
+    "historical_period": "Northern Alaskan Inuit Nation",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/I%C3%B1upiat",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Inupiatit",
+    "wikidata_id": "Q1145612",
+    "summary_en": "Inuit people of northwestern Alaska inhabiting the Arctic Slope and Seward Peninsula, renowned for cooperative bowhead whale hunting (agviq) and the Nalukataq blanket toss celebration.",
+    "summary_fi": "Luoteis-Alaskan ja arktisen rannikon inuiittikansa, joka tunnetaan grönlanninvalaan yhteisöllisestä pyynnistä (agviq) ja kevään Nalukataq-juhlan nahkapompuista.",
+    "capital": "Utqiaġvik (Barrow) / Kotzebue",
+    "feature_name_matches": [
+      "Inupiaq",
+      "Inupiat"
+    ]
+  },
+  {
+    "slug": "yupik-cupik-peoples",
+    "name": "Yup'ik & Cup'ik Peoples",
+    "name_fi": "Yup'ik- ja Cup'ik-kansat",
+    "native_name": "Yup'ik & Cup'ik",
+    "alternate_names": [
+      "Yup'ik & Cup'ik",
+      "Yup’ik/Cup’ik"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "yupik",
+    "historical_period": "Yukon-Kuskokwim Delta Indigenous Society",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yupik_peoples",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Jupikit",
+    "wikidata_id": "Q206385",
+    "summary_en": "Eskimo-Aleut peoples of the expansive Yukon-Kuskokwim Delta and coastal southwest Alaska, maintaining vibrant dance festivals (kelek), qasgiq communal houses, and rich subsistence salmon fisheries.",
+    "summary_fi": "Lounais-Alaskan Yukon- ja Kuskokwim-jokien suiston alkuperäiskansat, jotka tunnetaan perinteisistä tansseistaan, qasgiq-miestentaloistaan ja lohenkalastuksestaan.",
+    "capital": "Bethel (Mamterillermiut)",
+    "feature_name_matches": [
+      "Yup'ik & Cup'ik",
+      "Yup’ik/Cup’ik"
+    ]
+  },
+  {
+    "slug": "siberian-yupik-peoples",
+    "name": "Siberian Yupik (Chaplino & Sireniki)",
+    "name_fi": "Siperian jupikit (Chaplino & Sireniki)",
+    "native_name": "Ungazigmit & Siginygmit Yupik / Yupiit",
+    "alternate_names": [
+      "Ungazigmit (Chaplino) Yupik",
+      "Siginygmit (Sireniki) Yupik",
+      "Sivuqaq (St. Lawrence Island) Yupik"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "yupik",
+    "historical_period": "Bering Strait Maritime Yupik Civilization",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Siberian_Yupik",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Aasian_eskamot",
+    "wikidata_id": "Q782975",
+    "summary_en": "Indigenous maritime people inhabiting St. Lawrence Island and the Chukchi Peninsula, including the Chaplino and ancient Sireniki linguistic branches, mastering open-sea walrus hunting in Beringia.",
+    "summary_fi": "Saint Lawrence -saarella ja Tšuktšien niemimaalla elävä merellinen jupikkikansa, joka hallitsee mursun ja valaan pyynnin myrskyisellä Beringinsalmella.",
+    "capital": "Sivuqaq (Gambell) / Ungaziq (Chaplino)",
+    "feature_name_matches": [
+      "Ungazigmit (Chaplino) Yupik",
+      "Siginygmit (Sireniki) Yupik",
+      "Sivuqaq (St. Lawrence Island) Yupik"
+    ]
+  },
+  {
+    "slug": "alutiiq-sugpiaq",
+    "name": "Alutiiq (Sugpiaq) Nation",
+    "name_fi": "Alutiiqit (Sugpiaq)",
+    "native_name": "Sugpiaq / Alutiiq",
+    "alternate_names": [
+      "Alutiiq (Sugpiaq)",
+      "Suspiaq"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "yupik",
+    "historical_period": "Gulf of Alaska Pacific Coastal Nation",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Alutiiq",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Alutiiqit",
+    "wikidata_id": "Q447814",
+    "summary_en": "Coastal maritime people of Kodiak Island, the Alaska Peninsula, and Prince William Sound who hunted sea mammals in multi-cockpit qayaq skin boats and crafted magnificent spruce-root hats.",
+    "summary_fi": "Kodiakinsaaren ja Alaskanlahden rannikon alkuperäiskansa, joka pyysi merinisäkkäitä usean hengen nahkakajakeilla ja valmisti taidokkaita kuusenjuurihattuja.",
+    "capital": "Kodiak Island (Sun'aq)",
+    "feature_name_matches": [
+      "Alutiiq (Sugpiaq)",
+      "Suspiaq"
+    ]
+  },
+  {
+    "slug": "unangax-aleut",
+    "name": "Unangax̂ (Aleut) People",
+    "name_fi": "Aleutit (Unangax̂)",
+    "native_name": "Unangam Tanangin / Unangax̂",
+    "alternate_names": [
+      "Unangam Tanangin (Unangax̂ /Aleut)",
+      "Aleut"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "aleut",
+    "historical_period": "Aleutian Archipelagic Seafaring Culture",
+    "year_start": -2000,
+    "year_end": 2026,
+    "period_label": "2000 BCE – Present",
+    "period_label_fi": "2000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Aleut",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Aleutit",
+    "wikidata_id": "Q464816",
+    "summary_en": "Indigenous seafarers of the volcanic Aleutian Islands chain and Pribilof Islands, world-renowned for their swift baidarka kayaks, Kamleika waterproof gutskin parkas, and weaving artistry.",
+    "summary_fi": "Aleuttien tulivuorisaariston merenkulkijakansa, joka tunnetaan nopeista baidarka-kajakeistaan, suolesta valmistetuista vedenpitävistä kamleika-ankoistaan ja korinpunonnastaan.",
+    "capital": "Unalaska (Iluulux̂)",
+    "feature_name_matches": [
+      "Unangam Tanangin (Unangax̂ /Aleut)"
+    ]
+  },
+  {
+    "slug": "chukchi-people",
+    "name": "Chukchi People",
+    "name_fi": "Tšuktšit",
+    "native_name": "Luoravetlat / Lygoravetlat",
+    "alternate_names": [
+      "Chukchi"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "siberian",
+    "historical_period": "Chukotka Tundra and Maritime Nation",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chukchi_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/T%C5%A1ukt%C5%A1it",
+    "wikidata_id": "Q192461",
+    "summary_en": "Indigenous nation of Chukotka divided into nomadic reindeer herders (Chauchu) and coastal marine mammal hunters (Anqallyt), famed for fiercely preserving independence against Russian expansion until 1778.",
+    "summary_fi": "Tšukotkan alkuperäiskansa, joka jakautui poroja paimentaviin sisämaan asukkaisiin ja rannikon merinisäkkäiden pyytäjiin ja puolusti sitkeästi vapauttaan Venäjän imperiumia vastaan.",
+    "capital": "Anadyr / Uelen",
+    "feature_name_matches": [
+      "Chukchi"
+    ]
+  },
+  {
+    "slug": "koryak-people",
+    "name": "Koryak People",
+    "name_fi": "Korjakit",
+    "native_name": "Chavchuvens & Nymylans / Nymylyn",
+    "alternate_names": [
+      "Koryaks"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "siberian",
+    "historical_period": "Northern Kamchatka Indigenous Nation",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Koryaks",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Korjakit",
+    "wikidata_id": "Q214435",
+    "summary_en": "Indigenous people of northern Kamchatka related to the Chukchi, maintaining semi-subterranean winter houses, sacred raven creation legends (Kutkh), and reindeer sled transport.",
+    "summary_fi": "Pohjois-Kamtšatkan alkuperäiskansa, joka asui puoliksi maahan kaivetuissa talvitaloissa ja vaali pyhää Kutf-korppimytologiaa ja poronhoitoperinteitään.",
+    "capital": "Palana",
+    "feature_name_matches": [
+      "Koryaks"
+    ]
+  },
+  {
+    "slug": "itelmen-people",
+    "name": "Itelmen People",
+    "name_fi": "Itelmeenit",
+    "native_name": "Itelmen / Itenm'i",
+    "alternate_names": [
+      "Itelmen"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "siberian",
+    "historical_period": "Kamchatka Indigenous River Fisher Nation",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Itelmens",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Itelmeenit",
+    "wikidata_id": "Q502120",
+    "summary_en": "Original inhabitants of the Kamchatka Peninsula renowned for their river salmon trap harvesting, distinctive polyphonic throat singing, and rich mythology centered on the trickster raven Kutkh.",
+    "summary_fi": "Kamtšatkan niemimaan varhaisimmat asukkaat, jotka tunnetaan lohen jokipyynnistä, kurkkulauluperinteestään ja Kutf-korppia ympäröivästä mytologiastaan.",
+    "capital": "Tigil / Kamchatka River basin",
+    "feature_name_matches": [
+      "Itelmen"
+    ]
+  },
+  {
+    "slug": "athabaskan-peoples",
+    "name": "Northern Athabaskan (Dene) Peoples",
+    "name_fi": "Pohjoiset athabascat (Dene-kansat)",
+    "native_name": "Dene / Denendeh",
+    "alternate_names": [
+      "Athabaskan"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "dene",
+    "historical_period": "Pan-Subarctic Athabaskan Linguistic Nation",
+    "year_start": -3000,
+    "year_end": 2026,
+    "period_label": "3000 BCE – Present",
+    "period_label_fi": "3000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Northern_Athabaskan_languages",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Athabasca-kielet",
+    "wikidata_id": "Q27756",
+    "summary_en": "Vast family of Na-Dene speaking First Nations dwelling across the Yukon, Northwest Territories, and interior Alaska, whose deep nomadic tracks follow barren-ground caribou herds.",
+    "summary_fi": "Na-Dene-kieliä puhuva suuri alkuperäiskansojen perhe, joka asuttaa Yukonin, Luoteisterritorioiden ja Alaskan sisämaata ja seuraa tundrakaribujen vaellusreittejä.",
+    "capital": "Denendeh (Mackenzie & Yukon River basins)",
+    "feature_name_matches": [
+      "Athabaskan"
+    ]
+  },
+  {
+    "slug": "gwichin-nation",
+    "name": "Gwich'in Nation",
+    "name_fi": "Gwich'in-kansa",
+    "native_name": "Gwich'in Nành / Dinjii Zhuu",
+    "alternate_names": [
+      "Gwich'in Nành",
+      "Tetlit Gwich’in"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "dene",
+    "historical_period": "Porcupine Caribou Northern Dene Nation",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Gwich%27in",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Gwich%27init",
+    "wikidata_id": "Q1291880",
+    "summary_en": "Northernmost Athabaskan nation across Alaska and the Yukon whose spiritual and physical life is bound to the sacred Porcupine caribou herd and the Arctic National Wildlife Refuge calving grounds.",
+    "summary_fi": "Pohjoisin athabascakansa Alaskan ja Yukonin alueella, jonka henkinen ja aineellinen elämä kietoutuu pyhään Porcupine-karibulaumaan ja arktisen luonnonpuiston suojeluun.",
+    "capital": "Fort McPherson (Teetł'it Zheh) / Old Crow",
+    "feature_name_matches": [
+      "Gwich'in Nành",
+      "Tetlit Gwich’in"
+    ]
+  },
+  {
+    "slug": "dehcho-dene",
+    "name": "Dehcho & South Slavey Dene",
+    "name_fi": "Dehcho- ja eteläslavey-dene",
+    "native_name": "Dehcho Dene / Dene Tha'",
+    "alternate_names": [
+      "Dehcho Dene",
+      "Dene Tha'"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "dene",
+    "historical_period": "Mackenzie River Dene Confederacy",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dehcho_First_Nations",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Slavet",
+    "wikidata_id": "Q5252516",
+    "summary_en": "Dene First Nations along the great Dehcho (Mackenzie River) and Hay River in the Northwest Territories and northern Alberta, sustaining moose hunting, trapping, and self-governance.",
+    "summary_fi": "Suuren Dehcho-joen (Mackenzie) ja Hay-joen varsien denekansat Luoteisterritorioissa ja Pohjois-Albertassa, jotka harjoittavat hirvenmetsästystä ja itsenäistä heimohallintoa.",
+    "capital": "Fort Simpson (Łı́ı́dłı̨ı̨ Kų́ę́) / Chateh",
+    "feature_name_matches": [
+      "Dehcho Dene",
+      "Dene Tha'"
+    ]
+  },
+  {
+    "slug": "sahtu-dene",
+    "name": "Sahtu Dene & Métis Nation",
+    "name_fi": "Sahtu-dene ja métis-kansa",
+    "native_name": "Sahtúot'ı̨nę / Sahtu Dene",
+    "alternate_names": [
+      "Sahtu",
+      "Sahtu Dene and Metis",
+      "Acho Dene Koe"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "dene",
+    "historical_period": "Great Bear Lake Dene Nation",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sahtu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dene",
+    "wikidata_id": "Q2212959",
+    "summary_en": "Dene inhabitants of the pristine Sahtú (Great Bear Lake) region and Mackenzie Mountains, including the Acho Dene Koe of Fort Liard, governing under the Sahtu Comprehensive Land Claim.",
+    "summary_fi": "Suuren Karhujärven (Sahtú) ja Mackenzievuorten denekansa, johon kuuluvat myös Fort Liardin Acho Dene Koe; hallinnoi aluettaan Sahtun maasopimuksen nojalla.",
+    "capital": "Délı̨nę / Norman Wells",
+    "feature_name_matches": [
+      "Sahtu",
+      "Sahtu Dene and Metis",
+      "Acho Dene Koe"
+    ]
+  },
+  {
+    "slug": "yellowknives-dene",
+    "name": "T'atsaot'ine (Yellowknives Dene)",
+    "name_fi": "T'atsaot'ine (Yellowknives-dene)",
+    "native_name": "T'atsaot'ine / Weledeh Yellowknives",
+    "alternate_names": [
+      "T'atsaot'ine"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "dene",
+    "historical_period": "Great Slave Lake Copper Dene Nation",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yellowknives",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yellowknifet",
+    "wikidata_id": "Q1417578",
+    "summary_en": "Dene nation originally known for trading native copper tools harvested from the Coppermine River, whose homelands border the north and east arms of Great Slave Lake (Tıdeè).",
+    "summary_fi": "Denekansa, joka tunnettiin alun perin Coppermine-joelta kerätystä luonnonkuparista valmistetuista työkaluistaan ja joka asuttaa Suuren Orjajärven rantoja.",
+    "capital": "Dettah / Ndilǫ",
+    "feature_name_matches": [
+      "T'atsaot'ine"
+    ]
+  },
+  {
+    "slug": "kaska-dene-tahltan",
+    "name": "Kaska Dena & Tahltan Nations",
+    "name_fi": "Kaska Dena ja Tahltan -kansakunnat",
+    "native_name": "Kaska Dena Kayeh & Tāłtān Konelīne",
+    "alternate_names": [
+      "Kaska Dena Kayeh",
+      "Tāłtān Konelīne (Tahltan)"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "dene",
+    "historical_period": "Cassiar & Stikine Subarctic Highlands",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kaska_Dena",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tahltanit",
+    "wikidata_id": "Q6374828",
+    "summary_en": "Athabaskan nations spanning northeastern British Columbia and southern Yukon across the Cassiar Mountains and Stikine volcanic plateau, controlling historic obsidian trading routes.",
+    "summary_fi": "Brittiläisen Kolumbian koillisosien ja eteläisen Yukonin athabascakansat, jotka hallitsivat Stikine-joen ja Cassiar-vuoriston muinaisia obsidiaanikauppareittejä.",
+    "capital": "Liard River / Telegraph Creek",
+    "feature_name_matches": [
+      "Kaska Dena Kayeh",
+      "Tāłtān Konelīne (Tahltan)"
+    ]
+  },
+  {
+    "slug": "southern-tutchone-tlingit-councils",
+    "name": "Champagne, Aishihik & Teslin Tlingit",
+    "name_fi": "Champagnen, Aishihikin ja Teslinin First Nationit",
+    "native_name": "Dän / Daḵlʼaweidí & Yanyèidí",
+    "alternate_names": [
+      "Champagne & Aishihik",
+      "Teslin Tlingit Council (BC)",
+      "Teslin Tlingit Council (Yukon)"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "dene",
+    "historical_period": "Yukon-Pacific Interior Mountain Nations",
+    "year_start": -500,
+    "year_end": 2026,
+    "period_label": "500 BCE – Present",
+    "period_label_fi": "500 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Champagne_and_Aishihik_First_Nations",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tlingitit",
+    "wikidata_id": "Q5070081",
+    "summary_en": "First Nations bridging Southern Tutchone Athabaskan and coastal Tlingit heritage in southwest Yukon and northwest BC, renowned for early modern self-government treaties in Canada.",
+    "summary_fi": "Lounais-Yukonin ja Luoteis-Brittiläisen Kolumbian First Nationit, joissa athabascalainen ja tlingit-kulttuuri yhdistyvät ja jotka solmivat Kanadan ensimmäiset modernit itsehallintosopimukset.",
+    "capital": "Haines Junction (Dakwäkäda) / Teslin",
+    "feature_name_matches": [
+      "Champagne & Aishihik",
+      "Teslin Tlingit Council (BC)",
+      "Teslin Tlingit Council (Yukon)"
+    ]
+  },
+  {
+    "slug": "eyak-people",
+    "name": "Eyak People",
+    "name_fi": "Eyak-kansa",
+    "native_name": "dAXunhyuu / Eyak",
+    "alternate_names": [
+      "Eyak",
+      "Eyaq"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "eyak",
+    "historical_period": "Copper River Delta Maritime Nation",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Eyak_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Eyakit",
+    "wikidata_id": "Q1385686",
+    "summary_en": "Distinct Na-Dene speaking indigenous group of the Copper River Delta and Prince William Sound in southern Alaska, famed for their wooden red cedar dugout canoes and seal hunting.",
+    "summary_fi": "Alaskan etelärannikon Copper-joen suiston omaleimainen na-dene-kielinen kansa, joka tunnetaan punasetripuusta koverretuista ruuhistaan ja hylkeenpyyntiperinteestään.",
+    "capital": "Cordova (Eyak Lake)",
+    "feature_name_matches": [
+      "Eyak",
+      "Eyaq"
+    ]
+  },
+  {
+    "slug": "innu-nation",
+    "name": "Innu Nation (Montagnais-Naskapi)",
+    "name_fi": "Innu-kansa (Montagnais-Naskapi)",
+    "native_name": "Innu / Ilnatsh / Nitassinan",
+    "alternate_names": [
+      "Innu",
+      "Montagnais Innu",
+      "Naskapi Innu",
+      "Nitassinan (Innu)"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "algonquian",
+    "historical_period": "Nitassinan Labrador Peninsula Nation",
+    "year_start": -4000,
+    "year_end": 2026,
+    "period_label": "4000 BCE – Present",
+    "period_label_fi": "4000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Innu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Innut",
+    "wikidata_id": "Q1536760",
+    "summary_en": "Indigenous Algonquian hunters of Nitassinan spanning Labrador and eastern Quebec, who tracked the massive George River caribou herd across subarctic lichen woodlands for millennia.",
+    "summary_fi": "Nitassinanin (Labradorin ja itäisen Quebecin) algonkin-metsästäjäkansa, joka seurasi vuosituhansia George-joen valtavaa karibulaumaa subarktisissa jäkälämetsissä.",
+    "capital": "Sheshatshiu / Uashat mak Mani-Utenam",
+    "feature_name_matches": [
+      "Innu",
+      "Montagnais Innu",
+      "Naskapi Innu",
+      "Nitassinan (Innu)"
+    ]
+  },
+  {
+    "slug": "beothuk-people",
+    "name": "Beothuk People",
+    "name_fi": "Beothuk-kansa",
+    "native_name": "Beothuk / Beothuck",
+    "alternate_names": [
+      "Beothuk"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "beothuk",
+    "historical_period": "Indigenous Newfoundland Nation",
+    "year_start": 1,
+    "year_end": 1829,
+    "period_label": "1 CE – 1829 CE",
+    "period_label_fi": "1 jaa. – 1829 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Beothuk",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Beothukit",
+    "wikidata_id": "Q818671",
+    "summary_en": "Aboriginal inhabitants of Newfoundland who coated their bodies, garments, and tools with sacred red ochre (inspiring the term 'Red Indians'), tragically decimated by colonial conflict and disease.",
+    "summary_fi": "Newfoundlandin alkuperäisasukkaat, jotka maalasivat itsensä ja esineensä pyhällä punamullalla; kansa tuhoutui traagisesti eurooppalaisten tuomien tautien ja väkivallan seurauksena 1829.",
+    "capital": "Red Indian Lake / Exploits River",
+    "feature_name_matches": [
+      "Beothuk"
+    ]
+  },
+  {
+    "slug": "kaskaskia-subarctic-tag",
+    "name": "Kaskaskia Nation",
+    "name_fi": "Kaskaskia-heimo",
+    "native_name": "Kaaskaaskia",
+    "alternate_names": [
+      "Kaskaskia"
+    ],
+    "culture_group": "Arctic & Subarctic",
+    "lineage_id": "illinois",
+    "historical_period": "Illinois Confederation & French Frontier",
+    "year_start": 1650,
+    "year_end": 1832,
+    "period_label": "1650 CE – 1832 CE",
+    "period_label_fi": "1650 jaa. – 1832 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kaskaskia_(tribe)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Illinoit",
+    "wikidata_id": "Q6374712",
+    "summary_en": "Leading tribe of the Illinois Confederacy who established close fur-trading ties with French coureurs des bois and Jesuit missionaries along the Mississippi and Illinois waterways.",
+    "summary_fi": "Illinois-liittokunnan johtava heimo, joka loi läheiset turkiskauppa- ja liittolaissuhteet ranskalaisiin Mississippi-joen ja Suurten järvien alueella.",
+    "capital": "Kaskaskia (Illinois Country)",
+    "feature_name_matches": [
+      "Kaskaskia"
+    ]
+  }
+]
