@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import { GlobeConfig, GlobeTexture } from "../types"
-import { ColorSchemeId, COLOR_SCHEMES } from "../styles/theme"
+import { ThemePreference, THEME_OPTIONS } from "../styles/theme"
 import "./ControlsOverlay.css"
 
 interface ControlsOverlayProps {
@@ -9,8 +9,8 @@ interface ControlsOverlayProps {
   onOpenAttribution?: () => void
   iceOverlayAvailable?: boolean
   terrainOverlayAvailable?: boolean
-  colorScheme?: ColorSchemeId
-  onChangeColorScheme?: (scheme: ColorSchemeId) => void
+  colorScheme?: ThemePreference
+  onChangeColorScheme?: (scheme: ThemePreference) => void
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
@@ -19,7 +19,7 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onOpenAttribution,
   iceOverlayAvailable = false,
   terrainOverlayAvailable = false,
-  colorScheme = "slate",
+  colorScheme = "auto",
   onChangeColorScheme,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -103,13 +103,13 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               className="controls-select"
               value={colorScheme}
               onChange={(e) =>
-                onChangeColorScheme?.(e.target.value as ColorSchemeId)
+                onChangeColorScheme?.(e.target.value as ThemePreference)
               }
               aria-label="UI Color Scheme"
             >
-              {COLOR_SCHEMES.map((scheme) => (
-                <option key={scheme.id} value={scheme.id}>
-                  {scheme.name}
+              {THEME_OPTIONS.map((option) => (
+                <option key={option.id} value={option.id}>
+                  {option.name}
                 </option>
               ))}
             </select>

@@ -7,7 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/index-BdnhGVoC.js"></script>
+    <script>
+      (function() {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var pref = params.get("theme") || localStorage.getItem("earth-browser-theme") || "auto";
+          var resolved = pref;
+          if (resolved === "auto") {
+            resolved = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "parchment"
+              : "slate";
+          }
+          if (resolved === "parchment" || resolved === "slate") {
+            document.documentElement.setAttribute("data-theme", resolved);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  <script type="module" crossorigin src="./assets/index-BmNWsc3r.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-Drv0Eg6T.css">
 </head>
 <body>

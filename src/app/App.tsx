@@ -18,12 +18,20 @@ import { ActiveEraBanner } from "../components/ActiveEraBanner"
 import { getIceOverlay } from "../earthTextures/ice"
 import { getTerrainOverlayUrl } from "../earthTextures/coasts"
 import { PuffLoader } from "react-spinners"
-import { ColorSchemeId, getInitialTheme, applyTheme } from "../styles/theme"
+import {
+  ColorSchemeId,
+  ThemePreference,
+  getThemePreference,
+  resolveTheme,
+  applyTheme,
+  subscribeToSystemThemeChanges,
+} from "../styles/theme"
 import "./App.css"
 
 
 export const App: React.FC = () => {
-  const [colorScheme, setColorScheme] = useState<ColorSchemeId>(() => getInitialTheme())
+  const [themePreference, setThemePreference] = useState<ThemePreference>(() => getThemePreference())
+  const [colorScheme, setColorScheme] = useState<ColorSchemeId>(() => resolveTheme(themePreference))
   const [eras, setEras] = useState<Era[]>([])
   const [currentEra, setCurrentEra] = useState<Era | null>(null)
   const [cameraView, setCameraView] = useState(() => readViewUrl(window.location.search).view)
@@ -34,14 +42,27 @@ export const App: React.FC = () => {
     replaceViewUrl(null, view)
   }, [])
 
-  const handleColorSchemeChange = useCallback((scheme: ColorSchemeId) => {
-    setColorScheme(scheme)
-    applyTheme(scheme)
+  const handleColorSchemeChange = useCallback((preference: ThemePreference) => {
+    setThemePreference(preference)
+    const resolved = resolveTheme(preference)
+    setColorScheme(resolved)
+    applyTheme(preference)
   }, [])
 
   useEffect(() => {
-    applyTheme(colorScheme)
-  }, [colorScheme])
+    applyTheme(themePreference)
+  }, [themePreference])
+
+  useEffect(() => {
+    if (themePreference !== "auto") return
+
+    const unsubscribe = subscribeToSystemThemeChanges((systemTheme) => {
+      setColorScheme(systemTheme)
+      applyTheme(systemTheme, "auto")
+    })
+
+    return unsubscribe
+  }, [themePreference])
   const [geoJsonData, setGeoJsonData] =
     useState<GeoJSONFeatureCollection | null>(null)
   const [isLoadingEras, setIsLoadingEras] = useState(true)
@@ -184,7 +205,7 @@ export const App: React.FC = () => {
           terrainOverlayAvailable={!!getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture)}
           onChangeConfig={setGlobeConfig}
           onOpenAttribution={() => setIsAttributionOpen(true)}
-          colorScheme={colorScheme}
+          colorScheme={themePreference}
           onChangeColorScheme={handleColorSchemeChange}
         />
 

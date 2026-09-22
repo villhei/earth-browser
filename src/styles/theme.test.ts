@@ -4,8 +4,14 @@ import { resolve } from "path"
 import {
   COLOR_SCHEMES,
   ColorSchemeId,
+  ThemePreference,
+  THEME_OPTIONS,
+  getSystemTheme,
+  getThemePreference,
+  resolveTheme,
   getInitialTheme,
   applyTheme,
+  subscribeToSystemThemeChanges,
   THEME_STORAGE_KEY,
 } from "./theme"
 
@@ -101,6 +107,130 @@ describe("Design Token System & Color Schemes", () => {
   it("ignores invalid values in localStorage and falls back to slate", () => {
     localStorage.setItem(THEME_STORAGE_KEY, "invalid-theme-xyz")
     expect(getInitialTheme()).toBe("slate")
+  })
+
+  it("registers THEME_OPTIONS including Auto (System), Oceanic Slate, and Historical Parchment", () => {
+    const ids = THEME_OPTIONS.map((o) => o.id)
+    expect(ids).toEqual(["auto", "slate", "parchment"])
+    expect(THEME_OPTIONS.length).toBe(3)
+  })
+
+  it("automatically detects system light mode preference when no override exists", () => {
+    vi.stubGlobal("window", {
+      location: { search: "" },
+      matchMedia: vi.fn().mockImplementation((query: string) => ({
+        matches: query === "(prefers-color-scheme: light)",
+        media: query,
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+      })),
+    })
+
+    expect(getSystemTheme()).toBe("parchment")
+    expect(getThemePreference()).toBe("auto")
+    expect(getInitialTheme()).toBe("parchment")
+  })
+
+  it("automatically detects system dark mode preference when no override exists", () => {
+    vi.stubGlobal("window", {
+      location: { search: "" },
+      matchMedia: vi.fn().mockImplementation((query: string) => ({
+        matches: query === "(prefers-color-scheme: dark)",
+        media: query,
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+      })),
+    })
+
+    expect(getSystemTheme()).toBe("slate")
+    expect(getThemePreference()).toBe("auto")
+    expect(getInitialTheme()).toBe("slate")
+  })
+
+  it("allows user localStorage override to take precedence over system light preference", () => {
+    localStorage.setItem(THEME_STORAGE_KEY, "slate")
+    vi.stubGlobal("window", {
+      location: { search: "" },
+      matchMedia: vi.fn().mockImplementation((query: string) => ({
+        matches: query === "(prefers-color-scheme: light)",
+        media: query,
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+      })),
+    })
+
+    expect(getSystemTheme()).toBe("parchment")
+    expect(getThemePreference()).toBe("slate")
+    expect(getInitialTheme()).toBe("slate")
+  })
+
+  it("allows user URL query param override to take precedence over system dark preference", () => {
+    vi.stubGlobal("window", {
+      location: { search: "?theme=parchment" },
+      matchMedia: vi.fn().mockImplementation((query: string) => ({
+        matches: query === "(prefers-color-scheme: dark)",
+        media: query,
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+      })),
+    })
+
+    expect(getSystemTheme()).toBe("slate")
+    expect(getThemePreference()).toBe("parchment")
+    expect(getInitialTheme()).toBe("parchment")
+  })
+
+  it("applies auto theme and persists auto preference to localStorage", () => {
+    vi.stubGlobal("window", {
+      location: { search: "" },
+      matchMedia: vi.fn().mockImplementation((query: string) => ({
+        matches: query === "(prefers-color-scheme: light)",
+        media: query,
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+      })),
+    })
+
+    applyTheme("auto")
+    expect(document.documentElement.getAttribute("data-theme")).toBe("parchment")
+    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("auto")
+  })
+
+  it("subscribes to system theme changes via matchMedia", () => {
+    let changeHandler: ((e: any) => void) | null = null
+    const addEventListenerMock = vi.fn((event: string, handler: any) => {
+      if (event === "change") changeHandler = handler
+    })
+    const removeEventListenerMock = vi.fn()
+
+    vi.stubGlobal("window", {
+      location: { search: "" },
+      matchMedia: vi.fn().mockReturnValue({
+        matches: false,
+        addEventListener: addEventListenerMock,
+        removeEventListener: removeEventListenerMock,
+      }),
+    })
+
+    const callback = vi.fn()
+    const unsubscribe = subscribeToSystemThemeChanges(callback)
+
+    expect(addEventListenerMock).toHaveBeenCalledWith("change", expect.any(Function))
+
+    // Simulate system preference changing to light mode
+    if (changeHandler) {
+      (changeHandler as (e: any) => void)({ matches: true })
+    }
+    expect(callback).toHaveBeenCalledWith("parchment")
+
+    // Simulate system preference changing to dark mode
+    if (changeHandler) {
+      (changeHandler as (e: any) => void)({ matches: false })
+    }
+    expect(callback).toHaveBeenCalledWith("slate")
+
+    unsubscribe()
+    expect(removeEventListenerMock).toHaveBeenCalledWith("change", expect.any(Function))
   })
 
   it("verifies tokens.css defines primitive scales", () => {
