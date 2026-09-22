@@ -5,16 +5,10 @@ import "./ActiveEraBanner.css"
 
 export interface ActiveEraBannerProps {
   currentEra: Era | null
-  onPulseHighlight?: () => void
-  isHighlighting?: boolean
-  highlightLabel?: string
 }
 
 export const ActiveEraBanner: React.FC<ActiveEraBannerProps> = ({
   currentEra,
-  onPulseHighlight,
-  isHighlighting = false,
-  highlightLabel,
 }) => {
   if (!currentEra) return null
 
@@ -32,20 +26,6 @@ export const ActiveEraBanner: React.FC<ActiveEraBannerProps> = ({
           <span className="active-era-stats">
             {currentEra.feature_count} territories
           </span>
-          {onPulseHighlight && highlightLabel && (
-            <button
-              className={`active-era-highlight-btn ${isHighlighting ? "active" : ""}`}
-              onClick={onPulseHighlight}
-              title={`Pulse highlight: ${highlightLabel}`}
-              aria-label={`Highlight terrain: ${highlightLabel}`}
-              aria-pressed={isHighlighting}
-            >
-              <span className="active-era-sparkle">✦</span>
-              <span>
-                {isHighlighting ? "Highlighting Coastlines…" : "Highlight Coastlines"}
-              </span>
-            </button>
-          )}
         </div>
 
         {currentEra.description && (

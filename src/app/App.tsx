@@ -245,16 +245,7 @@ export const App: React.FC = () => {
         </div>
 
         {/* Selected Era Banner — Floats on top of the Globe */}
-        <ActiveEraBanner
-          currentEra={currentEra}
-          onPulseHighlight={
-            isTerrainMaskActive ? handlePulseTerrainHighlight : undefined
-          }
-          isHighlighting={isHighlightingTerrain}
-          highlightLabel={
-            isTerrainMaskActive ? terrainHighlightLabel : undefined
-          }
-        />
+        <ActiveEraBanner currentEra={currentEra} />
 
         {/* Visual Settings Controls */}
         <ControlsOverlay

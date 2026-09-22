@@ -27,30 +27,24 @@ describe("ActiveEraBanner logic", () => {
     expect(sampleEra.description).toContain("Columbus")
   })
 
-  it("renders highlight button when highlight props are supplied", () => {
+  it("renders era title, year, and territories", () => {
     const html = renderToStaticMarkup(
       React.createElement(ActiveEraBanner, {
         currentEra: sampleEra,
-        onPulseHighlight: () => {},
-        highlightLabel: "Exposed Continental Shelves (-120m)",
-        isHighlighting: false,
       })
     )
-    expect(html).toContain("active-era-highlight-btn")
-    expect(html).toContain("Highlight Coastlines")
-    expect(html).toContain("Exposed Continental Shelves (-120m)")
+    expect(html).toContain("1492 CE")
+    expect(html).toContain("Age of Discovery")
+    expect(html).toContain("536 territories")
+    expect(html).toContain("Columbus")
   })
 
-  it("shows active highlighting state on the button", () => {
+  it("returns null when currentEra is null", () => {
     const html = renderToStaticMarkup(
       React.createElement(ActiveEraBanner, {
-        currentEra: sampleEra,
-        onPulseHighlight: () => {},
-        highlightLabel: "Exposed Continental Shelves (-120m)",
-        isHighlighting: true,
+        currentEra: null,
       })
     )
-    expect(html).toContain("active-era-highlight-btn active")
-    expect(html).toContain("Highlighting Coastlines…")
+    expect(html).toBe("")
   })
 })
