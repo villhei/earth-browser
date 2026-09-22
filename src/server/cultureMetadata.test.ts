@@ -46,7 +46,7 @@ describe("Culture Metadata Prototype (world-bc500)", () => {
 })
 
 describe("Culture Metadata Batches", () => {
-  const validateBatch = (filePath: string, expectedGroup: string, minCount: number) => {
+  const validateBatch = (filePath: string, expectedGroup: string | string[], minCount: number) => {
     const raw = fs.readFileSync(filePath, "utf-8")
     const entries = JSON.parse(raw)
     expect(entries.length).toBeGreaterThanOrEqual(minCount)
@@ -59,7 +59,11 @@ describe("Culture Metadata Batches", () => {
 
       expect(entry.name.length).toBeGreaterThan(0)
       expect(entry.name_fi.length).toBeGreaterThan(0)
-      expect(entry.culture_group).toBe(expectedGroup)
+      if (Array.isArray(expectedGroup)) {
+        expect(expectedGroup).toContain(entry.culture_group)
+      } else {
+        expect(entry.culture_group).toBe(expectedGroup)
+      }
       expect(entry.historical_period.length).toBeGreaterThan(0)
       expect(entry.year_start).toBeLessThanOrEqual(entry.year_end)
       expect(entry.period_label.length).toBeGreaterThan(0)
@@ -167,6 +171,41 @@ describe("Culture Metadata Batches", () => {
   it("validates the Baltic batch file", () => {
     const batchPath = path.resolve(__dirname, "../../data-sources/batches/baltic.json")
     validateBatch(batchPath, "Baltic", 8)
+  })
+
+  it("validates the North Africa batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/north-africa.json")
+    validateBatch(batchPath, ["North Africa", "Mediterranean"], 16)
+  })
+
+  it("validates the Middle East batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/middle-east.json")
+    validateBatch(batchPath, ["Middle East", "Ancient Near East"], 26)
+  })
+
+  it("validates the Southern Europe batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/southern-europe.json")
+    validateBatch(batchPath, "Southern Europe", 21)
+  })
+
+  it("validates the Balkans & Eastern Europe batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/balkans-eastern-europe.json")
+    validateBatch(batchPath, ["Balkans", "Eastern Europe", "Caucasus", "Finno-Ugric"], 21)
+  })
+
+  it("validates the Americas States batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/americas-states.json")
+    validateBatch(batchPath, ["Latin America", "Central America", "North America"], 23)
+  })
+
+  it("validates the Caribbean batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/caribbean.json")
+    validateBatch(batchPath, "Caribbean", 27)
+  })
+
+  it("validates the Prehistoric & Archaeological batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/prehistoric-archaeological.json")
+    validateBatch(batchPath, ["Prehistoric & Archaeological", "Western & Central Europe"], 21)
   })
 })
 

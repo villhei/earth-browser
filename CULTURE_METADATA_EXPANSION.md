@@ -43,11 +43,11 @@ Each record in `culture_metadata` adheres to the following specification:
 
 Progress is tracked dynamically via [`scripts/culture_metadata_status.ts`](file:///home/ville/src/web/earth-browser/scripts/culture_metadata_status.ts) and recorded in [`data-sources/culture_metadata_status.json`](file:///home/ville/src/web/earth-browser/data-sources/culture_metadata_status.json).
 
-* **Unique Named Entities Completed**: **717 / 2,999** (`23.9%`)
-* **Total Feature Records Linked**: **3,138 / 10,395** (`30.2%`)
+* **Unique Named Entities Completed**: **923 / 2,999** (`30.8%`)
+* **Total Feature Records Linked**: **4,588 / 10,395** (`44.1%`)
 * **Prototype Era (500 BCE / `world-bc500`)**: **32 / 77 features linked** (`41.6%`)
-* **Unlinked Features Remaining**: **7,257**
-* **Missing Entities Remaining**: **2,282**
+* **Unlinked Features Remaining**: **5,807**
+* **Missing Entities Remaining**: **2,076**
 
 
 ---
@@ -173,60 +173,47 @@ Below is the complete inventory of missing entities grouped into modular, parall
   - *Slavic*: `Grand Duchy of Moscow`, `Kievan Rus`, `Novgorod`, `Novgorod-Seversky`, `Principality of Novgorod`, `Principality of Vladimir-Suzdal`, `Pskov`, `Russia`, `Russian Empire`, `Ryazan`, `Slavic tribes`, `South Russia`, `Tsardom of Muscovy`, `USSR`, `Ukraine`, `White Russia`
   - *Baltic*: `Baltic tribes`, `Brushed Pottery culture`, `Curonians`, `Early combware`, `Eastern Masurian culture`, `Estonia`, `Latvia`, `Lithuania`, `Narva`, `Plain-Pottery culture`, `Sambian-Nothangian culture`, `Volga-Kamm`, `Western Masurian culture`
 
-### Work Unit 13: North African & Maghreb Dynasties
-* **Culture Groups**: `North Africa` (28 missing), `Mediterranean` (1 missing)
-* **Total Entities**: 34 | **Completed**: 5 | **Missing**: 29
-* **Target Batch File**: `data-sources/batches/north-africa.json`
-* **Key Missing Entities**:
+### Work Unit 13: North African & Maghreb Dynasties (COMPLETED)
+* **Total Entities**: 34 | **Completed**: 34 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/north-africa.json` (16 cultures populated, 148 features linked across eras)
+* **Entities Resolved**:
   - `Algeria`, `Algeria (FR)`, `Algeria (France)`, `Almoravid dynasty`, `Berber Tribes`, `Berbers`, `Cyprus`, `Egypt`, `Harer (Egypt)`, `Kingdom of Gala`, `Kingdom of Syphax`, `Libya`, `Libya (IT)`, `Mauretania`, `Mauritania`, `Morocco`, `Morocco (France)`, `Numidia`, `Saharan Nomadic Tribes`, `Saharan pastoral nomads`, `Spanish Morocco`, `Sudan`, `Tripolitana (UK Lybia)`, `Tripolitania`, `Tuareg Nomadic Tribes`, `Tuaregs`, `Tunisia`, `Watassid Morocco`, `Western Sahara`
 
-### Work Unit 14: Middle East, Ottoman Empire & Levant
-* **Culture Groups**: `Middle East` (31 missing), `Ancient Near East` (5 missing)
-* **Total Entities**: 57 | **Completed**: 21 | **Missing**: 36
-* **Target Batch File**: `data-sources/batches/middle-east.json`
-* **Key Missing Entities**:
-  - *Middle East*: `Arabian pastoral nomads`, `Arabs`, `Bedouins`, `Emirate of the White Sheep Turks`, `Hadramaut`, `Himyarite Kingdom`, `Iran`, `Iraq`, `Islamic city-states`, `Israel`, `Jordan`, `Kuwait`, `Lebanon`, `Maan`, `Muscat`, `Muscat and Oman`, `Oman`, `Oman (British Raj)`, `Ottoman Empire`, `Ottoman Sultanate`, `Qataban`, `Qatar`, `Republic of Turkey`, `Saudi Arabia`, `Syria`, `Syria (France)`, `Trucial Oman`, `Turkey`, `United Arab Emirates`, `Yemen`, `Yemen (UK)`
-  - *Ancient Near East*: `Anatolian tribes`, `Chelamela`, `Mari`, `Mundurukânia (Wuy jugu)`, `Wulgurukaba`
+### Work Unit 14: Middle East, Ottoman Empire & Levant (COMPLETED)
+* **Total Entities**: 57 | **Completed**: 57 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/middle-east.json` (26 cultures populated, 227 features linked across eras)
+* **Entities Resolved**:
+  - `Anatolian tribes`, `Arabian pastoral nomads`, `Arabs`, `Bedouins`, `Chelamela`, `Emirate of the White Sheep Turks`, `Hadramaut`, `Himyarite Kingdom`, `Iran`, `Iraq`, `Islamic city-states`, `Israel`, `Jordan`, `Kuwait`, `Lebanon`, `Maan`, `Mari`, `Mundurukânia (Wuy jugu)`, `Muscat`, `Muscat and Oman`, `Oman`, `Oman (British Raj)`, `Ottoman Empire`, `Ottoman Sultanate`, `Qataban`, `Qatar`, `Republic of Turkey`, `Saudi Arabia`, `Syria`, `Syria (France)`, `Trucial Oman`, `Turkey`, `United Arab Emirates`, `Wulgurukaba`, `Yemen`, `Yemen (UK)`
 
-### Work Unit 15: Southern Europe, Iberia & Italian Maritime Republics
-* **Culture Group**: `Southern Europe` (33 missing)
-* **Total Entities**: 39 | **Completed**: 6 | **Missing**: 33
-* **Target Batch File**: `data-sources/batches/southern-europe.json`
-* **Key Missing Entities**:
+### Work Unit 15: Southern Europe, Iberia & Italian Maritime Republics (COMPLETED)
+* **Total Entities**: 39 | **Completed**: 39 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/southern-europe.json` (21 cultures populated, 236 features linked across eras)
+* **Entities Resolved**:
   - `Andorra`, `Aragón`, `Asturias`, `Castile`, `Castille`, `Dumonii`, `Emirate of Sicily`, `Florence`, `Florida (Spain)`, `Genoa`, `Greece`, `Hispaniola (Spain)`, `Italy`, `Kingdom of Italy`, `Kingdom of Sardinia`, `Kingdom of the Two Sicilies`, `León`, `Malta`, `Milan`, `Naples`, `Navarre`, `Papal States`, `Portugal`, `San Marino`, `Santo Domingo (Spain)`, `Sardinia`, `Sardinia-Piedmont`, `Savoy`, `Sicily`, `Spain`, `Tuscany`, `Venice`, `Viceroyalty of New Spain`
 
-### Work Unit 16: Balkans, Eastern Europe, Caucasus & Finno-Ugric Frontiers
-* **Culture Groups**: `Balkans` (16 missing), `Eastern Europe` (4 missing), `Caucasus` (3 missing), `Finno-Ugric` (4 missing)
-* **Total Entities**: 37 | **Completed**: 6 | **Missing**: 31
-* **Target Batch Files**: `data-sources/batches/balkans-eastern-europe.json`
-* **Key Missing Entities**:
-  - *Balkans*: `Albania`, `Bosnia`, `Bosnia and Herzegovina`, `Bosnia-Herzegovina`, `Caucasian Albania`, `Croatia`, `Croatian kingdom`, `Dacia`, `Dacians`, `Dardania`, `Montenegro`, `Odrysian Kingdom`, `Principality of Wallachia`, `Serbia`, `Slovenia`, `Thrace`
-  - *Eastern Europe*: `Bulgaria`, `Chernoles culture`, `Moldova`, `Romania`
-  - *Caucasus*: `Armenia`, `Azerbaijan`, `Georgia`
-  - *Finno-Ugric*: `Finno-Ugric taiga hunter-gatherers`, `Pisamira`, `Samis`, `Samish`
+### Work Unit 16: Balkans, Eastern Europe, Caucasus & Finno-Ugric Frontiers (COMPLETED)
+* **Total Entities**: 37 | **Completed**: 37 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/balkans-eastern-europe.json` (21 cultures populated, 150 features linked across eras)
+* **Entities Resolved**:
+  - `Albania`, `Armenia`, `Azerbaijan`, `Bosnia`, `Bosnia and Herzegovina`, `Bosnia-Herzegovina`, `Bulgaria`, `Caucasian Albania`, `Chernoles culture`, `Croatia`, `Croatian kingdom`, `Dacia`, `Dacians`, `Dardania`, `Finno-Ugric taiga hunter-gatherers`, `Georgia`, `Moldova`, `Montenegro`, `Odrysian Kingdom`, `Pisamira`, `Principality of Wallachia`, `Romania`, `Samis`, `Samish`, `Serbia`, `Slovenia`, `Thrace`
 
-### Work Unit 17: Post-Colonial Nation States of the Americas
-* **Culture Groups**: `Latin America` (15 missing), `Central America` (7 missing), `North America` (3 missing)
-* **Total Entities**: 25 | **Completed**: 0 | **Missing**: 25
-* **Target Batch File**: `data-sources/batches/americas-states.json`
-* **Key Missing Entities**:
-  - *Latin America*: `Argentina`, `Bolivia`, `Brazil`, `Chile`, `Colombia`, `Ecuador`, `French Guiana`, `Guyana`, `Guyana (Netherlands)`, `Mexico`, `Paraguay`, `Peru`, `Suriname`, `Uruguay`, `Venezuela`
-  - *Central America*: `Belize`, `Costa Rica`, `El Salvador`, `Guatemala`, `Honduras`, `Nicaragua`, `Panama`
-  - *North America*: `Canada`, `United States`, `United States of America`
+### Work Unit 17: Post-Colonial Nation States of the Americas (COMPLETED)
+* **Total Entities**: 25 | **Completed**: 25 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/americas-states.json` (23 cultures populated, 286 features linked across eras)
+* **Entities Resolved**:
+  - `Argentina`, `Belize`, `Bolivia`, `Brazil`, `Canada`, `Chile`, `Colombia`, `Costa Rica`, `Ecuador`, `El Salvador`, `French Guiana`, `Guatemala`, `Guyana`, `Guyana (Netherlands)`, `Honduras`, `Mexico`, `Nicaragua`, `Panama`, `Paraguay`, `Peru`, `Suriname`, `United States`, `United States of America`, `Uruguay`, `Venezuela`
 
-### Work Unit 18: Caribbean Island Polities & Maritime Chiefdoms
-* **Culture Group**: `Caribbean` (35 missing)
-* **Total Entities**: 35 | **Completed**: 0 | **Missing**: 35
-* **Target Batch File**: `data-sources/batches/caribbean.json`
-* **Key Missing Entities**:
+### Work Unit 18: Caribbean Island Polities & Maritime Chiefdoms (COMPLETED)
+* **Total Entities**: 35 | **Completed**: 35 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/caribbean.json` (27 cultures populated, 315 features linked across eras)
+* **Entities Resolved**:
   - `Anguilla`, `Antigua and Barbuda`, `Arawaks`, `Bahamas`, `Barbados`, `Barbados (UK)`, `Boriken Taino`, `Caribbean hunter-gatherers`, `Ciboney`, `Cuba`, `Cuba (Spain)`, `Dominica`, `Dominican Republic`, `Grenada`, `Guadeloupe`, `Haiti`, `Jamaica`, `Jamaica (UK)`, `Kalinago`, `Kalinago (Island Carib)`, `Lokono (Arawak)`, `Martinique`, `Martinique (France)`, `Montserrat`, `Netherlands Antilles`, `Puerto Rico`, `Saint Barthelemy`, `Saint Kitts and Nevis`, `Saint Kitts and Nevis (UK)`, `Saint Lucia`, `Saint Martin`, `Saint Vincent and the Grenadines`, `Taino`, `Trinidad`, `United States Virgin Islands`
 
-### Work Unit 19: Global Prehistoric Horizons & Archaeological Complexes
-* **Culture Groups**: `Prehistoric & Archaeological` (17 missing), `Western & Central Europe` (4 missing)
-* **Total Entities**: 23 | **Completed**: 2 | **Missing**: 21
-* **Target Batch File**: `data-sources/batches/prehistoric-archaeological.json`
-* **Key Missing Entities**:
-  - `Alluvial Lowland Mesolithic Hunter-Foragers`, `Coastal and Woodland Mesolithic Hunter-Foragers`, `Dimini`, `Ghassul`, `Highland Mesolithic Hunter-Foragers`, `Homo erectus`, `Homo heidelbergensis`, `Hunters-gatherers`, `La Almagra culture`, `Levantine Corridor (Neolithic Farmers)`, `Naquada I`, `Neanderthal`, `Neolithic Farmers`, `Patagonian shellfish and marine mammal hunters`, `Shellfish gatherers`, `Stentinello culture`, `Steppe Mesolithic Hunter-Foragers`, `Funnel-Beaker`, `N. European Bronze Age cultures`, `Únětice`, `Urnfield cultures`
+### Work Unit 19: Global Prehistoric Horizons & Archaeological Complexes (COMPLETED)
+* **Total Entities**: 23 | **Completed**: 23 | **Missing**: 0 (`100% COMPLETE`)
+* **Batch File**: `data-sources/batches/prehistoric-archaeological.json` (21 cultures populated, 96 features linked across eras)
+* **Entities Resolved**:
+  - `Alluvial Lowland Mesolithic Hunter-Foragers`, `Coastal and Woodland Mesolithic Hunter-Foragers`, `Dimini`, `Funnel-Beaker`, `Ghassul`, `Highland Mesolithic Hunter-Foragers`, `Homo erectus`, `Homo heidelbergensis`, `Hunters-gatherers`, `La Almagra culture`, `Levantine Corridor (Neolithic Farmers)`, `N. European Bronze Age cultures`, `Naquada I`, `Neanderthal`, `Neolithic Farmers`, `Patagonian shellfish and marine mammal hunters`, `Shellfish gatherers`, `Stentinello culture`, `Steppe Mesolithic Hunter-Foragers`, `Urnfield cultures`, `Únětice`
 
 ### Work Unit 20: Oceania, Australian Aboriginal & Pacific Island Nations
 * **Culture Group**: `Oceania` (74 missing)

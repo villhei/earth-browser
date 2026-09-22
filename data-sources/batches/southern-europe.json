@@ -1,0 +1,559 @@
+[
+  {
+    "slug": "kingdom-of-asturias",
+    "name": "Kingdom of Asturias",
+    "name_fi": "Asturian kuningaskunta",
+    "native_name": "Reinu d'Asturies / Regnum Asturorum",
+    "alternate_names": [
+      "Asturias"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "spain",
+    "historical_period": "Early Medieval Christian Cantabrian Monarchy",
+    "year_start": 718,
+    "year_end": 924,
+    "period_label": "718 CE – 924 CE",
+    "period_label_fi": "718 jaa. – 924 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Asturias",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Asturian_kuningaskunta",
+    "wikidata_id": "Q231392",
+    "summary_en": "First Christian realm established in the Iberian Peninsula after the Umayyad conquest, founded by Pelagius following the Battle of Covadonga and originating Asturian pre-Romanesque architecture.",
+    "summary_fi": "Ensimmäinen kristitty valtio Iberian niemimaalla umaijadien valloituksen jälkeen; Don Pelayon Covadongan taistelun jälkeen perustama kuningaskunta loi esiromaanisen arkkitehtuurin.",
+    "capital": "Cangas de Onís, Pravia, Oviedo",
+    "feature_name_matches": [
+      "Asturias"
+    ]
+  },
+  {
+    "slug": "kingdom-of-leon",
+    "name": "Kingdom of León",
+    "name_fi": "Leónin kuningaskunta",
+    "native_name": "Reinu de Llïón / Regnum Legionense",
+    "alternate_names": [
+      "León"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "spain",
+    "historical_period": "Medieval Iberian Kingdom",
+    "year_start": 910,
+    "year_end": 1301,
+    "period_label": "910 CE – 1301 CE",
+    "period_label_fi": "910 jaa. – 1301 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Le%C3%B3n",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Le%C3%B3nin_kuningaskunta",
+    "wikidata_id": "Q175276",
+    "summary_en": "Medieval Iberian monarchy that succeeded Asturias, playing a pivotal role in the Reconquista, hosting the Decrees of León in 1188 (earliest European parliamentary gathering recognized by UNESCO).",
+    "summary_fi": "Asturian kuningaskunnan perillinen Luoteis-Espanjassa; Reconquistan keskeinen toimija, jossa pidettiin vuonna 1188 Euroopan vanhin tunnettu parlamentaarinen kokous (Decrees of León).",
+    "capital": "León",
+    "feature_name_matches": [
+      "León"
+    ]
+  },
+  {
+    "slug": "crown-of-castile",
+    "name": "Kingdom & Crown of Castile",
+    "name_fi": "Kastilian kuningaskunta ja kruunu",
+    "native_name": "Corona de Castilla",
+    "alternate_names": [
+      "Castile",
+      "Castille"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "spain",
+    "historical_period": "Medieval Iberian Hegemony",
+    "year_start": 1035,
+    "year_end": 1715,
+    "period_label": "1035 CE – 1715 CE",
+    "period_label_fi": "1035 jaa. – 1715 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Crown_of_Castile",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kastilian_kruunu",
+    "wikidata_id": "Q217196",
+    "summary_en": "Dominant Iberian realm spanning the central meseta, spearheaded the Reconquista with the capture of Toledo, codified Castilian Spanish, and sponsored the 1492 transatlantic voyages of Columbus.",
+    "summary_fi": "Iberian niemimaan keskusylängön hallitseva valtio, joka johti Toledon takaisinvaltausta, teki kastiliasta espanjan kirjakielen ja rahoitti Kolumbuksen löytöretket vuonna 1492.",
+    "capital": "Burgos, Toledo, Valladolid, Madrid",
+    "feature_name_matches": [
+      "Castile",
+      "Castille"
+    ]
+  },
+  {
+    "slug": "crown-of-aragon",
+    "name": "Crown of Aragón",
+    "name_fi": "Aragonian kruunu",
+    "native_name": "Corona d'Aragón / Corona d'Aragó",
+    "alternate_names": [
+      "Aragón",
+      "Kingdom of Aragon"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "spain",
+    "historical_period": "Medieval Mediterranean Maritime Federation",
+    "year_start": 1137,
+    "year_end": 1716,
+    "period_label": "1137 CE – 1716 CE",
+    "period_label_fi": "1137 jaa. – 1716 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Crown_of_Aragon",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Aragonian_kruunu",
+    "wikidata_id": "Q204920",
+    "summary_en": "Composite maritime monarchy uniting the Kingdom of Aragón and Principality of Catalonia, which built a thalassocracy across the Mediterranean including Valencia, the Balearics, Sicily, and Naples.",
+    "summary_fi": "Aragonian kuningaskunnan ja Katalonian ruhtinaskunnan liitto, joka muodosti mahtavan Välimeren kauppaimperiumin ulottuen Baleaareille, Sisiliaan ja Napoliin.",
+    "capital": "Zaragoza, Barcelona, Valencia, Palermo",
+    "feature_name_matches": [
+      "Aragón"
+    ]
+  },
+  {
+    "slug": "kingdom-of-navarre",
+    "name": "Kingdom of Navarre",
+    "name_fi": "Navarran kuningaskunta",
+    "native_name": "Nafarroako Erresuma / Royaume de Navarre",
+    "alternate_names": [
+      "Navarre",
+      "Kingdom of Pamplona"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "spain",
+    "historical_period": "Medieval Pyrenean Basque Kingdom",
+    "year_start": 824,
+    "year_end": 1620,
+    "period_label": "824 CE – 1620 CE",
+    "period_label_fi": "824 jaa. – 1620 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Navarre",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Navarran_kuningaskunta",
+    "wikidata_id": "Q200262",
+    "summary_en": "Pyrenean kingdom founded by Íñigo Arista in Pamplona representing the historic political heartland of the Basque people, maintaining strategic sovereignty between France and Spain.",
+    "summary_fi": "Pyreneiden vuoriston kuningaskunta Pamplonassa, baskien historiallisen itsenäisyyden sydänmaa, joka säilytti itsenäisyytensä Ranskan ja Espanjan välissä satoja vuosia.",
+    "capital": "Pamplona",
+    "feature_name_matches": [
+      "Navarre"
+    ]
+  },
+  {
+    "slug": "spanish-empire-and-nation",
+    "name": "Spain (Spanish Empire & Modern Kingdom)",
+    "name_fi": "Espanja (Espanjan imperiumi ja moderni kuningaskunta)",
+    "native_name": "Reino de España / Monarquía Hispánica",
+    "alternate_names": [
+      "Spain",
+      "Florida (Spain)",
+      "Hispaniola (Spain)",
+      "Santo Domingo (Spain)",
+      "Viceroyalty of New Spain"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "spain",
+    "historical_period": "Global Empire & Modern European Constitutional Monarchy",
+    "year_start": 1469,
+    "year_end": 2026,
+    "period_label": "1469 CE – Present",
+    "period_label_fi": "1469 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Spain",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Espanja",
+    "wikidata_id": "Q29",
+    "summary_en": "Global empire forged by the Catholic Monarchs that established vast viceroyalties across the Americas and the Pacific, leaving an enduring worldwide cultural, linguistic, and architectural legacy.",
+    "summary_fi": "Katolisten monarkkien yhdistämä maailmanvalta, joka perusti laajoja varakuningaskuntia Amerikkaan ja Tyynellemerelle ja loi maailmanlaajuisen espanjankielisen kulttuuripiirin.",
+    "capital": "Madrid, Toledo, Seville",
+    "feature_name_matches": [
+      "Spain",
+      "Florida (Spain)",
+      "Hispaniola (Spain)",
+      "Santo Domingo (Spain)",
+      "Viceroyalty of New Spain"
+    ]
+  },
+  {
+    "slug": "republic-of-portugal",
+    "name": "Kingdom & Republic of Portugal",
+    "name_fi": "Portugalin kuningaskunta ja tasavalta",
+    "native_name": "República Portuguesa / Reino de Portugal",
+    "alternate_names": [
+      "Portugal"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "portugal",
+    "historical_period": "Age of Discovery Pioneer & Atlantic Republic",
+    "year_start": 1139,
+    "year_end": 2026,
+    "period_label": "1139 CE – Present",
+    "period_label_fi": "1139 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Portugal",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Portugali",
+    "wikidata_id": "Q45",
+    "summary_en": "Oldest nation-state on the Iberian Peninsula, founded by Afonso Henriques; pioneer of the Age of Discovery under Henry the Navigator, creating a maritime empire from Brazil to East Asia.",
+    "summary_fi": "Iberian niemimaan vanhin kansallisvaltio, jonka Afonso Henriques perusti 1139; löytöretkien uranuurtaja Henrik Purjehtijan johdolla, joka loi maailmanlaajuisen merikauppaimperiumin.",
+    "capital": "Lisbon, Coimbra, Porto",
+    "feature_name_matches": [
+      "Portugal"
+    ]
+  },
+  {
+    "slug": "principality-of-andorra",
+    "name": "Principality of Andorra",
+    "name_fi": "Andorran ruhtinaskunta",
+    "native_name": "Principat d'Andorra",
+    "alternate_names": [
+      "Andorra"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "spain",
+    "historical_period": "Medieval Pyrenean Co-Principality",
+    "year_start": 1278,
+    "year_end": 2026,
+    "period_label": "1278 CE – Present",
+    "period_label_fi": "1278 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Andorra",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Andorra",
+    "wikidata_id": "Q228",
+    "summary_en": "Sovereign landlocked Pyrenean microstate governed since 1278 under a unique diarchy co-ruled by the Catholic Bishop of Urgell and the French head of state.",
+    "summary_fi": "Pyreneiden vuoriston itsenäinen kääpiövaltio, jota on hallittu vuodesta 1278 ainutlaatuisena kaksoisruhtinaskuntana Urgellin piispan ja Ranskan valtionpäämiehen alaisuudessa.",
+    "capital": "Andorra la Vella",
+    "feature_name_matches": [
+      "Andorra"
+    ]
+  },
+  {
+    "slug": "italian-state",
+    "name": "Kingdom of Italy & Italian Republic",
+    "name_fi": "Italian kuningaskunta ja tasavalta",
+    "native_name": "Repubblica Italiana / Regno d'Italia",
+    "alternate_names": [
+      "Italy",
+      "Kingdom of Italy"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Risorgimento Unification to Modern Republic",
+    "year_start": 1861,
+    "year_end": 2026,
+    "period_label": "1861 CE – Present",
+    "period_label_fi": "1861 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Italy",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Italia",
+    "wikidata_id": "Q38",
+    "summary_en": "Mediterranean peninsula unified during the 19th-century Risorgimento under Victor Emmanuel II and Garibaldi, cradle of the Renaissance, Roman law, and modern European culture.",
+    "summary_fi": "Risorgimento-liikkeen 1800-luvulla yhdistämä Välimeren niemimaa, renessanssin, roomalaisen oikeuden ja eurooppalaisen taiteen ja kulttuurin kehto.",
+    "capital": "Rome, Turin, Florence",
+    "feature_name_matches": [
+      "Italy",
+      "Kingdom of Italy"
+    ]
+  },
+  {
+    "slug": "papal-states",
+    "name": "Papal States",
+    "name_fi": "Kirkkovaltio",
+    "native_name": "Status Pontificius / Stato Pontificio",
+    "alternate_names": [
+      "Papal States",
+      "State of the Church"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Sovereign Temporal Realm of the Popes",
+    "year_start": 754,
+    "year_end": 1870,
+    "period_label": "754 CE – 1870 CE",
+    "period_label_fi": "754 jaa. – 1870 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Papal_States",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kirkkovaltio",
+    "wikidata_id": "Q170174",
+    "summary_en": "Territories in Central Italy under the direct sovereign secular rule of the Pope from the Donation of Pepin in 754 until annexation by the Kingdom of Italy in 1870.",
+    "summary_fi": "Keski-Italian alueet paavin maallisen suvereniteetin alaisuudessa Pipinin lahjoituksesta (754) aina Italian yhdistymiseen ja Rooman valtaukseen (1870) saakka.",
+    "capital": "Rome, Avignon, Ravenna",
+    "feature_name_matches": [
+      "Papal States"
+    ]
+  },
+  {
+    "slug": "republic-of-venice",
+    "name": "Most Serene Republic of Venice",
+    "name_fi": "Venetsian tasavalta",
+    "native_name": "Serenìsima Repùblica Vèneta",
+    "alternate_names": [
+      "Venice",
+      "Serenissima"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Medieval to Early Modern Maritime Thalassocracy",
+    "year_start": 697,
+    "year_end": 1797,
+    "period_label": "697 CE – 1797 CE",
+    "period_label_fi": "697 jaa. – 1797 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Republic_of_Venice",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Venetsian_tasavalta",
+    "wikidata_id": "Q4948",
+    "summary_en": "Long-lived maritime republic led by the Doge that dominated Adriatic and eastern Mediterranean trade, famed for naval supremacy at the Venetian Arsenal, Gothic palaces, and carnival culture.",
+    "summary_fi": "Dogen johtama pitkäikäinen meritasavalta, joka hallitsi Adrianmeren ja itäisen Välimeren kauppareittejä ja loisti laivastonrakennuksessa, arkkitehtuurissa ja maalaustaiteessa.",
+    "capital": "Venice",
+    "feature_name_matches": [
+      "Venice"
+    ]
+  },
+  {
+    "slug": "republic-of-genoa",
+    "name": "Republic of Genoa",
+    "name_fi": "Genovan tasavalta",
+    "native_name": "Repùbrica de Zêna / Serenissima Repubblica di Genova",
+    "alternate_names": [
+      "Genoa",
+      "Republic of Genoa"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Ligurian Maritime & Banking Republic",
+    "year_start": 1005,
+    "year_end": 1797,
+    "period_label": "1005 CE – 1797 CE",
+    "period_label_fi": "1005 jaa. – 1797 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Republic_of_Genoa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Genovan_tasavalta",
+    "wikidata_id": "Q174306",
+    "summary_en": "Prominent Ligurian naval and merchant republic, rival of Venice across the Black Sea and Aegean, home to Christopher Columbus and Europe's foremost international banking dynasties at the Bank of Saint George.",
+    "summary_fi": "Ligurianmeren mahtava kauppa- ja meritasavalta, Venetsian kilpailija ja Kristoffer Kolumbuksen kotikaupunki, jonka Pyhän Yrjön pankki toimi Euroopan varhaisen rahoitusmaailman keskuksena.",
+    "capital": "Genoa",
+    "feature_name_matches": [
+      "Genoa"
+    ]
+  },
+  {
+    "slug": "republic-grand-duchy-of-tuscany",
+    "name": "Florence & Grand Duchy of Tuscany",
+    "name_fi": "Firenze ja Toscanan suurherttuakunta",
+    "native_name": "Granducato di Toscana / Repubblica di Firenze",
+    "alternate_names": [
+      "Florence",
+      "Tuscany"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Renaissance Republic & Grand Duchy",
+    "year_start": 1115,
+    "year_end": 1859,
+    "period_label": "1115 CE – 1859 CE",
+    "period_label_fi": "1115 jaa. – 1859 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Tuscany",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Toscanan_suurherttuakunta",
+    "wikidata_id": "Q154849",
+    "summary_en": "Epicenter of the Italian Renaissance governed by the Medici dynasty, patronizing Leonardo da Vinci, Michelangelo, and Galileo, later transformed into the Grand Duchy of Tuscany.",
+    "summary_fi": "Italian renessanssin sydänpaikka ja Medicien suvun hallitsema valtio, joka suojeli da Vincin, Michelangelon ja Galilein neroa ennen kehittymistään Toscanan suurherttuakunnaksi.",
+    "capital": "Florence",
+    "feature_name_matches": [
+      "Florence",
+      "Tuscany"
+    ]
+  },
+  {
+    "slug": "duchy-of-milan",
+    "name": "Duchy of Milan",
+    "name_fi": "Milanon herttuakunta",
+    "native_name": "Ducatus Mediolani / Ducato di Milano",
+    "alternate_names": [
+      "Milan"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Medieval to Early Modern Lombard Power",
+    "year_start": 1395,
+    "year_end": 1796,
+    "period_label": "1395 CE – 1796 CE",
+    "period_label_fi": "1395 jaa. – 1796 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Duchy_of_Milan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Milanon_herttuakunta",
+    "wikidata_id": "Q153529",
+    "summary_en": "Wealthy Lombard principality ruled successively by the Visconti and Sforza dynasties, renowned for armor production, textile commerce, and the iconic Duomo di Milano.",
+    "summary_fi": "Lombardian vauras ruhtinaskunta, jota hallitsivat Viscontin ja Sforzan dynastiat ja joka loisti asepajateollisuudellaan, tekstiilikaupallaan ja mahtavalla tuomiokirkollaan.",
+    "capital": "Milan",
+    "feature_name_matches": [
+      "Milan"
+    ]
+  },
+  {
+    "slug": "kingdom-of-naples-two-sicilies",
+    "name": "Kingdom of Naples & Kingdom of the Two Sicilies",
+    "name_fi": "Napolin kuningaskunta ja Molempain Sisiliain kuningaskunta",
+    "native_name": "Regno delle Due Sicilie / Regno di Napoli",
+    "alternate_names": [
+      "Naples",
+      "Kingdom of the Two Sicilies"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Southern Italian Monarchy",
+    "year_start": 1282,
+    "year_end": 1861,
+    "period_label": "1282 CE – 1861 CE",
+    "period_label_fi": "1282 jaa. – 1861 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_the_Two_Sicilies",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Molempain_Sisiliain_kuningaskunta",
+    "wikidata_id": "Q180383",
+    "summary_en": "Largest sovereign realm in pre-unification Italy encompassing southern mainland Italy and Sicily, ruled by Angevins, Aragonese, and Bourbons from the magnificent port of Naples.",
+    "summary_fi": "Ennen Italian yhdistymistä maan suurin valtio, joka käsitti Etelä-Italian ja Sisilian ja jota hallitsivat Anjoun, Aragonian ja Bourbonin suvut Napolista käsin.",
+    "capital": "Naples, Palermo",
+    "feature_name_matches": [
+      "Naples",
+      "Kingdom of the Two Sicilies"
+    ]
+  },
+  {
+    "slug": "kingdom-emirate-of-sicily",
+    "name": "Emirate & Kingdom of Sicily",
+    "name_fi": "Sisilian emiirikunta ja kuningaskunta",
+    "native_name": "Regnum Siciliae / صقلية",
+    "alternate_names": [
+      "Sicily",
+      "Emirate of Sicily"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Arab-Norman & Medieval Mediterranean Realm",
+    "year_start": 831,
+    "year_end": 1816,
+    "period_label": "831 CE – 1816 CE",
+    "period_label_fi": "831 jaa. – 1816 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Sicily",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sisilian_kuningaskunta",
+    "wikidata_id": "Q188586",
+    "summary_en": "Cosmopolitan Mediterranean island kingdom shaped by Arab-Byzantine culture, Norman conquest under Roger II, and Frederick II's Hohenstaufen court, famous for Arabic-Norman-Byzantine art and law.",
+    "summary_fi": "Monikulttuurinen Välimeren saarivaltakunta, jonka historiaa muovasivat arabialainen ja bysanttilainen kausi sekä Roger II:n ja Fredrik II:n normannilainen ja hohenstaufenilainen loisto.",
+    "capital": "Palermo",
+    "feature_name_matches": [
+      "Sicily",
+      "Emirate of Sicily"
+    ]
+  },
+  {
+    "slug": "kingdom-of-sardinia-savoy",
+    "name": "Kingdom of Sardinia, Piedmont & Duchy of Savoy",
+    "name_fi": "Sardinian kuningaskunta, Piemont ja Savoiji",
+    "native_name": "Regno di Sardegna / Ducato di Savoia",
+    "alternate_names": [
+      "Kingdom of Sardinia",
+      "Sardinia",
+      "Sardinia-Piedmont",
+      "Savoy"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Alpine to Mediterranean Monarchy",
+    "year_start": 1324,
+    "year_end": 1861,
+    "period_label": "1324 CE – 1861 CE",
+    "period_label_fi": "1324 jaa. – 1861 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Sardinia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sardinian_kuningaskunta",
+    "wikidata_id": "Q165154",
+    "summary_en": "Savoyard monarchy centered in Turin and Cagliari whose political and military leadership under Count Cavour drove the unification of Italy in 1861.",
+    "summary_fi": "Savoijin hallitsijasuvun monarkia Torinossa ja Cagliarissa, jonka poliittinen ja sotilaallinen johto kreivi Cavourin johdolla johti Italian yhdistymiseen vuonna 1861.",
+    "capital": "Turin, Cagliari, Chambéry",
+    "feature_name_matches": [
+      "Kingdom of Sardinia",
+      "Sardinia",
+      "Sardinia-Piedmont",
+      "Savoy"
+    ]
+  },
+  {
+    "slug": "republic-of-san-marino",
+    "name": "Most Serene Republic of San Marino",
+    "name_fi": "San Marinon seesteinen tasavalta",
+    "native_name": "Serenissima Repubblica di San Marino",
+    "alternate_names": [
+      "San Marino"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "italy",
+    "historical_period": "Oldest Extant Constitutional Republic",
+    "year_start": 301,
+    "year_end": 2026,
+    "period_label": "301 CE – Present",
+    "period_label_fi": "301 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/San_Marino",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/San_Marino",
+    "wikidata_id": "Q238",
+    "summary_en": "Enclaved microstate on Mount Titano founded by Saint Marinus in 301 CE, celebrated as the world's oldest surviving constitutional republic with unbroken democratic statutes.",
+    "summary_fi": "Monte Titanon rinteillä sijaitseva erillisalue ja maailman vanhin edelleen toimiva tasavalta, jonka pyhä Marinus perusti vuonna 301 ja jolla on katkeamattomat demokraattiset perinteet.",
+    "capital": "City of San Marino",
+    "feature_name_matches": [
+      "San Marino"
+    ]
+  },
+  {
+    "slug": "republic-of-malta",
+    "name": "Malta (Knights Hospitaller & Modern Republic)",
+    "name_fi": "Malta (Johanniittain ritarikunta ja moderni tasavalta)",
+    "native_name": "Repubblika ta' Malta",
+    "alternate_names": [
+      "Malta"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "malta",
+    "historical_period": "Megalithic to Modern Mediterranean Fortress Island",
+    "year_start": 1530,
+    "year_end": 2026,
+    "period_label": "1530 CE – Present",
+    "period_label_fi": "1530 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Malta",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Malta",
+    "wikidata_id": "Q233",
+    "summary_en": "Archipelago state at the heart of the Mediterranean, fortified by the Knights of Saint John who resisted the Great Siege of 1565, preserving prehistoric megaliths and a unique Semitic language.",
+    "summary_fi": "Välimeren saarivaltio, jonka Johanniittain ritarit linnoittivat torjuen vuoden 1565 suuren piirityksen; tunnettu megaliittitemppeleistään ja latinalaisin aakkosin kirjoitetusta seemiläisestä kielestään.",
+    "capital": "Valletta, Birgu, Mdina",
+    "feature_name_matches": [
+      "Malta"
+    ]
+  },
+  {
+    "slug": "hellenic-republic-modern-greece",
+    "name": "Greece (Modern Hellenic State)",
+    "name_fi": "Kreikka (Moderni Helleenien tasavalta)",
+    "native_name": "Ελληνική Δημοκρατία / Ellinikí Dimokratía",
+    "alternate_names": [
+      "Greece",
+      "Kingdom of Greece"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "greece",
+    "historical_period": "Modern Balkan & Mediterranean Nation",
+    "year_start": 1821,
+    "year_end": 2026,
+    "period_label": "1821 CE – Present",
+    "period_label_fi": "1821 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Greece",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kreikka",
+    "wikidata_id": "Q41",
+    "summary_en": "Modern sovereign state emerging from the 1821 Greek War of Independence against Ottoman rule, inheritor of the ancient Hellenic philosophy, arts, democracy, and Byzantine Orthodox traditions.",
+    "summary_fi": "Vuoden 1821 vapaussodassa osmanivaltaa vastaan itsenäistynyt moderni valtio, antiikin filosofian, demokratian, taiteiden ja bysanttilaisen ortodoksisen kulttuurin perillinen.",
+    "capital": "Athens, Nafplio",
+    "feature_name_matches": [
+      "Greece"
+    ]
+  },
+  {
+    "slug": "dumnonii-celtic-kingdom",
+    "name": "Dumnonii & Kingdom of Dumnonia",
+    "name_fi": "Dumnonit ja Dumnonian kelttikuningaskunta",
+    "native_name": "Dumnonii / Dyfneint",
+    "alternate_names": [
+      "Dumonii",
+      "Dumnonii",
+      "Dumnonia"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "celtic",
+    "historical_period": "Iron Age to Post-Roman Brythonic Kingdom",
+    "year_start": -100,
+    "year_end": 800,
+    "period_label": "100 BCE – 800 CE",
+    "period_label_fi": "100 eaa. – 800 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dumnonia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dumnonia",
+    "wikidata_id": "Q1265005",
+    "summary_en": "Brythonic Celtic kingdom of the southwest British peninsula (Devon and Cornwall) that controlled prehistoric tin trade, resisted Anglo-Saxon encroachment, and contributed to early Arthurian traditions.",
+    "summary_fi": "Lounais-Britannian (Devon ja Cornwall) kelttiläinen kuningaskunta, joka hallitsi tinakauppaa, puolustautui anglosaksien laajentumista vastaan ja liittyy kuningas Arthurin perinteeseen.",
+    "capital": "Isca Dumnoniorum (Exeter), Tintagel",
+    "feature_name_matches": [
+      "Dumonii"
+    ]
+  }
+]

@@ -1,0 +1,697 @@
+[
+  {
+    "slug": "ottoman-empire",
+    "name": "Ottoman Empire",
+    "name_fi": "Osmanien valtakunta",
+    "native_name": "دولت علیه عثمانیه / Devlet-i ʿAlīye-i ʿOsmānīye",
+    "alternate_names": [
+      "Ottoman Empire",
+      "Ottoman Sultanate",
+      "Sublime Ottoman State"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "turkey",
+    "historical_period": "Late Medieval to Early Modern Transcontinental Empire",
+    "year_start": 1299,
+    "year_end": 1922,
+    "period_label": "1299 CE – 1922 CE",
+    "period_label_fi": "1299 jaa. – 1922 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Osmanien_valtakunta",
+    "wikidata_id": "Q12560",
+    "summary_en": "Imperial power founded by Osman I that straddled Southeast Europe, Western Asia, and North Africa from Constantinople, renowned for monumental architecture, the devshirme system, and enduring legal codices.",
+    "summary_fi": "Osman I:n perustama suurvalta, joka hallitsi Kaakkois-Eurooppaa, Lähi-itää ja Pohjois-Afrikkaa Konstantinopolista käsin ja jätti jälkeensä rikkaan arkkitehtuurin ja oikeusjärjestelmän.",
+    "capital": "Constantinople (Istanbul), Edirne, Bursa, Söğüt",
+    "feature_name_matches": [
+      "Ottoman Empire",
+      "Ottoman Sultanate"
+    ]
+  },
+  {
+    "slug": "republic-of-turkey",
+    "name": "Republic of Turkey",
+    "name_fi": "Turkin tasavalta",
+    "native_name": "Türkiye Cumhuriyeti",
+    "alternate_names": [
+      "Turkey",
+      "Republic of Turkey"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "turkey",
+    "historical_period": "Modern Secular Anatolian Republic",
+    "year_start": 1923,
+    "year_end": 2026,
+    "period_label": "1923 CE – Present",
+    "period_label_fi": "1923 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Turkey",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Turkki",
+    "wikidata_id": "Q43",
+    "summary_en": "Eurasian republic established in Anatolia and Eastern Thrace by Mustafa Kemal Atatürk after the Turkish War of Independence, forging a modern secular state bridging Europe and Asia.",
+    "summary_fi": "Euraasian tasavalta Anatoliassa ja Itä-Traakiassa, jonka Mustafa Kemal Atatürk perusti Turkin vapaussodan jälkeen modernina maallisena valtiona Euroopan ja Aasian sillaksi.",
+    "capital": "Ankara, Istanbul",
+    "feature_name_matches": [
+      "Turkey",
+      "Republic of Turkey"
+    ]
+  },
+  {
+    "slug": "kingdom-of-saudi-arabia",
+    "name": "Kingdom of Saudi Arabia",
+    "name_fi": "Saudi-Arabian kuningaskunta",
+    "native_name": "المملكة العربية السعودية / Al-Mamlakah al-ʿArabiyyah as-Suʿūdiyyah",
+    "alternate_names": [
+      "Saudi Arabia",
+      "Emirate of Diriyah",
+      "Emirate of Nejd"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Modern Arabian Kingdom & Guardian of the Holy Mosques",
+    "year_start": 1744,
+    "year_end": 2026,
+    "period_label": "1744 CE – Present",
+    "period_label_fi": "1744 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saudi_Arabia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saudi-Arabia",
+    "wikidata_id": "Q851",
+    "summary_en": "Sovereign Arab monarchy founded by the House of Saud encompassing the vast Arabian Peninsula and Islam's holiest sanctuaries of Mecca and Medina, modern leader in global petroleum energy.",
+    "summary_fi": "Saudin hallitsijasuvun perustama arabimonarkia Arabian niemimaalla; islamin pyhimpien kaupunkien Mekan ja Medinan suojelija sekä maailman johtava öljyntuottaja.",
+    "capital": "Riyadh, Diriyah",
+    "feature_name_matches": [
+      "Saudi Arabia"
+    ]
+  },
+  {
+    "slug": "republic-of-yemen",
+    "name": "Yemen (Ancient South Arabia to Modern State)",
+    "name_fi": "Jemen",
+    "native_name": "الجمهورية اليمنية / Al-Jumhūriyyah al-Yamaniyyah",
+    "alternate_names": [
+      "Yemen",
+      "Yemen (UK)",
+      "North Yemen",
+      "South Yemen",
+      "Mutawakkilite Kingdom"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Ancient to Modern South Arabian Civilization",
+    "year_start": -1200,
+    "year_end": 2026,
+    "period_label": "1200 BCE – Present",
+    "period_label_fi": "1200 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yemen",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Jemen",
+    "wikidata_id": "Q805",
+    "summary_en": "Mountainous southwestern Arabian land known in antiquity as Arabia Felix, home to ancient incense kingdoms, terraced agriculture, mud-brick skyscraper architecture in Sana'a and Shibam.",
+    "summary_fi": "Lounais-Arabian vuoristomaa, joka tunnettiin antiikissa nimellä Arabia Felix; muinaisten suitsukekuningaskuntien ja Sana'an ja Shibamin monikertaisten savitiilitalojen kotimaa.",
+    "capital": "Sana'a, Aden",
+    "feature_name_matches": [
+      "Yemen",
+      "Yemen (UK)"
+    ]
+  },
+  {
+    "slug": "kingdom-of-hadhramaut",
+    "name": "Kingdom of Hadhramaut",
+    "name_fi": "Hadramautin kuningaskunta",
+    "native_name": "حضرموت / 𐩢𐩳𐩧𐩣𐩥𐩩",
+    "alternate_names": [
+      "Hadramaut",
+      "Hadhramaut",
+      "Kathiri",
+      "Qu'aiti"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Ancient South Arabian Frankincense Kingdom",
+    "year_start": -800,
+    "year_end": 300,
+    "period_label": "800 BCE – 300 CE",
+    "period_label_fi": "800 eaa. – 300 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Hadhramaut_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Hadramaut",
+    "wikidata_id": "Q2657805",
+    "summary_en": "Ancient South Arabian mercantile kingdom situated along the Gulf of Aden that dominated frankincense harvesting in Dhofar and overland desert camel caravans northward.",
+    "summary_fi": "Muinainen eteläarabialainen kauppavaltakunta Adeninlahden rannikolla, joka hallitsi olibaanihartsin tuotantoa Dhofarissa ja kamelikaravaanireittejä pohjoiseen.",
+    "capital": "Shabwa, Shibam",
+    "feature_name_matches": [
+      "Hadramaut"
+    ]
+  },
+  {
+    "slug": "himyarite-kingdom",
+    "name": "Himyarite Kingdom",
+    "name_fi": "Himjarin kuningaskunta",
+    "native_name": "مملكة حِمْيَر / 𐩢𐩣𐩺𐩧𐩣",
+    "alternate_names": [
+      "Himyarite Kingdom",
+      "Himyar"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Classical South Arabian Monotheistic Empire",
+    "year_start": -110,
+    "year_end": 525,
+    "period_label": "110 BCE – 525 CE",
+    "period_label_fi": "110 eaa. – 525 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Himyarite_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Himjar",
+    "wikidata_id": "Q282928",
+    "summary_en": "Dominant South Arabian kingdom that conquered Saba and Qataban, converting to Judaism in the 4th century CE and controlling trade through the Bab-el-Mandeb strait from Zafar.",
+    "summary_fi": "Valtiasasemaan noussut eteläarabialainen kuningaskunta, joka alisti Saban ja Qatabanin, kääntyi juutalaisuuteen 300-luvulla ja valvoi Bab el Mandebin salmen kauppaa Zafarista käsin.",
+    "capital": "Zafar, Sana'a",
+    "feature_name_matches": [
+      "Himyarite Kingdom"
+    ]
+  },
+  {
+    "slug": "kingdom-of-qataban",
+    "name": "Kingdom of Qataban",
+    "name_fi": "Qatabanin kuningaskunta",
+    "native_name": "قتبان / 𐩤𐩩𐩨𐩬",
+    "alternate_names": [
+      "Qataban"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Ancient South Arabian Kingdom",
+    "year_start": -500,
+    "year_end": 200,
+    "period_label": "500 BCE – 200 CE",
+    "period_label_fi": "500 eaa. – 200 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Qataban",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Qataban",
+    "wikidata_id": "Q746351",
+    "summary_en": "Flourishing ancient South Arabian trading polity in the Baihan valley governed by prominent mukarribs, renowned for early written market laws, irrigation canal networks, and alabaster carvings.",
+    "summary_fi": "Kukoistava muinainen eteläarabialainen valtio Baihanin laaksossa, joka tunnettiin varhaisista kauppalaeistaan, kastelukanavistaan ja alabasteriveistoksistaan.",
+    "capital": "Timna",
+    "feature_name_matches": [
+      "Qataban"
+    ]
+  },
+  {
+    "slug": "sultanate-of-oman",
+    "name": "Sultanate of Oman & Muscat",
+    "name_fi": "Omanin sulttaanikunta ja Masqat",
+    "native_name": "سلطنة عمان / Salṭanat ʿUmān",
+    "alternate_names": [
+      "Oman",
+      "Muscat",
+      "Muscat and Oman",
+      "Oman (British Raj)",
+      "Sultanate of Muscat and Oman"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Maritime Indian Ocean Empire & Sultanate",
+    "year_start": 751,
+    "year_end": 2026,
+    "period_label": "751 CE – Present",
+    "period_label_fi": "751 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Oman",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Oman",
+    "wikidata_id": "Q842",
+    "summary_en": "Southeastern Arabian maritime power ruled by the Al Said dynasty and Ibadi imams, which expelled the Portuguese and built an extensive Indian Ocean trading empire extending to Zanzibar.",
+    "summary_fi": "Kaakkois-Arabian merimahti, jota ovat hallinneet Al Saidin dynastia ja ibadilaiset imaamit ja joka loi laajan Intian valtameren kauppaimperiumin aina Sansibariin saakka.",
+    "capital": "Muscat, Nizwa, Rustaq",
+    "feature_name_matches": [
+      "Oman",
+      "Muscat",
+      "Muscat and Oman",
+      "Oman (British Raj)"
+    ]
+  },
+  {
+    "slug": "united-arab-emirates",
+    "name": "United Arab Emirates (Trucial States)",
+    "name_fi": "Yhdistyneet arabiemiirikunnat (Sopimusvaltiot)",
+    "native_name": "الإمارات العربية المتحدة / Al-Imārāt al-ʿArabiyyah al-Muttaḥidah",
+    "alternate_names": [
+      "Trucial Oman",
+      "United Arab Emirates",
+      "Trucial States"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Maritime Gulf Federation",
+    "year_start": 1820,
+    "year_end": 2026,
+    "period_label": "1820 CE – Present",
+    "period_label_fi": "1820 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yhdistyneet_arabiemiirikunnat",
+    "wikidata_id": "Q878",
+    "summary_en": "Federation of seven hereditary monarchies along the Persian Gulf and Gulf of Oman, transformed from historical pearling and maritime trade into global commerce and aviation hubs in Abu Dhabi and Dubai.",
+    "summary_fi": "Seitsemän perinnöllisen emiirikunnan liittovaltio Persianlahden rannikolla, joka kehittyi historiallisesta helmestys- ja kauppaperinteestä Abu Dhabin ja Dubain globaaleiksi metropoleiksi.",
+    "capital": "Abu Dhabi, Dubai",
+    "feature_name_matches": [
+      "Trucial Oman",
+      "United Arab Emirates"
+    ]
+  },
+  {
+    "slug": "state-of-qatar",
+    "name": "State of Qatar",
+    "name_fi": "Qatarin valtio",
+    "native_name": "دولة قطر / Dawlat Qaṭar",
+    "alternate_names": [
+      "Qatar"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Arabian Peninsula Emirate",
+    "year_start": 1868,
+    "year_end": 2026,
+    "period_label": "1868 CE – Present",
+    "period_label_fi": "1868 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Qatar",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Qatar",
+    "wikidata_id": "Q846",
+    "summary_en": "Peninsular Arab emirate governed by the House of Thani, recognized historically for pearling at Al Zubarah and modern leadership in liquefied natural gas exportation and global diplomacy.",
+    "summary_fi": "Arabian niemimaan emiirikunta, jota hallitsee Thani-suku; tunnettu Al Zubarahin historiallisesta helmestyksestä sekä modernista asemastaan maakaasun viejänä ja diplomaattisena solmukohtana.",
+    "capital": "Doha, Al Zubarah",
+    "feature_name_matches": [
+      "Qatar"
+    ]
+  },
+  {
+    "slug": "state-of-kuwait",
+    "name": "State of Kuwait",
+    "name_fi": "Kuwaitin valtio",
+    "native_name": "دولة الكويت / Dawlat al-Kuwayt",
+    "alternate_names": [
+      "Kuwait"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Persian Gulf Maritime Emirate",
+    "year_start": 1752,
+    "year_end": 2026,
+    "period_label": "1752 CE – Present",
+    "period_label_fi": "1752 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kuwait",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kuwait",
+    "wikidata_id": "Q817",
+    "summary_en": "Historic coastal trading port and sovereign emirate at the head of the Persian Gulf founded by the Bani Utbah and ruled by the Al Sabah dynasty, renowned for dhow-building and petroleum reserves.",
+    "summary_fi": "Persianlahden pohjukan historiallinen kauppasatama ja emiirikunta, jota hallitsee Al Sabahin dynastia ja joka tunnetaan perinteisestä dhow-alusten rakennuksesta ja öljyvaroistaan.",
+    "capital": "Kuwait City",
+    "feature_name_matches": [
+      "Kuwait"
+    ]
+  },
+  {
+    "slug": "modern-iran",
+    "name": "Iran (Pahlavi & Islamic Republic)",
+    "name_fi": "Iran (Pahlavin dynastia ja islamilainen tasavalta)",
+    "native_name": "ایران / Īrān",
+    "alternate_names": [
+      "Iran",
+      "Imperial State of Iran",
+      "Islamic Republic of Iran"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "persia",
+    "historical_period": "20th to 21st Century Iranian Nation-State",
+    "year_start": 1925,
+    "year_end": 2026,
+    "period_label": "1925 CE – Present",
+    "period_label_fi": "1925 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Iran",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Iran",
+    "wikidata_id": "Q794",
+    "summary_en": "Modern state occupying the Iranian Plateau, evolving from the modernization of the Pahlavi monarchy through the 1979 Islamic Revolution into an influential theocratic republic.",
+    "summary_fi": "Iranin ylängön moderni valtio, joka kehittyi Pahlavi-monarkian uudistusten ja vuoden 1979 islamilaisen vallankumouksen myötä vaikutusvaltaiseksi teokraattiseksi tasavallaksi.",
+    "capital": "Tehran",
+    "feature_name_matches": [
+      "Iran"
+    ]
+  },
+  {
+    "slug": "republic-of-iraq",
+    "name": "Republic of Iraq",
+    "name_fi": "Irakin tasavalta",
+    "native_name": "جمهورية العراق / Jumhūriyyat al-ʿIrāq",
+    "alternate_names": [
+      "Iraq",
+      "Kingdom of Iraq"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Modern Mesopotamian State",
+    "year_start": 1920,
+    "year_end": 2026,
+    "period_label": "1920 CE – Present",
+    "period_label_fi": "1920 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Iraq",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Irak",
+    "wikidata_id": "Q796",
+    "summary_en": "Modern nation centered between the Tigris and Euphrates rivers across the historic Mesopotamian heartland, uniting the historical Ottoman vilayets of Baghdad, Basra, and Mosul.",
+    "summary_fi": "Tigrisin ja Eufratin välinen Mesopotamian sydänmaan moderni valtio, joka muodostettiin Bagdadin, Basran ja Mosulin historiallisista osmanivilayeteista.",
+    "capital": "Baghdad",
+    "feature_name_matches": [
+      "Iraq"
+    ]
+  },
+  {
+    "slug": "syrian-arab-republic",
+    "name": "Syrian Arab Republic & French Mandate",
+    "name_fi": "Syyrian arabitasavalta ja mandaattialue",
+    "native_name": "الجمهورية العربية السورية / Al-Jumhūriyyah al-ʿArabiyyah as-Sūriyyah",
+    "alternate_names": [
+      "Syria",
+      "Syria (France)",
+      "State of Syria"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "levant",
+    "historical_period": "Modern Levantine State",
+    "year_start": 1920,
+    "year_end": 2026,
+    "period_label": "1920 CE – Present",
+    "period_label_fi": "1920 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Syria",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Syyria",
+    "wikidata_id": "Q858",
+    "summary_en": "Ancient crossroads of civilizations in the Levant centered in Damascus and Aleppo, gaining independence after the French Mandate and shaped by Ba'athist politics and regional conflicts.",
+    "summary_fi": "Levantin ikivanha sivilisaatioiden risteyskohta Damaskoksen ja Aleppon ympärillä; itsenäistyi Ranskan mandaatista ja muodostui merkittäväksi Lähi-idän tekijäksi.",
+    "capital": "Damascus, Aleppo",
+    "feature_name_matches": [
+      "Syria",
+      "Syria (France)"
+    ]
+  },
+  {
+    "slug": "lebanese-republic",
+    "name": "Lebanese Republic",
+    "name_fi": "Libanonin tasavalta",
+    "native_name": "الجمهورية اللبنانية / Al-Jumhūriyyah al-Lubnāniyyah",
+    "alternate_names": [
+      "Lebanon",
+      "State of Greater Lebanon"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "levant",
+    "historical_period": "Levantine Coastal & Mountain Republic",
+    "year_start": 1920,
+    "year_end": 2026,
+    "period_label": "1920 CE – Present",
+    "period_label_fi": "1920 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Lebanon",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Libanon",
+    "wikidata_id": "Q822",
+    "summary_en": "Mediterranean Levantine state framed by Mount Lebanon, heir to ancient Phoenician seaports and characterized by a confessional democratic system honoring diverse Christian and Muslim communities.",
+    "summary_fi": "Välimeren itäpään valtio Libanoninvuoren rinteillä, muinaisten foinikialaisten satamien perillinen ja moniuskontoinen demokratia, jonka kulttuurielämän keskus on Beirut.",
+    "capital": "Beirut, Tripoli, Sidon",
+    "feature_name_matches": [
+      "Lebanon"
+    ]
+  },
+  {
+    "slug": "hashemite-kingdom-of-jordan",
+    "name": "Hashemite Kingdom of Jordan",
+    "name_fi": "Jordanian hašemiittinen kuningaskunta",
+    "native_name": "المملكة الأردنية الهاشمية / Al-Mamlakah al-Urdunniyyah al-Hāshimiyyah",
+    "alternate_names": [
+      "Jordan",
+      "Emirate of Transjordan"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "levant",
+    "historical_period": "Modern Levantine Arab Monarchy",
+    "year_start": 1921,
+    "year_end": 2026,
+    "period_label": "1921 CE – Present",
+    "period_label_fi": "1921 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Jordan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Jordania",
+    "wikidata_id": "Q810",
+    "summary_en": "Constitutional monarchy east of the Jordan River governed by the Hashemite dynasty descended from Prophet Muhammad, guardian of Jerusalem's Muslim and Christian holy places and home to Petra.",
+    "summary_fi": "Perustuslaillinen monarkia Jordan-joen itäpuolella, jota hallitsee profeetta Muhammadista polveutuva hašemiittien suku; Petran kalliokaupungin kotimaa.",
+    "capital": "Amman",
+    "feature_name_matches": [
+      "Jordan"
+    ]
+  },
+  {
+    "slug": "state-of-israel",
+    "name": "State of Israel",
+    "name_fi": "Israelin valtio",
+    "native_name": "מְדִינַת יִשְׂרָאֵל / Medīnat Yisrā'el",
+    "alternate_names": [
+      "Israel"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "levant",
+    "historical_period": "Modern Middle Eastern Democracy",
+    "year_start": 1948,
+    "year_end": 2026,
+    "period_label": "1948 CE – Present",
+    "period_label_fi": "1948 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Israel",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Israel",
+    "wikidata_id": "Q801",
+    "summary_en": "Parliamentary democracy established in 1948 as the Jewish national homeland in the historic Land of Israel, centered around Jerusalem and the Mediterranean economic hub of Tel Aviv.",
+    "summary_fi": "Parlamentaarinen demokratia ja juutalaisten kansallinen kotimaa historiallisessa Israelin maassa, jonka hallinnollinen keskus on Jerusalem ja talouskeskus Tel Aviv.",
+    "capital": "Jerusalem, Tel Aviv",
+    "feature_name_matches": [
+      "Israel"
+    ]
+  },
+  {
+    "slug": "bedouin-arabian-nomads",
+    "name": "Bedouin & Arabian Pastoral Nomads",
+    "name_fi": "Beduinit ja Arabian paimentolaiset",
+    "native_name": "بَدْو / Badw",
+    "alternate_names": [
+      "Arabs",
+      "Arabian pastoral nomads",
+      "Bedouins"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Traditional Nomadic Society of the Arabian Deserts",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bedouin",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Beduinit",
+    "wikidata_id": "Q36153",
+    "summary_en": "Desert-dwelling nomadic Arab pastoralists whose tribal codes (muruwah), oral poetry, and camel husbandry shaped the cultural identity of the Arabian Peninsula and Syrian Desert.",
+    "summary_fi": "Arabian niemimaan ja Syyrian aavikon paimentolaiset, joiden klaanijärjestelmä, suullinen runous ja kamelinkasvatus muodostivat perustan arabialaiselle perinteelle.",
+    "capital": "Najd and Rub' al Khali camps",
+    "feature_name_matches": [
+      "Arabs",
+      "Arabian pastoral nomads",
+      "Bedouins"
+    ]
+  },
+  {
+    "slug": "classical-islamic-city-states",
+    "name": "Islamic City-States of the Levant & Gulf",
+    "name_fi": "Islamilaiset kaupunkivaltiot",
+    "native_name": "Mudun Islāmiyyah",
+    "alternate_names": [
+      "Islamic city-states"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "islamic",
+    "historical_period": "Medieval to Early Modern Regional Emirates",
+    "year_start": 700,
+    "year_end": 1800,
+    "period_label": "700 CE – 1800 CE",
+    "period_label_fi": "700 jaa. – 1800 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/History_of_the_Middle_East",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/L%C3%A4hi-id%C3%A4n_historia",
+    "wikidata_id": "Q3259837",
+    "summary_en": "Semi-autonomous urban emirates and maritime trading principalities across the Levant, Mesopotamia, and Gulf coastlines that flourished along international caravan and maritime trade routes.",
+    "summary_fi": "Puoli-itsenäiset kaupunkiruhtinaskunnat ja emiirikunnat Levantissa ja Persianlahdella, jotka kukoistivat kansainvälisten karavaani- ja merireittien solmukohdissa.",
+    "capital": "Various regional emirate centers",
+    "feature_name_matches": [
+      "Islamic city-states"
+    ]
+  },
+  {
+    "slug": "aq-qoyunlu-white-sheep",
+    "name": "Aq Qoyunlu (White Sheep Turkmen Confederation)",
+    "name_fi": "Ak Koyunlu (Valkoisen oinaan heimovaltakunta)",
+    "native_name": "آق قویونلو / Ağqoyunlular",
+    "alternate_names": [
+      "Emirate of the White Sheep Turks",
+      "White Sheep Turkomans",
+      "Aq Qoyunlu"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "turkey",
+    "historical_period": "Late Medieval Turkmen Empire",
+    "year_start": 1378,
+    "year_end": 1501,
+    "period_label": "1378 CE – 1501 CE",
+    "period_label_fi": "1378 jaa. – 1501 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Aq_Qoyunlu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ak_Koyunlu",
+    "wikidata_id": "Q207434",
+    "summary_en": "Sunni Oghuz Turkic tribal confederation under Uzun Hasan that ruled eastern Anatolia, Azerbaijan, Iraq, and western Iran, fostering Persianate arts and challenging the Ottomans.",
+    "summary_fi": "Uzun Hasanin johtama oghuusiturkkilainen heimovaltakunta, joka hallitsi Itä-Anatoliaa, Azerbaidžania, Irakia ja Länsi-Irania ja suosi persialaista kulttuuria.",
+    "capital": "Tabriz, Diyarbakır",
+    "feature_name_matches": [
+      "Emirate of the White Sheep Turks"
+    ]
+  },
+  {
+    "slug": "emirate-of-maan",
+    "name": "Emirate of Ma'an",
+    "name_fi": "Ma'anin emiirikunta",
+    "native_name": "معان / Ma'ān",
+    "alternate_names": [
+      "Maan",
+      "Ma'an"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabia",
+    "historical_period": "Ottoman to Arab Hajj Oasis Station",
+    "year_start": 1500,
+    "year_end": 1925,
+    "period_label": "1500 CE – 1925 CE",
+    "period_label_fi": "1500 jaa. – 1925 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ma%27an",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ma%27an",
+    "wikidata_id": "Q750371",
+    "summary_en": "Historic oasis principality and crucial desert staging post in southern Transjordan on the Syrian Hajj pilgrimage caravan route and the subsequent Hejaz Railway.",
+    "summary_fi": "Historiallinen keidasruhtinaskunta Etelä-Jordanian aavikolla, joka toimi keskeisenä hajj-pyhiinvaelluskaravaanien ja Hijazin rautatien etappiasemana.",
+    "capital": "Ma'an",
+    "feature_name_matches": [
+      "Maan"
+    ]
+  },
+  {
+    "slug": "anatolian-tribes",
+    "name": "Ancient Anatolian Peoples & Tribes",
+    "name_fi": "Anatolian muinaiset heimot",
+    "native_name": "Anatolia Tribes",
+    "alternate_names": [
+      "Anatolian tribes",
+      "Luwians",
+      "Kaskians",
+      "Hattians"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "hittite",
+    "historical_period": "Bronze & Early Iron Age Anatolian Highlands",
+    "year_start": -2500,
+    "year_end": -700,
+    "period_label": "2500 BCE – 700 BCE",
+    "period_label_fi": "2500 eaa. – 700 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ancient_regions_of_Anatolia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Anatolia",
+    "wikidata_id": "Q3861",
+    "summary_en": "Indigenous Bronze Age populations of the Anatolian plateau, including Hattians, Luwians, and mountain Kaskians, who developed sophisticated metalworking and influenced the Hittite state.",
+    "summary_fi": "Anatolian ylängön pronssikauden alkuperäiskansat, kuten hattilaiset, luvilaiset ja kaskit, jotka kehittivät varhaista metallurgiaa ja vaikuttivat heettiläisvaltioon.",
+    "capital": "Alacahöyük, Kanesh",
+    "feature_name_matches": [
+      "Anatolian tribes"
+    ]
+  },
+  {
+    "slug": "kingdom-of-mari",
+    "name": "Kingdom of Mari",
+    "name_fi": "Marin kuningaskunta",
+    "native_name": "ماري / Tell Hariri",
+    "alternate_names": [
+      "Mari"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "mesopotamia",
+    "historical_period": "Early to Middle Bronze Age Euphrates Civilization",
+    "year_start": -2900,
+    "year_end": -1759,
+    "period_label": "2900 BCE – 1759 BCE",
+    "period_label_fi": "2900 eaa. – 1759 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mari,_Syria",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mari_(muinainen_kaupunki)",
+    "wikidata_id": "Q244719",
+    "summary_en": "Prominent Semitic city-state on the middle Euphrates River in eastern Syria, celebrated for King Zimri-Lim's grand palace and a royal archive of over 25,000 cuneiform clay tablets.",
+    "summary_fi": "Merkittävä seemiläinen kaupunkivaltio Eufratin varrella nykyisessä Syyriassa, joka tunnetaan kuningas Zimri-Limin palatsista ja yli 25 000 nuolenpäätaulun arkistostaan.",
+    "capital": "Mari (Tell Hariri)",
+    "feature_name_matches": [
+      "Mari"
+    ]
+  },
+  {
+    "slug": "chelamela-kalapuya",
+    "name": "Chelamela (Long Tom Kalapuya)",
+    "name_fi": "Chelamela-kansa (Kalapuya)",
+    "native_name": "Chelamela",
+    "alternate_names": [
+      "Chelamela"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "north-america-west",
+    "historical_period": "Indigenous Willamette Valley Nation",
+    "year_start": -2000,
+    "year_end": 1855,
+    "period_label": "2000 BCE – 1855 CE",
+    "period_label_fi": "2000 eaa. – 1855 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kalapuya",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kalapuyat",
+    "wikidata_id": "Q1281897",
+    "summary_en": "Indigenous Kalapuyan band of the Long Tom River basin in western Oregon, practicing controlled burning of oak savannahs to cultivate camas bulbs and hunt black-tailed deer.",
+    "summary_fi": "Länsi-Oregonin Long Tom -joen laakson kalapuya-intiaaniryhmä, joka hoiti tammisavanneja kulotuksella villikasvien kuten kamassin keruuta ja peuranmetsästystä varten.",
+    "capital": "Long Tom River settlements",
+    "feature_name_matches": [
+      "Chelamela"
+    ]
+  },
+  {
+    "slug": "mundurukania-wuy-jugu",
+    "name": "Mundurukânia (Wuy Jugu Nation)",
+    "name_fi": "Mundurukânia (Wuy Jugu)",
+    "native_name": "Wuy Jugu / Munduruku",
+    "alternate_names": [
+      "Mundurukânia (Wuy jugu)",
+      "Munduruku"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "south-american-indigenous",
+    "historical_period": "Indigenous Amazonian Warrior Nation",
+    "year_start": 1000,
+    "year_end": 2026,
+    "period_label": "1000 CE – Present",
+    "period_label_fi": "1000 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Munduruku_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mundurukut",
+    "wikidata_id": "Q2091763",
+    "summary_en": "Indigenous warrior nation of the Tapajós River valley in Brazilian Amazonia, known historically as formidable strategists who maintained an independent sovereign territory called Mundurukânia.",
+    "summary_fi": "Tapajósjoen laakson alkuperäiskansa Brasilian Amazoniassa, joka tunnettiin itsenäisestä soturiliitostaan ja laajan perinteisen alueensa (Mundurukânia) puolustamisesta.",
+    "capital": "Tapajós basin villages",
+    "feature_name_matches": [
+      "Mundurukânia (Wuy jugu)"
+    ]
+  },
+  {
+    "slug": "wulgurukaba-aboriginal-nation",
+    "name": "Wulgurukaba Aboriginal Nation",
+    "name_fi": "Wulgurukaba-aboriginaalikansa",
+    "native_name": "Wulgurukaba",
+    "alternate_names": [
+      "Wulgurukaba"
+    ],
+    "culture_group": "Ancient Near East",
+    "lineage_id": "australian-indigenous",
+    "historical_period": "Indigenous Australian Traditional Owners",
+    "year_start": -40000,
+    "year_end": 2026,
+    "period_label": "40,000 BCE – Present",
+    "period_label_fi": "40 000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Wulgurukaba",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Australian_alkuper%C3%A4iskansat",
+    "wikidata_id": "Q8039239",
+    "summary_en": "Traditional Aboriginal custodians of the Townsville region and Magnetic Island (Yunbenun) in North Queensland, renowned for deep spiritual connections to the carpet snake creation ancestor.",
+    "summary_fi": "Pohjois-Queenslandin Townsvillen alueen ja Magnetic Islandin (Yunbenun) perinteiset aboriginaaliomistajat, jotka tunnetaan luomismyyteistään ja meriluonnon tuntemuksestaan.",
+    "capital": "Yunbenun (Magnetic Island)",
+    "feature_name_matches": [
+      "Wulgurukaba"
+    ]
+  }
+]

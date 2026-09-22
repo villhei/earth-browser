@@ -628,7 +628,7 @@ export const BC500_CULTURES: CultureSeedData[] = [
   },
 ]
 
-async function seed() {
+export async function seed(shouldClosePool = true) {
   console.log("Seeding culture_metadata prototype for world-bc500...")
 
   const client = await pool.connect()
@@ -736,7 +736,9 @@ async function seed() {
     throw err
   } finally {
     client.release()
-    await closePool()
+    if (shouldClosePool) {
+      await closePool()
+    }
   }
 }
 

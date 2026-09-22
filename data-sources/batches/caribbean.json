@@ -1,0 +1,706 @@
+[
+  {
+    "slug": "taino-chiefdoms",
+    "name": "Taíno Chiefdoms (Nitayno & Caciques)",
+    "name_fi": "Tainojen päällikkökunnat",
+    "native_name": "Taíno / Borikén / Quisqueya",
+    "alternate_names": [
+      "Taino",
+      "Boriken Taino",
+      "Cacicazgos"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Pre-Columbian Greater Antilles Chiefdoms",
+    "year_start": 600,
+    "year_end": 1550,
+    "period_label": "600 CE – 1550 CE",
+    "period_label_fi": "600 jaa. – 1550 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ta%C3%ADno",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tainot",
+    "wikidata_id": "Q208151",
+    "summary_en": "Arawakan indigenous civilization of Hispaniola, Puerto Rico, Cuba, and Jamaica organized into paramount cacicazgos, noted for ball courts (batey), zemí stone spirits, and cassava cultivation.",
+    "summary_fi": "Suurten Antillien arawakinkielinen alkuperäiskulttuuri, joka jakautui cacique-johtoisiin päällikkökuntiin; tunnettu batey-pallopeleistään, zemí-jumalveistoksistaan ja maniokin viljelystään.",
+    "capital": "Maguana, Marién, Xaragua, Higuey, Borikén",
+    "feature_name_matches": [
+      "Taino",
+      "Boriken Taino"
+    ]
+  },
+  {
+    "slug": "lokono-arawaks",
+    "name": "Arawak & Lokono Peoples",
+    "name_fi": "Arawakit ja lokonot",
+    "native_name": "Lokono / Arawak",
+    "alternate_names": [
+      "Arawaks",
+      "Lokono (Arawak)"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Ancient to Modern Arawak Island & Coastal Horizon",
+    "year_start": -1000,
+    "year_end": 2026,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Arawak",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Arawakit",
+    "wikidata_id": "Q211832",
+    "summary_en": "Indigenous Arawakan language family and people originating in the Orinoco basin and migrating across the West Indies, famed for sophisticated dugout canoeing and seafaring.",
+    "summary_fi": "Orinocon suistosta peräisin ollut ja Karibian saarille levittäytynyt arawakinkielinen alkuperäiskansa, joka hallitsi valtamerikanoottien rakentamisen ja saarten välisen merenkulun.",
+    "capital": "Orinoco and coastal settlements",
+    "feature_name_matches": [
+      "Arawaks",
+      "Lokono (Arawak)"
+    ]
+  },
+  {
+    "slug": "kalinago-island-caribs",
+    "name": "Kalinago (Island Caribs)",
+    "name_fi": "Kalinagot (Saarikaribit)",
+    "native_name": "Kalinago / Karifuna",
+    "alternate_names": [
+      "Kalinago",
+      "Kalinago (Island Carib)",
+      "Island Caribs"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Pre-Columbian to Modern Lesser Antilles Maritime Society",
+    "year_start": 1200,
+    "year_end": 2026,
+    "period_label": "1200 CE – Present",
+    "period_label_fi": "1200 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kalinago",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Karibit",
+    "wikidata_id": "Q26960",
+    "summary_en": "Indigenous seafaring warriors of the Lesser Antilles who navigated oceanic waters in large kanawa canoes, successfully defending their territorial independence on Dominica into modern times.",
+    "summary_fi": "Pienten Antillien alkuperäisasukkaat ja taitavat merenkulkijat, jotka liikkuivat suurilla kanawa-kanooteilla ja säilyttivät autonomiansa Dominican saarella nykyaikaan saakka.",
+    "capital": "Kalinago Territory (Dominica)",
+    "feature_name_matches": [
+      "Kalinago",
+      "Kalinago (Island Carib)"
+    ]
+  },
+  {
+    "slug": "ciboney-guanahatabey",
+    "name": "Ciboney & Guanahatabey",
+    "name_fi": "Ciboneyt ja guanahatabeyt",
+    "native_name": "Siboney / Guanahatabey",
+    "alternate_names": [
+      "Ciboney",
+      "Guanahatabey"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Archaic Age Western Caribbean Foragers",
+    "year_start": -2000,
+    "year_end": 1550,
+    "period_label": "2000 BCE – 1550 CE",
+    "period_label_fi": "2000 eaa. – 1550 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ciboney",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ciboneyt",
+    "wikidata_id": "Q1091771",
+    "summary_en": "Pre-Arawak hunter-gatherer populations of western Cuba and southwestern Hispaniola who inhabited coastal caves, produced stone and shell tools, and fished mangrove ecosystems.",
+    "summary_fi": "Länsi-Kuuban ja Hispaniolan esimaataloudelliset metsästäjä-keräilijät, jotka asuivat rannikkoluolissa, valmistivat kivi- ja simpukkaesineitä ja kalastivat mangrovealueilla.",
+    "capital": "Guanahacabibes Peninsula caves",
+    "feature_name_matches": [
+      "Ciboney"
+    ]
+  },
+  {
+    "slug": "caribbean-hunter-gatherers",
+    "name": "Archaic Caribbean Hunter-Gatherers",
+    "name_fi": "Karibian arkaaiset metsästäjä-keräilijät",
+    "native_name": "Archaic Caribbean",
+    "alternate_names": [
+      "Caribbean hunter-gatherers",
+      "Casimiroid",
+      "Ortoiroid"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Lithic and Archaic Maritime Horizons",
+    "year_start": -4000,
+    "year_end": -500,
+    "period_label": "4000 BCE – 500 BCE",
+    "period_label_fi": "4000 eaa. – 500 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Prehistory_of_the_Caribbean",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Karibian_esihistoria",
+    "wikidata_id": "Q7239994",
+    "summary_en": "Earliest human settlers of the Antillean archipelago arriving from Central and South America, characterized by flaked flint tools, conch shell celts, and intensive marine foraging.",
+    "summary_fi": "Karibian saariston varhaisimmat asukkaat, jotka saapuivat Keski- ja Etelä-Amerikasta ja jättivät jälkeensä piikivityökaluja, simpukkakirveitä ja laajoja tunkioita.",
+    "capital": "Coastal shell middens across Antilles",
+    "feature_name_matches": [
+      "Caribbean hunter-gatherers"
+    ]
+  },
+  {
+    "slug": "republic-of-cuba",
+    "name": "Republic of Cuba & Spanish Cuba",
+    "name_fi": "Kuuban tasavalta ja Espanjan Kuuba",
+    "native_name": "República de Cuba",
+    "alternate_names": [
+      "Cuba",
+      "Cuba (Spain)"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Colonial Pearl of the Antilles to Socialist Republic",
+    "year_start": 1511,
+    "year_end": 2026,
+    "period_label": "1511 CE – Present",
+    "period_label_fi": "1511 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cuba",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kuuba",
+    "wikidata_id": "Q241",
+    "summary_en": "Largest Caribbean island nation centered in Havana, hub of the Spanish treasure fleets, battleground of Martí's independence movement in 1898, and catalyst of the 1959 Cuban Revolution.",
+    "summary_fi": "Karibian suurin saarivaltio Havannan ympärillä; toimi Espanjan laivastojen solmukohtana, itsenäistyi 1898 ja koki vuoden 1959 sosialistisen vallankumouksen.",
+    "capital": "Havana, Santiago de Cuba",
+    "feature_name_matches": [
+      "Cuba",
+      "Cuba (Spain)"
+    ]
+  },
+  {
+    "slug": "republic-of-haiti",
+    "name": "Republic of Haiti",
+    "name_fi": "Haitin tasavalta",
+    "native_name": "Repiblik d Ayiti / République d'Haïti",
+    "alternate_names": [
+      "Haiti",
+      "Saint-Domingue"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "First Black Republic in the Americas",
+    "year_start": 1804,
+    "year_end": 2026,
+    "period_label": "1804 CE – Present",
+    "period_label_fi": "1804 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Haiti",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Haiti",
+    "wikidata_id": "Q790",
+    "summary_en": "First independent nation of Latin America and the Caribbean, founded in 1804 by Toussaint Louverture and Jean-Jacques Dessalines after history's only successful anti-slavery revolution.",
+    "summary_fi": "Latinalaisen Amerikan ja Karibian ensimmäinen itsenäinen valtio, jonka Toussaint Louverture ja Dessalines perustivat 1804 historian ainoan voittoisan orjavallankumouksen jälkeen.",
+    "capital": "Port-au-Prince, Cap-Haïtien",
+    "feature_name_matches": [
+      "Haiti"
+    ]
+  },
+  {
+    "slug": "dominican-republic",
+    "name": "Dominican Republic",
+    "name_fi": "Dominikaaninen tasavalta",
+    "native_name": "República Dominicana",
+    "alternate_names": [
+      "Dominican Republic",
+      "Santo Domingo"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Hispanic Caribbean Republic on Hispaniola",
+    "year_start": 1844,
+    "year_end": 2026,
+    "period_label": "1844 CE – Present",
+    "period_label_fi": "1844 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dominican_Republic",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dominikaaninen_tasavalta",
+    "wikidata_id": "Q786",
+    "summary_en": "Eastern two-thirds of Hispaniola, site of Santo Domingo (oldest continuously inhabited European city in the Americas, 1496), winning independence in 1844 under Juan Pablo Duarte.",
+    "summary_fi": "Hispaniolan saaren itäosan valtio, jossa sijaitsee Amerikan vanhin eurooppalainen kaupunki Santo Domingo (1496); itsenäistyi Juan Pablo Duarten johdolla 1844.",
+    "capital": "Santo Domingo",
+    "feature_name_matches": [
+      "Dominican Republic"
+    ]
+  },
+  {
+    "slug": "nation-of-jamaica",
+    "name": "Jamaica",
+    "name_fi": "Jamaika",
+    "native_name": "Jamaica",
+    "alternate_names": [
+      "Jamaica",
+      "Jamaica (UK)",
+      "Colony of Jamaica"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Colony to Independent Island Nation",
+    "year_start": 1655,
+    "year_end": 2026,
+    "period_label": "1655 CE – Present",
+    "period_label_fi": "1655 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Jamaica",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Jamaika",
+    "wikidata_id": "Q766",
+    "summary_en": "Greater Antillean island famed for Maroon resistance in the Blue Mountains, British sugar plantation history, and global cultural impact through Reggae music, Rastafari, and athletic excellence.",
+    "summary_fi": "Suurten Antillien saarivaltio, joka tunnetaan Blue Mountainsin maroon-yhteisöjen vapaustaistelusta sekä maailmanlaajuisesta kulttuurivaikutuksestaan reggaen ja rastafarismin kautta.",
+    "capital": "Kingston, Spanish Town, Port Royal",
+    "feature_name_matches": [
+      "Jamaica",
+      "Jamaica (UK)"
+    ]
+  },
+  {
+    "slug": "commonwealth-of-the-bahamas",
+    "name": "Commonwealth of The Bahamas",
+    "name_fi": "Bahaman liittovaltio",
+    "native_name": "Commonwealth of The Bahamas",
+    "alternate_names": [
+      "Bahamas"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Lucayan Archipelago to Modern Sovereign Nation",
+    "year_start": 1718,
+    "year_end": 2026,
+    "period_label": "1718 CE – Present",
+    "period_label_fi": "1718 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/The_Bahamas",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bahama",
+    "wikidata_id": "Q778",
+    "summary_en": "Archipelago of over 700 islands north of Cuba, original landing site of Columbus in 1492 (Guanahani), famous for 18th-century privateer republic in Nassau and modern maritime tourism.",
+    "summary_fi": "Yli 700 saaren saarivaltio Kuuban pohjoispuolella; Kolumbuksen ensimmäinen maihinnousupaikka 1492 (Guanahani) ja 1700-luvun merirosvojen tukikohta Nassaussa.",
+    "capital": "Nassau",
+    "feature_name_matches": [
+      "Bahamas"
+    ]
+  },
+  {
+    "slug": "trinidad-and-tobago",
+    "name": "Republic of Trinidad and Tobago",
+    "name_fi": "Trinidad ja Tobagon tasavalta",
+    "native_name": "Republic of Trinidad and Tobago",
+    "alternate_names": [
+      "Trinidad",
+      "Trinidad and Tobago"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Southernmost Caribbean Dual-Island Nation",
+    "year_start": 1797,
+    "year_end": 2026,
+    "period_label": "1797 CE – Present",
+    "period_label_fi": "1797 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Trinidad_ja_Tobago",
+    "wikidata_id": "Q754",
+    "summary_en": "Twin-island state just off Venezuela's coast, celebrated for the Pitch Lake, birthplace of steelpan percussion and calypso music, and a vibrant fusion of Afro-Caribbean and Indo-Caribbean cultures.",
+    "summary_fi": "Kahden saaren valtio Venezuelan rannikolla; tunnettu Pitch Laken asfalttijärvestä, teräsrummun (steelpan) ja calypson synnystä sekä afrikkalais-intialaisesta kulttuurisynteesistään.",
+    "capital": "Port of Spain",
+    "feature_name_matches": [
+      "Trinidad"
+    ]
+  },
+  {
+    "slug": "nation-of-barbados",
+    "name": "Barbados",
+    "name_fi": "Barbados",
+    "native_name": "Barbados",
+    "alternate_names": [
+      "Barbados",
+      "Barbados (UK)"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Easternmost Caribbean Island Democracy",
+    "year_start": 1627,
+    "year_end": 2026,
+    "period_label": "1627 CE – Present",
+    "period_label_fi": "1627 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Barbados",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Barbados",
+    "wikidata_id": "Q244",
+    "summary_en": "Easternmost Caribbean island, home to continuous parliamentary governance since 1639, historic sugar windmilling, Bajan cultural identity, and transitioning to a parliamentary republic in 2021.",
+    "summary_fi": "Karibian itäisin saarivaltio, jolla on ollut parlamentti vuodesta 1639; tunnettu sokeriruokoperinteestään, bajan-kulttuuristaan ja siirtymisestään tasavallaksi 2021.",
+    "capital": "Bridgetown",
+    "feature_name_matches": [
+      "Barbados",
+      "Barbados (UK)"
+    ]
+  },
+  {
+    "slug": "nation-of-saint-lucia",
+    "name": "Saint Lucia",
+    "name_fi": "Saint Lucia",
+    "native_name": "Saint Lucia",
+    "alternate_names": [
+      "Saint Lucia"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Windward Island Helen of the West",
+    "year_start": 1814,
+    "year_end": 2026,
+    "period_label": "1814 CE – Present",
+    "period_label_fi": "1814 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saint_Lucia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saint_Lucia",
+    "wikidata_id": "Q760",
+    "summary_en": "Windward Island nation flanked by the dramatic volcanic Gros Piton and Petit Piton, contested 14 times between France and Britain before independence, home to Nobel laureates Arthur Lewis and Derek Walcott.",
+    "summary_fi": "Tuulensuojan saarten vulkaaninen valtio, jota hallitsevat UNESCO-suojellut Piton-vuoret ja joka vaihtoi 14 kertaa omistajaa Ranskan ja Britannian välillä ennen itsenäisyyttään.",
+    "capital": "Castries",
+    "feature_name_matches": [
+      "Saint Lucia"
+    ]
+  },
+  {
+    "slug": "saint-vincent-and-the-grenadines",
+    "name": "Saint Vincent and the Grenadines",
+    "name_fi": "Saint Vincent ja Grenadiinit",
+    "native_name": "Saint Vincent and the Grenadines",
+    "alternate_names": [
+      "Saint Vincent and the Grenadines"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Windward Island State & Garifuna Homeland",
+    "year_start": 1763,
+    "year_end": 2026,
+    "period_label": "1763 CE – Present",
+    "period_label_fi": "1763 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saint_Vincent_ja_Grenadiinit",
+    "wikidata_id": "Q757",
+    "summary_en": "Island nation encompassing Saint Vincent and 32 smaller Grenadine cays, birthplace of the Garifuna (Black Carib) people led by Chief Joseph Chatoyer in the 18th-century Carib Wars.",
+    "summary_fi": "Pienten Antillien saarivaltio, johon kuuluu Saint Vincent ja 32 Grenadiinien pikkusaarta; garifuna-kansan historiallinen synnyinsija ja päällikkö Chatoyerin vapaustaistelun näyttämö.",
+    "capital": "Kingstown",
+    "feature_name_matches": [
+      "Saint Vincent and the Grenadines"
+    ]
+  },
+  {
+    "slug": "nation-of-grenada",
+    "name": "Grenada (Isle of Spice)",
+    "name_fi": "Grenada (Maustesaari)",
+    "native_name": "Grenada",
+    "alternate_names": [
+      "Grenada"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Southern Grenadines Island Nation",
+    "year_start": 1763,
+    "year_end": 2026,
+    "period_label": "1763 CE – Present",
+    "period_label_fi": "1763 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Grenada",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Grenada",
+    "wikidata_id": "Q769",
+    "summary_en": "Known as the Isle of Spice for its global nutmeg and mace cultivation, Grenada features a scenic horseshoe harbor at St. George's and volcanic crater lakes.",
+    "summary_fi": "Maustesaarena tunnettu valtio, joka on maailman johtavia muskottipähkinän tuottajia; tunnettu St. George'sin kauniista hevosenkenkäsatamasta ja vulkaanisista kraatterijärvistään.",
+    "capital": "St. George's",
+    "feature_name_matches": [
+      "Grenada"
+    ]
+  },
+  {
+    "slug": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
+    "name_fi": "Antigua ja Barbuda",
+    "native_name": "Antigua and Barbuda",
+    "alternate_names": [
+      "Antigua and Barbuda"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Leeward Island Maritime Nation",
+    "year_start": 1632,
+    "year_end": 2026,
+    "period_label": "1632 CE – Present",
+    "period_label_fi": "1632 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Antigua_ja_Barbuda",
+    "wikidata_id": "Q781",
+    "summary_en": "Twin-island nation in the Leeward Islands renowned for Nelson's Dockyard (UNESCO naval base at English Harbour) and 365 white sand beaches.",
+    "summary_fi": "Leewardsaarten saarivaltio, joka tunnetaan Nelson's Dockyardin historiallisesta laivastotukikohdasta English Harbourissa ja 365 valkoisesta hiekkarannastaan.",
+    "capital": "St. John's",
+    "feature_name_matches": [
+      "Antigua and Barbuda"
+    ]
+  },
+  {
+    "slug": "commonwealth-of-dominica",
+    "name": "Commonwealth of Dominica",
+    "name_fi": "Dominican liittovaltio",
+    "native_name": "Waitukubuli / Commonwealth of Dominica",
+    "alternate_names": [
+      "Dominica"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Nature Island & Kalinago Territory",
+    "year_start": 1763,
+    "year_end": 2026,
+    "period_label": "1763 CE – Present",
+    "period_label_fi": "1763 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dominica",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dominica",
+    "wikidata_id": "Q784",
+    "summary_en": "Rugged volcanic 'Nature Island' of the Caribbean, covered in pristine rainforest, thermal boiling lakes, and home to the indigenous Kalinago Territory.",
+    "summary_fi": "Karibian jylhä vulkaaninen 'luontosaari', jota peittävät koskemattomat sademetsät ja kiehuvat järvet; Karibian ainoan alkuperäisen kalinago-reservaatin koti.",
+    "capital": "Roseau",
+    "feature_name_matches": [
+      "Dominica"
+    ]
+  },
+  {
+    "slug": "saint-kitts-and-nevis",
+    "name": "Federation of Saint Kitts and Nevis",
+    "name_fi": "Saint Kitts ja Nevisin liittovaltio",
+    "native_name": "Federation of Saint Christopher and Nevis",
+    "alternate_names": [
+      "Saint Kitts and Nevis",
+      "Saint Kitts and Nevis (UK)"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Mother Colony of the West Indies",
+    "year_start": 1623,
+    "year_end": 2026,
+    "period_label": "1623 CE – Present",
+    "period_label_fi": "1623 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saint_Kitts_ja_Nevis",
+    "wikidata_id": "Q763",
+    "summary_en": "Smallest sovereign federation in the Americas, earliest British and French colony in the Caribbean, home to Brimstone Hill Fortress National Park (the 'Gibraltar of the West Indies').",
+    "summary_fi": "Amerikan mantereen pienin itsenäinen liittovaltio; Karibian varhaisin brittiläinen ja ranskalainen siirtokunta, jossa sijaitsee Brimstone Hillin mahtava linnoitus.",
+    "capital": "Basseterre",
+    "feature_name_matches": [
+      "Saint Kitts and Nevis",
+      "Saint Kitts and Nevis (UK)"
+    ]
+  },
+  {
+    "slug": "commonwealth-of-puerto-rico",
+    "name": "Commonwealth of Puerto Rico",
+    "name_fi": "Puerto Ricon itsehallintoalue",
+    "native_name": "Estado Libre Asociado de Puerto Rico / Borikén",
+    "alternate_names": [
+      "Puerto Rico"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Spanish Outpost to US Commonwealth",
+    "year_start": 1508,
+    "year_end": 2026,
+    "period_label": "1508 CE – Present",
+    "period_label_fi": "1508 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Puerto_Rico",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Puerto_Rico",
+    "wikidata_id": "Q1183",
+    "summary_en": "Easternmost Greater Antillean island with indigenous Taíno roots (Borikén), fortified by Spain at San Felipe del Morro, now an unincorporated US commonwealth with vibrant music and arts.",
+    "summary_fi": "Suurten Antillien itäisin saari tainojuurineen (Borikén), jonka Espanja linnoitti San Juanissa ja joka toimii Yhdysvaltain itsehallintoalueena salsa- ja musiikkiperinteineen.",
+    "capital": "San Juan",
+    "feature_name_matches": [
+      "Puerto Rico"
+    ]
+  },
+  {
+    "slug": "guadeloupe-archipelago",
+    "name": "Guadeloupe",
+    "name_fi": "Guadeloupe",
+    "native_name": "Gwadloup / Guadeloupe",
+    "alternate_names": [
+      "Guadeloupe"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "france",
+    "historical_period": "French Overseas Department in the Leeward Islands",
+    "year_start": 1635,
+    "year_end": 2026,
+    "period_label": "1635 CE – Present",
+    "period_label_fi": "1635 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Guadeloupe",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Guadeloupe",
+    "wikidata_id": "Q17012",
+    "summary_en": "Butterfly-shaped French overseas department combining Grande-Terre and volcanic Basse-Terre, home to the active La Grande Soufrière volcano and rich Creole literary traditions.",
+    "summary_fi": "Perhosen muotoinen Ranskan merentakainen departementti, joka koostuu Grande-Terrestä ja Basse-Terrestä sekä Soufrière-tulivuoresta; tunnettu kreolikielisestä kirjallisuudestaan.",
+    "capital": "Basse-Terre, Pointe-à-Pitre",
+    "feature_name_matches": [
+      "Guadeloupe"
+    ]
+  },
+  {
+    "slug": "martinique-island",
+    "name": "Martinique",
+    "name_fi": "Martinique",
+    "native_name": "Matinik / Martinique",
+    "alternate_names": [
+      "Martinique",
+      "Martinique (France)"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "france",
+    "historical_period": "French Overseas Department & Creole Cultural Center",
+    "year_start": 1635,
+    "year_end": 2026,
+    "period_label": "1635 CE – Present",
+    "period_label_fi": "1635 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Martinique",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Martinique",
+    "wikidata_id": "Q17054",
+    "summary_en": "French overseas department in the Windward Islands dominated by Mount Pelée, birthplace of Empress Joséphine and poet Aimé Césaire, celebrated for rhum agricole and zouk music.",
+    "summary_fi": "Ranskan merentakainen departementti Tuulensuojan saarilla Pelée-tulivuoren rinteillä; keisarinna Joséphinen ja runoilija Aimé Césairen synnyinsaari, tunnettu maatalousrommistaan ja zouk-musiikista.",
+    "capital": "Fort-de-France, Saint-Pierre",
+    "feature_name_matches": [
+      "Martinique",
+      "Martinique (France)"
+    ]
+  },
+  {
+    "slug": "netherlands-antilles",
+    "name": "Netherlands Antilles & Dutch Caribbean",
+    "name_fi": "Alankomaiden Antillit ja Karibian Alankomaat",
+    "native_name": "Nederlandse Antillen",
+    "alternate_names": [
+      "Netherlands Antilles",
+      "Dutch Caribbean",
+      "Curaçao and Dependencies"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "netherlands",
+    "historical_period": "Dutch Autonomous Island Federation",
+    "year_start": 1634,
+    "year_end": 2010,
+    "period_label": "1634 CE – 2010 CE",
+    "period_label_fi": "1634 jaa. – 2010 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Netherlands_Antilles",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Alankomaiden_Antillit",
+    "wikidata_id": "Q25227",
+    "summary_en": "Former autonomous constituent country of the Kingdom of the Netherlands encompassing Curaçao, Aruba, Bonaire, Sint Maarten, Sint Eustatius, and Saba, known for pastel colonial architecture in Willemstad.",
+    "summary_fi": "Alankomaiden kuningaskunnan entinen autonominen maa, johon kuuluivat Curaçao, Aruba, Bonaire, Sint Maarten, Saba ja Sint Eustatius; tunnettu Willemstadin värikkäästä arkkitehtuurista.",
+    "capital": "Willemstad",
+    "feature_name_matches": [
+      "Netherlands Antilles"
+    ]
+  },
+  {
+    "slug": "united-states-virgin-islands",
+    "name": "United States Virgin Islands (Danish West Indies)",
+    "name_fi": "Yhdysvaltain Neitsytsaaret (Tanskan Länsi-Intia)",
+    "native_name": "United States Virgin Islands",
+    "alternate_names": [
+      "United States Virgin Islands",
+      "Danish West Indies"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Danish Sugar Colony to US Territory",
+    "year_start": 1672,
+    "year_end": 2026,
+    "period_label": "1672 CE – Present",
+    "period_label_fi": "1672 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/United_States_Virgin_Islands",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yhdysvaltain_Neitsytsaaret",
+    "wikidata_id": "Q11703",
+    "summary_en": "Leeward island group comprising Saint Thomas, Saint John, and Saint Croix, ruled as the Danish West Indies until purchased by the United States in 1917 for naval defense.",
+    "summary_fi": "Saint Thomasin, Saint Johnin ja Saint Croix'n saariryhmä, joka toimi Tanskan Länsi-Intiana ennen kuin Yhdysvallat osti saaret vuonna 1917 strategiseksi tukikohdaksi.",
+    "capital": "Charlotte Amalie",
+    "feature_name_matches": [
+      "United States Virgin Islands"
+    ]
+  },
+  {
+    "slug": "territory-of-anguilla",
+    "name": "Anguilla",
+    "name_fi": "Anguilla",
+    "native_name": "Anguilla",
+    "alternate_names": [
+      "Anguilla"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "British Overseas Territory in the Leewards",
+    "year_start": 1650,
+    "year_end": 2026,
+    "period_label": "1650 CE – Present",
+    "period_label_fi": "1650 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Anguilla",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Anguilla",
+    "wikidata_id": "Q25228",
+    "summary_en": "Flat coral and limestone British overseas territory in the northern Leeward Islands, famed for turquoise waters, boat racing traditions, and its peaceful 1967 revolution.",
+    "summary_fi": "Pohjoisten Leewardsaarten korallinen Britannian merentakainen alue, joka tunnetaan turkooseista lahdistaan, purjehdusperinteestään ja vuoden 1967 itsenäisyysliikkeestään.",
+    "capital": "The Valley",
+    "feature_name_matches": [
+      "Anguilla"
+    ]
+  },
+  {
+    "slug": "territory-of-montserrat",
+    "name": "Montserrat (Emerald Isle of the Caribbean)",
+    "name_fi": "Montserrat",
+    "native_name": "Montserrat",
+    "alternate_names": [
+      "Montserrat"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "caribbean",
+    "historical_period": "Irish-Settled Leeward Island Colony",
+    "year_start": 1632,
+    "year_end": 2026,
+    "period_label": "1632 CE – Present",
+    "period_label_fi": "1632 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Montserrat",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Montserrat",
+    "wikidata_id": "Q13353",
+    "summary_en": "Mountainous British territory settled largely by Irish catholics in 1632, dramatically reshaped in the 1990s by the catastrophic eruptions of the Soufrière Hills volcano.",
+    "summary_fi": "Irlantilaisten 1632 asuttama vuoristoinen Britannian merentakainen alue, jonka eteläosan ja pääkaupunki Plymouthin Soufrière Hillsin tulivuorenpurkaukset peittivät 1990-luvulla.",
+    "capital": "Plymouth, Brades",
+    "feature_name_matches": [
+      "Montserrat"
+    ]
+  },
+  {
+    "slug": "island-of-saint-martin",
+    "name": "Saint Martin (Collectivity & Sint Maarten)",
+    "name_fi": "Saint-Martin ja Sint Maarten",
+    "native_name": "Saint-Martin / Sint Maarten",
+    "alternate_names": [
+      "Saint Martin"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "france",
+    "historical_period": "Divided Franco-Dutch Island",
+    "year_start": 1648,
+    "year_end": 2026,
+    "period_label": "1648 CE – Present",
+    "period_label_fi": "1648 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saint_Martin_(island)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saint-Martin_(saari)",
+    "wikidata_id": "Q25596",
+    "summary_en": "Smallest inhabited landmass divided between two sovereign nations (France and the Netherlands) under the Treaty of Concordia in 1648, coexisting without physical border barriers.",
+    "summary_fi": "Maailman pienin kahden valtion (Ranska ja Alankomaat) jakama asuttu saari, jota on hallittu vuoden 1648 Concordian rauhasta lähtien ilman fyysisiä rajamuureja.",
+    "capital": "Marigot, Philipsburg",
+    "feature_name_matches": [
+      "Saint Martin"
+    ]
+  },
+  {
+    "slug": "collectivity-of-saint-barthelemy",
+    "name": "Collectivity of Saint Barthélemy",
+    "name_fi": "Saint-Barthélemy",
+    "native_name": "Saint-Barthélemy / Ouanalao",
+    "alternate_names": [
+      "Saint Barthelemy",
+      "St. Barts"
+    ],
+    "culture_group": "Caribbean",
+    "lineage_id": "france",
+    "historical_period": "Swedish Colony to French Overseas Collectivity",
+    "year_start": 1784,
+    "year_end": 2026,
+    "period_label": "1784 CE – Present",
+    "period_label_fi": "1784 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Saint_Barth%C3%A9lemy",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saint-Barth%C3%A9lemy",
+    "wikidata_id": "Q25362",
+    "summary_en": "Volcanic island in the French West Indies with a unique Swedish colonial heritage centered in Gustavia (transferred 1784–1878), now an exclusive French overseas collectivity.",
+    "summary_fi": "Pienten Antillien saari, jolla on ainutlaatuinen Ruotsin siirtomaahistoria Gustavissa (1784–1878) ennen paluuta Ranskalle eksklusiiviseksi merentakaiseksi yhteisöksi.",
+    "capital": "Gustavia",
+    "feature_name_matches": [
+      "Saint Barthelemy"
+    ]
+  }
+]

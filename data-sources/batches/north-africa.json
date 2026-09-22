@@ -1,0 +1,441 @@
+[
+  {
+    "slug": "modern-algeria",
+    "name": "People's Democratic Republic of Algeria",
+    "name_fi": "Algerian demokraattinen kansantasavalta",
+    "native_name": "الجمهورية الجزائرية الديمقراطية الشعبية / Dzayer",
+    "alternate_names": [
+      "Algeria",
+      "Algeria (FR)",
+      "Algeria (France)",
+      "French Algeria"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "algeria",
+    "historical_period": "Modern to Contemporary Maghreb Nation",
+    "year_start": 1830,
+    "year_end": 2026,
+    "period_label": "1830 CE – Present",
+    "period_label_fi": "1830 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Algeria",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Algeria",
+    "wikidata_id": "Q262",
+    "summary_en": "Largest nation in Africa and the Mediterranean basin, defined by its Numidian and Islamic heritage, anti-colonial liberation struggle, and rich Mediterranean and Saharan geography centered in Algiers.",
+    "summary_fi": "Afrikan ja Välimeren suurin valtio, jota leimaavat sen numidialainen ja islamilainen perintö, siirtomaavallan vastainen vapaussota sekä Saharan ja rannikon monimuotoinen kulttuurimaantiede.",
+    "capital": "Algiers",
+    "feature_name_matches": [
+      "Algeria",
+      "Algeria (FR)",
+      "Algeria (France)"
+    ]
+  },
+  {
+    "slug": "almoravid-dynasty",
+    "name": "Almoravid Dynasty",
+    "name_fi": "Almoravidien valtakunta",
+    "native_name": "al-Murābiṭūn / ⵉⵎⵕⴰⴱⴹⴻⵏ",
+    "alternate_names": [
+      "Almoravid dynasty",
+      "Almoravids"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "islamic",
+    "historical_period": "Medieval Islamic Maghreb & Al-Andalus",
+    "year_start": 1040,
+    "year_end": 1147,
+    "period_label": "1040 CE – 1147 CE",
+    "period_label_fi": "1040 jaa. – 1147 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Almoravid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Almoravidit",
+    "wikidata_id": "Q179698",
+    "summary_en": "Imperial Sanhaja Berber Muslim dynasty founded by Abdallah ibn Yasin and Yusuf ibn Tashfin that united Morocco, Western Sahara, and southern Islamic Iberia under a puritanical Islamic rule from Marrakesh.",
+    "summary_fi": "Sanhaja-berbereihin kuulunut muslimidynastia, joka yhdisti Marokon, Länsi-Saharan ja eteläisen Al-Andalusin Marrakeshista käsin Yusuf ibn Tashfinin johdolla.",
+    "capital": "Marrakesh, Aghmat",
+    "feature_name_matches": [
+      "Almoravid dynasty"
+    ]
+  },
+  {
+    "slug": "berbers-imazighen",
+    "name": "Berber Peoples (Imazighen)",
+    "name_fi": "Berberit (Imazighen)",
+    "native_name": "ⵉⵎⴰⵣⵉⵖⴻⵏ / Imaziɣen",
+    "alternate_names": [
+      "Berber Tribes",
+      "Berbers",
+      "Amazigh"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Ancient to Modern Indigenous North Africa",
+    "year_start": -3000,
+    "year_end": 2026,
+    "period_label": "3000 BCE – Present",
+    "period_label_fi": "3000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Berbers",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Berberit",
+    "wikidata_id": "Q125547",
+    "summary_en": "Indigenous ethnic group of North Africa inhabiting the Maghreb from the Atlantic to the Siwa Oasis, speaking Afroasiatic Berber languages written in the ancient Tifinagh script.",
+    "summary_fi": "Pohjois-Afrikan alkuperäiskansa, joka asuttaa Maghrebin aluetta Atlantilta Siwan keitaalle ja käyttää afroaasialaisia kieliä sekä ikivanhaa tifinagh-kirjoitusta.",
+    "capital": "Atlas Mountain settlements, Kabylie",
+    "feature_name_matches": [
+      "Berber Tribes",
+      "Berbers"
+    ]
+  },
+  {
+    "slug": "ancient-modern-egypt",
+    "name": "Egypt",
+    "name_fi": "Egypti",
+    "native_name": "مصر / Miṣr / Kemet",
+    "alternate_names": [
+      "Egypt",
+      "Harer (Egypt)",
+      "Arab Republic of Egypt"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "egypt",
+    "historical_period": "Pharaonic, Islamic & Modern Nile Civilization",
+    "year_start": -3100,
+    "year_end": 2026,
+    "period_label": "3100 BCE – Present",
+    "period_label_fi": "3100 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Egypt",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Egypti",
+    "wikidata_id": "Q79",
+    "summary_en": "Cradle of civilization along the lower Nile Valley, renowned for monumental architecture, millennia of Pharaonic dynasties, Coptic Christian heritage, and modern leadership in the Arab world.",
+    "summary_fi": "Niilin alajuoksun tuhansia vuosia vanha sivilisaation kehto, joka tunnetaan faaraodynastioista, pyramideistaan, koptilaisesta kristillisestä perinteestä ja johtoasemasta arabimaailmassa.",
+    "capital": "Cairo, Memphis, Thebes, Alexandria",
+    "feature_name_matches": [
+      "Egypt",
+      "Harer (Egypt)"
+    ]
+  },
+  {
+    "slug": "numidian-kingdoms",
+    "name": "Kingdom of Numidia & Early Numidian Monarchies",
+    "name_fi": "Numidian kuningaskunta",
+    "native_name": "Numidia",
+    "alternate_names": [
+      "Numidia",
+      "Kingdom of Gala",
+      "Kingdom of Syphax",
+      "Massylii",
+      "Masaesyli"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Classical Berber Kingdoms of North Africa",
+    "year_start": -300,
+    "year_end": 46,
+    "period_label": "300 BCE – 46 CE",
+    "period_label_fi": "300 eaa. – 46 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Numidia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Numidia",
+    "wikidata_id": "Q102679",
+    "summary_en": "Ancient Berber kingdom in modern Algeria and Tunisia, initially divided between Gala's eastern Massylii and Syphax's western Masaesyli, later unified by Masinissa as a formidable cavalry ally of Rome.",
+    "summary_fi": "Muinainen berberikuningaskunta nykyisessä Algeriassa ja Tunisiassa; jaettiin aluksi Galan itäiseen ja Syfaxin läntiseen kuningaskuntaan ennen Masinissan toteuttamaa yhdistymistä.",
+    "capital": "Cirta (Constantine), Siga",
+    "feature_name_matches": [
+      "Numidia",
+      "Kingdom of Gala",
+      "Kingdom of Syphax"
+    ]
+  },
+  {
+    "slug": "state-of-libya",
+    "name": "State of Libya & Tripolitania",
+    "name_fi": "Libya ja Tripolitania",
+    "native_name": "دولة ليبيا / Dawlat Lībyā",
+    "alternate_names": [
+      "Libya",
+      "Libya (IT)",
+      "Tripolitana (UK Lybia)",
+      "Tripolitania"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Maghrebi-Saharan Coastal Nation",
+    "year_start": 1911,
+    "year_end": 2026,
+    "period_label": "1911 CE – Present",
+    "period_label_fi": "1911 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Libya",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Libya",
+    "wikidata_id": "Q1016",
+    "summary_en": "North African Mediterranean state bridging Tripolitania, Cyrenaica, and Fezzan, shaped by ancient Greek and Roman ports, Ottoman administration, Senussi resistance, and modern hydrocarbon wealth.",
+    "summary_fi": "Pohjois-Afrikan rannikkovaltio, joka yhdistää Tripolitanian, Kyrenaikan ja Fezzanin ja jonka historia ulottuu antiikin satamakaupungeista osmanivaltaan ja moderniin öljyvaltioon.",
+    "capital": "Tripoli, Benghazi",
+    "feature_name_matches": [
+      "Libya",
+      "Libya (IT)",
+      "Tripolitana (UK Lybia)",
+      "Tripolitania"
+    ]
+  },
+  {
+    "slug": "kingdom-of-mauretania",
+    "name": "Kingdom of Mauretania",
+    "name_fi": "Mauretanian muinainen kuningaskunta",
+    "native_name": "Mauretania",
+    "alternate_names": [
+      "Mauretania",
+      "Mauri Kingdom"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Hellenistic and Roman Client Kingdom",
+    "year_start": -300,
+    "year_end": 44,
+    "period_label": "300 BCE – 44 CE",
+    "period_label_fi": "300 eaa. – 44 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Mauretania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mauretania_(antiikki)",
+    "wikidata_id": "Q189858",
+    "summary_en": "Ancient Berber kingdom on the northwestern Mediterranean coast of Africa ruled by the Mauri kings Bocchus I, Bogud, and later Juba II and Ptolemy of Mauretania as a flourishing Greco-Roman client state.",
+    "summary_fi": "Muinainen berberivaltakunta Luoteis-Afrikan rannikolla, jota hallitsivat maurien kuninkaat Bocchus, Juba II ja Ptolemaios kukoistavana Rooman liittolaisena.",
+    "capital": "Iol Caesarea (Cherchell), Volubilis",
+    "feature_name_matches": [
+      "Mauretania"
+    ]
+  },
+  {
+    "slug": "islamic-republic-of-mauritania",
+    "name": "Islamic Republic of Mauritania",
+    "name_fi": "Mauritanian islamilainen tasavalta",
+    "native_name": "الجمهورية الإسلامية الموريتانية",
+    "alternate_names": [
+      "Mauritania"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Sahelian & Saharan Bridge State",
+    "year_start": 1960,
+    "year_end": 2026,
+    "period_label": "1960 CE – Present",
+    "period_label_fi": "1960 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mauritania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mauritania",
+    "wikidata_id": "Q1025",
+    "summary_en": "West African nation bridging the Arab Maghreb and sub-Saharan Africa, centered in the Sahara Desert and historic caravan oasis towns like Chinguetti and Ouadane.",
+    "summary_fi": "Länsiafrikkalainen Saharan valtio arabialaisen Maghrebin ja mustan Afrikan rajapinnassa, joka tunnetaan historiallisista karavaanikaupungeistaan kuten Chinguettista ja Ouadanesta.",
+    "capital": "Nouakchott, Chinguetti",
+    "feature_name_matches": [
+      "Mauritania"
+    ]
+  },
+  {
+    "slug": "kingdom-of-morocco",
+    "name": "Kingdom of Morocco",
+    "name_fi": "Marokon kuningaskunta",
+    "native_name": "المملكة المغربية / Tagldit n Lmaɣrib",
+    "alternate_names": [
+      "Morocco",
+      "Morocco (France)",
+      "Spanish Morocco",
+      "Cherifian Empire"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "morocco",
+    "historical_period": "Islamic Monarchy of the Western Maghreb",
+    "year_start": 789,
+    "year_end": 2026,
+    "period_label": "789 CE – Present",
+    "period_label_fi": "789 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Morocco",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Marokko",
+    "wikidata_id": "Q1028",
+    "summary_en": "Sovereign state in the northwestern Maghreb with a continuous royal tradition since the Idrisid dynasty in 789 CE, celebrated for its imperial cities, craft traditions, and strategic Strait of Gibraltar coastline.",
+    "summary_fi": "Luoteis-Afrikan kuningaskunta, jonka katkeamaton valtiollinen perinne alkoi idrisideistä vuonna 789 ja joka tunnetaan kuninkaallisista kaupungeistaan ja käsityötaiteestaan.",
+    "capital": "Rabat, Fez, Marrakesh, Meknes",
+    "feature_name_matches": [
+      "Morocco",
+      "Morocco (France)",
+      "Spanish Morocco"
+    ]
+  },
+  {
+    "slug": "wattasid-dynasty",
+    "name": "Wattasid Sultanate of Morocco",
+    "name_fi": "Wattasidien sulttaanikunta",
+    "native_name": "al-Waṭṭāsīyūn / ⵉⵡⵟⵟⴰⵙⴻⵏ",
+    "alternate_names": [
+      "Watassid Morocco",
+      "Wattasids"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "morocco",
+    "historical_period": "Late Medieval to Early Modern Maghreb",
+    "year_start": 1472,
+    "year_end": 1554,
+    "period_label": "1472 CE – 1554 CE",
+    "period_label_fi": "1472 jaa. – 1554 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Wattasid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Wattasidit",
+    "wikidata_id": "Q849448",
+    "summary_en": "Zenata Berber dynasty ruling northern Morocco from Fez during an era of Portuguese and Spanish coastal incursions, preserving Islamic sovereignty until replaced by the Saadi Sharifians.",
+    "summary_fi": "Zenata-berbereihin kuulunut dynastia, joka hallitsi Pohjois-Marokkoa Fèsistä käsin ja puolusti rannikkoa Espanjan ja Portugalin laajentumispyrkimyksiltä ennen saadidynastiaa.",
+    "capital": "Fez",
+    "feature_name_matches": [
+      "Watassid Morocco"
+    ]
+  },
+  {
+    "slug": "saharan-pastoral-nomads",
+    "name": "Saharan Pastoral Nomads & Prehistoric Herders",
+    "name_fi": "Saharan paimentolaiset",
+    "native_name": "Sahara Nomads",
+    "alternate_names": [
+      "Saharan Nomadic Tribes",
+      "Saharan pastoral nomads"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Prehistoric to Classical Green Sahara & Deserts",
+    "year_start": -6000,
+    "year_end": 1900,
+    "period_label": "6000 BCE – 1900 CE",
+    "period_label_fi": "6000 eaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pastoralism#Africa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Paimentolaisuus",
+    "wikidata_id": "Q839530",
+    "summary_en": "Indigenous cattle, sheep, and camel herders who adapted to the climatic transitions of the Sahara, famously creating rock art in Tassili n'Ajjer and controlling historical trans-Saharan trade routes.",
+    "summary_fi": "Saharan karjan-, lampaan- ja kamelinpaimentolaiset, jotka sopeutuivat aavikoitumiseen, jättivät jälkeensä Tassili n'Ajjerin kalliomaalaukset ja hallitsivat keidaskauppareittejä.",
+    "capital": "Tassili n'Ajjer, Ahaggar, Tibesti",
+    "feature_name_matches": [
+      "Saharan Nomadic Tribes",
+      "Saharan pastoral nomads"
+    ]
+  },
+  {
+    "slug": "republic-of-the-sudan",
+    "name": "Republic of the Sudan",
+    "name_fi": "Sudanin tasavalta",
+    "native_name": "جمهoria السودان / Jumhūriyyat as-Sūdān",
+    "alternate_names": [
+      "Sudan",
+      "Anglo-Egyptian Sudan"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "Nubian, Islamic & Modern Nilotic State",
+    "year_start": 1821,
+    "year_end": 2026,
+    "period_label": "1821 CE – Present",
+    "period_label_fi": "1821 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sudan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sudan",
+    "wikidata_id": "Q1049",
+    "summary_en": "Northeast African nation at the confluence of the Blue and White Niles, carrying the deep historical heritage of ancient Nubia, the Funj Sultanate, the Mahdist state, and modern Sudanese republic.",
+    "summary_fi": "Koillis-Afrikan maa Sinisen ja Valkoisen Niilin yhtymäkohdassa, jonka juuret ulottuvat muinaiseen Nubiaan, Funj-sulttaanikuntaan, mahdistivaltioon ja moderniin tasavaltaan.",
+    "capital": "Khartoum, Omdurman",
+    "feature_name_matches": [
+      "Sudan"
+    ]
+  },
+  {
+    "slug": "tuareg-people",
+    "name": "Tuareg Confederation (Kel Tamasheq)",
+    "name_fi": "Tuaregit (Kel Tamasheq)",
+    "native_name": "Kel Tamasheq / ⵉⵎⵓⵀⴰⵖ",
+    "alternate_names": [
+      "Tuareg Nomadic Tribes",
+      "Tuaregs"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Traditional Saharan Pastoral Society",
+    "year_start": 400,
+    "year_end": 2026,
+    "period_label": "400 CE – Present",
+    "period_label_fi": "400 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tuareg_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tuaregit",
+    "wikidata_id": "Q58843",
+    "summary_en": "Berber pastoralist confederations inhabiting the central and western Sahara Desert across Algeria, Libya, Niger, Mali, and Burkina Faso, famed for indigo veils (tagelmust) and camel caravanning.",
+    "summary_fi": "Saharan keskiosissa ja Sahelissa elävä berberikansa, joka tunnetaan sinisistä indigohunnuistaan (tagelmust), kamelikaravaaneistaan ja perinteisestä klaanijärjestelmästään.",
+    "capital": "Agadez, Tamanrasset, Ghat",
+    "feature_name_matches": [
+      "Tuareg Nomadic Tribes",
+      "Tuaregs"
+    ]
+  },
+  {
+    "slug": "republic-of-tunisia",
+    "name": "Republic of Tunisia",
+    "name_fi": "Tunisian tasavalta",
+    "native_name": "الجمهورية التونسية / Al-Jumhūriyyah at-Tūnisiyyah",
+    "alternate_names": [
+      "Tunisia",
+      "Beylik of Tunis",
+      "French protectorate of Tunisia"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Classical to Modern Maghreb Nation",
+    "year_start": 1705,
+    "year_end": 2026,
+    "period_label": "1705 CE – Present",
+    "period_label_fi": "1705 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tunisia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tunisia",
+    "wikidata_id": "Q948",
+    "summary_en": "Northernmost country in Africa, home to ancient Carthage, rich Roman mosaics, medieval Islamic scholarship in Kairouan, the Husainid beys, and the birthplace of the Arab Spring.",
+    "summary_fi": "Afrikan pohjoisin valtio, antiikin Karthagon ja Kairouanin pyhän kaupungin kotimaa, joka siirtyi husainidien beylikistä itsenäiseen moderniin tasavaltaan.",
+    "capital": "Tunis, Kairouan, Carthage",
+    "feature_name_matches": [
+      "Tunisia"
+    ]
+  },
+  {
+    "slug": "western-sahara-sadr",
+    "name": "Western Sahara (Sahrawi Arab Democratic Republic)",
+    "name_fi": "Länsi-Sahara (Sahrawin arabitasavalta)",
+    "native_name": "الصحراء الغربية / As-Ṣaḥrā' al-Gharbiyyah",
+    "alternate_names": [
+      "Western Sahara",
+      "Spanish Sahara"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Modern Saharan Territory & Nation",
+    "year_start": 1884,
+    "year_end": 2026,
+    "period_label": "1884 CE – Present",
+    "period_label_fi": "1884 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Western_Sahara",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/L%C3%A4nsi-Sahara",
+    "wikidata_id": "Q6250",
+    "summary_en": "Atlantic coastal territory of the northwest Sahara inhabited by the Sahrawi people, former Spanish colony and subject to ongoing international status dispute under the Polisario Front.",
+    "summary_fi": "Luoteis-Saharan rannikkoalue, jota asuttavat sahrawit ja joka toimi Espanjan siirtomaana ennen kiistanalaista nykyistä asemaansa Polisario-rintaman ja Marokon välillä.",
+    "capital": "El Aaiún, Tifariti",
+    "feature_name_matches": [
+      "Western Sahara"
+    ]
+  },
+  {
+    "slug": "republic-of-cyprus",
+    "name": "Republic of Cyprus",
+    "name_fi": "Kyproksen tasavalta",
+    "native_name": "Κυπριακή Δημοκρατία / Kıbrıs Cumhuriyeti",
+    "alternate_names": [
+      "Cyprus"
+    ],
+    "culture_group": "Mediterranean",
+    "lineage_id": "greco-roman",
+    "historical_period": "Ancient to Modern Eastern Mediterranean Island",
+    "year_start": -1200,
+    "year_end": 2026,
+    "period_label": "1200 BCE – Present",
+    "period_label_fi": "1200 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cyprus",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kypros",
+    "wikidata_id": "Q229",
+    "summary_en": "Eastern Mediterranean island crossroad celebrated in antiquity for copper mining and the cult of Aphrodite, passing through Byzantine, Crusader, Venetian, and Ottoman rule before modern independence.",
+    "summary_fi": "Itäisen Välimeren saarivaltio, joka oli antiikissa tunnettu kuparikaivoksistaan ja Afroditen kultista ja koki bysanttilaisten, ristiretkeläisten, venetsialaisten ja osmanien vallan.",
+    "capital": "Nicosia, Salamis, Paphos",
+    "feature_name_matches": [
+      "Cyprus"
+    ]
+  }
+]

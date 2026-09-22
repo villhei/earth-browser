@@ -1,0 +1,555 @@
+[
+  {
+    "slug": "ancient-dacia",
+    "name": "Ancient Dacia",
+    "name_fi": "Muinainen Daakia",
+    "native_name": "Dacia",
+    "alternate_names": [
+      "Dacia",
+      "Dacians"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "thracian",
+    "historical_period": "Iron Age Balkan-Carpathian Kingdom",
+    "year_start": -82,
+    "year_end": 106,
+    "period_label": "82 BCE – 106 CE",
+    "period_label_fi": "82 eaa. – 106 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dacia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Daakia",
+    "wikidata_id": "Q84131",
+    "summary_en": "Ancient kingdom in the Carpathian Basin and lower Danube unified under Burebista and Decebalus, rich in gold and iron mines and fortified by the fortress network of the Orăștie Mountains before conquest by Trajan.",
+    "summary_fi": "Muinaisen Kaakkois-Euroopan kuningaskunta Karpaattien alueella; Burebistan ja Decebaluksen johtama rikas kulta- ja rautakaivosmaa, jonka Trajanus liitti Rooman valtakuntaan.",
+    "capital": "Sarmizegetusa Regia",
+    "feature_name_matches": [
+      "Dacia",
+      "Dacians"
+    ]
+  },
+  {
+    "slug": "odrysian-kingdom-thrace",
+    "name": "Odrysian Kingdom & Ancient Thrace",
+    "name_fi": "Odrysin kuningaskunta ja muinainen Traakia",
+    "native_name": "Βασίλειον Ὀδρυσῶν / Thrace",
+    "alternate_names": [
+      "Odrysian Kingdom",
+      "Thrace"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "thracian",
+    "historical_period": "Classical to Hellenistic Thracian Empire",
+    "year_start": -480,
+    "year_end": 46,
+    "period_label": "480 BCE – 46 CE",
+    "period_label_fi": "480 eaa. – 46 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Odrysian_kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Odrysin_kuningaskunta",
+    "wikidata_id": "Q212870",
+    "summary_en": "Thracian state union founded by King Teres I encompassing modern Bulgaria, northern Greece, and European Turkey, famed for exquisite Panagyurishte gold treasures and tumular royal tombs.",
+    "summary_fi": "Traakialaisten heimojen valtioliitto nykyisen Bulgarian ja Pohjois-Kreikan alueella, joka tunnetaan Panagjurišten kulta-aarteista ja monumentaalisista hautakummuistaan.",
+    "capital": "Seuthopolis, Uscudama",
+    "feature_name_matches": [
+      "Odrysian Kingdom",
+      "Thrace"
+    ]
+  },
+  {
+    "slug": "kingdom-of-dardania",
+    "name": "Kingdom of Dardania",
+    "name_fi": "Dardanian kuningaskunta",
+    "native_name": "Dardania",
+    "alternate_names": [
+      "Dardania",
+      "Dardani"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "illyrian",
+    "historical_period": "Ancient Illyrian-Thracian Balkan Kingdom",
+    "year_start": -400,
+    "year_end": -28,
+    "period_label": "400 BCE – 28 BCE",
+    "period_label_fi": "400 eaa. – 28 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Dardania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dardania",
+    "wikidata_id": "Q3322047",
+    "summary_en": "Ancient Balkan kingdom founded by the Dardani in modern Kosovo, southern Serbia, and North Macedonia, commanded by King Bardylis who repeatedly clashed with and allied with ancient Macedon.",
+    "summary_fi": "Muinainen Balkanin kuningaskunta Kosovon ja Pohjois-Makedonian alueella; kuningas Bardyliksen johtamat dardanit olivat antiikin Makedonian merkittäviä vastustajia.",
+    "capital": "Damastion, Naissus, Scupi",
+    "feature_name_matches": [
+      "Dardania"
+    ]
+  },
+  {
+    "slug": "caucasian-albania",
+    "name": "Kingdom of Caucasian Albania",
+    "name_fi": "Kaukasian Albanian kuningaskunta",
+    "native_name": "Աղվանք / Aluank / Arrān",
+    "alternate_names": [
+      "Caucasian Albania",
+      "Aghwank"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "caucasus",
+    "historical_period": "Ancient to Early Medieval Caucasian Kingdom",
+    "year_start": -200,
+    "year_end": 822,
+    "period_label": "200 BCE – 822 CE",
+    "period_label_fi": "200 eaa. – 822 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Caucasian_Albania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kaukasian_Albania",
+    "wikidata_id": "Q179311",
+    "summary_en": "Ancient state in the eastern Caucasus (modern Azerbaijan and southern Dagestan), adopting Christianity in the 4th century CE and developing an indigenous Caucasian Albanian script.",
+    "summary_fi": "Itäisen Kaukasuksen muinainen kristitty kuningaskunta nykyisessä Azerbaidžanissa ja Dagestanissa, jolla oli oma kaukasialainen aakkostonsa ja rikas kirkollinen kulttuuri.",
+    "capital": "Kabala, Partav (Barda)",
+    "feature_name_matches": [
+      "Caucasian Albania"
+    ]
+  },
+  {
+    "slug": "croatian-state",
+    "name": "Kingdom & Republic of Croatia",
+    "name_fi": "Kroatian kuningaskunta ja tasavalta",
+    "native_name": "Republika Hrvatska / Kraljevina Hrvatska",
+    "alternate_names": [
+      "Croatia",
+      "Croatian kingdom"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "croatia",
+    "historical_period": "Early Medieval to Modern Adriatic Slavic Nation",
+    "year_start": 925,
+    "year_end": 2026,
+    "period_label": "925 CE – Present",
+    "period_label_fi": "925 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Croatia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kroatia",
+    "wikidata_id": "Q224",
+    "summary_en": "Adriatic Slavic realm crowned under King Tomislav in 925 CE, known for its thousand-island Dalmatian coastline, Glagolitic literary heritage, and centuries in personal union with Hungary and Habsburg Austria.",
+    "summary_fi": "Kuningas Tomislavin vuonna 925 perustama Adrianmeren slaavilainen valtio, joka tunnetaan tuhansien saarten Dalmatian rannikosta ja glagoliittisesta kirjallisesta perinteestään.",
+    "capital": "Zagreb, Knin, Nin",
+    "feature_name_matches": [
+      "Croatia",
+      "Croatian kingdom"
+    ]
+  },
+  {
+    "slug": "serbian-state",
+    "name": "Principality, Kingdom & Republic of Serbia",
+    "name_fi": "Serbian ruhtinaskunta, kuningaskunta ja tasavalta",
+    "native_name": "Република Србија / Republika Srbija",
+    "alternate_names": [
+      "Serbia",
+      "Serbian Empire",
+      "Principality of Serbia"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "serbia",
+    "historical_period": "Medieval Nemanjic Empire to Modern Balkan Republic",
+    "year_start": 1166,
+    "year_end": 2026,
+    "period_label": "1166 CE – Present",
+    "period_label_fi": "1166 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Serbia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Serbia",
+    "wikidata_id": "Q403",
+    "summary_en": "Balkan sovereign nation forged by the Nemanjić dynasty and Tsar Stefan Dušan, preserving UNESCO-listed medieval fresco monasteries and leading modern South Slavic independence.",
+    "summary_fi": "Nemanjićien dynastian ja tsaari Stefan Dušanin luoma Balkanin valtio, joka tunnetaan keskiaikaisista luostarifreskoistaan ja johtoasemastaan eteläslaavien historiassa.",
+    "capital": "Belgrade, Ras, Skopje, Kragujevac",
+    "feature_name_matches": [
+      "Serbia"
+    ]
+  },
+  {
+    "slug": "bosnia-and-herzegovina",
+    "name": "Banate, Kingdom & State of Bosnia and Herzegovina",
+    "name_fi": "Bosnia ja Hertsegovina",
+    "native_name": "Bosna i Hercegovina / Босна и Херцеговина",
+    "alternate_names": [
+      "Bosnia",
+      "Bosnia and Herzegovina",
+      "Bosnia-Herzegovina"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "bosnia",
+    "historical_period": "Medieval Banate & Modern Multi-Ethnic State",
+    "year_start": 1154,
+    "year_end": 2026,
+    "period_label": "1154 CE – Present",
+    "period_label_fi": "1154 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bosnia_ja_Hertsegovina",
+    "wikidata_id": "Q225",
+    "summary_en": "Dinaric crossroads nation shaped by Ban Kulin, King Tvrtko I, indigenous stećci medieval tombstones, and centuries of Ottoman and Austro-Hungarian Islamic and Christian cultural coexistence.",
+    "summary_fi": "Dinaaristen Alppien valtio, jonka historiaa määrittävät kuningas Tvrtko I:n kuningaskunta, stećci-kivimonumentit sekä islamin ja kristinuskon vuosisatainen yhteiselo.",
+    "capital": "Sarajevo, Bobovac, Jajce",
+    "feature_name_matches": [
+      "Bosnia",
+      "Bosnia and Herzegovina",
+      "Bosnia-Herzegovina"
+    ]
+  },
+  {
+    "slug": "republic-of-slovenia",
+    "name": "Republic of Slovenia (Carniola & Carantania)",
+    "name_fi": "Slovenian tasavalta (Krain ja Karantania)",
+    "native_name": "Republika Slovenija",
+    "alternate_names": [
+      "Slovenia",
+      "Carniola"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "slovenia",
+    "historical_period": "Early Slavic Carantania to Modern Alpine-Adriatic Republic",
+    "year_start": 658,
+    "year_end": 2026,
+    "period_label": "658 CE – Present",
+    "period_label_fi": "658 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Slovenia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Slovenia",
+    "wikidata_id": "Q215",
+    "summary_en": "Alpine-Slavic nation rooted in early medieval Carantania and the Duchy of Carniola, celebrated for the Freising Manuscripts (earliest Slavic text in Latin script) and modern European democracy.",
+    "summary_fi": "Alppien ja Välimeren rajalla sijaitseva slaavilainen maa, jonka juuret juontuvat Karantanian ruhtinaskunnasta ja Freisingin käsikirjoituksista (varhaisin latinalaisin aakkosin kirjoitettu slaavilainen teksti).",
+    "capital": "Ljubljana, Kranj",
+    "feature_name_matches": [
+      "Slovenia"
+    ]
+  },
+  {
+    "slug": "montenegro-crna-gora",
+    "name": "Principality & Republic of Montenegro",
+    "name_fi": "Montenegron ruhtinaskunta ja tasavalta",
+    "native_name": "Crna Gora / Црна Гора",
+    "alternate_names": [
+      "Montenegro",
+      "Principality of Montenegro"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "montenegro",
+    "historical_period": "Theocratic Vladikas to Sovereign Balkan State",
+    "year_start": 1516,
+    "year_end": 2026,
+    "period_label": "1516 CE – Present",
+    "period_label_fi": "1516 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Montenegro",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Montenegro",
+    "wikidata_id": "Q236",
+    "summary_en": "Fiercely independent Adriatic mountain realm ruled for centuries by prince-bishops (vladikas) of the Petrović-Njegoš dynasty, famous for the Bay of Kotor and mountain fortress strongholds.",
+    "summary_fi": "Adrianmeren vuoristovaltio, jota hallitsivat vuosisatoja Petrović-Njegošin ruhtinaspiispat (vladikat) ja joka säilytti autonomiansa osmanien paineesta huolimatta.",
+    "capital": "Cetinje, Podgorica",
+    "feature_name_matches": [
+      "Montenegro"
+    ]
+  },
+  {
+    "slug": "republic-of-albania",
+    "name": "Republic & Principality of Albania",
+    "name_fi": "Albanian tasavalta ja ruhtinaskunta",
+    "native_name": "Republika e Shqipërisë",
+    "alternate_names": [
+      "Albania",
+      "Principality of Arbanon"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "albania",
+    "historical_period": "Medieval Arbanon to Modern Balkan State",
+    "year_start": 1190,
+    "year_end": 2026,
+    "period_label": "1190 CE – Present",
+    "period_label_fi": "1190 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Albania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Albania",
+    "wikidata_id": "Q222",
+    "summary_en": "Southwestern Balkan nation speaking an independent Indo-European language branch, uniting under national hero Gjergj Kastrioti (Skanderbeg) in the League of Lezhë to resist the Ottomans.",
+    "summary_fi": "Lounais-Balkanin valtio, jonka kieli muodostaa oman indoeurooppalaisen haaransa; kansallissankari Skanderbegin 1400-luvulla yhdistämä maa säilytti oman vahvan kulttuuri-identiteettinsä.",
+    "capital": "Tirana, Krujë, Durrës",
+    "feature_name_matches": [
+      "Albania"
+    ]
+  },
+  {
+    "slug": "principality-of-wallachia",
+    "name": "Principality of Wallachia",
+    "name_fi": "Valakian ruhtinaskunta",
+    "native_name": "Țara Românească",
+    "alternate_names": [
+      "Principality of Wallachia",
+      "Wallachia"
+    ],
+    "culture_group": "Balkans",
+    "lineage_id": "romania",
+    "historical_period": "Late Medieval to Early Modern Danubian Principality",
+    "year_start": 1330,
+    "year_end": 1859,
+    "period_label": "1330 CE – 1859 CE",
+    "period_label_fi": "1330 jaa. – 1859 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Wallachia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Valakia",
+    "wikidata_id": "Q170062",
+    "summary_en": "Historical Romanian principality north of the lower Danube founded by Basarab I, defending its autonomy against the Ottoman Empire under Mircea the Elder and Vlad the Impaler.",
+    "summary_fi": "Historiallinen romanialainen ruhtinaskunta Tonavan pohjoispuolella; Basarab I:n perustama valtio puolusti autonomiaansa osmaneja vastaan Mircea vanhemman ja Vlad Seivästäjän johdolla.",
+    "capital": "Curtea de Argeș, Târgoviște, Bucharest",
+    "feature_name_matches": [
+      "Principality of Wallachia"
+    ]
+  },
+  {
+    "slug": "bulgarian-empires-state",
+    "name": "Bulgarian Empires & Republic of Bulgaria",
+    "name_fi": "Bulgarian valtakunnat ja tasavalta",
+    "native_name": "Република България / Republika Balgariya",
+    "alternate_names": [
+      "Bulgaria",
+      "First Bulgarian Empire",
+      "Second Bulgarian Empire"
+    ],
+    "culture_group": "Eastern Europe",
+    "lineage_id": "bulgaria",
+    "historical_period": "Medieval Empire to Modern Danubian Nation",
+    "year_start": 681,
+    "year_end": 2026,
+    "period_label": "681 CE – Present",
+    "period_label_fi": "681 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bulgaria",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bulgaria",
+    "wikidata_id": "Q219",
+    "summary_en": "Historic state established in 681 CE by Khan Asparuh that developed the Cyrillic alphabet under Tsar Simeon the Great and spread Old Church Slavonic literacy throughout the Slavic world.",
+    "summary_fi": "Khaani Asparuhin vuonna 681 perustama historiallinen suurvalta, joka kehitti kyrillisen kirjaimiston tsaari Simeonin aikana ja levitti kirkkoslaavilaista kirjallisuutta koko slaavilaiseen maailmaan.",
+    "capital": "Sofia, Pliska, Preslav, Veliko Tarnovo",
+    "feature_name_matches": [
+      "Bulgaria"
+    ]
+  },
+  {
+    "slug": "romanian-state",
+    "name": "Romania (United Principalities & Modern State)",
+    "name_fi": "Romania (Yhdistyneet ruhtinaskunnat ja moderni tasavalta)",
+    "native_name": "România",
+    "alternate_names": [
+      "Romania"
+    ],
+    "culture_group": "Eastern Europe",
+    "lineage_id": "romania",
+    "historical_period": "Modern Eastern Romance Nation",
+    "year_start": 1859,
+    "year_end": 2026,
+    "period_label": "1859 CE – Present",
+    "period_label_fi": "1859 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Romania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Romania",
+    "wikidata_id": "Q218",
+    "summary_en": "Eastern Romance-speaking nation created through the union of Wallachia and Moldavia under Alexandru Ioan Cuza in 1859, encompassing Transylvania and the Carpathian mountains.",
+    "summary_fi": "Itäromaaninen maa, joka syntyi Valakian ja Moldavian yhdistyessä vuonna 1859 ja käsittää Karpaattien vuoriston ja Transylvanian historialliset alueet.",
+    "capital": "Bucharest, Iași",
+    "feature_name_matches": [
+      "Romania"
+    ]
+  },
+  {
+    "slug": "republic-of-moldova",
+    "name": "Principality & Republic of Moldova",
+    "name_fi": "Moldavian ruhtinaskunta ja Moldovan tasavalta",
+    "native_name": "Republica Moldova",
+    "alternate_names": [
+      "Moldova",
+      "Principality of Moldavia"
+    ],
+    "culture_group": "Eastern Europe",
+    "lineage_id": "romania",
+    "historical_period": "Medieval Principality to Modern Republic",
+    "year_start": 1346,
+    "year_end": 2026,
+    "period_label": "1346 CE – Present",
+    "period_label_fi": "1346 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Moldova",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Moldova",
+    "wikidata_id": "Q217",
+    "summary_en": "Eastern European nation between Romania and Ukraine, rooted in the medieval Principality of Moldavia ruled by Stephen the Great, renowned for painted monastery frescoes and wine cellars.",
+    "summary_fi": "Itä-Euroopan maa Romanian ja Ukrainan välissä, jonka perusta on Tapani Suuren hallitsemassa Moldavian ruhtinaskunnassa; tunnettu viinikellareistaan ja ortodoksisista luostareistaan.",
+    "capital": "Chișinău, Suceava, Iași",
+    "feature_name_matches": [
+      "Moldova"
+    ]
+  },
+  {
+    "slug": "chernoles-culture",
+    "name": "Chernoles Culture (Black Forest Culture)",
+    "name_fi": "Tšernolesin kulttuuri (Mustametsän kulttuuri)",
+    "native_name": "Chernoles Culture",
+    "alternate_names": [
+      "Chernoles culture",
+      "Black Forest culture"
+    ],
+    "culture_group": "Eastern Europe",
+    "lineage_id": "slavic",
+    "historical_period": "Early Iron Age Forest-Steppe Complex",
+    "year_start": -1050,
+    "year_end": -725,
+    "period_label": "1050 BCE – 725 BCE",
+    "period_label_fi": "1050 eaa. – 725 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chernoles_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/T%C5%A1ernolesin_kulttuuri",
+    "wikidata_id": "Q2631526",
+    "summary_en": "Early Iron Age archaeological culture between the Dniester and Dnieper rivers, characterized by timber-fortified ramparts, bronze tools, and regarded by many scholars as proto-Slavic.",
+    "summary_fi": "Varhaisrautakautinen arkeologinen kulttuuri Dnestr- ja Dnepr-jokien välisellä metsäarrolla, joka rakensi puuvahvisteisia valleja ja jota usein pidetään protoslaavilaisena.",
+    "capital": "Tiasmyn River hillforts",
+    "feature_name_matches": [
+      "Chernoles culture"
+    ]
+  },
+  {
+    "slug": "armenian-kingdoms-state",
+    "name": "Kingdoms & Republic of Armenia",
+    "name_fi": "Armenian kuningaskunnat ja tasavalta",
+    "native_name": "Հայաստանի Հանրապետություն / Hayastan",
+    "alternate_names": [
+      "Armenia",
+      "Kingdom of Armenia"
+    ],
+    "culture_group": "Caucasus",
+    "lineage_id": "armenia",
+    "historical_period": "Ancient to Modern Transcaucasian Highland Nation",
+    "year_start": -331,
+    "year_end": 2026,
+    "period_label": "331 BCE – Present",
+    "period_label_fi": "331 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Armenia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Armenia",
+    "wikidata_id": "Q399",
+    "summary_en": "Ancient nation in the Armenian Highlands, the first state to adopt Christianity as its official religion in 301 CE, renowned for its distinct alphabet created by Mesrop Mashtots and medieval capital of Ani.",
+    "summary_fi": "Armenian ylängön ikivanha valtio, joka otti kristinuskon valtionuskonnoksi ensimmäisenä maailmassa vuonna 301 ja kehitti Mesrop Maštotsin luoman oman kirjaimistonsa.",
+    "capital": "Yerevan, Ani, Tigranocerta, Artaxata",
+    "feature_name_matches": [
+      "Armenia"
+    ]
+  },
+  {
+    "slug": "georgian-kingdoms-state",
+    "name": "Kingdoms & Republic of Georgia (Sakartvelo)",
+    "name_fi": "Georgian kuningaskunnat ja tasavalta (Sakartvelo)",
+    "native_name": "საქართველო / Sakartvelo",
+    "alternate_names": [
+      "Georgia",
+      "Kingdom of Georgia"
+    ],
+    "culture_group": "Caucasus",
+    "lineage_id": "georgia",
+    "historical_period": "Ancient Colchis/Iberia to Modern Caucasus State",
+    "year_start": -302,
+    "year_end": 2026,
+    "period_label": "302 BCE – Present",
+    "period_label_fi": "302 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Georgia_(country)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Georgia",
+    "wikidata_id": "Q230",
+    "summary_en": "South Caucasian nation at the crossroads of Europe and Asia, home to 8,000-year winemaking heritage (qvevri), the Golden Age of Queen Tamar, and unique kartvelian Mkhedruli script.",
+    "summary_fi": "Etelä-Kaukasuksen valtio Mustanmeren rannalla, 8000 vuotta vanhan qvevri-viininvalmistuksen kotimaa, joka kukoisti kuningatar Tamarin kultakaudella ja käyttää omaa kartvelilaista kirjaimistoaan.",
+    "capital": "Tbilisi, Kutaisi, Mtskheta",
+    "feature_name_matches": [
+      "Georgia"
+    ]
+  },
+  {
+    "slug": "azerbaijani-state",
+    "name": "Shirvanshahs & Republic of Azerbaijan",
+    "name_fi": "Širvanšahit ja Azerbaidžanin tasavalta",
+    "native_name": "Azərbaycan Respublikası",
+    "alternate_names": [
+      "Azerbaijan"
+    ],
+    "culture_group": "Caucasus",
+    "lineage_id": "azerbaijan",
+    "historical_period": "Caspian Crossroads & Modern Secular Republic",
+    "year_start": 861,
+    "year_end": 2026,
+    "period_label": "861 CE – Present",
+    "period_label_fi": "861 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Azerbaijan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Azerbaid%C5%BEan",
+    "wikidata_id": "Q227",
+    "summary_en": "Caspian nation bridging the Caucasus and Iranian plateau, celebrated for the medieval Maiden Tower of Baku, mugham musical traditions, and pioneer of the Muslim world's first secular democratic republic in 1918.",
+    "summary_fi": "Kaspianmeren rannikkovaltio Kaukasuksen ja Iranin ylängön risteyksessä; tunnetaan Bakun Neitsyttornista, mugham-musiikista ja muslimimaailman ensimmäisestä maallisesta tasavallasta 1918.",
+    "capital": "Baku, Shamakhi, Ganja",
+    "feature_name_matches": [
+      "Azerbaijan"
+    ]
+  },
+  {
+    "slug": "finno-ugric-taiga-hunter-gatherers",
+    "name": "Finno-Ugric Taiga Hunter-Gatherers",
+    "name_fi": "Suomalais-ugrilaiset taigan metsästäjä-keräilijät",
+    "native_name": "Finno-Ugric Taiga",
+    "alternate_names": [
+      "Finno-Ugric taiga hunter-gatherers"
+    ],
+    "culture_group": "Finno-Ugric",
+    "lineage_id": "finno-ugric",
+    "historical_period": "Prehistoric to Medieval Boreal Forest Horizons",
+    "year_start": -7000,
+    "year_end": 1500,
+    "period_label": "7000 BCE – 1500 CE",
+    "period_label_fi": "7000 eaa. – 1500 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Finno-Ugric_peoples",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Suomalais-ugrilaiset_kansat",
+    "wikidata_id": "Q174236",
+    "summary_en": "Indigenous Uralic forest foragers who inhabited the vast boreal taiga belt from the Baltic Sea across northern Russia to the Ural Mountains, specializing in ski hunting, trapping, and river fishing.",
+    "summary_fi": "Uralilaiset havumetsävyöhykkeen metsästäjä-kalastajat Itämereltä Uralvuorille saakka, jotka hallitsivat suksihiihtoa, turkiseläinten pyyntiä ja järvikalastusta.",
+    "capital": "Boreal forest and river valley seasonal camps",
+    "feature_name_matches": [
+      "Finno-Ugric taiga hunter-gatherers"
+    ]
+  },
+  {
+    "slug": "sami-people",
+    "name": "Sámi People (Sápmi)",
+    "name_fi": "Saamelaiset (Sápmi)",
+    "native_name": "Sámit / Sápmi",
+    "alternate_names": [
+      "Samis",
+      "Samish",
+      "Sami",
+      "Saami"
+    ],
+    "culture_group": "Finno-Ugric",
+    "lineage_id": "finno-ugric",
+    "historical_period": "Indigenous Fennoscandian Circumpolar Nation",
+    "year_start": -2000,
+    "year_end": 2026,
+    "period_label": "2000 BCE – Present",
+    "period_label_fi": "2000 eaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/S%C3%A1mi_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saamelaiset",
+    "wikidata_id": "Q48199",
+    "summary_en": "Indigenous Finno-Ugric people inhabiting Sápmi across northern Norway, Sweden, Finland, and the Kola Peninsula, famed for semi-nomadic reindeer pastoralism, joik vocal arts, and duodji handicrafts.",
+    "summary_fi": "Fennoskandian pohjoisosien (Sápmi) alkuperäiskansa Norjassa, Ruotsissa, Suomessa ja Kuolan niemimaalla; tunnettu poronhoidosta, joikuperinteestä ja duodji-käsityötaidosta.",
+    "capital": "Kárášjohka (Karasjok), Inari, Guovdageaidnu, Jokkmokk",
+    "feature_name_matches": [
+      "Samis",
+      "Samish"
+    ]
+  },
+  {
+    "slug": "pisamira-indigenous-people",
+    "name": "Pisamira Indigenous Nation",
+    "name_fi": "Pisamira-alkuperäiskansa",
+    "native_name": "Pisamira",
+    "alternate_names": [
+      "Pisamira"
+    ],
+    "culture_group": "Finno-Ugric",
+    "lineage_id": "south-american-indigenous",
+    "historical_period": "Tucanoan Amazonian Forest Society",
+    "year_start": 500,
+    "year_end": 2026,
+    "period_label": "500 CE – Present",
+    "period_label_fi": "500 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tucanoan_languages",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tucanolaiset_kielet",
+    "wikidata_id": "Q788144",
+    "summary_en": "Eastern Tucanoan-speaking indigenous group of the Vaupés and Papurí river basins in the Amazonian borderlands of Colombia and Brazil, practicing riverine fishing, horticulture, and ritual maloca assemblies.",
+    "summary_fi": "Itätukanolainen alkuperäiskansa Vaupésjoen altaassa Kolumbian ja Brasilian rajaseudulla; harjoittaa kalastusta, kaskiviljelyä ja maloca-yhteisötalojen rituaaliperinteitä.",
+    "capital": "Vaupés river basin settlements",
+    "feature_name_matches": [
+      "Pisamira"
+    ]
+  }
+]

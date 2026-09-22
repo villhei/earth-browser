@@ -11,6 +11,8 @@ import path from "path"
 import { pool, closePool } from "./db"
 import { ERA_CATALOG, getEraByFilename } from "./eraMetadata"
 import { resolveEntityMetadata } from "../features/globe/historicalLineage"
+import { seedAllBatches } from "../../scripts/seed_culture_metadata_batch"
+import { seed as seedBc500 } from "../../scripts/seed_culture_metadata_bc500"
 
 
 async function ingest() {
@@ -279,6 +281,10 @@ async function ingest() {
   console.log(
     `\nIngestion complete! Total features ingested: ${totalFeaturesIngested}`
   )
+
+  console.log("\nLinking culture metadata from all batches...")
+  await seedBc500(false)
+  await seedAllBatches(undefined, false)
 
   await closePool()
 }

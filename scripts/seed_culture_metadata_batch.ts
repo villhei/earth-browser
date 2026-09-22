@@ -24,7 +24,7 @@ export interface CultureBatchEntry {
   feature_name_matches: string[]
 }
 
-async function seedBatch(jsonFilePath: string) {
+async function seedBatch(jsonFilePath: string, shouldClosePool = true) {
   const absolutePath = path.isAbsolute(jsonFilePath)
     ? jsonFilePath
     : path.resolve(process.cwd(), jsonFilePath)
@@ -150,17 +150,41 @@ async function seedBatch(jsonFilePath: string) {
     throw err
   } finally {
     client.release()
+    if (shouldClosePool) {
+      await closePool()
+    }
+  }
+}
+
+export async function seedAllBatches(batchDir?: string, shouldClosePool = true) {
+  const dir = batchDir || path.resolve(__dirname, "../data-sources/batches")
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && f !== "bc500_example.json")
+    .sort()
+
+  console.log(`Seeding all ${files.length} culture metadata batches from ${dir}...`)
+  for (const f of files) {
+    await seedBatch(path.join(dir, f), false)
+  }
+  if (shouldClosePool) {
     await closePool()
   }
 }
 
-const targetFile = process.argv[2]
-if (!targetFile) {
-  console.log("Usage: npx tsx scripts/seed_culture_metadata_batch.ts <path-to-batch.json>")
-  process.exit(1)
-}
+export { seedBatch }
 
-seedBatch(targetFile).catch((err) => {
-  console.error("Fatal error:", err)
-  process.exit(1)
-})
+if (require.main === module) {
+  const targetFile = process.argv[2]
+  if (!targetFile || targetFile === "all") {
+    seedAllBatches().catch((err) => {
+      console.error("Fatal error:", err)
+      process.exit(1)
+    })
+  } else {
+    seedBatch(targetFile).catch((err) => {
+      console.error("Fatal error:", err)
+      process.exit(1)
+    })
+  }
+}
