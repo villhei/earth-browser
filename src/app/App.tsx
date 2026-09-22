@@ -163,7 +163,6 @@ export const App: React.FC = () => {
       <header className="app-header">
         <div className="app-brand">
           <h1 className="app-title">Earth Browser</h1>
-          <span className="app-subtitle">Historical Atlas</span>
         </div>
 
       </header>

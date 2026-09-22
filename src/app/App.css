@@ -45,16 +45,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.app-subtitle {
-  font-size: var(--font-size-xs);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-caps);
-  color: var(--color-text-accent);
-  font-weight: var(--font-weight-semibold);
-  background: var(--color-bg-badge-accent);
-  padding: var(--space-1) var(--space-4);
-  border-radius: var(--radius-xs);
-}
 
 .app-main {
   flex: 1;
