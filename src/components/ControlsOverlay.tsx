@@ -60,12 +60,10 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
                 })
               }
             >
+              <option value={GlobeTexture.EARTH_DAY}>Day Map</option>
               <option value={GlobeTexture.EARTH_BLUE_MARBLE}>
                 Blue Marble (Modern)
               </option>
-              <option value={GlobeTexture.EARTH_DAY}>Day Map</option>
-              <option value={GlobeTexture.EARTH_NIGHT}>Night Lights</option>
-              <option value={GlobeTexture.EARTH_DARK}>Dark Planetary</option>
             </select>
           </div>
 
@@ -98,13 +96,12 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
               </button>
             </div>
             <p className="controls-help">
-              {config.texture !== GlobeTexture.EARTH_BLUE_MARBLE && config.texture !== GlobeTexture.EARTH_DAY
-                ? "Select Blue Marble or Day Map to view ice sheets."
-                : !iceOverlayAvailable
-                  ? "Available at 10,000, 8,000, 5,000, 4,000 and 3,000 BCE."
-                  : "Experimental appearance · partial regional ice coverage."}
+              {!iceOverlayAvailable
+                ? "Available at 10,000, 8,000, 5,000, 4,000 and 3,000 BCE."
+                : "Experimental appearance · partial regional ice coverage."}
             </p>
           </div>
+
 
           <div className="controls-group">
             <div className="controls-label-row">

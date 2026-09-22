@@ -14,6 +14,7 @@ import { Timeline } from "../components/Timeline"
 import { CountryDrawer } from "../components/CountryDrawer"
 import { ControlsOverlay } from "../components/ControlsOverlay"
 import { Attribution } from "../components/Attribution"
+import { ActiveEraBanner } from "../components/ActiveEraBanner"
 import { getIceOverlay } from "../earthTextures/ice"
 import { getTerrainOverlayUrl } from "../earthTextures/coasts"
 import { PuffLoader } from "react-spinners"
@@ -41,7 +42,7 @@ export const App: React.FC = () => {
 
   const [globeConfig, setGlobeConfig] = useState<GlobeConfig>({
 
-    texture: GlobeTexture.EARTH_BLUE_MARBLE,
+    texture: GlobeTexture.EARTH_DAY,
     showIceOverlay: true,
     showTerrainOverlay: true,
     layerAltitude: 0.002,
@@ -109,6 +110,8 @@ export const App: React.FC = () => {
     }
   }, [currentEra])
 
+  const iceOverlay = getIceOverlay(currentEra?.slug)
+
   if (isLoadingEras && !eras.length) {
     return (
       <div className="app-loading-screen">
@@ -120,9 +123,9 @@ export const App: React.FC = () => {
     )
   }
 
-  const iceOverlay = getIceOverlay(currentEra?.slug)
-
   return (
+
+
     <div className="app-layout">
       {/* Top Navigation Bar */}
       <header className="app-header">
@@ -159,8 +162,13 @@ export const App: React.FC = () => {
           />
         </div>
 
+        {/* Selected Era Banner — Floats on top of the Globe */}
+        <ActiveEraBanner currentEra={currentEra} />
+
         {/* Visual Settings Controls */}
+
         <ControlsOverlay
+
           config={globeConfig}
           iceOverlayAvailable={!!iceOverlay}
           terrainOverlayAvailable={!!getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture)}

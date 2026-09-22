@@ -165,66 +165,24 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
               className="drawer-value badge"
               style={{ backgroundColor: "rgba(34, 197, 94, 0.15)", color: "#4ade80", border: "1px solid rgba(34, 197, 94, 0.3)" }}
             >
-              Exact (Thin Line)
+              Exact
             </span>
           ) : borderPrecision === 2 ? (
             <span
               className="drawer-value badge"
               style={{ backgroundColor: "rgba(245, 158, 11, 0.15)", color: "#fbbf24", border: "1px solid rgba(245, 158, 11, 0.3)" }}
             >
-              Approximate (Medium Line)
+              Approximate
             </span>
           ) : (
             <span
               className="drawer-value badge"
               style={{ backgroundColor: "rgba(148, 163, 184, 0.15)", color: "#cbd5e1", border: "1px solid rgba(148, 163, 184, 0.3)" }}
             >
-              Frontier / Estimate (Thick Line)
+              Frontier / Estimate
             </span>
           )}
         </div>
-
-        {props.elevation_tier !== undefined && props.elevation_tier !== null && (
-          <div className="drawer-row">
-            <span className="drawer-label">3D Elevation:</span>
-            {Number(props.elevation_tier) === 0 ? (
-              <span
-                className="drawer-value badge"
-                style={{ backgroundColor: "rgba(100, 116, 139, 0.15)", color: "#94a3b8", border: "1px solid rgba(100, 116, 139, 0.3)" }}
-              >
-                Base Layer (Tier 0)
-              </span>
-            ) : Number(props.elevation_tier) === 1 ? (
-              <span
-                className="drawer-value badge"
-                style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", color: "#38bdf8", border: "1px solid rgba(56, 189, 248, 0.3)" }}
-              >
-                Tier 1 (Sub-Entity / Overlap)
-              </span>
-            ) : Number(props.elevation_tier) === 2 ? (
-              <span
-                className="drawer-value badge"
-                style={{ backgroundColor: "rgba(168, 85, 247, 0.15)", color: "#c084fc", border: "1px solid rgba(168, 85, 247, 0.3)" }}
-              >
-                Tier 2 (Nested Sub-Entity)
-              </span>
-            ) : Number(props.elevation_tier) === 3 ? (
-              <span
-                className="drawer-value badge"
-                style={{ backgroundColor: "rgba(236, 72, 153, 0.15)", color: "#f472b6", border: "1px solid rgba(236, 72, 153, 0.3)" }}
-              >
-                Tier 3 (Sub-Entity of Sub-Entity)
-              </span>
-            ) : (
-              <span
-                className="drawer-value badge"
-                style={{ backgroundColor: "rgba(244, 63, 94, 0.15)", color: "#fb7185", border: "1px solid rgba(244, 63, 94, 0.3)" }}
-              >
-                Tier {props.elevation_tier} (Deep Micro-Terrace)
-              </span>
-            )}
-          </div>
-        )}
 
         {iso && (
           <div className="drawer-row">
@@ -275,7 +233,7 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
         {cultureMeta?.summary_en && (
           <div className="drawer-summary-box">
             <div className="drawer-summary-header">
-              <span className="drawer-summary-title">About this Culture</span>
+              <span className="drawer-summary-title">About</span>
               {cultureMeta.wikipedia_url_en && (
                 <a
                   href={cultureMeta.wikipedia_url_en}
@@ -305,22 +263,9 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
             </a>
           </div>
         )}
-
-        <div className="drawer-footer">
-          <span>
-            Data source:{" "}
-            <a
-              href="https://github.com/aourednik/historical-basemaps/tree/master/geojson"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              historical-basemaps
-            </a>{" "}
-            (GPL-3.0)
-          </span>
-        </div>
       </div>
     </div>
   )
 }
+
 

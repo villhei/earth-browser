@@ -4,7 +4,7 @@ import earthDay from "../../earthTextures/earth-daymap-may.png"
 import earthNight from "../../earthTextures/earth-night.jpg"
 import { GlobeTexture } from "../../types"
 
-export function getGlobeTextureUrl(texture: GlobeTexture = GlobeTexture.EARTH_BLUE_MARBLE): string {
+export function getGlobeTextureUrl(texture: GlobeTexture = GlobeTexture.EARTH_DAY): string {
   switch (texture) {
     case GlobeTexture.EARTH_BLUE_MARBLE:
       return earthBlueMarble
@@ -15,6 +15,7 @@ export function getGlobeTextureUrl(texture: GlobeTexture = GlobeTexture.EARTH_BL
     case GlobeTexture.EARTH_NIGHT:
       return earthNight
     default:
-      return earthBlueMarble
+      return earthDay
   }
 }
+

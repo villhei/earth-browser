@@ -45,7 +45,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   onViewChange,
   data,
   isLoading = false,
-  texture = GlobeTexture.EARTH_BLUE_MARBLE,
+  texture = GlobeTexture.EARTH_DAY,
   textureImageUrl,
   surfaceOverlay,
   surfaceUnderlayUrl,

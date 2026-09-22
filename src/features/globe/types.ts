@@ -30,7 +30,7 @@ export interface HistoricalGlobeProps {
   isLoading?: boolean
 
   /**
-   * Earth sphere texture. Defaults to EARTH_BLUE_MARBLE.
+   * Earth sphere texture. Defaults to EARTH_DAY.
    */
   texture?: GlobeTexture
 
