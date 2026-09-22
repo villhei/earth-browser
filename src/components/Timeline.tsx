@@ -61,7 +61,7 @@ export const Timeline: React.FC<TimelineProps> = ({
     }
   }, [activeEpoch?.id])
 
-  // Auto-scroll active era item into view when selection changes or accordions toggle
+  // Auto-scroll active era item into view when selected era changes
   useEffect(() => {
     if (activeItemRef.current) {
       activeItemRef.current.scrollIntoView({
@@ -69,7 +69,7 @@ export const Timeline: React.FC<TimelineProps> = ({
         behavior: "smooth",
       })
     }
-  }, [currentEra?.id, expandedEpochs])
+  }, [currentEra?.id])
 
   if (!eras.length || !currentEra) return null
 

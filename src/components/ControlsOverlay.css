@@ -30,6 +30,18 @@
   color: var(--color-text-accent);
 }
 
+.controls-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  transition: transform var(--transition-smooth);
+}
+
+.controls-toggle-btn:hover .controls-icon,
+.controls-toggle-btn.active .controls-icon {
+  transform: rotate(30deg);
+}
+
 .controls-panel {
   position: absolute;
   top: 48px;

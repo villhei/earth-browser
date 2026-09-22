@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { GlobeConfig, GlobeTexture } from "../types"
 import { ColorSchemeId, COLOR_SCHEMES } from "../styles/theme"
 import "./ControlsOverlay.css"
@@ -23,6 +23,34 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onChangeColorScheme,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!isOpen) return
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false)
+      }
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown, { capture: true })
+    document.addEventListener("keydown", handleKeyDown)
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown, { capture: true })
+      document.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [isOpen])
 
   const labelSize = config.labelSize ?? 14
   const labelTolerance = config.labelTolerance ?? 10
@@ -30,13 +58,29 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   const terrainOverlayEnabled = canShowTerrainOverlay && config.showTerrainOverlay !== false
 
   return (
-    <div className="controls-overlay">
+    <div ref={containerRef} className="controls-overlay">
       <button
         className={`controls-toggle-btn ${isOpen ? "active" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
         title="Globe Visual Settings"
+        aria-expanded={isOpen}
       >
-        Visuals
+        <svg
+          className="controls-icon"
+          width="15"
+          height="15"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="3" />
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+        </svg>
+        <span>Visuals</span>
       </button>
 
       {isOpen && (
