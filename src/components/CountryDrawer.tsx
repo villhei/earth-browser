@@ -1,5 +1,11 @@
 import React from "react"
 import { GeoJSONFeature, Era } from "../types"
+import { Language } from "../i18n/types"
+import {
+  t,
+  getLocalizedCultureSphere,
+  getLocalizedTerritoryName,
+} from "../i18n/translations"
 import {
   getEntityMetadata,
   getSubjugationInfo,
@@ -12,17 +18,19 @@ interface CountryDrawerProps {
   feature: GeoJSONFeature | null
   currentEra: Era | null
   onClose: () => void
+  language?: Language
 }
 
 export const CountryDrawer: React.FC<CountryDrawerProps> = ({
   feature,
   currentEra,
   onClose,
+  language = "en",
 }) => {
   if (!feature) return null
 
   const props = feature.properties || {}
-  const name = props.name || props.NAME || "Unknown Territory"
+  const rawName = props.name || props.NAME || t("unknown_territory", language)
   const formalName = props.formal_name || props.FORMAL_EN || props.FORMAL_FR
   const iso = props.iso_a3 || props.ISO_A3 || props.ADM0_A3
   const continent = props.CONTINENT || props.REGION_UN || props.REGION_WB
@@ -30,24 +38,62 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
   const sovereignty = props.SOVEREIGNT || props.CONTROLLIN
   const cultureMeta = props.culture_metadata
 
-  const meta = getEntityMetadata(name, props)
+  const meta = getEntityMetadata(rawName, props)
   const color = meta.color
   const canonicalName = meta.canonicalName
-  const cultureGroup = meta.cultureGroup
+  const rawCultureGroup = cultureMeta?.culture_group || meta.cultureGroup
+
+  // Localized values
+  const displayName =
+    language === "fi"
+      ? cultureMeta?.name_fi || getLocalizedTerritoryName(rawName, "fi") || rawName
+      : rawName
+
+  const subtitleName =
+    displayName !== rawName
+      ? rawName
+      : formalName && formalName !== rawName
+        ? formalName
+        : null
+
+  const localizedCultureGroup = rawCultureGroup
+    ? getLocalizedCultureSphere(rawCultureGroup, language)
+    : null
 
   const partOf = (props.PARTOF || props.part_of || "").trim()
+  const localizedPartOf = partOf ? getLocalizedTerritoryName(partOf, language) : ""
+
   const subjectTo = (props.SUBJECTO || props.subject_to || props.SUBCTO || "").trim()
-  const subjugation = getSubjugationInfo(name, props)
+  const localizedSubjectTo = subjectTo ? getLocalizedTerritoryName(subjectTo, language) : ""
+
+  const subjugation = getSubjugationInfo(rawName, props)
   const borderPrecision = getBorderPrecision(props)
 
   const parentColor = partOf ? getCountryColor(partOf, { name: partOf }) : null
+
+  const summary =
+    language === "fi"
+      ? cultureMeta?.summary_fi || cultureMeta?.summary_en
+      : cultureMeta?.summary_en || cultureMeta?.summary_fi
+
+  const wikipediaUrl =
+    language === "fi"
+      ? cultureMeta?.wikipedia_url_fi || cultureMeta?.wikipedia_url_en
+      : cultureMeta?.wikipedia_url_en || cultureMeta?.wikipedia_url_fi
+
+  const periodLabel =
+    language === "fi"
+      ? cultureMeta?.period_label_fi || cultureMeta?.period_label
+      : cultureMeta?.period_label || cultureMeta?.period_label_fi
 
   return (
     <div className="country-drawer">
       <div className="drawer-header">
         <div className="drawer-title-group">
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span className="drawer-tag">{currentEra?.year_label || "Historical Era"}</span>
+            <span className="drawer-tag">
+              {currentEra?.year_label || (language === "fi" ? "Historiallinen aikakausi" : "Historical Era")}
+            </span>
             {color && (
               <span
                 style={{
@@ -63,29 +109,29 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
               />
             )}
           </div>
-          <h3 className="drawer-title">{name}</h3>
-          {formalName && formalName !== name && (
-            <div className="drawer-subtitle">{formalName}</div>
+          <h3 className="drawer-title">{displayName}</h3>
+          {subtitleName && (
+            <div className="drawer-subtitle">{subtitleName}</div>
           )}
         </div>
-        <button className="drawer-close-btn" onClick={onClose} aria-label="Close">
+        <button className="drawer-close-btn" onClick={onClose} aria-label={t("close", language)}>
           ✕
         </button>
       </div>
 
       <div className="drawer-content">
-        {cultureGroup && (
+        {localizedCultureGroup && (
           <div className="drawer-row">
-            <span className="drawer-label">Culture Sphere:</span>
+            <span className="drawer-label">{t("culture_sphere", language)}</span>
             <span className="drawer-value badge" style={{ borderColor: color }}>
-              {cultureGroup}
+              {localizedCultureGroup}
             </span>
           </div>
         )}
 
-        {partOf && partOf.toLowerCase() !== name.toLowerCase() && (
+        {partOf && partOf.toLowerCase() !== rawName.toLowerCase() && (
           <div className="drawer-row">
-            <span className="drawer-label">Part of (Parent):</span>
+            <span className="drawer-label">{t("part_of", language)}</span>
             <span className="drawer-value" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
               {parentColor && (
                 <span
@@ -98,14 +144,14 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
                   }}
                 />
               )}
-              {partOf}
+              {localizedPartOf}
             </span>
           </div>
         )}
 
         {subjugation.isSubjugated && subjectTo && (
           <div className="drawer-row">
-            <span className="drawer-label">Subjugated to:</span>
+            <span className="drawer-label">{t("subjugated_to", language)}</span>
             <span
               className="drawer-value badge"
               style={{
@@ -115,90 +161,89 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
                 fontWeight: 600,
               }}
             >
-              {subjectTo}
+              {localizedSubjectTo}
             </span>
           </div>
         )}
 
-
-        {canonicalName && canonicalName !== name && (
+        {canonicalName && canonicalName !== rawName && (
           <div className="drawer-row">
-            <span className="drawer-label">Civilization / Lineage:</span>
-            <span className="drawer-value">{canonicalName}</span>
+            <span className="drawer-label">{t("civilization_lineage", language)}</span>
+            <span className="drawer-value">{getLocalizedTerritoryName(canonicalName, language)}</span>
           </div>
         )}
 
         {cultureMeta?.historical_period && (
           <div className="drawer-row">
-            <span className="drawer-label">Historical Period:</span>
+            <span className="drawer-label">{t("historical_period", language)}</span>
             <span className="drawer-value">{cultureMeta.historical_period}</span>
           </div>
         )}
 
-        {cultureMeta?.period_label && (
+        {periodLabel && (
           <div className="drawer-row">
-            <span className="drawer-label">Documented Era:</span>
+            <span className="drawer-label">{t("documented_era", language)}</span>
             <span className="drawer-value badge drawer-badge-era">
-              {cultureMeta.period_label}
+              {periodLabel}
             </span>
           </div>
         )}
 
         {cultureMeta?.capital && (
           <div className="drawer-row">
-            <span className="drawer-label">Capital / Center:</span>
+            <span className="drawer-label">{t("capital_center", language)}</span>
             <span className="drawer-value">{cultureMeta.capital}</span>
           </div>
         )}
 
         <div className="drawer-row">
-          <span className="drawer-label">Border Precision:</span>
+          <span className="drawer-label">{t("border_precision", language)}</span>
           {borderPrecision === 3 ? (
             <span className="drawer-value badge drawer-badge-exact">
-              Exact
+              {t("precision_exact", language)}
             </span>
           ) : borderPrecision === 2 ? (
             <span className="drawer-value badge drawer-badge-approx">
-              Approximate
+              {t("precision_approx", language)}
             </span>
           ) : (
             <span className="drawer-value badge drawer-badge-frontier">
-              Frontier / Estimate
+              {t("precision_frontier", language)}
             </span>
           )}
         </div>
 
         {iso && (
           <div className="drawer-row">
-            <span className="drawer-label">ISO / Code:</span>
+            <span className="drawer-label">{t("iso_code", language)}</span>
             <span className="drawer-value badge">{iso}</span>
           </div>
         )}
 
-        {sovereignty && sovereignty !== name && !subjugation.isSubjugated && (
+        {sovereignty && sovereignty !== rawName && !subjugation.isSubjugated && (
           <div className="drawer-row">
-            <span className="drawer-label">Sovereignty / Control:</span>
-            <span className="drawer-value">{sovereignty}</span>
+            <span className="drawer-label">{t("sovereignty_control", language)}</span>
+            <span className="drawer-value">{getLocalizedTerritoryName(sovereignty, language)}</span>
           </div>
         )}
 
         {continent && (
           <div className="drawer-row">
-            <span className="drawer-label">Region / Continent:</span>
+            <span className="drawer-label">{t("region_continent", language)}</span>
             <span className="drawer-value">{continent}</span>
           </div>
         )}
 
         {economy && (
           <div className="drawer-row">
-            <span className="drawer-label">Classification:</span>
+            <span className="drawer-label">{t("classification", language)}</span>
             <span className="drawer-value">{economy}</span>
           </div>
         )}
 
         {props.POP_EST && (
           <div className="drawer-row">
-            <span className="drawer-label">Est. Population:</span>
+            <span className="drawer-label">{t("est_population", language)}</span>
             <span className="drawer-value">
               {Number(props.POP_EST).toLocaleString()}
             </span>
@@ -207,20 +252,20 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
 
         {props.AREA && (
           <div className="drawer-row">
-            <span className="drawer-label">Area (approx):</span>
+            <span className="drawer-label">{t("area_approx", language)}</span>
             <span className="drawer-value">
-              {Number(props.AREA).toLocaleString()} sq km
+              {Number(props.AREA).toLocaleString()} {t("sq_km", language)}
             </span>
           </div>
         )}
 
-        {cultureMeta?.summary_en && (
+        {summary && (
           <div className="drawer-summary-box">
             <div className="drawer-summary-header">
-              <span className="drawer-summary-title">About</span>
-              {cultureMeta.wikipedia_url_en && (
+              <span className="drawer-summary-title">{t("about", language)}</span>
+              {wikipediaUrl && (
                 <a
-                  href={cultureMeta.wikipedia_url_en}
+                  href={wikipediaUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="drawer-wiki-link"
@@ -230,20 +275,20 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
                 </a>
               )}
             </div>
-            <p className="drawer-summary-text">{cultureMeta.summary_en}</p>
+            <p className="drawer-summary-text">{summary}</p>
           </div>
         )}
 
-        {!cultureMeta?.summary_en && cultureMeta?.wikipedia_url_en && (
+        {!summary && wikipediaUrl && (
           <div className="drawer-row" style={{ marginTop: "4px" }}>
-            <span className="drawer-label">Wikipedia:</span>
+            <span className="drawer-label">{t("wikipedia", language)}:</span>
             <a
-              href={cultureMeta.wikipedia_url_en}
+              href={wikipediaUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="drawer-wiki-link"
             >
-              Wikipedia Article ↗
+              {t("wikipedia_article", language)}
             </a>
           </div>
         )}
@@ -251,5 +296,3 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
     </div>
   )
 }
-
-

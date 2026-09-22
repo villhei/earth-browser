@@ -93,3 +93,25 @@
   letter-spacing: var(--letter-spacing-wide);
   color: var(--color-text-muted);
 }
+
+.top-controls-bar {
+  position: absolute;
+  top: var(--space-12);
+  right: var(--space-12);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  z-index: var(--z-controls);
+}
+
+.top-controls-bar .controls-overlay {
+  position: static;
+}
+
+@media (max-width: 768px) {
+  .top-controls-bar {
+    top: var(--space-6);
+    right: var(--space-6);
+    gap: var(--space-2);
+  }
+}

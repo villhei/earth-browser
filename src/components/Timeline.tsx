@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react"
 import { Era } from "../types"
-import { groupErasByEpoch, getEpochForEra } from "./eraGrouping"
+import { Language } from "../i18n/types"
+import { groupErasByEpoch, getEpochForEra, getLocalizedEpoch } from "./eraGrouping"
 import "./Timeline.css"
 
 interface TimelineProps {
@@ -8,6 +9,7 @@ interface TimelineProps {
   currentEra: Era | null
   onSelectEra: (era: Era) => void
   isLoading?: boolean
+  language?: Language
 }
 
 /**
@@ -27,6 +29,7 @@ export const Timeline: React.FC<TimelineProps> = ({
   currentEra,
   onSelectEra,
   isLoading = false,
+  language = "en",
 }) => {
   const activeItemRef = useRef<HTMLButtonElement | null>(null)
   const listRef = useRef<HTMLDivElement | null>(null)
@@ -118,9 +121,13 @@ export const Timeline: React.FC<TimelineProps> = ({
       {/* Panel Header & Navigation Controls */}
       <div className="timeline-panel-header">
         <div className="timeline-header-title-group">
-          <span className="timeline-badge-tag">Timeline</span>
+          <span className="timeline-badge-tag">{language === "fi" ? "Aikajana" : "Timeline"}</span>
           <span className="timeline-era-count">
-            {currentIndex >= 0 ? `${currentIndex + 1} / ${eras.length}` : `${eras.length} eras`}
+            {currentIndex >= 0
+              ? `${currentIndex + 1} / ${eras.length}`
+              : language === "fi"
+                ? `${eras.length} aikakautta`
+                : `${eras.length} eras`}
           </span>
         </div>
 
@@ -129,8 +136,24 @@ export const Timeline: React.FC<TimelineProps> = ({
             type="button"
             className="timeline-nav-btn timeline-toggle-all-btn"
             onClick={handleToggleAll}
-            title={isAllExpanded ? "Collapse all epochs" : "Expand all epochs"}
-            aria-label={isAllExpanded ? "Collapse all epochs" : "Expand all epochs"}
+            title={
+              isAllExpanded
+                ? language === "fi"
+                  ? "Tiivistä kaikki aikakaudet"
+                  : "Collapse all epochs"
+                : language === "fi"
+                  ? "Laajenna kaikki aikakaudet"
+                  : "Expand all epochs"
+            }
+            aria-label={
+              isAllExpanded
+                ? language === "fi"
+                  ? "Tiivistä kaikki aikakaudet"
+                  : "Collapse all epochs"
+                : language === "fi"
+                  ? "Laajenna kaikki aikakaudet"
+                  : "Expand all epochs"
+            }
           >
             <svg
               width="13"
@@ -162,8 +185,8 @@ export const Timeline: React.FC<TimelineProps> = ({
             className="timeline-nav-btn"
             onClick={handlePrev}
             disabled={currentIndex <= 0 || isLoading}
-            title="Previous Era (Earlier)"
-            aria-label="Previous Era"
+            title={language === "fi" ? "Edellinen aikakausi" : "Previous Era (Earlier)"}
+            aria-label={language === "fi" ? "Edellinen aikakausi" : "Previous Era"}
           >
             ‹
           </button>
@@ -172,8 +195,8 @@ export const Timeline: React.FC<TimelineProps> = ({
             className="timeline-nav-btn"
             onClick={handleNext}
             disabled={currentIndex >= eras.length - 1 || isLoading}
-            title="Next Era (Later)"
-            aria-label="Next Era"
+            title={language === "fi" ? "Seuraava aikakausi" : "Next Era (Later)"}
+            aria-label={language === "fi" ? "Seuraava aikakausi" : "Next Era"}
           >
             ›
           </button>
@@ -182,16 +205,16 @@ export const Timeline: React.FC<TimelineProps> = ({
 
       {/* Vertical Scrollable Era Accordion List */}
       <div
-
         className="timeline-list-container"
         ref={listRef}
         role="region"
-        aria-label="Historical Eras Grouped by Epoch"
+        aria-label={language === "fi" ? "Historialliset aikakaudet jaoteltuna kausiin" : "Historical Eras Grouped by Epoch"}
       >
         <div className="timeline-epochs-wrapper">
           {groups.map((group) => {
             const isExpanded = expandedEpochs.has(group.epoch.id)
             const containsActive = group.eras.some((e) => e.id === currentEra.id)
+            const epoch = getLocalizedEpoch(group.epoch, language)
 
             return (
               <div
@@ -204,7 +227,15 @@ export const Timeline: React.FC<TimelineProps> = ({
                   className={`timeline-epoch-header ${isExpanded ? "expanded" : ""} ${containsActive ? "has-active" : ""}`}
                   onClick={() => handleToggleEpoch(group.epoch.id)}
                   aria-expanded={isExpanded}
-                  title={`${group.epoch.name} (${group.epoch.dateRangeLabel}) — Click to ${isExpanded ? "collapse" : "expand"}`}
+                  title={`${epoch.name} (${epoch.dateRangeLabel}) — ${
+                    isExpanded
+                      ? language === "fi"
+                        ? "Napsauta tiivistääksesi"
+                        : "Click to collapse"
+                      : language === "fi"
+                        ? "Napsauta laajentaaksesi"
+                        : "Click to expand"
+                  }`}
                 >
                   <span
                     className={`timeline-epoch-chevron ${isExpanded ? "expanded" : ""}`}
@@ -214,9 +245,9 @@ export const Timeline: React.FC<TimelineProps> = ({
                   </span>
 
                   <div className="timeline-epoch-meta">
-                    <span className="timeline-epoch-title">{group.epoch.name}</span>
+                    <span className="timeline-epoch-title">{epoch.name}</span>
                     <span className="timeline-epoch-dates">
-                      {group.epoch.dateRangeLabel}
+                      {epoch.dateRangeLabel}
                     </span>
                   </div>
 

@@ -1,4 +1,5 @@
 import { GeoJSONFeature, GeoJSONFeatureCollection, GlobeTexture } from "../../types"
+import type { Language } from "../../i18n/types"
 
 export interface SurfaceOverlay {
   /** Decorative RGBA artwork on the same full-world equirectangular grid. */
@@ -141,6 +142,11 @@ export interface HistoricalGlobeProps {
    * Custom CSS class name for the globe container.
    */
   className?: string
+
+  /**
+   * Display language for labels and UI overlays. Defaults to 'en'.
+   */
+  language?: Language
 }
 
 export { GlobeTexture }

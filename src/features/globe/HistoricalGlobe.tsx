@@ -38,6 +38,7 @@ import {
 import { sanitizeRenderableFeatures } from "./geometrySanitizer"
 import { PolygonScene } from "./polygonScene"
 import { GeoJSONFeature } from "../../types"
+import { getLocalizedFeatureName } from "../../i18n/translations"
 
 const DEFAULT_ALTITUDE = 0.002
 const DEFAULT_OPACITY = 0.55
@@ -74,6 +75,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   polygonCapCurvatureResolution = DEFAULT_CAP_CURVATURE_RESOLUTION,
   onFeatureClick,
   onFeatureHover,
+  language = "en",
   style,
   className,
 }) => {
@@ -86,6 +88,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   const restoreViewRef = useRef<((view: GlobeView) => void) | null>(null)
   const placedLabelsRef = useRef<PlacedLabel[]>([])
   const renderDirtyRef = useRef(true)
+  const languageRef = useRef(language)
+  languageRef.current = language
   const [hoveredFeature, setHoveredFeature] = useState<GeoJSONFeature | null>(
     null,
   )
@@ -470,6 +474,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     let lastElevScale = 0
     let lastFeaturesRef: any = null
     let lastShowLabels = true
+    let lastLanguage = languageRef.current
 
     let animationFrameId: number
     let lastGlobeMap: THREE.Texture | null = null
@@ -584,6 +589,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         const curLabelTol = labelToleranceRef.current
         const curLayerAlt = layerAltitudeRef.current
         const curElevScale = elevationScaleRef.current
+        const curLanguage = languageRef.current
 
         const isCamDirty =
           lastCamPos.distanceToSquared(camera.position) > 1e-4 ||
@@ -606,7 +612,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           lastLayerAlt !== curLayerAlt ||
           lastElevScale !== curElevScale ||
           lastFeaturesRef !== curFeatures ||
-          lastShowLabels !== curShowLabels
+          lastShowLabels !== curShowLabels ||
+          lastLanguage !== curLanguage
 
         if (isLabelsDirty) {
           lastCamPos.copy(camera.position)
@@ -623,6 +630,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
           lastElevScale = curElevScale
           lastFeaturesRef = curFeatures
           lastShowLabels = curShowLabels
+          lastLanguage = curLanguage
 
           const c2d = labelsCanvasRef.current
           const ctx = c2d.getContext("2d")
@@ -646,6 +654,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
                   baseFontSize: curLabelSize,
                   labelTolerance: curLabelTol,
                   onlyHoveredOrSelected: !curShowLabels,
+                  language: curLanguage,
                 },
                 ctx,
               )
@@ -991,12 +1000,14 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         >
           <PuffLoader color="var(--color-accent, #38bdf8)" size={70} />
           <span style={{ fontSize: "14px", letterSpacing: "0.05em" }}>
-            Loading Historical Boundaries...
+            {language === "fi"
+              ? "Ladataan historiallisia rajoja..."
+              : "Loading Historical Boundaries..."}
           </span>
         </div>
       )}
 
-      {hoveredFeature && hoveredFeature.properties?.name && (
+      {hoveredFeature && (hoveredFeature.properties?.name || hoveredFeature.properties?.culture_metadata?.name_fi) && (
         <div
           style={{
             position: "absolute",
@@ -1016,10 +1027,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
             zIndex: 5,
           }}
         >
-          {hoveredFeature.properties.name}
-          {hoveredFeature.properties.formal_name &&
+          {getLocalizedFeatureName(hoveredFeature.properties, language)}
+          {hoveredFeature.properties?.formal_name &&
             hoveredFeature.properties.formal_name !==
-              hoveredFeature.properties.name && (
+              getLocalizedFeatureName(hoveredFeature.properties, language) && (
               <span
                 style={{ opacity: 0.7, marginLeft: "8px", fontSize: "12px" }}
               >

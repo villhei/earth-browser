@@ -29,6 +29,9 @@ export interface PlacedLabel {
   fontWeight: number | string
 }
 
+import { Language } from "../../i18n/types"
+import { getLocalizedTerritoryName } from "../../i18n/translations"
+
 export interface LabelComputeOptions {
   layerAltitude?: number
   selectedFeatureId?: string | null
@@ -43,6 +46,7 @@ export interface LabelComputeOptions {
   labelTolerance?: number
   elevationScale?: number
   onlyHoveredOrSelected?: boolean
+  language?: Language
 }
 
 /**
@@ -506,19 +510,30 @@ export function computePlacedLabels(
   const centerX = width / 2
   const centerY = height / 2
 
+  const lang = options.language || "en"
+
   // 1. Filter visible features and project to screen space
   for (const feat of features) {
     const props = feat.properties || {}
-    const name = props.name || props.NAME || props.NAME_LONG || props.formal_name || props.FORMAL_EN || ""
-    if (!name || typeof name !== "string" || name.trim() === "") {
+    const rawName = props.name || props.NAME || props.NAME_LONG || props.formal_name || props.FORMAL_EN || ""
+    if (!rawName || typeof rawName !== "string" || rawName.trim() === "") {
       continue
     }
 
-    const id = (feat.id != null ? feat.id : name).toString()
+    let name = rawName
+    if (lang === "fi") {
+      name =
+        props.culture_metadata?.name_fi ||
+        getLocalizedTerritoryName(rawName, "fi") ||
+        rawName
+    }
+
+    const id = (feat.id != null ? feat.id : rawName).toString()
     const isHovered =
       hoveredFeatureId != null &&
       (id === String(hoveredFeatureId) ||
         name === hoveredFeatureId ||
+        rawName === hoveredFeatureId ||
         props.name === hoveredFeatureId ||
         props.NAME === hoveredFeatureId ||
         props.formal_name === hoveredFeatureId ||
@@ -529,6 +544,7 @@ export function computePlacedLabels(
       selectedFeatureId != null &&
       (id === String(selectedFeatureId) ||
         name === selectedFeatureId ||
+        rawName === selectedFeatureId ||
         props.name === selectedFeatureId ||
         props.NAME === selectedFeatureId ||
         props.formal_name === selectedFeatureId ||

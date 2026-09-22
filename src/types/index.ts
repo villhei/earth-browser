@@ -2,10 +2,13 @@ export interface Era {
   id: string
   slug: string
   name: string
+  name_fi?: string
   year_start: number
   year_end?: number
   year_label: string
+  year_label_fi?: string
   description: string
+  description_fi?: string
   feature_count: number
   created_at?: string
 }

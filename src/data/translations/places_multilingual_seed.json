@@ -1,0 +1,5417 @@
+[
+  {
+    "en": "Aperlae",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Ἄπερλαι"
+    }
+  },
+  {
+    "en": "Tomb of the Kings",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Царские гробницы",
+      "de": "Paphos - Tomb of the Kings - Königsgräber von Nea Paphos"
+    }
+  },
+  {
+    "en": "Tel Shaharit",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל שחרית",
+      "en": "Tel Shaharit"
+    }
+  },
+  {
+    "en": "Tel Hazir",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل حصير",
+      "he": "תל חציר",
+      "en": "Tel Hazir"
+    }
+  },
+  {
+    "en": "Tel Zayit",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Zayit",
+      "he": "תל זית",
+      "en": "Tel Zayit"
+    }
+  },
+  {
+    "en": "Tel Qashish",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tell Kashish",
+      "he": "תל קשיש",
+      "en": "Tel Qashish"
+    }
+  },
+  {
+    "en": "Tel Zehavi",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל זהבך",
+      "en": "Tel Zehavi"
+    }
+  },
+  {
+    "en": "Tel Shoqeq",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל שוקק",
+      "en": "Tel Shoqeq"
+    }
+  },
+  {
+    "en": "Tel Kedesh",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Qedesh Naftali",
+      "fr": "Tel Qadesh",
+      "he": "תל קדש"
+    }
+  },
+  {
+    "en": "Tel Rosh",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل راش",
+      "he": "תל ראש",
+      "en": "Tel Rosh"
+    }
+  },
+  {
+    "en": "Tel Yeshua",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell Sawa",
+      "he": "תל ישוע"
+    }
+  },
+  {
+    "en": "Sharayi`",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Sharai"
+    }
+  },
+  {
+    "en": "Horbat Ribbo",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת רבוא",
+      "en": "Horbat Ribbo"
+    }
+  },
+  {
+    "en": "Tel Rekhesh",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל רכש",
+      "en": "Tel Rekhesh"
+    }
+  },
+  {
+    "en": "Mt. `Arqov",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Jebel Irqab Isdud",
+      "he": "הר ערקוב"
+    }
+  },
+  {
+    "en": "Tel Rehov",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Rehov",
+      "he": "תל רחוב",
+      "en": "Tel Rehov"
+    }
+  },
+  {
+    "en": "Tel Arad",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell Urad",
+      "fr": "Tel Arad",
+      "he": "תל ערד"
+    }
+  },
+  {
+    "en": "Tel Malluah",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל מלוח",
+      "en": "Tel Malluah"
+    }
+  },
+  {
+    "en": "Tel Batash",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Timna",
+      "he": "תל בטש",
+      "en": "Tel Batash"
+    }
+  },
+  {
+    "en": "Tel Gat Hefer",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل غت حفر",
+      "he": "תל גת חפר",
+      "en": "Tel Gat Hefer"
+    }
+  },
+  {
+    "en": "Tel Hodim",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל הודים",
+      "en": "Tel Hodim"
+    }
+  },
+  {
+    "en": "Tel Yin`am",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל ינעם",
+      "en": "Tel Yin`am"
+    }
+  },
+  {
+    "en": "Tel Govel",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל גובל",
+      "en": "Tel Govel"
+    }
+  },
+  {
+    "en": "Tel Poran",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל פורן",
+      "en": "Tel Poran"
+    }
+  },
+  {
+    "en": "Tel Beit Shean",
+    "category": "Archaeological Site",
+    "translations": {
+      "cs": "Tel Bejt Še'an",
+      "fr": "Tel Beït-Shéan",
+      "he": "תל בית שאן",
+      "en": "Tel Beit Shean"
+    }
+  },
+  {
+    "en": "Tel Gador",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל גדור",
+      "en": "Tel Gador"
+    }
+  },
+  {
+    "en": "Tel `Eter",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל עתר",
+      "en": "Tel `Eter"
+    }
+  },
+  {
+    "en": "Tel Yona",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell Yunis",
+      "he": "תל יונה"
+    }
+  },
+  {
+    "en": "Tel Adullam",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת עדולם",
+      "en": "Miya"
+    }
+  },
+  {
+    "en": "Tel Esur",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tel Arubot",
+      "fr": "Tel Assor",
+      "he": "תל אסור"
+    }
+  },
+  {
+    "en": "Tel Mifsah",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל מפסח",
+      "en": "Tel Mifsah"
+    }
+  },
+  {
+    "en": "Tel Yishma`el",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל ישמעאל",
+      "en": "Tel Yishma`el"
+    }
+  },
+  {
+    "en": "Horbat Akudim",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Khirbat al Quda",
+      "he": "חורבת עקודים"
+    }
+  },
+  {
+    "en": "Tel Kison",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Kison",
+      "ar": "تل كيسون",
+      "he": "תל כיסון",
+      "en": "Tel Kison"
+    }
+  },
+  {
+    "en": "Tel Zippor",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל ציפור",
+      "en": "Tel Zippor"
+    }
+  },
+  {
+    "en": "Tel Mahoz",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל מחוז",
+      "en": "Tel Mahoz"
+    }
+  },
+  {
+    "en": "Tel Re`ala",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל רעלה",
+      "en": "Tel Re`ala"
+    }
+  },
+  {
+    "en": "Beit She`arim",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Beit She`arim",
+      "fr": "Beït-Shéarim",
+      "he": "בית שערים"
+    }
+  },
+  {
+    "en": "Tel Haraz",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell Abu Haraze",
+      "he": "תל חרז"
+    }
+  },
+  {
+    "en": "Mezad Hatrurim",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Qasr el Juheiniye",
+      "he": "מצד חתרורים"
+    }
+  },
+  {
+    "en": "Tel Te'omim",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל תאומים",
+      "en": "Tel Te'omim"
+    }
+  },
+  {
+    "en": "Tel Shihan",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל שיחן",
+      "en": "Tel Shihan"
+    }
+  },
+  {
+    "en": "Tel Kelekh",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tall Umm Kalkha",
+      "he": "תל כלך"
+    }
+  },
+  {
+    "en": "Tel Ein Hadda",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל עין חדה",
+      "en": "Tel Ein Hadda"
+    }
+  },
+  {
+    "en": "Tel Ya`oz",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל יעוז",
+      "en": "Tel Ya`oz"
+    }
+  },
+  {
+    "en": "Tel Zoran",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל צורן",
+      "en": "Tel Zoran"
+    }
+  },
+  {
+    "en": "Tel Sheqafim",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל שקפים",
+      "en": "Tel Sheqafim"
+    }
+  },
+  {
+    "en": "Tel Da`ok",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tel Da`okh",
+      "he": "תל דעוך"
+    }
+  },
+  {
+    "en": "Tel Shoqet",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل شوكت",
+      "he": "תל שוקת",
+      "en": "Tel Shoqet"
+    }
+  },
+  {
+    "en": "Tel Marwa",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell Marva",
+      "fr": "Tel Marwa",
+      "he": "תל מרוה"
+    }
+  },
+  {
+    "en": "Tel Sha`ar",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tall Abu Babein",
+      "he": "תל שער"
+    }
+  },
+  {
+    "en": "Tel Lakhish",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tel Lachish",
+      "fr": "Lakish",
+      "he": "תל לכיש"
+    }
+  },
+  {
+    "en": "Tel Shem",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell esh Shemmam",
+      "he": "תל א-שמאם"
+    }
+  },
+  {
+    "en": "Horbat Qerumit",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת קרומית",
+      "en": "Horbat Qerumit"
+    }
+  },
+  {
+    "en": "Tel Nufar",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל נופר",
+      "en": "Tel Nufar"
+    }
+  },
+  {
+    "en": "Tel Qidda",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tall al Mashnaqa",
+      "fr": "Tel Kida",
+      "he": "תל קידה"
+    }
+  },
+  {
+    "en": "Tel Malqoah",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tall Maqhuz",
+      "ar": "تل ملقوح",
+      "he": "תל מלקוח"
+    }
+  },
+  {
+    "en": "Tel Arshaf",
+    "category": "city",
+    "civilization": "phoenician",
+    "translations": {
+      "cs": "Apollonia",
+      "uk": "Арзуф",
+      "sr": "Арсуф",
+      "pt": "Apolónia da Palestina",
+      "it": "Arsuf",
+      "es": "Arsuf",
+      "ca": "Arsuf",
+      "br": "Arsuf",
+      "en": "Rishpon",
+      "fr": "Apollonie",
+      "ar": "أرسوف",
+      "he": "אפולוניה",
+      "ru": "Арсуф",
+      "de": "Arsuf",
+      "el": "Απολλωνία"
+    }
+  },
+  {
+    "en": "Tel Agra",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל אגרא",
+      "en": "Tel Agra"
+    }
+  },
+  {
+    "en": "Tel Chawara",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell el Kawayir",
+      "he": "תל חווארה"
+    }
+  },
+  {
+    "en": "Tel Nahal",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell el Nahl",
+      "he": "תל נחל"
+    }
+  },
+  {
+    "en": "Tel Beror",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל ברור",
+      "en": "Tel Beror"
+    }
+  },
+  {
+    "en": "Tel Zeton",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Zeton",
+      "he": "תל זיתון",
+      "en": "Tel Zeton"
+    }
+  },
+  {
+    "en": "Tel Par",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "נחל פרצים",
+      "en": "Tel Par"
+    }
+  },
+  {
+    "en": "Tel Yizre'el",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל יזרעאל",
+      "en": "Tel Yizre'el"
+    }
+  },
+  {
+    "en": "Sarafand",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Sarepta Yudee",
+      "he": "צרפנד"
+    }
+  },
+  {
+    "en": "Montfort",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Starkenburg",
+      "fr": "Montfort",
+      "he": "מבצר מונפורט"
+    }
+  },
+  {
+    "en": "Tel Salwim",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tel Shalwim",
+      "he": "תל שלווים"
+    }
+  },
+  {
+    "en": "Tel Turmus",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל תורמוס",
+      "en": "Tel Turmus"
+    }
+  },
+  {
+    "en": "Tel Hamid",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל חמיד",
+      "en": "Tel Hamid"
+    }
+  },
+  {
+    "en": "Tel Bad",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Bayyad",
+      "he": "תל בד"
+    }
+  },
+  {
+    "en": "Banias",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Césarée de Philippe",
+      "ar": "بانياس",
+      "he": "בניאס",
+      "en": "Banias"
+    }
+  },
+  {
+    "en": "Choirokoitia Neolithic Settlement",
+    "category": "Archaeological Site",
+    "translations": {
+      "lt": "Archeologinė vietovė",
+      "ru": "Археопарк Хирокития"
+    }
+  },
+  {
+    "en": "Western Temple Gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Porte Ouest du Temple",
+      "ar": "باب المعبد الغربي",
+      "en": "Western Temple Gate"
+    }
+  },
+  {
+    "en": "Eastern Temple Gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Eastern Temple Gate",
+      "ar": "باب المعبد الشرقي",
+      "en": "Eastern Temple Gate"
+    }
+  },
+  {
+    "en": "Roman Gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Porte Romaine",
+      "ar": "الباب الروماني",
+      "en": "Roman Gate"
+    }
+  },
+  {
+    "en": "Aspendos",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Аспендос"
+    }
+  },
+  {
+    "en": "Herodion Ruins",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "الفرديس",
+      "he": "הרודיון",
+      "en": "Herodion Ruins"
+    }
+  },
+  {
+    "en": "The Roman Stairs",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "الادراج الرومانية"
+    }
+  },
+  {
+    "en": "Roman Forum",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "الاثار الرومانية",
+      "en": "Roman Forum"
+    }
+  },
+  {
+    "en": "Historical Graves",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "منطقة أثرية",
+      "he": "מערות קבורה",
+      "en": "Historical Graves"
+    }
+  },
+  {
+    "en": "Roman Theatre",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "المدرج الروماني",
+      "en": "Roman Theatre"
+    }
+  },
+  {
+    "en": "Zawata",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "منطقة اثرية"
+    }
+  },
+  {
+    "en": "Columns",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "اعمدة",
+      "en": "Columns"
+    }
+  },
+  {
+    "en": "Old Al-Arroub",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "العروب القديمة",
+      "en": "Old Al-Arroub"
+    }
+  },
+  {
+    "en": "Old Houses",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "بيوت قديمة",
+      "en": "Old Houses"
+    }
+  },
+  {
+    "en": "Roman Houses",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "بيوت رومانية",
+      "en": "Roman Houses"
+    }
+  },
+  {
+    "en": "Old Houses",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "بيوت قديمة",
+      "en": "Old Houses"
+    }
+  },
+  {
+    "en": "Old Mosque",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "المسجد القديم"
+    }
+  },
+  {
+    "en": "An Nabi Salih Grave",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "قبر النبي صالح",
+      "en": "An Nabi Salih Grave"
+    }
+  },
+  {
+    "en": "Qasr Hisham",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Palais d'Hisham",
+      "ar": "قصر هشام",
+      "he": "חורבת אל-מפג׳ר",
+      "en": "Qasr Hisham"
+    }
+  },
+  {
+    "en": "Kur",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "مبنى اثري"
+    }
+  },
+  {
+    "en": "Old THeater",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "مسرح قديم"
+    }
+  },
+  {
+    "en": "Ariassos",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Άριασσός"
+    }
+  },
+  {
+    "en": "Serapheum",
+    "category": "necropolis",
+    "civilization": "ancient_egyptian",
+    "translations": {
+      "hu": "Szerafeum",
+      "ru": "Серапиум"
+    }
+  },
+  {
+    "en": "Chalcolithic Temple",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "معبد نحاسي",
+      "he": "המקדש הכלכוליתי",
+      "en": "Chalcolithic Temple"
+    }
+  },
+  {
+    "en": "Canaanite Gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "שער אברהם",
+      "en": "Abraham's Gate"
+    }
+  },
+  {
+    "en": "En Nabi Daoud",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "En Nabi Daoud",
+      "ar": "النبي داوود",
+      "en": "En Nabi Daoud",
+      "de": "En Nabi Daoud"
+    }
+  },
+  {
+    "en": "Kings Tomb 8",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Царские гробницы 8"
+    }
+  },
+  {
+    "en": "Kings Tomb 5",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Царские гробницы 5"
+    }
+  },
+  {
+    "en": "Kings Tomb 9",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Царские гробницы 9"
+    }
+  },
+  {
+    "en": "Kings Tomb 3",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Царские гробницы 3"
+    }
+  },
+  {
+    "en": "Kings Tomb 4",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Царские гробницы 4"
+    }
+  },
+  {
+    "en": "Kings Tomb 7",
+    "category": "Archaeological Site",
+    "translations": {
+      "lt": "Karalių kapai"
+    }
+  },
+  {
+    "en": "Qasr Dabbagh",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "قصر دباغ",
+      "fr": "Qasr Dabbagh",
+      "en": "Qasr Dabbagh",
+      "de": "Qasr Dabbagh"
+    }
+  },
+  {
+    "en": "Tall Dahr ash Shuwayrah",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل ضهر الشويرة",
+      "fr": "Tell Chuera",
+      "en": "Tall Dahr ash Shuwayrah",
+      "de": "Tall Dahr ash Shuwayrah"
+    }
+  },
+  {
+    "en": "Habbubah al Kabirah",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "حبوبة الكبيرة",
+      "fr": "Habbubah al Kabirah",
+      "en": "Habbubah al Kabirah",
+      "de": "Habbubah al Kabirah"
+    }
+  },
+  {
+    "en": "Tel Burga",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל בורגה",
+      "en": "Tel Burga"
+    }
+  },
+  {
+    "en": "Qasr Al-Azraq",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "قصر الأزرق‎",
+      "en": "Qasr Al-Azraq"
+    }
+  },
+  {
+    "en": "Khirbat el Hammam",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת יונים",
+      "en": "Khirbat el Hammam"
+    }
+  },
+  {
+    "en": "Horbat Kfar Bish",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת כפר ביש",
+      "en": "Horbat Kfar Bish"
+    }
+  },
+  {
+    "en": "Yazılıkaya",
+    "category": "place_of_worship",
+    "translations": {
+      "lt": "Jaziliskaja",
+      "ru": "Язылыкая"
+    }
+  },
+  {
+    "en": "Avdat",
+    "category": "Archaeological Site",
+    "translations": {
+      "vi": "Avdat",
+      "tr": "Avdat",
+      "sl": "Avdat",
+      "pl": "Oboda",
+      "nl": "Avdat",
+      "mn": "Авдат",
+      "ja": "アヴダト",
+      "fi": "Avdat",
+      "lt": "Avdatas",
+      "uk": "Авдат",
+      "pt": "Obodate",
+      "it": "Avdat",
+      "es": "Avdat",
+      "cs": "Avdat",
+      "fr": "Avdat",
+      "he": "עבדת",
+      "en": "Avdat",
+      "ru": "Авдат",
+      "de": "Avdat"
+    }
+  },
+  {
+    "en": "Nimrod Fortress",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Forteresse de Nimrod",
+      "ar": "قلعة الصبيبة",
+      "he": "מבצר נמרוד",
+      "en": "Nimrod Fortress",
+      "de": "Burg Nimrod"
+    }
+  },
+  {
+    "en": "Tel Tzoba",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל צובה",
+      "en": "Tel Tzoba"
+    }
+  },
+  {
+    "en": "Rujum el Hiri",
+    "category": "megalith",
+    "translations": {
+      "pl": "Rujum el Hiri",
+      "en": "Rujm el-Hiri",
+      "he": "גלגל רפאים",
+      "fr": "Rujm el-Hiri",
+      "ar": "رجم الهري",
+      "ru": "Колесо духов"
+    }
+  },
+  {
+    "en": "Hurkania",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מבצר הורקניה",
+      "en": "Hurkania"
+    }
+  },
+  {
+    "en": "Laodicea",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Лаодикея на Лике"
+    }
+  },
+  {
+    "en": "Termessos - Cisterns",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Термессос - Цистерны"
+    }
+  },
+  {
+    "en": "Horvat Akav",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת עקב",
+      "en": "Horvat Akav"
+    }
+  },
+  {
+    "en": "Ahramat Abu Sir",
+    "category": "Archaeological Site",
+    "translations": {
+      "cs": "Abúsír",
+      "ar": "أهرام أبو صير",
+      "fr": "Ahramat Abu Sir",
+      "en": "Ahramat Abu Sir",
+      "de": "Ahramat Abu Sir"
+    }
+  },
+  {
+    "en": "Mastaba of Meruduka",
+    "category": "Archaeological Site",
+    "civilization": "ancient_egyptian",
+    "translations": {
+      "ar": "مصطبة مروروكة",
+      "fr": "Mastaba of Meruduka",
+      "en": "Mastaba of Meruduka",
+      "de": "Mastaba of Meruduka"
+    }
+  },
+  {
+    "en": "Haram al Maharbash",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "هرم المهربش",
+      "fr": "Haram al Maharbash",
+      "en": "Haram al Maharbash",
+      "de": "Haram al Maharbash"
+    }
+  },
+  {
+    "en": "Pyramid of Queen Udjebten",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "هرم الملكة أودجبتن",
+      "fr": "Pyramid of Queen Udjebten",
+      "en": "Pyramid of Queen Udjebten",
+      "de": "Pyramid of Queen Udjebten"
+    }
+  },
+  {
+    "en": "Pyramid of the Two Angles",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Pyramid of the Two Angles",
+      "ar": "هرم الملائكة الإثنين",
+      "en": "Pyramid of the Two Angles",
+      "de": "Pyramid of the Two Angles"
+    }
+  },
+  {
+    "en": "Haram Senusret III",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "هرم سنوسرت الثالث",
+      "fr": "Haram Senusret III",
+      "en": "Haram Senusret III",
+      "de": "Haram Senusret III"
+    }
+  },
+  {
+    "en": "Hammam as-Sarah",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Khirbat Hamman Sarkh",
+      "ar": "خربة حمام الصرخ",
+      "en": "Hammam as-Sarah",
+      "de": "Khirbat Hamman Sarkh"
+    }
+  },
+  {
+    "en": "Um Al-Jimal",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Um al Djimal",
+      "ar": "أم الجمال",
+      "en": "Um Al-Jimal",
+      "de": "Um al Djimal"
+    }
+  },
+  {
+    "en": "Ashurian fortress",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "La forteresse assyrienne",
+      "he": "המצודה האשורית",
+      "en": "Ashurian fortress"
+    }
+  },
+  {
+    "en": "Selge",
+    "category": "city",
+    "translations": {
+      "el": "Σελγη"
+    }
+  },
+  {
+    "en": "Herod's Ancient Amphitheatre",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מתחם התיאטרון - הרודיון",
+      "en": "Herod's Ancient Amphitheatre"
+    }
+  },
+  {
+    "en": "Lower Herodion",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "הרודיון התחתית",
+      "en": "Lower Herodion"
+    }
+  },
+  {
+    "en": "Herod's Tomb",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מבנה קבר הורדוס",
+      "en": "Herod's Tomb"
+    }
+  },
+  {
+    "en": "Roman Garden",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "הגן הרומי",
+      "en": "Roman Garden"
+    }
+  },
+  {
+    "en": "Water Cisterns",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בורות המים",
+      "en": "Water Cisterns"
+    }
+  },
+  {
+    "en": "Water Cisterns",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בורות המים",
+      "en": "Water Cisterns"
+    }
+  },
+  {
+    "en": "Winepresses",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חוות הגתות",
+      "en": "Winepresses"
+    }
+  },
+  {
+    "en": "Horvat Tinshemet",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Owl Ruins",
+      "he": "חורבת תנשמת"
+    }
+  },
+  {
+    "en": "Archaeological park II & Burnt Palace",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Le Palais Brûlé"
+    }
+  },
+  {
+    "en": "Madaba Archaeological Park",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Parc Archéologique"
+    }
+  },
+  {
+    "en": "Madaba Museum",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Museo de Madaba"
+    }
+  },
+  {
+    "en": "כתובת גזר מס. 12",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כתובת גזר מס. 12"
+    }
+  },
+  {
+    "en": "Amphitheater",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Amphithéâtre d'Eleutheropolis",
+      "he": "אמפיתאטרון",
+      "en": "Amphitheater"
+    }
+  },
+  {
+    "en": "Columbarium",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קולומבריום",
+      "en": "Columbarium"
+    }
+  },
+  {
+    "en": "Dara",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Dara",
+      "de": "Dara-Anastasiupolis",
+      "el": "Δαραί;’Aναστασιούπολις"
+    }
+  },
+  {
+    "en": "Roman Mile Stones",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אבני מיל רומיות",
+      "en": "Roman Mile Stones"
+    }
+  },
+  {
+    "en": "Yeroham Stronghold",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד ירוחם",
+      "en": "Yeroham Stronghold"
+    }
+  },
+  {
+    "en": "Fortress of Kaysun",
+    "category": "Archaeological Site",
+    "translations": {
+      "hy": "Քեսունի բերդ",
+      "en": "Fortress of Kaysun"
+    }
+  },
+  {
+    "en": "the 10 monuments",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "עשר המצבות",
+      "en": "the 10 monuments"
+    }
+  },
+  {
+    "en": "Water Works",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מפעל המים",
+      "en": "Water Works"
+    }
+  },
+  {
+    "en": "Hirbet Midras",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת מדרס",
+      "en": "Hirbet Midras"
+    }
+  },
+  {
+    "en": "Tel Michal",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Michal",
+      "he": "תל מיכל",
+      "en": "Tel Michal"
+    }
+  },
+  {
+    "en": "Bizantine Church",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כנסיה ביזאנטית",
+      "en": "Bizantine Church"
+    }
+  },
+  {
+    "en": "Four room house",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית ארבעת המרחבים",
+      "en": "Four room house"
+    }
+  },
+  {
+    "en": "Philosopher's Circle",
+    "category": "Archaeological Site",
+    "translations": {
+      "hu": "Filozófusok köre"
+    }
+  },
+  {
+    "en": "Mamaluk minaret",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "منارة المملوك",
+      "he": "צריח ממלוכי",
+      "en": "Mamaluk minaret"
+    }
+  },
+  {
+    "en": "Excavations",
+    "category": "Archaeological Site",
+    "translations": {
+      "ro": "excavări",
+      "he": "חפירות",
+      "en": "Excavations"
+    }
+  },
+  {
+    "en": "Abu-Nabut Sabil",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "סביל אבו-נבוט",
+      "en": "Abu-Nabut Sabil"
+    }
+  },
+  {
+    "en": "Tell Dayr Alla",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل دير علا"
+    }
+  },
+  {
+    "en": "Ra'amsses II City Gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "שער העיר מימי רעמסס השני",
+      "en": "Ra'amsses II City Gate"
+    }
+  },
+  {
+    "en": "Naula",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Наула"
+    }
+  },
+  {
+    "en": "Hammam Al-Aramani",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "حمام القرماني",
+      "he": "חמאם אל־קרמאני",
+      "en": "Hammam Al-Aramani"
+    }
+  },
+  {
+    "en": "Tel Hebron",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل الرميدة",
+      "he": "תל חברון",
+      "en": "Tel Hebron"
+    }
+  },
+  {
+    "en": "Mosaic Floor",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "פסיפס",
+      "en": "Mosaic Floor"
+    }
+  },
+  {
+    "en": "Bet HaKshatot",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ביר אל בירה",
+      "en": "Bir el Bire"
+    }
+  },
+  {
+    "en": "Roman Bath",
+    "category": "Archaeological Site",
+    "translations": {
+      "ro": "Băile romane",
+      "he": "בית מרחץ רומי",
+      "en": "Roman Bath"
+    }
+  },
+  {
+    "en": "Blaundus Antik Kenti",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Βλαῦνδος"
+    }
+  },
+  {
+    "en": "Tel Gimzu",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל גמזו",
+      "en": "Tel Gimzu"
+    }
+  },
+  {
+    "en": "Salamis",
+    "category": "Archaeological Site",
+    "translations": {
+      "ml": "സലാമിസ്",
+      "hu": "Szalamisz",
+      "lt": "Archeologinė vietovė"
+    }
+  },
+  {
+    "en": "The Khan (han)",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Le Khan",
+      "he": "חנות קירה",
+      "en": "The Khan (han)"
+    }
+  },
+  {
+    "en": "Deir Aziz snagogue",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית כנסת עתיק דיר עזיז",
+      "en": "Deir Aziz snagogue"
+    }
+  },
+  {
+    "en": "Old Meron Synagogue",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית הכנסת העתיק של מירון",
+      "en": "Old Meron Synagogue"
+    }
+  },
+  {
+    "en": "Goded mound",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Goded",
+      "he": "תל גודד",
+      "en": "Goded mound"
+    }
+  },
+  {
+    "en": "HaMenora Caves",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערות המנורה",
+      "en": "HaMenora Caves"
+    }
+  },
+  {
+    "en": "Zvartnots Cathedral",
+    "category": "Archaeological Site",
+    "civilization": "Armenian",
+    "translations": {
+      "ml": "സ്വാർട്ട്നോട്ട്സ് കത്തീഡ്രൽ",
+      "hy": "Զվարթնոց տաճար",
+      "fr": "Cathédrale de Zvartnots",
+      "en": "Zvartnots Cathedral",
+      "ru": "Храм Звартноц"
+    }
+  },
+  {
+    "en": "Canaanite city gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "שער העיר הכנעני",
+      "en": "Canaanite city gate"
+    }
+  },
+  {
+    "en": "Shiklon ruins",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת שקלון",
+      "en": "Shiklon ruins"
+    }
+  },
+  {
+    "en": "Ivriz rock reliefs",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Ivriz rock reliefs",
+      "de": "Felsrelief von Ivriz"
+    }
+  },
+  {
+    "en": "בארות מים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בארות מים"
+    }
+  },
+  {
+    "en": "Metzad Abirim",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד אבירים",
+      "en": "Metzad Abirim"
+    }
+  },
+  {
+    "en": "Izbet Sartah",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Izbet Sartah",
+      "he": "עזבת צרתה (אבן העזר)",
+      "en": "Izbet Sartah"
+    }
+  },
+  {
+    "en": "Ancient Amphitheatre / Odeion",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אודיאון",
+      "en": "Ancient Amphitheatre / Odeion"
+    }
+  },
+  {
+    "en": "Israelite Gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Solomon's gate",
+      "he": "שער שלמה"
+    }
+  },
+  {
+    "en": "Canaanite temples",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "המקדשים הכנעניים",
+      "en": "Canaanite temples"
+    }
+  },
+  {
+    "en": "Later Canaanite gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "השער הכנעני המאוחר",
+      "en": "Later Canaanite gate"
+    }
+  },
+  {
+    "en": "The Southern Stables",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "האורוות הדרומיות",
+      "en": "The Southern Stables"
+    }
+  },
+  {
+    "en": "Ancient Canaanite gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "השערים הכנעניים הקדומים",
+      "en": "Ancient Canaanite gate"
+    }
+  },
+  {
+    "en": "Granary",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בור איסום",
+      "en": "Granary"
+    }
+  },
+  {
+    "en": "Southern Israeli palace",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ארמון ישראלי",
+      "en": "Southern Israeli palace"
+    }
+  },
+  {
+    "en": "Assyrian quarter",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "הרובע האשורי",
+      "en": "Assyrian quarter"
+    }
+  },
+  {
+    "en": "The gallery",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "\"הגלריה\"",
+      "en": "The gallery"
+    }
+  },
+  {
+    "en": "Assyrian Palace",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "הארמונות האשוריים",
+      "en": "Assyrian Palace"
+    }
+  },
+  {
+    "en": "The Northern Stables",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "האורוות הצפוניות",
+      "en": "The Northern Stables"
+    }
+  },
+  {
+    "en": "Canaanite palace",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ארמון כנעני",
+      "en": "Canaanite palace"
+    }
+  },
+  {
+    "en": "Ahwat",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Ahwat",
+      "he": "אל-אחוואט",
+      "en": "Ahwat"
+    }
+  },
+  {
+    "en": "השער הכנעני",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "השער הכנעני"
+    }
+  },
+  {
+    "en": "Pelegrin Fortress",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מבצר פלגרין",
+      "en": "Pelegrin Fortress"
+    }
+  },
+  {
+    "en": "Le Destroit",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tour du Détroit",
+      "he": "מבצר דטרוא",
+      "en": "Le Destroit"
+    }
+  },
+  {
+    "en": "Beit Alfa Ancient Synagogue",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית הכנסת העתיק בית אלפא",
+      "en": "Beit Alfa Ancient Synagogue"
+    }
+  },
+  {
+    "en": "גבעת הכתובות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גבעת הכתובות"
+    }
+  },
+  {
+    "en": "Hirbet Shua",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Khirbat Umm el Lauz",
+      "he": "חורבת שוע"
+    }
+  },
+  {
+    "en": "מצודת הונין",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצודת הונין"
+    }
+  },
+  {
+    "en": "טחונת אם רעי",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "טחונת אם רעי"
+    }
+  },
+  {
+    "en": "Church",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Église",
+      "en": "Church",
+      "de": "frühchristliche Kirchenruine"
+    }
+  },
+  {
+    "en": "Cellarka",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Гробницы Челларка"
+    }
+  },
+  {
+    "en": "KING TOMBS ARCHEOLOGICAL PLACE",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Исторический музей Протараса"
+    }
+  },
+  {
+    "en": "Remalia water holes",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בורות רמליה",
+      "en": "Remalia water holes"
+    }
+  },
+  {
+    "en": "Roman Baths",
+    "category": "Archaeological Site",
+    "civilization": "ancient_roman",
+    "translations": {
+      "he": "מרחצאות רומיים",
+      "en": "Roman Baths"
+    }
+  },
+  {
+    "en": "Antiochia ad Cragum",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Antiochia ad Cragum",
+      "de": "Antiochia am Kragos",
+      "el": "Αντιόχεια του Κράγου"
+    }
+  },
+  {
+    "en": "Anim synagogue",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Sinagoga de Anim",
+      "fr": "Anim synagogue",
+      "he": "חורבת ענים",
+      "en": "Anim synagogue"
+    }
+  },
+  {
+    "en": "Roman Theater",
+    "category": "Archaeological Site",
+    "civilization": "ancient_roman",
+    "translations": {
+      "he": "תיאטרון רומי",
+      "en": "Roman Theater"
+    }
+  },
+  {
+    "en": "Khirbet DJumdjum",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ח'רבת ג'ומג'ום",
+      "en": "Khirbet DJumdjum"
+    }
+  },
+  {
+    "en": "Aristobuliya",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אריסטובוליה",
+      "en": "Aristobuliya"
+    }
+  },
+  {
+    "en": "Tel Dudaim",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל דודאים",
+      "en": "Tel Dudaim"
+    }
+  },
+  {
+    "en": "Maccabi Tombs",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קברות המכבים",
+      "en": "Maccabi Tombs"
+    }
+  },
+  {
+    "en": "קצר ברדוויל",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קצר ברדוויל"
+    }
+  },
+  {
+    "en": "Water-Powered Flour Mill",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "טחנת קמח המופעלת בכוח המים",
+      "en": "Water-Powered Flour Mill"
+    }
+  },
+  {
+    "en": "Tel Yodfat",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Jotapata",
+      "he": "יודפת העתיקה",
+      "en": "Tel Yodfat"
+    }
+  },
+  {
+    "en": "Ruin of Mopsuestia",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Ruin of Mopsuestia"
+    }
+  },
+  {
+    "en": "Naffach",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "נפח",
+      "en": "Naffach"
+    }
+  },
+  {
+    "en": "Tsitsernakaberd",
+    "category": "Archaeological Site",
+    "translations": {
+      "hy": "Ծիծեռնակաբերդ",
+      "en": "Tsitsernakaberd",
+      "ru": "Мемориальный комплекс Цицернакаберд",
+      "de": "Schwalbenfestung"
+    }
+  },
+  {
+    "en": "Mey Kedem",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מי קדם",
+      "en": "Mey Kedem"
+    }
+  },
+  {
+    "en": "Cathedral",
+    "category": "Archaeological Site",
+    "civilization": "byzantine",
+    "translations": {
+      "he": "קתדרלה",
+      "en": "Cathedral"
+    }
+  },
+  {
+    "en": "The Giant's Walls",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "The Giant's Walls"
+    }
+  },
+  {
+    "en": "Yuvacalı Settlement Mound",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Yuvacalı Settlement Mound"
+    }
+  },
+  {
+    "en": "kaskas",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חירבת כסכס",
+      "en": "kaskas"
+    }
+  },
+  {
+    "en": "mishmes",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חירבת משמש",
+      "en": "mishmes"
+    }
+  },
+  {
+    "en": "Triumphal arch",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Triumphal arch"
+    }
+  },
+  {
+    "en": "Gozana",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "جوزانة (ثقافة خلف)",
+      "en": "Gozana",
+      "ru": "Гузана (халафская культура)"
+    }
+  },
+  {
+    "en": "تل موزان",
+    "category": "Archaeological Site",
+    "translations": {
+      "ku": "Girê Mozan-Orkiş",
+      "ar": "أوركيش"
+    }
+  },
+  {
+    "en": "Beit Guvrin",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית גוברין - מרשה",
+      "en": "Beyt-Guvrin",
+      "fr": "Bet Guvrin-Maresha"
+    }
+  },
+  {
+    "en": "Roman Road Ruins",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "שרידי דרך רומית",
+      "en": "Roman Road Ruins"
+    }
+  },
+  {
+    "en": "מקדש הנמרים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מקדש הנמרים"
+    }
+  },
+  {
+    "en": "Archäologischer Park „Durch die Zeiten“",
+    "category": "Archaeological Site",
+    "translations": {
+      "ro": "Parcul arheologic „Timpul”",
+      "hu": "„Az időkön át” régészeti park",
+      "de": "Archäologischer Park „Durch die Zeiten“"
+    }
+  },
+  {
+    "en": "beit ras",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית ראס",
+      "en": "beit ras"
+    }
+  },
+  {
+    "en": "Kathisma",
+    "category": "Archaeological Site",
+    "translations": {
+      "it": "Kathisma",
+      "he": "קתיסמה",
+      "en": "Kathisma"
+    }
+  },
+  {
+    "en": "קלעת אבו-מען",
+    "category": "Archaeological Site",
+    "civilization": "ottoman",
+    "translations": {
+      "he": "קלעת אבו-מען"
+    }
+  },
+  {
+    "en": "תל שרע",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Sera",
+      "he": "תל שרע"
+    }
+  },
+  {
+    "en": "חורבת רוגם",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת רוגם"
+    }
+  },
+  {
+    "en": "חורבת חשיף",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת חשיף"
+    }
+  },
+  {
+    "en": "Kamares Aqueduct",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Αρχαιολογικά ερείπια υδραγωγείου"
+    }
+  },
+  {
+    "en": "חורבת פטום",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת פטום"
+    }
+  },
+  {
+    "en": "חורבת עדולם",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת עדולם"
+    }
+  },
+  {
+    "en": "Khirbat Sab",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת סבע",
+      "en": "Khirbat Sab"
+    }
+  },
+  {
+    "en": "Khirbat Umm el Basal",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת אום אל בצל",
+      "en": "Khirbat Umm el Basal"
+    }
+  },
+  {
+    "en": "Khirbat Umm Tunis",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת אם טונס",
+      "en": "Khirbat Umm Tunis"
+    }
+  },
+  {
+    "en": "Horvat Kobi",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת קובי",
+      "en": "Horvat Kobi"
+    }
+  },
+  {
+    "en": "חורבת וואלג'ה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת וואלג'ה"
+    }
+  },
+  {
+    "en": "Hirbat Qaiyafa",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מבצר האלה",
+      "fr": "Khirbet Qeiyafa",
+      "en": "Hirbat Qaiyafa"
+    }
+  },
+  {
+    "en": "Kyaneai",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Κυανέαι"
+    }
+  },
+  {
+    "en": "Tel Ayalon",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל איילון",
+      "en": "Tel Ayalon"
+    }
+  },
+  {
+    "en": "Arsameia",
+    "category": "Archaeological Site",
+    "translations": {
+      "hy": "Արսամեա",
+      "tr": "Eski Kale",
+      "de": "Arsameia am Nymphaios"
+    }
+  },
+  {
+    "en": "Yalburt Hittite Pool",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Yalburt Hittite Pool",
+      "de": "Hethitische Teichanlage Yalburt"
+    }
+  },
+  {
+    "en": "Djinn Blocks",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Bloques Djinn",
+      "en": "Djinn Blocks",
+      "de": "Geisterblöcke"
+    }
+  },
+  {
+    "en": "Husham mound",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת חושם",
+      "en": "Husham mound"
+    }
+  },
+  {
+    "en": "Tall Sahaki Archaeological",
+    "category": "tell",
+    "civilization": "babylon",
+    "translations": {
+      "fr": "Tall Sahaki",
+      "ar": "تل سحاكي",
+      "en": "Tall Sahaki Archaeological",
+      "de": "Tall Sahaki"
+    }
+  },
+  {
+    "en": "Tall al Abtakh",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل الأبطخ",
+      "fr": "Tall al Abtakh",
+      "en": "Tall al Abtakh",
+      "de": "Tall al Abtakh"
+    }
+  },
+  {
+    "en": "Al Hadar",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "معبد الحضر",
+      "fr": "Al Hadar",
+      "en": "Al Hadar",
+      "de": "Al Hadar"
+    }
+  },
+  {
+    "en": "Athar al Hadar",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "آثار الحضر",
+      "fr": "Athar al Hadar",
+      "en": "Athar al Hadar",
+      "de": "Athar al Hadar"
+    }
+  },
+  {
+    "en": "Ain Dara temple",
+    "category": "Archaeological Site",
+    "translations": {
+      "pl": "Świątynia w Ain Dara",
+      "ru": "Тахун-Андара"
+    }
+  },
+  {
+    "en": "The Ancient Bath House",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "الحمام القديم في الناصرة",
+      "he": "בית המרחץ העתיק",
+      "en": "The Ancient Bath House"
+    }
+  },
+  {
+    "en": "Makronissos Tombs",
+    "category": "Archaeological Site",
+    "translations": {
+      "uk": "Скельні гробниці Макронісос (Makronissos Tombs)",
+      "ru": "Скальные гробницы Макронисос"
+    }
+  },
+  {
+    "en": "Nekarot bastion",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד נקרות",
+      "en": "Nekarot bastion"
+    }
+  },
+  {
+    "en": "Garden Temple",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Templo del Jardín",
+      "en": "Garden Temple",
+      "de": "Gartentempel"
+    }
+  },
+  {
+    "en": "Pepuza",
+    "category": "Archaeological Site",
+    "translations": {
+      "de": "Pepouza",
+      "el": "Πέπουζα"
+    }
+  },
+  {
+    "en": "Painted Room",
+    "category": "Archaeological Site",
+    "translations": {
+      "de": "Bemalter Raum"
+    }
+  },
+  {
+    "en": "Khirbet ed-Dharih",
+    "category": "settlement",
+    "civilization": "nabatean",
+    "translations": {
+      "ar": "خربة الذريح",
+      "en": "Khirbet ed-Dharih"
+    }
+  },
+  {
+    "en": "Atlit Yam",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "הכפר הנאוליתי בעתלית-ים",
+      "en": "Atlit Yam",
+      "de": "Atlit Yam"
+    }
+  },
+  {
+    "en": "Trapezopolis",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Τραπεζόπολις"
+    }
+  },
+  {
+    "en": "Ruins of Herod's Palace",
+    "category": "Archaeological Site",
+    "translations": {
+      "it": "Rovine del Palazzo di Erode",
+      "ar": "أطلال قصر هيرود",
+      "he": "ארמון הרודיאני",
+      "en": "Ruins of Herod's Palace"
+    }
+  },
+  {
+    "en": "Ein Toot",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "עין תות",
+      "en": "Ein Toot"
+    }
+  },
+  {
+    "en": "Tel A-Nasbe",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tel Mizpeh",
+      "he": "תל מצפה"
+    }
+  },
+  {
+    "en": "Tall Al-Ful",
+    "category": "Archaeological Site",
+    "translations": {
+      "ko": "기브아",
+      "he": "גבעת שאול המקראית",
+      "en": "Givah",
+      "fr": "Tell al Ful",
+      "ar": "تل الفول"
+    }
+  },
+  {
+    "en": "الكنيسة البيزنطية",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "الكنيسة البيزنطية",
+      "he": "כנסיה ביזנטית"
+    }
+  },
+  {
+    "en": "Beit Loya ruins",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Horbat Beit Levya",
+      "he": "חורבת בית לויה",
+      "en": "Beit Loya ruins"
+    }
+  },
+  {
+    "en": "Byzantine Church",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כנסית בית לויה",
+      "en": "Byzantine Church"
+    }
+  },
+  {
+    "en": "Solomon's gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "שער שלמה",
+      "en": "Solomon's gate"
+    }
+  },
+  {
+    "en": "Necropolis",
+    "category": "necropolis",
+    "translations": {
+      "ro": "Necropolă",
+      "hu": "Nekropolisz",
+      "he": "נקרופוליס",
+      "en": "Necropolis",
+      "ru": "Некрополь"
+    }
+  },
+  {
+    "en": "Ancient Pool",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "بركة قديمة",
+      "en": "Ancient Pool"
+    }
+  },
+  {
+    "en": "Bethany Saphsaphas",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "موقع المعمودية",
+      "en": "Bethany Saphsaphas"
+    }
+  },
+  {
+    "en": "Cave Cells",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "خلايا الكهف",
+      "en": "Cave Cells"
+    }
+  },
+  {
+    "en": "Bethany-beyond-the-Jordan Baptism Site",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "منطقة كنيسة يوحنا المعمدان",
+      "en": "Bethany-beyond-the-Jordan Baptism Site",
+      "de": "Taufstätte Bethanien jenseits des Jordans"
+    }
+  },
+  {
+    "en": "John the Baptist Spring",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "ربيع يوحنا المعمدان",
+      "en": "John the Baptist Spring"
+    }
+  },
+  {
+    "en": "Saint Mary the Egyptian",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "القديسة مريم المصرية",
+      "en": "Saint Mary the Egyptian"
+    }
+  },
+  {
+    "en": "The Pilgrims Station",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "محطة الحجاج",
+      "en": "The Pilgrims Station"
+    }
+  },
+  {
+    "en": "מקדש יטורי",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מקדש יטורי"
+    }
+  },
+  {
+    "en": "Umm el Kanatir",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אום אל-קנאטר",
+      "en": "Umm el Kanatir"
+    }
+  },
+  {
+    "en": "Gezer-Ramla Aqueduct",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אמת המים גזר רמלה",
+      "en": "Gezer-Ramla Aqueduct"
+    }
+  },
+  {
+    "en": "Tombs",
+    "category": "Archaeological Site",
+    "translations": {
+      "pl": "Pierwsze groby",
+      "he": "קברי בית ראשון",
+      "en": "Tombs"
+    }
+  },
+  {
+    "en": "Herods Tombs",
+    "category": "Archaeological Site",
+    "translations": {
+      "pl": "grobowce rodzinne Heroda",
+      "he": "קברי בית הורדוס",
+      "en": "Herods Tombs"
+    }
+  },
+  {
+    "en": "עקבות של דינוזאור",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "עקבות של דינוזאור"
+    }
+  },
+  {
+    "en": "כתובת תחום גזר מס. 5",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כתובת תחום גזר מס. 5"
+    }
+  },
+  {
+    "en": "Ancient Road",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Ancient Road"
+    }
+  },
+  {
+    "en": "Al Shibli Shrine",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "مقام الشبلي",
+      "en": "Al Shibli Shrine"
+    }
+  },
+  {
+    "en": "Olive presser",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "An Natsha Olive Press",
+      "en": "Olive presser"
+    }
+  },
+  {
+    "en": "סביל",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "סביל"
+    }
+  },
+  {
+    "en": "בית הכנסת נשוט",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית הכנסת נשוט"
+    }
+  },
+  {
+    "en": "Tel Shiloh",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Shiloh",
+      "he": "תל שילה"
+    }
+  },
+  {
+    "en": "גבעת אוגר",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גבעת אוגר"
+    }
+  },
+  {
+    "en": "Sarepta/Makra Kome",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "ساربتا/مكرا كومه",
+      "en": "Sarepta/Makra Kome"
+    }
+  },
+  {
+    "en": "Burqush",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Burqush"
+    }
+  },
+  {
+    "en": "Tel Faror",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל פרור",
+      "en": "Tel Faror"
+    }
+  },
+  {
+    "en": "Emmaus Nicopolis",
+    "category": "Archaeological Site",
+    "civilization": "medieval",
+    "translations": {
+      "ro": "Emmaus Nicopole",
+      "he": "אמאוס ניקופוליס",
+      "en": "Emmaus Nicopolis"
+    }
+  },
+  {
+    "en": "Tall Djindiris",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل جندريس",
+      "en": "Tall Djindiris",
+      "de": "Tall Djindiris"
+    }
+  },
+  {
+    "en": "Meydancık Castle",
+    "category": "Archaeological Site",
+    "translations": {
+      "tr": "Meydancık Kale"
+    }
+  },
+  {
+    "en": "Bozyazı",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Nagidos"
+    }
+  },
+  {
+    "en": "Dur-Sharrukin",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "دور شروكين"
+    }
+  },
+  {
+    "en": "טומולי",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "טומולי"
+    }
+  },
+  {
+    "en": "ציורי סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע"
+    }
+  },
+  {
+    "en": "ציורי סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע"
+    }
+  },
+  {
+    "en": "טומולי",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "טומולי"
+    }
+  },
+  {
+    "en": "Kabara cave",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Grotte de Kébara",
+      "he": "מערת כברה",
+      "en": "Kabara cave"
+    }
+  },
+  {
+    "en": "Tombs of the Sanhedrin",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tombes du Sanhédrin",
+      "he": "קברי הסנהדרין",
+      "en": "Tombs of the Sanhedrin"
+    }
+  },
+  {
+    "en": "Hirbet Usha",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרבת אושה",
+      "en": "Hirbet Usha"
+    }
+  },
+  {
+    "en": "Othman Bin Afan Mosque",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "مسجد عثمان بن عفان",
+      "en": "Othman Bin Afan Mosque"
+    }
+  },
+  {
+    "en": "The old synagogue in Motza",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Ancienne synagogue de Motza",
+      "he": "בית הכנסת העתיק במוצא",
+      "en": "The old synagogue in Motza"
+    }
+  },
+  {
+    "en": "The Columbarium",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת הקולומבריום",
+      "en": "The Columbarium"
+    }
+  },
+  {
+    "en": "The Burial Cave",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה",
+      "en": "The Burial Cave"
+    }
+  },
+  {
+    "en": "מערת הפעמון",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת הפעמון"
+    }
+  },
+  {
+    "en": "Burial cave",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה",
+      "en": "Burial cave"
+    }
+  },
+  {
+    "en": "Sabil of Suleiman",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Sabil of Suleiman"
+    }
+  },
+  {
+    "en": "Bab edh-Dhra",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "باب الذراع",
+      "en": "Bab edh-Dhra"
+    }
+  },
+  {
+    "en": "Taninim hill",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل تنينيم",
+      "he": "תל תנינים",
+      "en": "Taninim hill"
+    }
+  },
+  {
+    "en": "Gortzot' Castle",
+    "category": "fortification",
+    "civilization": "Urartian",
+    "translations": {
+      "hy": "Գործոթ աբերդ",
+      "en": "Gortzot' Castle"
+    }
+  },
+  {
+    "en": "Horom Citadel",
+    "category": "megalith",
+    "translations": {
+      "pl": "Twierdza Horom",
+      "en": "Horom Citadel"
+    }
+  },
+  {
+    "en": "Tell Ischali",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell Ischali"
+    }
+  },
+  {
+    "en": "Pazaar Bathhose",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Pazaar Bathhose"
+    }
+  },
+  {
+    "en": "Columbarium",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קולומבריום",
+      "en": "Columbarium"
+    }
+  },
+  {
+    "en": "Snake Monument",
+    "category": "Archaeological Site",
+    "translations": {
+      "de": "Schlangenmonument"
+    }
+  },
+  {
+    "en": "قصر",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "قصر"
+    }
+  },
+  {
+    "en": "*منطار 12",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار 12"
+    }
+  },
+  {
+    "en": "قصر",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "قصر"
+    }
+  },
+  {
+    "en": "גת עתיקה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת עתיקה"
+    }
+  },
+  {
+    "en": "Byzantine Bathhouse",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Byzantine Bathhouse"
+    }
+  },
+  {
+    "en": "Palladius Street",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Palladius Street"
+    }
+  },
+  {
+    "en": "Roman Temple",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Roman Temple"
+    }
+  },
+  {
+    "en": "Nymphaeum",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Nymphaeum"
+    }
+  },
+  {
+    "en": "Silvanus Street",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Silvanus Street"
+    }
+  },
+  {
+    "en": "The Refugee Caves",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת הפליטים",
+      "en": "The Refugee Caves"
+    }
+  },
+  {
+    "en": "The Synagogue",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית כנסת",
+      "en": "The Synagogue"
+    }
+  },
+  {
+    "en": "Pluto's Gate",
+    "category": "Archaeological Site",
+    "civilization": "ancient_roman",
+    "translations": {
+      "zh": "地狱之门",
+      "la": "Plutonium",
+      "en": "Pluto's Gate"
+    }
+  },
+  {
+    "en": "Ancient Mines",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מכרות עתיקים",
+      "en": "Ancient Mines",
+      "ru": "Древние копи"
+    }
+  },
+  {
+    "en": "Solomon's stables",
+    "category": "Archaeological Site",
+    "translations": {
+      "ro": "Grajdurile lui Solomon",
+      "pl": "Stajnie Salomona",
+      "fi": "Salomonin tallit",
+      "hu": "Salamon istállói",
+      "cs": "Šalomounovy stáje",
+      "ar": "اسطبلات سليمان",
+      "he": "אורוות שלמה",
+      "en": "Solomon's stables",
+      "ru": "Конюшни Соломона",
+      "de": "Ställe Salomons"
+    }
+  },
+  {
+    "en": "מאגורה וסכר",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מאגורה וסכר"
+    }
+  },
+  {
+    "en": "Св. Варнавы",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Св. Варнавы"
+    }
+  },
+  {
+    "en": "Tell Fekheriye",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Tell Fekheriye",
+      "ru": "Телль-Фехерия"
+    }
+  },
+  {
+    "en": "Hirbat Bolek",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרבת בולק",
+      "en": "Hirbat Bolek"
+    }
+  },
+  {
+    "en": "Hirbat Kara",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרבת קרה",
+      "en": "Hirbat Kara"
+    }
+  },
+  {
+    "en": "Tel Zafit",
+    "category": "Archaeological Site",
+    "translations": {
+      "hu": "Tell es-Safi",
+      "en": "Tel Tsafit",
+      "he": "תל צפית"
+    }
+  },
+  {
+    "en": "Radum ruins",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת רדום",
+      "en": "Radum ruins"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Ancient ruins",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "שרידי בית",
+      "en": "Ancient ruins"
+    }
+  },
+  {
+    "en": "מקווה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מקווה"
+    }
+  },
+  {
+    "en": "mkata'",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "المقاطع",
+      "en": "mkata'"
+    }
+  },
+  {
+    "en": "Abraham's Well",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Abraham's Well"
+    }
+  },
+  {
+    "en": "cistern",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מאגורה",
+      "en": "cistern"
+    }
+  },
+  {
+    "en": "Moah",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מואה",
+      "en": "Moah"
+    }
+  },
+  {
+    "en": "The paleolithic temple",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מקדש פליאוליתי",
+      "en": "The paleolithic temple"
+    }
+  },
+  {
+    "en": "Raised convent Samaan",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "أثار دير سمعان",
+      "en": "Raised convent Samaan"
+    }
+  },
+  {
+    "en": "בית הכנסת של מגדל",
+    "category": "Archaeological Site",
+    "translations": {
+      "ro": "Sinagogă din Magdala Sec I",
+      "hu": "Magdala",
+      "fr": "Synagogue Migdal",
+      "he": "בית הכנסת של מגדל",
+      "ru": "Магдала"
+    }
+  },
+  {
+    "en": "Lod Mosaic",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Mosaïque de Lod",
+      "he": "פסיפס לוד",
+      "en": "Lod Mosaic"
+    }
+  },
+  {
+    "en": "Tel Eked",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל עקד",
+      "en": "Tel Eked"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "Horbat Dan'yila",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרבת דנעילה",
+      "en": "Horbat Dan'yila"
+    }
+  },
+  {
+    "en": "Tel Sharuhen",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל שרוחן",
+      "en": "Tel Sharuhen"
+    }
+  },
+  {
+    "en": "Byzantine church, mosaic",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כנסיה ביזנטית ופסיפס",
+      "en": "Byzantine church, mosaic"
+    }
+  },
+  {
+    "en": "חרוטות סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרוטות סלע"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "Jattir",
+    "category": "Archaeological Site",
+    "civilization": "israel",
+    "translations": {
+      "fr": "Yatir",
+      "ar": "خربة عتير",
+      "he": "חורבת יתיר",
+      "en": "Jattir"
+    }
+  },
+  {
+    "en": "گردی کلک مشک",
+    "category": "Archaeological Site",
+    "translations": {
+      "ckb": "گردی کلک مشک"
+    }
+  },
+  {
+    "en": "Khenis",
+    "category": "Archaeological Site",
+    "translations": {
+      "ku": "Xinis",
+      "ar": "خنس",
+      "en": "Khenis"
+    }
+  },
+  {
+    "en": "ציורי סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע"
+    }
+  },
+  {
+    "en": "חרותות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרותות"
+    }
+  },
+  {
+    "en": "tumulus",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "טומולוס",
+      "en": "tumulus"
+    }
+  },
+  {
+    "en": "חרותות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרותות"
+    }
+  },
+  {
+    "en": "מבנה פולחני",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מבנה פולחני"
+    }
+  },
+  {
+    "en": "ציורי סלע, לוחות הברית",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע, לוחות הברית"
+    }
+  },
+  {
+    "en": "ציורי סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע"
+    }
+  },
+  {
+    "en": "חרותות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרותות"
+    }
+  },
+  {
+    "en": "Monastery of Martyrius",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מנזר מרטיריוס",
+      "en": "Monastery of Martyrius"
+    }
+  },
+  {
+    "en": "Khtzkonk Monastery",
+    "category": "Archaeological Site",
+    "translations": {
+      "hy": "Խծկոնք վանք",
+      "tr": "Beşkilise",
+      "en": "Khtzkonk Monastery"
+    }
+  },
+  {
+    "en": "חורבת עומרית",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Omrit",
+      "he": "חורבת עומרית"
+    }
+  },
+  {
+    "en": "חורבת א-רפיד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת א-רפיד"
+    }
+  },
+  {
+    "en": "Theater",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תאטרון",
+      "en": "Theater"
+    }
+  },
+  {
+    "en": "ציורי סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע"
+    }
+  },
+  {
+    "en": "ציורי סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע"
+    }
+  },
+  {
+    "en": "פתח גיחה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "פתח גיחה"
+    }
+  },
+  {
+    "en": "Khirbet Tel Ai",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Khirbet Tel Ai"
+    }
+  },
+  {
+    "en": "Roman Baths",
+    "category": "Archaeological Site",
+    "civilization": "ancient_roman",
+    "translations": {
+      "fr": "Bains Romains",
+      "en": "Roman Baths"
+    }
+  },
+  {
+    "en": "גן לאומי קיסריה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גן לאומי קיסריה"
+    }
+  },
+  {
+    "en": "The Ancient Synagogue Caesaria",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית הכנסת העתיק קיסריה",
+      "en": "The Ancient Synagogue Caesaria"
+    }
+  },
+  {
+    "en": "Hippodrome of Berytus",
+    "category": "Archaeological Site",
+    "civilization": "ancient_roman",
+    "translations": {
+      "ar": "مضمار سباق الخيل الروماني",
+      "en": "Hippodrome of Berytus",
+      "de": "Hippodrom von Berytus"
+    }
+  },
+  {
+    "en": "Baram old synagogue",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית הכנסת העתיק ברעם",
+      "en": "Baram old synagogue"
+    }
+  },
+  {
+    "en": "בית כנסת התחתון גוש חלב",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "كنيس",
+      "he": "בית כנסת התחתון גוש חלב"
+    }
+  },
+  {
+    "en": "Tell Arpachiyah (Tepe Reshwa)",
+    "category": "Archaeological Site",
+    "translations": {
+      "pl": "Tell Arpaczija",
+      "ar": "تل عربجية"
+    }
+  },
+  {
+    "en": "Tel Haror",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל הרור",
+      "en": "Tel Haror"
+    }
+  },
+  {
+    "en": "Apamea Cibotus",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Apamea Cibotus",
+      "el": "Απάμεια η Κιβωτός"
+    }
+  },
+  {
+    "en": "Celaenae",
+    "category": "Archaeological Site",
+    "translations": {
+      "it": "Celene",
+      "es": "Celenas",
+      "en": "Celaenae",
+      "de": "Kelainai",
+      "el": "Κελαιναί"
+    }
+  },
+  {
+    "en": "Sozopolis",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Sozopolis",
+      "el": "Σωζόπολη"
+    }
+  },
+  {
+    "en": "Ma'on",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "معون",
+      "he": "מעון",
+      "en": "Ma'on"
+    }
+  },
+  {
+    "en": "Be'er Shama",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Be'er Shama",
+      "he": "באר שמע",
+      "en": "Be'er Shama"
+    }
+  },
+  {
+    "en": "خربة الطيرة",
+    "category": "Archaeological Site",
+    "civilization": "byzantine",
+    "translations": {
+      "ar": "خربة الطيرة"
+    }
+  },
+  {
+    "en": "Northern Mazghuna pyramid",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "пирамида Северная Мажгуна"
+    }
+  },
+  {
+    "en": "Southern Mazghuna pyramid",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "пирамида Южная Мажгуна"
+    }
+  },
+  {
+    "en": "Minet el-Beida",
+    "category": "Archaeological Site",
+    "civilization": "prehistoric",
+    "translations": {
+      "en": "Minet el-Beida"
+    }
+  },
+  {
+    "en": "חובלתא",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חובלתא"
+    }
+  },
+  {
+    "en": "מחצבות עתיקות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מחצבות עתיקות"
+    }
+  },
+  {
+    "en": "Çayönü Mağaraları",
+    "category": "Archaeological Site",
+    "translations": {
+      "pl": "Çayönü Tepesi"
+    }
+  },
+  {
+    "en": "Tel Shalaf",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Shalaf",
+      "he": "תל שלף",
+      "en": "Tel Shalaf"
+    }
+  },
+  {
+    "en": "Gagae",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Gagae",
+      "el": "Γάγαι"
+    }
+  },
+  {
+    "en": "Acalissus",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Acalissus",
+      "de": "Akalissos",
+      "el": "Ακαλισσός"
+    }
+  },
+  {
+    "en": "Idebessos",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Idebessos",
+      "el": "Ἐδεβησσός"
+    }
+  },
+  {
+    "en": "Phellus",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Phellus",
+      "el": "Φέλλος"
+    }
+  },
+  {
+    "en": "Vasada",
+    "category": "Archaeological Site",
+    "translations": {
+      "el": "Οὐάσαδα"
+    }
+  },
+  {
+    "en": "12 המצבות",
+    "category": "Archaeological Site",
+    "civilization": "bronze-age",
+    "translations": {
+      "he": "12 המצבות"
+    }
+  },
+  {
+    "en": "Kharab Shams",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Kharab Shams"
+    }
+  },
+  {
+    "en": "Bidet a-Sha'ab",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ביד'ת א-שעב",
+      "en": "Bidet a-Sha'ab"
+    }
+  },
+  {
+    "en": "Gilgal Binyamin",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גלגל רימונים",
+      "en": "Gilgal Binyamin"
+    }
+  },
+  {
+    "en": "Mount Eival Alter",
+    "category": "Archaeological Site",
+    "translations": {
+      "ko": "여호수아 제단(에발산)",
+      "en": "The altar of Joshua the son of Nun",
+      "he": "מזבח הר עיבל"
+    }
+  },
+  {
+    "en": "חרותות סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרותות סלע"
+    }
+  },
+  {
+    "en": "Tel Shalem",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Shalem",
+      "he": "תל שלם",
+      "en": "Tel Shalem"
+    }
+  },
+  {
+    "en": "מערת העמוד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת העמוד"
+    }
+  },
+  {
+    "en": "מערת בית המספד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת בית המספד"
+    }
+  },
+  {
+    "en": "מערת בבוקריום",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת בבוקריום"
+    }
+  },
+  {
+    "en": "Roman Soldier Tomb",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Tumba del Soldado",
+      "fr": "Tombe du soldat romain",
+      "en": "Roman Soldier Tomb",
+      "de": "Grab des römischen Soldaten"
+    }
+  },
+  {
+    "en": "Byzantine Oil press",
+    "category": "Archaeological Site",
+    "civilization": "byzantine",
+    "translations": {
+      "he": "גת ביזנטית",
+      "en": "Byzantine Oil press"
+    }
+  },
+  {
+    "en": "Diniktum",
+    "category": "Archaeological Site",
+    "civilization": "babylonian",
+    "translations": {
+      "en": "Diniktum"
+    }
+  },
+  {
+    "en": "Harran",
+    "category": "Archaeological Site",
+    "civilization": "assyrian",
+    "translations": {
+      "ar": "حرّان"
+    }
+  },
+  {
+    "en": "Machnaqa",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Machnaqa"
+    }
+  },
+  {
+    "en": "Ribla",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Riblah",
+      "ar": "ربلة",
+      "de": "Ribla"
+    }
+  },
+  {
+    "en": "Basilica",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Basilique",
+      "en": "Basilica"
+    }
+  },
+  {
+    "en": "סרקופג וקברים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "סרקופג וקברים"
+    }
+  },
+  {
+    "en": "Tell ar-Rimah",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل الرماح",
+      "en": "Tell ar-Rimah"
+    }
+  },
+  {
+    "en": "גת כילודיא",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת כילודיא"
+    }
+  },
+  {
+    "en": "חורבת אל ג'וף",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "خربة الجوفة",
+      "he": "חורבת אל ג'וף"
+    }
+  },
+  {
+    "en": "Baths - Basilica",
+    "category": "Archaeological Site",
+    "civilization": "ancient_roman",
+    "translations": {
+      "en": "Baths - Basilica"
+    }
+  },
+  {
+    "en": "Tombs from the Roman period",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קברים מהתקופה הרומית",
+      "en": "Tombs from the Roman period"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "ancient farm",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חווה חקלאית קדומה",
+      "en": "ancient farm"
+    }
+  },
+  {
+    "en": "South Church ruins, 6th century AD",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "הכנסיה הדרומית",
+      "en": "South Church ruins, 6th century AD"
+    }
+  },
+  {
+    "en": "Gesher",
+    "category": "Archaeological Site",
+    "civilization": "neolithic",
+    "translations": {
+      "he": "גשר",
+      "en": "Gesher"
+    }
+  },
+  {
+    "en": "Wadi Jadid Dolmens",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Wadi Jadid Dolmens",
+      "en": "Wadi Jadid Dolmens"
+    }
+  },
+  {
+    "en": "בור קצינים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בור קצינים"
+    }
+  },
+  {
+    "en": "אמת מים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אמת מים"
+    }
+  },
+  {
+    "en": "מקווה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מקווה"
+    }
+  },
+  {
+    "en": "בית גתות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית גתות"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "Qumran cave",
+    "category": "necropolis",
+    "translations": {
+      "pl": "Jaskinia Qumran",
+      "hu": "Qumran barlang",
+      "it": "Grotta di Qumran",
+      "es": "Cueva de Qumran",
+      "cs": "Kumránská jeskyně",
+      "fr": "Grotte de Qumran",
+      "ar": "قمران كهف",
+      "he": "מערת קומראן",
+      "en": "Qumran cave",
+      "de": "Qumran Höhle"
+    }
+  },
+  {
+    "en": "Qumran cave",
+    "category": "necropolis",
+    "translations": {
+      "pl": "Jaskinia Qumran",
+      "hu": "Qumran barlang",
+      "it": "Grotta di Qumran",
+      "es": "Cueva de Qumran",
+      "cs": "Kumránská jeskyně",
+      "fr": "Grotte de Qumran",
+      "ar": "قمران كهف",
+      "he": "מערת קומראן",
+      "en": "Qumran cave",
+      "de": "Qumran Höhle"
+    }
+  },
+  {
+    "en": "מצודת גזרון",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצודת גזרון"
+    }
+  },
+  {
+    "en": "Venus Bint Al Malik",
+    "category": "rock_art",
+    "civilization": "ancient_roman",
+    "translations": {
+      "en": "Venus Bint Al Malik"
+    }
+  },
+  {
+    "en": "דיר קלעה",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "دير قلعة",
+      "he": "דיר קלעה"
+    }
+  },
+  {
+    "en": "Pharaumn Column",
+    "category": "Archaeological Site",
+    "translations": {
+      "de": "Säule des Pharao"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Tyre Necropolis",
+    "category": "necropolis",
+    "civilization": "ancient_roman",
+    "translations": {
+      "ar": "مقبرة صور",
+      "en": "Tyre Necropolis"
+    }
+  },
+  {
+    "en": "רוגמים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "רוגמים"
+    }
+  },
+  {
+    "en": "Mamluk guard tower",
+    "category": "fortification",
+    "translations": {
+      "he": "מגדל שמירה ממלוכי",
+      "en": "Mamluk guard tower"
+    }
+  },
+  {
+    "en": "תל דביר – חורבת רבוד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל דביר – חורבת רבוד"
+    }
+  },
+  {
+    "en": "חרוטות סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרוטות סלע"
+    }
+  },
+  {
+    "en": "חרוטות סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרוטות סלע"
+    }
+  },
+  {
+    "en": "תל גְדור",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל גְדור"
+    }
+  },
+  {
+    "en": "Rug'um Zohar",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "רוגם זוהר",
+      "en": "Rug'um Zohar"
+    }
+  },
+  {
+    "en": "Havat Habor",
+    "category": "farm",
+    "civilization": "nabatian,_byzantine",
+    "translations": {
+      "he": "חוות הבור",
+      "en": "Havat Habor"
+    }
+  },
+  {
+    "en": "Qazzazin Pond",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Qazzazin Pond"
+    }
+  },
+  {
+    "en": "Abd Al- Naby Olive Press",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Abd Al- Naby Olive Press"
+    }
+  },
+  {
+    "en": "Al- Sawakneh Neighborhood",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Al- Sawakneh Neighborhood"
+    }
+  },
+  {
+    "en": "Dwaik Palace",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Dwaik Palace"
+    }
+  },
+  {
+    "en": "Souk El-Eskaffiyeh",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Souk El-Eskaffiyeh"
+    }
+  },
+  {
+    "en": "Al- Aqqaba Neighborhood",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Al- Aqqaba Neighborhood"
+    }
+  },
+  {
+    "en": "Glass Factory",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Glass Factory"
+    }
+  },
+  {
+    "en": "Bani Dar Neighborhood",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Bani Dar Neighborhood"
+    }
+  },
+  {
+    "en": "Souk Al- Laban",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Souk Al- Laban"
+    }
+  },
+  {
+    "en": "Al- Muhtasibya",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Al- Muhtasibya"
+    }
+  },
+  {
+    "en": "Al- Attarin Souk",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "سوق العطارين",
+      "en": "Al- Attarin Souk"
+    }
+  },
+  {
+    "en": "Hammam Al-khalil",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Hammam Al-khalil"
+    }
+  },
+  {
+    "en": "Khan Al-Wakaleh",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Khan Al-Wakaleh"
+    }
+  },
+  {
+    "en": "Al-Qunaibi sesame and olive press",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Al-Qunaibi sesame and olive press"
+    }
+  },
+  {
+    "en": "Shahin Khan",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Shahin Khan"
+    }
+  },
+  {
+    "en": "Dari Bath",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Dari Bath"
+    }
+  },
+  {
+    "en": "New Qazzazin Mosque",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "New Qazzazin Mosque"
+    }
+  },
+  {
+    "en": "Al-lahhamin Souk",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Al-lahhamin Souk"
+    }
+  },
+  {
+    "en": "מצודה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצודה"
+    }
+  },
+  {
+    "en": "בורג' ביתין",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בורג' ביתין"
+    }
+  },
+  {
+    "en": "מתקנים חצובים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מתקנים חצובים"
+    }
+  },
+  {
+    "en": "Kdumim Quarries",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Kdumim Quarries",
+      "he": "מחצבות קדומים",
+      "en": "Kdumim Quarries"
+    }
+  },
+  {
+    "en": "Dorotheos' House",
+    "category": "Archaeological Site",
+    "translations": {
+      "de": "Dorotheos-Haus"
+    }
+  },
+  {
+    "en": "Tel Rai",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל ראעי",
+      "en": "Tel Rai"
+    }
+  },
+  {
+    "en": "מנהרת המדרגות המערבית",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מנהרת המדרגות המערבית"
+    }
+  },
+  {
+    "en": "חורבת אגוז",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת אגוז"
+    }
+  },
+  {
+    "en": "Roman city walls",
+    "category": "fortification",
+    "civilization": "roman",
+    "translations": {
+      "en": "Roman city walls"
+    }
+  },
+  {
+    "en": "Assyrian Siege Ramp",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "סוללת המצור האשורי",
+      "en": "Assyrian Siege Ramp"
+    }
+  },
+  {
+    "en": "Canaanite Temple",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מקדש כנעני",
+      "en": "Canaanite Temple"
+    }
+  },
+  {
+    "en": "\"Solomonic Gate\"",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "\"שער שלמה\"",
+      "en": "\"Solomonic Gate\""
+    }
+  },
+  {
+    "en": "בסיס של אבן ריסוק",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בסיס של אבן ריסוק"
+    }
+  },
+  {
+    "en": "חרבת נייאתה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חרבת נייאתה"
+    }
+  },
+  {
+    "en": "The Byzantine Gate",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "השער המערבי הביזנטי",
+      "en": "The Byzantine Gate"
+    }
+  },
+  {
+    "en": "'Ein-Shadud",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "עין שדוד",
+      "en": "'Ein-Shadud"
+    }
+  },
+  {
+    "en": "בזיליקה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בזיליקה"
+    }
+  },
+  {
+    "en": "Saint Paul's church",
+    "category": "church",
+    "translations": {
+      "en": "Saint Paul's church"
+    }
+  },
+  {
+    "en": "Lions church",
+    "category": "church",
+    "translations": {
+      "en": "Lions church"
+    }
+  },
+  {
+    "en": "Samar Desert Kite East",
+    "category": "Desert_Kite",
+    "civilization": "prehistoric",
+    "translations": {
+      "he": "עפיפון סמר מזרח",
+      "en": "Samar Desert Kite East"
+    }
+  },
+  {
+    "en": "Samar Desert Kite West A",
+    "category": "Desert_Kite",
+    "civilization": "prehistoric",
+    "translations": {
+      "he": "עפיפון סמר מרכז",
+      "en": "Samar Desert Kite West A"
+    }
+  },
+  {
+    "en": "Samar Desert Kite West B",
+    "category": "Desert_Kite",
+    "civilization": "prehistoric",
+    "translations": {
+      "he": "עפיפון סמר מערב",
+      "en": "Samar Desert Kite West B"
+    }
+  },
+  {
+    "en": "*منطار 1",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار 1"
+    }
+  },
+  {
+    "en": "*منطار4",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار4"
+    }
+  },
+  {
+    "en": "*منطار3",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار3"
+    }
+  },
+  {
+    "en": "*منطار2",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار2"
+    }
+  },
+  {
+    "en": "*منطار6",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار6"
+    }
+  },
+  {
+    "en": "*منطار7",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار7"
+    }
+  },
+  {
+    "en": "*منطار5",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار5"
+    }
+  },
+  {
+    "en": "*منطار8",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار8"
+    }
+  },
+  {
+    "en": "*منطار 13",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار 13"
+    }
+  },
+  {
+    "en": "*منطار 14",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار 14"
+    }
+  },
+  {
+    "en": "*منطار 15",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار 15"
+    }
+  },
+  {
+    "en": "*منطار15",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار15"
+    }
+  },
+  {
+    "en": "*منطار16",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار16"
+    }
+  },
+  {
+    "en": "*منطار 17",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار 17"
+    }
+  },
+  {
+    "en": "*منطار18",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار18"
+    }
+  },
+  {
+    "en": "*منطار19",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار19"
+    }
+  },
+  {
+    "en": "*منطار20",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار20"
+    }
+  },
+  {
+    "en": "*منطار21",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار21"
+    }
+  },
+  {
+    "en": "*منطار22",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار22"
+    }
+  },
+  {
+    "en": "*منطار23",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار23"
+    }
+  },
+  {
+    "en": "*منطار24",
+    "category": "عين_قينيا",
+    "translations": {
+      "ar": "*منطار24"
+    }
+  },
+  {
+    "en": "הצלחות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "הצלחות"
+    }
+  },
+  {
+    "en": "פירי כריה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "פירי כריה"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Madaba Map",
+    "category": "Archaeological Site",
+    "translations": {
+      "no": "Madabakartet",
+      "id": "Peta Madaba",
+      "eo": "Mozaika mapo de Madaba",
+      "bg": "Мадабска карта",
+      "be": "Карта з Мадабы",
+      "ko": "마다바 지도",
+      "hy": "Մադաբյան քարտեզ",
+      "tr": "Madaba Haritası",
+      "sl": "Zemljevid iz Madabe",
+      "pl": "Mapa z Madaby",
+      "ja": "マダバ地図",
+      "fi": "Madaban kartta",
+      "uk": "Мадабська карта",
+      "pt": "Mapa de Madaba",
+      "it": "Mappa di Madaba",
+      "es": "Mapa de Madaba",
+      "cs": "Madabská mapa",
+      "fr": "Carte de Madaba",
+      "ar": "خارطة مادبا",
+      "he": "מפת מידבא",
+      "en": "Madaba Map",
+      "ru": "Карта из Мадабы",
+      "de": "Mosaikkarte von Madaba"
+    }
+  },
+  {
+    "en": "The Oil Press",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "L'huilerie"
+    }
+  },
+  {
+    "en": "חאן צפיר",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חאן צפיר"
+    }
+  },
+  {
+    "en": "מדרגות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מדרגות"
+    }
+  },
+  {
+    "en": "חורבת לוזה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת לוזה"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "חורבת בית סילה (כנסיית תיאודורס)",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת בית סילה (כנסיית תיאודורס)"
+    }
+  },
+  {
+    "en": "חורבת דור",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת דור"
+    }
+  },
+  {
+    "en": "מצד חלוקים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד חלוקים"
+    }
+  },
+  {
+    "en": "חורבת חצצה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת חצצה"
+    }
+  },
+  {
+    "en": "Horvat Haro'e",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Horvat Haro'e",
+      "he": "חורבת הרועה",
+      "en": "Horvat Haro'e"
+    }
+  },
+  {
+    "en": "מצד משורה הישראלי",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד משורה הישראלי"
+    }
+  },
+  {
+    "en": "מצד משורה הפרסי",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד משורה הפרסי"
+    }
+  },
+  {
+    "en": "מגדל נבטי",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מגדל נבטי"
+    }
+  },
+  {
+    "en": "באר אנטיליה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "באר אנטיליה"
+    }
+  },
+  {
+    "en": "כנסיה ביזנטית",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כנסיה ביזנטית"
+    }
+  },
+  {
+    "en": "Horbat Burgin",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת בורגין",
+      "en": "Horbat Burgin"
+    }
+  },
+  {
+    "en": "גת עתיקה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת עתיקה"
+    }
+  },
+  {
+    "en": "Tel Soco",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל שוכה",
+      "en": "Tel Soco"
+    }
+  },
+  {
+    "en": "Tel Ein HaBesor",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל עין הבשור",
+      "en": "Tel Ein HaBesor"
+    }
+  },
+  {
+    "en": "אבן השבת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אבן השבת"
+    }
+  },
+  {
+    "en": "בית הכנסת העתיק בארבל",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית הכנסת העתיק בארבל"
+    }
+  },
+  {
+    "en": "פסיפס",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "פסיפס"
+    }
+  },
+  {
+    "en": "בית כנסת יודפת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בית כנסת יודפת"
+    }
+  },
+  {
+    "en": "כתובת תחום גזר מס 8.",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כתובת תחום גזר מס 8."
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "שרידי ישוב בתים מעוגלים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "שרידי ישוב בתים מעוגלים"
+    }
+  },
+  {
+    "en": "כתובת תחום גזר מס. 6",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כתובת תחום גזר מס. 6"
+    }
+  },
+  {
+    "en": "סכר הרודיאני",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "סכר הרודיאני"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Underground City",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ciudad subterránea",
+      "fr": "Ville souterraine",
+      "en": "Underground City",
+      "de": "Untergrundstadt"
+    }
+  },
+  {
+    "en": "Tel Burna",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tel Burna",
+      "he": "תל בורנה",
+      "en": "Tel Burna"
+    }
+  },
+  {
+    "en": "ספלולים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ספלולים"
+    }
+  },
+  {
+    "en": "חורבת קשרון",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת קשרון"
+    }
+  },
+  {
+    "en": "אחוזת קבר",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אחוזת קבר"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "תל קילא",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל קילא"
+    }
+  },
+  {
+    "en": "Tell Abu Hawam",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tell Abu Hawam",
+      "he": "תל אבו הואם",
+      "en": "Tell Abu Hawam"
+    }
+  },
+  {
+    "en": "חורבת עירב",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת עירב"
+    }
+  },
+  {
+    "en": "אמת הביאר",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אמת הביאר"
+    }
+  },
+  {
+    "en": "Maneluke Fire Tower",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tour d'Incendie Mameluke",
+      "en": "Maneluke Fire Tower"
+    }
+  },
+  {
+    "en": "Tel Dalit",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל דלית",
+      "en": "Tel Dalit"
+    }
+  },
+  {
+    "en": "מצד קדרון",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד קדרון"
+    }
+  },
+  {
+    "en": "Temple of Bel",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Templo de Baal"
+    }
+  },
+  {
+    "en": "פיר בקרה של אמת המים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "פיר בקרה של אמת המים"
+    }
+  },
+  {
+    "en": "מיצד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מיצד"
+    }
+  },
+  {
+    "en": "Mezad Rahel",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד רחל",
+      "en": "Mezad Rahel"
+    }
+  },
+  {
+    "en": "מצודת נחל אלה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצודת נחל אלה"
+    }
+  },
+  {
+    "en": "מצודת נחל לענה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצודת נחל לענה"
+    }
+  },
+  {
+    "en": "מצודת נחל עקרב",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצודת נחל עקרב"
+    }
+  },
+  {
+    "en": "Nawamis",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "נואמיס",
+      "en": "Nawamis"
+    }
+  },
+  {
+    "en": "וואסמים - חרוטות סלע בדואיות",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "וואסמים - חרוטות סלע בדואיות"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "Tell Fadous",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Tell Fadous",
+      "ar": "تل فدعوس",
+      "en": "Tell Fadous"
+    }
+  },
+  {
+    "en": "חורבת כורכוש",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת כורכוש"
+    }
+  },
+  {
+    "en": "Ketef Hinnom",
+    "category": "tomb",
+    "translations": {
+      "en": "Ketef Hinnom"
+    }
+  },
+  {
+    "en": "חירבת תיבנה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חירבת תיבנה"
+    }
+  },
+  {
+    "en": "קבר בני ישראל",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קבר בני ישראל"
+    }
+  },
+  {
+    "en": "Tell Muhalhal",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל מוחלחל",
+      "en": "Tell Muhalhal"
+    }
+  },
+  {
+    "en": "Horbat Avimor",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת אבימור",
+      "en": "Horbat Avimor"
+    }
+  },
+  {
+    "en": "Khirbet Summeily",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Khirbet Summeily"
+    }
+  },
+  {
+    "en": "Rujm es-Sabit",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "רוג'ם א-סבית",
+      "en": "Rujm es-Sabit"
+    }
+  },
+  {
+    "en": "Khirbet Hamideh",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת חמידה"
+    }
+  },
+  {
+    "en": "Khirbet Shumeila",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת שומילה"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "כבשן סיד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "כבשן סיד"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "קולומבריום",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קולומבריום"
+    }
+  },
+  {
+    "en": "ח'רבת אשון",
+    "category": "settlement",
+    "translations": {
+      "he": "ח'רבת אשון"
+    }
+  },
+  {
+    "en": "מצודת תפן",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצודת תפן"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "Tel Zif",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "تل زيف",
+      "he": "תל זיף",
+      "en": "Tel Zif"
+    }
+  },
+  {
+    "en": "חורבת עין אבו חשבה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "חורבת עין אבו חשבה"
+    }
+  },
+  {
+    "en": "בור סיד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בור סיד"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "Mizpe Sayarim Desert Kite",
+    "category": "Desert_Kite",
+    "translations": {
+      "en": "Mizpe Sayarim Desert Kite"
+    }
+  },
+  {
+    "en": "Nahal Horsha North Desert Kite",
+    "category": "Desert_Kite",
+    "translations": {
+      "en": "Nahal Horsha North Desert Kite"
+    }
+  },
+  {
+    "en": "Achshuv Desert Kite",
+    "category": "Desert_Kite",
+    "translations": {
+      "he": "עפיפון עכשוב",
+      "en": "Achshuv Desert Kite"
+    }
+  },
+  {
+    "en": "Pitam Desert Kite",
+    "category": "Desert_Kite",
+    "translations": {
+      "he": "עפיפון פיטם",
+      "en": "Pitam Desert Kite"
+    }
+  },
+  {
+    "en": "Ein Gedi Desert Kite",
+    "category": "Desert_Kite",
+    "translations": {
+      "he": "עפיפון עין גדי",
+      "en": "Ein Gedi Desert Kite"
+    }
+  },
+  {
+    "en": "Khan Jaljulia",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Khan Jaljulia"
+    }
+  },
+  {
+    "en": "תל זריק",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל זריק"
+    }
+  },
+  {
+    "en": "תנור",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תנור"
+    }
+  },
+  {
+    "en": "תל עירית",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל עירית"
+    }
+  },
+  {
+    "en": "תל מפלסים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל מפלסים"
+    }
+  },
+  {
+    "en": "בור סיד",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "בור סיד"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "אבן כתישה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "אבן כתישה"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "מגדל גורר",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מגדל גורר"
+    }
+  },
+  {
+    "en": "תל עירא",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "תל עירא"
+    }
+  },
+  {
+    "en": "מערת קבורה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מערת קבורה"
+    }
+  },
+  {
+    "en": "ציורי סלע",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "ציורי סלע"
+    }
+  },
+  {
+    "en": "3 סרקופגים",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "3 סרקופגים"
+    }
+  },
+  {
+    "en": "מפרכה",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מפרכה"
+    }
+  },
+  {
+    "en": "Ilıpınar Tumulus",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Ilıpınar Tumulus"
+    }
+  },
+  {
+    "en": "גת",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "גת"
+    }
+  },
+  {
+    "en": "Timna Valley Slave Hill Massebah",
+    "category": "megalith",
+    "translations": {
+      "en": "Timna Valley Slave Hill Massebah"
+    }
+  },
+  {
+    "en": "מצד גראפון",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "מצד גראפון"
+    }
+  },
+  {
+    "en": "Gökbez relief",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Gökbez relief",
+      "de": "Felsrelief von Gökbez"
+    }
+  },
+  {
+    "en": "קבר מתתיהו",
+    "category": "Archaeological Site",
+    "translations": {
+      "he": "קבר מתתיהו"
+    }
+  },
+  {
+    "en": "Uruk",
+    "category": "Archaeological Site",
+    "translations": {
+      "ar": "وركاء",
+      "en": "Uruk"
+    }
+  },
+  {
+    "en": "Tell Hafeez",
+    "category": "Archaeological Site",
+    "civilization": "mesopotamia",
+    "translations": {
+      "ar": "تل حفيظ",
+      "fr": "Tell Hafeez",
+      "en": "Tell Hafeez",
+      "de": "Tell Hafeez"
+    }
+  },
+  {
+    "en": "Ingapirca",
+    "category": "Archaeological Site",
+    "translations": {
+      "lt": "Ingapirka",
+      "ru": "Ингапирка"
+    }
+  },
+  {
+    "en": "Lama terrasses",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Lama terrasses",
+      "de": "Lama-Terrassen von Choquequirao"
+    }
+  },
+  {
+    "en": "Capuliyoc (andenas)",
+    "category": "Archaeological Site",
+    "translations": {
+      "de": "Terrassen von Choquequirao"
+    }
+  },
+  {
+    "en": "Pinchaunuyoc",
+    "category": "Archaeological Site",
+    "translations": {
+      "fr": "Pinchaunuyoc"
+    }
+  },
+  {
+    "en": "Piedra de Sayhuite",
+    "category": "Archaeological Site",
+    "translations": {
+      "lt": "Saivitė"
+    }
+  },
+  {
+    "en": "Wari Kayan",
+    "category": "Archaeological Site",
+    "translations": {
+      "pl": "Kultura Paracas",
+      "lt": "Parakaso kultūra",
+      "uk": "Паракас"
+    }
+  },
+  {
+    "en": "Chuqi Pukyu",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Chuqi Pukyu"
+    }
+  },
+  {
+    "en": "El Tigre",
+    "category": "necropolis",
+    "translations": {
+      "es": "El Tigre"
+    }
+  },
+  {
+    "en": "Quiocta Cave",
+    "category": "settlement",
+    "translations": {
+      "es": "Cavernas de Quiocta",
+      "en": "Quiocta Cave",
+      "de": "Höhlen von Quiocta"
+    }
+  },
+  {
+    "en": "Marcahuamachuco",
+    "category": "settlement",
+    "translations": {
+      "en": "Marcahuamachuco"
+    }
+  },
+  {
+    "en": "Kusilluchayoq",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Templo del mono"
+    }
+  },
+  {
+    "en": "Parque Arqueológico y Ecológico RUMIPAMBA",
+    "category": "Archaeological Site",
+    "translations": {
+      "it": "Parque Arqueologico y Ecologico Rumipamba",
+      "es": "Parque Arqueológico y Ecológico RUMIPAMBA"
+    }
+  },
+  {
+    "en": "Sarcophagi of Carajía",
+    "category": "necropolis",
+    "translations": {
+      "en": "Sarcophagi of Carajía",
+      "de": "Sarkophage von Karajia"
+    }
+  },
+  {
+    "en": "Mausoleums of Revash",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Mausoleums of Revash"
+    }
+  },
+  {
+    "en": "Moray",
+    "category": "Archaeological Site",
+    "translations": {
+      "ru": "Круги Морая"
+    }
+  },
+  {
+    "en": "Ancient remains of Incas",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Restos antiguos de los incas",
+      "en": "Ancient remains of Incas"
+    }
+  },
+  {
+    "en": "Chalapata Ruins",
+    "category": "city",
+    "translations": {
+      "es": "ruinas de Chalapata",
+      "en": "Chalapata Ruins"
+    }
+  },
+  {
+    "en": "Mausoleums of Revash",
+    "category": "necropolis",
+    "translations": {
+      "en": "Mausoleums of Revash",
+      "de": "Felsengräber von Revash"
+    }
+  },
+  {
+    "en": "Kellkata Petroglyphs",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Kellkata Petroglyphs"
+    }
+  },
+  {
+    "en": "Star",
+    "category": "Archaeological Site",
+    "translations": {
+      "it": "Stella",
+      "fr": "Étoile",
+      "en": "Star"
+    }
+  },
+  {
+    "en": "Ancient Inka market, Mauqa Llatta, ruinas",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Ancient Inka market, Mauqa Llatta, ruinas",
+      "de": "Alter Inka Markt, Mauqa Llatta, Ruinen"
+    }
+  },
+  {
+    "en": "Lineas de Nasca",
+    "category": "Archaeological Site",
+    "translations": {
+      "hu": "Nasca vonalak"
+    }
+  },
+  {
+    "en": "Archeological site Tarawasi",
+    "category": "wall",
+    "translations": {
+      "en": "Archeological site Tarawasi"
+    }
+  },
+  {
+    "en": "Chupani ruins",
+    "category": "Archaeological Site",
+    "translations": {
+      "es": "Ruinas de Chupani",
+      "en": "Chupani ruins"
+    }
+  },
+  {
+    "en": "Wiraqocha Pirqa Archaeological Complex",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Wiraqocha Pirqa Archaeological Complex"
+    }
+  },
+  {
+    "en": "Inca Terraces or Sumaqpata",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Inca Terraces or Sumaqpata"
+    }
+  },
+  {
+    "en": "Ofune site",
+    "category": "Archaeological Site",
+    "translations": {
+      "ja": "大船遺跡",
+      "en": "Ofune site"
+    }
+  },
+  {
+    "en": "江別古墳群",
+    "category": "Archaeological Site",
+    "translations": {
+      "ja": "江別古墳群"
+    }
+  },
+  {
+    "en": "Ofune site",
+    "category": "Archaeological Site",
+    "translations": {
+      "ja": "大船遺跡",
+      "en": "Ofune site"
+    }
+  },
+  {
+    "en": "江別古墳群",
+    "category": "Archaeological Site",
+    "translations": {
+      "ja": "江別古墳群"
+    }
+  },
+  {
+    "en": "Mohenjo Daro D. K. area",
+    "category": "Archaeological Site",
+    "translations": {
+      "ja": "モヘンジョダロ",
+      "hi": "मोहन जोदड़ो"
+    }
+  },
+  {
+    "en": "Lothal",
+    "category": "Archaeological Site",
+    "translations": {
+      "hi": "लोथल"
+    }
+  },
+  {
+    "en": "Juni Kuran",
+    "category": "Archaeological Site",
+    "translations": {
+      "en": "Juni Kuran",
+      "hi": "कुरान"
+    }
+  },
+  {
+    "en": "Mohenjo-daro",
+    "category": "Archaeological Site",
+    "translations": {
+      "zh": "摩亨佐-达罗",
+      "ka": "მოჰენჯო-დარო",
+      "hy": "Մոհենջո Դարո",
+      "tr": "Mohenco-daro",
+      "ar": "موهينجو دارو",
+      "en": "Mohenjo-daro",
+      "ru": "Мохенджо-Даро",
+      "el": "Μοχέντζο-ντάρο",
+      "pa": "ਮੋਹਿਨਜੋਦੜੋ",
+      "mr": "मोहेंजोदडो",
+      "kn": "ಮೊಹೆಂಜೊ-ದಾರೋ",
+      "hi": "मोहन जोदड़ो",
+      "gu": "મોહેં-જો-દડો",
+      "bn": "মহেঞ্জোদাড়ো"
+    }
+  },
+  {
+    "en": "Shipwreck",
+    "category": "Archaeological Site",
+    "translations": {
+      "ja": "難破船"
+    }
+  }
+]

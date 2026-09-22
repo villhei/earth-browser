@@ -1,4 +1,5 @@
 import * as THREE from "three"
+import { Language } from "../../i18n/types"
 
 /** Default duration (in seconds) for the terrain highlight shader pulse. */
 export const DEFAULT_TERRAIN_HIGHLIGHT_DURATION = 3.5
@@ -33,7 +34,10 @@ export function hasTerrainHighlight(eraSlug?: string): boolean {
  * Returns customized palette colors based on whether sea levels were higher
  * (flooded lowlands) or lower (exposed continental land bridges).
  */
-export function getTerrainHighlightColors(eraSlug?: string): TerrainHighlightColors {
+export function getTerrainHighlightColors(
+  eraSlug?: string,
+  language: Language = "en",
+): TerrainHighlightColors {
   switch (eraSlug) {
     case "world-bc123000":
       // Eemian Interglacial: high sea levels (+7m) flooded coastal plains worldwide.
@@ -41,7 +45,10 @@ export function getTerrainHighlightColors(eraSlug?: string): TerrainHighlightCol
       return {
         primary: new THREE.Color("#00d2ff"),
         secondary: new THREE.Color("#7df9ff"),
-        label: "Submerged Coastal Lowlands (+7m Sea Level)",
+        label:
+          language === "fi"
+            ? "Meren alle jääneet rannikot (+7m merenpinta)"
+            : "Submerged Coastal Lowlands (+7m Sea Level)",
       }
     case "world-bc10000":
       // Last Glacial Maximum aftermath: -120m sea level, exposing Doggerland, Sundaland, Beringia.
@@ -49,7 +56,10 @@ export function getTerrainHighlightColors(eraSlug?: string): TerrainHighlightCol
       return {
         primary: new THREE.Color("#fbbf24"),
         secondary: new THREE.Color("#34d399"),
-        label: "Exposed Continental Shelves & Land Bridges (-120m Sea Level)",
+        label:
+          language === "fi"
+            ? "Paljastuneet mannerjalustat ja maasillat (-120m merenpinta)"
+            : "Exposed Continental Shelves & Land Bridges (-120m Sea Level)",
       }
     case "world-bc8000":
       // Early Holocene: -50m sea level, shrinking Doggerland and Asian shelves.
@@ -57,7 +67,10 @@ export function getTerrainHighlightColors(eraSlug?: string): TerrainHighlightCol
       return {
         primary: new THREE.Color("#f59e0b"),
         secondary: new THREE.Color("#38bdf8"),
-        label: "Exposed Land Bridges & Coastal Shelves (-50m Sea Level)",
+        label:
+          language === "fi"
+            ? "Paljastuneet maasillat ja rannikkotasangot (-50m merenpinta)"
+            : "Exposed Land Bridges & Coastal Shelves (-50m Sea Level)",
       }
     case "world-bc5000":
       // Mid Holocene: -15m sea level, final stages of prehistoric coastal exposure.
@@ -65,13 +78,19 @@ export function getTerrainHighlightColors(eraSlug?: string): TerrainHighlightCol
       return {
         primary: new THREE.Color("#f97316"),
         secondary: new THREE.Color("#60a5fa"),
-        label: "Exposed Coastal Margins (-15m Sea Level)",
+        label:
+          language === "fi"
+            ? "Paljastuneet rannikkokaistaleet (-15m merenpinta)"
+            : "Exposed Coastal Margins (-15m Sea Level)",
       }
     default:
       return {
         primary: new THREE.Color("#fbbf24"),
         secondary: new THREE.Color("#38bdf8"),
-        label: "Altered Prehistoric Coastlines",
+        label:
+          language === "fi"
+            ? "Muuttuneet esihistorialliset rantaviivat"
+            : "Altered Prehistoric Coastlines",
       }
   }
 }

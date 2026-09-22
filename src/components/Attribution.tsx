@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Language } from "../i18n/types"
 import "./Attribution.css"
 
 export const CREATOR_INFO = {
@@ -21,11 +22,13 @@ export const DATA_SOURCE_INFO = {
 export interface AttributionModalProps {
   isOpen?: boolean
   onClose?: () => void
+  language?: Language
 }
 
 export const AttributionModal: React.FC<AttributionModalProps> = ({
   isOpen = false,
   onClose,
+  language = "en",
 }) => {
 
   useEffect(() => {
@@ -54,15 +57,17 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
       >
         <div className="attribution-modal-header">
           <div className="attribution-modal-title-group">
-            <span className="attribution-modal-tag">Information & Licensing</span>
+            <span className="attribution-modal-tag">
+              {language === "fi" ? "Tietoa ja lisenssit" : "Information & Licensing"}
+            </span>
             <h3 id="attribution-dialog-title" className="attribution-modal-title">
-              Credits & Sources
+              {language === "fi" ? "Lähteet ja tekijätiedot" : "Credits & Sources"}
             </h3>
           </div>
           <button
             className="attribution-modal-close"
             onClick={onClose}
-            aria-label="Close modal"
+            aria-label={language === "fi" ? "Sulje ikkuna" : "Close modal"}
           >
             ✕
           </button>
@@ -70,7 +75,7 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
 
         <div className="attribution-modal-body">
           <section className="attribution-section">
-            <h4>Application & Creator</h4>
+            <h4>{language === "fi" ? "Sovellus & Tekijä" : "Application & Creator"}</h4>
             <p>
               Historical Earth Browser created and developed by <strong>{CREATOR_INFO.name}</strong>.
             </p>
@@ -205,7 +210,7 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
             className="attribution-btn-primary"
             onClick={onClose}
           >
-            Close
+            {language === "fi" ? "Sulje" : "Close"}
           </button>
         </div>
       </div>
@@ -217,12 +222,14 @@ export interface AttributionProps {
   isModalOpen?: boolean
   onOpenModal?: () => void
   onCloseModal?: () => void
+  language?: Language
 }
 
 export const Attribution: React.FC<AttributionProps> = ({
   isModalOpen: controlledIsOpen,
   onOpenModal,
   onCloseModal,
+  language = "en",
 }) => {
   const [internalIsOpen, setInternalIsOpen] = useState(false)
   const isModalOpen = controlledIsOpen !== undefined ? controlledIsOpen : internalIsOpen
@@ -235,8 +242,8 @@ export const Attribution: React.FC<AttributionProps> = ({
         type="button"
         className="app-attribution-btn app-attribution"
         onClick={handleOpen}
-        title="Credits & Sources"
-        aria-label="View credits and sources"
+        title={language === "fi" ? "Lähteet ja tekijätiedot" : "Credits & Sources"}
+        aria-label={language === "fi" ? "Avaa lähteet ja tekijätiedot" : "View credits and sources"}
       >
         <svg
           className="attribution-icon"
@@ -254,12 +261,13 @@ export const Attribution: React.FC<AttributionProps> = ({
           <line x1="12" y1="16" x2="12" y2="12" />
           <line x1="12" y1="8" x2="12.01" y2="8" />
         </svg>
-        <span>Credits & Sources</span>
+        <span>{language === "fi" ? "Lähteet ja tekijätiedot" : "Credits & Sources"}</span>
       </button>
 
       <AttributionModal
         isOpen={isModalOpen}
         onClose={handleClose}
+        language={language}
       />
     </>
   )
