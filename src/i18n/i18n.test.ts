@@ -18,14 +18,18 @@ describe("i18n UI Translation Dictionary", () => {
     expect(t("app_title", "en")).toBe("Earth Browser")
     expect(t("app_title", "fi")).toBe("Earth Browser")
 
-    expect(t("visuals", "en")).toBe("Visuals")
-    expect(t("visuals", "fi")).toBe("Näkymä")
+    expect(t("settings", "en")).toBe("Settings")
+    expect(t("settings", "fi")).toBe("Asetukset")
+    expect(t("visuals", "en")).toBe("Settings")
+    expect(t("visuals", "fi")).toBe("Asetukset")
 
     expect(t("globe_settings", "en")).toBe("Globe Settings")
     expect(t("globe_settings", "fi")).toBe("Maapallon asetukset")
 
     expect(t("territories", "en")).toBe("territories")
     expect(t("territories", "fi")).toBe("aluetta")
+    expect(t("regions", "en")).toBe("regions")
+    expect(t("regions", "fi")).toBe("aluetta")
 
     expect(t("language", "en")).toBe("Language")
     expect(t("language", "fi")).toBe("Kieli")

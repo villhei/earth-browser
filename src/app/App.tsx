@@ -19,7 +19,7 @@ import { CountryDrawer } from "../components/CountryDrawer"
 import { ControlsOverlay } from "../components/ControlsOverlay"
 import { Attribution } from "../components/Attribution"
 import { ActiveEraBanner } from "../components/ActiveEraBanner"
-import { LanguageToggle } from "../components/LanguageToggle"
+import { EraDetailsModal } from "../components/EraDetailsModal"
 import { getIceOverlay } from "../earthTextures/ice"
 import { getTerrainOverlayUrl } from "../earthTextures/coasts"
 import { PuffLoader } from "react-spinners"
@@ -102,6 +102,67 @@ export const App: React.FC = () => {
     null,
   )
   const [isAttributionOpen, setIsAttributionOpen] = useState(false)
+
+  // Responsive viewport tracking
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined") return false
+    return window.innerWidth <= 768
+  })
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  // Mobile timeline drawer state
+  const [isTimelineOpen, setIsTimelineOpen] = useState(false)
+  const handleToggleTimeline = useCallback(() => {
+    setIsTimelineOpen((prev) => !prev)
+  }, [])
+  const handleCloseTimeline = useCallback(() => {
+    setIsTimelineOpen(false)
+  }, [])
+
+  // Era details modal state (appears in screen center on era change on mobile)
+  const [isEraDetailsOpen, setIsEraDetailsOpen] = useState(false)
+  const prevEraIdRef = useRef<string | null>(null)
+  const initialLoadDoneRef = useRef(false)
+
+  // Era navigation handlers
+  const currentEraIndex = useMemo(() => {
+    if (!currentEra) return -1
+    return eras.findIndex((e) => e.id === currentEra.id)
+  }, [eras, currentEra])
+
+  const hasPrevEra = currentEraIndex > 0
+  const hasNextEra = currentEraIndex >= 0 && currentEraIndex < eras.length - 1
+
+  const handlePrevEra = useCallback(() => {
+    if (currentEraIndex > 0) {
+      setCurrentEra(eras[currentEraIndex - 1])
+    }
+  }, [eras, currentEraIndex])
+
+  const handleNextEra = useCallback(() => {
+    if (currentEraIndex >= 0 && currentEraIndex < eras.length - 1) {
+      setCurrentEra(eras[currentEraIndex + 1])
+    }
+  }, [eras, currentEraIndex])
+
+  // Trigger details modal on mobile when active era changes
+  useEffect(() => {
+    if (!currentEra) return
+    if (initialLoadDoneRef.current && prevEraIdRef.current !== currentEra.id) {
+      if (isMobile) {
+        setIsEraDetailsOpen(true)
+      }
+    }
+    prevEraIdRef.current = currentEra.id
+    initialLoadDoneRef.current = true
+  }, [currentEra?.id, isMobile])
 
   const [globeConfig, setGlobeConfig] = useState<GlobeConfig>({
     texture: GlobeTexture.EARTH_DAY,
@@ -242,13 +303,6 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      {/* Top Navigation Bar */}
-      <header className="app-header">
-        <div className="app-brand">
-          <h1 className="app-title">{t("app_title", language)}</h1>
-        </div>
-      </header>
-
       {/* Main 3D Globe Visualizer */}
       <main className="app-main">
         <div className="globe-viewport">
@@ -282,22 +336,32 @@ export const App: React.FC = () => {
             labelSize={globeConfig.labelSize}
             labelTolerance={globeConfig.labelTolerance}
             language={language}
-            onFeatureClick={(feature) => setSelectedFeature(feature)}
+            onFeatureClick={(feature) => {
+              setSelectedFeature(feature)
+              setIsEraDetailsOpen(false)
+              if (isMobile) {
+                setIsTimelineOpen(false)
+              }
+            }}
           />
         </div>
 
-        {/* Selected Era Banner — Floats on top of the Globe */}
+        {/* Selected Era Banner — Floats on top of the Globe with Navigation */}
         <ActiveEraBanner
           currentEra={localizedCurrentEra}
           language={language}
+          onPrevEra={handlePrevEra}
+          onNextEra={handleNextEra}
+          hasPrevEra={hasPrevEra}
+          hasNextEra={hasNextEra}
+          onToggleTimeline={handleToggleTimeline}
+          isTimelineOpen={isTimelineOpen}
+          onOpenDetails={() => setIsEraDetailsOpen(true)}
+          isLoading={isLoadingGeoJson}
         />
 
-        {/* Top Controls Bar with Language Toggle and Visual Settings */}
+        {/* Top Controls Bar with Settings */}
         <div className="top-controls-bar">
-          <LanguageToggle
-            language={language}
-            onSelectLanguage={handleLanguageChange}
-          />
           <ControlsOverlay
             config={globeConfig}
             iceOverlayAvailable={!!iceOverlay}
@@ -326,12 +390,23 @@ export const App: React.FC = () => {
           language={language}
         />
 
-        {/* Interactive Timeline Scrubber */}
+        {/* Interactive Timeline Scrubber / Mobile Drawer */}
         <Timeline
           eras={localizedEras}
           currentEra={localizedCurrentEra}
           onSelectEra={setCurrentEra}
           isLoading={isLoadingGeoJson}
+          language={language}
+          isOpen={isTimelineOpen}
+          onClose={handleCloseTimeline}
+          isMobile={isMobile}
+        />
+
+        {/* Centered Era Details Popup (Mobile & Banner Click) */}
+        <EraDetailsModal
+          isOpen={isEraDetailsOpen}
+          currentEra={localizedCurrentEra}
+          onClose={() => setIsEraDetailsOpen(false)}
           language={language}
         />
 

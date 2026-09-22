@@ -33,24 +33,52 @@ export const UI_TRANSLATIONS: Record<string, Record<Language, string>> = {
     fi: "Suomi",
   },
 
-  // Active Era Banner
+  // Active Era Banner & Era Details
   territories: {
     en: "territories",
+    fi: "aluetta",
+  },
+  regions: {
+    en: "regions",
     fi: "aluetta",
   },
   active_era_label: {
     en: "Active Historical Era",
     fi: "Aktiivinen historiallinen aikakausi",
   },
+  open_timeline: {
+    en: "Open Timeline",
+    fi: "Avaa aikajana",
+  },
+  close_timeline: {
+    en: "Close Timeline",
+    fi: "Sulje aikajana",
+  },
+  era_details: {
+    en: "Era Details",
+    fi: "Aikakauden tiedot",
+  },
+  view_era_details: {
+    en: "View era details",
+    fi: "Näytä aikakauden tiedot",
+  },
+  got_it: {
+    en: "Got it",
+    fi: "Selvä",
+  },
 
-  // Controls Overlay (Visual Settings)
+  // Controls Overlay (Settings)
+  settings: {
+    en: "Settings",
+    fi: "Asetukset",
+  },
   visuals: {
-    en: "Visuals",
-    fi: "Näkymä",
+    en: "Settings",
+    fi: "Asetukset",
   },
   globe_visual_settings: {
-    en: "Globe Visual Settings",
-    fi: "Maapallon ulkoasuasetukset",
+    en: "Globe Settings",
+    fi: "Maapallon asetukset",
   },
   globe_settings: {
     en: "Globe Settings",

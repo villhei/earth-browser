@@ -27,7 +27,7 @@ describe("ActiveEraBanner logic", () => {
     expect(sampleEra.description).toContain("Columbus")
   })
 
-  it("renders era title, year, and territories", () => {
+  it("renders era title and year, omitting the count of regions from the banner", () => {
     const html = renderToStaticMarkup(
       React.createElement(ActiveEraBanner, {
         currentEra: sampleEra,
@@ -35,8 +35,12 @@ describe("ActiveEraBanner logic", () => {
     )
     expect(html).toContain("1492 CE")
     expect(html).toContain("Age of Discovery")
-    expect(html).toContain("536 territories")
-    expect(html).toContain("Columbus")
+    expect(html).not.toContain("536")
+    expect(html).not.toContain("territories")
+    expect(html).not.toContain("aluetta")
+    expect(html).not.toContain("regions")
+    expect(html).not.toContain("active-era-stats")
+    expect(html).not.toContain("Columbus")
   })
 
   it("returns null when currentEra is null", () => {
@@ -46,5 +50,36 @@ describe("ActiveEraBanner logic", () => {
       })
     )
     expect(html).toBe("")
+  })
+
+  it("renders navigation buttons and timeline drawer toggle when provided", () => {
+    const html = renderToStaticMarkup(
+      React.createElement(ActiveEraBanner, {
+        currentEra: sampleEra,
+        onPrevEra: () => {},
+        onNextEra: () => {},
+        hasPrevEra: true,
+        hasNextEra: false,
+        onToggleTimeline: () => {},
+        isTimelineOpen: false,
+      })
+    )
+    expect(html).toContain("active-era-menu-btn")
+    expect(html).toContain("active-era-nav-btn prev")
+    expect(html).toContain("active-era-nav-btn next")
+    // Previous should not be disabled, next should be disabled
+    expect(html).not.toMatch(/active-era-nav-btn prev[^>]*disabled/)
+    expect(html).toMatch(/active-era-nav-btn next[^>]*disabled/)
+  })
+
+  it("marks era info as clickable when onOpenDetails is provided", () => {
+    const html = renderToStaticMarkup(
+      React.createElement(ActiveEraBanner, {
+        currentEra: sampleEra,
+        onOpenDetails: () => {},
+      })
+    )
+    expect(html).toContain("active-era-info-wrapper clickable")
+    expect(html).toContain('role="button"')
   })
 })

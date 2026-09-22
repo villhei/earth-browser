@@ -1,7 +1,7 @@
 .controls-overlay {
   position: absolute;
-  top: var(--space-12);
-  right: var(--space-12);
+  top: var(--space-10);
+  right: var(--space-10);
   z-index: var(--z-controls);
 }
 
@@ -210,4 +210,20 @@
   border-top: 1px solid var(--color-border-divider);
   padding-top: var(--space-5);
   margin-top: var(--space-1);
+}
+
+@media (max-width: 768px) {
+  .controls-toggle-btn {
+    padding: max(4px, 1vh) max(10px, 2.5vw);
+    font-size: max(12px, 3vw);
+    gap: max(4px, 1vw);
+  }
+
+  .controls-panel {
+    top: max(42px, 5.5vh);
+    right: 0;
+    width: min(290px, calc(100vw - max(16px, 4vw)));
+    padding: max(12px, 3vw);
+    gap: max(10px, 2.5vw);
+  }
 }

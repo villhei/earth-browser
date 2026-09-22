@@ -236,24 +236,31 @@ const SLAVIC_CULTURES: CultureBatchEntry[] = [
     feature_name_matches: ["Ukraine"]
   },
   {
-    slug: "belarus-white-russia",
-    name: "Belarus (White Ruthenia)",
-    name_fi: "Valko-Venäjä (Belarus)",
-    native_name: "Беларусь (Bielaruś)",
-    alternate_names: ["White Russia", "Belarus", "White Ruthenia"],
+    slug: "russian-state-white-movement",
+    name: "Russian State (White Movement)",
+    name_fi: "Venäjän valtio (Valkoinen liike)",
+    native_name: "Российское государство",
+    alternate_names: [
+      "White Russia",
+      "Russian State",
+      "White Movement",
+      "Provisional All-Russian Government"
+    ],
     culture_group: "Slavic",
-    lineage_id: "belarus",
-    historical_period: "Medieval to Modern Belarus",
-    year_start: 1100,
-    year_end: 2026,
-    period_label: "1100 CE – Present",
-    period_label_fi: "1100 jaa. – nykyaika",
-    wikipedia_url_en: "https://en.wikipedia.org/wiki/Belarus",
-    wikipedia_url_fi: "https://fi.wikipedia.org/wiki/Valko-Ven%C3%A4j%C3%A4",
-    wikidata_id: "Q184",
-    summary_en: "East Slavic nation rooted in the medieval Principality of Polotsk and the Grand Duchy of Lithuania, famous for the Belovezhskaya Pushcha primeval forest (European bison) and Mir Castle.",
-    summary_fi: "Itäslaavilainen maa, jonka juuret ovat Polatskin ruhtinaskunnassa ja Liettuan suuriruhtinaskunnassa ja joka tunnetaan Belovežskajan aarniometsästä ja visenteistään.",
-    capital: "Minsk, Polotsk",
+    lineage_id: "russia",
+    historical_period: "Russian Civil War & White Movement",
+    year_start: 1918,
+    year_end: 1920,
+    period_label: "1918–1920 CE",
+    period_label_fi: "1918–1920 jaa.",
+    wikipedia_url_en: "https://en.wikipedia.org/wiki/Russian_State_(1918%E2%80%931920)",
+    wikipedia_url_fi: "https://fi.wikipedia.org/wiki/Ven%C3%A4j%C3%A4n_sis%C3%A4llissota",
+    wikidata_id: "Q4398229",
+    summary_en:
+      "Anti-Bolshevik state established during the Russian Civil War, proclaimed by the Ufa State Conference and led by Supreme Ruler Admiral Aleksandr Kolchak from Omsk before collapsing to the Red Army in 1920.",
+    summary_fi:
+      "Venäjän sisällissodan aikana toiminut bolševikkien vastainen valtiollinen muodostelma ja valkoisen liikkeen hallinto, jota johti amiraali Aleksandr Koltšak Omskista käsin ennen puna-armeijan voittoa vuonna 1920.",
+    capital: "Omsk, Irkutsk",
     feature_name_matches: ["White Russia"]
   }
 ]

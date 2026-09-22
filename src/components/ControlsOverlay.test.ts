@@ -26,7 +26,18 @@ describe("ControlsOverlay terrain highlight", () => {
         onChangeConfig: () => {},
       })
     )
-    expect(html).toContain("Visuals")
+    expect(html).toContain("Settings")
     expect(html).toContain("controls-toggle-btn")
+  })
+
+  it("renders Finnish label when language is fi", () => {
+    const html = renderToStaticMarkup(
+      React.createElement(ControlsOverlay, {
+        config: baseConfig,
+        onChangeConfig: () => {},
+        language: "fi",
+      })
+    )
+    expect(html).toContain("Asetukset")
   })
 })

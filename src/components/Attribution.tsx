@@ -77,7 +77,10 @@ export const AttributionModal: React.FC<AttributionModalProps> = ({
           <section className="attribution-section">
             <h4>{language === "fi" ? "Sovellus & Tekijä" : "Application & Creator"}</h4>
             <p>
-              Historical Earth Browser created and developed by <strong>{CREATOR_INFO.name}</strong>.
+              {language === "fi"
+                ? "Historiallinen kartasto luotu ja kehitetty: "
+                : "Historical atlas created and developed by "}
+              <strong>{CREATOR_INFO.name}</strong>.
             </p>
             <div className="attribution-meta-card">
               <div className="attribution-meta-row">

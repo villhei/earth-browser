@@ -248,9 +248,9 @@
 @media (max-width: 768px) {
   .app-attribution-btn,
   .app-attribution {
-    bottom: var(--space-4);
-    right: var(--space-4);
-    font-size: var(--font-size-sm);
-    padding: var(--space-3) var(--space-6);
+    bottom: max(10px, 1.5vh);
+    right: max(10px, 2.5vw);
+    font-size: max(11px, 2.8vw);
+    padding: max(4px, 0.8vh) max(10px, 2.5vw);
   }
 }

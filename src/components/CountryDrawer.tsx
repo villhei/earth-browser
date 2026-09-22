@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { GeoJSONFeature, Era } from "../types"
 import { Language } from "../i18n/types"
 import {
@@ -86,38 +86,62 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
       ? cultureMeta?.period_label_fi || cultureMeta?.period_label
       : cultureMeta?.period_label || cultureMeta?.period_label_fi
 
+  // Dismiss on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose()
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [onClose])
+
   return (
-    <div className="country-drawer">
-      <div className="drawer-header">
-        <div className="drawer-title-group">
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span className="drawer-tag">
-              {currentEra?.year_label || (language === "fi" ? "Historiallinen aikakausi" : "Historical Era")}
-            </span>
-            {color && (
-              <span
-                style={{
-                  display: "inline-block",
-                  width: "12px",
-                  height: "12px",
-                  borderRadius: "50%",
-                  backgroundColor: color,
-                  border: "1px solid rgba(255,255,255,0.4)",
-                  boxShadow: `0 0 6px ${color}88`,
-                }}
-                title={`Culture color: ${color}`}
-              />
+    <>
+      <div
+        className="country-drawer-backdrop"
+        onClick={onClose}
+        aria-hidden="true"
+      />
+      <div
+        className="country-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="country-drawer-title"
+      >
+        <div className="drawer-header">
+          <div className="drawer-title-group">
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span className="drawer-tag">
+                {currentEra?.year_label || (language === "fi" ? "Historiallinen aikakausi" : "Historical Era")}
+              </span>
+              {color && (
+                <span
+                  style={{
+                    display: "inline-block",
+                    width: "12px",
+                    height: "12px",
+                    borderRadius: "50%",
+                    backgroundColor: color,
+                    border: "1px solid rgba(255,255,255,0.4)",
+                    boxShadow: `0 0 6px ${color}88`,
+                  }}
+                  title={`Culture color: ${color}`}
+                />
+              )}
+            </div>
+            <h3 id="country-drawer-title" className="drawer-title">
+              {displayName}
+            </h3>
+            {subtitleName && (
+              <div className="drawer-subtitle">{subtitleName}</div>
             )}
           </div>
-          <h3 className="drawer-title">{displayName}</h3>
-          {subtitleName && (
-            <div className="drawer-subtitle">{subtitleName}</div>
-          )}
+          <button className="drawer-close-btn" onClick={onClose} aria-label={t("close", language)}>
+            ✕
+          </button>
         </div>
-        <button className="drawer-close-btn" onClick={onClose} aria-label={t("close", language)}>
-          ✕
-        </button>
-      </div>
 
       <div className="drawer-content">
         {localizedCultureGroup && (
@@ -294,5 +318,6 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
         )}
       </div>
     </div>
+  </>
   )
 }

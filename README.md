@@ -39,11 +39,18 @@ docker compose up -d
 *(Database running on `localhost:5432` with credentials `postgres:postgres@localhost:5432/world`. If port 5432 is already bound by a host PostgreSQL server, configure `POSTGRES_PORT=5434` and `DATABASE_URL=postgres://postgres:postgres@127.0.0.1:5434/world` in `.env`)*
 
 ### 4. Setup Schema & Ingest Historical Datasets
-Run migrations and ingest all 54 GeoJSON seed files into PostGIS:
+Run migrations, ingest all 54 GeoJSON seed files into PostGIS, and link all 37 culture metadata batches:
 ```bash
 npm run db:setup
 ```
 *(or run separately: `npm run migrate` then `npm run db:ingest`)*
+
+> **Restoring Missing Metadata**: If country summaries or culture metadata are ever missing in the live dev app (e.g. following a clean database export), re-ingest and re-build with:
+> ```bash
+> npm run db:ingest
+> npm run build
+> ```
+> Then hard-refresh your browser (`Cmd + Shift + R`).
 
 ### 5. Start the Application
 Start both the backend API (port `3000`) and the Vite frontend dev server (port `5173`) concurrently:
@@ -141,10 +148,11 @@ export function MyEmbeddedGlobe({ geoJsonData }) {
 - `npm run server:dev`: Runs the Express backend server with live reload via `tsx`.
 - `npm run client:dev`: Runs Vite frontend development server on port 5173.
 - `npm run data:update`: Fetches and synchronizes updated GeoJSON datasets from the upstream `historical-basemaps` repository into `migrations/seed/`.
-- `npm run db:setup`: Runs migrations, ingests all GeoJSON datasets into PostGIS, and exports static JSON.
-- `npm run db:ingest`: Re-ingests all GeoJSON seed files into PostGIS.
-- `npm run db:export`: Exports PostGIS data to `public/data/` for static site hosting.
-- `npm run build`: Single command that exports data and compiles production bundle to `docs/`.
+- `npm run db:setup`: Runs migrations, ingests all GeoJSON datasets into PostGIS, links all 37 culture metadata batches, and exports static JSON.
+- `npm run db:ingest`: Re-ingests all GeoJSON seed files into PostGIS, repairs geometries, computes surface centroids & elevation tiers, and links all 37 culture metadata batches into `culture_metadata` and `era_features`.
+- `npm run culture:status`: Checks culture metadata coverage and linkage completion status across all historical eras (100.0% target).
+- `npm run db:export`: Exports PostGIS data (including embedded `culture_metadata`) to `public/data/` for static site hosting and dev mode.
+- `npm run build`: Single command that exports data from PostGIS and compiles production bundle to `docs/`.
 - `npm test`: Runs Vitest unit test suite.
 
 ---

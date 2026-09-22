@@ -137,13 +137,28 @@ This guide provides technical specifications, architectural patterns, and develo
   - Precalculates true interior surface centroids using `ST_PointOnSurface(geom)` to store `label_lng` and `label_lat`.
   - Precalculates 3D `elevation_tier` (0–N) using topological DAG area-ordered stratification over PostGIS spatial intersections (`ST_Intersects`, `ST_Area(ST_Intersection)`) so sub-entities overlapping sub-entities receive strictly ascending, non-colliding elevation tiers with zero z-fighting.
   - Enriches properties with civilization lineage, culture groups, border precision ratings, and elevation tiers.
+  - Automatically seeds canonical encyclopedic records into `culture_metadata` across all 37 regional batch files in `data-sources/batches/` (covering 2,999 unique cultures, summaries, historical periods, Wikipedia URLs, and capitals in both English and Finnish).
+  - Links each feature in `era_features` via `culture_id` and embeds `properties.culture_metadata`.
 - **Static Export (`npm run db:export`)**:
   - Exports the PostGIS-enriched era catalog (`public/data/eras.json`) and 54 era GeoJSON FeatureCollections (`public/data/eras/[slug].json`) into `public/data/`.
   - Copied into `docs/data/` on `vite build` for 100% serverless, static bucket hosting.
+- **Restoring / Re-ingesting Metadata for the Live Dev App**:
+  If country drawer metadata (encyclopedic summaries, capitals, Wikipedia links, culture groups) is missing in the live dev app because `db:export` was previously run against an unseeded database, execute the full re-ingestion and rebuild pipeline:
+  ```bash
+  # 1. Re-ingest boundaries and re-seed/link all 37 culture metadata batches
+  npm run db:ingest
+
+  # 2. Check metadata linkage completion status (should report 100.0%)
+  npm run culture:status
+
+  # 3. Export enriched datasets and build production bundle
+  npm run build
+  ```
+  After rebuilding, perform a hard refresh in the browser (`Cmd + Shift + R`) to bypass any cached JSON files in local dev memory.
 
 ### Endpoints (Dev API & Static Data Layout)
 - `GET /api/eras` or static `/data/eras.json`: List of all 54 historical eras sorted chronologically with metadata.
-- `GET /api/eras/:slug/geojson` or static `/data/eras/:slug.json`: GeoJSON `FeatureCollection` with simplified geometries, label centroids, and elevation tiers.
+- `GET /api/eras/:slug/geojson` or static `/data/eras/:slug.json`: GeoJSON `FeatureCollection` with simplified geometries, label centroids, elevation tiers, and embedded `culture_metadata`.
 
 ---
 
@@ -158,10 +173,19 @@ npm run data:update
 # Run PostGIS database setup (migrations + ingest + export)
 npm run db:setup
 
+# Re-ingest datasets & link culture metadata (when restoring metadata)
+npm run db:ingest
+
+# Verify culture metadata linkage status
+npm run culture:status
+
+# Export enriched PostGIS datasets to static public/data/
+npm run db:export
+
 # Run Vitest test suite
 npm test
 
-# Typecheck and build production bundle
+# Typecheck, static export, and build production bundle
 npm run build
 
 # Start development servers (frontend + backend)

@@ -4,12 +4,15 @@ import { Language } from "../i18n/types"
 import { groupErasByEpoch, getEpochForEra, getLocalizedEpoch } from "./eraGrouping"
 import "./Timeline.css"
 
-interface TimelineProps {
+export interface TimelineProps {
   eras: Era[]
   currentEra: Era | null
   onSelectEra: (era: Era) => void
   isLoading?: boolean
   language?: Language
+  isOpen?: boolean
+  onClose?: () => void
+  isMobile?: boolean
 }
 
 /**
@@ -30,9 +33,24 @@ export const Timeline: React.FC<TimelineProps> = ({
   onSelectEra,
   isLoading = false,
   language = "en",
+  isOpen = false,
+  onClose,
+  isMobile = false,
 }) => {
   const activeItemRef = useRef<HTMLButtonElement | null>(null)
   const listRef = useRef<HTMLDivElement | null>(null)
+
+  // Close drawer on Escape key
+  useEffect(() => {
+    if (!isMobile || !isOpen || !onClose) return
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose()
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [isMobile, isOpen, onClose])
 
   const currentIndex = currentEra
     ? eras.findIndex((e) => e.id === currentEra.id)
@@ -114,94 +132,114 @@ export const Timeline: React.FC<TimelineProps> = ({
   }
 
   return (
-    <aside
-      className="timeline-container"
-      aria-label="Historical Timeline"
-    >
-      {/* Panel Header & Navigation Controls */}
-      <div className="timeline-panel-header">
-        <div className="timeline-header-title-group">
-          <span className="timeline-badge-tag">{language === "fi" ? "Aikajana" : "Timeline"}</span>
-          <span className="timeline-era-count">
-            {currentIndex >= 0
-              ? `${currentIndex + 1} / ${eras.length}`
-              : language === "fi"
-                ? `${eras.length} aikakautta`
-                : `${eras.length} eras`}
-          </span>
-        </div>
+    <>
+      {isMobile && isOpen && (
+        <div
+          className="timeline-backdrop"
+          onClick={onClose}
+          aria-hidden="true"
+        />
+      )}
+      <aside
+        className={`timeline-container ${isMobile ? "mobile-drawer" : ""} ${isMobile && isOpen ? "drawer-open" : ""}`}
+        aria-label="Historical Timeline"
+        aria-hidden={isMobile && !isOpen ? "true" : undefined}
+      >
+        {/* Panel Header & Navigation Controls */}
+        <div className="timeline-panel-header">
+          <div className="timeline-header-title-group">
+            <span className="timeline-badge-tag">{language === "fi" ? "Aikajana" : "Timeline"}</span>
+            <span className="timeline-era-count">
+              {currentIndex >= 0
+                ? `${currentIndex + 1} / ${eras.length}`
+                : language === "fi"
+                  ? `${eras.length} aikakautta`
+                  : `${eras.length} eras`}
+            </span>
+          </div>
 
-        <div className="timeline-nav-group">
-          <button
-            type="button"
-            className="timeline-nav-btn timeline-toggle-all-btn"
-            onClick={handleToggleAll}
-            title={
-              isAllExpanded
-                ? language === "fi"
-                  ? "Tiivistä kaikki aikakaudet"
-                  : "Collapse all epochs"
-                : language === "fi"
-                  ? "Laajenna kaikki aikakaudet"
-                  : "Expand all epochs"
-            }
-            aria-label={
-              isAllExpanded
-                ? language === "fi"
-                  ? "Tiivistä kaikki aikakaudet"
-                  : "Collapse all epochs"
-                : language === "fi"
-                  ? "Laajenna kaikki aikakaudet"
-                  : "Expand all epochs"
-            }
-          >
-            <svg
-              width="13"
-              height="13"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
+          <div className="timeline-nav-group">
+            <button
+              type="button"
+              className="timeline-nav-btn timeline-toggle-all-btn"
+              onClick={handleToggleAll}
+              title={
+                isAllExpanded
+                  ? language === "fi"
+                    ? "Tiivistä kaikki aikakaudet"
+                    : "Collapse all epochs"
+                  : language === "fi"
+                    ? "Laajenna kaikki aikakaudet"
+                    : "Expand all epochs"
+              }
+              aria-label={
+                isAllExpanded
+                  ? language === "fi"
+                    ? "Tiivistä kaikki aikakaudet"
+                    : "Collapse all epochs"
+                  : language === "fi"
+                    ? "Laajenna kaikki aikakaudet"
+                    : "Expand all epochs"
+              }
             >
-              {isAllExpanded ? (
-                <>
-                  <line x1="4" y1="7" x2="20" y2="7" />
-                  <line x1="4" y1="17" x2="20" y2="17" />
-                </>
-              ) : (
-                <>
-                  <line x1="4" y1="6" x2="20" y2="6" />
-                  <line x1="4" y1="12" x2="20" y2="12" />
-                  <line x1="4" y1="18" x2="20" y2="18" />
-                </>
-              )}
-            </svg>
-          </button>
-          <button
-            type="button"
-            className="timeline-nav-btn"
-            onClick={handlePrev}
-            disabled={currentIndex <= 0 || isLoading}
-            title={language === "fi" ? "Edellinen aikakausi" : "Previous Era (Earlier)"}
-            aria-label={language === "fi" ? "Edellinen aikakausi" : "Previous Era"}
-          >
-            ‹
-          </button>
-          <button
-            type="button"
-            className="timeline-nav-btn"
-            onClick={handleNext}
-            disabled={currentIndex >= eras.length - 1 || isLoading}
-            title={language === "fi" ? "Seuraava aikakausi" : "Next Era (Later)"}
-            aria-label={language === "fi" ? "Seuraava aikakausi" : "Next Era"}
-          >
-            ›
-          </button>
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                {isAllExpanded ? (
+                  <>
+                    <line x1="4" y1="7" x2="20" y2="7" />
+                    <line x1="4" y1="17" x2="20" y2="17" />
+                  </>
+                ) : (
+                  <>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </>
+                )}
+              </svg>
+            </button>
+            <button
+              type="button"
+              className="timeline-nav-btn"
+              onClick={handlePrev}
+              disabled={currentIndex <= 0 || isLoading}
+              title={language === "fi" ? "Edellinen aikakausi" : "Previous Era (Earlier)"}
+              aria-label={language === "fi" ? "Edellinen aikakausi" : "Previous Era"}
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              className="timeline-nav-btn"
+              onClick={handleNext}
+              disabled={currentIndex >= eras.length - 1 || isLoading}
+              title={language === "fi" ? "Seuraava aikakausi" : "Next Era (Later)"}
+              aria-label={language === "fi" ? "Seuraava aikakausi" : "Next Era"}
+            >
+              ›
+            </button>
+            {isMobile && onClose && (
+              <button
+                type="button"
+                className="timeline-nav-btn timeline-drawer-close-btn"
+                onClick={onClose}
+                title={language === "fi" ? "Sulje aikajana" : "Close timeline"}
+                aria-label={language === "fi" ? "Sulje aikajana" : "Close timeline"}
+              >
+                ✕
+              </button>
+            )}
+          </div>
         </div>
-      </div>
 
       {/* Vertical Scrollable Era Accordion List */}
       <div
@@ -280,7 +318,12 @@ export const Timeline: React.FC<TimelineProps> = ({
                             key={era.id}
                             ref={isActive ? activeItemRef : null}
                             className={`timeline-item ${isActive ? "active" : ""}`}
-                            onClick={() => onSelectEra(era)}
+                            onClick={() => {
+                              onSelectEra(era)
+                              if (isMobile && onClose) {
+                                onClose()
+                              }
+                            }}
                             disabled={isLoading && !isActive}
                             role="option"
                             aria-selected={isActive}
@@ -314,5 +357,6 @@ export const Timeline: React.FC<TimelineProps> = ({
         </div>
       </div>
     </aside>
+  </>
   )
 }

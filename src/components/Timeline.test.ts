@@ -50,3 +50,59 @@ describe("Timeline helpers", () => {
   })
 })
 
+describe("Timeline mobile drawer component", () => {
+  const sampleEras = [
+    {
+      id: "world-1492",
+      slug: "world-1492",
+      name: "1492 CE - Age of Discovery",
+      year_start: 1492,
+      year_end: 1500,
+      year_label: "1492 CE",
+      description: "Sample",
+      feature_count: 536,
+    },
+  ]
+
+  it("renders mobile drawer and backdrop when isMobile and isOpen are true", async () => {
+    const React = await import("react")
+    const { renderToStaticMarkup } = await import("react-dom/server")
+    const { Timeline } = await import("./Timeline")
+
+    const html = renderToStaticMarkup(
+      React.createElement(Timeline, {
+        eras: sampleEras,
+        currentEra: sampleEras[0],
+        onSelectEra: () => {},
+        isMobile: true,
+        isOpen: true,
+        onClose: () => {},
+      })
+    )
+    expect(html).toContain("timeline-backdrop")
+    expect(html).toContain("mobile-drawer")
+    expect(html).toContain("drawer-open")
+    expect(html).toContain("timeline-drawer-close-btn")
+  })
+
+  it("omits backdrop and open class when isOpen is false on mobile", async () => {
+    const React = await import("react")
+    const { renderToStaticMarkup } = await import("react-dom/server")
+    const { Timeline } = await import("./Timeline")
+
+    const html = renderToStaticMarkup(
+      React.createElement(Timeline, {
+        eras: sampleEras,
+        currentEra: sampleEras[0],
+        onSelectEra: () => {},
+        isMobile: true,
+        isOpen: false,
+        onClose: () => {},
+      })
+    )
+    expect(html).not.toContain("timeline-backdrop")
+    expect(html).toContain("mobile-drawer")
+    expect(html).not.toContain("drawer-open")
+  })
+})
+
