@@ -94,4 +94,5 @@ export interface GlobeConfig {
   labelSize?: number
   labelTolerance?: number
   elevationScale?: number
+  terrainHighlightStyle?: "contents" | "outline"
 }

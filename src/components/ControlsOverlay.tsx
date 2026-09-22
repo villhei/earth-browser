@@ -11,6 +11,9 @@ interface ControlsOverlayProps {
   terrainOverlayAvailable?: boolean
   colorScheme?: ThemePreference
   onChangeColorScheme?: (scheme: ThemePreference) => void
+  onTriggerTerrainHighlight?: () => void
+  isTerrainHighlightActive?: boolean
+  terrainHighlightLabel?: string
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
@@ -21,6 +24,9 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   terrainOverlayAvailable = false,
   colorScheme = "auto",
   onChangeColorScheme,
+  onTriggerTerrainHighlight,
+  isTerrainHighlightActive = false,
+  terrainHighlightLabel,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -149,7 +155,58 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
                 {terrainOverlayEnabled ? "Enabled" : "Disabled"}
               </button>
             </div>
-            <p className="controls-help">Coastal terrain for 10,000, 8,000 and 5,000 BCE with Day Map or Blue Marble; also 123,000 BCE with Blue Marble.</p>
+            {terrainOverlayEnabled && (
+              <div className="controls-label-row" style={{ marginTop: "8px" }}>
+                <span className="controls-label" style={{ fontSize: "11px" }}>Highlight focus</span>
+                <select
+                  className="controls-select"
+                  style={{ width: "auto", padding: "3px 8px", fontSize: "11px" }}
+                  value={config.terrainHighlightStyle ?? "contents"}
+                  onChange={(e) =>
+                    onChangeConfig({
+                      ...config,
+                      terrainHighlightStyle: e.target.value as "contents" | "outline",
+                    })
+                  }
+                  aria-label="Terrain Highlight Focus"
+                >
+                  <option value="contents">Land Bridges (Texture)</option>
+                  <option value="outline">Coastlines (Outlines)</option>
+                </select>
+              </div>
+            )}
+            {terrainOverlayEnabled && onTriggerTerrainHighlight && (
+              <div style={{ marginTop: "6px" }}>
+                <button
+                  className={`controls-pill ${isTerrainHighlightActive ? "active" : ""}`}
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "6px",
+                    padding: "6px 8px",
+                  }}
+                  onClick={onTriggerTerrainHighlight}
+                  title={terrainHighlightLabel ? `Pulse highlight: ${terrainHighlightLabel}` : "Highlight prehistoric terrain alterations"}
+                  aria-pressed={isTerrainHighlightActive}
+                >
+                  <span>✦</span>
+                  <span>
+                    {isTerrainHighlightActive
+                      ? "Highlighting…"
+                      : config.terrainHighlightStyle === "outline"
+                      ? "Pulse Coastlines"
+                      : "Pulse Land Bridges"}
+                  </span>
+                </button>
+              </div>
+            )}
+            <p className="controls-help">
+              {terrainHighlightLabel
+                ? `${terrainHighlightLabel}.`
+                : "Coastal terrain for 10,000, 8,000 and 5,000 BCE with Day Map or Blue Marble; also 123,000 BCE with Blue Marble."}
+            </p>
           </div>
 
           <div className="controls-group">

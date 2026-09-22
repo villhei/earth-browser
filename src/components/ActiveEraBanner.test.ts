@@ -1,5 +1,8 @@
+import React from "react"
+import { renderToStaticMarkup } from "react-dom/server"
 import { describe, it, expect } from "vitest"
 import { formatEraLabel } from "./Timeline"
+import { ActiveEraBanner } from "./ActiveEraBanner"
 import { Era } from "../types"
 
 describe("ActiveEraBanner logic", () => {
@@ -22,5 +25,32 @@ describe("ActiveEraBanner logic", () => {
     expect(sampleEra.year_label).toBe("1492 CE")
     expect(sampleEra.feature_count).toBe(536)
     expect(sampleEra.description).toContain("Columbus")
+  })
+
+  it("renders highlight button when highlight props are supplied", () => {
+    const html = renderToStaticMarkup(
+      React.createElement(ActiveEraBanner, {
+        currentEra: sampleEra,
+        onPulseHighlight: () => {},
+        highlightLabel: "Exposed Continental Shelves (-120m)",
+        isHighlighting: false,
+      })
+    )
+    expect(html).toContain("active-era-highlight-btn")
+    expect(html).toContain("Highlight Coastlines")
+    expect(html).toContain("Exposed Continental Shelves (-120m)")
+  })
+
+  it("shows active highlighting state on the button", () => {
+    const html = renderToStaticMarkup(
+      React.createElement(ActiveEraBanner, {
+        currentEra: sampleEra,
+        onPulseHighlight: () => {},
+        highlightLabel: "Exposed Continental Shelves (-120m)",
+        isHighlighting: true,
+      })
+    )
+    expect(html).toContain("active-era-highlight-btn active")
+    expect(html).toContain("Highlighting Coastlines…")
   })
 })

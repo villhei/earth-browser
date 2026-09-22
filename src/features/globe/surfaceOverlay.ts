@@ -1,10 +1,15 @@
-import type { SurfaceOverlay } from "./types"
+import * as THREE from "three"
 import { SphereGeometry } from "three"
+import type { SurfaceOverlay } from "./types"
 
 /** Match the globe's facets, with clearance below the minimum territory altitude (0.001). */
-export function createSurfaceOverlayGeometry(radius: number, curvatureResolution: number): SphereGeometry {
+export function createSurfaceOverlayGeometry(
+  radius: number,
+  curvatureResolution: number,
+  scale = 1.0005,
+): SphereGeometry {
   const segments = Math.max(4, Math.round(360 / curvatureResolution))
-  return new SphereGeometry(radius * 1.0005, segments, segments / 2)
+  return new SphereGeometry(radius * scale, segments, segments / 2)
 }
 
 /** Coverage, including fractional edge pixels, comes exclusively from the source. */
@@ -15,7 +20,7 @@ export function applyCoverageAlpha(color: Uint8ClampedArray, coverage: Uint8Clam
   for (let i = 3; i < color.length; i += 4) color[i] = coverage[i]
 }
 
-function loadImage(url: string): Promise<HTMLImageElement> {
+export function loadImage(url: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const image = new Image()
     image.crossOrigin = "anonymous"
@@ -23,6 +28,22 @@ function loadImage(url: string): Promise<HTMLImageElement> {
     image.onerror = () => reject(new Error(`Could not load surface overlay: ${url}`))
     image.src = url
   })
+}
+
+/**
+ * Loads a terrain mask image into a Three.js equirectangular texture configured
+ * with repeat wrapping for seamless sampling across the 180° antimeridian.
+ */
+export async function createTerrainMaskTexture(maskUrl: string): Promise<THREE.Texture> {
+  const image = await loadImage(maskUrl)
+  const texture = new THREE.Texture(image)
+  texture.wrapS = THREE.RepeatWrapping
+  texture.wrapT = THREE.ClampToEdgeWrapping
+  texture.minFilter = THREE.LinearFilter
+  texture.magFilter = THREE.LinearFilter
+  texture.generateMipmaps = false
+  texture.needsUpdate = true
+  return texture
 }
 
 /** Blend before GPU filtering so transparent RGB cannot produce a coastline halo. */

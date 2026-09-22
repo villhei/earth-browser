@@ -43,6 +43,24 @@ export interface HistoricalGlobeProps {
   /** Optional RGBA equirectangular layer above the base and below surfaceOverlay. */
   surfaceUnderlayUrl?: string
 
+  /** Historical era slug (e.g. "world-bc10000") to resolve era-specific terrain highlight palettes. */
+  eraSlug?: string
+
+  /** Trigger counter or timestamp to pulse the prehistoric terrain highlight. */
+  terrainHighlightTrigger?: number
+
+  /** Whether the terrain highlight is persistent (continuous breathing shimmer) or a one-shot pulse. Defaults to false. */
+  terrainHighlightPersistent?: boolean
+
+  /** Callback fired when a one-shot terrain highlight pulse completes. */
+  onTerrainHighlightEnd?: () => void
+
+  /** Whether to automatically pulse highlight when switching to an era with terrain alterations. Defaults to true. */
+  autoHighlightTerrain?: boolean
+
+  /** Highlight visual style: "contents" (highlights the land bridges and texture body) or "outline" (coastline boundaries). Defaults to "contents". */
+  terrainHighlightStyle?: "contents" | "outline"
+
   /**
    * Extrusion / altitude of country boundary polygons. Defaults to 0.002.
    */

@@ -7,7 +7,11 @@ import {
   GlobeTexture,
 } from "../types"
 import { fetchEras, fetchEraGeoJson } from "../services/api"
-import { HistoricalGlobe } from "../features/globe"
+import {
+  HistoricalGlobe,
+  hasTerrainHighlight,
+  getTerrainHighlightColors,
+} from "../features/globe"
 import type { GlobeView } from "../features/globe"
 import { readViewUrl, replaceViewUrl, resolveEra } from "./viewUrl"
 import { Timeline } from "../components/Timeline"
@@ -86,6 +90,43 @@ export const App: React.FC = () => {
     labelSize: 14,
     labelTolerance: 10,
   })
+
+  // Prehistoric terrain highlight state & triggers
+  const [terrainHighlightTrigger, setTerrainHighlightTrigger] = useState(0)
+  const [isHighlightingTerrain, setIsHighlightingTerrain] = useState(false)
+
+  const isTerrainMaskEligible = hasTerrainHighlight(currentEra?.slug)
+  const terrainOverlayUrl = getTerrainOverlayUrl(
+    currentEra?.slug,
+    globeConfig.texture,
+    globeConfig.showTerrainOverlay,
+  )
+  const isTerrainMaskActive =
+    isTerrainMaskEligible &&
+    globeConfig.showTerrainOverlay !== false &&
+    !!terrainOverlayUrl
+  const terrainHighlightLabel = isTerrainMaskEligible
+    ? getTerrainHighlightColors(currentEra?.slug).label
+    : undefined
+
+  const handlePulseTerrainHighlight = useCallback(() => {
+    setIsHighlightingTerrain(true)
+    setTerrainHighlightTrigger((prev) => prev + 1)
+  }, [])
+
+  const handleTerrainHighlightEnd = useCallback(() => {
+    setIsHighlightingTerrain(false)
+  }, [])
+
+  // Auto-pulse highlight when selecting an era with altered coastlines
+  useEffect(() => {
+    if (isTerrainMaskActive) {
+      setIsHighlightingTerrain(true)
+      setTerrainHighlightTrigger((prev) => prev + 1)
+    } else {
+      setIsHighlightingTerrain(false)
+    }
+  }, [currentEra?.slug, isTerrainMaskActive])
 
   // 1. Fetch available eras on mount
   useEffect(() => {
@@ -176,8 +217,18 @@ export const App: React.FC = () => {
             data={geoJsonData}
             isLoading={isLoadingGeoJson}
             texture={globeConfig.texture}
-            surfaceUnderlayUrl={getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture, globeConfig.showTerrainOverlay)}
-            surfaceOverlay={globeConfig.showIceOverlay && (globeConfig.texture === GlobeTexture.EARTH_BLUE_MARBLE || globeConfig.texture === GlobeTexture.EARTH_DAY) ? iceOverlay : undefined}
+            surfaceUnderlayUrl={terrainOverlayUrl}
+            eraSlug={currentEra?.slug}
+            terrainHighlightTrigger={terrainHighlightTrigger}
+            terrainHighlightStyle={globeConfig.terrainHighlightStyle}
+            onTerrainHighlightEnd={handleTerrainHighlightEnd}
+            surfaceOverlay={
+              globeConfig.showIceOverlay &&
+              (globeConfig.texture === GlobeTexture.EARTH_BLUE_MARBLE ||
+                globeConfig.texture === GlobeTexture.EARTH_DAY)
+                ? iceOverlay
+                : undefined
+            }
             layerAltitude={globeConfig.layerAltitude}
             elevationScale={globeConfig.elevationScale}
             opacity={globeConfig.opacity}
@@ -194,18 +245,33 @@ export const App: React.FC = () => {
         </div>
 
         {/* Selected Era Banner — Floats on top of the Globe */}
-        <ActiveEraBanner currentEra={currentEra} />
+        <ActiveEraBanner
+          currentEra={currentEra}
+          onPulseHighlight={
+            isTerrainMaskActive ? handlePulseTerrainHighlight : undefined
+          }
+          isHighlighting={isHighlightingTerrain}
+          highlightLabel={
+            isTerrainMaskActive ? terrainHighlightLabel : undefined
+          }
+        />
 
         {/* Visual Settings Controls */}
-
         <ControlsOverlay
           config={globeConfig}
           iceOverlayAvailable={!!iceOverlay}
-          terrainOverlayAvailable={!!getTerrainOverlayUrl(currentEra?.slug, globeConfig.texture)}
+          terrainOverlayAvailable={!!terrainOverlayUrl}
           onChangeConfig={setGlobeConfig}
           onOpenAttribution={() => setIsAttributionOpen(true)}
           colorScheme={themePreference}
           onChangeColorScheme={handleColorSchemeChange}
+          onTriggerTerrainHighlight={
+            isTerrainMaskActive ? handlePulseTerrainHighlight : undefined
+          }
+          isTerrainHighlightActive={isHighlightingTerrain}
+          terrainHighlightLabel={
+            isTerrainMaskEligible ? terrainHighlightLabel : undefined
+          }
         />
 
         {/* Country / Culture Inspector Drawer */}

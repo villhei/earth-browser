@@ -17,7 +17,13 @@ import {
   createSurfaceOverlayCanvas,
   createSurfaceOverlayGeometry,
   createSurfaceUnderlayCanvas,
+  createTerrainMaskTexture,
 } from "./surfaceOverlay"
+import {
+  createTerrainHighlightMaterial,
+  updateTerrainHighlightMaterial,
+  DEFAULT_TERRAIN_HIGHLIGHT_DURATION,
+} from "./terrainHighlightShader"
 import { isNeutralOrUnclaimed } from "./colors"
 import {
   getPolygonCapMaterial,
@@ -49,6 +55,12 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   textureImageUrl,
   surfaceOverlay,
   surfaceUnderlayUrl,
+  eraSlug,
+  terrainHighlightTrigger,
+  terrainHighlightPersistent = false,
+  onTerrainHighlightEnd,
+  autoHighlightTerrain = true,
+  terrainHighlightStyle = "contents",
   layerAltitude = DEFAULT_ALTITUDE,
   elevationScale = DEFAULT_ELEVATION_SCALE,
   opacity = DEFAULT_OPACITY,
@@ -135,6 +147,64 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     onFeatureClick,
     onFeatureHover,
   ])
+
+  // Terrain mask highlight animation state & controls
+  const eraSlugRef = useRef(eraSlug)
+  const terrainHighlightPersistentRef = useRef(terrainHighlightPersistent)
+  const onTerrainHighlightEndRef = useRef(onTerrainHighlightEnd)
+  const autoHighlightTerrainRef = useRef(autoHighlightTerrain)
+  const terrainHighlightStyleRef = useRef(terrainHighlightStyle)
+  const highlightMaterialRef = useRef<THREE.ShaderMaterial | null>(null)
+  const highlightStateRef = useRef<{
+    startTime: number
+    duration: number
+    active: boolean
+    persistent: boolean
+  }>({
+    startTime: 0,
+    duration: DEFAULT_TERRAIN_HIGHLIGHT_DURATION,
+    active: false,
+    persistent: false,
+  })
+
+  const triggerTerrainHighlight = React.useCallback(() => {
+    if (!highlightMaterialRef.current) return
+    highlightStateRef.current = {
+      startTime: performance.now(),
+      duration: DEFAULT_TERRAIN_HIGHLIGHT_DURATION,
+      active: true,
+      persistent: !!terrainHighlightPersistentRef.current,
+    }
+    renderDirtyRef.current = true
+  }, [])
+
+  useEffect(() => {
+    eraSlugRef.current = eraSlug
+    terrainHighlightPersistentRef.current = terrainHighlightPersistent
+    onTerrainHighlightEndRef.current = onTerrainHighlightEnd
+    autoHighlightTerrainRef.current = autoHighlightTerrain
+    terrainHighlightStyleRef.current = terrainHighlightStyle
+
+    if (highlightMaterialRef.current) {
+      updateTerrainHighlightMaterial(highlightMaterialRef.current, {
+        eraSlug,
+        style: terrainHighlightStyle,
+      })
+      renderDirtyRef.current = true
+    }
+  }, [
+    eraSlug,
+    terrainHighlightPersistent,
+    onTerrainHighlightEnd,
+    autoHighlightTerrain,
+    terrainHighlightStyle,
+  ])
+
+  useEffect(() => {
+    if (terrainHighlightTrigger != null && terrainHighlightTrigger > 0) {
+      triggerTerrainHighlight()
+    }
+  }, [terrainHighlightTrigger, triggerTerrainHighlight])
 
   // 1. Initialize Three.js Engine & 2D Labels Canvas ONCE on mount
   useEffect(() => {
@@ -413,10 +483,32 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
             ? String(hoveredFeatureRef.current.id)
             : hoveredFeatureRef.current?.properties?.name || null),
       })
+
+      // Update terrain highlight pulse shader uniforms
+      let highlightDirty = false
+      const highlightState = highlightStateRef.current
+      const highlightMat = highlightMaterialRef.current
+      if (highlightState.active && highlightMat) {
+        const elapsed = (performance.now() - highlightState.startTime) / 1000
+        const progress = highlightState.persistent
+          ? 0.35
+          : elapsed / highlightState.duration
+
+        highlightMat.uniforms.uTime.value = elapsed
+        highlightMat.uniforms.uProgress.value = Math.min(1.0, progress)
+        highlightDirty = true
+
+        if (!highlightState.persistent && progress >= 1.0) {
+          highlightState.active = false
+          highlightMat.uniforms.uProgress.value = 1.0
+          onTerrainHighlightEndRef.current?.()
+        }
+      }
+
       // Texture loading and ThreeGlobe's deferred geometry/altitude updates can
       // finish after React effects. Observe them before skipping an idle frame.
       const globeMap = (globe.globeMaterial() as THREE.MeshPhongMaterial).map
-      if (cameraChanged || polygonsChanged || renderDirtyRef.current || globeMap !== lastGlobeMap) {
+      if (cameraChanged || polygonsChanged || renderDirtyRef.current || highlightDirty || globeMap !== lastGlobeMap) {
         renderer.render(scene, camera)
         renderDirtyRef.current = false
         lastGlobeMap = globeMap
@@ -632,6 +724,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       globeRef.current = null
       rendererRef.current = null
       cameraRef.current = null
+      highlightMaterialRef.current = null
+      highlightStateRef.current.active = false
     }
   }, []) // Mount once
 
@@ -653,8 +747,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const globe = globeRef.current
     if (!globe || (!surfaceOverlay && !surfaceUnderlayUrl)) return
     let cancelled = false
-    const meshes: THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMaterial>[] =
-      []
+    const meshes: (
+      | THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMaterial>
+      | THREE.Mesh<THREE.SphereGeometry, THREE.ShaderMaterial>
+    )[] = []
     const addLayer = (map: THREE.Texture, renderOrder: number) => {
       if (cancelled) {
         map.dispose()
@@ -690,6 +786,41 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       )
         .then((canvas) => addLayer(new THREE.CanvasTexture(canvas), -2))
         .catch(onError)
+
+      createTerrainMaskTexture(surfaceUnderlayUrl)
+        .then((maskTexture) => {
+          if (cancelled) {
+            maskTexture.dispose()
+            return
+          }
+          const highlightMaterial = createTerrainHighlightMaterial(
+            maskTexture,
+            eraSlug,
+            { style: terrainHighlightStyleRef.current },
+          )
+          highlightMaterialRef.current = highlightMaterial
+
+          const highlightGeometry = createSurfaceOverlayGeometry(
+            globe.getGlobeRadius(),
+            globe.globeCurvatureResolution(),
+            1.0007,
+          )
+          const highlightMesh = new THREE.Mesh(
+            highlightGeometry,
+            highlightMaterial,
+          )
+          highlightMesh.rotation.y = -Math.PI / 2
+          highlightMesh.renderOrder = 0
+          highlightMesh.raycast = () => {} // Surface decoration must not intercept country picking.
+          meshes.push(highlightMesh as any)
+          globe.add(highlightMesh)
+
+          if (autoHighlightTerrainRef.current !== false) {
+            triggerTerrainHighlight()
+          }
+          renderDirtyRef.current = true
+        })
+        .catch(onError)
     }
     if (surfaceOverlay) {
       createSurfaceOverlayCanvas(surfaceOverlay)
@@ -698,15 +829,33 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     }
     return () => {
       cancelled = true
+      highlightMaterialRef.current = null
+      highlightStateRef.current.active = false
       for (const mesh of meshes) {
         globe.remove(mesh)
-        mesh.material.map?.dispose()
-        mesh.material.dispose()
+        if (mesh.material instanceof THREE.ShaderMaterial) {
+          const maskTex = mesh.material.uniforms?.uMaskTexture?.value
+          if (maskTex && typeof maskTex.dispose === "function") {
+            maskTex.dispose()
+          }
+          mesh.material.dispose()
+        } else {
+          mesh.material.map?.dispose()
+          mesh.material.dispose()
+        }
         mesh.geometry.dispose()
       }
       renderDirtyRef.current = true
     }
-  }, [surfaceOverlay, surfaceUnderlayUrl, texture, textureImageUrl])
+  }, [
+    surfaceOverlay,
+    surfaceUnderlayUrl,
+    texture,
+    textureImageUrl,
+    eraSlug,
+    terrainHighlightStyle,
+    triggerTerrainHighlight,
+  ])
 
   // 3. Polygon Cap Curvature Resolution update
   useEffect(() => {

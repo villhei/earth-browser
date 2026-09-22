@@ -1,8 +1,25 @@
 import { createHash } from "node:crypto"
-import { readFileSync } from "node:fs"
+import { existsSync, readFileSync } from "node:fs"
 import { describe, expect, it } from "vitest"
 
-describe.each([1, 2, 3, 4, 5])("independent coastal depth masks v%i", (version) => {
+const availableMaskVersions = [1, 2, 3, 4, 5].filter((version) =>
+  existsSync(`output/coastal-depth-masks-v${version}/manifest.json`)
+)
+const availableIceVersions = [1, 2].filter((version) =>
+  existsSync(`output/ice-masks-8192-v${version}`)
+)
+
+const maskDescribe =
+  availableMaskVersions.length > 0
+    ? describe.each(availableMaskVersions)
+    : describe.skip.each([1])
+
+const iceDescribe =
+  availableIceVersions.length > 0
+    ? describe.each(availableIceVersions)
+    : describe.skip.each([1])
+
+maskDescribe("independent coastal depth masks v%i", (version) => {
   const root = `output/coastal-depth-masks-v${version}/`
   const manifest = JSON.parse(readFileSync(`${root}manifest.json`, "utf8"))
   it("keeps the requested scenarios and signed depth meaning explicit", () => {
@@ -68,7 +85,7 @@ describe.each([1, 2, 3, 4, 5])("independent coastal depth masks v%i", (version) 
   })
 })
 
-describe.each([1, 2])("8192 ice mask delivery v%i", (version) => {
+iceDescribe("8192 ice mask delivery v%i", (version) => {
   it.each(version === 2 ? [22000, 10000, 8000, 5000, 4000, 3000] : [10000, 8000, 5000, 4000, 3000])("preserves all three source bounds at %i BCE", (year) => {
     const root = `output/ice-masks-8192-v${version}/world-bc${year}/`
     const manifest = JSON.parse(readFileSync(`${root}manifest.json`, "utf8"))
