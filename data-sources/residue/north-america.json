@@ -1,0 +1,5066 @@
+{
+  "continent": "North America",
+  "slug": "north-america",
+  "batchFileName": "residue-north-america.json",
+  "entityCount": 505,
+  "featureCount": 512,
+  "entities": [
+    {
+      "name": "Abnaki",
+      "occurrences": 2,
+      "avg_lng": -69.2296,
+      "avg_lat": 45.452,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "abnaki"
+    },
+    {
+      "name": "Cahulia",
+      "occurrences": 2,
+      "avg_lng": -115.8325,
+      "avg_lat": 33.759,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "cahulia"
+    },
+    {
+      "name": "Costanoan",
+      "occurrences": 2,
+      "avg_lng": -121.8151,
+      "avg_lat": 37.3286,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "costanoan"
+    },
+    {
+      "name": "Kamia",
+      "occurrences": 2,
+      "avg_lng": -115.6322,
+      "avg_lat": 32.5747,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "kamia"
+    },
+    {
+      "name": "Luiseno",
+      "occurrences": 2,
+      "avg_lng": -117.2965,
+      "avg_lat": 33.7769,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "luiseno"
+    },
+    {
+      "name": "Navaho",
+      "occurrences": 2,
+      "avg_lng": -108.4679,
+      "avg_lat": 35.592,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "navaho"
+    },
+    {
+      "name": "Papago",
+      "occurrences": 2,
+      "avg_lng": -112.6806,
+      "avg_lat": 31.4294,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "papago"
+    },
+    {
+      "name": "'Amuwu",
+      "occurrences": 1,
+      "avg_lng": -120.5171,
+      "avg_lat": 34.8406,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "amuwu"
+    },
+    {
+      "name": "Abitibiwinni Aki",
+      "occurrences": 1,
+      "avg_lng": -79.6776,
+      "avg_lat": 49.3652,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "abitibiwinni-aki"
+    },
+    {
+      "name": "Accomack",
+      "occurrences": 1,
+      "avg_lng": -75.8787,
+      "avg_lat": 37.4441,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "accomack"
+    },
+    {
+      "name": "Achires",
+      "occurrences": 1,
+      "avg_lng": -107.901,
+      "avg_lat": 24.8732,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "achires"
+    },
+    {
+      "name": "Achí",
+      "occurrences": 1,
+      "avg_lng": -90.4394,
+      "avg_lat": 15.1193,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "achi"
+    },
+    {
+      "name": "Ahantchuyuk",
+      "occurrences": 1,
+      "avg_lng": -122.8751,
+      "avg_lat": 45.1386,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ahantchuyuk"
+    },
+    {
+      "name": "Ahtna Nenn’",
+      "occurrences": 1,
+      "avg_lng": -145.4898,
+      "avg_lat": 62.1544,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ahtna-nenn"
+    },
+    {
+      "name": "Ais",
+      "occurrences": 1,
+      "avg_lng": -80.7178,
+      "avg_lat": 27.8353,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ais"
+    },
+    {
+      "name": "Akaitcho",
+      "occurrences": 1,
+      "avg_lng": -108.6156,
+      "avg_lat": 63.1044,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "akaitcho"
+    },
+    {
+      "name": "Akokisa",
+      "occurrences": 1,
+      "avg_lng": -94.6695,
+      "avg_lat": 29.8041,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "akokisa"
+    },
+    {
+      "name": "Alazapas",
+      "occurrences": 1,
+      "avg_lng": -100.1062,
+      "avg_lat": 26.8989,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "alazapas"
+    },
+    {
+      "name": "Anishinabewaki ᐊᓂᔑᓈᐯᐗᑭ",
+      "occurrences": 1,
+      "avg_lng": -80.5252,
+      "avg_lat": 47.6955,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "anishinabewaki"
+    },
+    {
+      "name": "Appamattuck",
+      "occurrences": 1,
+      "avg_lng": -77.4097,
+      "avg_lat": 37.1447,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "appamattuck"
+    },
+    {
+      "name": "Arosaguntacook",
+      "occurrences": 1,
+      "avg_lng": -70.8578,
+      "avg_lat": 44.9731,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "arosaguntacook"
+    },
+    {
+      "name": "Aseniwuche Winewak (Rocky Mountain)",
+      "occurrences": 1,
+      "avg_lng": -118.6912,
+      "avg_lat": 53.8558,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "aseniwuche-winewak-rocky-mountain"
+    },
+    {
+      "name": "Atfalati",
+      "occurrences": 1,
+      "avg_lng": -123.0245,
+      "avg_lat": 45.5068,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "atfalati"
+    },
+    {
+      "name": "Atsugewi",
+      "occurrences": 1,
+      "avg_lng": -121.1366,
+      "avg_lat": 40.7591,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "atsugewi"
+    },
+    {
+      "name": "Aucocisco",
+      "occurrences": 1,
+      "avg_lng": -70.3098,
+      "avg_lat": 43.725,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "aucocisco"
+    },
+    {
+      "name": "Awaswas",
+      "occurrences": 1,
+      "avg_lng": -122.0597,
+      "avg_lat": 37.1384,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "awaswas"
+    },
+    {
+      "name": "Batsil Winik' Otik (Tzotzil)",
+      "occurrences": 1,
+      "avg_lng": -92.7253,
+      "avg_lat": 16.7915,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "batsil-winik-otik-tzotzil"
+    },
+    {
+      "name": "Bella",
+      "occurrences": 1,
+      "avg_lng": -132.5297,
+      "avg_lat": 53.7223,
+      "eras": [
+        "world-1500"
+      ],
+      "suggested_slug": "bella"
+    },
+    {
+      "name": "Bidai",
+      "occurrences": 1,
+      "avg_lng": -95.2417,
+      "avg_lat": 30.8298,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "bidai"
+    },
+    {
+      "name": "Bostos",
+      "occurrences": 1,
+      "avg_lng": -84.5936,
+      "avg_lat": 10.7289,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "bostos"
+    },
+    {
+      "name": "Bribri",
+      "occurrences": 1,
+      "avg_lng": -83.1022,
+      "avg_lat": 9.5147,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "bribri"
+    },
+    {
+      "name": "British American colonies",
+      "occurrences": 1,
+      "avg_lng": -75.4815,
+      "avg_lat": 40.1699,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "british-american-colonies"
+    },
+    {
+      "name": "Brothertown",
+      "occurrences": 1,
+      "avg_lng": -88.3081,
+      "avg_lat": 43.9704,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "brothertown"
+    },
+    {
+      "name": "Brunka",
+      "occurrences": 1,
+      "avg_lng": -83.3618,
+      "avg_lat": 9.2395,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "brunka"
+    },
+    {
+      "name": "Buglé and Ngäbé",
+      "occurrences": 1,
+      "avg_lng": -81.7027,
+      "avg_lat": 8.6238,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "bugle-and-ngabe"
+    },
+    {
+      "name": "Cahita",
+      "occurrences": 1,
+      "avg_lng": -108.5868,
+      "avg_lat": 26.2909,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cahita"
+    },
+    {
+      "name": "Cahto",
+      "occurrences": 1,
+      "avg_lng": -123.6527,
+      "avg_lat": 39.8001,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cahto"
+    },
+    {
+      "name": "Caldwell",
+      "occurrences": 1,
+      "avg_lng": -82.7729,
+      "avg_lat": 42.0339,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "caldwell"
+    },
+    {
+      "name": "Calicuas",
+      "occurrences": 1,
+      "avg_lng": -80.3937,
+      "avg_lat": 38.703,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "calicuas"
+    },
+    {
+      "name": "Cape Fear",
+      "occurrences": 1,
+      "avg_lng": -78.3187,
+      "avg_lat": 34.0081,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cape-fear"
+    },
+    {
+      "name": "Carcross/Tagish First Nation (BC)",
+      "occurrences": 1,
+      "avg_lng": -134.6139,
+      "avg_lat": 59.6446,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "carcross-tagish-first-nation-bc"
+    },
+    {
+      "name": "Carcross/Tagish First Nation (Yukon)",
+      "occurrences": 1,
+      "avg_lng": -134.998,
+      "avg_lat": 60.3415,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "carcross-tagish-first-nation-yukon"
+    },
+    {
+      "name": "Cascades",
+      "occurrences": 1,
+      "avg_lng": -122.0708,
+      "avg_lat": 45.4607,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cascades"
+    },
+    {
+      "name": "Caxcan",
+      "occurrences": 1,
+      "avg_lng": -103.1633,
+      "avg_lat": 21.598,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "caxcan"
+    },
+    {
+      "name": "Ch'orti'",
+      "occurrences": 1,
+      "avg_lng": -89.19,
+      "avg_lat": 14.6524,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ch-orti"
+    },
+    {
+      "name": "Chafan",
+      "occurrences": 1,
+      "avg_lng": -123.0248,
+      "avg_lat": 44.1559,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chafan"
+    },
+    {
+      "name": "ChalAt’i’lo t’sikAti (Chalat’)",
+      "occurrences": 1,
+      "avg_lng": -124.0724,
+      "avg_lat": 47.7837,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chalat-i-lo-t-sikati-chalat"
+    },
+    {
+      "name": "Chalon",
+      "occurrences": 1,
+      "avg_lng": -121.0405,
+      "avg_lat": 36.4876,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chalon"
+    },
+    {
+      "name": "Chelan",
+      "occurrences": 1,
+      "avg_lng": -120.4876,
+      "avg_lat": 48.157,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chelan"
+    },
+    {
+      "name": "Chemapho",
+      "occurrences": 1,
+      "avg_lng": -123.3725,
+      "avg_lat": 44.475,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chemapho"
+    },
+    {
+      "name": "Chepenefa",
+      "occurrences": 1,
+      "avg_lng": -123.3851,
+      "avg_lat": 44.6829,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chepenefa"
+    },
+    {
+      "name": "Chesapeake",
+      "occurrences": 1,
+      "avg_lng": -76.1924,
+      "avg_lat": 36.7309,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chesapeake"
+    },
+    {
+      "name": "Chiapaneco",
+      "occurrences": 1,
+      "avg_lng": -92.9805,
+      "avg_lat": 16.5618,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chiapaneco"
+    },
+    {
+      "name": "Chicora",
+      "occurrences": 1,
+      "avg_lng": -79.1846,
+      "avg_lat": 33.6047,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chicora"
+    },
+    {
+      "name": "Chilula",
+      "occurrences": 1,
+      "avg_lng": -123.8903,
+      "avg_lat": 41.0752,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chilula"
+    },
+    {
+      "name": "Chimacum",
+      "occurrences": 1,
+      "avg_lng": -122.842,
+      "avg_lat": 47.9475,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chimacum"
+    },
+    {
+      "name": "Chimariko (territory)",
+      "occurrences": 1,
+      "avg_lng": -123.268,
+      "avg_lat": 40.847,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chimariko-territory"
+    },
+    {
+      "name": "Chiso",
+      "occurrences": 1,
+      "avg_lng": -103.2655,
+      "avg_lat": 28.8902,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chiso"
+    },
+    {
+      "name": "Chit-dee-ni (Chetco)",
+      "occurrences": 1,
+      "avg_lng": -124.1848,
+      "avg_lat": 42.0905,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chit-dee-ni-chetco"
+    },
+    {
+      "name": "Chitimacha",
+      "occurrences": 1,
+      "avg_lng": -90.6504,
+      "avg_lat": 29.6484,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chitimacha"
+    },
+    {
+      "name": "Chochenyo",
+      "occurrences": 1,
+      "avg_lng": -121.9672,
+      "avg_lat": 37.7273,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chochenyo"
+    },
+    {
+      "name": "Cholulteca",
+      "occurrences": 1,
+      "avg_lng": -98.3141,
+      "avg_lat": 19.0276,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cholulteca"
+    },
+    {
+      "name": "Chontal de Guerrero – Tuxteco",
+      "occurrences": 1,
+      "avg_lng": -99.8861,
+      "avg_lat": 18.4548,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chontal-de-guerrero-tuxteco"
+    },
+    {
+      "name": "Chowanoke",
+      "occurrences": 1,
+      "avg_lng": -77.0762,
+      "avg_lat": 36.2955,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chowanoke"
+    },
+    {
+      "name": "Chukchansi",
+      "occurrences": 1,
+      "avg_lng": -119.8361,
+      "avg_lat": 37.2773,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "chukchansi"
+    },
+    {
+      "name": "Ciguayo",
+      "occurrences": 1,
+      "avg_lng": -69.8821,
+      "avg_lat": 19.2811,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ciguayo"
+    },
+    {
+      "name": "Clackamas",
+      "occurrences": 1,
+      "avg_lng": -122.367,
+      "avg_lat": 45.3836,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "clackamas"
+    },
+    {
+      "name": "Clatskanie",
+      "occurrences": 1,
+      "avg_lng": -123.3508,
+      "avg_lat": 45.8749,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "clatskanie"
+    },
+    {
+      "name": "Clatsop",
+      "occurrences": 1,
+      "avg_lng": -123.764,
+      "avg_lat": 46.041,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "clatsop"
+    },
+    {
+      "name": "Coahuiltecan",
+      "occurrences": 1,
+      "avg_lng": -100.2279,
+      "avg_lat": 27.8193,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "coahuiltecan"
+    },
+    {
+      "name": "Coast Yuki",
+      "occurrences": 1,
+      "avg_lng": -123.7186,
+      "avg_lat": 39.6748,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "coast-yuki"
+    },
+    {
+      "name": "Coca",
+      "occurrences": 1,
+      "avg_lng": -103.1627,
+      "avg_lat": 20.3382,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "coca"
+    },
+    {
+      "name": "Coharie",
+      "occurrences": 1,
+      "avg_lng": -78.4113,
+      "avg_lat": 35.0734,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "coharie"
+    },
+    {
+      "name": "Colville",
+      "occurrences": 1,
+      "avg_lng": -118.1842,
+      "avg_lat": 48.3934,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "colville"
+    },
+    {
+      "name": "Comca’ac (Seri)",
+      "occurrences": 1,
+      "avg_lng": -111.8139,
+      "avg_lat": 29.3099,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "comca-ac-seri"
+    },
+    {
+      "name": "Confederated Tribes of Warm Springs",
+      "occurrences": 1,
+      "avg_lng": -120.0457,
+      "avg_lat": 44.8222,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "confederated-tribes-of-warm-springs"
+    },
+    {
+      "name": "Confederated Villages of Lisjan",
+      "occurrences": 1,
+      "avg_lng": -121.7858,
+      "avg_lat": 37.8372,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "confederated-villages-of-lisjan"
+    },
+    {
+      "name": "Congaree",
+      "occurrences": 1,
+      "avg_lng": -81.0113,
+      "avg_lat": 33.7926,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "congaree"
+    },
+    {
+      "name": "Copuces",
+      "occurrences": 1,
+      "avg_lng": -100.811,
+      "avg_lat": 21.7209,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "copuces"
+    },
+    {
+      "name": "Coqs",
+      "occurrences": 1,
+      "avg_lng": -122.4069,
+      "avg_lat": 44.2615,
+      "eras": [
+        "world-1500"
+      ],
+      "suggested_slug": "coqs"
+    },
+    {
+      "name": "Coree",
+      "occurrences": 1,
+      "avg_lng": -77.5649,
+      "avg_lat": 34.6287,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "coree"
+    },
+    {
+      "name": "Cowlitz",
+      "occurrences": 1,
+      "avg_lng": -122.3717,
+      "avg_lat": 46.2832,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cowlitz"
+    },
+    {
+      "name": "Croatan",
+      "occurrences": 1,
+      "avg_lng": -75.7528,
+      "avg_lat": 35.7818,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "croatan"
+    },
+    {
+      "name": "Cuicuilco",
+      "occurrences": 1,
+      "avg_lng": -99.1836,
+      "avg_lat": 19.301,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cuicuilco"
+    },
+    {
+      "name": "Cuitlatec",
+      "occurrences": 1,
+      "avg_lng": -100.8584,
+      "avg_lat": 17.7753,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cuitlatec"
+    },
+    {
+      "name": "Cupeño",
+      "occurrences": 1,
+      "avg_lng": -116.6443,
+      "avg_lat": 33.3167,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cupeno"
+    },
+    {
+      "name": "Cuttatawomen",
+      "occurrences": 1,
+      "avg_lng": -77.0923,
+      "avg_lat": 38.2264,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "cuttatawomen"
+    },
+    {
+      "name": "Dakeł Keyoh (ᑕᗸᒡ ᗲᘏᑋ)",
+      "occurrences": 1,
+      "avg_lng": -122.9162,
+      "avg_lat": 54.1316,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "dake-keyoh"
+    },
+    {
+      "name": "Dau Nom Wintu",
+      "occurrences": 1,
+      "avg_lng": -122.6132,
+      "avg_lat": 40.4346,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "dau-nom-wintu"
+    },
+    {
+      "name": "Dau Pom Wintu",
+      "occurrences": 1,
+      "avg_lng": -122.2592,
+      "avg_lat": 40.488,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "dau-pom-wintu"
+    },
+    {
+      "name": "Deg Xit'an Ngan' (Deg Xit'an)",
+      "occurrences": 1,
+      "avg_lng": -159.3179,
+      "avg_lat": 62.5417,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "deg-xit-an-ngan-deg-xit-an"
+    },
+    {
+      "name": "Dena'ina Ełnena",
+      "occurrences": 1,
+      "avg_lng": -153.4868,
+      "avg_lat": 61.2636,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "dena-ina-e-nena"
+    },
+    {
+      "name": "Denendeh (Dënësųłinë́ Nëné)",
+      "occurrences": 1,
+      "avg_lng": -105.4788,
+      "avg_lat": 59.8564,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "denendeh-denesu-ine-nene"
+    },
+    {
+      "name": "Ditidaht",
+      "occurrences": 1,
+      "avg_lng": -124.4621,
+      "avg_lat": 48.8792,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ditidaht"
+    },
+    {
+      "name": "Doeg",
+      "occurrences": 1,
+      "avg_lng": -77.306,
+      "avg_lat": 38.6508,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "doeg"
+    },
+    {
+      "name": "Duwamish",
+      "occurrences": 1,
+      "avg_lng": -122.2127,
+      "avg_lat": 47.5609,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "duwamish"
+    },
+    {
+      "name": "Dënéndeh",
+      "occurrences": 1,
+      "avg_lng": -117.0585,
+      "avg_lat": 59.8082,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "denendeh"
+    },
+    {
+      "name": "Eastern Mono/Monache",
+      "occurrences": 1,
+      "avg_lng": -118.5475,
+      "avg_lat": 37.2981,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "eastern-mono-monache"
+    },
+    {
+      "name": "Eastern Nehântick",
+      "occurrences": 1,
+      "avg_lng": -71.6097,
+      "avg_lat": 41.4227,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "eastern-nehantick"
+    },
+    {
+      "name": "Eeyou Istchee",
+      "occurrences": 1,
+      "avg_lng": -74.2673,
+      "avg_lat": 52.3851,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "eeyou-istchee"
+    },
+    {
+      "name": "El Pom Wintu",
+      "occurrences": 1,
+      "avg_lng": -122.4357,
+      "avg_lat": 40.5925,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "el-pom-wintu"
+    },
+    {
+      "name": "Emberá",
+      "occurrences": 1,
+      "avg_lng": -77.7659,
+      "avg_lat": 8.1341,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "embera"
+    },
+    {
+      "name": "Eno",
+      "occurrences": 1,
+      "avg_lng": -79.4514,
+      "avg_lat": 36.0876,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "eno"
+    },
+    {
+      "name": "Entiat",
+      "occurrences": 1,
+      "avg_lng": -120.4874,
+      "avg_lat": 47.8841,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "entiat"
+    },
+    {
+      "name": "Esketemculeucw (Esk'etemc)",
+      "occurrences": 1,
+      "avg_lng": -122.96,
+      "avg_lat": 51.5136,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "esketemculeucw-esk-etemc"
+    },
+    {
+      "name": "Esselen",
+      "occurrences": 1,
+      "avg_lng": -121.5041,
+      "avg_lat": 36.3059,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "esselen"
+    },
+    {
+      "name": "Fernandeño Tataviam",
+      "occurrences": 1,
+      "avg_lng": -118.3024,
+      "avg_lat": 34.4376,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "fernandeno-tataviam"
+    },
+    {
+      "name": "Garífuna",
+      "occurrences": 1,
+      "avg_lng": -84.3274,
+      "avg_lat": 14.0494,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "garifuna"
+    },
+    {
+      "name": "Gitanyow Lax’yip",
+      "occurrences": 1,
+      "avg_lng": -129.0813,
+      "avg_lat": 55.7666,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "gitanyow-lax-yip"
+    },
+    {
+      "name": "Gitga’at",
+      "occurrences": 1,
+      "avg_lng": -129.0852,
+      "avg_lat": 53.7784,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "gitga-at"
+    },
+    {
+      "name": "Gitga’at Lax Yuup",
+      "occurrences": 1,
+      "avg_lng": -129.0852,
+      "avg_lat": 53.7784,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "gitga-at-lax-yuup"
+    },
+    {
+      "name": "Graton Rancheria",
+      "occurrences": 1,
+      "avg_lng": -122.7915,
+      "avg_lat": 38.3804,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "graton-rancheria"
+    },
+    {
+      "name": "Guacata",
+      "occurrences": 1,
+      "avg_lng": -80.4561,
+      "avg_lat": 26.9192,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "guacata"
+    },
+    {
+      "name": "Guamares",
+      "occurrences": 1,
+      "avg_lng": -101.3277,
+      "avg_lat": 21.4132,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "guamares"
+    },
+    {
+      "name": "Guanahatabey",
+      "occurrences": 1,
+      "avg_lng": -83.7604,
+      "avg_lat": 22.4089,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "guanahatabey"
+    },
+    {
+      "name": "Guarijío/Guarijó",
+      "occurrences": 1,
+      "avg_lng": -108.6802,
+      "avg_lat": 27.9339,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "guarijio-guarijo"
+    },
+    {
+      "name": "Guasaves/Tamazulas",
+      "occurrences": 1,
+      "avg_lng": -108.6361,
+      "avg_lat": 25.5959,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "guasaves-tamazulas"
+    },
+    {
+      "name": "Guaycura",
+      "occurrences": 1,
+      "avg_lng": -111.3168,
+      "avg_lat": 24.65,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "guaycura"
+    },
+    {
+      "name": "Gwa’Sala-‘Nakwaxda’xw",
+      "occurrences": 1,
+      "avg_lng": -127.0924,
+      "avg_lat": 51.257,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "gwa-sala-nakwaxda-xw"
+    },
+    {
+      "name": "Gwitch'in Settlement Region",
+      "occurrences": 1,
+      "avg_lng": -134.4638,
+      "avg_lat": 66.3873,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "gwitch-in-settlement-region"
+    },
+    {
+      "name": "Ha Shuta Enima (Mazateco)",
+      "occurrences": 1,
+      "avg_lng": -96.5454,
+      "avg_lat": 18.2772,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ha-shuta-enima-mazateco"
+    },
+    {
+      "name": "Hach Winik (Lacandon)",
+      "occurrences": 1,
+      "avg_lng": -91.0933,
+      "avg_lat": 16.6329,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hach-winik-lacandon"
+    },
+    {
+      "name": "Halalt",
+      "occurrences": 1,
+      "avg_lng": -123.6996,
+      "avg_lat": 48.822,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "halalt"
+    },
+    {
+      "name": "Hammonassets",
+      "occurrences": 1,
+      "avg_lng": -72.5983,
+      "avg_lat": 41.3624,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hammonassets"
+    },
+    {
+      "name": "Hatteras",
+      "occurrences": 1,
+      "avg_lng": -76.1089,
+      "avg_lat": 35.4315,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hatteras"
+    },
+    {
+      "name": "Hesquiaht",
+      "occurrences": 1,
+      "avg_lng": -126.4156,
+      "avg_lat": 49.5617,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hesquiaht"
+    },
+    {
+      "name": "Hi Ui (Pame/Chichimeco Jonaz)",
+      "occurrences": 1,
+      "avg_lng": -99.8436,
+      "avg_lat": 21.6549,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hi-ui-pame-chichimeco-jonaz"
+    },
+    {
+      "name": "Hia-Ced O'odham",
+      "occurrences": 1,
+      "avg_lng": -112.6962,
+      "avg_lat": 31.0687,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hia-ced-o-odham"
+    },
+    {
+      "name": "Holikachuk",
+      "occurrences": 1,
+      "avg_lng": -158.1072,
+      "avg_lat": 63.3159,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "holikachuk"
+    },
+    {
+      "name": "Homalco",
+      "occurrences": 1,
+      "avg_lng": -124.5879,
+      "avg_lat": 50.8857,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "homalco"
+    },
+    {
+      "name": "Hoopa",
+      "occurrences": 1,
+      "avg_lng": -123.5651,
+      "avg_lat": 40.9298,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hoopa"
+    },
+    {
+      "name": "Hoopa (Reservation)",
+      "occurrences": 1,
+      "avg_lng": -123.6694,
+      "avg_lat": 41.0934,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hoopa-reservation"
+    },
+    {
+      "name": "Huetar",
+      "occurrences": 1,
+      "avg_lng": -84.2522,
+      "avg_lat": 10.0423,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "huetar"
+    },
+    {
+      "name": "Hul Kuhk’u",
+      "occurrences": 1,
+      "avg_lng": -119.1622,
+      "avg_lat": 34.9533,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hul-kuhk-u"
+    },
+    {
+      "name": "Hul'qumi'num Treaty Group",
+      "occurrences": 1,
+      "avg_lng": -124.0792,
+      "avg_lat": 48.843,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hul-qumi-num-treaty-group"
+    },
+    {
+      "name": "Hunkpapa",
+      "occurrences": 1,
+      "avg_lng": -102.5043,
+      "avg_lat": 46.903,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hunkpapa"
+    },
+    {
+      "name": "Huu-ay-aht",
+      "occurrences": 1,
+      "avg_lng": -124.9589,
+      "avg_lat": 48.8994,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "huu-ay-aht"
+    },
+    {
+      "name": "Hän",
+      "occurrences": 1,
+      "avg_lng": -141.1966,
+      "avg_lat": 64.8209,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "han"
+    },
+    {
+      "name": "Hñähñu (Otomí)",
+      "occurrences": 1,
+      "avg_lng": -99.0843,
+      "avg_lat": 20.1867,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "hnahnu-otomi"
+    },
+    {
+      "name": "In-SHUCK-ch",
+      "occurrences": 1,
+      "avg_lng": -122.3082,
+      "avg_lat": 49.8132,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "in-shuck-ch"
+    },
+    {
+      "name": "Ineseño",
+      "occurrences": 1,
+      "avg_lng": -120.0163,
+      "avg_lat": 34.7282,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ineseno"
+    },
+    {
+      "name": "Inuvialuit",
+      "occurrences": 1,
+      "avg_lng": -113.7141,
+      "avg_lat": 71.6607,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "inuvialuit"
+    },
+    {
+      "name": "Irritilas/Lagunero",
+      "occurrences": 1,
+      "avg_lng": -102.499,
+      "avg_lat": 26.1241,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "irritilas-lagunero"
+    },
+    {
+      "name": "Itazipco",
+      "occurrences": 1,
+      "avg_lng": -102.4688,
+      "avg_lat": 46.0826,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "itazipco"
+    },
+    {
+      "name": "Ixil",
+      "occurrences": 1,
+      "avg_lng": -91.1152,
+      "avg_lat": 15.5822,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ixil"
+    },
+    {
+      "name": "Janos",
+      "occurrences": 1,
+      "avg_lng": -108.2275,
+      "avg_lat": 31.194,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "janos"
+    },
+    {
+      "name": "Jeaga",
+      "occurrences": 1,
+      "avg_lng": -80.206,
+      "avg_lat": 26.8348,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "jeaga"
+    },
+    {
+      "name": "Jiwere",
+      "occurrences": 1,
+      "avg_lng": -95.8561,
+      "avg_lat": 40.559,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "jiwere"
+    },
+    {
+      "name": "Jococobas",
+      "occurrences": 1,
+      "avg_lng": -106.4443,
+      "avg_lat": 29.0945,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "jococobas"
+    },
+    {
+      "name": "Julimes",
+      "occurrences": 1,
+      "avg_lng": -105.3705,
+      "avg_lat": 28.372,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "julimes"
+    },
+    {
+      "name": "Jumanos",
+      "occurrences": 1,
+      "avg_lng": -99.7115,
+      "avg_lat": 31.8487,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "jumanos"
+    },
+    {
+      "name": "Ka:’yu:’k’t’h’/Che:k’tles7et’h’",
+      "occurrences": 1,
+      "avg_lng": -127.2369,
+      "avg_lat": 50.1769,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ka-yu-k-t-h-che-k-tles7et-h"
+    },
+    {
+      "name": "Karkin",
+      "occurrences": 1,
+      "avg_lng": -122.2411,
+      "avg_lat": 38.0322,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "karkin"
+    },
+    {
+      "name": "Kashaya",
+      "occurrences": 1,
+      "avg_lng": -123.1542,
+      "avg_lat": 38.6191,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kashaya"
+    },
+    {
+      "name": "Kashtik",
+      "occurrences": 1,
+      "avg_lng": -118.7995,
+      "avg_lat": 34.9483,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kashtik"
+    },
+    {
+      "name": "Kathlamet",
+      "occurrences": 1,
+      "avg_lng": -123.441,
+      "avg_lat": 46.0921,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kathlamet"
+    },
+    {
+      "name": "Kauwets'a:ka",
+      "occurrences": 1,
+      "avg_lng": -77.8722,
+      "avg_lat": 36.642,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kauwets-a-ka"
+    },
+    {
+      "name": "Kawaiisu",
+      "occurrences": 1,
+      "avg_lng": -117.2551,
+      "avg_lat": 35.7376,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kawaiisu"
+    },
+    {
+      "name": "Kecoughtan",
+      "occurrences": 1,
+      "avg_lng": -76.3839,
+      "avg_lat": 37.0996,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kecoughtan"
+    },
+    {
+      "name": "Kelly Lake Metis Settlement Society",
+      "occurrences": 1,
+      "avg_lng": -119.9191,
+      "avg_lat": 54.7625,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kelly-lake-metis-settlement-society"
+    },
+    {
+      "name": "Ket Chonhab’ Kob’a (Chuj)",
+      "occurrences": 1,
+      "avg_lng": -91.7332,
+      "avg_lat": 16.0286,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ket-chonhab-kob-a-chuj"
+    },
+    {
+      "name": "Keyauwee",
+      "occurrences": 1,
+      "avg_lng": -80.7532,
+      "avg_lat": 36.0364,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "keyauwee"
+    },
+    {
+      "name": "KiKiallus",
+      "occurrences": 1,
+      "avg_lng": -122.3591,
+      "avg_lat": 48.2997,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kikiallus"
+    },
+    {
+      "name": "Kiliwa",
+      "occurrences": 1,
+      "avg_lng": -115.538,
+      "avg_lat": 30.956,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kiliwa"
+    },
+    {
+      "name": "Kiskiack",
+      "occurrences": 1,
+      "avg_lng": -76.69,
+      "avg_lat": 37.3268,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kiskiack"
+    },
+    {
+      "name": "Kitanemuk",
+      "occurrences": 1,
+      "avg_lng": -118.552,
+      "avg_lat": 35.0884,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kitanemuk"
+    },
+    {
+      "name": "Kitasoo/Xai'xais",
+      "occurrences": 1,
+      "avg_lng": -128.2188,
+      "avg_lat": 52.9797,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kitasoo-xai-xais"
+    },
+    {
+      "name": "Kitselas",
+      "occurrences": 1,
+      "avg_lng": -128.5958,
+      "avg_lat": 54.29,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kitselas"
+    },
+    {
+      "name": "Kitsumkalum",
+      "occurrences": 1,
+      "avg_lng": -128.694,
+      "avg_lat": 54.4873,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kitsumkalum"
+    },
+    {
+      "name": "Kitsé Cha’tnio (Chatino)",
+      "occurrences": 1,
+      "avg_lng": -97.3089,
+      "avg_lat": 16.252,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kitse-cha-tnio-chatino"
+    },
+    {
+      "name": "Kizh",
+      "occurrences": 1,
+      "avg_lng": -117.8676,
+      "avg_lat": 33.9377,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kizh"
+    },
+    {
+      "name": "Kl'bal Pom Wintu",
+      "occurrences": 1,
+      "avg_lng": -122.4994,
+      "avg_lat": 40.8578,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kl-bal-pom-wintu"
+    },
+    {
+      "name": "Klahoose",
+      "occurrences": 1,
+      "avg_lng": -124.4242,
+      "avg_lat": 50.4278,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "klahoose"
+    },
+    {
+      "name": "Kluane",
+      "occurrences": 1,
+      "avg_lng": -139.5895,
+      "avg_lat": 61.5539,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kluane"
+    },
+    {
+      "name": "Koasati (Coushatta)",
+      "occurrences": 1,
+      "avg_lng": -93.8561,
+      "avg_lat": 31.1343,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "koasati-coushatta"
+    },
+    {
+      "name": "Kojomk'awi (Konkow)",
+      "occurrences": 1,
+      "avg_lng": -121.5391,
+      "avg_lat": 39.7071,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kojomk-awi-konkow"
+    },
+    {
+      "name": "Konnaack",
+      "occurrences": 1,
+      "avg_lng": -123.0544,
+      "avg_lat": 46.1765,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "konnaack"
+    },
+    {
+      "name": "Konomihu",
+      "occurrences": 1,
+      "avg_lng": -123.1705,
+      "avg_lat": 41.2448,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "konomihu"
+    },
+    {
+      "name": "Koyukon",
+      "occurrences": 1,
+      "avg_lng": -153.5069,
+      "avg_lat": 65.7593,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "koyukon"
+    },
+    {
+      "name": "Kriol",
+      "occurrences": 1,
+      "avg_lng": -84.0536,
+      "avg_lat": 11.0812,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kriol"
+    },
+    {
+      "name": "Ktunaxa ɁamakɁis",
+      "occurrences": 1,
+      "avg_lng": -115.6477,
+      "avg_lat": 49.7971,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ktunaxa-amak-is"
+    },
+    {
+      "name": "Kumeyaay",
+      "occurrences": 1,
+      "avg_lng": -116.0488,
+      "avg_lat": 32.3544,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kumeyaay"
+    },
+    {
+      "name": "Kusso",
+      "occurrences": 1,
+      "avg_lng": -80.6976,
+      "avg_lat": 32.6487,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kusso"
+    },
+    {
+      "name": "Kuuvuan KaNianiq",
+      "occurrences": 1,
+      "avg_lng": -154.5502,
+      "avg_lat": 67.1967,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kuuvuan-kanianiq"
+    },
+    {
+      "name": "Kuyam",
+      "occurrences": 1,
+      "avg_lng": -119.9403,
+      "avg_lat": 35.076,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kuyam"
+    },
+    {
+      "name": "Kwanlin Dün",
+      "occurrences": 1,
+      "avg_lng": -134.9805,
+      "avg_lat": 61.0979,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kwanlin-dun"
+    },
+    {
+      "name": "Kwantlen",
+      "occurrences": 1,
+      "avg_lng": -122.1415,
+      "avg_lat": 49.4278,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kwantlen"
+    },
+    {
+      "name": "Kwikwetlem",
+      "occurrences": 1,
+      "avg_lng": -122.658,
+      "avg_lat": 49.3748,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "kwikwetlem"
+    },
+    {
+      "name": "K’asho Got’ine",
+      "occurrences": 1,
+      "avg_lng": -128.8325,
+      "avg_lat": 67.0815,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "k-asho-got-ine"
+    },
+    {
+      "name": "K’áálǫ Got’ine",
+      "occurrences": 1,
+      "avg_lng": -125.2883,
+      "avg_lat": 65.3487,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "k-aalo-got-ine"
+    },
+    {
+      "name": "K’ómoks",
+      "occurrences": 1,
+      "avg_lng": -125.4014,
+      "avg_lat": 49.7467,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "k-omoks"
+    },
+    {
+      "name": "Lassik",
+      "occurrences": 1,
+      "avg_lng": -123.4287,
+      "avg_lat": 40.2376,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "lassik"
+    },
+    {
+      "name": "Lhaq’temish (Lummi)",
+      "occurrences": 1,
+      "avg_lng": -122.528,
+      "avg_lat": 48.7625,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "lhaq-temish-lummi"
+    },
+    {
+      "name": "Lheidli T'enneh",
+      "occurrences": 1,
+      "avg_lng": -121.786,
+      "avg_lat": 53.7246,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "lheidli-t-enneh"
+    },
+    {
+      "name": "Lil'wat",
+      "occurrences": 1,
+      "avg_lng": -122.8828,
+      "avg_lat": 50.3788,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "lil-wat"
+    },
+    {
+      "name": "Louisiana",
+      "occurrences": 1,
+      "avg_lng": -89.2333,
+      "avg_lat": 31.1176,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "louisiana"
+    },
+    {
+      "name": "Luckiamute",
+      "occurrences": 1,
+      "avg_lng": -123.4434,
+      "avg_lat": 44.8288,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "luckiamute"
+    },
+    {
+      "name": "Lumbee",
+      "occurrences": 1,
+      "avg_lng": -78.4627,
+      "avg_lat": 35.564,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "lumbee"
+    },
+    {
+      "name": "Macorix",
+      "occurrences": 1,
+      "avg_lng": -70.3723,
+      "avg_lat": 19.1302,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "macorix"
+    },
+    {
+      "name": "Malécu",
+      "occurrences": 1,
+      "avg_lng": -84.8087,
+      "avg_lat": 10.7117,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "malecu"
+    },
+    {
+      "name": "Manahoac",
+      "occurrences": 1,
+      "avg_lng": -78.3969,
+      "avg_lat": 38.5955,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "manahoac"
+    },
+    {
+      "name": "Massa-adchu-es-et (Massachusett)",
+      "occurrences": 1,
+      "avg_lng": -71.0727,
+      "avg_lat": 42.1727,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "massa-adchu-es-et-massachusett"
+    },
+    {
+      "name": "Massacoes",
+      "occurrences": 1,
+      "avg_lng": -72.8702,
+      "avg_lat": 41.8675,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "massacoes"
+    },
+    {
+      "name": "Massawomeck",
+      "occurrences": 1,
+      "avg_lng": -79.0207,
+      "avg_lat": 39.3999,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "massawomeck"
+    },
+    {
+      "name": "Matagalpa/Cacaopera",
+      "occurrences": 1,
+      "avg_lng": -85.6781,
+      "avg_lat": 13.2652,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "matagalpa-cacaopera"
+    },
+    {
+      "name": "Matecumbe",
+      "occurrences": 1,
+      "avg_lng": -80.4058,
+      "avg_lat": 25.1698,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "matecumbe"
+    },
+    {
+      "name": "Matlatzinco/Tlahuica/Ocuiltec",
+      "occurrences": 1,
+      "avg_lng": -99.661,
+      "avg_lat": 18.8046,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "matlatzinco-tlahuica-ocuiltec"
+    },
+    {
+      "name": "Matlatzinco/matlatzinteca",
+      "occurrences": 1,
+      "avg_lng": -101.0524,
+      "avg_lat": 19.7502,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "matlatzinco-matlatzinteca"
+    },
+    {
+      "name": "Mattamuskeet",
+      "occurrences": 1,
+      "avg_lng": -76.2702,
+      "avg_lat": 35.5217,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mattamuskeet"
+    },
+    {
+      "name": "Mattole",
+      "occurrences": 1,
+      "avg_lng": -124.1961,
+      "avg_lat": 40.3146,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mattole"
+    },
+    {
+      "name": "Mdewakanton",
+      "occurrences": 1,
+      "avg_lng": -95.7295,
+      "avg_lat": 46.4955,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mdewakanton"
+    },
+    {
+      "name": "Mechoopda",
+      "occurrences": 1,
+      "avg_lng": -121.8445,
+      "avg_lat": 39.6184,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mechoopda"
+    },
+    {
+      "name": "Meherrin",
+      "occurrences": 1,
+      "avg_lng": -77.8722,
+      "avg_lat": 36.642,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "meherrin"
+    },
+    {
+      "name": "Methow",
+      "occurrences": 1,
+      "avg_lng": -120.2496,
+      "avg_lat": 48.415,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "methow"
+    },
+    {
+      "name": "Meškwahki·aša·hina (Fox)",
+      "occurrences": 1,
+      "avg_lng": -84.1932,
+      "avg_lat": 42.0204,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "meskwahki-asa-hina-fox"
+    },
+    {
+      "name": "Me̱'pha̱a̱ (Tlapaneco)",
+      "occurrences": 1,
+      "avg_lng": -98.8976,
+      "avg_lat": 17.0859,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "me-phaa-tlapaneco"
+    },
+    {
+      "name": "Miccosukee",
+      "occurrences": 1,
+      "avg_lng": -80.8275,
+      "avg_lat": 26.0758,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "miccosukee"
+    },
+    {
+      "name": "Michif Piyii (Métis)",
+      "occurrences": 1,
+      "avg_lng": -106.9202,
+      "avg_lat": 54.6159,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "michif-piyii-metis"
+    },
+    {
+      "name": "Micqanaqa’n",
+      "occurrences": 1,
+      "avg_lng": -119.1188,
+      "avg_lat": 34.4463,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "micqanaqa-n"
+    },
+    {
+      "name": "Mississauga",
+      "occurrences": 1,
+      "avg_lng": -78.9503,
+      "avg_lat": 44.295,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mississauga"
+    },
+    {
+      "name": "Mississaugas of the Credit First Nation",
+      "occurrences": 1,
+      "avg_lng": -80.3476,
+      "avg_lat": 43.4538,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mississaugas-of-the-credit-first-nation"
+    },
+    {
+      "name": "Miwkoʔ Waaliʔ",
+      "occurrences": 1,
+      "avg_lng": -121.3408,
+      "avg_lat": 38.1511,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "miwko-waali"
+    },
+    {
+      "name": "Mnicoujou",
+      "occurrences": 1,
+      "avg_lng": -101.1196,
+      "avg_lat": 44.3248,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mnicoujou"
+    },
+    {
+      "name": "Mochó",
+      "occurrences": 1,
+      "avg_lng": -92.2282,
+      "avg_lat": 15.3723,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mocho"
+    },
+    {
+      "name": "Mohican",
+      "occurrences": 1,
+      "avg_lng": -73.6331,
+      "avg_lat": 42.8679,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mohican"
+    },
+    {
+      "name": "Molalla",
+      "occurrences": 1,
+      "avg_lng": -122.0996,
+      "avg_lat": 43.9242,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "molalla"
+    },
+    {
+      "name": "Monacan",
+      "occurrences": 1,
+      "avg_lng": -78.5945,
+      "avg_lat": 37.7165,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "monacan"
+    },
+    {
+      "name": "Moneton",
+      "occurrences": 1,
+      "avg_lng": -80.9898,
+      "avg_lat": 37.3592,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "moneton"
+    },
+    {
+      "name": "Monqui",
+      "occurrences": 1,
+      "avg_lng": -111.4442,
+      "avg_lat": 25.8443,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "monqui"
+    },
+    {
+      "name": "Mopan",
+      "occurrences": 1,
+      "avg_lng": -88.9948,
+      "avg_lat": 16.4143,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mopan"
+    },
+    {
+      "name": "Moratok",
+      "occurrences": 1,
+      "avg_lng": -77.0935,
+      "avg_lat": 35.9484,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "moratok"
+    },
+    {
+      "name": "Moraughtacund",
+      "occurrences": 1,
+      "avg_lng": -76.5045,
+      "avg_lat": 37.8493,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "moraughtacund"
+    },
+    {
+      "name": "Moses/Columbia",
+      "occurrences": 1,
+      "avg_lng": -119.3775,
+      "avg_lat": 47.2933,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "moses-columbia"
+    },
+    {
+      "name": "Mosquito Coast",
+      "occurrences": 1,
+      "avg_lng": -83.8508,
+      "avg_lat": 13.165,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "mosquito-coast"
+    },
+    {
+      "name": "Mount Tabor Indian Community",
+      "occurrences": 1,
+      "avg_lng": -95.0752,
+      "avg_lat": 32.2896,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mount-tabor-indian-community"
+    },
+    {
+      "name": "Mountain Métis",
+      "occurrences": 1,
+      "avg_lng": -118.754,
+      "avg_lat": 54.1138,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "mountain-metis"
+    },
+    {
+      "name": "Muckleshoot",
+      "occurrences": 1,
+      "avg_lng": -122.118,
+      "avg_lat": 47.3522,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "muckleshoot"
+    },
+    {
+      "name": "Multnomah",
+      "occurrences": 1,
+      "avg_lng": -122.8619,
+      "avg_lat": 45.861,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "multnomah"
+    },
+    {
+      "name": "Musgamagw Dzawada'enuxw",
+      "occurrences": 1,
+      "avg_lng": -126.1825,
+      "avg_lat": 51.109,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "musgamagw-dzawada-enuxw"
+    },
+    {
+      "name": "Muwekma",
+      "occurrences": 1,
+      "avg_lng": -121.7689,
+      "avg_lat": 37.6147,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "muwekma"
+    },
+    {
+      "name": "Myaamia",
+      "occurrences": 1,
+      "avg_lng": -86.8977,
+      "avg_lat": 40.9631,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "myaamia"
+    },
+    {
+      "name": "NWT Métis Nation",
+      "occurrences": 1,
+      "avg_lng": -106.7945,
+      "avg_lat": 62.4509,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nwt-metis-nation"
+    },
+    {
+      "name": "Na-cho Nyak Dun",
+      "occurrences": 1,
+      "avg_lng": -134.0589,
+      "avg_lat": 65.2432,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "na-cho-nyak-dun"
+    },
+    {
+      "name": "Nacotchtank (Anacostan)",
+      "occurrences": 1,
+      "avg_lng": -76.9212,
+      "avg_lat": 38.9467,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nacotchtank-anacostan"
+    },
+    {
+      "name": "Nadleh Whut'en",
+      "occurrences": 1,
+      "avg_lng": -124.8989,
+      "avg_lat": 54.028,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nadleh-whut-en"
+    },
+    {
+      "name": "Nandtaughtacund",
+      "occurrences": 1,
+      "avg_lng": -77.2381,
+      "avg_lat": 38.0878,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nandtaughtacund"
+    },
+    {
+      "name": "Nanrantsouak",
+      "occurrences": 1,
+      "avg_lng": -70.2852,
+      "avg_lat": 45.3035,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nanrantsouak"
+    },
+    {
+      "name": "Nansemond",
+      "occurrences": 1,
+      "avg_lng": -76.574,
+      "avg_lat": 36.8405,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nansemond"
+    },
+    {
+      "name": "Natchitoches",
+      "occurrences": 1,
+      "avg_lng": -93.1346,
+      "avg_lat": 31.7834,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "natchitoches"
+    },
+    {
+      "name": "Nauset",
+      "occurrences": 1,
+      "avg_lng": -70.0052,
+      "avg_lat": 41.8361,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nauset"
+    },
+    {
+      "name": "Nehalem",
+      "occurrences": 1,
+      "avg_lng": -123.706,
+      "avg_lat": 45.7854,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nehalem"
+    },
+    {
+      "name": "Nespelem",
+      "occurrences": 1,
+      "avg_lng": -119.1051,
+      "avg_lat": 48.0582,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nespelem"
+    },
+    {
+      "name": "Nestucca",
+      "occurrences": 1,
+      "avg_lng": -123.8376,
+      "avg_lat": 45.2496,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nestucca"
+    },
+    {
+      "name": "Neusiok",
+      "occurrences": 1,
+      "avg_lng": -77.0481,
+      "avg_lat": 34.8804,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "neusiok"
+    },
+    {
+      "name": "New River Shasta",
+      "occurrences": 1,
+      "avg_lng": -122.8997,
+      "avg_lat": 41.22,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "new-river-shasta"
+    },
+    {
+      "name": "Ngi-iva (Popoloca)",
+      "occurrences": 1,
+      "avg_lng": -97.6516,
+      "avg_lat": 18.4848,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ngi-iva-popoloca"
+    },
+    {
+      "name": "Nipmuc",
+      "occurrences": 1,
+      "avg_lng": -72.1219,
+      "avg_lat": 42.1957,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nipmuc"
+    },
+    {
+      "name": "Nisenan",
+      "occurrences": 1,
+      "avg_lng": -121.035,
+      "avg_lat": 39.13,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nisenan"
+    },
+    {
+      "name": "Nisg̱a'a",
+      "occurrences": 1,
+      "avg_lng": -129.2645,
+      "avg_lat": 55.8343,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nisga-a"
+    },
+    {
+      "name": "Nisqually",
+      "occurrences": 1,
+      "avg_lng": -122.5936,
+      "avg_lat": 46.9106,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nisqually"
+    },
+    {
+      "name": "Nitaskinan (Atikamekw / Nehirowisi Aski)",
+      "occurrences": 1,
+      "avg_lng": -74.036,
+      "avg_lat": 47.8808,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nitaskinan-atikamekw-nehirowisi-aski"
+    },
+    {
+      "name": "Niúachi",
+      "occurrences": 1,
+      "avg_lng": -93.3213,
+      "avg_lat": 39.2088,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "niuachi"
+    },
+    {
+      "name": "Nom Sus Wintu",
+      "occurrences": 1,
+      "avg_lng": -122.8164,
+      "avg_lat": 40.9535,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nom-sus-wintu"
+    },
+    {
+      "name": "Nom Ti Pom Wintu",
+      "occurrences": 1,
+      "avg_lng": -122.3576,
+      "avg_lat": 41.2214,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nom-ti-pom-wintu"
+    },
+    {
+      "name": "Nomlaki",
+      "occurrences": 1,
+      "avg_lng": -122.5113,
+      "avg_lat": 39.9055,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nomlaki"
+    },
+    {
+      "name": "Nongatl",
+      "occurrences": 1,
+      "avg_lng": -123.7491,
+      "avg_lat": 40.4846,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nongatl"
+    },
+    {
+      "name": "Nor Rel Muk Wintu",
+      "occurrences": 1,
+      "avg_lng": -123.0416,
+      "avg_lat": 40.4563,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nor-rel-muk-wintu"
+    },
+    {
+      "name": "Northern Yuki",
+      "occurrences": 1,
+      "avg_lng": -123.1655,
+      "avg_lat": 39.7268,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "northern-yuki"
+    },
+    {
+      "name": "Nunatsiavut",
+      "occurrences": 1,
+      "avg_lng": -59.5809,
+      "avg_lat": 54.4185,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nunatsiavut"
+    },
+    {
+      "name": "NunatuKavut",
+      "occurrences": 1,
+      "avg_lng": -63.613,
+      "avg_lat": 53.3089,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nunatukavut"
+    },
+    {
+      "name": "Nunavik",
+      "occurrences": 1,
+      "avg_lng": -73.0859,
+      "avg_lat": 58.4157,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nunavik"
+    },
+    {
+      "name": "Nuwhaha",
+      "occurrences": 1,
+      "avg_lng": -122.3171,
+      "avg_lat": 48.58,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nuwhaha"
+    },
+    {
+      "name": "Nuxwsa'7aq (Nooksack)",
+      "occurrences": 1,
+      "avg_lng": -122.0283,
+      "avg_lat": 48.8211,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nuxwsa-7aq-nooksack"
+    },
+    {
+      "name": "Nüwüwü (Chemehuevi)",
+      "occurrences": 1,
+      "avg_lng": -115.4923,
+      "avg_lat": 34.8935,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nuwuwu-chemehuevi"
+    },
+    {
+      "name": "Nłeʔkepmx Tmíxʷ (Nlaka'pamux)",
+      "occurrences": 1,
+      "avg_lng": -120.789,
+      "avg_lat": 49.6996,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "n-e-kepmx-tmix-nlaka-pamux"
+    },
+    {
+      "name": "O'odham Jeweḍ",
+      "occurrences": 1,
+      "avg_lng": -111.9601,
+      "avg_lat": 31.7373,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "o-odham-jewed"
+    },
+    {
+      "name": "O-ga-xpa Ma-zhoⁿ (O-ga-xpa)",
+      "occurrences": 1,
+      "avg_lng": -93.4382,
+      "avg_lat": 35.453,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "o-ga-xpa-ma-zho-o-ga-xpa"
+    },
+    {
+      "name": "Obispeño",
+      "occurrences": 1,
+      "avg_lng": -120.6754,
+      "avg_lat": 35.3077,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "obispeno"
+    },
+    {
+      "name": "Occaneechi",
+      "occurrences": 1,
+      "avg_lng": -78.4865,
+      "avg_lat": 36.614,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "occaneechi"
+    },
+    {
+      "name": "Occohannock",
+      "occurrences": 1,
+      "avg_lng": -75.6795,
+      "avg_lat": 37.7795,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "occohannock"
+    },
+    {
+      "name": "Odawa",
+      "occurrences": 1,
+      "avg_lng": -85.4636,
+      "avg_lat": 44.3333,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "odawa"
+    },
+    {
+      "name": "Oglala",
+      "occurrences": 1,
+      "avg_lng": -102.5734,
+      "avg_lat": 41.7385,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "oglala"
+    },
+    {
+      "name": "Ohlone",
+      "occurrences": 1,
+      "avg_lng": -121.8479,
+      "avg_lat": 37.1681,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ohlone"
+    },
+    {
+      "name": "Okwanuchu",
+      "occurrences": 1,
+      "avg_lng": -122.159,
+      "avg_lat": 41.2035,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "okwanuchu"
+    },
+    {
+      "name": "Onawmanient",
+      "occurrences": 1,
+      "avg_lng": -76.6926,
+      "avg_lat": 38.0874,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "onawmanient"
+    },
+    {
+      "name": "Oohenumpa",
+      "occurrences": 1,
+      "avg_lng": -101.4194,
+      "avg_lat": 43.1187,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "oohenumpa"
+    },
+    {
+      "name": "Opelousas",
+      "occurrences": 1,
+      "avg_lng": -92.0739,
+      "avg_lat": 30.5075,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "opelousas"
+    },
+    {
+      "name": "Opiscopank",
+      "occurrences": 1,
+      "avg_lng": -76.7534,
+      "avg_lat": 37.6874,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "opiscopank"
+    },
+    {
+      "name": "Očhéthi Šakówiŋ",
+      "occurrences": 1,
+      "avg_lng": -98.7124,
+      "avg_lat": 43.9396,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ochethi-sakowi"
+    },
+    {
+      "name": "O’ de püt/Angpøn (Zoque)",
+      "occurrences": 1,
+      "avg_lng": -93.2986,
+      "avg_lat": 17.2001,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "o-de-put-angp-n-zoque"
+    },
+    {
+      "name": "Pacaxes",
+      "occurrences": 1,
+      "avg_lng": -107.4977,
+      "avg_lat": 25.4829,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pacaxes"
+    },
+    {
+      "name": "Pacheedaht",
+      "occurrences": 1,
+      "avg_lng": -124.3033,
+      "avg_lat": 48.6665,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pacheedaht"
+    },
+    {
+      "name": "Paipai (Akwa'ala)",
+      "occurrences": 1,
+      "avg_lng": -115.9051,
+      "avg_lat": 31.4537,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "paipai-akwa-ala"
+    },
+    {
+      "name": "Palouse",
+      "occurrences": 1,
+      "avg_lng": -118.0767,
+      "avg_lat": 46.7925,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "palouse"
+    },
+    {
+      "name": "Pascua Yaqui",
+      "occurrences": 1,
+      "avg_lng": -111.0675,
+      "avg_lat": 32.1194,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pascua-yaqui"
+    },
+    {
+      "name": "Patawomeck",
+      "occurrences": 1,
+      "avg_lng": -77.4117,
+      "avg_lat": 38.329,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "patawomeck"
+    },
+    {
+      "name": "Paugussett",
+      "occurrences": 1,
+      "avg_lng": -73.2758,
+      "avg_lat": 41.4376,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "paugussett"
+    },
+    {
+      "name": "Pawtucket",
+      "occurrences": 1,
+      "avg_lng": -71.256,
+      "avg_lat": 42.5813,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pawtucket"
+    },
+    {
+      "name": "Pech",
+      "occurrences": 1,
+      "avg_lng": -85.7271,
+      "avg_lat": 14.9471,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pech"
+    },
+    {
+      "name": "Pee Dee",
+      "occurrences": 1,
+      "avg_lng": -79.7228,
+      "avg_lat": 34.2703,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pee-dee"
+    },
+    {
+      "name": "Pentucket",
+      "occurrences": 1,
+      "avg_lng": -71.0221,
+      "avg_lat": 42.8914,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pentucket"
+    },
+    {
+      "name": "Peoria",
+      "occurrences": 1,
+      "avg_lng": -87.1283,
+      "avg_lat": 41.2994,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "peoria"
+    },
+    {
+      "name": "Pequawket",
+      "occurrences": 1,
+      "avg_lng": -70.9037,
+      "avg_lat": 43.8769,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pequawket"
+    },
+    {
+      "name": "Pequonnock",
+      "occurrences": 1,
+      "avg_lng": -73.2813,
+      "avg_lat": 41.2895,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pequonnock"
+    },
+    {
+      "name": "Pericú",
+      "occurrences": 1,
+      "avg_lng": -109.987,
+      "avg_lat": 23.6102,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pericu"
+    },
+    {
+      "name": "Perquimans",
+      "occurrences": 1,
+      "avg_lng": -76.4845,
+      "avg_lat": 36.2058,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "perquimans"
+    },
+    {
+      "name": "Pescado",
+      "occurrences": 1,
+      "avg_lng": -105.8108,
+      "avg_lat": 30.5718,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pescado"
+    },
+    {
+      "name": "Petun",
+      "occurrences": 1,
+      "avg_lng": -80.2164,
+      "avg_lat": 44.1588,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "petun"
+    },
+    {
+      "name": "Pissaseck",
+      "occurrences": 1,
+      "avg_lng": -77.0135,
+      "avg_lat": 38.0459,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pissaseck"
+    },
+    {
+      "name": "Pit River",
+      "occurrences": 1,
+      "avg_lng": -121.0767,
+      "avg_lat": 41.2097,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pit-river"
+    },
+    {
+      "name": "Pocomoke",
+      "occurrences": 1,
+      "avg_lng": -75.6051,
+      "avg_lat": 38.1622,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pocomoke"
+    },
+    {
+      "name": "Pocumtuc",
+      "occurrences": 1,
+      "avg_lng": -72.7071,
+      "avg_lat": 42.3139,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pocumtuc"
+    },
+    {
+      "name": "Podunks",
+      "occurrences": 1,
+      "avg_lng": -72.5281,
+      "avg_lat": 41.8675,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "podunks"
+    },
+    {
+      "name": "Pokanoket",
+      "occurrences": 1,
+      "avg_lng": -71.1074,
+      "avg_lat": 41.9255,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "pokanoket"
+    },
+    {
+      "name": "Popeloutchom (Amah Mutsun)",
+      "occurrences": 1,
+      "avg_lng": -121.2085,
+      "avg_lat": 36.703,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "popeloutchom-amah-mutsun"
+    },
+    {
+      "name": "Popti'",
+      "occurrences": 1,
+      "avg_lng": -91.6468,
+      "avg_lat": 15.7871,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "popti"
+    },
+    {
+      "name": "Poqomchi’",
+      "occurrences": 1,
+      "avg_lng": -90.2741,
+      "avg_lat": 15.255,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "poqomchi"
+    },
+    {
+      "name": "Poquonook",
+      "occurrences": 1,
+      "avg_lng": -72.6962,
+      "avg_lat": 41.8419,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "poquonook"
+    },
+    {
+      "name": "Poteskeet",
+      "occurrences": 1,
+      "avg_lng": -76.0322,
+      "avg_lat": 36.3243,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "poteskeet"
+    },
+    {
+      "name": "Puyallup",
+      "occurrences": 1,
+      "avg_lng": -121.9631,
+      "avg_lat": 47.1015,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "puyallup"
+    },
+    {
+      "name": "Q'anjob'al",
+      "occurrences": 1,
+      "avg_lng": -91.6187,
+      "avg_lat": 15.817,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "q-anjob-al"
+    },
+    {
+      "name": "Qayqayt",
+      "occurrences": 1,
+      "avg_lng": -122.9236,
+      "avg_lat": 49.273,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "qayqayt"
+    },
+    {
+      "name": "Quatsino",
+      "occurrences": 1,
+      "avg_lng": -127.7989,
+      "avg_lat": 50.5571,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "quatsino"
+    },
+    {
+      "name": "Queets",
+      "occurrences": 1,
+      "avg_lng": -124.0152,
+      "avg_lat": 47.6651,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "queets"
+    },
+    {
+      "name": "Quiyoughcohannock",
+      "occurrences": 1,
+      "avg_lng": -76.9617,
+      "avg_lat": 37.1528,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "quiyoughcohannock"
+    },
+    {
+      "name": "Quw'utsun",
+      "occurrences": 1,
+      "avg_lng": -124.0943,
+      "avg_lat": 48.8554,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "quw-utsun"
+    },
+    {
+      "name": "Qwû'lh-hwai-pûm (Klickitat)",
+      "occurrences": 1,
+      "avg_lng": -121.8382,
+      "avg_lat": 46.273,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "qwu-lh-hwai-pum-klickitat"
+    },
+    {
+      "name": "Rama",
+      "occurrences": 1,
+      "avg_lng": -84.5386,
+      "avg_lat": 11.1421,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "rama"
+    },
+    {
+      "name": "Ramaytush",
+      "occurrences": 1,
+      "avg_lng": -122.2845,
+      "avg_lat": 37.4923,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ramaytush"
+    },
+    {
+      "name": "Rappahannock",
+      "occurrences": 1,
+      "avg_lng": -76.9461,
+      "avg_lat": 37.9345,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "rappahannock"
+    },
+    {
+      "name": "Rarámuri (Tarahumara-Guarijio)",
+      "occurrences": 1,
+      "avg_lng": -107.774,
+      "avg_lat": 27.8149,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "raramuri-tarahumara-guarijio"
+    },
+    {
+      "name": "Rayados (Borrados)",
+      "occurrences": 1,
+      "avg_lng": -98.5273,
+      "avg_lat": 25.3227,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "rayados-borrados"
+    },
+    {
+      "name": "Roanoke",
+      "occurrences": 1,
+      "avg_lng": -75.857,
+      "avg_lat": 35.7784,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "roanoke"
+    },
+    {
+      "name": "Rumsen",
+      "occurrences": 1,
+      "avg_lng": -121.3906,
+      "avg_lat": 36.5273,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "rumsen"
+    },
+    {
+      "name": "Runixa Ngiigua (Chocho)",
+      "occurrences": 1,
+      "avg_lng": -97.3171,
+      "avg_lat": 17.7211,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "runixa-ngiigua-chocho"
+    },
+    {
+      "name": "S'Klallam",
+      "occurrences": 1,
+      "avg_lng": -123.2102,
+      "avg_lat": 47.8395,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "s-klallam"
+    },
+    {
+      "name": "Sacapultec",
+      "occurrences": 1,
+      "avg_lng": -91.1205,
+      "avg_lat": 15.2535,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sacapultec"
+    },
+    {
+      "name": "Sahtú Got’ine",
+      "occurrences": 1,
+      "avg_lng": -122.5825,
+      "avg_lat": 65.5039,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sahtu-got-ine"
+    },
+    {
+      "name": "Salinan",
+      "occurrences": 1,
+      "avg_lng": -120.8195,
+      "avg_lat": 35.8238,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "salinan"
+    },
+    {
+      "name": "Salmon River",
+      "occurrences": 1,
+      "avg_lng": -123.8655,
+      "avg_lat": 45.0286,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "salmon-river"
+    },
+    {
+      "name": "Saluda",
+      "occurrences": 1,
+      "avg_lng": -82.9497,
+      "avg_lat": 34.621,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "saluda"
+    },
+    {
+      "name": "Sana",
+      "occurrences": 1,
+      "avg_lng": -96.3869,
+      "avg_lat": 30.1538,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sana"
+    },
+    {
+      "name": "Santiam",
+      "occurrences": 1,
+      "avg_lng": -122.8991,
+      "avg_lat": 44.6625,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "santiam"
+    },
+    {
+      "name": "Sappony",
+      "occurrences": 1,
+      "avg_lng": -79.5544,
+      "avg_lat": 36.6653,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sappony"
+    },
+    {
+      "name": "Saura",
+      "occurrences": 1,
+      "avg_lng": -79.8764,
+      "avg_lat": 36.4559,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "saura"
+    },
+    {
+      "name": "Schitsu’umsh (Coeur d’Alene)",
+      "occurrences": 1,
+      "avg_lng": -116.1521,
+      "avg_lat": 47.4541,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "schitsu-umsh-coeur-d-alene"
+    },
+    {
+      "name": "Secotan",
+      "occurrences": 1,
+      "avg_lng": -76.7325,
+      "avg_lat": 35.6711,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "secotan"
+    },
+    {
+      "name": "Sekakawon",
+      "occurrences": 1,
+      "avg_lng": -76.5312,
+      "avg_lat": 37.9497,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sekakawon"
+    },
+    {
+      "name": "Semiahmoo",
+      "occurrences": 1,
+      "avg_lng": -122.6701,
+      "avg_lat": 48.9985,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "semiahmoo"
+    },
+    {
+      "name": "Shakori",
+      "occurrences": 1,
+      "avg_lng": -79.4028,
+      "avg_lat": 36.0895,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "shakori"
+    },
+    {
+      "name": "Shasta",
+      "occurrences": 1,
+      "avg_lng": -122.5951,
+      "avg_lat": 41.7136,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "shasta"
+    },
+    {
+      "name": "Shigom",
+      "occurrences": 1,
+      "avg_lng": -122.807,
+      "avg_lat": 39.0975,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "shigom"
+    },
+    {
+      "name": "Shita Got’ine",
+      "occurrences": 1,
+      "avg_lng": -128.5343,
+      "avg_lat": 64.2105,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "shita-got-ine"
+    },
+    {
+      "name": "Shmuwich (Barbareño)",
+      "occurrences": 1,
+      "avg_lng": -119.6616,
+      "avg_lat": 34.4832,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "shmuwich-barbareno"
+    },
+    {
+      "name": "Shíshálh",
+      "occurrences": 1,
+      "avg_lng": -123.7719,
+      "avg_lat": 49.9369,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "shishalh"
+    },
+    {
+      "name": "Sicangu",
+      "occurrences": 1,
+      "avg_lng": -101.8466,
+      "avg_lat": 42.0954,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sicangu"
+    },
+    {
+      "name": "Sihapsa",
+      "occurrences": 1,
+      "avg_lng": -101.7314,
+      "avg_lat": 45.3328,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sihapsa"
+    },
+    {
+      "name": "Sinkyone",
+      "occurrences": 1,
+      "avg_lng": -123.973,
+      "avg_lat": 40.17,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sinkyone"
+    },
+    {
+      "name": "Sisseton",
+      "occurrences": 1,
+      "avg_lng": -95.5071,
+      "avg_lat": 48.0475,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sisseton"
+    },
+    {
+      "name": "Sissipahaw",
+      "occurrences": 1,
+      "avg_lng": -79.7904,
+      "avg_lat": 35.9692,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sissipahaw"
+    },
+    {
+      "name": "Siuslaw",
+      "occurrences": 1,
+      "avg_lng": -123.8816,
+      "avg_lat": 44.0361,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "siuslaw"
+    },
+    {
+      "name": "Skagit",
+      "occurrences": 1,
+      "avg_lng": -121.8917,
+      "avg_lat": 48.3586,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "skagit"
+    },
+    {
+      "name": "Skilloot",
+      "occurrences": 1,
+      "avg_lng": -123.1508,
+      "avg_lat": 46.1156,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "skilloot"
+    },
+    {
+      "name": "Skwxwú7mesh-ulh Temíx̱w (Squamish)",
+      "occurrences": 1,
+      "avg_lng": -123.0679,
+      "avg_lat": 49.8893,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "skwxwu7mesh-ulh-temixw-squamish"
+    },
+    {
+      "name": "Skykomish",
+      "occurrences": 1,
+      "avg_lng": -121.593,
+      "avg_lat": 47.8179,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "skykomish"
+    },
+    {
+      "name": "Slijuala Xanuc (Chontal)",
+      "occurrences": 1,
+      "avg_lng": -95.6587,
+      "avg_lat": 16.2237,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "slijuala-xanuc-chontal"
+    },
+    {
+      "name": "Snohomish",
+      "occurrences": 1,
+      "avg_lng": -122.1706,
+      "avg_lat": 47.96,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "snohomish"
+    },
+    {
+      "name": "Snuneymuxw",
+      "occurrences": 1,
+      "avg_lng": -124.1854,
+      "avg_lat": 49.0851,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "snuneymuxw"
+    },
+    {
+      "name": "Sobaipuri",
+      "occurrences": 1,
+      "avg_lng": -110.5677,
+      "avg_lat": 31.977,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sobaipuri"
+    },
+    {
+      "name": "Somi Se'k (Esto’k Gna)",
+      "occurrences": 1,
+      "avg_lng": -99.0038,
+      "avg_lat": 26.4574,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "somi-se-k-esto-k-gna"
+    },
+    {
+      "name": "Squaxin",
+      "occurrences": 1,
+      "avg_lng": -123.0209,
+      "avg_lat": 47.1711,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "squaxin"
+    },
+    {
+      "name": "Steilacoom",
+      "occurrences": 1,
+      "avg_lng": -122.5236,
+      "avg_lat": 47.1132,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "steilacoom"
+    },
+    {
+      "name": "Stellat'en",
+      "occurrences": 1,
+      "avg_lng": -125.5973,
+      "avg_lat": 54.0588,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "stellat-en"
+    },
+    {
+      "name": "Stillaguamish",
+      "occurrences": 1,
+      "avg_lng": -121.8448,
+      "avg_lat": 48.1006,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "stillaguamish"
+    },
+    {
+      "name": "Stoney",
+      "occurrences": 1,
+      "avg_lng": -116.4643,
+      "avg_lat": 52.389,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "stoney"
+    },
+    {
+      "name": "Stz'uminus",
+      "occurrences": 1,
+      "avg_lng": -123.9835,
+      "avg_lat": 48.9432,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "stz-uminus"
+    },
+    {
+      "name": "St̓át̓imc Tmicw (St'at'imc)",
+      "occurrences": 1,
+      "avg_lng": -122.786,
+      "avg_lat": 50.2965,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "statimc-tmicw-st-at-imc"
+    },
+    {
+      "name": "Subtiaba",
+      "occurrences": 1,
+      "avg_lng": -86.8455,
+      "avg_lat": 12.3837,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "subtiaba"
+    },
+    {
+      "name": "Sugaree",
+      "occurrences": 1,
+      "avg_lng": -81.053,
+      "avg_lat": 35.2157,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sugaree"
+    },
+    {
+      "name": "Sumas",
+      "occurrences": 1,
+      "avg_lng": -106.3732,
+      "avg_lat": 30.6805,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sumas"
+    },
+    {
+      "name": "Suquamish",
+      "occurrences": 1,
+      "avg_lng": -122.3501,
+      "avg_lat": 47.6999,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "suquamish"
+    },
+    {
+      "name": "Swinomish",
+      "occurrences": 1,
+      "avg_lng": -122.3913,
+      "avg_lat": 48.3737,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "swinomish"
+    },
+    {
+      "name": "S’ólh Téméxw (Stó:lō)",
+      "occurrences": 1,
+      "avg_lng": -122.1313,
+      "avg_lat": 49.4728,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "s-olh-temexw-sto-lo"
+    },
+    {
+      "name": "Ta'an Kwäch'än",
+      "occurrences": 1,
+      "avg_lng": -135.0207,
+      "avg_lat": 61.1354,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ta-an-kwach-an"
+    },
+    {
+      "name": "Tagish",
+      "occurrences": 1,
+      "avg_lng": -134.3079,
+      "avg_lat": 59.9549,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tagish"
+    },
+    {
+      "name": "Tagé Cho Hudän (Little Salmon/Carmacks)",
+      "occurrences": 1,
+      "avg_lng": -135.6867,
+      "avg_lat": 61.7548,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tage-cho-hudan-little-salmon-carmacks"
+    },
+    {
+      "name": "Tahues",
+      "occurrences": 1,
+      "avg_lng": -107.4217,
+      "avg_lat": 24.8348,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tahues"
+    },
+    {
+      "name": "Takelma",
+      "occurrences": 1,
+      "avg_lng": -123.0685,
+      "avg_lat": 42.4174,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "takelma"
+    },
+    {
+      "name": "Takla",
+      "occurrences": 1,
+      "avg_lng": -125.2106,
+      "avg_lat": 55.7772,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "takla"
+    },
+    {
+      "name": "Tamaulipeco tribes",
+      "occurrences": 1,
+      "avg_lng": -98.7036,
+      "avg_lat": 23.9766,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tamaulipeco-tribes"
+    },
+    {
+      "name": "Tamien Nation",
+      "occurrences": 1,
+      "avg_lng": -121.8287,
+      "avg_lat": 37.3406,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tamien-nation"
+    },
+    {
+      "name": "Tampachoa (Mansos)",
+      "occurrences": 1,
+      "avg_lng": -106.9633,
+      "avg_lat": 32.4054,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tampachoa-mansos"
+    },
+    {
+      "name": "Tanacross",
+      "occurrences": 1,
+      "avg_lng": -143.92,
+      "avg_lat": 63.7317,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tanacross"
+    },
+    {
+      "name": "Tanana",
+      "occurrences": 1,
+      "avg_lng": -147.7824,
+      "avg_lat": 64.3951,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tanana"
+    },
+    {
+      "name": "Tawahka",
+      "occurrences": 1,
+      "avg_lng": -84.9975,
+      "avg_lat": 15.0061,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tawahka"
+    },
+    {
+      "name": "Tawakoni",
+      "occurrences": 1,
+      "avg_lng": -96.6739,
+      "avg_lat": 33.0686,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tawakoni"
+    },
+    {
+      "name": "Tenino",
+      "occurrences": 1,
+      "avg_lng": -120.9047,
+      "avg_lat": 44.9645,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tenino"
+    },
+    {
+      "name": "Tepehua",
+      "occurrences": 1,
+      "avg_lng": -97.8435,
+      "avg_lat": 20.2887,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tepehua"
+    },
+    {
+      "name": "Tepehuán",
+      "occurrences": 1,
+      "avg_lng": -105.0094,
+      "avg_lat": 24.7357,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tepehuan"
+    },
+    {
+      "name": "Tequesta",
+      "occurrences": 1,
+      "avg_lng": -80.3353,
+      "avg_lat": 25.9063,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tequesta"
+    },
+    {
+      "name": "Te’mexw Treaty Association",
+      "occurrences": 1,
+      "avg_lng": -124.1976,
+      "avg_lat": 48.9123,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "te-mexw-treaty-association"
+    },
+    {
+      "name": "Tigua",
+      "occurrences": 1,
+      "avg_lng": -106.2652,
+      "avg_lat": 31.6227,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tigua"
+    },
+    {
+      "name": "Tjer-di/Teribe Broram",
+      "occurrences": 1,
+      "avg_lng": -83.0978,
+      "avg_lat": 9.0401,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tjer-di-teribe-broram"
+    },
+    {
+      "name": "Tlinoit",
+      "occurrences": 1,
+      "avg_lng": -134.4882,
+      "avg_lat": 59.5281,
+      "eras": [
+        "world-1500"
+      ],
+      "suggested_slug": "tlinoit"
+    },
+    {
+      "name": "Tobosos",
+      "occurrences": 1,
+      "avg_lng": -103.8376,
+      "avg_lat": 27.2933,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tobosos"
+    },
+    {
+      "name": "Tocobaga",
+      "occurrences": 1,
+      "avg_lng": -82.1303,
+      "avg_lat": 27.9756,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tocobaga"
+    },
+    {
+      "name": "Tohono O'odham",
+      "occurrences": 1,
+      "avg_lng": -111.3615,
+      "avg_lat": 31.1996,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tohono-o-odham"
+    },
+    {
+      "name": "Tojolwinik’otik (Tojolabal)",
+      "occurrences": 1,
+      "avg_lng": -91.7637,
+      "avg_lat": 16.4711,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tojolwinik-otik-tojolabal"
+    },
+    {
+      "name": "Tolowa Dee-ni’",
+      "occurrences": 1,
+      "avg_lng": -123.6096,
+      "avg_lat": 42.1892,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tolowa-dee-ni"
+    },
+    {
+      "name": "Tolupan",
+      "occurrences": 1,
+      "avg_lng": -87.1277,
+      "avg_lat": 15.059,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tolupan"
+    },
+    {
+      "name": "Toquaht",
+      "occurrences": 1,
+      "avg_lng": -125.3485,
+      "avg_lat": 49.1727,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "toquaht"
+    },
+    {
+      "name": "Totorames",
+      "occurrences": 1,
+      "avg_lng": -105.4474,
+      "avg_lat": 22.6617,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "totorames"
+    },
+    {
+      "name": "Tr’ondëk Hwëch’in",
+      "occurrences": 1,
+      "avg_lng": -139.0154,
+      "avg_lat": 64.4093,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tr-ondek-hwech-in"
+    },
+    {
+      "name": "Tsankupi",
+      "occurrences": 1,
+      "avg_lng": -122.9734,
+      "avg_lat": 44.3923,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tsankupi"
+    },
+    {
+      "name": "Tseshaht",
+      "occurrences": 1,
+      "avg_lng": -124.9007,
+      "avg_lat": 49.1979,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tseshaht"
+    },
+    {
+      "name": "Tse’khene",
+      "occurrences": 1,
+      "avg_lng": -124.8204,
+      "avg_lat": 56.0383,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tse-khene"
+    },
+    {
+      "name": "Tsuu T'ina",
+      "occurrences": 1,
+      "avg_lng": -114.0387,
+      "avg_lat": 51.4363,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tsuu-t-ina"
+    },
+    {
+      "name": "Tŝilhqot’in Nen",
+      "occurrences": 1,
+      "avg_lng": -123.9969,
+      "avg_lat": 52.0201,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tsilhqot-in-nen"
+    },
+    {
+      "name": "Ts’uubaa-asatx",
+      "occurrences": 1,
+      "avg_lng": -124.1704,
+      "avg_lat": 48.8566,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ts-uubaa-asatx"
+    },
+    {
+      "name": "Tulalip",
+      "occurrences": 1,
+      "avg_lng": -121.6539,
+      "avg_lat": 47.924,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tulalip"
+    },
+    {
+      "name": "Tunxis",
+      "occurrences": 1,
+      "avg_lng": -72.7876,
+      "avg_lat": 41.7631,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tunxis"
+    },
+    {
+      "name": "Tututni",
+      "occurrences": 1,
+      "avg_lng": -124.2639,
+      "avg_lat": 42.6218,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tututni"
+    },
+    {
+      "name": "Tz'utujil",
+      "occurrences": 1,
+      "avg_lng": -91.3422,
+      "avg_lat": 14.3817,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tz-utujil"
+    },
+    {
+      "name": "Tzjon Non/ Tzo'tyio (Amuzgo)",
+      "occurrences": 1,
+      "avg_lng": -98.2795,
+      "avg_lat": 16.7675,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tzjon-non-tzo-tyio-amuzgo"
+    },
+    {
+      "name": "Tübatulabal",
+      "occurrences": 1,
+      "avg_lng": -118.2875,
+      "avg_lat": 36.1157,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "tubatulabal"
+    },
+    {
+      "name": "Tłı̨chǫ Ndè",
+      "occurrences": 1,
+      "avg_lng": -114.7133,
+      "avg_lat": 64.0572,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "t-cho-nde"
+    },
+    {
+      "name": "Uchucklesaht",
+      "occurrences": 1,
+      "avg_lng": -124.9769,
+      "avg_lat": 48.9841,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "uchucklesaht"
+    },
+    {
+      "name": "Ucluelet",
+      "occurrences": 1,
+      "avg_lng": -124.9848,
+      "avg_lat": 49.124,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ucluelet"
+    },
+    {
+      "name": "Ulwas",
+      "occurrences": 1,
+      "avg_lng": -84.1195,
+      "avg_lat": 13.1351,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ulwas"
+    },
+    {
+      "name": "Upper Kuskokwim",
+      "occurrences": 1,
+      "avg_lng": -154.2661,
+      "avg_lat": 62.861,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "upper-kuskokwim"
+    },
+    {
+      "name": "Upper Tanana",
+      "occurrences": 1,
+      "avg_lng": -141.9098,
+      "avg_lat": 62.6658,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "upper-tanana"
+    },
+    {
+      "name": "Uspantec",
+      "occurrences": 1,
+      "avg_lng": -90.8767,
+      "avg_lat": 15.3643,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "uspantec"
+    },
+    {
+      "name": "Vanyumé",
+      "occurrences": 1,
+      "avg_lng": -116.98,
+      "avg_lat": 34.7775,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "vanyume"
+    },
+    {
+      "name": "Virgin Islands (Danemark)",
+      "occurrences": 1,
+      "avg_lng": -66.468,
+      "avg_lat": 18.2517,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "virgin-islands-danemark"
+    },
+    {
+      "name": "Virgin Islands (UK)",
+      "occurrences": 1,
+      "avg_lng": -64.7481,
+      "avg_lat": 17.735,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "virgin-islands-uk"
+    },
+    {
+      "name": "Vuntut Gwitchin",
+      "occurrences": 1,
+      "avg_lng": -138.0646,
+      "avg_lat": 66.1585,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "vuntut-gwitchin"
+    },
+    {
+      "name": "Wabanaki (Dawnland Confederacy)",
+      "occurrences": 1,
+      "avg_lng": -68.8667,
+      "avg_lat": 45.8456,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wabanaki-dawnland-confederacy"
+    },
+    {
+      "name": "Waccamaw (Woccon)",
+      "occurrences": 1,
+      "avg_lng": -78.8756,
+      "avg_lat": 34.1719,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "waccamaw-woccon"
+    },
+    {
+      "name": "Waco",
+      "occurrences": 1,
+      "avg_lng": -97.1958,
+      "avg_lat": 31.5415,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "waco"
+    },
+    {
+      "name": "Wahkiakum",
+      "occurrences": 1,
+      "avg_lng": -123.4172,
+      "avg_lat": 46.3146,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wahkiakum"
+    },
+    {
+      "name": "Wahpekute",
+      "occurrences": 1,
+      "avg_lng": -94.1741,
+      "avg_lat": 44.6549,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wahpekute"
+    },
+    {
+      "name": "Wahpeton",
+      "occurrences": 1,
+      "avg_lng": -93.3468,
+      "avg_lat": 43.5919,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wahpeton"
+    },
+    {
+      "name": "Wanapum",
+      "occurrences": 1,
+      "avg_lng": -119.6205,
+      "avg_lat": 46.6764,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wanapum"
+    },
+    {
+      "name": "Wangunks",
+      "occurrences": 1,
+      "avg_lng": -72.5664,
+      "avg_lat": 41.677,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wangunks"
+    },
+    {
+      "name": "Wappinger",
+      "occurrences": 1,
+      "avg_lng": -73.4845,
+      "avg_lat": 41.2442,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wappinger"
+    },
+    {
+      "name": "Wappo",
+      "occurrences": 1,
+      "avg_lng": -122.6409,
+      "avg_lat": 38.6679,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wappo"
+    },
+    {
+      "name": "Warraskoyack",
+      "occurrences": 1,
+      "avg_lng": -76.8001,
+      "avg_lat": 36.9769,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "warraskoyack"
+    },
+    {
+      "name": "Wasco and Wishram",
+      "occurrences": 1,
+      "avg_lng": -121.2707,
+      "avg_lat": 45.5307,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wasco-and-wishram"
+    },
+    {
+      "name": "Wateree",
+      "occurrences": 1,
+      "avg_lng": -80.3855,
+      "avg_lat": 33.9139,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wateree"
+    },
+    {
+      "name": "Waxhaw",
+      "occurrences": 1,
+      "avg_lng": -80.648,
+      "avg_lat": 34.794,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "waxhaw"
+    },
+    {
+      "name": "Waymaq",
+      "occurrences": 1,
+      "avg_lng": -122.1108,
+      "avg_lat": 41.2488,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "waymaq"
+    },
+    {
+      "name": "We Wai Kai",
+      "occurrences": 1,
+      "avg_lng": -125.554,
+      "avg_lat": 49.8524,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "we-wai-kai"
+    },
+    {
+      "name": "We Wai Kum",
+      "occurrences": 1,
+      "avg_lng": -125.5306,
+      "avg_lat": 49.9055,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "we-wai-kum"
+    },
+    {
+      "name": "Wendake-Nionwentsïo",
+      "occurrences": 1,
+      "avg_lng": -70.8701,
+      "avg_lat": 45.9383,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wendake-nionwentsio"
+    },
+    {
+      "name": "Wenrohronon",
+      "occurrences": 1,
+      "avg_lng": -78.398,
+      "avg_lat": 43.0602,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wenrohronon"
+    },
+    {
+      "name": "Werowocomoco",
+      "occurrences": 1,
+      "avg_lng": -76.5183,
+      "avg_lat": 37.4395,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "werowocomoco"
+    },
+    {
+      "name": "Western Mono/Monache",
+      "occurrences": 1,
+      "avg_lng": -119.2061,
+      "avg_lat": 37.4706,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "western-mono-monache"
+    },
+    {
+      "name": "Western Nehântick",
+      "occurrences": 1,
+      "avg_lng": -72.2676,
+      "avg_lat": 41.4016,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "western-nehantick"
+    },
+    {
+      "name": "Wet'suwet'en Yintikh",
+      "occurrences": 1,
+      "avg_lng": -126.6595,
+      "avg_lat": 54.3162,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wet-suwet-en-yintikh"
+    },
+    {
+      "name": "Weyanock",
+      "occurrences": 1,
+      "avg_lng": -77.1792,
+      "avg_lat": 37.2853,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "weyanock"
+    },
+    {
+      "name": "Whilkut",
+      "occurrences": 1,
+      "avg_lng": -123.8595,
+      "avg_lat": 40.8055,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "whilkut"
+    },
+    {
+      "name": "White River-Kluane",
+      "occurrences": 1,
+      "avg_lng": -139.5895,
+      "avg_lat": 61.5539,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "white-river-kluane"
+    },
+    {
+      "name": "Wicocomico",
+      "occurrences": 1,
+      "avg_lng": -76.346,
+      "avg_lat": 37.8638,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wicocomico"
+    },
+    {
+      "name": "Willapa",
+      "occurrences": 1,
+      "avg_lng": -123.7398,
+      "avg_lat": 46.5991,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "willapa"
+    },
+    {
+      "name": "Winaq Qo’ (Mam)",
+      "occurrences": 1,
+      "avg_lng": -92.1156,
+      "avg_lat": 15.1703,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "winaq-qo-mam"
+    },
+    {
+      "name": "Winefelly",
+      "occurrences": 1,
+      "avg_lng": -122.718,
+      "avg_lat": 43.8631,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "winefelly"
+    },
+    {
+      "name": "Winik Atel (Tzeltal)",
+      "occurrences": 1,
+      "avg_lng": -92.0092,
+      "avg_lat": 16.8273,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "winik-atel-tzeltal"
+    },
+    {
+      "name": "Winikon bä lojon/Xk’ukwits/Ajlumob/Otulob (Ch'ol)",
+      "occurrences": 1,
+      "avg_lng": -91.9418,
+      "avg_lat": 17.5117,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "winikon-ba-lojon-xk-ukwits-ajlumob-otulob-ch-ol"
+    },
+    {
+      "name": "Winnimem Wintu",
+      "occurrences": 1,
+      "avg_lng": -122.1581,
+      "avg_lat": 41.049,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "winnimem-wintu"
+    },
+    {
+      "name": "Wintʰu• Po•m (Northern Wintu)",
+      "occurrences": 1,
+      "avg_lng": -122.5652,
+      "avg_lat": 40.7778,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wint-u-po-m-northern-wintu"
+    },
+    {
+      "name": "Winyah",
+      "occurrences": 1,
+      "avg_lng": -79.3939,
+      "avg_lat": 33.3967,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "winyah"
+    },
+    {
+      "name": "Wiyot",
+      "occurrences": 1,
+      "avg_lng": -124.1532,
+      "avg_lat": 40.6692,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wiyot"
+    },
+    {
+      "name": "Wuikinuxv (Oweekeno)",
+      "occurrences": 1,
+      "avg_lng": -126.6444,
+      "avg_lat": 51.6828,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "wuikinuxv-oweekeno"
+    },
+    {
+      "name": "Xixime",
+      "occurrences": 1,
+      "avg_lng": -106.049,
+      "avg_lat": 23.9643,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "xixime"
+    },
+    {
+      "name": "Yahooskin",
+      "occurrences": 1,
+      "avg_lng": -120.5485,
+      "avg_lat": 42.9293,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yahooskin"
+    },
+    {
+      "name": "Yakina",
+      "occurrences": 1,
+      "avg_lng": -123.8562,
+      "avg_lat": 44.6289,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yakina"
+    },
+    {
+      "name": "Yamassee",
+      "occurrences": 1,
+      "avg_lng": -81.1066,
+      "avg_lat": 32.4531,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yamassee"
+    },
+    {
+      "name": "Yamayeka (Yamaye)",
+      "occurrences": 1,
+      "avg_lng": -77.2674,
+      "avg_lat": 18.1684,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yamayeka-yamaye"
+    },
+    {
+      "name": "Yamhill",
+      "occurrences": 1,
+      "avg_lng": -123.3919,
+      "avg_lat": 45.0966,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yamhill"
+    },
+    {
+      "name": "Yana",
+      "occurrences": 1,
+      "avg_lng": -121.8405,
+      "avg_lat": 40.3919,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yana"
+    },
+    {
+      "name": "Yanktonai",
+      "occurrences": 1,
+      "avg_lng": -98.8805,
+      "avg_lat": 46.6438,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yanktonai"
+    },
+    {
+      "name": "Yekooche",
+      "occurrences": 1,
+      "avg_lng": -125.1342,
+      "avg_lat": 54.8213,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yekooche"
+    },
+    {
+      "name": "Yeopim",
+      "occurrences": 1,
+      "avg_lng": -76.6098,
+      "avg_lat": 36.2658,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yeopim"
+    },
+    {
+      "name": "Yoeme (Yaqui)",
+      "occurrences": 1,
+      "avg_lng": -109.91,
+      "avg_lat": 27.7655,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yoeme-yaqui"
+    },
+    {
+      "name": "Yoko T’aan (Chontal)",
+      "occurrences": 1,
+      "avg_lng": -92.7424,
+      "avg_lat": 18.1563,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yoko-t-aan-chontal"
+    },
+    {
+      "name": "Yoli (Concho)",
+      "occurrences": 1,
+      "avg_lng": -105.6391,
+      "avg_lat": 28.9038,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yoli-concho"
+    },
+    {
+      "name": "Yoncalla",
+      "occurrences": 1,
+      "avg_lng": -122.859,
+      "avg_lat": 43.7069,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yoncalla"
+    },
+    {
+      "name": "Yoreme (Mayo)",
+      "occurrences": 1,
+      "avg_lng": -108.8738,
+      "avg_lat": 26.569,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yoreme-mayo"
+    },
+    {
+      "name": "Youghtanund",
+      "occurrences": 1,
+      "avg_lng": -77.335,
+      "avg_lat": 37.677,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "youghtanund"
+    },
+    {
+      "name": "Yuhaviatam/Maarenga’yam (Serrano)",
+      "occurrences": 1,
+      "avg_lng": -117.1824,
+      "avg_lat": 34.6377,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "yuhaviatam-maarenga-yam-serrano"
+    },
+    {
+      "name": "Zacateco",
+      "occurrences": 1,
+      "avg_lng": -103.5169,
+      "avg_lat": 23.3061,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "zacateco"
+    },
+    {
+      "name": "ditidaqiic̓aq disib̓aʔk (Ditidaht)",
+      "occurrences": 1,
+      "avg_lng": -124.4621,
+      "avg_lat": 48.8792,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "ditidaqiicaq-disiba-k-ditidaht"
+    },
+    {
+      "name": "np̓əšqʷáw̓səxʷ (Wenatchi)",
+      "occurrences": 1,
+      "avg_lng": -120.6889,
+      "avg_lat": 47.6073,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "np-sq-aws-x-wenatchi"
+    },
+    {
+      "name": "sc̓əwaθenaɁɬ təməxʷ (Tsawwassen)",
+      "occurrences": 1,
+      "avg_lng": -122.6797,
+      "avg_lat": 49.309,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sc-wa-ena-t-m-x-tsawwassen"
+    },
+    {
+      "name": "sdukʷalbixʷ (Snoqualmie)",
+      "occurrences": 1,
+      "avg_lng": -121.5229,
+      "avg_lat": 47.6204,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sduk-albix-snoqualmie"
+    },
+    {
+      "name": "snʕickstx tmxʷúlaʔxʷ (Sinixt)",
+      "occurrences": 1,
+      "avg_lng": -117.6864,
+      "avg_lat": 50.651,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sn-ickstx-tmx-ula-x-sinixt"
+    },
+    {
+      "name": "sq̓əc̓iy̓aɁɬ təməxʷ (Katzie)",
+      "occurrences": 1,
+      "avg_lng": -122.5325,
+      "avg_lat": 49.4672,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sq-ciya-t-m-x-katzie"
+    },
+    {
+      "name": "səl̓ilwətaɁɬ təməxʷ (Tsleil-Waututh)",
+      "occurrences": 1,
+      "avg_lng": -122.9584,
+      "avg_lat": 49.5438,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "s-lilw-ta-t-m-x-tsleil-waututh"
+    },
+    {
+      "name": "Á,LEṈENEȻ ȽTE (W̱SÁNEĆ)",
+      "occurrences": 1,
+      "avg_lng": -123.9479,
+      "avg_lat": 48.7571,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "a-lenene-te-wsanec"
+    },
+    {
+      "name": "Älsé (Alsea)",
+      "occurrences": 1,
+      "avg_lng": -123.8014,
+      "avg_lat": 44.4056,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "alse-alsea"
+    },
+    {
+      "name": "Ópata (Tegüima-Eudebe-Hoba)",
+      "occurrences": 1,
+      "avg_lng": -109.5729,
+      "avg_lat": 30.0189,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "opata-teguima-eudebe-hoba"
+    },
+    {
+      "name": "šxʷməθkʷəy̓əmaɁɬ təməxʷ (Musqueam)",
+      "occurrences": 1,
+      "avg_lng": -123.0202,
+      "avg_lat": 49.3904,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "sx-m-k-y-ma-t-m-x-musqueam"
+    },
+    {
+      "name": "ƛaʔuukʷiʔatḥ (Tla-o-qui-aht)",
+      "occurrences": 1,
+      "avg_lng": -125.4946,
+      "avg_lat": 49.2062,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "a-uuk-i-ath-tla-o-qui-aht"
+    },
+    {
+      "name": "ɬaʔamɩn gɩǰɛ (Tla'amin/Sliammon)",
+      "occurrences": 1,
+      "avg_lng": -124.4567,
+      "avg_lat": 50.1255,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "a-am-n-g-j-tla-amin-sliammon"
+    },
+    {
+      "name": "ᒋᑦ ᐊᔅᒋᓄᐤ St'aschinuw (Naskapi)",
+      "occurrences": 1,
+      "avg_lng": -67.7797,
+      "avg_lat": 55.705,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "st-aschinuw-naskapi"
+    }
+  ]
+}

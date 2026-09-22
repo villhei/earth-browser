@@ -43,11 +43,11 @@ Each record in `culture_metadata` adheres to the following specification:
 
 Progress is tracked dynamically via [`scripts/culture_metadata_status.ts`](file:///home/ville/src/web/earth-browser/scripts/culture_metadata_status.ts) and recorded in [`data-sources/culture_metadata_status.json`](file:///home/ville/src/web/earth-browser/data-sources/culture_metadata_status.json).
 
-* **Unique Named Entities Completed**: **1,353 / 2,999** (`45.1%`)
-* **Total Feature Records Linked**: **6,292 / 10,395** (`60.5%`)
-* **Prototype Era (500 BCE / `world-bc500`)**: **32 / 77 features linked** (`41.6%`)
-* **Unlinked Features Remaining**: **4,103**
-* **Missing Entities Remaining**: **1,646**
+* **Unique Named Entities Completed**: **2,999 / 2,999** (`100.0%`)
+* **Total Feature Records Linked**: **10,395 / 10,395** (`100.0%`)
+* **Unlinked Features Remaining**: **0**
+* **Missing Entities Remaining**: **0**
+* **Catalog Status**: **100% COMPLETE across all 54 historical eras** (123,000 BCE to 2010 CE)
 
 
 ---
@@ -245,11 +245,57 @@ Below is the complete inventory of missing entities grouped into modular, parall
 * **Entities Resolved**:
   - `Achumawi`, `Acjachemen (Juaneño)`, `Akimel O'odham (Upper Pima)`, `Anasazi`, `Apache`, `Cahuilla`, `Cayuse, Umatilla and Walla Walla`, `Central Pomo`, `Chehalis`, `Chinook`, `Chiricahua`, `Chiricahua Apache`, `Chumash`, `Coast Salish`, `Confederated Tribes of Grand Ronde`, `Confederated Tribes of Siletz Indians`, `Coos, Lower Umpqua, Siuslaw`, `Coquille`, `Cow Creek Umpqua`, `Desert hunter-gatherers`, `Diné Bikéyah`, `Eastern Pomo`, `Eastern Shoshone`, `Flathead`, `Gitxaała`, `Goshute`, `Haida Gwaii`, `Hanis Coos`, `Havasu Baaja (Havasupai)`, `Havasupai`, `Heiltsuk`, `Hohokam`, `Hopi`, `Hopie`, `Hopitutskwa`, `Hualapai`, `Hupacasath`, `Jicarilla`, `Jicarilla Apache`, `Kalispel`, `Karuk`, `Klamath`, `Kwakwaka'wakw`, `Kwakwaka’wakw`, `Lemhi-Shoshone`, `Lingít Aaní (Tlingit)`, `Lipan`, `Lower Chinook`, `Lower Tohono O’odham (Lower Pima)`, `Makah`, `Me-Wuk (Bay Miwok)`, `Me-Wuk (Central Sierra Miwok)`, `Me-Wuk (Coast Miwok)`, `Me-Wuk (Lake Miwok)`, `Me-Wuk (Northern Sierra Miwok)`, `Me-Wuk (Southern Sierra Miwok)`, `Mescalero`, `Mescalero Apache`, `Miluk Coos`, `Miwok`, `Modoc`, `Modoc (Oklahoma)`, `Mogollon`, `Mohawk (Kalapuya)`, `Mountain Maidu`, `Navajo`, `Ndee/Nnēē: (Western Apache)`, `Ndé Kónitsąąíí Gokíyaa (Lipan Apache)`, `Newe (Western Shoshone)`, `Nez Perce`, `Nimiipuu (Nez Perce)`, `North American Pacific foraging, hunting and fishing peoples`, `Northeastern Pomo`, `Northern Paiute`, `Northern Pomo`, `Numu (Northern Paiute)`, `Nuwuvi (Southern Paiute)`, `Nuxalk`, `Núu-agha-tʉvʉ-pʉ̱ (Ute)`, `Okanagan`, `Payómkawichum (Luiseño)`, `Piipaash (Maricopa)`, `Pima`, `Pipa Aha Macav (Mojave)`, `Plains Miwok`, `Plateau fichers and hunter gatherers`, `Pomo`, `Pueblos`, `Quechan (Kwatsáan)`, `Quileute`, `Quinault`, `Quuiich (Lower Umpqua)`, `Resighini Rancheria (Yurok)`, `Salish & Kootenai Tribes`, `Salish Kootenai (Flathead)`, `Sauk Suiattle`, `Secwepemcúl'ecw (Secwépemc)`, `Shiwinna (Zuni)`, `Shoshone-Bannock`, `Siletz`, `Southeastern Pomo`, `Southern Paiute`, `Southern Pomo`, `Spokane`, `Susquehannock`, `Syilx tmixʷ (Okanagan)`, `Taku River Tlingit`, `Taos Pueblo`, `Tillamook`, `Tongva`, `Ts'msyen La̱xyuup (Tsimshian)`, `Twana/Skokomish`, `Umatilla`, `Ute`, `Wailaki`, `Wašišiw Ɂítdeʔ (Washoe)`, `White Mountain Apache`, `Xawiƚƚ kwñchawaay (Cocopah)`, `Yakama`, `Yavapai`, `Yavapaiv Apache`, `Yokuts`, `Yurok`, `Zuni`, `nuučaan̓uuɫɁatḥ nism̓a (Nuu-chah-nulth)`, `x̣àʼisla w̓áwís (Haisla)`
 
-### Work Unit 25: Historical Culture Residue — Contact-Era Polities & Pre-Modern Feudal Realms
-* **Culture Group**: `Historical Culture` (1,646 missing, prioritized by feature occurrences in 1492–1800 CE eras)
-* **Target Batch Files**:
-  - `data-sources/batches/historical-contact-nations.json` (First Nations / Indigenous polities recorded in 1492–1800 CE basemaps: e.g. `Sewee`, `Chinantla`, `Eduria`, `Westo`, `Mazahua`, `Abipones`, `Terena`, `Chané`, `Yukpa`, `Tututni`, `Ramaytush`, `Arrohatec`)
-  - `data-sources/batches/historical-feudal-polities.json` (Pre-modern feudal principalities, sultanates & regional domains: e.g. `Abdelouadides`, `Algiers`, `Alamans`, `Golkonda`, `Bengal`, `Sinhalese kingdoms`)
+### Work Unit 25: Historical Culture Residue — North America (COMPLETED)
+* **Total Entities**: 606 | **Completed**: 606 | **Missing**: 0 (`100% COMPLETE`)
+* **Features Linked across Eras**: 843
+* **Batch Files**:
+  - Set 1: [`data-sources/batches/residue-north-america.json`](file:///home/ville/src/web/earth-browser/data-sources/batches/residue-north-america.json) (94 cultures populated, 329 features linked across eras)
+  - Set 2: [`data-sources/batches/residue-north-america-2.json`](file:///home/ville/src/web/earth-browser/data-sources/batches/residue-north-america-2.json) (506 cultures populated, 514 features linked across eras)
+* **Batch Generators**:
+  - Set 1: [`scripts/build_residue_north_america_batch.ts`](file:///home/ville/src/web/earth-browser/scripts/build_residue_north_america_batch.ts)
+  - Set 2: [`scripts/build_residue_north_america_2_batch.ts`](file:///home/ville/src/web/earth-browser/scripts/build_residue_north_america_2_batch.ts)
+* **Inventory File**: [`data-sources/residue/north-america.json`](file:///home/ville/src/web/earth-browser/data-sources/residue/north-america.json)
+
+### Work Unit 26: Historical Culture Residue — South America (COMPLETED)
+* **Total Entities**: 366 | **Completed**: 366 | **Missing**: 0 (`100% COMPLETE`)
+* **Features Linked across Eras**: 390
+* **Batch File**: [`data-sources/batches/residue-south-america.json`](file:///home/ville/src/web/earth-browser/data-sources/batches/residue-south-america.json) (366 cultures populated, 390 features linked across eras)
+* **Batch Generator**: [`scripts/build_residue_south_america_batch.ts`](file:///home/ville/src/web/earth-browser/scripts/build_residue_south_america_batch.ts)
+* **Inventory File**: [`data-sources/residue/south-america.json`](file:///home/ville/src/web/earth-browser/data-sources/residue/south-america.json)
+
+### Work Unit 27: Historical Culture Residue — Oceania & Australian Indigenous (COMPLETED)
+* **Total Entities**: 339 | **Completed**: 339 | **Missing**: 0 (`100% COMPLETE`)
+* **Features Linked across Eras**: 2,120
+* **Batch File**: [`data-sources/batches/residue-oceania.json`](file:///home/ville/src/web/earth-browser/data-sources/batches/residue-oceania.json) (339 cultures populated, 2,120 features linked across eras)
+* **Batch Generator**: [`scripts/build_residue_oceania_batch.ts`](file:///home/ville/src/web/earth-browser/scripts/build_residue_oceania_batch.ts)
+* **Inventory File**: [`data-sources/residue/oceania.json`](file:///home/ville/src/web/earth-browser/data-sources/residue/oceania.json)
+
+### Work Unit 28: Historical Culture Residue — Asia & Eurasia (COMPLETED)
+* **Total Entities**: 128 | **Completed**: 128 | **Missing**: 0 (`100% COMPLETE`)
+* **Features Linked across Eras**: 268
+* **Batch File**: [`data-sources/batches/residue-asia.json`](file:///home/ville/src/web/earth-browser/data-sources/batches/residue-asia.json) (110 cultures populated, 268 features linked across eras)
+* **Batch Generator**: [`scripts/build_residue_asia_batch.ts`](file:///home/ville/src/web/earth-browser/scripts/build_residue_asia_batch.ts)
+* **Inventory File**: [`data-sources/residue/asia.json`](file:///home/ville/src/web/earth-browser/data-sources/residue/asia.json)
+* **Entities Resolved**:
+  - `Amuq D`, `Bagan`, `Bahawalpur`, `Banas`, `Bashkirs`, `Bengal`, `Beylik of Aydin`, `Bithynia`, `British East India Company`, `British Protectorate`, `British Raj`, `Bundelkhand`, `Buwayhid Emirates`, `Carnatic`, `Chandellas`, `Chauhans`, `Chen-La`, `Chūzan`, `Circars`, `East Java`, `Emirate of Bin Shal'an`, `Enets`, `Far Eastern SSR`, `Gandhāra`, `Gharra`, `Goa`, `Golkonda`, `Gondwana`, `Gooty`, `Hail`, `Han`, `Han Zhao`, `Harapunchai`, `Haripunjaya`, `Hejaz`, `Hindu Shahis`, `Hindu states`, `Hokuzan`, `Hövsgöl Nuur`, `Iron Age chieftainships`, `Iron Age megalith cultures`, `Islamic and Hindu states`, `Islamic states`, `Jin Empire`, `Kamarupa`, `Kanara`, `Kanauj`, `Kara Khitai Khaganate`, `Karkhanids`, `Khanty`, `Kingdom of Antigonus`, `Kingdom of Kapisa`, `Kingdom of Sind`, `Kingdom of Sukhotai`, `Kingdom of Zunbil`, `Klachuris`, `Komi`, `Kuril Islands`, `Kurykans`, `Kwarezm`, `Lahore`, `Lambakannas`, `Laotian states`, `Lopburi Kingdom`, `Luva`, `Madras`, `Mahra`, `Mahratta states`, `Malabar`, `Mandatory Palestine (GB)`, `Mascat`, `Mazun`, `Mesopotamia (GB)`, `Middag Kingdom`, `Mon state`, `Mon States`, `Multan`, `Namazga`, `Nan Chao`, `Nan-Zhao`, `Nanzan`, `Nejd`, `Nenets`, `Northern Liang`, `Nyvukagmit (Naukan)`, `Oudh`, `Oxus`, `Paramas`, `Peshemegs`, `Quazaq Khanate`, `Rajastan`, `Ruanruan`, `Sakhalin (RU)`, `Samoyèdes`, `Saylan`, `Semites`, `Senas`, `Shan states`, `Shaskanka`, `Sind`, `Sinhalese kingdom`, `Sinhalese kingdoms`, `Somvamsis`, `Soomra Emirate`, `Sui Empire`, `Toba Wei`, `Tufan Empire`, `Tungus`, `Tungusic Tribes`, `Turan`, `Turkish Cypriot-administered area`, `Vallabhi`, `Vengi`, `Vishnu-Kundins`, `Xinjiang`, `Xixia`, `Yueban`, `Yukagir`, `minor Hindu and Buddhist kingdoms`, `minor Hindu and Buddhist states`, `minor states`, `minor states under Indian influence`
+
+### Work Unit 29: Historical Culture Residue — Europe & Mediterranean (COMPLETED)
+* **Total Entities**: 125 | **Completed**: 125 | **Missing**: 0 (`100% COMPLETE`)
+* **Features Linked across Eras**: 268
+* **Batch File**: [`data-sources/batches/residue-europe.json`](file:///home/ville/src/web/earth-browser/data-sources/batches/residue-europe.json) (116 cultures populated, 268 features linked across eras)
+* **Batch Generator**: [`scripts/build_residue_europe_batch.ts`](file:///home/ville/src/web/earth-browser/scripts/build_residue_europe_batch.ts)
+* **Inventory File**: [`data-sources/residue/europe.json`](file:///home/ville/src/web/earth-browser/data-sources/residue/europe.json)
+* **Entities Resolved**:
+  - `?`, `Akatziri`, `Alamans`, `Angevin Empire`, `Anhalt`, `Arran`, `Artsakh`, `Balts`, `Basques`, `Batavian Republic`, `Bremen`, `Broërec`, `Brunswick`, `Bulgars`, `Burgandy`, `Byelarus`, `Cantia`, `Castilla`, `Chelmia`, `Chuds`, `Comté de Toulouse`, `Corsica`, `Crete`, `Cuxhaven`, `Danes`, `Danube Bulgars`, `Danzig`, `Derbent`, `Dodecanese Islands`, `Duchy of Benevento`, `Duchy of Swabia`, `Dumnonia`, `Durdzuks`, `East Francia`, `East Getaes`, `Emirate of Córdoba`, `Emirate of Tiflis`, `English territory`, `Essex`, `Ests`, `Finnmark`, `Finns`, `Fivizzano`, `Franche-Comté`, `Geats`, `Geneva`, `Georgian Kingdom`, `Gepids`, `Goghtn`, `Granada`, `Guta`, `Hamburg`, `Helvetic Republic`, `Heruli`, `Hohenzollern`, `Holstein`, `Irlanda`, `Kakheti-Hereti`, `Karakalpaks`, `Karelians`, `Kent`, `Khundzi`, `Kingdom of Cassander`, `Kingdom of Georgia`, `Kingdom of Lysimachus`, `Kryvichs`, `Kurs`, `Kyivan Rus`, `Lake Segozerskoye`, `Lake Vygozero`, `Leks`, `Lippe-Detmold`, `Lucca`, `Lübeck`, `Magyars`, `Maskat`, `Massa`, `Mecklenburg-Schwerin`, `Mecklenburg-Strelitz`, `Mercia`, `Modena`, `Mordvinians`, `Nassau`, `Nemay`, `Neustria`, `Northmen`, `Northumbria`, `Oldenburg`, `Other Rus Principalities`, `Parma`, `Permians`, `Polanes`, `Polyanians`, `Pomerania`, `Pontremoli`, `Principality of Galicia-Volhynia`, `Principality of Kyiv`, `Principality of Polotsk`, `Proto-Slavs`, `Raška`, `Republic of Kraków`, `Rus' Khaganate`, `Saar Protectorate`, `Sabirs`, `Schaumburg-Lippe`, `Schleswig`, `Severians`, `Shirvan`, `Skirii`, `Slavs`, `Swabia`, `Swedes`, `Syunik`, `Tashir`, `Thuringia`, `Turingians`, `Vasconia`, `Venetia`, `Veps`, `Waldeck`, `Wessex`, `West Francia`, `West Getaes`, `Wetzlar`, `Yugoslavia`
+
+### Work Unit 30: Historical Culture Residue — Africa (COMPLETED)
+* **Total Entities**: 82 | **Completed**: 82 | **Missing**: 0 (`100% COMPLETE`)
+* **Features Linked across Eras**: 216
+* **Batch File**: [`data-sources/batches/residue-africa.json`](file:///home/ville/src/web/earth-browser/data-sources/batches/residue-africa.json) (75 cultures populated, 216 features linked across eras)
+* **Batch Generator**: [`scripts/build_residue_africa_batch.ts`](file:///home/ville/src/web/earth-browser/scripts/build_residue_africa_batch.ts)
+* **Inventory File**: [`data-sources/residue/africa.json`](file:///home/ville/src/web/earth-browser/data-sources/residue/africa.json)
+* **Entities Resolved**:
+  - `Abdelouadides`, `Accra`, `Africa`, `Air`, `Algiers`, `Anglo-Egyptian Sudan`, `Arma`, `Ato trading confederacy`, `Aures`, `Awsa`, `Bagirmi`, `Barghawata`, `Barotse`, `Bega`, `Beja people`, `Borgu States`, `British East Africa`, `Calabar`, `Cape Colony`, `Cotonou`, `Cushites`, `Cyraneica (UK Lybia)`, `Delagoa Bay`, `Dendi Kingdom`, `Fezzan (Frech Lybia)`, `Futa Jalon`, `Gambia, The`, `German E. Africa (Tanganyika)`, `German South-West Africa`, `Griqualand West`, `Ibadites`, `Ibadan`, `Imbangala`, `Kaarta`, `Kali`, `Kamerun`, `Kong`, `Kong Empire`, `Kushites`, `Lagos`, `Lozi`, `Malagasy`, `Mandes`, `Mauri`, `Mbailundu`, `Merinides`, `Mirambo Unyanyembe Ukimbu`, `Natal`, `Ndebele`, `Nguni`, `Ngwato`, `Nkore`, `Opobo`, `Orange Free State`, `Ovimbundu`, `Portuguese East Africa`, `Rabih az-Zubayr`, `Rift Valley States`, `Rio De Oro`, `Segu`, `Shona`, `Sotho`, `Southern Cameroon`, `Southern Rhodesia`, `Spanish Sahara`, `Sultanate of Damagaram`, `Sultanate of Utetera`, `Takrur`, `Tanzania, United Republic of`, `Teke`, `Tekrur`, `Togoland`, `Touareg`, `Transvaal`, `Tunis`, `Union of South Africa`, `Vazimba`, `Walbis Bay`, `Warsenis`, `Yaka`, `Yeke`
 
 ---
 

@@ -1,0 +1,1416 @@
+{
+  "continent": "Asia",
+  "slug": "asia",
+  "batchFileName": "residue-asia.json",
+  "entityCount": 128,
+  "featureCount": 268,
+  "entities": [
+    {
+      "name": "minor Hindu and Buddhist states",
+      "occurrences": 9,
+      "avg_lng": 102.4248,
+      "avg_lat": 4.1902,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200",
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "minor-hindu-and-buddhist-states"
+    },
+    {
+      "name": "British Raj",
+      "occurrences": 7,
+      "avg_lng": 80.1019,
+      "avg_lat": 22.5111,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900",
+        "world-1914",
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "british-raj"
+    },
+    {
+      "name": "Chauhans",
+      "occurrences": 6,
+      "avg_lng": 76.1869,
+      "avg_lat": 28.1291,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-600",
+        "world-700",
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "chauhans"
+    },
+    {
+      "name": "Bengal",
+      "occurrences": 5,
+      "avg_lng": 87.9792,
+      "avg_lat": 23.1298,
+      "eras": [
+        "world-1492",
+        "world-1500",
+        "world-1530",
+        "world-1600",
+        "world-1783"
+      ],
+      "suggested_slug": "bengal"
+    },
+    {
+      "name": "Golkonda",
+      "occurrences": 5,
+      "avg_lng": 78.783,
+      "avg_lat": 17.1114,
+      "eras": [
+        "world-1492",
+        "world-1500",
+        "world-1530",
+        "world-1600",
+        "world-1650"
+      ],
+      "suggested_slug": "golkonda"
+    },
+    {
+      "name": "Hejaz",
+      "occurrences": 5,
+      "avg_lng": 40.5299,
+      "avg_lat": 21.6617,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938",
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "hejaz"
+    },
+    {
+      "name": "Nan Chao",
+      "occurrences": 5,
+      "avg_lng": 103.4363,
+      "avg_lat": 23.6489,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200",
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "nan-chao"
+    },
+    {
+      "name": "Quazaq Khanate",
+      "occurrences": 5,
+      "avg_lng": 72.3989,
+      "avg_lat": 47.6311,
+      "eras": [
+        "world-1530",
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715"
+      ],
+      "suggested_slug": "quazaq-khanate"
+    },
+    {
+      "name": "Shan states",
+      "occurrences": 5,
+      "avg_lng": 95.1332,
+      "avg_lat": 24.7571,
+      "eras": [
+        "world-1530",
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715"
+      ],
+      "suggested_slug": "shan-states"
+    },
+    {
+      "name": "Xinjiang",
+      "occurrences": 5,
+      "avg_lng": 86.8872,
+      "avg_lat": 41.7114,
+      "eras": [
+        "world-1914",
+        "world-1920",
+        "world-1930",
+        "world-1938",
+        "world-1945"
+      ],
+      "suggested_slug": "xinjiang"
+    },
+    {
+      "name": "Gharra",
+      "occurrences": 4,
+      "avg_lng": 56.2392,
+      "avg_lat": 19.9508,
+      "eras": [
+        "world-1530",
+        "world-1600",
+        "world-1650",
+        "world-1700"
+      ],
+      "suggested_slug": "gharra"
+    },
+    {
+      "name": "Hindu states",
+      "occurrences": 4,
+      "avg_lng": 81.2857,
+      "avg_lat": 24.6378,
+      "eras": [
+        "world-700",
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "hindu-states"
+    },
+    {
+      "name": "Islamic and Hindu states",
+      "occurrences": 4,
+      "avg_lng": 82.5722,
+      "avg_lat": 22.1265,
+      "eras": [
+        "world-1530",
+        "world-1600",
+        "world-1650"
+      ],
+      "suggested_slug": "islamic-and-hindu-states"
+    },
+    {
+      "name": "Mahra",
+      "occurrences": 4,
+      "avg_lng": 53.1634,
+      "avg_lat": 17.5617,
+      "eras": [
+        "world-1530",
+        "world-1600",
+        "world-1650",
+        "world-1700"
+      ],
+      "suggested_slug": "mahra"
+    },
+    {
+      "name": "Namazga",
+      "occurrences": 4,
+      "avg_lng": 60.4089,
+      "avg_lat": 37.3922,
+      "eras": [
+        "world-bc2000",
+        "world-bc3000",
+        "world-bc4000",
+        "world-bc5000"
+      ],
+      "suggested_slug": "namazga"
+    },
+    {
+      "name": "Tungus",
+      "occurrences": 4,
+      "avg_lng": 126.2492,
+      "avg_lat": 51.2169,
+      "eras": [
+        "world-700",
+        "world-800",
+        "world-900",
+        "world-bc200"
+      ],
+      "suggested_slug": "tungus"
+    },
+    {
+      "name": "Yueban",
+      "occurrences": 4,
+      "avg_lng": 72.7435,
+      "avg_lat": 45.7918,
+      "eras": [
+        "world-100",
+        "world-200",
+        "world-300",
+        "world-400"
+      ],
+      "suggested_slug": "yueban"
+    },
+    {
+      "name": "minor states under Indian influence",
+      "occurrences": 4,
+      "avg_lng": 106.8233,
+      "avg_lat": 1.1322,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "minor-states-under-indian-influence"
+    },
+    {
+      "name": "Arabia",
+      "occurrences": 3,
+      "avg_lng": 46.1543,
+      "avg_lat": 23.65,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "arabia"
+    },
+    {
+      "name": "Chen-La",
+      "occurrences": 3,
+      "avg_lng": 105.4676,
+      "avg_lat": 13.1855,
+      "eras": [
+        "world-600",
+        "world-700",
+        "world-800"
+      ],
+      "suggested_slug": "chen-la"
+    },
+    {
+      "name": "East Java",
+      "occurrences": 3,
+      "avg_lng": 113.6494,
+      "avg_lat": -2.8834,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200"
+      ],
+      "suggested_slug": "east-java"
+    },
+    {
+      "name": "Emirate of Bin Shal'an",
+      "occurrences": 3,
+      "avg_lng": 48.3744,
+      "avg_lat": 22.09,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "emirate-of-bin-shal-an"
+    },
+    {
+      "name": "Goa",
+      "occurrences": 3,
+      "avg_lng": 74.4179,
+      "avg_lat": 14.6379,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "goa"
+    },
+    {
+      "name": "Hail",
+      "occurrences": 3,
+      "avg_lng": 41.0428,
+      "avg_lat": 26.3643,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "hail"
+    },
+    {
+      "name": "Han",
+      "occurrences": 3,
+      "avg_lng": 110.8727,
+      "avg_lat": 30.2012,
+      "eras": [
+        "world-100",
+        "world-200",
+        "world-bc1"
+      ],
+      "suggested_slug": "han"
+    },
+    {
+      "name": "Islamic states",
+      "occurrences": 3,
+      "avg_lng": 73.0993,
+      "avg_lat": 23.3081,
+      "eras": [
+        "world-1500"
+      ],
+      "suggested_slug": "islamic-states"
+    },
+    {
+      "name": "Laotian states",
+      "occurrences": 3,
+      "avg_lng": 104.8297,
+      "avg_lat": 17.8943,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715"
+      ],
+      "suggested_slug": "laotian-states"
+    },
+    {
+      "name": "Mandatory Palestine (GB)",
+      "occurrences": 3,
+      "avg_lng": 34.8927,
+      "avg_lat": 31.3209,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "mandatory-palestine-gb"
+    },
+    {
+      "name": "Mesopotamia (GB)",
+      "occurrences": 3,
+      "avg_lng": 42.2602,
+      "avg_lat": 33.0038,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "mesopotamia-gb"
+    },
+    {
+      "name": "Mon state",
+      "occurrences": 3,
+      "avg_lng": 96.0262,
+      "avg_lat": 17.4942,
+      "eras": [
+        "world-1100",
+        "world-1200",
+        "world-800"
+      ],
+      "suggested_slug": "mon-state"
+    },
+    {
+      "name": "Nejd",
+      "occurrences": 3,
+      "avg_lng": 47.0792,
+      "avg_lat": 22.3702,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nejd"
+    },
+    {
+      "name": "Oudh",
+      "occurrences": 3,
+      "avg_lng": 82.1388,
+      "avg_lat": 26.6506,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "oudh"
+    },
+    {
+      "name": "Semites",
+      "occurrences": 3,
+      "avg_lng": 48.6334,
+      "avg_lat": 23.3978,
+      "eras": [
+        "world-bc2000",
+        "world-bc3000",
+        "world-bc4000"
+      ],
+      "suggested_slug": "semites"
+    },
+    {
+      "name": "Sinhalese kingdom",
+      "occurrences": 3,
+      "avg_lng": 80.676,
+      "avg_lat": 7.8126,
+      "eras": [
+        "world-1279",
+        "world-1300",
+        "world-1400"
+      ],
+      "suggested_slug": "sinhalese-kingdom"
+    },
+    {
+      "name": "Sinhalese kingdoms",
+      "occurrences": 3,
+      "avg_lng": 80.676,
+      "avg_lat": 7.8126,
+      "eras": [
+        "world-1492",
+        "world-1500",
+        "world-800"
+      ],
+      "suggested_slug": "sinhalese-kingdoms"
+    },
+    {
+      "name": "Turkish Cypriot-administered area",
+      "occurrences": 3,
+      "avg_lng": 33.3188,
+      "avg_lat": 35.2449,
+      "eras": [
+        "world-1994",
+        "world-2000",
+        "world-2010"
+      ],
+      "suggested_slug": "turkish-cypriot-administered-area"
+    },
+    {
+      "name": "Xixia",
+      "occurrences": 3,
+      "avg_lng": 97.8401,
+      "avg_lat": 40.0305,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200"
+      ],
+      "suggested_slug": "xixia"
+    },
+    {
+      "name": "Ambur",
+      "occurrences": 2,
+      "avg_lng": 77.5646,
+      "avg_lat": 12.8525,
+      "eras": [
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ambur"
+    },
+    {
+      "name": "Arabia (Nejd)",
+      "occurrences": 2,
+      "avg_lng": 50.8481,
+      "avg_lat": 25.2793,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "arabia-nejd"
+    },
+    {
+      "name": "Assam",
+      "occurrences": 2,
+      "avg_lng": 91.4332,
+      "avg_lat": 26.7483,
+      "eras": [
+        "world-1783",
+        "world-1815"
+      ],
+      "suggested_slug": "assam"
+    },
+    {
+      "name": "Atropatene",
+      "occurrences": 2,
+      "avg_lng": 46.2918,
+      "avg_lat": 38.3079,
+      "eras": [
+        "world-bc300",
+        "world-bc323"
+      ],
+      "suggested_slug": "atropatene"
+    },
+    {
+      "name": "Buwayhid Emirates",
+      "occurrences": 2,
+      "avg_lng": 50.7872,
+      "avg_lat": 32.4343,
+      "eras": [
+        "world-1000",
+        "world-1200"
+      ],
+      "suggested_slug": "buwayhid-emirates"
+    },
+    {
+      "name": "Carnatic",
+      "occurrences": 2,
+      "avg_lng": 79.1974,
+      "avg_lat": 12.2871,
+      "eras": [
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "carnatic"
+    },
+    {
+      "name": "Enets",
+      "occurrences": 2,
+      "avg_lng": 87.6955,
+      "avg_lat": 70.6308,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "enets"
+    },
+    {
+      "name": "Far Eastern SSR",
+      "occurrences": 2,
+      "avg_lng": 133.9513,
+      "avg_lat": 49.9564,
+      "eras": [
+        "world-1920",
+        "world-1930"
+      ],
+      "suggested_slug": "far-eastern-ssr"
+    },
+    {
+      "name": "Gooty",
+      "occurrences": 2,
+      "avg_lng": 77.6622,
+      "avg_lat": 14.8441,
+      "eras": [
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gooty"
+    },
+    {
+      "name": "Kamarupa",
+      "occurrences": 2,
+      "avg_lng": 95.912,
+      "avg_lat": 26.0684,
+      "eras": [
+        "world-1200",
+        "world-600"
+      ],
+      "suggested_slug": "kamarupa"
+    },
+    {
+      "name": "Kanauj",
+      "occurrences": 2,
+      "avg_lng": 81.1132,
+      "avg_lat": 28.9084,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "kanauj"
+    },
+    {
+      "name": "Kuril Islands",
+      "occurrences": 2,
+      "avg_lng": 149.9276,
+      "avg_lat": 45.8776,
+      "eras": [
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kuril-islands"
+    },
+    {
+      "name": "Luva",
+      "occurrences": 2,
+      "avg_lng": 100.398,
+      "avg_lat": 13.709,
+      "eras": [
+        "world-1279",
+        "world-1300"
+      ],
+      "suggested_slug": "luva"
+    },
+    {
+      "name": "Madras",
+      "occurrences": 2,
+      "avg_lng": 80.0153,
+      "avg_lat": 12.6855,
+      "eras": [
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "madras"
+    },
+    {
+      "name": "Malabar",
+      "occurrences": 2,
+      "avg_lng": 76.4626,
+      "avg_lat": 10.7267,
+      "eras": [
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "malabar"
+    },
+    {
+      "name": "Mazun",
+      "occurrences": 2,
+      "avg_lng": 58.5632,
+      "avg_lat": 22.0406,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "mazun"
+    },
+    {
+      "name": "Middag Kingdom",
+      "occurrences": 2,
+      "avg_lng": 120.619,
+      "avg_lat": 24.1619,
+      "eras": [
+        "world-1650",
+        "world-1700"
+      ],
+      "suggested_slug": "middag-kingdom"
+    },
+    {
+      "name": "Multan",
+      "occurrences": 2,
+      "avg_lng": 71.4193,
+      "avg_lat": 28.9432,
+      "eras": [
+        "world-1783",
+        "world-900"
+      ],
+      "suggested_slug": "multan"
+    },
+    {
+      "name": "Nganasan",
+      "occurrences": 2,
+      "avg_lng": 102.7545,
+      "avg_lat": 74.0365,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "nganasan"
+    },
+    {
+      "name": "Peshemegs",
+      "occurrences": 2,
+      "avg_lng": 58.0703,
+      "avg_lat": 45.9103,
+      "eras": [
+        "world-1000"
+      ],
+      "suggested_slug": "peshemegs"
+    },
+    {
+      "name": "Rajastan",
+      "occurrences": 2,
+      "avg_lng": 73.2635,
+      "avg_lat": 26.8565,
+      "eras": [
+        "world-1492",
+        "world-1500"
+      ],
+      "suggested_slug": "rajastan"
+    },
+    {
+      "name": "Ruanruan",
+      "occurrences": 2,
+      "avg_lng": 96.587,
+      "avg_lat": 49.0724,
+      "eras": [
+        "world-400",
+        "world-500"
+      ],
+      "suggested_slug": "ruanruan"
+    },
+    {
+      "name": "Saylan",
+      "occurrences": 2,
+      "avg_lng": 80.676,
+      "avg_lat": 7.8126,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "saylan"
+    },
+    {
+      "name": "Senas",
+      "occurrences": 2,
+      "avg_lng": 92.8768,
+      "avg_lat": 25.2298,
+      "eras": [
+        "world-1000",
+        "world-1100"
+      ],
+      "suggested_slug": "senas"
+    },
+    {
+      "name": "Sind",
+      "occurrences": 2,
+      "avg_lng": 68.2439,
+      "avg_lat": 26.9583,
+      "eras": [
+        "world-1492",
+        "world-1783"
+      ],
+      "suggested_slug": "sind"
+    },
+    {
+      "name": "Sui Empire",
+      "occurrences": 2,
+      "avg_lng": 110.8497,
+      "avg_lat": 29.5736,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "sui-empire"
+    },
+    {
+      "name": "Tufan Empire",
+      "occurrences": 2,
+      "avg_lng": 93.539,
+      "avg_lat": 35.5161,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "tufan-empire"
+    },
+    {
+      "name": "Vallabhi",
+      "occurrences": 2,
+      "avg_lng": 71.5712,
+      "avg_lat": 22.4152,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "vallabhi"
+    },
+    {
+      "name": "Yukagir",
+      "occurrences": 2,
+      "avg_lng": 156.6983,
+      "avg_lat": 69.5685,
+      "eras": [
+        "world-1530",
+        "world-1600"
+      ],
+      "suggested_slug": "yukagir"
+    },
+    {
+      "name": "minor Hindu and Buddhist kingdoms",
+      "occurrences": 2,
+      "avg_lng": 117.0001,
+      "avg_lat": 1.8501,
+      "eras": [
+        "world-1300",
+        "world-1400"
+      ],
+      "suggested_slug": "minor-hindu-and-buddhist-kingdoms"
+    },
+    {
+      "name": "minor states",
+      "occurrences": 2,
+      "avg_lng": 37.2617,
+      "avg_lat": 39.0862,
+      "eras": [
+        "world-bc100",
+        "world-bc200"
+      ],
+      "suggested_slug": "minor-states"
+    },
+    {
+      "name": "Amuq D",
+      "occurrences": 1,
+      "avg_lng": 37.4286,
+      "avg_lat": 36.0808,
+      "eras": [
+        "world-bc5000"
+      ],
+      "suggested_slug": "amuq-d"
+    },
+    {
+      "name": "Bagan",
+      "occurrences": 1,
+      "avg_lng": 97.79,
+      "avg_lat": 22.1025,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "bagan"
+    },
+    {
+      "name": "Bahawalpur",
+      "occurrences": 1,
+      "avg_lng": 71.0646,
+      "avg_lat": 28.5671,
+      "eras": [
+        "world-1800"
+      ],
+      "suggested_slug": "bahawalpur"
+    },
+    {
+      "name": "Banas",
+      "occurrences": 1,
+      "avg_lng": 80.7556,
+      "avg_lat": 19.7932,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "banas"
+    },
+    {
+      "name": "Bashkirs",
+      "occurrences": 1,
+      "avg_lng": 62.7659,
+      "avg_lat": 54.0816,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "bashkirs"
+    },
+    {
+      "name": "Beylik of Aydin",
+      "occurrences": 1,
+      "avg_lng": 28.8619,
+      "avg_lat": 37.427,
+      "eras": [
+        "world-1400"
+      ],
+      "suggested_slug": "beylik-of-aydin"
+    },
+    {
+      "name": "Bithynia",
+      "occurrences": 1,
+      "avg_lng": 30.0463,
+      "avg_lat": 40.8927,
+      "eras": [
+        "world-bc300"
+      ],
+      "suggested_slug": "bithynia"
+    },
+    {
+      "name": "British East India Company",
+      "occurrences": 1,
+      "avg_lng": 83.367,
+      "avg_lat": 19.3119,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "british-east-india-company"
+    },
+    {
+      "name": "British Protectorate",
+      "occurrences": 1,
+      "avg_lng": 54.9967,
+      "avg_lat": 19.1745,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "british-protectorate"
+    },
+    {
+      "name": "Bundelkhand",
+      "occurrences": 1,
+      "avg_lng": 87.199,
+      "avg_lat": 25.6799,
+      "eras": [
+        "world-1800"
+      ],
+      "suggested_slug": "bundelkhand"
+    },
+    {
+      "name": "Chandellas",
+      "occurrences": 1,
+      "avg_lng": 81.3494,
+      "avg_lat": 24.9722,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "chandellas"
+    },
+    {
+      "name": "Chūzan",
+      "occurrences": 1,
+      "avg_lng": 127.7735,
+      "avg_lat": 26.3293,
+      "eras": [
+        "world-1400"
+      ],
+      "suggested_slug": "chuzan"
+    },
+    {
+      "name": "Circars",
+      "occurrences": 1,
+      "avg_lng": 82.8059,
+      "avg_lat": 18.3317,
+      "eras": [
+        "world-1800"
+      ],
+      "suggested_slug": "circars"
+    },
+    {
+      "name": "Gandhāra",
+      "occurrences": 1,
+      "avg_lng": 71.9574,
+      "avg_lat": 34.0296,
+      "eras": [
+        "world-bc500"
+      ],
+      "suggested_slug": "gandhara"
+    },
+    {
+      "name": "Gondwana",
+      "occurrences": 1,
+      "avg_lng": 80.8629,
+      "avg_lat": 19.8146,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "gondwana"
+    },
+    {
+      "name": "Han Zhao",
+      "occurrences": 1,
+      "avg_lng": 109.0142,
+      "avg_lat": 39.2743,
+      "eras": [
+        "world-300"
+      ],
+      "suggested_slug": "han-zhao"
+    },
+    {
+      "name": "Harapunchai",
+      "occurrences": 1,
+      "avg_lng": 100.075,
+      "avg_lat": 17.2408,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "harapunchai"
+    },
+    {
+      "name": "Haripunjaya",
+      "occurrences": 1,
+      "avg_lng": 99.8479,
+      "avg_lat": 17.147,
+      "eras": [
+        "world-1000"
+      ],
+      "suggested_slug": "haripunjaya"
+    },
+    {
+      "name": "Hindu Shahis",
+      "occurrences": 1,
+      "avg_lng": 75.0663,
+      "avg_lat": 30.8153,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "hindu-shahis"
+    },
+    {
+      "name": "Hokuzan",
+      "occurrences": 1,
+      "avg_lng": 128.1643,
+      "avg_lat": 26.6443,
+      "eras": [
+        "world-1400"
+      ],
+      "suggested_slug": "hokuzan"
+    },
+    {
+      "name": "Hövsgöl Nuur",
+      "occurrences": 1,
+      "avg_lng": 100.496,
+      "avg_lat": 51.064,
+      "eras": [
+        "world-bc100"
+      ],
+      "suggested_slug": "hovsgol-nuur"
+    },
+    {
+      "name": "Iron Age chieftainships",
+      "occurrences": 1,
+      "avg_lng": 77.7436,
+      "avg_lat": 11.2032,
+      "eras": [
+        "world-bc200"
+      ],
+      "suggested_slug": "iron-age-chieftainships"
+    },
+    {
+      "name": "Iron Age megalith cultures",
+      "occurrences": 1,
+      "avg_lng": 77.1917,
+      "avg_lat": 14.6557,
+      "eras": [
+        "world-bc500"
+      ],
+      "suggested_slug": "iron-age-megalith-cultures"
+    },
+    {
+      "name": "Jin Empire",
+      "occurrences": 1,
+      "avg_lng": 110.2528,
+      "avg_lat": 27.73,
+      "eras": [
+        "world-500"
+      ],
+      "suggested_slug": "jin-empire"
+    },
+    {
+      "name": "Kanara",
+      "occurrences": 1,
+      "avg_lng": 75.2235,
+      "avg_lat": 12.9383,
+      "eras": [
+        "world-1800"
+      ],
+      "suggested_slug": "kanara"
+    },
+    {
+      "name": "Kara Khitai Khaganate",
+      "occurrences": 1,
+      "avg_lng": 73.7751,
+      "avg_lat": 44.7602,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "kara-khitai-khaganate"
+    },
+    {
+      "name": "Karkhanids",
+      "occurrences": 1,
+      "avg_lng": 76.8326,
+      "avg_lat": 38.4003,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "karkhanids"
+    },
+    {
+      "name": "Khanty",
+      "occurrences": 1,
+      "avg_lng": 78.5867,
+      "avg_lat": 62.5364,
+      "eras": [
+        "world-1530"
+      ],
+      "suggested_slug": "khanty"
+    },
+    {
+      "name": "Kingdom of Antigonus",
+      "occurrences": 1,
+      "avg_lng": 38.7466,
+      "avg_lat": 35.4936,
+      "eras": [
+        "world-bc300"
+      ],
+      "suggested_slug": "kingdom-of-antigonus"
+    },
+    {
+      "name": "Kingdom of Kapisa",
+      "occurrences": 1,
+      "avg_lng": 69.8672,
+      "avg_lat": 34.202,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "kingdom-of-kapisa"
+    },
+    {
+      "name": "Kingdom of Sind",
+      "occurrences": 1,
+      "avg_lng": 66.751,
+      "avg_lat": 27.5659,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "kingdom-of-sind"
+    },
+    {
+      "name": "Kingdom of Sukhotai",
+      "occurrences": 1,
+      "avg_lng": 98.3562,
+      "avg_lat": 21.5453,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "kingdom-of-sukhotai"
+    },
+    {
+      "name": "Kingdom of Zunbil",
+      "occurrences": 1,
+      "avg_lng": 66.3546,
+      "avg_lat": 32.4865,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "kingdom-of-zunbil"
+    },
+    {
+      "name": "Klachuris",
+      "occurrences": 1,
+      "avg_lng": 83.8071,
+      "avg_lat": 24.144,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "klachuris"
+    },
+    {
+      "name": "Komi",
+      "occurrences": 1,
+      "avg_lng": 67.4101,
+      "avg_lat": 63.0235,
+      "eras": [
+        "world-1530"
+      ],
+      "suggested_slug": "komi"
+    },
+    {
+      "name": "Kurykans",
+      "occurrences": 1,
+      "avg_lng": 109.173,
+      "avg_lat": 52.0198,
+      "eras": [
+        "world-500"
+      ],
+      "suggested_slug": "kurykans"
+    },
+    {
+      "name": "Kwarezm",
+      "occurrences": 1,
+      "avg_lng": 58.8366,
+      "avg_lat": 41.6067,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "kwarezm"
+    },
+    {
+      "name": "Lahore",
+      "occurrences": 1,
+      "avg_lng": 75.3985,
+      "avg_lat": 33.934,
+      "eras": [
+        "world-1783"
+      ],
+      "suggested_slug": "lahore"
+    },
+    {
+      "name": "Lambakannas",
+      "occurrences": 1,
+      "avg_lng": 80.676,
+      "avg_lat": 7.8126,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "lambakannas"
+    },
+    {
+      "name": "Lopburi Kingdom",
+      "occurrences": 1,
+      "avg_lng": 100.398,
+      "avg_lat": 13.709,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "lopburi-kingdom"
+    },
+    {
+      "name": "Mahratta states",
+      "occurrences": 1,
+      "avg_lng": 75.4122,
+      "avg_lat": 27.2702,
+      "eras": [
+        "world-1783"
+      ],
+      "suggested_slug": "mahratta-states"
+    },
+    {
+      "name": "Mascat",
+      "occurrences": 1,
+      "avg_lng": 57.6892,
+      "avg_lat": 21.5635,
+      "eras": [
+        "world-bc1"
+      ],
+      "suggested_slug": "mascat"
+    },
+    {
+      "name": "Mon States",
+      "occurrences": 1,
+      "avg_lng": 96.0262,
+      "avg_lat": 17.4942,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "mon-states"
+    },
+    {
+      "name": "Nan-Zhao",
+      "occurrences": 1,
+      "avg_lng": 98.144,
+      "avg_lat": 21.3369,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "nan-zhao"
+    },
+    {
+      "name": "Nanzan",
+      "occurrences": 1,
+      "avg_lng": 127.7234,
+      "avg_lat": 26.1415,
+      "eras": [
+        "world-1400"
+      ],
+      "suggested_slug": "nanzan"
+    },
+    {
+      "name": "Nenets",
+      "occurrences": 1,
+      "avg_lng": 79.6678,
+      "avg_lat": 69.1584,
+      "eras": [
+        "world-1530"
+      ],
+      "suggested_slug": "nenets"
+    },
+    {
+      "name": "Northern Liang",
+      "occurrences": 1,
+      "avg_lng": 100.29,
+      "avg_lat": 38.917,
+      "eras": [
+        "world-400"
+      ],
+      "suggested_slug": "northern-liang"
+    },
+    {
+      "name": "Nyvukagmit (Naukan)",
+      "occurrences": 1,
+      "avg_lng": -170.9544,
+      "avg_lat": 65.9891,
+      "eras": [
+        "world-1492"
+      ],
+      "suggested_slug": "nyvukagmit-naukan"
+    },
+    {
+      "name": "Oxus",
+      "occurrences": 1,
+      "avg_lng": 65.7543,
+      "avg_lat": 38.6353,
+      "eras": [
+        "world-bc2000"
+      ],
+      "suggested_slug": "oxus"
+    },
+    {
+      "name": "Paramas",
+      "occurrences": 1,
+      "avg_lng": 77.5338,
+      "avg_lat": 24.623,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "paramas"
+    },
+    {
+      "name": "Sakhalin (RU)",
+      "occurrences": 1,
+      "avg_lng": 142.3415,
+      "avg_lat": 51.7152,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "sakhalin-ru"
+    },
+    {
+      "name": "Samoyèdes",
+      "occurrences": 1,
+      "avg_lng": 85.7237,
+      "avg_lat": 69.4931,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "samoyedes"
+    },
+    {
+      "name": "Shaskanka",
+      "occurrences": 1,
+      "avg_lng": 88.2233,
+      "avg_lat": 23.297,
+      "eras": [
+        "world-600"
+      ],
+      "suggested_slug": "shaskanka"
+    },
+    {
+      "name": "Somvamsis",
+      "occurrences": 1,
+      "avg_lng": 83.843,
+      "avg_lat": 20.5751,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "somvamsis"
+    },
+    {
+      "name": "Soomra Emirate",
+      "occurrences": 1,
+      "avg_lng": 67.5072,
+      "avg_lat": 28.1969,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "soomra-emirate"
+    },
+    {
+      "name": "Toba Wei",
+      "occurrences": 1,
+      "avg_lng": 107.8543,
+      "avg_lat": 38.1139,
+      "eras": [
+        "world-500"
+      ],
+      "suggested_slug": "toba-wei"
+    },
+    {
+      "name": "Tungusic Tribes",
+      "occurrences": 1,
+      "avg_lng": 129.0459,
+      "avg_lat": 56.5223,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "tungusic-tribes"
+    },
+    {
+      "name": "Turan",
+      "occurrences": 1,
+      "avg_lng": 62.9318,
+      "avg_lat": 42.9418,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "turan"
+    },
+    {
+      "name": "Vengi",
+      "occurrences": 1,
+      "avg_lng": 81.0041,
+      "avg_lat": 16.4048,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "vengi"
+    },
+    {
+      "name": "Vishnu-Kundins",
+      "occurrences": 1,
+      "avg_lng": 78.327,
+      "avg_lat": 14.2052,
+      "eras": [
+        "world-500"
+      ],
+      "suggested_slug": "vishnu-kundins"
+    }
+  ]
+}

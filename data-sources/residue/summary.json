@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-09-22T05:11:43.993Z",
+  "totalEntities": 1545,
+  "totalFeatures": 3774,
+  "continents": {
+    "North America": {
+      "continent": "North America",
+      "slug": "north-america",
+      "batchFileName": "residue-north-america.json",
+      "entityCount": 505,
+      "featureCount": 512,
+      "inventoryFile": "data-sources/residue/north-america.json",
+      "targetBatchFile": "data-sources/batches/residue-north-america.json"
+    },
+    "South America": {
+      "continent": "South America",
+      "slug": "south-america",
+      "batchFileName": "residue-south-america.json",
+      "entityCount": 366,
+      "featureCount": 390,
+      "inventoryFile": "data-sources/residue/south-america.json",
+      "targetBatchFile": "data-sources/batches/residue-south-america.json"
+    },
+    "Oceania": {
+      "continent": "Oceania",
+      "slug": "oceania",
+      "batchFileName": "residue-oceania.json",
+      "entityCount": 339,
+      "featureCount": 2120,
+      "inventoryFile": "data-sources/residue/oceania.json",
+      "targetBatchFile": "data-sources/batches/residue-oceania.json"
+    },
+    "Asia": {
+      "continent": "Asia",
+      "slug": "asia",
+      "batchFileName": "residue-asia.json",
+      "entityCount": 128,
+      "featureCount": 268,
+      "inventoryFile": "data-sources/residue/asia.json",
+      "targetBatchFile": "data-sources/batches/residue-asia.json"
+    },
+    "Europe": {
+      "continent": "Europe",
+      "slug": "europe",
+      "batchFileName": "residue-europe.json",
+      "entityCount": 125,
+      "featureCount": 268,
+      "inventoryFile": "data-sources/residue/europe.json",
+      "targetBatchFile": "data-sources/batches/residue-europe.json"
+    },
+    "Africa": {
+      "continent": "Africa",
+      "slug": "africa",
+      "batchFileName": "residue-africa.json",
+      "entityCount": 82,
+      "featureCount": 216,
+      "inventoryFile": "data-sources/residue/africa.json",
+      "targetBatchFile": "data-sources/batches/residue-africa.json"
+    }
+  }
+}

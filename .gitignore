@@ -8,4 +8,5 @@ dist
 *.tiff
 __pycache__/
 *.pyc
+output/
 

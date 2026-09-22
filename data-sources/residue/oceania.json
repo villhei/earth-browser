@@ -1,0 +1,5180 @@
+{
+  "continent": "Oceania",
+  "slug": "oceania",
+  "batchFileName": "residue-oceania.json",
+  "entityCount": 339,
+  "featureCount": 2120,
+  "entities": [
+    {
+      "name": "Alawa",
+      "occurrences": 7,
+      "avg_lng": 134.4196,
+      "avg_lat": -15.9138,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "alawa"
+    },
+    {
+      "name": "Alyawarre",
+      "occurrences": 7,
+      "avg_lng": 135.5678,
+      "avg_lat": -22.0723,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "alyawarre"
+    },
+    {
+      "name": "Amangu",
+      "occurrences": 7,
+      "avg_lng": 115.6475,
+      "avg_lat": -29.4868,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "amangu"
+    },
+    {
+      "name": "Amarak",
+      "occurrences": 7,
+      "avg_lng": 132.8482,
+      "avg_lat": -11.8539,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "amarak"
+    },
+    {
+      "name": "Anmatyerre",
+      "occurrences": 7,
+      "avg_lng": 132.9354,
+      "avg_lat": -22.5023,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "anmatyerre"
+    },
+    {
+      "name": "Antakarinja",
+      "occurrences": 7,
+      "avg_lng": 134.0915,
+      "avg_lat": -27.4936,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "antakarinja"
+    },
+    {
+      "name": "Ballardong",
+      "occurrences": 7,
+      "avg_lng": 117.3126,
+      "avg_lat": -31.2761,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ballardong"
+    },
+    {
+      "name": "Bilinara",
+      "occurrences": 7,
+      "avg_lng": 130.8196,
+      "avg_lat": -16.9675,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "bilinara"
+    },
+    {
+      "name": "Bukurnidja",
+      "occurrences": 7,
+      "avg_lng": 132.7697,
+      "avg_lat": -12.7475,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "bukurnidja"
+    },
+    {
+      "name": "Dangbon",
+      "occurrences": 7,
+      "avg_lng": 134.1519,
+      "avg_lat": -12.5653,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "dangbon"
+    },
+    {
+      "name": "Doolboong/Miriwoong",
+      "occurrences": 7,
+      "avg_lng": 128.9528,
+      "avg_lat": -15.7024,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "doolboong-miriwoong"
+    },
+    {
+      "name": "Kariyarra",
+      "occurrences": 7,
+      "avg_lng": 118.3684,
+      "avg_lat": -20.9922,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kariyarra"
+    },
+    {
+      "name": "Kaytej",
+      "occurrences": 7,
+      "avg_lng": 134.214,
+      "avg_lat": -21.3404,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kaytej"
+    },
+    {
+      "name": "Kija",
+      "occurrences": 7,
+      "avg_lng": 128.1924,
+      "avg_lat": -17.188,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kija"
+    },
+    {
+      "name": "Kokatha",
+      "occurrences": 7,
+      "avg_lng": 133.255,
+      "avg_lat": -29.6204,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kokatha"
+    },
+    {
+      "name": "Konbudj",
+      "occurrences": 7,
+      "avg_lng": 132.3218,
+      "avg_lat": -12.5559,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "konbudj"
+    },
+    {
+      "name": "Kukatja",
+      "occurrences": 7,
+      "avg_lng": 127.0106,
+      "avg_lat": -20.5659,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kukatja"
+    },
+    {
+      "name": "Kundjey’mi",
+      "occurrences": 7,
+      "avg_lng": 132.8145,
+      "avg_lat": -12.4232,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kundjey-mi"
+    },
+    {
+      "name": "Kurrama",
+      "occurrences": 7,
+      "avg_lng": 116.7425,
+      "avg_lat": -22.0933,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kurrama"
+    },
+    {
+      "name": "Kuwarra",
+      "occurrences": 7,
+      "avg_lng": 120.3203,
+      "avg_lat": -28.0986,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kuwarra"
+    },
+    {
+      "name": "Kuwema",
+      "occurrences": 7,
+      "avg_lng": 130.252,
+      "avg_lat": -13.5291,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kuwema"
+    },
+    {
+      "name": "Kwini",
+      "occurrences": 7,
+      "avg_lng": 127.5472,
+      "avg_lat": -14.5676,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kwini"
+    },
+    {
+      "name": "Larrakia",
+      "occurrences": 7,
+      "avg_lng": 131.0847,
+      "avg_lat": -12.6047,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "larrakia"
+    },
+    {
+      "name": "Limilngan",
+      "occurrences": 7,
+      "avg_lng": 131.9196,
+      "avg_lat": -12.71,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "limilngan"
+    },
+    {
+      "name": "Luritja",
+      "occurrences": 7,
+      "avg_lng": 131.8764,
+      "avg_lat": -24.6994,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "luritja"
+    },
+    {
+      "name": "Malak malak",
+      "occurrences": 7,
+      "avg_lng": 130.7999,
+      "avg_lat": -13.6647,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "malak-malak"
+    },
+    {
+      "name": "Malkana",
+      "occurrences": 7,
+      "avg_lng": 114.5205,
+      "avg_lat": -26.1834,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "malkana"
+    },
+    {
+      "name": "Mandjindja",
+      "occurrences": 7,
+      "avg_lng": 125.8038,
+      "avg_lat": -27.362,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mandjindja"
+    },
+    {
+      "name": "Mangala",
+      "occurrences": 7,
+      "avg_lng": 124.1164,
+      "avg_lat": -19.4924,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mangala"
+    },
+    {
+      "name": "Mangarayi",
+      "occurrences": 7,
+      "avg_lng": 133.6907,
+      "avg_lat": -14.6925,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mangarayi"
+    },
+    {
+      "name": "Maranunggu",
+      "occurrences": 7,
+      "avg_lng": 130.1788,
+      "avg_lat": -13.6887,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "maranunggu"
+    },
+    {
+      "name": "Mardu",
+      "occurrences": 7,
+      "avg_lng": 124.0563,
+      "avg_lat": -23.3977,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mardu"
+    },
+    {
+      "name": "Marramaninjsji",
+      "occurrences": 7,
+      "avg_lng": 130.2554,
+      "avg_lat": -14.01,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "marramaninjsji"
+    },
+    {
+      "name": "Marringarr",
+      "occurrences": 7,
+      "avg_lng": 129.7259,
+      "avg_lat": -14.2324,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "marringarr"
+    },
+    {
+      "name": "Marrithiyel",
+      "occurrences": 7,
+      "avg_lng": 129.9477,
+      "avg_lat": -13.8427,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "marrithiyel"
+    },
+    {
+      "name": "Martuthunira",
+      "occurrences": 7,
+      "avg_lng": 116.6945,
+      "avg_lat": -21.0768,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "martuthunira"
+    },
+    {
+      "name": "Maung",
+      "occurrences": 7,
+      "avg_lng": 133.2024,
+      "avg_lat": -11.8243,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "maung"
+    },
+    {
+      "name": "Mbukarla",
+      "occurrences": 7,
+      "avg_lng": 132.7603,
+      "avg_lat": -13.0046,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mbukarla"
+    },
+    {
+      "name": "Mirning",
+      "occurrences": 7,
+      "avg_lng": 126.7515,
+      "avg_lat": -31.6631,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mirning"
+    },
+    {
+      "name": "Miwa",
+      "occurrences": 7,
+      "avg_lng": 127.0244,
+      "avg_lat": -14.1644,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "miwa"
+    },
+    {
+      "name": "Mudburra",
+      "occurrences": 7,
+      "avg_lng": 132.3771,
+      "avg_lat": -17.0463,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mudburra"
+    },
+    {
+      "name": "Murrinh-patha",
+      "occurrences": 7,
+      "avg_lng": 129.8579,
+      "avg_lat": -14.4749,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "murrinh-patha"
+    },
+    {
+      "name": "Nakako",
+      "occurrences": 7,
+      "avg_lng": 128.2485,
+      "avg_lat": -27.2009,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nakako"
+    },
+    {
+      "name": "Nana",
+      "occurrences": 7,
+      "avg_lng": 121.8759,
+      "avg_lat": -26.9514,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nana"
+    },
+    {
+      "name": "Ngaanyatjarra",
+      "occurrences": 7,
+      "avg_lng": 124.4953,
+      "avg_lat": -25.8345,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngaanyatjarra"
+    },
+    {
+      "name": "Ngalakan",
+      "occurrences": 7,
+      "avg_lng": 134.0904,
+      "avg_lat": -14.448,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngalakan"
+    },
+    {
+      "name": "Ngalawangka",
+      "occurrences": 7,
+      "avg_lng": 119.2863,
+      "avg_lat": -24.267,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngalawangka"
+    },
+    {
+      "name": "Ngalea",
+      "occurrences": 7,
+      "avg_lng": 128.9689,
+      "avg_lat": -29.2289,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngalea"
+    },
+    {
+      "name": "Ngaliwuru",
+      "occurrences": 7,
+      "avg_lng": 130.9254,
+      "avg_lat": -15.8979,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngaliwuru"
+    },
+    {
+      "name": "Ngalkbun",
+      "occurrences": 7,
+      "avg_lng": 134.7956,
+      "avg_lat": -13.4781,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngalkbun"
+    },
+    {
+      "name": "Ngan’gikurunggurr",
+      "occurrences": 7,
+      "avg_lng": 129.9427,
+      "avg_lat": -14.279,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngan-gikurunggurr"
+    },
+    {
+      "name": "Ngan’giwumirri",
+      "occurrences": 7,
+      "avg_lng": 130.4962,
+      "avg_lat": -14.1659,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngan-giwumirri"
+    },
+    {
+      "name": "Ngarinman",
+      "occurrences": 7,
+      "avg_lng": 130.1026,
+      "avg_lat": -16.2964,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngarinman"
+    },
+    {
+      "name": "Ngarinyin",
+      "occurrences": 7,
+      "avg_lng": 126.9177,
+      "avg_lat": -15.7129,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngarinyin"
+    },
+    {
+      "name": "Ngarla",
+      "occurrences": 7,
+      "avg_lng": 119.434,
+      "avg_lat": -20.2313,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngarla"
+    },
+    {
+      "name": "Ngarluma",
+      "occurrences": 7,
+      "avg_lng": 117.4438,
+      "avg_lat": -20.9383,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngarluma"
+    },
+    {
+      "name": "Ngarti",
+      "occurrences": 7,
+      "avg_lng": 129.0458,
+      "avg_lat": -20.3137,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngarti"
+    },
+    {
+      "name": "Ngatatjara",
+      "occurrences": 7,
+      "avg_lng": 127.3542,
+      "avg_lat": -25.2695,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngatatjara"
+    },
+    {
+      "name": "Ngatjumay",
+      "occurrences": 7,
+      "avg_lng": 123.6557,
+      "avg_lat": -32.2335,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngatjumay"
+    },
+    {
+      "name": "Ngombur",
+      "occurrences": 7,
+      "avg_lng": 132.5308,
+      "avg_lat": -12.8975,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngombur"
+    },
+    {
+      "name": "Ngumbarl",
+      "occurrences": 7,
+      "avg_lng": 122.4866,
+      "avg_lat": -17.5838,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "ngumbarl"
+    },
+    {
+      "name": "Nhanta",
+      "occurrences": 7,
+      "avg_lng": 114.4787,
+      "avg_lat": -27.5301,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nhanta"
+    },
+    {
+      "name": "Nhuwala",
+      "occurrences": 7,
+      "avg_lng": 115.6272,
+      "avg_lat": -21.7427,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nhuwala"
+    },
+    {
+      "name": "Nimanburu",
+      "occurrences": 7,
+      "avg_lng": 123.0861,
+      "avg_lat": -17.5288,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nimanburu"
+    },
+    {
+      "name": "Nungali",
+      "occurrences": 7,
+      "avg_lng": 130.8858,
+      "avg_lat": -15.5304,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nungali"
+    },
+    {
+      "name": "Nyaki-nyaki",
+      "occurrences": 7,
+      "avg_lng": 118.7993,
+      "avg_lat": -32.0848,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nyaki-nyaki"
+    },
+    {
+      "name": "Nyamal",
+      "occurrences": 7,
+      "avg_lng": 119.9082,
+      "avg_lat": -21.2177,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nyamal"
+    },
+    {
+      "name": "Nyanganyatjara",
+      "occurrences": 7,
+      "avg_lng": 125.4972,
+      "avg_lat": -29.2672,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nyanganyatjara"
+    },
+    {
+      "name": "Nyangumarda",
+      "occurrences": 7,
+      "avg_lng": 122.0938,
+      "avg_lat": -20.6071,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nyangumarda"
+    },
+    {
+      "name": "Nyikina",
+      "occurrences": 7,
+      "avg_lng": 124.3371,
+      "avg_lat": -18.0101,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nyikina"
+    },
+    {
+      "name": "Nyul Nyul",
+      "occurrences": 7,
+      "avg_lng": 122.8033,
+      "avg_lat": -16.8756,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "nyul-nyul"
+    },
+    {
+      "name": "Palyku",
+      "occurrences": 7,
+      "avg_lng": 120.2758,
+      "avg_lat": -22.647,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "palyku"
+    },
+    {
+      "name": "Payungu",
+      "occurrences": 7,
+      "avg_lng": 114.2289,
+      "avg_lat": -23.3648,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "payungu"
+    },
+    {
+      "name": "Pitjantjatjara",
+      "occurrences": 7,
+      "avg_lng": 129.8613,
+      "avg_lat": -26.0271,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "pitjantjatjara"
+    },
+    {
+      "name": "Punuba",
+      "occurrences": 7,
+      "avg_lng": 125.8177,
+      "avg_lat": -17.7801,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "punuba"
+    },
+    {
+      "name": "Purduna",
+      "occurrences": 7,
+      "avg_lng": 115.2468,
+      "avg_lat": -23.2943,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "purduna"
+    },
+    {
+      "name": "Rembarnga",
+      "occurrences": 7,
+      "avg_lng": 134.5241,
+      "avg_lat": -12.9476,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "rembarnga"
+    },
+    {
+      "name": "Thalanyji",
+      "occurrences": 7,
+      "avg_lng": 114.6969,
+      "avg_lat": -22.4339,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "thalanyji"
+    },
+    {
+      "name": "Tharrgari",
+      "occurrences": 7,
+      "avg_lng": 115.272,
+      "avg_lat": -24.1969,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "tharrgari"
+    },
+    {
+      "name": "Thiin",
+      "occurrences": 7,
+      "avg_lng": 116.681,
+      "avg_lat": -23.7778,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "thiin"
+    },
+    {
+      "name": "Tjalkanti",
+      "occurrences": 7,
+      "avg_lng": 123.1585,
+      "avg_lat": -27.6397,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "tjalkanti"
+    },
+    {
+      "name": "Tjerratj",
+      "occurrences": 7,
+      "avg_lng": 130.3568,
+      "avg_lat": -13.4223,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "tjerratj"
+    },
+    {
+      "name": "Tjupany",
+      "occurrences": 7,
+      "avg_lng": 119.5663,
+      "avg_lat": -26.9857,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "tjupany"
+    },
+    {
+      "name": "Umida",
+      "occurrences": 7,
+      "avg_lng": 124.2304,
+      "avg_lat": -16.6914,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "umida"
+    },
+    {
+      "name": "Unggarangi",
+      "occurrences": 7,
+      "avg_lng": 123.7945,
+      "avg_lat": -16.6661,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "unggarangi"
+    },
+    {
+      "name": "Unggumi",
+      "occurrences": 7,
+      "avg_lng": 124.9942,
+      "avg_lat": -16.9517,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "unggumi"
+    },
+    {
+      "name": "Wagiman",
+      "occurrences": 7,
+      "avg_lng": 131.4477,
+      "avg_lat": -14.1259,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wagiman"
+    },
+    {
+      "name": "Wajuk",
+      "occurrences": 7,
+      "avg_lng": 116.1802,
+      "avg_lat": -31.9587,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wajuk"
+    },
+    {
+      "name": "Walmatjarri",
+      "occurrences": 7,
+      "avg_lng": 125.8409,
+      "avg_lat": -19.42,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "walmatjarri"
+    },
+    {
+      "name": "Wangkathaa",
+      "occurrences": 7,
+      "avg_lng": 122.0584,
+      "avg_lat": -30.0072,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wangkathaa"
+    },
+    {
+      "name": "Wardaman",
+      "occurrences": 7,
+      "avg_lng": 131.7813,
+      "avg_lat": -15.4087,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wardaman"
+    },
+    {
+      "name": "Wardandi",
+      "occurrences": 7,
+      "avg_lng": 115.3506,
+      "avg_lat": -33.8607,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wardandi"
+    },
+    {
+      "name": "Warlmanpa",
+      "occurrences": 7,
+      "avg_lng": 132.4752,
+      "avg_lat": -18.5109,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "warlmanpa"
+    },
+    {
+      "name": "Warlpiri",
+      "occurrences": 7,
+      "avg_lng": 131.6364,
+      "avg_lat": -20.427,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "warlpiri"
+    },
+    {
+      "name": "Warray",
+      "occurrences": 7,
+      "avg_lng": 132.1859,
+      "avg_lat": -13.4804,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "warray"
+    },
+    {
+      "name": "Warriyangga",
+      "occurrences": 7,
+      "avg_lng": 115.9072,
+      "avg_lat": -24.592,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "warriyangga"
+    },
+    {
+      "name": "Warumungu",
+      "occurrences": 7,
+      "avg_lng": 134.03,
+      "avg_lat": -19.5493,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "warumungu"
+    },
+    {
+      "name": "Warwa",
+      "occurrences": 7,
+      "avg_lng": 124.191,
+      "avg_lat": -17.0883,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "warwa"
+    },
+    {
+      "name": "Watjarri",
+      "occurrences": 7,
+      "avg_lng": 116.7281,
+      "avg_lat": -26.3032,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "watjarri"
+    },
+    {
+      "name": "Wawula",
+      "occurrences": 7,
+      "avg_lng": 121.1411,
+      "avg_lat": -24.8166,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wawula"
+    },
+    {
+      "name": "Wiilman",
+      "occurrences": 7,
+      "avg_lng": 116.9395,
+      "avg_lat": -32.8634,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wiilman"
+    },
+    {
+      "name": "Wirangu",
+      "occurrences": 7,
+      "avg_lng": 133.524,
+      "avg_lat": -31.6103,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wirangu"
+    },
+    {
+      "name": "Woolna",
+      "occurrences": 7,
+      "avg_lng": 131.4229,
+      "avg_lat": -12.6189,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "woolna"
+    },
+    {
+      "name": "Worla",
+      "occurrences": 7,
+      "avg_lng": 126.9334,
+      "avg_lat": -16.8308,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "worla"
+    },
+    {
+      "name": "Worora",
+      "occurrences": 7,
+      "avg_lng": 125.0879,
+      "avg_lat": -15.8107,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "worora"
+    },
+    {
+      "name": "Wudjari",
+      "occurrences": 7,
+      "avg_lng": 121.2871,
+      "avg_lat": -33.6152,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wudjari"
+    },
+    {
+      "name": "Wunambul",
+      "occurrences": 7,
+      "avg_lng": 125.545,
+      "avg_lat": -15.1224,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wunambul"
+    },
+    {
+      "name": "Wuningangk",
+      "occurrences": 7,
+      "avg_lng": 133.2167,
+      "avg_lat": -13.0607,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "wuningangk"
+    },
+    {
+      "name": "Yangman",
+      "occurrences": 7,
+      "avg_lng": 132.9887,
+      "avg_lat": -15.623,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yangman"
+    },
+    {
+      "name": "Yankuntjatjara",
+      "occurrences": 7,
+      "avg_lng": 131.9843,
+      "avg_lat": -26.9563,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yankuntjatjara"
+    },
+    {
+      "name": "Yawuru",
+      "occurrences": 7,
+      "avg_lng": 122.7067,
+      "avg_lat": -18.0545,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yawuru"
+    },
+    {
+      "name": "Yindjibarndi",
+      "occurrences": 7,
+      "avg_lng": 117.9398,
+      "avg_lat": -21.6881,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yindjibarndi"
+    },
+    {
+      "name": "Yinggarda",
+      "occurrences": 7,
+      "avg_lng": 114.7751,
+      "avg_lat": -25.2348,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yinggarda"
+    },
+    {
+      "name": "Yinhawangka",
+      "occurrences": 7,
+      "avg_lng": 117.8116,
+      "avg_lat": -23.4254,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yinhawangka"
+    },
+    {
+      "name": "Yuat",
+      "occurrences": 7,
+      "avg_lng": 115.8404,
+      "avg_lat": -30.5952,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yuat"
+    },
+    {
+      "name": "Yulparitja",
+      "occurrences": 7,
+      "avg_lng": 124.6999,
+      "avg_lat": -21.4019,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "yulparitja"
+    },
+    {
+      "name": "Agwarmin",
+      "occurrences": 6,
+      "avg_lng": 144.006,
+      "avg_lat": -18.0257,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "agwarmin"
+    },
+    {
+      "name": "Andegerebenha",
+      "occurrences": 6,
+      "avg_lng": 137.6069,
+      "avg_lat": -22.6089,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "andegerebenha"
+    },
+    {
+      "name": "Andyamathanha",
+      "occurrences": 6,
+      "avg_lng": 139.1619,
+      "avg_lat": -30.8362,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "andyamathanha"
+    },
+    {
+      "name": "Anggamudi",
+      "occurrences": 6,
+      "avg_lng": 142.3981,
+      "avg_lat": -11.4807,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "anggamudi"
+    },
+    {
+      "name": "Anguthimri",
+      "occurrences": 6,
+      "avg_lng": 141.8917,
+      "avg_lat": -12.4218,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "anguthimri"
+    },
+    {
+      "name": "Arabana",
+      "occurrences": 6,
+      "avg_lng": 135.8234,
+      "avg_lat": -28.459,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "arabana"
+    },
+    {
+      "name": "Awabakal",
+      "occurrences": 6,
+      "avg_lng": 151.5849,
+      "avg_lat": -32.9892,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "awabakal"
+    },
+    {
+      "name": "Awngthim",
+      "occurrences": 6,
+      "avg_lng": 142.0178,
+      "avg_lat": -12.7223,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "awngthim"
+    },
+    {
+      "name": "Badtjala",
+      "occurrences": 6,
+      "avg_lng": 152.7762,
+      "avg_lat": -25.8048,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "badtjala"
+    },
+    {
+      "name": "Bakanh",
+      "occurrences": 6,
+      "avg_lng": 142.7305,
+      "avg_lat": -14.565,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bakanh"
+    },
+    {
+      "name": "Bandjigali",
+      "occurrences": 6,
+      "avg_lng": 142.5343,
+      "avg_lat": -30.4723,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bandjigali"
+    },
+    {
+      "name": "Banggarla",
+      "occurrences": 6,
+      "avg_lng": 136.3689,
+      "avg_lat": -32.5329,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "banggarla"
+    },
+    {
+      "name": "Baraba Baraba",
+      "occurrences": 6,
+      "avg_lng": 144.2705,
+      "avg_lat": -35.6528,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "baraba-baraba"
+    },
+    {
+      "name": "Baradha",
+      "occurrences": 6,
+      "avg_lng": 148.9526,
+      "avg_lat": -22.0245,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "baradha"
+    },
+    {
+      "name": "Barindji",
+      "occurrences": 6,
+      "avg_lng": 143.5323,
+      "avg_lat": -32.741,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "barindji"
+    },
+    {
+      "name": "Barkindji",
+      "occurrences": 6,
+      "avg_lng": 142.3477,
+      "avg_lat": -32.7733,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "barkindji"
+    },
+    {
+      "name": "Barna",
+      "occurrences": 6,
+      "avg_lng": 148.1726,
+      "avg_lat": -22.1671,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "barna"
+    },
+    {
+      "name": "Barranbinya",
+      "occurrences": 6,
+      "avg_lng": 146.2759,
+      "avg_lat": -29.9002,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "barranbinya"
+    },
+    {
+      "name": "Barundji",
+      "occurrences": 6,
+      "avg_lng": 144.1428,
+      "avg_lat": -30.0643,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "barundji"
+    },
+    {
+      "name": "Barunggam",
+      "occurrences": 6,
+      "avg_lng": 150.5627,
+      "avg_lat": -26.7308,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "barunggam"
+    },
+    {
+      "name": "Bayali",
+      "occurrences": 6,
+      "avg_lng": 150.8419,
+      "avg_lat": -23.8607,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bayali"
+    },
+    {
+      "name": "Bidjara",
+      "occurrences": 6,
+      "avg_lng": 146.8177,
+      "avg_lat": -25.3906,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bidjara"
+    },
+    {
+      "name": "Bidwell",
+      "occurrences": 6,
+      "avg_lng": 149.1119,
+      "avg_lat": -37.376,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bidwell"
+    },
+    {
+      "name": "Bigambul",
+      "occurrences": 6,
+      "avg_lng": 149.8924,
+      "avg_lat": -28.0889,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bigambul"
+    },
+    {
+      "name": "Binbinga",
+      "occurrences": 6,
+      "avg_lng": 136.0488,
+      "avg_lat": -16.3834,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "binbinga"
+    },
+    {
+      "name": "Bindjali",
+      "occurrences": 6,
+      "avg_lng": 140.5726,
+      "avg_lat": -36.589,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bindjali"
+    },
+    {
+      "name": "Biri",
+      "occurrences": 6,
+      "avg_lng": 147.9049,
+      "avg_lat": -20.7304,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "biri"
+    },
+    {
+      "name": "Biripi",
+      "occurrences": 6,
+      "avg_lng": 152.124,
+      "avg_lat": -31.6066,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "biripi"
+    },
+    {
+      "name": "Birria",
+      "occurrences": 6,
+      "avg_lng": 142.5533,
+      "avg_lat": -25.4879,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "birria"
+    },
+    {
+      "name": "Boonwurrung",
+      "occurrences": 6,
+      "avg_lng": 145.9372,
+      "avg_lat": -38.4766,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "boonwurrung"
+    },
+    {
+      "name": "Buandig",
+      "occurrences": 6,
+      "avg_lng": 140.3478,
+      "avg_lat": -37.5913,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "buandig"
+    },
+    {
+      "name": "Budjari",
+      "occurrences": 6,
+      "avg_lng": 144.2198,
+      "avg_lat": -28.4711,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "budjari"
+    },
+    {
+      "name": "Bularnu",
+      "occurrences": 6,
+      "avg_lng": 137.8824,
+      "avg_lat": -21.0742,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bularnu"
+    },
+    {
+      "name": "Bundjalung",
+      "occurrences": 6,
+      "avg_lng": 152.6735,
+      "avg_lat": -28.5779,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bundjalung"
+    },
+    {
+      "name": "Burarra",
+      "occurrences": 6,
+      "avg_lng": 134.6589,
+      "avg_lat": -12.1192,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "burarra"
+    },
+    {
+      "name": "Dadi Dadi",
+      "occurrences": 6,
+      "avg_lng": 143.1644,
+      "avg_lat": -34.6716,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dadi-dadi"
+    },
+    {
+      "name": "Dainggatti",
+      "occurrences": 6,
+      "avg_lng": 152.3777,
+      "avg_lat": -30.8503,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dainggatti"
+    },
+    {
+      "name": "Danggali",
+      "occurrences": 6,
+      "avg_lng": 141.6788,
+      "avg_lat": -32.4518,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "danggali"
+    },
+    {
+      "name": "Darkinung",
+      "occurrences": 6,
+      "avg_lng": 150.6245,
+      "avg_lat": -33.0017,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "darkinung"
+    },
+    {
+      "name": "Darumbal",
+      "occurrences": 6,
+      "avg_lng": 149.9395,
+      "avg_lat": -23.0645,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "darumbal"
+    },
+    {
+      "name": "Dharawala",
+      "occurrences": 6,
+      "avg_lng": 145.1427,
+      "avg_lat": -25.4383,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dharawala"
+    },
+    {
+      "name": "Dharug",
+      "occurrences": 6,
+      "avg_lng": 150.3292,
+      "avg_lat": -33.786,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dharug"
+    },
+    {
+      "name": "Dhirari",
+      "occurrences": 6,
+      "avg_lng": 137.7493,
+      "avg_lat": -28.5893,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dhirari"
+    },
+    {
+      "name": "Dieri",
+      "occurrences": 6,
+      "avg_lng": 139.1313,
+      "avg_lat": -28.3334,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dieri"
+    },
+    {
+      "name": "Dja Dja Wurrung",
+      "occurrences": 6,
+      "avg_lng": 143.8513,
+      "avg_lat": -36.7446,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dja-dja-wurrung"
+    },
+    {
+      "name": "Djabuganjdji",
+      "occurrences": 6,
+      "avg_lng": 145.4651,
+      "avg_lat": -16.8966,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "djabuganjdji"
+    },
+    {
+      "name": "Djabwurung",
+      "occurrences": 6,
+      "avg_lng": 142.7294,
+      "avg_lat": -37.5468,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "djabwurung"
+    },
+    {
+      "name": "Djargurdwurung",
+      "occurrences": 6,
+      "avg_lng": 143.3272,
+      "avg_lat": -38.1508,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "djargurdwurung"
+    },
+    {
+      "name": "Djirbalngan",
+      "occurrences": 6,
+      "avg_lng": 145.6033,
+      "avg_lat": -17.7173,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "djirbalngan"
+    },
+    {
+      "name": "Dyungungoo (Gubbi Gubbi)",
+      "occurrences": 6,
+      "avg_lng": 152.5118,
+      "avg_lat": -26.1225,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "dyungungoo-gubbi-gubbi"
+    },
+    {
+      "name": "Gabalbara",
+      "occurrences": 6,
+      "avg_lng": 148.6087,
+      "avg_lat": -22.9685,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gabalbara"
+    },
+    {
+      "name": "Gadubanud",
+      "occurrences": 6,
+      "avg_lng": 143.665,
+      "avg_lat": -38.6147,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gadubanud"
+    },
+    {
+      "name": "Gananggalinda",
+      "occurrences": 6,
+      "avg_lng": 138.9739,
+      "avg_lat": -17.0173,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gananggalinda"
+    },
+    {
+      "name": "Ganggalida",
+      "occurrences": 6,
+      "avg_lng": 138.6497,
+      "avg_lat": -17.3936,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ganggalida"
+    },
+    {
+      "name": "Gangulu",
+      "occurrences": 6,
+      "avg_lng": 150.1277,
+      "avg_lat": -24.0464,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gangulu"
+    },
+    {
+      "name": "Garawa",
+      "occurrences": 6,
+      "avg_lng": 137.4196,
+      "avg_lat": -16.8535,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "garawa"
+    },
+    {
+      "name": "Garingbal",
+      "occurrences": 6,
+      "avg_lng": 148.6134,
+      "avg_lat": -24.7294,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "garingbal"
+    },
+    {
+      "name": "Gayiri",
+      "occurrences": 6,
+      "avg_lng": 147.8838,
+      "avg_lat": -23.8783,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gayiri"
+    },
+    {
+      "name": "Geawegal",
+      "occurrences": 6,
+      "avg_lng": 150.7145,
+      "avg_lat": -32.1384,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "geawegal"
+    },
+    {
+      "name": "Giraiwurung",
+      "occurrences": 6,
+      "avg_lng": 142.8132,
+      "avg_lat": -38.2144,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "giraiwurung"
+    },
+    {
+      "name": "Giya",
+      "occurrences": 6,
+      "avg_lng": 148.4916,
+      "avg_lat": -20.5479,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "giya"
+    },
+    {
+      "name": "Gulidjan",
+      "occurrences": 6,
+      "avg_lng": 143.7068,
+      "avg_lat": -38.2597,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gulidjan"
+    },
+    {
+      "name": "Gumbainggir",
+      "occurrences": 6,
+      "avg_lng": 152.3346,
+      "avg_lat": -30.0062,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gumbainggir"
+    },
+    {
+      "name": "Gunditjmara",
+      "occurrences": 6,
+      "avg_lng": 141.9907,
+      "avg_lat": -38.0265,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gunditjmara"
+    },
+    {
+      "name": "Gundungurra",
+      "occurrences": 6,
+      "avg_lng": 149.5974,
+      "avg_lat": -34.6332,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gundungurra"
+    },
+    {
+      "name": "Gungabula",
+      "occurrences": 6,
+      "avg_lng": 148.7721,
+      "avg_lat": -25.7281,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gungabula"
+    },
+    {
+      "name": "Gunggari",
+      "occurrences": 6,
+      "avg_lng": 147.6876,
+      "avg_lat": -26.2457,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gunggari"
+    },
+    {
+      "name": "Gunindiri",
+      "occurrences": 6,
+      "avg_lng": 136.2388,
+      "avg_lat": -17.3873,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gunindiri"
+    },
+    {
+      "name": "Gunu",
+      "occurrences": 6,
+      "avg_lng": 145.4041,
+      "avg_lat": -29.6164,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gunu"
+    },
+    {
+      "name": "Gureng Gureng",
+      "occurrences": 6,
+      "avg_lng": 151.478,
+      "avg_lat": -24.8719,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "gureng-gureng"
+    },
+    {
+      "name": "Guringai",
+      "occurrences": 6,
+      "avg_lng": 151.2235,
+      "avg_lat": -33.484,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "guringai"
+    },
+    {
+      "name": "Guugu-Yimidhirr",
+      "occurrences": 6,
+      "avg_lng": 144.9078,
+      "avg_lat": -15.5013,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "guugu-yimidhirr"
+    },
+    {
+      "name": "Guwa",
+      "occurrences": 6,
+      "avg_lng": 142.1591,
+      "avg_lat": -22.223,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "guwa"
+    },
+    {
+      "name": "Guwinmal",
+      "occurrences": 6,
+      "avg_lng": 149.3884,
+      "avg_lat": -22.2134,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "guwinmal"
+    },
+    {
+      "name": "Iningai",
+      "occurrences": 6,
+      "avg_lng": 144.7693,
+      "avg_lat": -23.3977,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "iningai"
+    },
+    {
+      "name": "Jaitmatang",
+      "occurrences": 6,
+      "avg_lng": 147.7686,
+      "avg_lat": -36.6595,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "jaitmatang"
+    },
+    {
+      "name": "Jardwadjali",
+      "occurrences": 6,
+      "avg_lng": 142.244,
+      "avg_lat": -37.0047,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "jardwadjali"
+    },
+    {
+      "name": "Kaantju",
+      "occurrences": 6,
+      "avg_lng": 143.1047,
+      "avg_lat": -13.5632,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kaantju"
+    },
+    {
+      "name": "Kalkadoon",
+      "occurrences": 6,
+      "avg_lng": 139.8317,
+      "avg_lat": -21.0639,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kalkadoon"
+    },
+    {
+      "name": "Kamilaroi",
+      "occurrences": 6,
+      "avg_lng": 149.6061,
+      "avg_lat": -30.2721,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kamilaroi"
+    },
+    {
+      "name": "Karangura",
+      "occurrences": 6,
+      "avg_lng": 138.4705,
+      "avg_lat": -26.2564,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "karangura"
+    },
+    {
+      "name": "Karenggapa",
+      "occurrences": 6,
+      "avg_lng": 142.7234,
+      "avg_lat": -29.1209,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "karenggapa"
+    },
+    {
+      "name": "Karuwali",
+      "occurrences": 6,
+      "avg_lng": 141.3354,
+      "avg_lat": -25.0557,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "karuwali"
+    },
+    {
+      "name": "Kaurna Pangkarra",
+      "occurrences": 6,
+      "avg_lng": 138.4045,
+      "avg_lat": -34.357,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kaurna-pangkarra"
+    },
+    {
+      "name": "Koknar",
+      "occurrences": 6,
+      "avg_lng": 141.5769,
+      "avg_lat": -16.3116,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "koknar"
+    },
+    {
+      "name": "Koko-bera",
+      "occurrences": 6,
+      "avg_lng": 141.6133,
+      "avg_lat": -15.623,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "koko-bera"
+    },
+    {
+      "name": "Kokomini",
+      "occurrences": 6,
+      "avg_lng": 143.3147,
+      "avg_lat": -16.3096,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kokomini"
+    },
+    {
+      "name": "Kokowarra",
+      "occurrences": 6,
+      "avg_lng": 144.201,
+      "avg_lat": -15.3848,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kokowarra"
+    },
+    {
+      "name": "Kooma",
+      "occurrences": 6,
+      "avg_lng": 147.0734,
+      "avg_lat": -28.0302,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kooma"
+    },
+    {
+      "name": "Kukatj",
+      "occurrences": 6,
+      "avg_lng": 140.3619,
+      "avg_lat": -18.1563,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kukatj"
+    },
+    {
+      "name": "Kuku-yalanji",
+      "occurrences": 6,
+      "avg_lng": 144.609,
+      "avg_lat": -16.4,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kuku-yalanji"
+    },
+    {
+      "name": "Kullilla",
+      "occurrences": 6,
+      "avg_lng": 143.044,
+      "avg_lat": -28.3455,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kullilla"
+    },
+    {
+      "name": "Kunja",
+      "occurrences": 6,
+      "avg_lng": 145.3844,
+      "avg_lat": -28.1931,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kunja"
+    },
+    {
+      "name": "Kunjen",
+      "occurrences": 6,
+      "avg_lng": 142.3288,
+      "avg_lat": -16.0933,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kunjen"
+    },
+    {
+      "name": "Kureinji",
+      "occurrences": 6,
+      "avg_lng": 142.5578,
+      "avg_lat": -34.2118,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kureinji"
+    },
+    {
+      "name": "Kurnai",
+      "occurrences": 6,
+      "avg_lng": 147.4683,
+      "avg_lat": -37.8835,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kurnai"
+    },
+    {
+      "name": "Kurtjar",
+      "occurrences": 6,
+      "avg_lng": 141.9697,
+      "avg_lat": -17.2457,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kurtjar"
+    },
+    {
+      "name": "Kuthant",
+      "occurrences": 6,
+      "avg_lng": 140.9249,
+      "avg_lat": -17.6171,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kuthant"
+    },
+    {
+      "name": "Kuuku-yani",
+      "occurrences": 6,
+      "avg_lng": 143.4218,
+      "avg_lat": -13.9495,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kuuku-yani"
+    },
+    {
+      "name": "Kuuku-ya’u",
+      "occurrences": 6,
+      "avg_lng": 143.0733,
+      "avg_lat": -12.6502,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kuuku-ya-u"
+    },
+    {
+      "name": "Kuungkari",
+      "occurrences": 6,
+      "avg_lng": 144.3338,
+      "avg_lat": -24.5221,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kuungkari"
+    },
+    {
+      "name": "Kuyani",
+      "occurrences": 6,
+      "avg_lng": 138.0256,
+      "avg_lat": -30.5835,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "kuyani"
+    },
+    {
+      "name": "Lamalama",
+      "occurrences": 6,
+      "avg_lng": 143.8093,
+      "avg_lat": -14.6198,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "lamalama"
+    },
+    {
+      "name": "Latje Latje",
+      "occurrences": 6,
+      "avg_lng": 141.9539,
+      "avg_lat": -34.5428,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "latje-latje"
+    },
+    {
+      "name": "Luthigh",
+      "occurrences": 6,
+      "avg_lng": 142.3492,
+      "avg_lat": -12.5827,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "luthigh"
+    },
+    {
+      "name": "Madi Madi",
+      "occurrences": 6,
+      "avg_lng": 143.58,
+      "avg_lat": -34.2345,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "madi-madi"
+    },
+    {
+      "name": "Maiawali",
+      "occurrences": 6,
+      "avg_lng": 141.9487,
+      "avg_lat": -23.4229,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "maiawali"
+    },
+    {
+      "name": "Malyangaba",
+      "occurrences": 6,
+      "avg_lng": 140.6374,
+      "avg_lat": -30.9116,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "malyangaba"
+    },
+    {
+      "name": "Mara",
+      "occurrences": 6,
+      "avg_lng": 135.1953,
+      "avg_lat": -15.0642,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mara"
+    },
+    {
+      "name": "Margany",
+      "occurrences": 6,
+      "avg_lng": 144.3468,
+      "avg_lat": -27.2497,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "margany"
+    },
+    {
+      "name": "Mayi-Kulan",
+      "occurrences": 6,
+      "avg_lng": 141.4182,
+      "avg_lat": -18.4483,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mayi-kulan"
+    },
+    {
+      "name": "Mayi-Kutuna",
+      "occurrences": 6,
+      "avg_lng": 139.6719,
+      "avg_lat": -19.0153,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mayi-kutuna"
+    },
+    {
+      "name": "Mayi-Thakurti",
+      "occurrences": 6,
+      "avg_lng": 140.6619,
+      "avg_lat": -20.1024,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mayi-thakurti"
+    },
+    {
+      "name": "Mbabaram",
+      "occurrences": 6,
+      "avg_lng": 144.9693,
+      "avg_lat": -17.4633,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mbabaram"
+    },
+    {
+      "name": "Mbara",
+      "occurrences": 6,
+      "avg_lng": 143.4461,
+      "avg_lat": -19.994,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mbara"
+    },
+    {
+      "name": "Mbeiwum",
+      "occurrences": 6,
+      "avg_lng": 142.1538,
+      "avg_lat": -13.0139,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mbeiwum"
+    },
+    {
+      "name": "Meru",
+      "occurrences": 6,
+      "avg_lng": 140.5236,
+      "avg_lat": -34.1844,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "meru"
+    },
+    {
+      "name": "Mingin",
+      "occurrences": 6,
+      "avg_lng": 139.5534,
+      "avg_lat": -17.7571,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mingin"
+    },
+    {
+      "name": "Mithaka",
+      "occurrences": 6,
+      "avg_lng": 140.1296,
+      "avg_lat": -24.9786,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mithaka"
+    },
+    {
+      "name": "Miyan",
+      "occurrences": 6,
+      "avg_lng": 146.2588,
+      "avg_lat": -21.9991,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "miyan"
+    },
+    {
+      "name": "Mpalitjanh",
+      "occurrences": 6,
+      "avg_lng": 142.5822,
+      "avg_lat": -12.2716,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mpalitjanh"
+    },
+    {
+      "name": "Mutumui",
+      "occurrences": 6,
+      "avg_lng": 144.3987,
+      "avg_lat": -14.696,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "mutumui"
+    },
+    {
+      "name": "Nakara",
+      "occurrences": 6,
+      "avg_lng": 134.5623,
+      "avg_lat": -12.0834,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nakara"
+    },
+    {
+      "name": "Narangga",
+      "occurrences": 6,
+      "avg_lng": 137.7692,
+      "avg_lat": -34.3831,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "narangga"
+    },
+    {
+      "name": "Nari Nari",
+      "occurrences": 6,
+      "avg_lng": 144.2881,
+      "avg_lat": -34.3865,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nari-nari"
+    },
+    {
+      "name": "Nawu",
+      "occurrences": 6,
+      "avg_lng": 135.58,
+      "avg_lat": -33.7096,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nawu"
+    },
+    {
+      "name": "Ngadjuri",
+      "occurrences": 6,
+      "avg_lng": 138.6865,
+      "avg_lat": -33.3902,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngadjuri"
+    },
+    {
+      "name": "Ngambri",
+      "occurrences": 6,
+      "avg_lng": 148.9911,
+      "avg_lat": -35.5065,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngambri"
+    },
+    {
+      "name": "Ngamini",
+      "occurrences": 6,
+      "avg_lng": 139.175,
+      "avg_lat": -26.8486,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngamini"
+    },
+    {
+      "name": "Ngandi",
+      "occurrences": 6,
+      "avg_lng": 135.2185,
+      "avg_lat": -14.0993,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngandi"
+    },
+    {
+      "name": "Ngandji",
+      "occurrences": 6,
+      "avg_lng": 135.3673,
+      "avg_lat": -17.0305,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngandji"
+    },
+    {
+      "name": "Nganyaywana",
+      "occurrences": 6,
+      "avg_lng": 151.4671,
+      "avg_lat": -30.5102,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nganyaywana"
+    },
+    {
+      "name": "Ngarabal",
+      "occurrences": 6,
+      "avg_lng": 151.4208,
+      "avg_lat": -28.6472,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngarabal"
+    },
+    {
+      "name": "Ngargad",
+      "occurrences": 6,
+      "avg_lng": 140.4227,
+      "avg_lat": -35.38,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngargad"
+    },
+    {
+      "name": "Ngarigo",
+      "occurrences": 6,
+      "avg_lng": 148.6505,
+      "avg_lat": -36.12,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngarigo"
+    },
+    {
+      "name": "Ngarrindjeri",
+      "occurrences": 6,
+      "avg_lng": 139.7882,
+      "avg_lat": -36.1649,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngarrindjeri"
+    },
+    {
+      "name": "Ngawun",
+      "occurrences": 6,
+      "avg_lng": 141.9589,
+      "avg_lat": -19.8984,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngawun"
+    },
+    {
+      "name": "Nguburinji",
+      "occurrences": 6,
+      "avg_lng": 138.7436,
+      "avg_lat": -18.6202,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nguburinji"
+    },
+    {
+      "name": "Nguri",
+      "occurrences": 6,
+      "avg_lng": 147.8057,
+      "avg_lat": -25.5845,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nguri"
+    },
+    {
+      "name": "Ngurraiillam",
+      "occurrences": 6,
+      "avg_lng": 145.1618,
+      "avg_lat": -36.3992,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "ngurraiillam"
+    },
+    {
+      "name": "Nukunu",
+      "occurrences": 6,
+      "avg_lng": 138.1756,
+      "avg_lat": -32.8196,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nukunu"
+    },
+    {
+      "name": "Nunggubuyu",
+      "occurrences": 6,
+      "avg_lng": 135.7021,
+      "avg_lat": -14.074,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nunggubuyu"
+    },
+    {
+      "name": "Nyawaygi",
+      "occurrences": 6,
+      "avg_lng": 146.0774,
+      "avg_lat": -19.0477,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "nyawaygi"
+    },
+    {
+      "name": "Peramangk",
+      "occurrences": 6,
+      "avg_lng": 138.9737,
+      "avg_lat": -34.9062,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "peramangk"
+    },
+    {
+      "name": "Pirlatapa",
+      "occurrences": 6,
+      "avg_lng": 140.3262,
+      "avg_lat": -29.5448,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "pirlatapa"
+    },
+    {
+      "name": "Pitta-Pitta",
+      "occurrences": 6,
+      "avg_lng": 139.7017,
+      "avg_lat": -23.2993,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "pitta-pitta"
+    },
+    {
+      "name": "Takalak",
+      "occurrences": 6,
+      "avg_lng": 143.0658,
+      "avg_lat": -18.1015,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "takalak"
+    },
+    {
+      "name": "Taungurung",
+      "occurrences": 6,
+      "avg_lng": 145.2934,
+      "avg_lat": -36.7917,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "taungurung"
+    },
+    {
+      "name": "Teppathiggi",
+      "occurrences": 6,
+      "avg_lng": 142.047,
+      "avg_lat": -12.0655,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "teppathiggi"
+    },
+    {
+      "name": "Thaayorre",
+      "occurrences": 6,
+      "avg_lng": 141.7644,
+      "avg_lat": -14.8067,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "thaayorre"
+    },
+    {
+      "name": "Tharawal",
+      "occurrences": 6,
+      "avg_lng": 150.7239,
+      "avg_lat": -34.5159,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "tharawal"
+    },
+    {
+      "name": "Thul Garrie Waja (Bindal)",
+      "occurrences": 6,
+      "avg_lng": 147.1109,
+      "avg_lat": -19.6055,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "thul-garrie-waja-bindal"
+    },
+    {
+      "name": "Tjungundji",
+      "occurrences": 6,
+      "avg_lng": 141.9139,
+      "avg_lat": -12.0407,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "tjungundji"
+    },
+    {
+      "name": "Turrbal",
+      "occurrences": 6,
+      "avg_lng": 152.9218,
+      "avg_lat": -27.4186,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "turrbal"
+    },
+    {
+      "name": "Umbindhamu",
+      "occurrences": 6,
+      "avg_lng": 143.5018,
+      "avg_lat": -14.2151,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "umbindhamu"
+    },
+    {
+      "name": "Umpila",
+      "occurrences": 6,
+      "avg_lng": 143.4051,
+      "avg_lat": -13.609,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "umpila"
+    },
+    {
+      "name": "Uutaalnganu",
+      "occurrences": 6,
+      "avg_lng": 143.3364,
+      "avg_lat": -13.1637,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "uutaalnganu"
+    },
+    {
+      "name": "Waanyi",
+      "occurrences": 6,
+      "avg_lng": 137.5296,
+      "avg_lat": -17.8271,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "waanyi"
+    },
+    {
+      "name": "Wadi Wadi",
+      "occurrences": 6,
+      "avg_lng": 143.5984,
+      "avg_lat": -34.9985,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wadi-wadi"
+    },
+    {
+      "name": "Wadigali",
+      "occurrences": 6,
+      "avg_lng": 141.5595,
+      "avg_lat": -29.3654,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wadigali"
+    },
+    {
+      "name": "Wadjigu",
+      "occurrences": 6,
+      "avg_lng": 149.4197,
+      "avg_lat": -24.4621,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wadjigu"
+    },
+    {
+      "name": "Wailwan",
+      "occurrences": 6,
+      "avg_lng": 147.9843,
+      "avg_lat": -30.9163,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wailwan"
+    },
+    {
+      "name": "Waka Waka",
+      "occurrences": 6,
+      "avg_lng": 151.6645,
+      "avg_lat": -26.1505,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "waka-waka"
+    },
+    {
+      "name": "Wakabunga",
+      "occurrences": 6,
+      "avg_lng": 138.4783,
+      "avg_lat": -19.4355,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wakabunga"
+    },
+    {
+      "name": "Wakaya",
+      "occurrences": 6,
+      "avg_lng": 136.7262,
+      "avg_lat": -19.6529,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wakaya"
+    },
+    {
+      "name": "Walangama",
+      "occurrences": 6,
+      "avg_lng": 141.9912,
+      "avg_lat": -18.1354,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "walangama"
+    },
+    {
+      "name": "Wambaya",
+      "occurrences": 6,
+      "avg_lng": 136.1466,
+      "avg_lat": -18.2398,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wambaya"
+    },
+    {
+      "name": "Wandjiwalgu",
+      "occurrences": 6,
+      "avg_lng": 142.824,
+      "avg_lat": -31.0953,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wandjiwalgu"
+    },
+    {
+      "name": "Wangan",
+      "occurrences": 6,
+      "avg_lng": 147.5572,
+      "avg_lat": -22.9129,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wangan"
+    },
+    {
+      "name": "Wangkamana",
+      "occurrences": 6,
+      "avg_lng": 138.8044,
+      "avg_lat": -24.1417,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wangkamana"
+    },
+    {
+      "name": "Wangkangurru",
+      "occurrences": 6,
+      "avg_lng": 137.1423,
+      "avg_lat": -26.3377,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wangkangurru"
+    },
+    {
+      "name": "Wangkumara",
+      "occurrences": 6,
+      "avg_lng": 142.7302,
+      "avg_lat": -26.9514,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wangkumara"
+    },
+    {
+      "name": "Wargamaygan",
+      "occurrences": 6,
+      "avg_lng": 145.7329,
+      "avg_lat": -18.3394,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wargamaygan"
+    },
+    {
+      "name": "Warluwarra",
+      "occurrences": 6,
+      "avg_lng": 138.631,
+      "avg_lat": -21.6319,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "warluwarra"
+    },
+    {
+      "name": "Wathaurong",
+      "occurrences": 6,
+      "avg_lng": 143.8086,
+      "avg_lat": -37.8163,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wathaurong"
+    },
+    {
+      "name": "Waveroo",
+      "occurrences": 6,
+      "avg_lng": 146.6637,
+      "avg_lat": -36.4964,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "waveroo"
+    },
+    {
+      "name": "Wemba Wemba",
+      "occurrences": 6,
+      "avg_lng": 144.1231,
+      "avg_lat": -35.2209,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wemba-wemba"
+    },
+    {
+      "name": "Wergaia",
+      "occurrences": 6,
+      "avg_lng": 142.2968,
+      "avg_lat": -35.6528,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wergaia"
+    },
+    {
+      "name": "Wik",
+      "occurrences": 6,
+      "avg_lng": 142.2187,
+      "avg_lat": -13.7838,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wik"
+    },
+    {
+      "name": "Wiljali",
+      "occurrences": 6,
+      "avg_lng": 141.0355,
+      "avg_lat": -31.9754,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wiljali"
+    },
+    {
+      "name": "Winda Winda",
+      "occurrences": 6,
+      "avg_lng": 141.7887,
+      "avg_lat": -13.1931,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "winda-winda"
+    },
+    {
+      "name": "Wiradjuri",
+      "occurrences": 6,
+      "avg_lng": 147.2033,
+      "avg_lat": -33.9889,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wiradjuri"
+    },
+    {
+      "name": "Wongaibon",
+      "occurrences": 6,
+      "avg_lng": 146.0062,
+      "avg_lat": -31.4708,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wongaibon"
+    },
+    {
+      "name": "Wonnarua",
+      "occurrences": 6,
+      "avg_lng": 150.752,
+      "avg_lat": -32.6185,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wonnarua"
+    },
+    {
+      "name": "Worimi",
+      "occurrences": 6,
+      "avg_lng": 152.0315,
+      "avg_lat": -32.3868,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "worimi"
+    },
+    {
+      "name": "Wuli-wuli",
+      "occurrences": 6,
+      "avg_lng": 150.3545,
+      "avg_lat": -25.2571,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wuli-wuli"
+    },
+    {
+      "name": "Wunumara",
+      "occurrences": 6,
+      "avg_lng": 141.8417,
+      "avg_lat": -20.9922,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wunumara"
+    },
+    {
+      "name": "Wurundjeri",
+      "occurrences": 6,
+      "avg_lng": 145.4022,
+      "avg_lat": -37.7664,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wurundjeri"
+    },
+    {
+      "name": "Wuthathi",
+      "occurrences": 6,
+      "avg_lng": 142.9147,
+      "avg_lat": -12.0357,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "wuthathi"
+    },
+    {
+      "name": "Yadhaigana",
+      "occurrences": 6,
+      "avg_lng": 142.7104,
+      "avg_lat": -11.402,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yadhaigana"
+    },
+    {
+      "name": "Yagalingu",
+      "occurrences": 6,
+      "avg_lng": 146.7423,
+      "avg_lat": -23.2287,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yagalingu"
+    },
+    {
+      "name": "Yalarrnga",
+      "occurrences": 6,
+      "avg_lng": 139.7782,
+      "avg_lat": -21.8385,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yalarrnga"
+    },
+    {
+      "name": "Yambina",
+      "occurrences": 6,
+      "avg_lng": 147.3374,
+      "avg_lat": -22.1213,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yambina"
+    },
+    {
+      "name": "Yanda",
+      "occurrences": 6,
+      "avg_lng": 140.6308,
+      "avg_lat": -22.106,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yanda"
+    },
+    {
+      "name": "Yandruwandha",
+      "occurrences": 6,
+      "avg_lng": 140.8505,
+      "avg_lat": -28.2269,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yandruwandha"
+    },
+    {
+      "name": "Yanga",
+      "occurrences": 6,
+      "avg_lng": 143.3105,
+      "avg_lat": -19.0439,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yanga"
+    },
+    {
+      "name": "Yangga",
+      "occurrences": 6,
+      "avg_lng": 147.0651,
+      "avg_lat": -21.1485,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yangga"
+    },
+    {
+      "name": "Yanyuwa",
+      "occurrences": 6,
+      "avg_lng": 136.8972,
+      "avg_lat": -16.0896,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yanyuwa"
+    },
+    {
+      "name": "Yarluyandi",
+      "occurrences": 6,
+      "avg_lng": 139.7446,
+      "avg_lat": -25.79,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yarluyandi"
+    },
+    {
+      "name": "Yawarawarka",
+      "occurrences": 6,
+      "avg_lng": 140.9984,
+      "avg_lat": -26.8633,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yawarawarka"
+    },
+    {
+      "name": "Yidinjdji",
+      "occurrences": 6,
+      "avg_lng": 145.7233,
+      "avg_lat": -17.2033,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yidinjdji"
+    },
+    {
+      "name": "Yilba",
+      "occurrences": 6,
+      "avg_lng": 145.9777,
+      "avg_lat": -21.0922,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yilba"
+    },
+    {
+      "name": "Yiman",
+      "occurrences": 6,
+      "avg_lng": 149.5263,
+      "avg_lat": -25.5821,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yiman"
+    },
+    {
+      "name": "Yinwum",
+      "occurrences": 6,
+      "avg_lng": 142.7775,
+      "avg_lat": -12.8024,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yinwum"
+    },
+    {
+      "name": "Yir Yoront",
+      "occurrences": 6,
+      "avg_lng": 141.7337,
+      "avg_lat": -15.2577,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yir-yoront"
+    },
+    {
+      "name": "Yirandali",
+      "occurrences": 6,
+      "avg_lng": 144.3951,
+      "avg_lat": -21.3866,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yirandali"
+    },
+    {
+      "name": "Yitha Yitha",
+      "occurrences": 6,
+      "avg_lng": 144.3834,
+      "avg_lat": -33.5826,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yitha-yitha"
+    },
+    {
+      "name": "Yolngu",
+      "occurrences": 6,
+      "avg_lng": 135.7997,
+      "avg_lat": -12.8909,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yolngu"
+    },
+    {
+      "name": "Yorta Yorta",
+      "occurrences": 6,
+      "avg_lng": 144.9752,
+      "avg_lat": -35.6863,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yorta-yorta"
+    },
+    {
+      "name": "Yugambeh",
+      "occurrences": 6,
+      "avg_lng": 152.9796,
+      "avg_lat": -28.0928,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yugambeh"
+    },
+    {
+      "name": "Yuggera",
+      "occurrences": 6,
+      "avg_lng": 152.4923,
+      "avg_lat": -27.4332,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yuggera"
+    },
+    {
+      "name": "Yuin",
+      "occurrences": 6,
+      "avg_lng": 149.7637,
+      "avg_lat": -36.0158,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yuin"
+    },
+    {
+      "name": "Yupangathi",
+      "occurrences": 6,
+      "avg_lng": 141.8922,
+      "avg_lat": -12.142,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yupangathi"
+    },
+    {
+      "name": "Yuru",
+      "occurrences": 6,
+      "avg_lng": 147.47,
+      "avg_lat": -19.9088,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yuru"
+    },
+    {
+      "name": "Yuwi",
+      "occurrences": 6,
+      "avg_lng": 149.009,
+      "avg_lat": -21.2711,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "yuwi"
+    },
+    {
+      "name": "Northern Territory (UK)",
+      "occurrences": 3,
+      "avg_lng": 133.4353,
+      "avg_lat": -20.8154,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "northern-territory-uk"
+    },
+    {
+      "name": "Queensland (UK)",
+      "occurrences": 3,
+      "avg_lng": 142.8937,
+      "avg_lat": -19.9757,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "queensland-uk"
+    },
+    {
+      "name": "South Australia (UK)",
+      "occurrences": 3,
+      "avg_lng": 136.191,
+      "avg_lat": -31.6831,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "south-australia-uk"
+    },
+    {
+      "name": "Victoria (UK)",
+      "occurrences": 3,
+      "avg_lng": 144.6653,
+      "avg_lat": -36.6635,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "victoria-uk"
+    },
+    {
+      "name": "Western Australia (UK)",
+      "occurrences": 3,
+      "avg_lng": 121.1008,
+      "avg_lat": -24.4483,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "western-australia-uk"
+    },
+    {
+      "name": "Gilbert and Ellice Islands",
+      "occurrences": 1,
+      "avg_lng": 175.0397,
+      "avg_lat": -1.496,
+      "eras": [
+        "world-1938"
+      ],
+      "suggested_slug": "gilbert-and-ellice-islands"
+    },
+    {
+      "name": "Guam",
+      "occurrences": 1,
+      "avg_lng": 144.7506,
+      "avg_lat": 13.449,
+      "eras": [
+        "world-1938"
+      ],
+      "suggested_slug": "guam"
+    },
+    {
+      "name": "Saipan",
+      "occurrences": 1,
+      "avg_lng": 145.2075,
+      "avg_lat": 14.152,
+      "eras": [
+        "world-1938"
+      ],
+      "suggested_slug": "saipan"
+    }
+  ]
+}

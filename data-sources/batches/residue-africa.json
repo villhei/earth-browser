@@ -1,0 +1,2010 @@
+[
+  {
+    "slug": "cape-colony",
+    "name": "Cape Colony",
+    "name_fi": "Kapmaa",
+    "native_name": "Kaapkolonie / Cape of Good Hope",
+    "alternate_names": [
+      "Cape Colony",
+      "Dutch Cape Colony",
+      "British Cape Colony"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "zaf",
+    "historical_period": "Dutch & British Colonial South Africa",
+    "year_start": 1652,
+    "year_end": 1910,
+    "period_label": "1652 CE – 1910 CE",
+    "period_label_fi": "1652 jaa. – 1910 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cape_Colony",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kapmaa",
+    "wikidata_id": "Q379960",
+    "summary_en": "Colonial territory established by the Dutch East India Company at Table Bay in 1652, later seized by Great Britain during the Napoleonic Wars, serving as the geopolitical anchor of southern Africa.",
+    "summary_fi": "Hollannin Itä-Intian kauppakomppanian vuonna 1652 perustama siirtokunta Hyväntoivonniemellä, jonka Iso-Britannia valloitti Napoleonin sotien aikana ja josta tuli Etelä-Afrikan keskus.",
+    "capital": "Cape Town",
+    "feature_name_matches": [
+      "Cape Colony"
+    ]
+  },
+  {
+    "slug": "orange-free-state",
+    "name": "Orange Free State",
+    "name_fi": "Oranjen vapaavaltio",
+    "native_name": "Oranje Vrijstaat",
+    "alternate_names": [
+      "Orange Free State",
+      "Oranje Vrijstaat"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "zaf",
+    "historical_period": "Boer Republic Period",
+    "year_start": 1854,
+    "year_end": 1902,
+    "period_label": "1854 CE – 1902 CE",
+    "period_label_fi": "1854 jaa. – 1902 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Orange_Free_State",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Oranjen_vapaavaltio",
+    "wikidata_id": "Q179868",
+    "summary_en": "Independent Boer republic between the Orange and Vaal rivers established by Voortrekkers, which fought alongside the South African Republic in the Second Boer War before British annexation.",
+    "summary_fi": "Buurien itsenäinen tasavalta Oranje- ja Vaal-jokien välissä, jonka voortrekkerit perustivat ja joka taisteli Britannian armeijaa vastaan toisessa buurisodassa ennen liittämistä imperiumiin.",
+    "capital": "Bloemfontein",
+    "feature_name_matches": [
+      "Orange Free State"
+    ]
+  },
+  {
+    "slug": "south-african-republic-transvaal",
+    "name": "South African Republic (Transvaal)",
+    "name_fi": "Transvaalin tasavalta",
+    "native_name": "Zuid-Afrikaansche Republiek (ZAR)",
+    "alternate_names": [
+      "Transvaal",
+      "South African Republic",
+      "Zuid-Afrikaansche Republiek"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "zaf",
+    "historical_period": "Boer Republic & Gold Rush Era",
+    "year_start": 1852,
+    "year_end": 1902,
+    "period_label": "1852 CE – 1902 CE",
+    "period_label_fi": "1852 jaa. – 1902 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/South_African_Republic",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Transvaalin_tasavalta",
+    "wikidata_id": "Q171171",
+    "summary_en": "Boer republic north of the Vaal River that emerged after the Sand River Convention, transformed globally by the Witwatersrand Gold Rush of 1886 and defended by Paul Kruger during the Boer Wars.",
+    "summary_fi": "Vaal-joen pohjoispuolinen buuritasavalta, joka kasvoi maailmanlaajuiseksi talouskeskukseksi Witwatersrandin kultalöydön myötä ja jota Paul Kruger johti buurisotien aikana.",
+    "capital": "Pretoria",
+    "feature_name_matches": [
+      "Transvaal"
+    ]
+  },
+  {
+    "slug": "colony-of-natal",
+    "name": "Colony of Natal",
+    "name_fi": "Natalin siirtokunta",
+    "native_name": "Colony of Natal / Natalia Republic",
+    "alternate_names": [
+      "Natal",
+      "Colony of Natal",
+      "Natalia"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "zaf",
+    "historical_period": "British Colonial Natal",
+    "year_start": 1843,
+    "year_end": 1910,
+    "period_label": "1843 CE – 1910 CE",
+    "period_label_fi": "1843 jaa. – 1910 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Colony_of_Natal",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Natalin_siirtokunta",
+    "wikidata_id": "Q748805",
+    "summary_en": "British crown colony in southeastern Africa annexed following the short-lived Boer Republic of Natalia, known for sugarcane plantations, Indian indentured immigration, and conflicts with the Zulu Kingdom.",
+    "summary_fi": "Brittiläinen kruununsiirtokunta Kaakkois-Afrikassa, joka muodostettiin buurien Natalia-tasavallan jälkeen ja tunnetaan sokeriruokoviljelmistään sekä rajakiistoistaan Zulumaan kanssa.",
+    "capital": "Pietermaritzburg, Durban",
+    "feature_name_matches": [
+      "Natal"
+    ]
+  },
+  {
+    "slug": "union-of-south-africa",
+    "name": "Union of South Africa",
+    "name_fi": "Etelä-Afrikan unioni",
+    "native_name": "Unie van Suid-Afrika / Union of South Africa",
+    "alternate_names": [
+      "Union of South Africa",
+      "South Africa Dominion"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "zaf",
+    "historical_period": "Dominion Era to Apartheid Republic",
+    "year_start": 1910,
+    "year_end": 1961,
+    "period_label": "1910 CE – 1961 CE",
+    "period_label_fi": "1910 jaa. – 1961 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Union_of_South_Africa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Afrikan_unioni",
+    "wikidata_id": "Q193619",
+    "summary_en": "Self-governing British dominion formed in 1910 by uniting Cape Colony, Natal, Transvaal, and Orange Free State, which fought in both World Wars before establishing apartheid and declaring a republic in 1961.",
+    "summary_fi": "Vuonna 1910 perustettu Britannian dominio, joka yhdisti Kapmaan, Natalin, Transvaalin ja Oranjen vapaavaltion ja loi perustan Etelä-Afrikan myöhemmälle tasavallalle.",
+    "capital": "Pretoria, Cape Town, Bloemfontein",
+    "feature_name_matches": [
+      "Union of South Africa"
+    ]
+  },
+  {
+    "slug": "griqualand-west",
+    "name": "Griqualand West",
+    "name_fi": "Länsi-Griquamaa",
+    "native_name": "Griqualand West",
+    "alternate_names": [
+      "Griqualand West",
+      "Klipdrift Republic"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "zaf",
+    "historical_period": "Griqua Nation & Kimberley Diamond Rush",
+    "year_start": 1813,
+    "year_end": 1880,
+    "period_label": "1813 CE – 1880 CE",
+    "period_label_fi": "1813 jaa. – 1880 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Griqualand_West",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Griquamaa",
+    "wikidata_id": "Q1546736",
+    "summary_en": "Autonomous mixed-race Griqua polity led by the Waterboer dynasty that became the focal point of the southern African diamond rush following major mineral discoveries at Kimberley.",
+    "summary_fi": "Griquoiden autonominen valtio Oranje-joen pohjoispuolella, jota johti Waterboer-suku ja joka nousi maailmanmaineeseen Kimberleyn timanttikenttien myötä.",
+    "capital": "Griekwastad, Kimberley",
+    "feature_name_matches": [
+      "Griqualand West"
+    ]
+  },
+  {
+    "slug": "ndebele-kingdom",
+    "name": "Ndebele Kingdom (Mthwakazi)",
+    "name_fi": "Ndebele-kuningaskunta",
+    "native_name": "Mthwakazi / Northern Ndebele",
+    "alternate_names": [
+      "Ndebele",
+      "Mthwakazi",
+      "Matabele Kingdom"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "southern-africa",
+    "historical_period": "Mfecane Migration to Bulawayo Kingdom",
+    "year_start": 1823,
+    "year_end": 1897,
+    "period_label": "1823 CE – 1897 CE",
+    "period_label_fi": "1823 jaa. – 1897 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Northern_Ndebele_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ndebelet",
+    "wikidata_id": "Q1154564",
+    "summary_en": "Powerful militarized state established in modern Matabeleland by Mzilikazi during the Mfecane, commanding regional tributary networks from Bulawayo until the Matabele Wars.",
+    "summary_fi": "Mzilikazin mfecanessa perustama mahtava valtio nykyisen Zimbabwen lounaisosissa, joka hallitsi Matabelemaata Bulawayosta käsin aina 1890-luvun sotiin saakka.",
+    "capital": "Bulawayo",
+    "feature_name_matches": [
+      "Ndebele"
+    ]
+  },
+  {
+    "slug": "nguni-peoples",
+    "name": "Nguni Peoples & Chiefdoms",
+    "name_fi": "Nguni-kansat",
+    "native_name": "AbaNguni",
+    "alternate_names": [
+      "Nguni",
+      "Nguni clans"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "southern-africa",
+    "historical_period": "Pre-Colonial Bantu Southeastern Migration",
+    "year_start": 600,
+    "year_end": 1820,
+    "period_label": "600 CE – 1820 CE",
+    "period_label_fi": "600 jaa. – 1820 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Nguni_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ngunilaiset",
+    "wikidata_id": "Q518698",
+    "summary_en": "Broad ethno-linguistic group of southeastern Africa encompassing the Zulu, Xhosa, Swazi, and Ndebele, characterized by cattle pastoralism, chieftaincy federations, and the age-regiment system.",
+    "summary_fi": "Kaakkois-Afrikan bantukansojen laaja ryhmä, johon kuuluvat zulut, xhosat, swazit ja ndebelet; tunnettu karjataloudestaan, päällikkökunnistaan ja ikäluokkajärjestelmästään.",
+    "capital": "KwaBulawayo / Mthandeni",
+    "feature_name_matches": [
+      "Nguni"
+    ]
+  },
+  {
+    "slug": "bangwato-kingdom",
+    "name": "BaNgwato Kingdom",
+    "name_fi": "Bangwaton kuningaskunta",
+    "native_name": "BaNgwato / Gammangwato",
+    "alternate_names": [
+      "Ngwato",
+      "BaNgwato",
+      "Bamangwato"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "southern-africa",
+    "historical_period": "Tswana Nation to Bechuanaland Protectorate",
+    "year_start": 1780,
+    "year_end": 1966,
+    "period_label": "1780 CE – 1966 CE",
+    "period_label_fi": "1780 jaa. – 1966 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bangwato",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Botswana",
+    "wikidata_id": "Q806558",
+    "summary_en": "Prominent Tswana nation of eastern Botswana led by King Khama III, which modernized governance, preserved territorial autonomy against Cecil Rhodes, and provided Botswana's founding leadership.",
+    "summary_fi": "Itäisen Botswanan merkittävä tswana-valtio, jota kuningas Khama III johti modernisoiden hallintoa ja turvaten alueensa autonomian brittiläisessä Betsuanamaassa.",
+    "capital": "Serowe, Shoshong",
+    "feature_name_matches": [
+      "Ngwato"
+    ]
+  },
+  {
+    "slug": "basotho-kingdom",
+    "name": "Basotho Kingdom",
+    "name_fi": "Basothomaan kuningaskunta",
+    "native_name": "Moshweshwe's Basotho / Moshoeshoe I Realm",
+    "alternate_names": [
+      "Sotho",
+      "Basotho",
+      "Basutoland"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "southern-africa",
+    "historical_period": "Moshoeshoe Mountain Kingdom",
+    "year_start": 1822,
+    "year_end": 1966,
+    "period_label": "1822 CE – 1966 CE",
+    "period_label_fi": "1822 jaa. – 1966 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Basotho",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sothot",
+    "wikidata_id": "Q810368",
+    "summary_en": "Highland mountain nation united by King Moshoeshoe I from the mountain fortress of Thaba Bosiu, resisting Boer expansions and preserving sovereignty as modern Lesotho.",
+    "summary_fi": "Kuningas Moshoeshoe I:n Thaba Bosiun vuorilinnoituksesta käsin yhdistämä kuningaskunta, joka puolustautui menestyksekkäästi buureja vastaan ja loi pohjan Lesotholle.",
+    "capital": "Thaba Bosiu, Maseru",
+    "feature_name_matches": [
+      "Sotho"
+    ]
+  },
+  {
+    "slug": "shona-kingdoms",
+    "name": "Shona Dynasties & Kingdoms",
+    "name_fi": "Shona-valtakunnat",
+    "native_name": "Vashona",
+    "alternate_names": [
+      "Shona",
+      "Shona Chiefdoms",
+      "Karanga"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "southern-africa",
+    "historical_period": "Plateau Stone Enclosures to Colonial Era",
+    "year_start": 1000,
+    "year_end": 1900,
+    "period_label": "1000 CE – 1900 CE",
+    "period_label_fi": "1000 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Shona_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Shonat",
+    "wikidata_id": "Q217424",
+    "summary_en": "Indigenous Bantu cultural sphere of the Zimbabwean plateau responsible for Great Zimbabwe, Khami, and the Mutapa and Rozvi empires, distinguished by stone architecture and gold metallurgy.",
+    "summary_fi": "Zimbabwen ylängön suuri bantu-kulttuuripiiri, joka loi Suur-Zimbabwen ja Khamin kivirakennukset sekä Mutapan ja Rozvin valtakunnat rikkaine kultakauppoineen.",
+    "capital": "Great Zimbabwe / Danangombe",
+    "feature_name_matches": [
+      "Shona"
+    ]
+  },
+  {
+    "slug": "barotseland-lozi",
+    "name": "Barotseland (Lozi Kingdom)",
+    "name_fi": "Barotseland (Lozien kuningaskunta)",
+    "native_name": "Bulozi / Malozi",
+    "alternate_names": [
+      "Lozi",
+      "Barotse",
+      "Barotseland"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "southern-africa",
+    "historical_period": "Zambezi Floodplain Monarchy",
+    "year_start": 1600,
+    "year_end": 1964,
+    "period_label": "1600 CE – 1964 CE",
+    "period_label_fi": "1600 jaa. – 1964 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Barotseland",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Barotseland",
+    "wikidata_id": "Q808761",
+    "summary_en": "Upper Zambezi floodplain kingdom governed by the Litunga, famous for the Kuomboka canal migration ceremony, which retained high treaty autonomy within Northern Rhodesia.",
+    "summary_fi": "Ylä-Zambezin tulvatasangon kuningaskunta, jota hallitsee litunga-kuningas ja joka tunnetaan Kuomboka-jokiseremoniastaan sekä laajasta autonomiastaan.",
+    "capital": "Lealui, Limulunga",
+    "feature_name_matches": [
+      "Lozi",
+      "Barotse"
+    ]
+  },
+  {
+    "slug": "german-south-west-africa",
+    "name": "German South-West Africa",
+    "name_fi": "Saksan Lounais-Afrikka",
+    "native_name": "Deutsch-Südwestafrika",
+    "alternate_names": [
+      "German South-West Africa",
+      "Deutsch-Südwestafrika"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "namibia",
+    "historical_period": "Imperial German Colonial Rule",
+    "year_start": 1884,
+    "year_end": 1915,
+    "period_label": "1884 CE – 1915 CE",
+    "period_label_fi": "1884 jaa. – 1915 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/German_South_West_Africa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saksan_Lounais-Afrikka",
+    "wikidata_id": "Q153660",
+    "summary_en": "German imperial colony established across modern Namibia, remembered for mineral exploitation, colonial ranching, and the Herero and Namaqua genocide before South African capture in WWI.",
+    "summary_fi": "Saksan keisarikunnan siirtomaa nykyisen Namibian alueella, joka tunnetaan hererojen ja namojen kansanmurhasta sekä liittämisestä Etelä-Afrikan hallintaan ensimmäisessä maailmansodassa.",
+    "capital": "Windhoek",
+    "feature_name_matches": [
+      "German South-West Africa"
+    ]
+  },
+  {
+    "slug": "walvis-bay",
+    "name": "Walvis Bay Enclave",
+    "name_fi": "Walvis Bayn enklaavi",
+    "native_name": "Walvisbaai / Walvis Bay",
+    "alternate_names": [
+      "Walbis Bay",
+      "Walvis Bay"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "namibia",
+    "historical_period": "Strategic Atlantic Port Enclave",
+    "year_start": 1878,
+    "year_end": 1994,
+    "period_label": "1878 CE – 1994 CE",
+    "period_label_fi": "1878 jaa. – 1994 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Walvis_Bay",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Walvis_Bay",
+    "wikidata_id": "Q213328",
+    "summary_en": "Natural deepwater Atlantic port in Namibia annexed by Great Britain in 1878 and retained as a South African exclave until its formal transfer to sovereign Namibia in 1994.",
+    "summary_fi": "Luonnollinen syvänmeren satama Namibian rannikolla, jonka Britannia valtasi vuonna 1878 ja joka toimi Etelä-Afrikan eksklaavina ennen liittämistään itsenäiseen Namibiaan 1994.",
+    "capital": "Walvis Bay",
+    "feature_name_matches": [
+      "Walbis Bay"
+    ]
+  },
+  {
+    "slug": "southern-rhodesia",
+    "name": "Southern Rhodesia",
+    "name_fi": "Etelä-Rhodesia",
+    "native_name": "Colony of Southern Rhodesia",
+    "alternate_names": [
+      "Southern Rhodesia",
+      "Rhodesia"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "zwe",
+    "historical_period": "British Chartered Company & Crown Colony",
+    "year_start": 1890,
+    "year_end": 1980,
+    "period_label": "1890 CE – 1980 CE",
+    "period_label_fi": "1890 jaa. – 1980 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Southern_Rhodesia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Rhodesia",
+    "wikidata_id": "Q750583",
+    "summary_en": "British self-governing colony founded by the British South Africa Company in the Zimbabwean highlands that unilaterally declared independence in 1965 before becoming Zimbabwe in 1980.",
+    "summary_fi": "Britannian itsehallinnollinen siirtokunta Zimbabwen ylängöllä, jonka valkoinen vähemmistö julisti itsenäiseksi Rhodesiaksi vuonna 1965 ennen Zimbabwen itsenäistymistä 1980.",
+    "capital": "Salisbury (Harare)",
+    "feature_name_matches": [
+      "Southern Rhodesia"
+    ]
+  },
+  {
+    "slug": "portuguese-east-africa",
+    "name": "Portuguese East Africa (Mozambique)",
+    "name_fi": "Portugalin Itä-Afrikka (Mosambik)",
+    "native_name": "Estado da África Oriental / Moçambique Português",
+    "alternate_names": [
+      "Portuguese East Africa",
+      "Portuguese Mozambique"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "moz",
+    "historical_period": "Portuguese Maritime Feitoria to Overseas Province",
+    "year_start": 1498,
+    "year_end": 1975,
+    "period_label": "1498 CE – 1975 CE",
+    "period_label_fi": "1498 jaa. – 1975 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Portuguese_Mozambique",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Portugalin_It%C3%A4-Afrikka",
+    "wikidata_id": "Q2069273",
+    "summary_en": "Portuguese colonial territory stretching along the Mozambique Channel from Ilha de Moçambique to Lourenço Marques, serving as an Indian Ocean trading hub until independence in 1975.",
+    "summary_fi": "Portugalin siirtomaa Kaakkois-Afrikan rannikolla Ilha de Moçambiquesta Lourenço Marquesiin, joka toimi Intian valtameren kaupan solmukohtana aina vuoteen 1975.",
+    "capital": "Lourenço Marques (Maputo), Ilha de Moçambique",
+    "feature_name_matches": [
+      "Portuguese East Africa"
+    ]
+  },
+  {
+    "slug": "delagoa-bay",
+    "name": "Delagoa Bay (Lourenço Marques)",
+    "name_fi": "Delagoanlahti",
+    "native_name": "Baía da Lagoa / Maputo Bay",
+    "alternate_names": [
+      "Delagoa Bay",
+      "Baía de Lourenço Marques"
+    ],
+    "culture_group": "Southern Africa",
+    "lineage_id": "moz",
+    "historical_period": "Strategic East African Trading Bay",
+    "year_start": 1544,
+    "year_end": 1975,
+    "period_label": "1544 CE – 1975 CE",
+    "period_label_fi": "1544 jaa. – 1975 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Maputo_Bay",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Maputonlahti",
+    "wikidata_id": "Q808605",
+    "summary_en": "Strategic Indian Ocean bay and natural deepwater harbor in southern Mozambique contested by Portugal, the Dutch, Britain, and the Transvaal as a crucial railway terminus.",
+    "summary_fi": "Strateginen luonnonsatama ja merilahti eteläisessä Mosambikissa, josta käytiin kiivasta kilpailua Portugalin, Britannian ja Transvaalin välillä rautatieyhteyksien vuoksi.",
+    "capital": "Lourenço Marques (Maputo)",
+    "feature_name_matches": [
+      "Delagoa Bay"
+    ]
+  },
+  {
+    "slug": "ovimbundu-kingdoms",
+    "name": "Ovimbundu Kingdoms",
+    "name_fi": "Ovimbundujen kuningaskunnat",
+    "native_name": "Ovimbundu / Vambundu",
+    "alternate_names": [
+      "Ovimbundu",
+      "Bié",
+      "Bailundo Confederation"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "central-africa",
+    "historical_period": "Central Angolan Plateau Kingdoms",
+    "year_start": 1700,
+    "year_end": 1903,
+    "period_label": "1700 CE – 1903 CE",
+    "period_label_fi": "1700 jaa. – 1903 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ovimbundu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ovimbundut",
+    "wikidata_id": "Q926710",
+    "summary_en": "Powerful commercial kingdoms of the central Angolan Benguela Highlands, including Bailundo, Bié, and Wambu, which dominated trans-continental caravan trade in rubber and beeswax.",
+    "summary_fi": "Angolan keskiylängön merkittävät kauppakuningaskunnat (kuten Bailundo ja Bié), jotka hallitsivat laajaa karavaanikauppaa rannikolta sisämaahan ennen 1900-luvun valloituksia.",
+    "capital": "Bailundo, Bié",
+    "feature_name_matches": [
+      "Ovimbundu"
+    ]
+  },
+  {
+    "slug": "bailundo-kingdom",
+    "name": "Bailundo Kingdom (Mbailundu)",
+    "name_fi": "Bailundon kuningaskunta",
+    "native_name": "Mbailundu / Reino do Bailundo",
+    "alternate_names": [
+      "Mbailundu",
+      "Bailundo",
+      "Mbalundu"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "central-africa",
+    "historical_period": "Bailundo Plateau Confederation",
+    "year_start": 1700,
+    "year_end": 1902,
+    "period_label": "1700 CE – 1902 CE",
+    "period_label_fi": "1700 jaa. – 1902 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bailundo",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bailundo",
+    "wikidata_id": "Q803889",
+    "summary_en": "Largest and most formidable Ovimbundu kingdom in central Angola, led by monarchs like Ekuikui II and Mutu-ya-Kevela, defending independence in the Bailundo War of 1902.",
+    "summary_fi": "Angolan keskiylängön suurin ovimbundu-kuningaskunta, jota johtivat kuninkaat kuten Ekuikui II ja joka taisteli itsenäisyydestään vuoden 1902 Bailundon sodassa.",
+    "capital": "Halavala (Bailundo)",
+    "feature_name_matches": [
+      "Mbailundu"
+    ]
+  },
+  {
+    "slug": "kasanje-kingdom-imbangala",
+    "name": "Kasanje Kingdom (Imbangala)",
+    "name_fi": "Kasanjin kuningaskunta (Imbangalat)",
+    "native_name": "Imbangala / Reino de Cassange",
+    "alternate_names": [
+      "Imbangala",
+      "Kasanje Kingdom",
+      "Cassange"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "central-africa",
+    "historical_period": "Kwango River Militarized Kingdom",
+    "year_start": 1620,
+    "year_end": 1910,
+    "period_label": "1620 CE – 1910 CE",
+    "period_label_fi": "1620 jaa. – 1910 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kasanje_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kasanje",
+    "wikidata_id": "Q850125",
+    "summary_en": "Militarized state founded by Imbangala warriors in the upper Kwango River valley of Angola, commanding long-distance trade networks between the Atlantic coast and the interior Lunda Empire.",
+    "summary_fi": "Imbangala-soturien Kwango-joen laaksoon perustama sotilaallinen kuningaskunta Angolassa, joka toimi keskeisenä kauppavälittäjänä rannikon ja Lundan valtakunnan välillä.",
+    "capital": "Cassange",
+    "feature_name_matches": [
+      "Imbangala"
+    ]
+  },
+  {
+    "slug": "teke-kingdom",
+    "name": "Teke Kingdom (Anziku)",
+    "name_fi": "Teke-kuningaskunta",
+    "native_name": "Reino de Teke / Anziku",
+    "alternate_names": [
+      "Teke",
+      "Anziku Kingdom",
+      "Bateke Kingdom"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "central-africa",
+    "historical_period": "Pool Malebo Congolese Kingdom",
+    "year_start": 1600,
+    "year_end": 1880,
+    "period_label": "1600 CE – 1880 CE",
+    "period_label_fi": "1600 jaa. – 1880 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Anziku_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Teket",
+    "wikidata_id": "Q1435272",
+    "summary_en": "Bantu monarchy situated along the Congo River north of Pool Malebo, ruled by the Makoko of Mbé, who controlled regional metallurgy and riverine trade before signing a protectorate with Savorgnan de Brazza.",
+    "summary_fi": "Kongojoen pohjoispuolinen kuningaskunta Pool Malebon yläpuolella, jota hallitsi Mbén makoko-kuningas ja joka sääteli alueen jokikauppaa ja metallurgiaa.",
+    "capital": "Mbé",
+    "feature_name_matches": [
+      "Teke"
+    ]
+  },
+  {
+    "slug": "yaka-kingdom",
+    "name": "Yaka Kingdom",
+    "name_fi": "Yaka-kuningaskunta",
+    "native_name": "Bayaka / Reino de Yaka",
+    "alternate_names": [
+      "Yaka",
+      "Bayaka",
+      "Kiamfu Kingdom"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "central-africa",
+    "historical_period": "Kwango-Kwilu River Monarchy",
+    "year_start": 1600,
+    "year_end": 1890,
+    "period_label": "1600 CE – 1890 CE",
+    "period_label_fi": "1600 jaa. – 1890 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yaka_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Yakat",
+    "wikidata_id": "Q1632737",
+    "summary_en": "Central African kingdom established along the Kwango River in modern Democratic Republic of the Congo and Angola, headed by the paramount ruler styled the Kiamfu, famed for expressive masked art.",
+    "summary_fi": "Kwango-joen laakson bantukuningaskunta Kongon ja Angolan rajaseudulla, jota johti kiamfu-hallitsija ja joka tunnetaan näyttävistä puunaamioistaan ja taiteestaan.",
+    "capital": "Kasongo-Lunda",
+    "feature_name_matches": [
+      "Yaka"
+    ]
+  },
+  {
+    "slug": "yeke-kingdom",
+    "name": "Yeke Kingdom (Garanganze)",
+    "name_fi": "Yeke-kuningaskunta (Garanganze)",
+    "native_name": "Garanganze / Reino dos Iekes",
+    "alternate_names": [
+      "Yeke",
+      "Garanganze Kingdom",
+      "Msiri Realm"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "central-africa",
+    "historical_period": "Katanga Copper Trading Empire",
+    "year_start": 1856,
+    "year_end": 1891,
+    "period_label": "1856 CE – 1891 CE",
+    "period_label_fi": "1856 jaa. – 1891 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Yeke_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Msiri",
+    "wikidata_id": "Q3446261",
+    "summary_en": "Commercial and military empire in Katanga founded by Nyamwezi trader Msiri, controlling the rich copper and ivory trade routes of Central Africa until Belgian conquest in 1891.",
+    "summary_fi": "Nyamwezi-kauppias Msirin Katangan alueelle perustama sotilaallinen kauppamahti, joka hallitsi Keski-Afrikan kupari- ja norsunluukauppaa ennen belgialaisten valloitusta.",
+    "capital": "Bunkeya",
+    "feature_name_matches": [
+      "Yeke"
+    ]
+  },
+  {
+    "slug": "sultanate-of-utetera",
+    "name": "Sultanate of Utetera (Tippu Tip State)",
+    "name_fi": "Uteteran sulttaanikunta",
+    "native_name": "Utetera / Manyema State",
+    "alternate_names": [
+      "Sultanate of Utetera",
+      "Tippu Tip state",
+      "Manyema"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "Swahili-Zanzibari Upper Congo Hegemony",
+    "year_start": 1860,
+    "year_end": 1894,
+    "period_label": "1860 CE – 1894 CE",
+    "period_label_fi": "1860 jaa. – 1894 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tippu_Tip",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tippu_Tip",
+    "wikidata_id": "Q379841",
+    "summary_en": "Afro-Omani merchant empire in the Upper Congo and Manyema founded by ivory trader Hamad bin Muhammad (Tippu Tip), which dominated trade along the Lualaba until the Congo Arab War.",
+    "summary_fi": "Afro-omanilaisen kauppiaan Tippu Tipin Ylä-Kongoon ja Manyemaan perustama kauppaimperiumi, joka hallitsi Lualaba-joen norsunluu- ja kauppareittejä ennen Kongon arabisotaa.",
+    "capital": "Kasongo, Nyangwe",
+    "feature_name_matches": [
+      "Sultanate of Utetera"
+    ]
+  },
+  {
+    "slug": "german-kamerun",
+    "name": "German Kamerun",
+    "name_fi": "Saksan Kamerun",
+    "native_name": "Kamerun / Deutsche Kolonie Kamerun",
+    "alternate_names": [
+      "Kamerun",
+      "German Kamerun",
+      "Cameroon (Germany)"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "cmr",
+    "historical_period": "Imperial German Protectorate",
+    "year_start": 1884,
+    "year_end": 1916,
+    "period_label": "1884 CE – 1916 CE",
+    "period_label_fi": "1884 jaa. – 1916 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kamerun",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saksan_Kamerun",
+    "wikidata_id": "Q165902",
+    "summary_en": "German imperial colony in Central Africa established after signing treaties with Duala chiefs in 1884, expanding inland to Lake Chad before being partitioned between France and Britain after WWI.",
+    "summary_fi": "Saksan keisarillinen siirtomaa Keski-Afrikassa, joka ulottui Guineanlahdelta Tšadjärvelle ennen kuin se jaettiin Ranskan ja Britannian kesken ensimmäisen maailmansodan jälkeen.",
+    "capital": "Buea, Douala, Yaoundé",
+    "feature_name_matches": [
+      "Kamerun"
+    ]
+  },
+  {
+    "slug": "southern-cameroons",
+    "name": "Southern Cameroons",
+    "name_fi": "Etelä-Kamerun",
+    "native_name": "British Southern Cameroons / Ambazonia",
+    "alternate_names": [
+      "Southern Cameroon",
+      "British Cameroons",
+      "Southern Cameroons"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "cmr",
+    "historical_period": "British League of Nations Mandate",
+    "year_start": 1916,
+    "year_end": 1961,
+    "period_label": "1916 CE – 1961 CE",
+    "period_label_fi": "1916 jaa. – 1961 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Southern_Cameroons",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Kamerun",
+    "wikidata_id": "Q2171120",
+    "summary_en": "Southern section of the British mandate in Cameroon administering the anglophone highlands, which voted in a 1961 UN plebiscite to integrate into the Federal Republic of Cameroon.",
+    "summary_fi": "Britannian mandaattialueen eteläosa Kamerunissa, joka äänesti vuonna 1961 YK:n kansanäänestyksessä liittymisestä Kamerunin liittotasavaltaan.",
+    "capital": "Buea",
+    "feature_name_matches": [
+      "Southern Cameroon"
+    ]
+  },
+  {
+    "slug": "tanzania-united-republic",
+    "name": "United Republic of Tanzania",
+    "name_fi": "Tansanian yhdistynyt tasavalta",
+    "native_name": "Jamhuri ya Muungano wa Tanzania",
+    "alternate_names": [
+      "Tanzania, United Republic of",
+      "Tanzania",
+      "Tanganyika and Zanzibar"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "tza",
+    "historical_period": "Post-Colonial Swahili Union",
+    "year_start": 1964,
+    "year_end": 2026,
+    "period_label": "1964 CE – Present",
+    "period_label_fi": "1964 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tanzania",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tansania",
+    "wikidata_id": "Q924",
+    "summary_en": "East African sovereign state formed by the 1964 union of mainland Tanganyika and the Zanzibar archipelago under Julius Nyerere, home to Mount Kilimanjaro and the Serengeti plains.",
+    "summary_fi": "Itäafrikkalainen valtio, joka syntyi Tanganjikan ja Sansibarin saariston yhdistyessä vuonna 1964 Julius Nyereren johdolla; tunnettu Kilimanjaro-vuoresta ja Serengetin luonnosta.",
+    "capital": "Dodoma, Dar es Salaam",
+    "feature_name_matches": [
+      "Tanzania, United Republic of"
+    ]
+  },
+  {
+    "slug": "german-east-africa",
+    "name": "German East Africa (Tanganyika)",
+    "name_fi": "Saksan Itä-Afrikka",
+    "native_name": "Deutsch-Ostafrika",
+    "alternate_names": [
+      "German E. Africa (Tanganyika)",
+      "German East Africa"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "tza",
+    "historical_period": "Imperial German Protectorate",
+    "year_start": 1885,
+    "year_end": 1919,
+    "period_label": "1885 CE – 1919 CE",
+    "period_label_fi": "1885 jaa. – 1919 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/German_East_Africa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saksan_It%C3%A4-Afrikka",
+    "wikidata_id": "Q153995",
+    "summary_en": "German imperial colony comprising modern Tanzania, Rwanda, and Burundi founded by Carl Peters, characterized by extensive railway building, the Maji Maji rebellion, and Paul von Lettow-Vorbeck's WWI campaign.",
+    "summary_fi": "Saksan siirtomaa Itä-Afrikassa nykyisen Tansanian, Ruandan ja Burundin alueella, joka tunnetaan Maji Maji -kapinasta ja ensimmäisen maailmansodan sissisodankäynnistä.",
+    "capital": "Dar es Salaam, Bagamoyo",
+    "feature_name_matches": [
+      "German E. Africa (Tanganyika)"
+    ]
+  },
+  {
+    "slug": "east-africa-protectorate",
+    "name": "British East Africa (Kenya Protectorate)",
+    "name_fi": "Brittiläinen Itä-Afrikka",
+    "native_name": "East Africa Protectorate",
+    "alternate_names": [
+      "British East Africa",
+      "East Africa Protectorate",
+      "Kenya Colony"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "ken",
+    "historical_period": "Uganda Railway & Settler Colony Era",
+    "year_start": 1895,
+    "year_end": 1920,
+    "period_label": "1895 CE – 1920 CE",
+    "period_label_fi": "1895 jaa. – 1920 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/East_Africa_Protectorate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Brittil%C3%A4inen_It%C3%A4-Afrikka",
+    "wikidata_id": "Q849931",
+    "summary_en": "British protectorate established from the coast of Mombasa inland to the Rift Valley, developing alongside the construction of the Uganda Railway and later reorganizing as the Colony and Protectorate of Kenya.",
+    "summary_fi": "Britannian protektoraatti Mombasan rannikolta hautavajoamaan saakka, joka kehittyi Uganda-rautatien rakentamisen myötä ja muodosti myöhemmän Kenian siirtomaan perustan.",
+    "capital": "Nairobi, Mombasa",
+    "feature_name_matches": [
+      "British East Africa"
+    ]
+  },
+  {
+    "slug": "mirambo-nyamwezi-kingdom",
+    "name": "Mirambo's Nyamwezi Realm (Unyanyembe)",
+    "name_fi": "Mirambon Nyamwezi-valtakunta",
+    "native_name": "Unyamwezi / Realm of Mirambo",
+    "alternate_names": [
+      "Mirambo Unyanyembe Ukimbu",
+      "Nyamwezi Kingdom"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "19th Century Central Tanzanian Hegemony",
+    "year_start": 1860,
+    "year_end": 1884,
+    "period_label": "1860 CE – 1884 CE",
+    "period_label_fi": "1860 jaa. – 1884 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mirambo",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Nyamwezit",
+    "wikidata_id": "Q1398708",
+    "summary_en": "Powerful central Tanzanian confederacy forged by warlord Mirambo using ruga-ruga warriors, uniting Unyanyembe, Ukimbu, and trade routes between Lake Tanganyika and the Swahili coast.",
+    "summary_fi": "Mirambon johtama mahtava nyamwezi-liittovaltio Keski-Tansaniassa, joka hallitsi ruga-ruga-sotureidensa avulla Tanganjikajärven ja rannikon välisiä karavaanireittejä.",
+    "capital": "Urambo, Tabora",
+    "feature_name_matches": [
+      "Mirambo Unyanyembe Ukimbu"
+    ]
+  },
+  {
+    "slug": "rift-valley-states",
+    "name": "Rift Valley Pastoralist Polities",
+    "name_fi": "Hautavajoaman paimenvaltiot",
+    "native_name": "Great Rift Valley Chiefdoms",
+    "alternate_names": [
+      "Rift Valley States",
+      "Maasai & Kalenjin confederations"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "Pre-Colonial Pastoralist Expansion",
+    "year_start": 1500,
+    "year_end": 1900,
+    "period_label": "1500 CE – 1900 CE",
+    "period_label_fi": "1500 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Great_Rift_Valley",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/It%C3%A4-Afrikan_hautavajoama",
+    "wikidata_id": "Q81591",
+    "summary_en": "Dynamic pastoralist and agropastoral societies of the East African Rift Valley, including Maasai, Kalenjin, and Turkana networks defined by age-set governance and cattle culture.",
+    "summary_fi": "Itä-Afrikan hautavajoaman laiduntajayhteisöt (kuten maasait ja kalenjinit), joiden yhteiskunta perustui ikäluokkahallintoon, karjatalouteen ja laajoihin laidunalueisiin.",
+    "capital": "Naivasha / Baringo Basin",
+    "feature_name_matches": [
+      "Rift Valley States"
+    ]
+  },
+  {
+    "slug": "kingdom-of-ankole-nkore",
+    "name": "Kingdom of Ankole (Nkore)",
+    "name_fi": "Ankolen kuningaskunta (Nkore)",
+    "native_name": "Nkore / Obugabe bwa Ankole",
+    "alternate_names": [
+      "Nkore",
+      "Ankole",
+      "Kaaro-Karungi"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "Great Lakes Hima-Iru Monarchy",
+    "year_start": 1450,
+    "year_end": 1967,
+    "period_label": "1450 CE – 1967 CE",
+    "period_label_fi": "1450 jaa. – 1967 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ankole",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ankole",
+    "wikidata_id": "Q557454",
+    "summary_en": "Traditional Great Lakes Bantu kingdom in southwestern Uganda ruled by the Omugabe, characterized by the pastoral Bahima aristocracy and their treasured long-horned Ankole cattle.",
+    "summary_fi": "Perinteinen bantukuningaskunta Lounais-Ugandassa, jota hallitsi omugabe-kuningas ja joka tunnetaan pitkäsarvisesta ankole-karjastaan ja Bahima-aatelistostaan.",
+    "capital": "Mbarara",
+    "feature_name_matches": [
+      "Nkore"
+    ]
+  },
+  {
+    "slug": "sultanate-of-aussa",
+    "name": "Sultanate of Aussa (Awsa)",
+    "name_fi": "Aussan sulttaanikunta",
+    "native_name": "Awsa / Afar Sultanate of Aussa",
+    "alternate_names": [
+      "Awsa",
+      "Aussa",
+      "Afar Sultanate"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "Afar Desert Incense Sultanate",
+    "year_start": 1734,
+    "year_end": 1936,
+    "period_label": "1734 CE – 1936 CE",
+    "period_label_fi": "1734 jaa. – 1936 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sultanate_of_Aussa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Afarit",
+    "wikidata_id": "Q863777",
+    "summary_en": "Afar desert monarchy centered in the fertile Awash River oasis of eastern Ethiopia, established by the Mudaito dynasty after the collapse of the Adal Sultanate.",
+    "summary_fi": "Afar-kansan sulttaanikunta Itä-Etiopian Awash-joen hedelmällisellä keitaalla, jonka Mudaito-dynastia perusti Adalin sulttaanikunnan hajottua.",
+    "capital": "Asaita (Aussa)",
+    "feature_name_matches": [
+      "Awsa"
+    ]
+  },
+  {
+    "slug": "beja-people",
+    "name": "Beja Kingdoms & Chiefdoms",
+    "name_fi": "Beja-valtakunnat",
+    "native_name": "Oja / Beja / Blemmyes",
+    "alternate_names": [
+      "Bega",
+      "Beja people",
+      "Beja"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "Red Sea Hills Pastoralist Kingdoms",
+    "year_start": 250,
+    "year_end": 1500,
+    "period_label": "250 CE – 1500 CE",
+    "period_label_fi": "250 jaa. – 1500 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Beja_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bedžat",
+    "wikidata_id": "Q505083",
+    "summary_en": "Cushitic-speaking desert nomads and warriors inhabiting the Red Sea Hills of Sudan and Eritrea, historically documented as the Blemmyes and organized into autonomous medieval camel-herding sultanates.",
+    "summary_fi": "Kuusilainen paimentolais- ja soturikansa Punaisenmeren kukkuloilla Sudanissa ja Eritreassa; antiikin blemmyit, jotka perustivat useita keskiaikaisia karavaanikauppaa valvoneita sulttaanikuntia.",
+    "capital": "Suakin / Sinkat",
+    "feature_name_matches": [
+      "Bega",
+      "Beja people"
+    ]
+  },
+  {
+    "slug": "cushitic-peoples",
+    "name": "Cushitic Pastoral Horizons",
+    "name_fi": "Kuusilaiset kansat",
+    "native_name": "Cushitic Ethnolinguistic Sphere",
+    "alternate_names": [
+      "Cushites",
+      "Kushites",
+      "Eastern Cushitic groups"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "east-africa",
+    "historical_period": "Ancient Horn of Africa Pastoralist Expansion",
+    "year_start": -2500,
+    "year_end": 1000,
+    "period_label": "2500 BCE – 1000 CE",
+    "period_label_fi": "2500 eaa. – 1000 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cushitic_peoples",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kuušilaiset_kielet",
+    "wikidata_id": "Q1146200",
+    "summary_en": "Ancient Afroasiatic ethnolinguistic horizon of the Horn of Africa and upper Nile Basin that pioneered pastoral cattle herding, megalithic burials, and terraced mountain agriculture.",
+    "summary_fi": "Afrikan sarven ja Ylä-Niilin muinainen afroaasialainen kieliryhmä, joka levitti karjanhoitoa, megaliittihaudoitusta ja terassiviljelyä Itä-Afrikkaan.",
+    "capital": "Kerma / Harar Plateau",
+    "feature_name_matches": [
+      "Cushites",
+      "Kushites"
+    ]
+  },
+  {
+    "slug": "vazimba-people",
+    "name": "Vazimba (First Peoples of Madagascar)",
+    "name_fi": "Vazimban kansa",
+    "native_name": "Vazimba",
+    "alternate_names": [
+      "Vazimba",
+      "Proto-Malagasy"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "madagascar",
+    "historical_period": "Early Malagasy Highland Settlement",
+    "year_start": 400,
+    "year_end": 1550,
+    "period_label": "400 CE – 1550 CE",
+    "period_label_fi": "400 jaa. – 1550 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Vazimba",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Madagaskarin_historia",
+    "wikidata_id": "Q2592750",
+    "summary_en": "First proto-Austronesian and African hunter-foragers and wetland rice farmers of the central Madagascar highlands, revered as legendary ancestral spirits by the later Merina monarchy.",
+    "summary_fi": "Madagaskarin keskiylängön varhaisimmat asukkaat, jotka toivat saarelle jokilaaksojen riisinviljelyn ja joita myöhempi Merina-kuningaskunta kunnioitti myyttisinä esi-isinä.",
+    "capital": "Analamanga (Antananarivo)",
+    "feature_name_matches": [
+      "Vazimba"
+    ]
+  },
+  {
+    "slug": "malagasy-peoples",
+    "name": "Malagasy Early Kingdoms",
+    "name_fi": "Madagaskarin varhaiset kuningaskunnat",
+    "native_name": "Foko Malagasy",
+    "alternate_names": [
+      "Malagasy",
+      "Early Malagasy chiefdoms"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "madagascar",
+    "historical_period": "Austronesian-Bantu Synthesis",
+    "year_start": 600,
+    "year_end": 1600,
+    "period_label": "600 CE – 1600 CE",
+    "period_label_fi": "600 jaa. – 1600 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Malagasy_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Madagassit",
+    "wikidata_id": "Q269299",
+    "summary_en": "Distinct syncretic culture created by Austronesian voyagers from Borneo blending with East African Bantu settlers, developing outrigger seafaring, zebu pastoralism, and stone tomb architecture.",
+    "summary_fi": "Borneolaisten austronesialaisten merenkulkijoiden ja itäafrikkalaisten bantujen sekoittumisesta syntynyt saarikulttuuri, jolle olivat ominaisia seepiakarja ja taidokkaat hautarakennelmat.",
+    "capital": "Vohemar / Imerina",
+    "feature_name_matches": [
+      "Malagasy"
+    ]
+  },
+  {
+    "slug": "regency-of-algiers",
+    "name": "Regency of Algiers",
+    "name_fi": "Algerin regenssi",
+    "native_name": "أيالة الجزائر / Eyâlet-i Cezâyir-i Garb",
+    "alternate_names": [
+      "Algiers",
+      "Ottoman Algiers",
+      "Regency of Algiers"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "dza",
+    "historical_period": "Ottoman Corsair & Deylicate Era",
+    "year_start": 1516,
+    "year_end": 1830,
+    "period_label": "1516 CE – 1830 CE",
+    "period_label_fi": "1516 jaa. – 1830 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Regency_of_Algiers",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Algerin_regenssi",
+    "wikidata_id": "Q1417534",
+    "summary_en": "Autonomous Ottoman state founded by Hayreddin Barbarossa along the central Maghreb coast, governed by the Deys of Algiers as a maritime corsair stronghold until the French invasion of 1830.",
+    "summary_fi": "Hayreddin Barbarossan perustama autonominen osmanivaltio Maghrebin rannikolla, jota hallitsivat dey-arvonimelliset sotilasjohtajat aina Ranskan valloitukseen vuonna 1830 saakka.",
+    "capital": "Algiers",
+    "feature_name_matches": [
+      "Algiers"
+    ]
+  },
+  {
+    "slug": "beylik-of-tunis",
+    "name": "Beylik of Tunis (Husainid Dynasty)",
+    "name_fi": "Tunisin beylik",
+    "native_name": "بايلك تونس / Beylik of Tunis",
+    "alternate_names": [
+      "Tunis",
+      "Beylik of Tunis",
+      "Husainid Tunis"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "tun",
+    "historical_period": "Ottoman to French Protectorate Tunisia",
+    "year_start": 1705,
+    "year_end": 1881,
+    "period_label": "1705 CE – 1881 CE",
+    "period_label_fi": "1705 jaa. – 1881 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Beylik_of_Tunis",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tunisian_historia",
+    "wikidata_id": "Q2620786",
+    "summary_en": "Hereditary monarchy established by Al-Husayn I ibn Ali in Tunisia, maintaining substantial de facto independence from Istanbul, introducing Africa's first modern constitution in 1861.",
+    "summary_fi": "Husaini-dynastian perinnöllinen monarkia Tunisiassa, joka toimi de facto itsenäisesti osmanivaltakunnasta ja laati Afrikan ensimmäisen modernin perustuslain vuonna 1861.",
+    "capital": "Tunis, Bardo",
+    "feature_name_matches": [
+      "Tunis"
+    ]
+  },
+  {
+    "slug": "cyrenaica-emirate",
+    "name": "Cyrenaica (Senussi Emirate)",
+    "name_fi": "Kyrenaika (Senussi-emiraatti)",
+    "native_name": "برقة / Cyrenaica",
+    "alternate_names": [
+      "Cyrenaica",
+      "Cyraneica (UK Lybia)",
+      "Senussi Emirate of Cyrenaica"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "lby",
+    "historical_period": "Senussi Order to Post-WWII British Administration",
+    "year_start": 1843,
+    "year_end": 1951,
+    "period_label": "1843 CE – 1951 CE",
+    "period_label_fi": "1843 jaa. – 1951 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cyrenaica",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kyrenaika",
+    "wikidata_id": "Q165158",
+    "summary_en": "Eastern Libyan coastal and desert realm centered around Benghazi, guided by the Senussi Sufi order and Emir Idris, which resisted Italian colonization before anchoring the united Kingdom of Libya.",
+    "summary_fi": "Itä-Libyan historiallinen rannikko- ja aavikkoalue Bengasin ympärillä, jota johti senussi-sufiveljeskunta ja josta muodostui itsenäisen Libyan kuningaskunnan sydän.",
+    "capital": "Benghazi",
+    "feature_name_matches": [
+      "Cyrenaica",
+      "Cyraneica (UK Lybia)"
+    ]
+  },
+  {
+    "slug": "military-territory-of-fezzan",
+    "name": "Fezzan (Military Territory of Fezzan-Ghadames)",
+    "name_fi": "Fezzanin sotilasterritorio",
+    "native_name": "فزان / Territoire du Fezzan-Ghadamès",
+    "alternate_names": [
+      "Fezzan (Frech Lybia)",
+      "Fezzan",
+      "Territoire du Fezzan"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "lby",
+    "historical_period": "Post-WWII French Military Administration",
+    "year_start": 1943,
+    "year_end": 1951,
+    "period_label": "1943 CE – 1951 CE",
+    "period_label_fi": "1943 jaa. – 1951 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Fezzan-Ghadames_(French_administration)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Fezzan",
+    "wikidata_id": "Q3518826",
+    "summary_en": "Saharan desert province in southwestern Libya governed by Free French forces after the expulsion of Axis armies, maintaining trans-Saharan caravan outposts until Libyan independence in 1951.",
+    "summary_fi": "Lounais-Libyan saharalainen aavikkoalue, jota Vapaan Ranskan joukot hallinnoivat toisen maailmansodan jälkeen ennen alueen yhdistymistä itsenäiseen Libyaan vuonna 1951.",
+    "capital": "Sabha, Murzuk",
+    "feature_name_matches": [
+      "Fezzan (Frech Lybia)"
+    ]
+  },
+  {
+    "slug": "spanish-sahara-rio-de-oro",
+    "name": "Spanish Sahara (Río de Oro & Saguia el-Hamra)",
+    "name_fi": "Espanjan Sahara (Río de Oro)",
+    "native_name": "Sahara Español / Río de Oro",
+    "alternate_names": [
+      "Rio De Oro",
+      "Spanish Sahara",
+      "Sahara Español"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "esh",
+    "historical_period": "Spanish Colonial Saharan Territory",
+    "year_start": 1884,
+    "year_end": 1976,
+    "period_label": "1884 CE – 1976 CE",
+    "period_label_fi": "1884 jaa. – 1976 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Spanish_Sahara",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Espanjan_Sahara",
+    "wikidata_id": "Q689837",
+    "summary_en": "Spanish overseas territory in northwestern Africa comprising Río de Oro and Saguia el-Hamra, inhabited by Sahrawi nomadic tribes before the Madrid Accords and Moroccan-Polisario conflict.",
+    "summary_fi": "Espanjan siirtomaa Luoteis-Afrikan rannikolla, joka koostui Río de Oron ja Saguia el-Hamran alueista sahraweineen ennen Espanjan vetäytymistä vuonna 1976.",
+    "capital": "El Aaiún, Villa Cisneros (Dakhla)",
+    "feature_name_matches": [
+      "Rio De Oro",
+      "Spanish Sahara"
+    ]
+  },
+  {
+    "slug": "zayyanid-dynasty-tlemcen",
+    "name": "Zayyanid Kingdom of Tlemcen (Abdelouadides)",
+    "name_fi": "Tlemcenin zayyanidivaltakunta (Abdelouadidit)",
+    "native_name": "بنو زيان / بنو عبد الواد / Banu Zayan",
+    "alternate_names": [
+      "Abdelouadides",
+      "Zayyanids",
+      "Kingdom of Tlemcen"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "dza",
+    "historical_period": "Medieval Zenata Berber Kingdom",
+    "year_start": 1235,
+    "year_end": 1556,
+    "period_label": "1235 CE – 1556 CE",
+    "period_label_fi": "1235 jaa. – 1556 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Tlemcen",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zayyanidit",
+    "wikidata_id": "Q1474261",
+    "summary_en": "Zenata Berber dynasty that ruled north-western Algeria from the historic city of Tlemcen, renowned for Andalusian-influenced art, scholarly madrasas, and trans-Saharan trade.",
+    "summary_fi": "Zenata-berbereiden dynastia Luoteis-Algeriassa, joka hallitsi Tlemcenin loistokaupungista käsin kehittäen andalusialaistyylistä arkkitehtuuria ja Saharan ylittävää kultakauppaa.",
+    "capital": "Tlemcen",
+    "feature_name_matches": [
+      "Abdelouadides"
+    ]
+  },
+  {
+    "slug": "marinid-sultanate",
+    "name": "Marinid Sultanate",
+    "name_fi": "Marinidien sulttaanikunta",
+    "native_name": "المرينيون / Banu Marin",
+    "alternate_names": [
+      "Merinides",
+      "Marinid Dynasty",
+      "Banu Marin"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "morocco",
+    "historical_period": "Golden Age of Fez Architecture",
+    "year_start": 1244,
+    "year_end": 1465,
+    "period_label": "1244 CE – 1465 CE",
+    "period_label_fi": "1244 jaa. – 1465 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Marinid_Sultanate",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Marinidit",
+    "wikidata_id": "Q507119",
+    "summary_en": "Zenata Berber empire based in Fez that succeeded the Almohads across Morocco, remembered for building the spectacular Bou Inania and al-Attarine madrasas and intervening in the Reconquista.",
+    "summary_fi": "Zenata-berbereiden suurvalta Marokossa almohadien jälkeen, joka teki Fèsistä loistavan kulttuurikeskuksen upeine madrasoineen ja taisteli kristittyjä vastaan Espanjassa.",
+    "capital": "Fez (Fes el-Jdid)",
+    "feature_name_matches": [
+      "Merinides"
+    ]
+  },
+  {
+    "slug": "barghawata-confederacy",
+    "name": "Barghawata Berber Confederacy",
+    "name_fi": "Barghawatan berberivaltakunta",
+    "native_name": "برغواطة / Barghawata",
+    "alternate_names": [
+      "Barghawata",
+      "Berghouata"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "morocco",
+    "historical_period": "Atlantic Maghreb Kharijite Realm",
+    "year_start": 744,
+    "year_end": 1058,
+    "period_label": "744 CE – 1058 CE",
+    "period_label_fi": "744 jaa. – 1058 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Barghawata",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Barghawata",
+    "wikidata_id": "Q807759",
+    "summary_en": "Independent Berber tribal confederation along Morocco's Atlantic coast (Tamesna) founded by Tarif al-Matghari, which developed its own syncretic Berber religion and Berber-language scripture.",
+    "summary_fi": "Marokon Atlantin rannikon itsenäinen berberiliitto, joka irtautui kalifaatista vuonna 744 ja perusti oman berberinkielisen uskontonsa ennen almoravidien valloitusta.",
+    "capital": "Tamesna / Anfa (Casablanca)",
+    "feature_name_matches": [
+      "Barghawata"
+    ]
+  },
+  {
+    "slug": "kingdom-of-the-aures",
+    "name": "Kingdom of the Aurès",
+    "name_fi": "Aurèsin berberikuningaskunta",
+    "native_name": "Regnum Aurasium / Dihya Realm",
+    "alternate_names": [
+      "Aures",
+      "Aurès Kingdom",
+      "Masties Realm"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "dza",
+    "historical_period": "Post-Roman Romano-Berber Mountain Realm",
+    "year_start": 484,
+    "year_end": 703,
+    "period_label": "484 CE – 703 CE",
+    "period_label_fi": "484 jaa. – 703 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_the_Aur%C3%A8s",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dihya",
+    "wikidata_id": "Q3446213",
+    "summary_en": "Christianized Romano-Berber kingdom in the rugged Aurès Mountains of eastern Algeria led by Masties and later the Berber queen Dihya (al-Kahina), who led fierce resistance against Arab expansion.",
+    "summary_fi": "Itä-Algerian Aurès-vuoriston roomalais-berberiläinen kuningaskunta, jonka tunnetuin johtaja oli legendaarinen kuningatar Dihya (Kahina) arabivalloitusten aikana.",
+    "capital": "Baghai",
+    "feature_name_matches": [
+      "Aures"
+    ]
+  },
+  {
+    "slug": "kingdom-of-the-ouarsenis",
+    "name": "Kingdom of the Ouarsenis",
+    "name_fi": "Ouarsenisin berberikuningaskunta",
+    "native_name": "Regnum Ouarsenis / Warsenis",
+    "alternate_names": [
+      "Warsenis",
+      "Ouarsenis Kingdom"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "dza",
+    "historical_period": "Post-Roman North African Principality",
+    "year_start": 430,
+    "year_end": 700,
+    "period_label": "430 CE – 700 CE",
+    "period_label_fi": "430 jaa. – 700 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mauro-Roman_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Algerian_historia",
+    "wikidata_id": "Q3356860",
+    "summary_en": "Early medieval Romano-Berber highland principality in the Ouarsenis mountain range of northern Algeria, asserting regional sovereignty following the withdrawal of Roman imperial legions.",
+    "summary_fi": "Pohjois-Algerian Ouarsenis-vuoriston varhaiskeskiaikainen berberiruhtinaskunta, joka säilytti itsenäisyytensä Rooman vallan murentumisen jälkeen.",
+    "capital": "Altava / Tiaret Highlands",
+    "feature_name_matches": [
+      "Warsenis"
+    ]
+  },
+  {
+    "slug": "mauro-roman-kingdom",
+    "name": "Mauro-Roman Kingdom & Mauri Polities",
+    "name_fi": "Mauro-roomalainen kuningaskunta",
+    "native_name": "Regnum Maurorum et Romanorum",
+    "alternate_names": [
+      "Mauri",
+      "Mauro-Roman Kingdom",
+      "Kingdom of Altava"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "dza",
+    "historical_period": "Late Antique Western Maghreb Kingdom",
+    "year_start": 477,
+    "year_end": 578,
+    "period_label": "477 CE – 578 CE",
+    "period_label_fi": "477 jaa. – 578 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mauro-Roman_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mauro-roomalainen_kuningaskunta",
+    "wikidata_id": "Q3356860",
+    "summary_en": "Christian Romano-Berber kingdom in western Algeria founded by Masuna at Altava, maintaining Roman legal institutions, Latin epigraphy, and military garrisons against the Vandals.",
+    "summary_fi": "Länsi-Algerian kristitty roomalais-berberiläinen kuningaskunta Altavassa, joka käytti latinan kieltä ja roomalaisia arvonimiä ja puolustautui vandaaleja vastaan.",
+    "capital": "Altava",
+    "feature_name_matches": [
+      "Mauri"
+    ]
+  },
+  {
+    "slug": "ibadi-rustamid-community",
+    "name": "Ibadi Communities & Rustamid Imams",
+    "name_fi": "Ibadilaiset yhteisöt ja Rustamidit",
+    "native_name": "الرستميون / Ibadite Imamate",
+    "alternate_names": [
+      "Ibadites",
+      "Rustamids",
+      "Ibadi Imamate"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "dza",
+    "historical_period": "Maghrebi Kharijite Theocracy",
+    "year_start": 761,
+    "year_end": 1200,
+    "period_label": "761 CE – 1200 CE",
+    "period_label_fi": "761 jaa. – 1200 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Rustamid_dynasty",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Rustamidit",
+    "wikidata_id": "Q507421",
+    "summary_en": "Egalitarian Islamic movement in North Africa centered around the Rustamid imamate of Tahert and M'zab oasis settlements, fostering scholarly tolerance and trans-Saharan commerce.",
+    "summary_fi": "Ibadilaisen islamin tasa-arvoinen liike ja Rustamidien imamaatti Tahertissa ja M'zabin keitailla, joka toimi merkittävänä oppineisuuden ja Saharan kaupan keskuksena.",
+    "capital": "Tahert, Ghardaïa",
+    "feature_name_matches": [
+      "Ibadites"
+    ]
+  },
+  {
+    "slug": "tuareg-confederations",
+    "name": "Tuareg Desert Confederations (Kel Tamasheq)",
+    "name_fi": "Tuaregien aavikkoliitot",
+    "native_name": "Kel Tamasheq / Imashaghen",
+    "alternate_names": [
+      "Touareg",
+      "Tuareg",
+      "Kel Ahaggar"
+    ],
+    "culture_group": "North Africa",
+    "lineage_id": "north-africa",
+    "historical_period": "Trans-Saharan Pastoralist Confederations",
+    "year_start": 400,
+    "year_end": 1920,
+    "period_label": "400 CE – 1920 CE",
+    "period_label_fi": "400 jaa. – 1920 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Tuareg_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Tuaregit",
+    "wikidata_id": "Q58843",
+    "summary_en": "Pastoral Berber nomads of the central and western Sahara organized into noble matrilineal confederations (Kel Ahaggar, Kel Ajjer, Kel Air), commanding camel caravans and Tifinagh literacy.",
+    "summary_fi": "Saharassa elävä berberikansa, jonka aatelisliitot (kuten Ahaggar ja Aïr) hallitsivat Saharan halki kulkevia karavaanireittejä ja säilyttivät ikivanhan tifinagh-kirjoituksensa.",
+    "capital": "Tamanrasset / Agadez",
+    "feature_name_matches": [
+      "Touareg"
+    ]
+  },
+  {
+    "slug": "the-gambia",
+    "name": "The Gambia (Colonial Enclave to Republic)",
+    "name_fi": "Gambia",
+    "native_name": "Republic of The Gambia",
+    "alternate_names": [
+      "Gambia, The",
+      "Gambia",
+      "Gambia Colony and Protectorate"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "gambia",
+    "historical_period": "Riverine British Enclave to Independent Nation",
+    "year_start": 1821,
+    "year_end": 2026,
+    "period_label": "1821 CE – Present",
+    "period_label_fi": "1821 jaa. – nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/The_Gambia",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Gambia",
+    "wikidata_id": "Q1005",
+    "summary_en": "Narrow West African nation flanking both banks of the navigable Gambia River, established as a British colonial enclave within Francophone Senegal before achieving independence in 1965.",
+    "summary_fi": "Kapea Länsi-Afrikan valtio Gambia-joen molemmin puolin; toimi pitkään brittiläisenä siirtomaana ranskankielisen Senegalin ympäröimänä ennen itsenäistymistään 1965.",
+    "capital": "Banjul (Bathurst)",
+    "feature_name_matches": [
+      "Gambia, The"
+    ]
+  },
+  {
+    "slug": "takrur-kingdom",
+    "name": "Kingdom of Takrur",
+    "name_fi": "Takrurin kuningaskunta",
+    "native_name": "Takrur / Tekrur",
+    "alternate_names": [
+      "Takrur",
+      "Tekrur",
+      "Tekrour"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "west-africa",
+    "historical_period": "Early Medieval Senegal River State",
+    "year_start": 800,
+    "year_end": 1400,
+    "period_label": "800 CE – 1400 CE",
+    "period_label_fi": "800 jaa. – 1400 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Takrur",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Takrur",
+    "wikidata_id": "Q1258671",
+    "summary_en": "Ancient Islamic state along the lower Senegal River valley that converted to Islam in the 1030s under King War Jabi, becoming an influential commercial and Islamic scholarship hub.",
+    "summary_fi": "Senegal-joen laakson varhainen islamilainen kuningaskunta, jonka kuningas War Jabi kääntyi islamiin 1030-luvulla ja josta tuli merkittävä kultakaupan ja sivistyksen keskus.",
+    "capital": "Podor, Morfil",
+    "feature_name_matches": [
+      "Takrur",
+      "Tekrur"
+    ]
+  },
+  {
+    "slug": "sultanate-of-air",
+    "name": "Sultanate of Aïr (Agadez)",
+    "name_fi": "Aïrin sulttaanikunta (Agadez)",
+    "native_name": "Sultanate of Agadez / Tenere Realm",
+    "alternate_names": [
+      "Air",
+      "Aïr",
+      "Sultanate of Agadez"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "ner",
+    "historical_period": "Saharan Crossroad Sultanate",
+    "year_start": 1404,
+    "year_end": 1900,
+    "period_label": "1404 CE – 1900 CE",
+    "period_label_fi": "1404 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sultanate_of_Agadez",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Agadez",
+    "wikidata_id": "Q2908272",
+    "summary_en": "Tuareg and Hausa desert sultanate centered around the mud-brick minaret of Agadez in modern Niger, commanding copper, salt, and trans-Saharan trading caravans.",
+    "summary_fi": "Tuaregien ja hausojen sulttaanikunta Nigerin Aïr-vuoristossa Agadezin savitiilimoskeijan ympärillä; hallitsi suolan ja karavaanien risteyskohtia.",
+    "capital": "Agadez",
+    "feature_name_matches": [
+      "Air"
+    ]
+  },
+  {
+    "slug": "sultanate-of-damagaram",
+    "name": "Sultanate of Damagaram (Zinder)",
+    "name_fi": "Damagaramin sulttaanikunta (Zinder)",
+    "native_name": "Damagaram / Sarkin Damagaram",
+    "alternate_names": [
+      "Sultanate of Damagaram",
+      "Damagaram",
+      "Zinder Sultanate"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "ner",
+    "historical_period": "19th Century Southern Niger Power",
+    "year_start": 1731,
+    "year_end": 1899,
+    "period_label": "1731 CE – 1899 CE",
+    "period_label_fi": "1731 jaa. – 1899 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sultanate_of_Damagaram",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Zinder",
+    "wikidata_id": "Q1158288",
+    "summary_en": "Mighty pre-colonial Muslim sultanate in southern Niger centered at Zinder, which built extensive fortifications and resisted French colonization until the battle of Tirmini in 1899.",
+    "summary_fi": "Etelä-Nigerin mahtava muslimisulttaanikunta Zinderissä, joka rakensi laajat linnoitusmuurit ja hallitsi karavaanireittejä ennen ranskalaisten tuloa 1899.",
+    "capital": "Zinder",
+    "feature_name_matches": [
+      "Sultanate of Damagaram"
+    ]
+  },
+  {
+    "slug": "kong-empire",
+    "name": "Kong Empire (Wattara Dynasties)",
+    "name_fi": "Kongin valtakunta",
+    "native_name": "Kong / Wattara Realm",
+    "alternate_names": [
+      "Kong Empire",
+      "Kong",
+      "Wattara Empire"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "civ",
+    "historical_period": "Dyula Commercial Empire",
+    "year_start": 1710,
+    "year_end": 1898,
+    "period_label": "1710 CE – 1898 CE",
+    "period_label_fi": "1710 jaa. – 1898 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kong_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kongin_valtakunta",
+    "wikidata_id": "Q862217",
+    "summary_en": "Muslim Dyula merchant empire founded by Sékou Ouattara in north-eastern Ivory Coast and Burkina Faso, functioning as a premier commercial entrepôt for kola nuts and gold.",
+    "summary_fi": "Dyula-kauppiaiden muslimivaltakunta Norsunluurannikon ja Burkina Fason rajaseudulla, jonka Sékou Ouattara perusti ja joka toimi kolapähkinä- ja kultakaupan keskuksena.",
+    "capital": "Kong",
+    "feature_name_matches": [
+      "Kong Empire",
+      "Kong"
+    ]
+  },
+  {
+    "slug": "segu-bambara-empire",
+    "name": "Bambara Empire of Segu",
+    "name_fi": "Segun bambara-valtakunta",
+    "native_name": "Segu / Bamanan Empire",
+    "alternate_names": [
+      "Segu",
+      "Bambara Empire",
+      "Bamana Empire"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "mli",
+    "historical_period": "Middle Niger River State",
+    "year_start": 1712,
+    "year_end": 1861,
+    "period_label": "1712 CE – 1861 CE",
+    "period_label_fi": "1712 jaa. – 1861 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bamana_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bambara-valtakunta",
+    "wikidata_id": "Q804743",
+    "summary_en": "Powerful militaristic West African state founded by Bitòn Coulibaly along the Niger River in Mali, maintaining centralized tonjon slave-soldier armies until conquered by El Hadj Umar Tall.",
+    "summary_fi": "Bitòn Coulibalyn Niger-joen varrelle Maliin perustama sotilaallinen bambaravaltio, joka hallitsi laajoja alueita ammattiarmeijansa avulla ennen toucouleur-valloitusta.",
+    "capital": "Ségou (Segu-Koro)",
+    "feature_name_matches": [
+      "Segu"
+    ]
+  },
+  {
+    "slug": "kaarta-kingdom",
+    "name": "Kaarta Kingdom",
+    "name_fi": "Kaartan bambara-kuningaskunta",
+    "native_name": "Kaarta / Bamanan Realm",
+    "alternate_names": [
+      "Kaarta",
+      "Ka'arta"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "mli",
+    "historical_period": "Western Malian Bambara Monarchy",
+    "year_start": 1753,
+    "year_end": 1854,
+    "period_label": "1753 CE – 1854 CE",
+    "period_label_fi": "1753 jaa. – 1854 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kaarta",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kaarta",
+    "wikidata_id": "Q263445",
+    "summary_en": "Rival Bambara kingdom founded in western Mali by the Massassi dynasty, fighting continuous wars with Segu and Khasso before its fall to Umar Tall's Toucouleur jihad in 1854.",
+    "summary_fi": "Massassi-dynastian Länsi-Maliin perustama toinen bambaravaltio, joka kilpaili Segun kanssa ennen joutumistaan Umar Tallin jihadistien valtaan vuonna 1854.",
+    "capital": "Nioro du Sahel",
+    "feature_name_matches": [
+      "Kaarta"
+    ]
+  },
+  {
+    "slug": "kali-khasso-kingdom",
+    "name": "Kali (Khasso Kingdom)",
+    "name_fi": "Khasson kuningaskunta (Kali)",
+    "native_name": "Khasso / Xaaso",
+    "alternate_names": [
+      "Kali",
+      "Khasso",
+      "Medine Realm"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "mli",
+    "historical_period": "Upper Senegal River Monarchy",
+    "year_start": 1681,
+    "year_end": 1880,
+    "period_label": "1681 CE – 1880 CE",
+    "period_label_fi": "1681 jaa. – 1880 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Khasso",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Khasso",
+    "wikidata_id": "Q1435281",
+    "summary_en": "West African Fula and Malinke kingdom situated along the Senegal River around modern Kayes, known for the strategic fort of Médine and resistance to the Toucouleur Empire.",
+    "summary_fi": "Senegal-joen yläjuoksulle nykyisen Kayesin seudulle syntynyt fulbejen ja malinkoiden kuningaskunta, joka tunnetaan Médinen linnoituksesta.",
+    "capital": "Médine, Kayes",
+    "feature_name_matches": [
+      "Kali"
+    ]
+  },
+  {
+    "slug": "dendi-kingdom",
+    "name": "Dendi Kingdom (Songhai Remnant)",
+    "name_fi": "Dendin kuningaskunta",
+    "native_name": "Dendi / Songhai Realm",
+    "alternate_names": [
+      "Dendi Kingdom",
+      "Dendi",
+      "Songhai of Dendi"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "songhai",
+    "historical_period": "Post-Tondibi Songhai State",
+    "year_start": 1591,
+    "year_end": 1901,
+    "period_label": "1591 CE – 1901 CE",
+    "period_label_fi": "1591 jaa. – 1901 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Dendi_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Dendi",
+    "wikidata_id": "Q5256666",
+    "summary_en": "Successor state of the Songhai Empire established along the Niger River in modern Niger and Benin after the Moroccan conquest at Tondibi, preserving Songhai imperial traditions.",
+    "summary_fi": "Songhain suurvallan seuraajavaltio Niger-joen varrella Tondibin taistelun (1591) jälkeen, joka säilytti songhai-kulttuurin ja hovintekijöiden perinteet.",
+    "capital": "Lulami",
+    "feature_name_matches": [
+      "Dendi Kingdom"
+    ]
+  },
+  {
+    "slug": "arma-people-timbuktu",
+    "name": "Arma Pashalik of Timbuktu",
+    "name_fi": "Timbuktun arma-paššakunta",
+    "native_name": "الأرما / Arma / Pashalik of Sudan",
+    "alternate_names": [
+      "Arma",
+      "Arma Pashalik",
+      "Moroccan Pashalik of Timbuktu"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "mli",
+    "historical_period": "Moroccan-Andalusian Military Caste",
+    "year_start": 1591,
+    "year_end": 1833,
+    "period_label": "1591 CE – 1833 CE",
+    "period_label_fi": "1591 jaa. – 1833 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Arma_people",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Armat",
+    "wikidata_id": "Q2861699",
+    "summary_en": "Moroccan and Andalusian arquebusier military elite that conquered Timbuktu and Gao under Judar Pasha in 1591, intermarrying with Songhai nobility to form an aristocratic ruling caste.",
+    "summary_fi": "Judar Pashan johdolla Timbuktun ja Gaon vuonna 1591 valloittaneet marokkolaiset ja andalusialaiset muskettisoturit, joista muodostui Nigerin mutkan aatelishallitsijaluokka.",
+    "capital": "Timbuktu, Gao",
+    "feature_name_matches": [
+      "Arma"
+    ]
+  },
+  {
+    "slug": "imamate-of-futa-jallon",
+    "name": "Imamate of Futa Jallon",
+    "name_fi": "Fouta Djallonin imamaatti",
+    "native_name": "Fuuta Jaloo / Almamiya",
+    "alternate_names": [
+      "Futa Jalon",
+      "Fouta Djallon",
+      "Imamate of Futa Jallon"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "gin",
+    "historical_period": "Fulani Theocratic Federation",
+    "year_start": 1725,
+    "year_end": 1896,
+    "period_label": "1725 CE – 1896 CE",
+    "period_label_fi": "1725 jaa. – 1896 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Imamate_of_Futa_Jallon",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Fouta_Djallonin_imamaatti",
+    "wikidata_id": "Q1478335",
+    "summary_en": "Fulani Muslim theocratic state in the Guinea highlands founded following Karamokho Alfa's jihad, governed alternately by two ruling houses (Alfaya and Soriya) until French colonization.",
+    "summary_fi": "Guinean ylängön teokraattinen fulbevaltio, jonka Karamokho Alfa perusti ja jota hallitsivat vuorotellen Alfaya- ja Soriya-suvut aina ranskalaisten valloitukseen saakka.",
+    "capital": "Timbo",
+    "feature_name_matches": [
+      "Futa Jalon"
+    ]
+  },
+  {
+    "slug": "mande-peoples",
+    "name": "Mande Cultural Sphere",
+    "name_fi": "Mande-kansat",
+    "native_name": "Mandinka / Mandé",
+    "alternate_names": [
+      "Mandes",
+      "Mande peoples",
+      "Mandinka"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "mali",
+    "historical_period": "Sudanic Civilizational Foundation",
+    "year_start": 800,
+    "year_end": 1600,
+    "period_label": "800 CE – 1600 CE",
+    "period_label_fi": "800 jaa. – 1600 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Mand%C3%A9_peoples",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Mandet",
+    "wikidata_id": "Q853406",
+    "summary_en": "Foundational ethnolinguistic civilization of West Africa responsible for the Ghana, Mali, and Kaabu empires, renowned for oral epics preserved by griots (jeliw) and blacksmith castes.",
+    "summary_fi": "Länsi-Afrikan suuri kieliryhmä ja korkeakulttuuripiiri, joka loi Ghanan, Malin ja Kaabun valtakunnat ja tunnetaan jeli-grioottien suullisesta runolaulannasta.",
+    "capital": "Niani / Kangaba",
+    "feature_name_matches": [
+      "Mandes"
+    ]
+  },
+  {
+    "slug": "west-african-forest-states",
+    "name": "West African Forest & Guinean States",
+    "name_fi": "Länsi-Afrikan sademetsävaltiot",
+    "native_name": "Guinean Interior Kingdoms",
+    "alternate_names": [
+      "Africa",
+      "Guinean Forest Kingdoms"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "west-africa",
+    "historical_period": "Pre-Colonial Forest Kingdoms",
+    "year_start": 1400,
+    "year_end": 1900,
+    "period_label": "1400 CE – 1900 CE",
+    "period_label_fi": "1400 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/History_of_West_Africa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/L%C3%A4nsi-Afrikan_historia",
+    "wikidata_id": "Q15180",
+    "summary_en": "Flourishing indigenous chiefdoms and kingdoms across the Upper Guinean forest belt of modern Sierra Leone, Liberia, and Ivory Coast, sustaining kola nut cultivation and ironworking.",
+    "summary_fi": "Ylä-Guinean sademetsävyöhykkeen itsenäiset päällikkökunnat ja kaupunkivaltiot nykyisen Sierra Leonen, Liberian ja Norsunluurannikon alueella.",
+    "capital": "Kumasi / Musadu",
+    "feature_name_matches": [
+      "Africa"
+    ]
+  },
+  {
+    "slug": "borgu-kingdoms",
+    "name": "Borgu Kingdoms & Confederation",
+    "name_fi": "Borgun kuningaskunnat",
+    "native_name": "Borgu / Baatonu Realm",
+    "alternate_names": [
+      "Borgu States",
+      "Borgu",
+      "Bariba Kingdom"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "nga",
+    "historical_period": "Bariba Knightly Confederation",
+    "year_start": 1400,
+    "year_end": 1898,
+    "period_label": "1400 CE – 1898 CE",
+    "period_label_fi": "1400 jaa. – 1898 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Borgu",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Borgu",
+    "wikidata_id": "Q893393",
+    "summary_en": "Confederation of Bariba kingdoms situated across modern northern Benin and western Nigeria (Nikki, Bussa, Illo), renowned for equestrian warrior nobility that repelled Songhai and Fulani invasions.",
+    "summary_fi": "Bariba-kansan hevosritarien kuningaskunnat (kuten Nikki ja Bussa) nykyisen Beninin ja Nigerian rajalla, jotka puolustautuivat menestyksekkäästi sekä Songhaita että Sokotoa vastaan.",
+    "capital": "Nikki, Bussa",
+    "feature_name_matches": [
+      "Borgu States"
+    ]
+  },
+  {
+    "slug": "ibadan-empire",
+    "name": "Ibadan Empire",
+    "name_fi": "Ibadanin valtakunta",
+    "native_name": "Ìbàdàn / Yoruba Military State",
+    "alternate_names": [
+      "Ibadan",
+      "Ibadan Empire"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "nga",
+    "historical_period": "19th Century Yoruba Military State",
+    "year_start": 1829,
+    "year_end": 1893,
+    "period_label": "1829 CE – 1893 CE",
+    "period_label_fi": "1829 jaa. – 1893 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ibadan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Ibadan",
+    "wikidata_id": "Q183298",
+    "summary_en": "Formidable Yoruba military republic established as a war camp after the collapse of the Oyo Empire, growing into the largest indigenous city in sub-Saharan Africa during the Kiriji War.",
+    "summary_fi": "Oyo-imperiumin hajoamisen jälkeen sotilasleiristä kasvanut mahtava jorubavaltio, josta muodostui Saharan eteläpuolisen Afrikan suurin perinteinen kaupunki.",
+    "capital": "Ibadan (Mapo)",
+    "feature_name_matches": [
+      "Ibadan"
+    ]
+  },
+  {
+    "slug": "aro-confederacy",
+    "name": "Aro Confederacy (Ato)",
+    "name_fi": "Aro-liittovaltio (Ato)",
+    "native_name": "Arochukwu / Oha Aro",
+    "alternate_names": [
+      "Ato trading confederacy",
+      "Aro Confederacy",
+      "Aro"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "nga",
+    "historical_period": "Igbo Theocratic Trading Network",
+    "year_start": 1690,
+    "year_end": 1902,
+    "period_label": "1690 CE – 1902 CE",
+    "period_label_fi": "1690 jaa. – 1902 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Aro_Confederacy",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Igbot",
+    "wikidata_id": "Q3511874",
+    "summary_en": "Powerful Igbo theocratic and commercial confederacy centered around the Ibini Ukpabi oracle at Arochukwu, dominating inland trade networks across southeastern Nigeria.",
+    "summary_fi": "Igbokansan teokraattinen kauppaliitto Arochukwun oraakkelin ympärillä, joka hallitsi Kaakkois-Nigerian sisämaakauppaa aina brittien vuoden 1902 sotaan saakka.",
+    "capital": "Arochukwu",
+    "feature_name_matches": [
+      "Ato trading confederacy"
+    ]
+  },
+  {
+    "slug": "kingdom-of-calabar",
+    "name": "Kingdom of Old Calabar (Efik)",
+    "name_fi": "Calabarin kuningaskunta (Efik)",
+    "native_name": "Obong of Calabar / Efik Eburutu",
+    "alternate_names": [
+      "Calabar",
+      "Old Calabar",
+      "Efik Kingdom"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "nga",
+    "historical_period": "Cross River Maritime City-State",
+    "year_start": 1600,
+    "year_end": 1900,
+    "period_label": "1600 CE – 1900 CE",
+    "period_label_fi": "1600 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Old_Calabar",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Calabar",
+    "wikidata_id": "Q844415",
+    "summary_en": "Prominent Efik coastal kingdom at the mouth of the Cross River, governed by the Obong and the influential Ekpe leopard secret society, trading palm oil across the Atlantic.",
+    "summary_fi": "Efik-kansan vauras rannikkokuningaskunta Cross-joen suulla, jota johti obong ja salaperäinen Ekpe-leopardiseura ja joka kävi laajaa palmuöljykauppaa.",
+    "capital": "Calabar (Creek Town / Duke Town)",
+    "feature_name_matches": [
+      "Calabar"
+    ]
+  },
+  {
+    "slug": "kingdom-of-opobo",
+    "name": "Kingdom of Opobo",
+    "name_fi": "Opobon kuningaskunta",
+    "native_name": "Opobo / King Jaja Realm",
+    "alternate_names": [
+      "Opobo",
+      "Opobo City-State"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "nga",
+    "historical_period": "Niger Delta Merchant Kingdom",
+    "year_start": 1870,
+    "year_end": 1901,
+    "period_label": "1870 CE – 1901 CE",
+    "period_label_fi": "1870 jaa. – 1901 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Opobo",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Jaja_Opobolainen",
+    "wikidata_id": "Q6409210",
+    "summary_en": "Sovereign merchant kingdom in the eastern Niger Delta founded by former enslaved Igbo merchant prince King Jaja, controlling the palm oil monopoly until his exile by the British.",
+    "summary_fi": "Itäisen Niger-suiston kauppakuningaskunta, jonka entinen orjakauppias kuningas Jaja perusti ja joka hallitsi palmuöljykauppaa ennen brittien puuttumista peliin.",
+    "capital": "Opobo Town",
+    "feature_name_matches": [
+      "Opobo"
+    ]
+  },
+  {
+    "slug": "lagos-colony",
+    "name": "Lagos Colony & Kingdom of Eko",
+    "name_fi": "Lagosin siirtokunta ja kuningaskunta",
+    "native_name": "Èkó / Colony of Lagos",
+    "alternate_names": [
+      "Lagos",
+      "Lagos Colony",
+      "Kingdom of Eko"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "nga",
+    "historical_period": "Atlantic Port City-State to British Crown Colony",
+    "year_start": 1600,
+    "year_end": 1906,
+    "period_label": "1600 CE – 1906 CE",
+    "period_label_fi": "1600 jaa. – 1906 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Lagos_Colony",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Lagos",
+    "wikidata_id": "Q6472594",
+    "summary_en": "Coastal Yoruba island kingdom ruled by the Oba of Lagos, annexed by Great Britain in 1861 as a naval base to suppress the slave trade, rapidly growing into Nigeria's primary financial metropolis.",
+    "summary_fi": "Jorubien saarikuningaskunta ja satama, jonka Britannia liitti imperiumiinsa vuonna 1861 orjakaupan kieltämiseksi ja josta kehittyi Nigerian suurin talousmetropoli.",
+    "capital": "Lagos (Eko)",
+    "feature_name_matches": [
+      "Lagos"
+    ]
+  },
+  {
+    "slug": "cotonou-protectorate",
+    "name": "Cotonou Settlement & Enclave",
+    "name_fi": "Cotonoun enklaavi",
+    "native_name": "Kútɔ̀nú / Cotonou",
+    "alternate_names": [
+      "Cotonou",
+      "Port of Cotonou"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "ben",
+    "historical_period": "Dahomean Coastal Port to French Enclave",
+    "year_start": 1868,
+    "year_end": 1960,
+    "period_label": "1868 CE – 1960 CE",
+    "period_label_fi": "1868 jaa. – 1960 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Cotonou",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Cotonou",
+    "wikidata_id": "Q43711",
+    "summary_en": "Deepwater lagoon port ceded by King Glele of Dahomey to France in 1868, evolving from a small Fon fishing village into the commercial powerhouse and de facto capital of modern Benin.",
+    "summary_fi": "Dahomeyn kuningas Glélén Ranskalle vuonna 1868 luovuttama rannikkosatama, josta kasvoi Beninin tärkein talouskaupunki ja satamakeskus.",
+    "capital": "Cotonou",
+    "feature_name_matches": [
+      "Cotonou"
+    ]
+  },
+  {
+    "slug": "accra-settlement",
+    "name": "Accra Ga Settlement & Forts",
+    "name_fi": "Accran ga-kaupunkivaltio",
+    "native_name": "Nkran / Accra Settlements",
+    "alternate_names": [
+      "Accra",
+      "Ga State of Accra"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "gha",
+    "historical_period": "Gold Coast Coastal City-State",
+    "year_start": 1500,
+    "year_end": 1957,
+    "period_label": "1500 CE – 1957 CE",
+    "period_label_fi": "1500 jaa. – 1957 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Accra",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Accra",
+    "wikidata_id": "Q3761",
+    "summary_en": "Coastal Ga urban federation that hosted Dutch, British, and Danish trading forts, becoming the capital of the British Gold Coast in 1877 and the capital of sovereign Ghana in 1957.",
+    "summary_fi": "Ga-kansan rannikkokaupunki Kultarannikolla, jonka rannoille hollantilaiset, tanskalaiset ja britit rakensivat linnoituksensa ja josta tuli Ghanan pääkaupunki 1877.",
+    "capital": "Accra",
+    "feature_name_matches": [
+      "Accra"
+    ]
+  },
+  {
+    "slug": "german-togoland",
+    "name": "German Togoland",
+    "name_fi": "Saksan Togomaa",
+    "native_name": "Togoland / Deutsche Kolonie Togo",
+    "alternate_names": [
+      "Togoland",
+      "German Togoland"
+    ],
+    "culture_group": "West Africa",
+    "lineage_id": "tgo",
+    "historical_period": "Imperial German Model Colony",
+    "year_start": 1884,
+    "year_end": 1914,
+    "period_label": "1884 CE – 1914 CE",
+    "period_label_fi": "1884 jaa. – 1914 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Togoland",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Togomaa",
+    "wikidata_id": "Q160564",
+    "summary_en": "German protectorate established by Gustav Nachtigal along the Bight of Benin, celebrated as Germany's fiscally self-supporting 'model colony' before its capture by Allied forces in 1914.",
+    "summary_fi": "Saksan keisarikunnan mallisiirtomaaksi kutsuttu protektoraatti Guineanlahdella, jonka ympärysvaltojen joukot valtasivat heti ensimmäisen maailmansodan puhjettua 1914.",
+    "capital": "Lomé, Bagida, Zebe",
+    "feature_name_matches": [
+      "Togoland"
+    ]
+  },
+  {
+    "slug": "kingdom-of-bagirmi",
+    "name": "Kingdom of Bagirmi",
+    "name_fi": "Bagirmin kuningaskunta",
+    "native_name": "Mbang of Bagirmi / Baguirmi",
+    "alternate_names": [
+      "Bagirmi",
+      "Baguirmi",
+      "Kingdom of Baguirmi"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "tcd",
+    "historical_period": "Chari River Islamic Sultanate",
+    "year_start": 1522,
+    "year_end": 1897,
+    "period_label": "1522 CE – 1897 CE",
+    "period_label_fi": "1522 jaa. – 1897 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Bagirmi",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Bagirmi",
+    "wikidata_id": "Q800165",
+    "summary_en": "Sahelian Islamic monarchy southeast of Lake Chad along the Chari River ruled by the Mbang, which contested regional primacy with Kanem-Bornu and the Wadai Empire.",
+    "summary_fi": "Tšadjärven kaakkoispuolinen sahelilainen sulttaanikunta Chari-joen varrella, jota hallitsi mbang-kuningas ja joka kilpaili Kanem-Bornun ja Wadain kanssa.",
+    "capital": "Massenya",
+    "feature_name_matches": [
+      "Bagirmi"
+    ]
+  },
+  {
+    "slug": "rabih-empire",
+    "name": "Empire of Rabih az-Zubayr",
+    "name_fi": "Rabih az-Zubayrin valtakunta",
+    "native_name": "Realm of Rabih az-Zubayr",
+    "alternate_names": [
+      "Rabih az-Zubayr",
+      "Rabah Empire",
+      "Rabih Empire"
+    ],
+    "culture_group": "Central Africa",
+    "lineage_id": "tcd",
+    "historical_period": "Lake Chad Conquest & Warlord State",
+    "year_start": 1879,
+    "year_end": 1900,
+    "period_label": "1879 CE – 1900 CE",
+    "period_label_fi": "1879 jaa. – 1900 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Rabih_az-Zubayr",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Rabih_al-Zubayr",
+    "wikidata_id": "Q382498",
+    "summary_en": "Militarized empire carved out across Central Africa and Lake Chad by Sudanese warlord Rabih az-Zubayr, who conquered Bornu in 1893 before being killed by French forces at the Battle of Kousséri.",
+    "summary_fi": "Sudanilaisen sotapäällikön Rabih az-Zubayrin Keski-Afrikkaan ja Tšadille luoma sotilasvaltio, joka valloitti Bornun vuonna 1893 ennen kaatumistaan Koussérin taistelussa 1900.",
+    "capital": "Dikwa",
+    "feature_name_matches": [
+      "Rabih az-Zubayr"
+    ]
+  },
+  {
+    "slug": "anglo-egyptian-sudan",
+    "name": "Anglo-Egyptian Sudan",
+    "name_fi": "Brittiläis-egyptiläinen Sudan",
+    "native_name": "السودان الإنجليزي المصري / Anglo-Egyptian Sudan",
+    "alternate_names": [
+      "Anglo-Egyptian Sudan",
+      "Condominium of Sudan"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "sdn",
+    "historical_period": "Anglo-Egyptian Condominium",
+    "year_start": 1899,
+    "year_end": 1956,
+    "period_label": "1899 CE – 1956 CE",
+    "period_label_fi": "1899 jaa. – 1956 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Brittil%C3%A4is-egyptil%C3%A4inen_Sudan",
+    "wikidata_id": "Q269922",
+    "summary_en": "Condominium territory along the Nile Basin jointly administered by Great Britain and Egypt following the reconquest of the Mahdist State by Herbert Kitchener, precursor to modern Sudan.",
+    "summary_fi": "Britannian ja Egyptin yhteishallintoalue Niilin laaksossa mahdistivaltion kukistumisen jälkeen, josta muodostui nykyisen Sudanin perusta.",
+    "capital": "Khartoum",
+    "feature_name_matches": [
+      "Anglo-Egyptian Sudan"
+    ]
+  }
+]

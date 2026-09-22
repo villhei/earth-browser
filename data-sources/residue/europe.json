@@ -1,0 +1,1386 @@
+{
+  "continent": "Europe",
+  "slug": "europe",
+  "batchFileName": "residue-europe.json",
+  "entityCount": 125,
+  "featureCount": 268,
+  "entities": [
+    {
+      "name": "Oldenburg",
+      "occurrences": 7,
+      "avg_lng": 9.1746,
+      "avg_lat": 53.4328,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "oldenburg"
+    },
+    {
+      "name": "Thuringia",
+      "occurrences": 7,
+      "avg_lng": 10.8,
+      "avg_lat": 51.4178,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "thuringia"
+    },
+    {
+      "name": "Anhalt",
+      "occurrences": 6,
+      "avg_lng": 11.2333,
+      "avg_lat": 51.6758,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "anhalt"
+    },
+    {
+      "name": "Brunswick",
+      "occurrences": 6,
+      "avg_lng": 9.8348,
+      "avg_lat": 51.6411,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "brunswick"
+    },
+    {
+      "name": "Corsica",
+      "occurrences": 6,
+      "avg_lng": 8.9891,
+      "avg_lat": 42.1709,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200",
+        "world-1279",
+        "world-1300",
+        "world-1400"
+      ],
+      "suggested_slug": "corsica"
+    },
+    {
+      "name": "Danes",
+      "occurrences": 6,
+      "avg_lng": 11.3168,
+      "avg_lat": 55.8414,
+      "eras": [
+        "world-600",
+        "world-700",
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "danes"
+    },
+    {
+      "name": "Fivizzano",
+      "occurrences": 6,
+      "avg_lng": 10.1039,
+      "avg_lat": 44.302,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "fivizzano"
+    },
+    {
+      "name": "Lucca",
+      "occurrences": 6,
+      "avg_lng": 10.5262,
+      "avg_lat": 43.8631,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "lucca"
+    },
+    {
+      "name": "Massa",
+      "occurrences": 6,
+      "avg_lng": 10.2403,
+      "avg_lat": 43.8699,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "massa"
+    },
+    {
+      "name": "Modena",
+      "occurrences": 6,
+      "avg_lng": 10.7308,
+      "avg_lat": 44.4731,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "modena"
+    },
+    {
+      "name": "Parma",
+      "occurrences": 6,
+      "avg_lng": 9.7148,
+      "avg_lat": 44.8467,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "parma"
+    },
+    {
+      "name": "Pontremoli",
+      "occurrences": 6,
+      "avg_lng": 9.7552,
+      "avg_lat": 44.4965,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "pontremoli"
+    },
+    {
+      "name": "Yugoslavia",
+      "occurrences": 5,
+      "avg_lng": 18.9304,
+      "avg_lat": 43.8692,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938",
+        "world-1945",
+        "world-1960"
+      ],
+      "suggested_slug": "yugoslavia"
+    },
+    {
+      "name": "Bremen",
+      "occurrences": 4,
+      "avg_lng": 8.6279,
+      "avg_lat": 53.1214,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "bremen"
+    },
+    {
+      "name": "Bulgars",
+      "occurrences": 4,
+      "avg_lng": 30.9042,
+      "avg_lat": 44.8941,
+      "eras": [
+        "world-600",
+        "world-700",
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "bulgars"
+    },
+    {
+      "name": "Finnmark",
+      "occurrences": 4,
+      "avg_lng": 26.3299,
+      "avg_lat": 69.2514,
+      "eras": [
+        "world-1600",
+        "world-1650",
+        "world-1700",
+        "world-1800"
+      ],
+      "suggested_slug": "finnmark"
+    },
+    {
+      "name": "Hamburg",
+      "occurrences": 4,
+      "avg_lng": 9.8758,
+      "avg_lat": 53.5527,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "hamburg"
+    },
+    {
+      "name": "Hohenzollern",
+      "occurrences": 4,
+      "avg_lng": 8.5761,
+      "avg_lat": 48.1266,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "hohenzollern"
+    },
+    {
+      "name": "Lübeck",
+      "occurrences": 4,
+      "avg_lng": 11.1696,
+      "avg_lat": 53.7247,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "lubeck"
+    },
+    {
+      "name": "Magyars",
+      "occurrences": 4,
+      "avg_lng": 29.7923,
+      "avg_lat": 47.5224,
+      "eras": [
+        "world-1000",
+        "world-700",
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "magyars"
+    },
+    {
+      "name": "Swedes",
+      "occurrences": 4,
+      "avg_lng": 15.9181,
+      "avg_lat": 59.6123,
+      "eras": [
+        "world-400",
+        "world-500",
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "swedes"
+    },
+    {
+      "name": "Burgandy",
+      "occurrences": 3,
+      "avg_lng": 6.8082,
+      "avg_lat": 45.9423,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200"
+      ],
+      "suggested_slug": "burgandy"
+    },
+    {
+      "name": "Byelarus",
+      "occurrences": 3,
+      "avg_lng": 28.0165,
+      "avg_lat": 53.7147,
+      "eras": [
+        "world-1994",
+        "world-2000",
+        "world-2010"
+      ],
+      "suggested_slug": "byelarus"
+    },
+    {
+      "name": "Castilla",
+      "occurrences": 3,
+      "avg_lng": -3.6678,
+      "avg_lat": 41.8782,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200"
+      ],
+      "suggested_slug": "castilla"
+    },
+    {
+      "name": "Cuxhaven",
+      "occurrences": 3,
+      "avg_lng": 8.5517,
+      "avg_lat": 53.7771,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "cuxhaven"
+    },
+    {
+      "name": "Duchy of Benevento",
+      "occurrences": 3,
+      "avg_lng": 14.3226,
+      "avg_lat": 38.6743,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200"
+      ],
+      "suggested_slug": "duchy-of-benevento"
+    },
+    {
+      "name": "English territory",
+      "occurrences": 3,
+      "avg_lng": -2.2536,
+      "avg_lat": 52.868,
+      "eras": [
+        "world-1279",
+        "world-1300",
+        "world-1400"
+      ],
+      "suggested_slug": "english-territory"
+    },
+    {
+      "name": "Geneva",
+      "occurrences": 3,
+      "avg_lng": 6.0748,
+      "avg_lat": 46.1911,
+      "eras": [
+        "world-1700",
+        "world-1715",
+        "world-1783"
+      ],
+      "suggested_slug": "geneva"
+    },
+    {
+      "name": "Granada",
+      "occurrences": 3,
+      "avg_lng": -4.562,
+      "avg_lat": 36.7667,
+      "eras": [
+        "world-1279",
+        "world-1300",
+        "world-1400"
+      ],
+      "suggested_slug": "granada"
+    },
+    {
+      "name": "Holstein",
+      "occurrences": 3,
+      "avg_lng": 9.6948,
+      "avg_lat": 53.9474,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "holstein"
+    },
+    {
+      "name": "Lippe-Detmold",
+      "occurrences": 3,
+      "avg_lng": 8.747,
+      "avg_lat": 51.9033,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "lippe-detmold"
+    },
+    {
+      "name": "Mecklenburg-Schwerin",
+      "occurrences": 3,
+      "avg_lng": 12.2564,
+      "avg_lat": 53.5013,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mecklenburg-schwerin"
+    },
+    {
+      "name": "Mecklenburg-Strelitz",
+      "occurrences": 3,
+      "avg_lng": 10.6903,
+      "avg_lat": 52.914,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "mecklenburg-strelitz"
+    },
+    {
+      "name": "Schaumburg-Lippe",
+      "occurrences": 3,
+      "avg_lng": 8.8052,
+      "avg_lat": 52.2872,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "schaumburg-lippe"
+    },
+    {
+      "name": "Venetia",
+      "occurrences": 3,
+      "avg_lng": 12.3649,
+      "avg_lat": 45.8235,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "venetia"
+    },
+    {
+      "name": "Waldeck",
+      "occurrences": 3,
+      "avg_lng": 8.7243,
+      "avg_lat": 51.1697,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "waldeck"
+    },
+    {
+      "name": "Arran",
+      "occurrences": 2,
+      "avg_lng": 47.4353,
+      "avg_lat": 40.2561,
+      "eras": [
+        "world-1000",
+        "world-1100"
+      ],
+      "suggested_slug": "arran"
+    },
+    {
+      "name": "Broërec",
+      "occurrences": 2,
+      "avg_lng": -3.5233,
+      "avg_lat": 48.1529,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "broerec"
+    },
+    {
+      "name": "Cantia",
+      "occurrences": 2,
+      "avg_lng": -0.3768,
+      "avg_lat": 52.1188,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "cantia"
+    },
+    {
+      "name": "Chuds",
+      "occurrences": 2,
+      "avg_lng": 27.2822,
+      "avg_lat": 59.1455,
+      "eras": [
+        "world-1000",
+        "world-900"
+      ],
+      "suggested_slug": "chuds"
+    },
+    {
+      "name": "Dumnonia",
+      "occurrences": 2,
+      "avg_lng": -4.2216,
+      "avg_lat": 50.5823,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "dumnonia"
+    },
+    {
+      "name": "Emirate of Córdoba",
+      "occurrences": 2,
+      "avg_lng": -4.7722,
+      "avg_lat": 39.5356,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "emirate-of-cordoba"
+    },
+    {
+      "name": "Essex",
+      "occurrences": 2,
+      "avg_lng": 0.007,
+      "avg_lat": 51.6866,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "essex"
+    },
+    {
+      "name": "Franche-Comté",
+      "occurrences": 2,
+      "avg_lng": 6.1592,
+      "avg_lat": 47.0981,
+      "eras": [
+        "world-1650",
+        "world-1700"
+      ],
+      "suggested_slug": "franche-comte"
+    },
+    {
+      "name": "Guta",
+      "occurrences": 2,
+      "avg_lng": 18.4581,
+      "avg_lat": 57.4289,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "guta"
+    },
+    {
+      "name": "Heruli",
+      "occurrences": 2,
+      "avg_lng": 14.1555,
+      "avg_lat": 57.6161,
+      "eras": [
+        "world-200",
+        "world-300"
+      ],
+      "suggested_slug": "heruli"
+    },
+    {
+      "name": "Irlanda",
+      "occurrences": 2,
+      "avg_lng": -8.1458,
+      "avg_lat": 53.4067,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "irlanda"
+    },
+    {
+      "name": "Karelians",
+      "occurrences": 2,
+      "avg_lng": 30.9019,
+      "avg_lat": 63.3333,
+      "eras": [
+        "world-1000",
+        "world-800"
+      ],
+      "suggested_slug": "karelians"
+    },
+    {
+      "name": "Kent",
+      "occurrences": 2,
+      "avg_lng": 0.6334,
+      "avg_lat": 51.0369,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "kent"
+    },
+    {
+      "name": "Kingdom of Georgia",
+      "occurrences": 2,
+      "avg_lng": 43.871,
+      "avg_lat": 42.1744,
+      "eras": [
+        "world-1000",
+        "world-1100"
+      ],
+      "suggested_slug": "kingdom-of-georgia"
+    },
+    {
+      "name": "Kyivan Rus",
+      "occurrences": 2,
+      "avg_lng": 33.1502,
+      "avg_lat": 55.0638,
+      "eras": [
+        "world-1000",
+        "world-900"
+      ],
+      "suggested_slug": "kyivan-rus"
+    },
+    {
+      "name": "Mercia",
+      "occurrences": 2,
+      "avg_lng": -0.6067,
+      "avg_lat": 52.1195,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "mercia"
+    },
+    {
+      "name": "Neustria",
+      "occurrences": 2,
+      "avg_lng": 0.1833,
+      "avg_lat": 48.8245,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "neustria"
+    },
+    {
+      "name": "Northmen",
+      "occurrences": 2,
+      "avg_lng": -4.0837,
+      "avg_lat": 63.8238,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "northmen"
+    },
+    {
+      "name": "Northumbria",
+      "occurrences": 2,
+      "avg_lng": -1.4846,
+      "avg_lat": 54.5713,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "northumbria"
+    },
+    {
+      "name": "Shirvan",
+      "occurrences": 2,
+      "avg_lng": 48.8201,
+      "avg_lat": 40.336,
+      "eras": [
+        "world-1000",
+        "world-1100"
+      ],
+      "suggested_slug": "shirvan"
+    },
+    {
+      "name": "Slavs",
+      "occurrences": 2,
+      "avg_lng": 14.6009,
+      "avg_lat": 46.4128,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "slavs"
+    },
+    {
+      "name": "Vasconia",
+      "occurrences": 2,
+      "avg_lng": -1.184,
+      "avg_lat": 43.8729,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "vasconia"
+    },
+    {
+      "name": "Wessex",
+      "occurrences": 2,
+      "avg_lng": -0.8454,
+      "avg_lat": 50.9543,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "wessex"
+    },
+    {
+      "name": "?",
+      "occurrences": 1,
+      "avg_lng": 27.5499,
+      "avg_lat": 43.172,
+      "eras": [
+        "world-bc200"
+      ],
+      "suggested_slug": ""
+    },
+    {
+      "name": "Akatziri",
+      "occurrences": 1,
+      "avg_lng": 32.7498,
+      "avg_lat": 47.1018,
+      "eras": [
+        "world-400"
+      ],
+      "suggested_slug": "akatziri"
+    },
+    {
+      "name": "Alamans",
+      "occurrences": 1,
+      "avg_lng": 8.8558,
+      "avg_lat": 48.7015,
+      "eras": [
+        "world-400"
+      ],
+      "suggested_slug": "alamans"
+    },
+    {
+      "name": "Angevin Empire",
+      "occurrences": 1,
+      "avg_lng": -1.3478,
+      "avg_lat": 52.7471,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "angevin-empire"
+    },
+    {
+      "name": "Artsakh",
+      "occurrences": 1,
+      "avg_lng": 46.5978,
+      "avg_lat": 39.8516,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "artsakh"
+    },
+    {
+      "name": "Balts",
+      "occurrences": 1,
+      "avg_lng": 24.7935,
+      "avg_lat": 56.6464,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "balts"
+    },
+    {
+      "name": "Basques",
+      "occurrences": 1,
+      "avg_lng": -2.8569,
+      "avg_lat": 42.7948,
+      "eras": [
+        "world-500"
+      ],
+      "suggested_slug": "basques"
+    },
+    {
+      "name": "Batavian Republic",
+      "occurrences": 1,
+      "avg_lng": 5.5792,
+      "avg_lat": 52.0983,
+      "eras": [
+        "world-1800"
+      ],
+      "suggested_slug": "batavian-republic"
+    },
+    {
+      "name": "Chelmia",
+      "occurrences": 1,
+      "avg_lng": 18.6605,
+      "avg_lat": 42.5236,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "chelmia"
+    },
+    {
+      "name": "Comté de Toulouse",
+      "occurrences": 1,
+      "avg_lng": 2.2699,
+      "avg_lat": 43.9447,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "comte-de-toulouse"
+    },
+    {
+      "name": "Crete",
+      "occurrences": 1,
+      "avg_lng": 24.3994,
+      "avg_lat": 35.3225,
+      "eras": [
+        "world-bc300"
+      ],
+      "suggested_slug": "crete"
+    },
+    {
+      "name": "Danube Bulgars",
+      "occurrences": 1,
+      "avg_lng": 27.0711,
+      "avg_lat": 46.0227,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "danube-bulgars"
+    },
+    {
+      "name": "Danzig",
+      "occurrences": 1,
+      "avg_lng": 18.8451,
+      "avg_lat": 54.1639,
+      "eras": [
+        "world-1930"
+      ],
+      "suggested_slug": "danzig"
+    },
+    {
+      "name": "Derbent",
+      "occurrences": 1,
+      "avg_lng": 48.2679,
+      "avg_lat": 42.0096,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "derbent"
+    },
+    {
+      "name": "Dodecanese Islands",
+      "occurrences": 1,
+      "avg_lng": 27.9213,
+      "avg_lat": 36.176,
+      "eras": [
+        "world-1930"
+      ],
+      "suggested_slug": "dodecanese-islands"
+    },
+    {
+      "name": "Duchy of Swabia",
+      "occurrences": 1,
+      "avg_lng": 8.5778,
+      "avg_lat": 47.6277,
+      "eras": [
+        "world-1000"
+      ],
+      "suggested_slug": "duchy-of-swabia"
+    },
+    {
+      "name": "Durdzuks",
+      "occurrences": 1,
+      "avg_lng": 46.7179,
+      "avg_lat": 42.5258,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "durdzuks"
+    },
+    {
+      "name": "East Francia",
+      "occurrences": 1,
+      "avg_lng": 9.4883,
+      "avg_lat": 49.8422,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "east-francia"
+    },
+    {
+      "name": "East Getaes",
+      "occurrences": 1,
+      "avg_lng": 15.5295,
+      "avg_lat": 57.3609,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "east-getaes"
+    },
+    {
+      "name": "Emirate of Tiflis",
+      "occurrences": 1,
+      "avg_lng": 45.4822,
+      "avg_lat": 41.3941,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "emirate-of-tiflis"
+    },
+    {
+      "name": "Ests",
+      "occurrences": 1,
+      "avg_lng": 25.0497,
+      "avg_lat": 57.7732,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "ests"
+    },
+    {
+      "name": "Finns",
+      "occurrences": 1,
+      "avg_lng": 25.7644,
+      "avg_lat": 62.6862,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "finns"
+    },
+    {
+      "name": "Geats",
+      "occurrences": 1,
+      "avg_lng": 12.7161,
+      "avg_lat": 57.8779,
+      "eras": [
+        "world-400"
+      ],
+      "suggested_slug": "geats"
+    },
+    {
+      "name": "Georgian Kingdom",
+      "occurrences": 1,
+      "avg_lng": 42.9843,
+      "avg_lat": 42.3646,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "georgian-kingdom"
+    },
+    {
+      "name": "Gepids",
+      "occurrences": 1,
+      "avg_lng": 25.5847,
+      "avg_lat": 50.4195,
+      "eras": [
+        "world-400"
+      ],
+      "suggested_slug": "gepids"
+    },
+    {
+      "name": "Goghtn",
+      "occurrences": 1,
+      "avg_lng": 45.4772,
+      "avg_lat": 39.2338,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "goghtn"
+    },
+    {
+      "name": "Helvetic Republic",
+      "occurrences": 1,
+      "avg_lng": 8.589,
+      "avg_lat": 46.8248,
+      "eras": [
+        "world-1800"
+      ],
+      "suggested_slug": "helvetic-republic"
+    },
+    {
+      "name": "Kakheti-Hereti",
+      "occurrences": 1,
+      "avg_lng": 46.5451,
+      "avg_lat": 41.4289,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "kakheti-hereti"
+    },
+    {
+      "name": "Karakalpaks",
+      "occurrences": 1,
+      "avg_lng": 40.6799,
+      "avg_lat": 54.2967,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "karakalpaks"
+    },
+    {
+      "name": "Khundzi",
+      "occurrences": 1,
+      "avg_lng": 47.3713,
+      "avg_lat": 42.3798,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "khundzi"
+    },
+    {
+      "name": "Kingdom of Kassander",
+      "occurrences": 1,
+      "avg_lng": 21.0222,
+      "avg_lat": 40.4268,
+      "eras": [
+        "world-bc300"
+      ],
+      "suggested_slug": "kingdom-of-kassander"
+    },
+    {
+      "name": "Kingdom of Lysimachus",
+      "occurrences": 1,
+      "avg_lng": 26.3276,
+      "avg_lat": 42.7677,
+      "eras": [
+        "world-bc300"
+      ],
+      "suggested_slug": "kingdom-of-lysimachus"
+    },
+    {
+      "name": "Kryvichs",
+      "occurrences": 1,
+      "avg_lng": 34.4737,
+      "avg_lat": 58.4617,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "kryvichs"
+    },
+    {
+      "name": "Kurs",
+      "occurrences": 1,
+      "avg_lng": 22.4146,
+      "avg_lat": 56.8692,
+      "eras": [
+        "world-1000"
+      ],
+      "suggested_slug": "kurs"
+    },
+    {
+      "name": "Lake Segozerskoye",
+      "occurrences": 1,
+      "avg_lng": 33.6248,
+      "avg_lat": 63.3289,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "lake-segozerskoye"
+    },
+    {
+      "name": "Lake Vygozero",
+      "occurrences": 1,
+      "avg_lng": 34.7795,
+      "avg_lat": 63.391,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "lake-vygozero"
+    },
+    {
+      "name": "Leks",
+      "occurrences": 1,
+      "avg_lng": 47.7185,
+      "avg_lat": 41.4264,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "leks"
+    },
+    {
+      "name": "Maskat",
+      "occurrences": 1,
+      "avg_lng": 48.5993,
+      "avg_lat": 41.2305,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "maskat"
+    },
+    {
+      "name": "Mordvinians",
+      "occurrences": 1,
+      "avg_lng": 52.0147,
+      "avg_lat": 53.0809,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "mordvinians"
+    },
+    {
+      "name": "Nassau",
+      "occurrences": 1,
+      "avg_lng": 7.9564,
+      "avg_lat": 50.4002,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "nassau"
+    },
+    {
+      "name": "Nemay",
+      "occurrences": 1,
+      "avg_lng": 25.2658,
+      "avg_lat": 53.2566,
+      "eras": [
+        "world-bc5000"
+      ],
+      "suggested_slug": "nemay"
+    },
+    {
+      "name": "Other Rus Principalities",
+      "occurrences": 1,
+      "avg_lng": 32.2375,
+      "avg_lat": 54.5804,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "other-rus-principalities"
+    },
+    {
+      "name": "Permians",
+      "occurrences": 1,
+      "avg_lng": 49.734,
+      "avg_lat": 62.6547,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "permians"
+    },
+    {
+      "name": "Polanes",
+      "occurrences": 1,
+      "avg_lng": 18.7479,
+      "avg_lat": 51.4875,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "polanes"
+    },
+    {
+      "name": "Polyanians",
+      "occurrences": 1,
+      "avg_lng": 29.9311,
+      "avg_lat": 49.324,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "polyanians"
+    },
+    {
+      "name": "Pomerania",
+      "occurrences": 1,
+      "avg_lng": 11.9345,
+      "avg_lat": 53.4594,
+      "eras": [
+        "world-1000"
+      ],
+      "suggested_slug": "pomerania"
+    },
+    {
+      "name": "Principality of Galicia-Volhynia",
+      "occurrences": 1,
+      "avg_lng": 25.2734,
+      "avg_lat": 49.3524,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "principality-of-galicia-volhynia"
+    },
+    {
+      "name": "Principality of Kyiv",
+      "occurrences": 1,
+      "avg_lng": 29.8082,
+      "avg_lat": 50.0332,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "principality-of-kyiv"
+    },
+    {
+      "name": "Principality of Polotsk",
+      "occurrences": 1,
+      "avg_lng": 28.0153,
+      "avg_lat": 54.949,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "principality-of-polotsk"
+    },
+    {
+      "name": "Proto-Slavs",
+      "occurrences": 1,
+      "avg_lng": 13.7895,
+      "avg_lat": 51.1589,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "proto-slavs"
+    },
+    {
+      "name": "Raška",
+      "occurrences": 1,
+      "avg_lng": 19.2076,
+      "avg_lat": 43.3562,
+      "eras": [
+        "world-1300"
+      ],
+      "suggested_slug": "raska"
+    },
+    {
+      "name": "Republic of Kraków",
+      "occurrences": 1,
+      "avg_lng": 19.4994,
+      "avg_lat": 50.0193,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "republic-of-krakow"
+    },
+    {
+      "name": "Rus' Khaganate",
+      "occurrences": 1,
+      "avg_lng": 30.737,
+      "avg_lat": 58.7417,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "rus-khaganate"
+    },
+    {
+      "name": "Saar Protectorate",
+      "occurrences": 1,
+      "avg_lng": 6.8996,
+      "avg_lat": 49.3736,
+      "eras": [
+        "world-1945"
+      ],
+      "suggested_slug": "saar-protectorate"
+    },
+    {
+      "name": "Sabirs",
+      "occurrences": 1,
+      "avg_lng": 40.5888,
+      "avg_lat": 45.4532,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "sabirs"
+    },
+    {
+      "name": "Schleswig",
+      "occurrences": 1,
+      "avg_lng": 9.3989,
+      "avg_lat": 54.5413,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "schleswig"
+    },
+    {
+      "name": "Severians",
+      "occurrences": 1,
+      "avg_lng": 31.4143,
+      "avg_lat": 50.3282,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "severians"
+    },
+    {
+      "name": "Skirii",
+      "occurrences": 1,
+      "avg_lng": 30.2937,
+      "avg_lat": 48.157,
+      "eras": [
+        "world-400"
+      ],
+      "suggested_slug": "skirii"
+    },
+    {
+      "name": "Swabia",
+      "occurrences": 1,
+      "avg_lng": 10.6495,
+      "avg_lat": 49.4747,
+      "eras": [
+        "world-1800"
+      ],
+      "suggested_slug": "swabia"
+    },
+    {
+      "name": "Syunik",
+      "occurrences": 1,
+      "avg_lng": 45.3468,
+      "avg_lat": 39.7979,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "syunik"
+    },
+    {
+      "name": "Tashir",
+      "occurrences": 1,
+      "avg_lng": 45.6861,
+      "avg_lat": 40.6886,
+      "eras": [
+        "world-1100"
+      ],
+      "suggested_slug": "tashir"
+    },
+    {
+      "name": "Turingians",
+      "occurrences": 1,
+      "avg_lng": 9.4117,
+      "avg_lat": 50.2367,
+      "eras": [
+        "world-500"
+      ],
+      "suggested_slug": "turingians"
+    },
+    {
+      "name": "Veps",
+      "occurrences": 1,
+      "avg_lng": 39.5992,
+      "avg_lat": 61.1247,
+      "eras": [
+        "world-800"
+      ],
+      "suggested_slug": "veps"
+    },
+    {
+      "name": "West Francia",
+      "occurrences": 1,
+      "avg_lng": 1.4005,
+      "avg_lat": 46.3554,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "west-francia"
+    },
+    {
+      "name": "West Getaes",
+      "occurrences": 1,
+      "avg_lng": 11.8375,
+      "avg_lat": 59.5389,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "west-getaes"
+    },
+    {
+      "name": "Wetzlar",
+      "occurrences": 1,
+      "avg_lng": 8.2849,
+      "avg_lat": 50.4361,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "wetzlar"
+    }
+  ]
+}

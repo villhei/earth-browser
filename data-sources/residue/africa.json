@@ -1,0 +1,961 @@
+{
+  "continent": "Africa",
+  "slug": "africa",
+  "batchFileName": "residue-africa.json",
+  "entityCount": 82,
+  "featureCount": 216,
+  "entities": [
+    {
+      "name": "Gambia, The",
+      "occurrences": 9,
+      "avg_lng": -15.9773,
+      "avg_lat": 13.4671,
+      "eras": [
+        "world-1914",
+        "world-1920",
+        "world-1930",
+        "world-1938",
+        "world-1945",
+        "world-1960",
+        "world-1994",
+        "world-2000",
+        "world-2010"
+      ],
+      "suggested_slug": "gambia-the"
+    },
+    {
+      "name": "Lozi",
+      "occurrences": 8,
+      "avg_lng": 23.7386,
+      "avg_lat": -12.7809,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815",
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "lozi"
+    },
+    {
+      "name": "Tanzania, United Republic of",
+      "occurrences": 8,
+      "avg_lng": 34.3549,
+      "avg_lat": -6.5803,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938",
+        "world-1945",
+        "world-1960",
+        "world-1994",
+        "world-2000",
+        "world-2010"
+      ],
+      "suggested_slug": "tanzania-united-republic-of"
+    },
+    {
+      "name": "Cape Colony",
+      "occurrences": 7,
+      "avg_lng": 21.8131,
+      "avg_lat": -32.7136,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815",
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "cape-colony"
+    },
+    {
+      "name": "Portuguese East Africa",
+      "occurrences": 7,
+      "avg_lng": 35.6893,
+      "avg_lat": -17.487,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815",
+        "world-1900"
+      ],
+      "suggested_slug": "portuguese-east-africa"
+    },
+    {
+      "name": "Delagoa Bay",
+      "occurrences": 6,
+      "avg_lng": 32.3349,
+      "avg_lat": -25.9535,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "delagoa-bay"
+    },
+    {
+      "name": "Algiers",
+      "occurrences": 5,
+      "avg_lng": 2.5426,
+      "avg_lat": 34.0475,
+      "eras": [
+        "world-1650",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "algiers"
+    },
+    {
+      "name": "Awsa",
+      "occurrences": 5,
+      "avg_lng": 41.4526,
+      "avg_lat": 12.3294,
+      "eras": [
+        "world-1650",
+        "world-1700",
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "awsa"
+    },
+    {
+      "name": "Bagirmi",
+      "occurrences": 5,
+      "avg_lng": 17.5715,
+      "avg_lat": 11.228,
+      "eras": [
+        "world-1530",
+        "world-1600",
+        "world-1650",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "bagirmi"
+    },
+    {
+      "name": "Tunis",
+      "occurrences": 5,
+      "avg_lng": 9.4394,
+      "avg_lat": 34.7752,
+      "eras": [
+        "world-1650",
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "tunis"
+    },
+    {
+      "name": "Cyrenaica",
+      "occurrences": 4,
+      "avg_lng": 21.3756,
+      "avg_lat": 31.481,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "cyrenaica"
+    },
+    {
+      "name": "Kong Empire",
+      "occurrences": 4,
+      "avg_lng": -4.0381,
+      "avg_lat": 9.6519,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1878",
+        "world-1880"
+      ],
+      "suggested_slug": "kong-empire"
+    },
+    {
+      "name": "Rio De Oro",
+      "occurrences": 4,
+      "avg_lng": -13.9655,
+      "avg_lat": 23.4499,
+      "eras": [
+        "world-1914",
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "rio-de-oro"
+    },
+    {
+      "name": "Spanish Sahara",
+      "occurrences": 4,
+      "avg_lng": -11.2198,
+      "avg_lat": 26.4877,
+      "eras": [
+        "world-1914",
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "spanish-sahara"
+    },
+    {
+      "name": "Air",
+      "occurrences": 3,
+      "avg_lng": 7.7446,
+      "avg_lat": 19.7532,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "air"
+    },
+    {
+      "name": "Ato trading confederacy",
+      "occurrences": 3,
+      "avg_lng": 7.0645,
+      "avg_lat": 6.1465,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "ato-trading-confederacy"
+    },
+    {
+      "name": "Barotse",
+      "occurrences": 3,
+      "avg_lng": 24.1965,
+      "avg_lat": -12.3138,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "barotse"
+    },
+    {
+      "name": "Borgu States",
+      "occurrences": 3,
+      "avg_lng": 2.7391,
+      "avg_lat": 11.2248,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "borgu-states"
+    },
+    {
+      "name": "Calabar",
+      "occurrences": 3,
+      "avg_lng": 9.03,
+      "avg_lat": 4.729,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "calabar"
+    },
+    {
+      "name": "Cotonou",
+      "occurrences": 3,
+      "avg_lng": 2.4494,
+      "avg_lat": 6.5557,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "cotonou"
+    },
+    {
+      "name": "Futa Jalon",
+      "occurrences": 3,
+      "avg_lng": -13.601,
+      "avg_lat": 11.874,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "futa-jalon"
+    },
+    {
+      "name": "Griqualand West",
+      "occurrences": 3,
+      "avg_lng": 23.5679,
+      "avg_lat": -28.3623,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "griqualand-west"
+    },
+    {
+      "name": "Ibadan",
+      "occurrences": 3,
+      "avg_lng": 4.5848,
+      "avg_lat": 7.5707,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "ibadan"
+    },
+    {
+      "name": "Kaarta",
+      "occurrences": 3,
+      "avg_lng": -9.7831,
+      "avg_lat": 14.7559,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "kaarta"
+    },
+    {
+      "name": "Lagos",
+      "occurrences": 3,
+      "avg_lng": 3.368,
+      "avg_lat": 6.7285,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "lagos"
+    },
+    {
+      "name": "Mbailundu",
+      "occurrences": 3,
+      "avg_lng": 15.7541,
+      "avg_lat": -8.5868,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "mbailundu"
+    },
+    {
+      "name": "Mirambo Unyanyembe Ukimbu",
+      "occurrences": 3,
+      "avg_lng": 31.7216,
+      "avg_lat": -5.9137,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "mirambo-unyanyembe-ukimbu"
+    },
+    {
+      "name": "Natal",
+      "occurrences": 3,
+      "avg_lng": 29.9016,
+      "avg_lat": -29.8407,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "natal"
+    },
+    {
+      "name": "Ndebele",
+      "occurrences": 3,
+      "avg_lng": 27.1889,
+      "avg_lat": -19.5723,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "ndebele"
+    },
+    {
+      "name": "Nguni",
+      "occurrences": 3,
+      "avg_lng": 32.4392,
+      "avg_lat": -3.6519,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "nguni"
+    },
+    {
+      "name": "Ngwato",
+      "occurrences": 3,
+      "avg_lng": 26.2121,
+      "avg_lat": -22.3954,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "ngwato"
+    },
+    {
+      "name": "Opobo",
+      "occurrences": 3,
+      "avg_lng": 7.3689,
+      "avg_lat": 4.7811,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "opobo"
+    },
+    {
+      "name": "Orange Free State",
+      "occurrences": 3,
+      "avg_lng": 26.4227,
+      "avg_lat": -28.7544,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "orange-free-state"
+    },
+    {
+      "name": "Ovimbundu",
+      "occurrences": 3,
+      "avg_lng": 15.4034,
+      "avg_lat": -11.3185,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "ovimbundu"
+    },
+    {
+      "name": "Segu",
+      "occurrences": 3,
+      "avg_lng": -5.9763,
+      "avg_lat": 14.7076,
+      "eras": [
+        "world-1715",
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "segu"
+    },
+    {
+      "name": "Shona",
+      "occurrences": 3,
+      "avg_lng": 32.137,
+      "avg_lat": -14.1938,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "shona"
+    },
+    {
+      "name": "Sotho",
+      "occurrences": 3,
+      "avg_lng": 6.0249,
+      "avg_lat": 5.899,
+      "eras": [
+        "world-1783",
+        "world-1800",
+        "world-1815"
+      ],
+      "suggested_slug": "sotho"
+    },
+    {
+      "name": "Sultanate of Utetera",
+      "occurrences": 3,
+      "avg_lng": 26.6283,
+      "avg_lat": -3.182,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "sultanate-of-utetera"
+    },
+    {
+      "name": "Takrur",
+      "occurrences": 3,
+      "avg_lng": -14.8847,
+      "avg_lat": 15.3725,
+      "eras": [
+        "world-1000",
+        "world-1100",
+        "world-1200"
+      ],
+      "suggested_slug": "takrur"
+    },
+    {
+      "name": "Teke",
+      "occurrences": 3,
+      "avg_lng": 14.8349,
+      "avg_lat": -4.6617,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "teke"
+    },
+    {
+      "name": "Transvaal",
+      "occurrences": 3,
+      "avg_lng": 28.893,
+      "avg_lat": -24.4645,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "transvaal"
+    },
+    {
+      "name": "Union of South Africa",
+      "occurrences": 3,
+      "avg_lng": 26.939,
+      "avg_lat": -25.9727,
+      "eras": [
+        "world-1920",
+        "world-1930",
+        "world-1938"
+      ],
+      "suggested_slug": "union-of-south-africa"
+    },
+    {
+      "name": "Yaka",
+      "occurrences": 3,
+      "avg_lng": 16.7599,
+      "avg_lat": -6.4718,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "yaka"
+    },
+    {
+      "name": "Yeke",
+      "occurrences": 3,
+      "avg_lng": 29.0774,
+      "avg_lat": -10.2611,
+      "eras": [
+        "world-1878",
+        "world-1880",
+        "world-1900"
+      ],
+      "suggested_slug": "yeke"
+    },
+    {
+      "name": "Africa",
+      "occurrences": 2,
+      "avg_lng": 4.5186,
+      "avg_lat": 6.9386,
+      "eras": [
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "africa"
+    },
+    {
+      "name": "Dendi Kingdom",
+      "occurrences": 2,
+      "avg_lng": 2.941,
+      "avg_lat": 17.0619,
+      "eras": [
+        "world-1878",
+        "world-1880"
+      ],
+      "suggested_slug": "dendi-kingdom"
+    },
+    {
+      "name": "Malagasy",
+      "occurrences": 2,
+      "avg_lng": 46.7264,
+      "avg_lat": -18.9056,
+      "eras": [
+        "world-800",
+        "world-900"
+      ],
+      "suggested_slug": "malagasy"
+    },
+    {
+      "name": "Rabih az-Zubayr",
+      "occurrences": 2,
+      "avg_lng": 24.0708,
+      "avg_lat": 8.685,
+      "eras": [
+        "world-1878",
+        "world-1880"
+      ],
+      "suggested_slug": "rabih-az-zubayr"
+    },
+    {
+      "name": "Rift Valley States",
+      "occurrences": 2,
+      "avg_lng": 30.7097,
+      "avg_lat": -0.7335,
+      "eras": [
+        "world-1783",
+        "world-1800"
+      ],
+      "suggested_slug": "rift-valley-states"
+    },
+    {
+      "name": "Sultanate of Damagaram",
+      "occurrences": 2,
+      "avg_lng": 12.0077,
+      "avg_lat": 15.6571,
+      "eras": [
+        "world-1878",
+        "world-1880"
+      ],
+      "suggested_slug": "sultanate-of-damagaram"
+    },
+    {
+      "name": "Vazimba",
+      "occurrences": 2,
+      "avg_lng": 46.7264,
+      "avg_lat": -18.9056,
+      "eras": [
+        "world-600",
+        "world-700"
+      ],
+      "suggested_slug": "vazimba"
+    },
+    {
+      "name": "Abdelouadides",
+      "occurrences": 1,
+      "avg_lng": -3.3004,
+      "avg_lat": 33.5439,
+      "eras": [
+        "world-1279"
+      ],
+      "suggested_slug": "abdelouadides"
+    },
+    {
+      "name": "Accra",
+      "occurrences": 1,
+      "avg_lng": -1.3929,
+      "avg_lat": 5.491,
+      "eras": [
+        "world-1900"
+      ],
+      "suggested_slug": "accra"
+    },
+    {
+      "name": "Anglo-Egyptian Sudan",
+      "occurrences": 1,
+      "avg_lng": 28.909,
+      "avg_lat": 12.7271,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "anglo-egyptian-sudan"
+    },
+    {
+      "name": "Arma",
+      "occurrences": 1,
+      "avg_lng": -1.3976,
+      "avg_lat": 17.0835,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "arma"
+    },
+    {
+      "name": "Aures",
+      "occurrences": 1,
+      "avg_lng": 6.0312,
+      "avg_lat": 34.7657,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "aures"
+    },
+    {
+      "name": "Barghawata",
+      "occurrences": 1,
+      "avg_lng": -7.2502,
+      "avg_lat": 32.3388,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "barghawata"
+    },
+    {
+      "name": "Bega",
+      "occurrences": 1,
+      "avg_lng": 36.6375,
+      "avg_lat": 18.3639,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "bega"
+    },
+    {
+      "name": "Beja people",
+      "occurrences": 1,
+      "avg_lng": 36.0642,
+      "avg_lat": 12.2651,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "beja-people"
+    },
+    {
+      "name": "British East Africa",
+      "occurrences": 1,
+      "avg_lng": 38.1726,
+      "avg_lat": -0.2643,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "british-east-africa"
+    },
+    {
+      "name": "Cushites",
+      "occurrences": 1,
+      "avg_lng": 45.9246,
+      "avg_lat": 7.3421,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "cushites"
+    },
+    {
+      "name": "Cyraneica (UK Lybia)",
+      "occurrences": 1,
+      "avg_lng": 21.2859,
+      "avg_lat": 25.6981,
+      "eras": [
+        "world-1945"
+      ],
+      "suggested_slug": "cyraneica-uk-lybia"
+    },
+    {
+      "name": "Fezzan (Frech Lybia)",
+      "occurrences": 1,
+      "avg_lng": 13.5172,
+      "avg_lat": 26.1008,
+      "eras": [
+        "world-1945"
+      ],
+      "suggested_slug": "fezzan-frech-lybia"
+    },
+    {
+      "name": "German E. Africa (Tanganyika)",
+      "occurrences": 1,
+      "avg_lng": 34.3549,
+      "avg_lat": -6.5803,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "german-e-africa-tanganyika"
+    },
+    {
+      "name": "German South-West Africa",
+      "occurrences": 1,
+      "avg_lng": 17.323,
+      "avg_lat": -22.9294,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "german-south-west-africa"
+    },
+    {
+      "name": "Ibadites",
+      "occurrences": 1,
+      "avg_lng": 0.0209,
+      "avg_lat": 31.5989,
+      "eras": [
+        "world-1200"
+      ],
+      "suggested_slug": "ibadites"
+    },
+    {
+      "name": "Imbangala",
+      "occurrences": 1,
+      "avg_lng": 19.5757,
+      "avg_lat": -10.2696,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "imbangala"
+    },
+    {
+      "name": "Kali",
+      "occurrences": 1,
+      "avg_lng": -8.8828,
+      "avg_lat": 13.9841,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "kali"
+    },
+    {
+      "name": "Kamerun",
+      "occurrences": 1,
+      "avg_lng": 13.4629,
+      "avg_lat": 6.6063,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "kamerun"
+    },
+    {
+      "name": "Kong",
+      "occurrences": 1,
+      "avg_lng": -3.5594,
+      "avg_lat": 13.0711,
+      "eras": [
+        "world-1900"
+      ],
+      "suggested_slug": "kong"
+    },
+    {
+      "name": "Kushites",
+      "occurrences": 1,
+      "avg_lng": 45.6143,
+      "avg_lat": 6.7027,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "kushites"
+    },
+    {
+      "name": "Mandes",
+      "occurrences": 1,
+      "avg_lng": 1.4921,
+      "avg_lat": 9.7695,
+      "eras": [
+        "world-900"
+      ],
+      "suggested_slug": "mandes"
+    },
+    {
+      "name": "Mauri",
+      "occurrences": 1,
+      "avg_lng": -3.291,
+      "avg_lat": 33.6182,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "mauri"
+    },
+    {
+      "name": "Merinides",
+      "occurrences": 1,
+      "avg_lng": -6.691,
+      "avg_lat": 33.2301,
+      "eras": [
+        "world-1279"
+      ],
+      "suggested_slug": "merinides"
+    },
+    {
+      "name": "Nkore",
+      "occurrences": 1,
+      "avg_lng": 29.6039,
+      "avg_lat": -1.5404,
+      "eras": [
+        "world-1815"
+      ],
+      "suggested_slug": "nkore"
+    },
+    {
+      "name": "Southern Cameroon",
+      "occurrences": 1,
+      "avg_lng": 9.6994,
+      "avg_lat": 5.3848,
+      "eras": [
+        "world-1945"
+      ],
+      "suggested_slug": "southern-cameroon"
+    },
+    {
+      "name": "Southern Rhodesia",
+      "occurrences": 1,
+      "avg_lng": 29.3038,
+      "avg_lat": -19.0736,
+      "eras": [
+        "world-1938"
+      ],
+      "suggested_slug": "southern-rhodesia"
+    },
+    {
+      "name": "Tekrur",
+      "occurrences": 1,
+      "avg_lng": -12.3236,
+      "avg_lat": 13.7108,
+      "eras": [
+        "world-1715"
+      ],
+      "suggested_slug": "tekrur"
+    },
+    {
+      "name": "Togoland",
+      "occurrences": 1,
+      "avg_lng": 0.6418,
+      "avg_lat": 8.3773,
+      "eras": [
+        "world-1914"
+      ],
+      "suggested_slug": "togoland"
+    },
+    {
+      "name": "Touareg",
+      "occurrences": 1,
+      "avg_lng": -2.2062,
+      "avg_lat": 21.7925,
+      "eras": [
+        "world-1279"
+      ],
+      "suggested_slug": "touareg"
+    },
+    {
+      "name": "Walbis Bay",
+      "occurrences": 1,
+      "avg_lng": 14.7055,
+      "avg_lat": -23.0079,
+      "eras": [
+        "world-1938"
+      ],
+      "suggested_slug": "walbis-bay"
+    },
+    {
+      "name": "Warsenis",
+      "occurrences": 1,
+      "avg_lng": 1.4959,
+      "avg_lat": 34.3671,
+      "eras": [
+        "world-700"
+      ],
+      "suggested_slug": "warsenis"
+    }
+  ]
+}

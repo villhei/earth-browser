@@ -232,5 +232,159 @@ describe("Culture Metadata Batches", () => {
     const batchPath = path.resolve(__dirname, "../../data-sources/batches/north-america-west.json")
     validateBatch(batchPath, "North American Indigenous", 45)
   })
+
+  it("validates the North America Residue batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/residue-north-america.json")
+    validateBatch(
+      batchPath,
+      [
+        "North American Indigenous",
+        "Prehistoric & Archaeological",
+        "Mesoamerican",
+        "Caribbean",
+        "Arctic & Subarctic",
+        "North America Post-Colonial",
+      ],
+      90
+    )
+  })
+
+  it("validates the Africa Residue batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/residue-africa.json")
+    validateBatch(
+      batchPath,
+      ["Southern Africa", "Central Africa", "East Africa", "North Africa", "West Africa"],
+      75
+    )
+  })
+
+  it("validates the Europe Residue batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/residue-europe.json")
+    validateBatch(
+      batchPath,
+      [
+        "Central Europe",
+        "Southern Europe",
+        "Western Europe",
+        "Nordic",
+        "Finno-Ugric",
+        "Baltic",
+        "Eastern Europe",
+        "Slavic",
+        "Balkans",
+        "Central Asia",
+        "Caucasus",
+        "Greco-Roman",
+        "Prehistoric & Archaeological",
+      ],
+      115
+    )
+  })
+
+  it("validates the Asia Residue batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/residue-asia.json")
+    validateBatch(
+      batchPath,
+      [
+        "South Asia",
+        "Prehistoric & Archaeological",
+        "East Asia",
+        "Southeast Asia",
+        "Central Asia",
+        "Arctic & Subarctic",
+        "Finno-Ugric",
+        "Eastern Europe",
+        "Middle East",
+        "Ancient Near East",
+        "Iranian",
+        "Greco-Roman",
+      ],
+      110
+    )
+  })
+
+  it("validates the Oceania Residue batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/residue-oceania.json")
+    validateBatch(batchPath, "Oceania", 335)
+  })
+
+  it("validates the South America Residue batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/residue-south-america.json")
+    validateBatch(batchPath, ["South American Indigenous", "Latin America", "Andean"], 360)
+  })
+
+  it("validates the North America Residue Set 2 batch file", () => {
+    const batchPath = path.resolve(__dirname, "../../data-sources/batches/residue-north-america-2.json")
+    validateBatch(
+      batchPath,
+      [
+        "North American Indigenous",
+        "Mesoamerican",
+        "Arctic & Subarctic",
+        "Caribbean",
+        "North America Post-Colonial",
+        "Prehistoric & Archaeological",
+      ],
+      500
+    )
+  })
+})
+
+describe("Continental Residue Partitions", () => {
+  const residueDir = path.resolve(__dirname, "../../data-sources/residue")
+
+  it("contains summary.json accounting for all residue entities and features", () => {
+    const summaryPath = path.join(residueDir, "summary.json")
+    expect(fs.existsSync(summaryPath)).toBe(true)
+
+    const summary = JSON.parse(fs.readFileSync(summaryPath, "utf-8"))
+    expect(summary.totalEntities).toBe(1545)
+    expect(summary.totalFeatures).toBe(3774)
+
+    const continents = Object.keys(summary.continents)
+    expect(continents).toEqual(
+      expect.arrayContaining(["North America", "South America", "Oceania", "Asia", "Europe", "Africa"])
+    )
+  })
+
+  it("contains valid partition inventory files for each continent", () => {
+    const expectedContinents = [
+      { slug: "north-america", minEntities: 500, minFeatures: 500 },
+      { slug: "south-america", minEntities: 350, minFeatures: 380 },
+      { slug: "oceania", minEntities: 330, minFeatures: 2000 },
+      { slug: "asia", minEntities: 120, minFeatures: 250 },
+      { slug: "europe", minEntities: 120, minFeatures: 250 },
+      { slug: "africa", minEntities: 80, minFeatures: 200 },
+    ]
+
+    let entitySum = 0
+    let featureSum = 0
+
+    for (const c of expectedContinents) {
+      const filePath = path.join(residueDir, `${c.slug}.json`)
+      expect(fs.existsSync(filePath)).toBe(true)
+
+      const part = JSON.parse(fs.readFileSync(filePath, "utf-8"))
+      expect(part.entityCount).toBeGreaterThanOrEqual(c.minEntities)
+      expect(part.featureCount).toBeGreaterThanOrEqual(c.minFeatures)
+      expect(part.entities.length).toBe(part.entityCount)
+
+      // Validate entity structure
+      for (const entity of part.entities.slice(0, 10)) {
+        expect(entity.name.length).toBeGreaterThan(0)
+        expect(entity.occurrences).toBeGreaterThanOrEqual(1)
+        expect(typeof entity.avg_lng).toBe("number")
+        expect(typeof entity.avg_lat).toBe("number")
+        expect(entity.eras.length).toBeGreaterThanOrEqual(1)
+        expect(entity.suggested_slug).toMatch(/^[a-z0-9-]+$/)
+      }
+
+      entitySum += part.entityCount
+      featureSum += part.featureCount
+    }
+
+    expect(entitySum).toBe(1545)
+    expect(featureSum).toBe(3774)
+  })
 })
 
