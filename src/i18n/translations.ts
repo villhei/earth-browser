@@ -168,13 +168,21 @@ export const UI_TRANSLATIONS: Record<string, Record<Language, string>> = {
     en: "Auto (System)",
     fi: "Automaattinen",
   },
+  theme_light: {
+    en: "Light",
+    fi: "Vaalea",
+  },
+  theme_dark: {
+    en: "Dark",
+    fi: "Tumma",
+  },
   theme_slate: {
-    en: "Oceanic Slate",
-    fi: "Valtamerten liuske",
+    en: "Dark",
+    fi: "Tumma",
   },
   theme_parchment: {
-    en: "Historical Parchment",
-    fi: "Historiallinen pergamentti",
+    en: "Light",
+    fi: "Vaalea",
   },
   state_enabled: {
     en: "Enabled",

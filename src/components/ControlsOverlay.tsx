@@ -75,12 +75,13 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
         className={`controls-toggle-btn ${isOpen ? "active" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
         title={t("globe_visual_settings", language)}
+        aria-label={t("settings", language)}
         aria-expanded={isOpen}
       >
         <svg
           className="controls-icon"
-          width="15"
-          height="15"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -92,7 +93,7 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
           <circle cx="12" cy="12" r="3" />
           <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
         </svg>
-        <span>{t("settings", language)}</span>
+        <span className="sr-only">{t("settings", language)}</span>
       </button>
 
       {isOpen && (
@@ -146,9 +147,9 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
                 <option key={option.id} value={option.id}>
                   {option.id === "auto"
                     ? t("theme_auto", language)
-                    : option.id === "slate"
-                      ? t("theme_slate", language)
-                      : t("theme_parchment", language)}
+                    : option.id === "light"
+                      ? t("theme_light", language)
+                      : t("theme_dark", language)}
                 </option>
               ))}
             </select>

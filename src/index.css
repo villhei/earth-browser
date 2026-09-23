@@ -13,6 +13,11 @@ body {
 
 body {
   background-color: var(--color-bg-app);
+  background-image: radial-gradient(
+    circle at var(--globe-center-x, calc(50% + 80px)) var(--globe-center-y, 50%),
+    var(--app-fg, var(--color-text-primary)) 0%,
+    var(--app-bg, var(--color-bg-app)) 100%
+  );
   color: var(--color-text-primary);
   font-family: var(--font-family-sans);
   -webkit-font-smoothing: antialiased;
@@ -25,4 +30,17 @@ body {
   min-height: 100%;
   height: 100%;
   width: 100%;
+}
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }

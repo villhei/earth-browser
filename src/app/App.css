@@ -1,10 +1,17 @@
 .app-layout {
+  --globe-center-x: calc(50% + 80px);
+  --globe-center-y: 50%;
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   background-color: var(--color-bg-app);
+  background-image: radial-gradient(
+    circle at var(--globe-center-x) var(--globe-center-y),
+    color-mix(in srgb, var(--color-bg-app) 50%, var(--color-text-primary)) 0%,
+    var(--color-bg-app) 60%
+  );
   color: var(--color-text-primary);
   font-family: var(--font-family-sans);
 }
@@ -32,6 +39,11 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-bg-app);
+  background-image: radial-gradient(
+    circle at var(--globe-center-x, calc(50% + 80px)) var(--globe-center-y, 50%),
+    var(--color-text-primary) 0%,
+    var(--color-bg-app) 100%
+  );
   color: var(--color-text-primary);
   gap: var(--space-10);
 }
@@ -59,7 +71,36 @@
   right: auto;
 }
 
+.bottom-controls-bar {
+  position: absolute;
+  bottom: var(--space-10);
+  right: var(--space-10);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  z-index: var(--z-controls);
+  pointer-events: auto;
+}
+
+.bottom-controls-bar .controls-overlay {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.bottom-controls-bar .app-attribution-btn,
+.bottom-controls-bar .app-attribution {
+  position: relative;
+  bottom: auto;
+  right: auto;
+}
+
 @media (max-width: 1024px) {
+  .app-layout {
+    --globe-center-x: calc(50% + 50px);
+  }
+
   .globe-viewport {
     left: 100px;
     width: calc(100% - 100px);
@@ -67,6 +108,10 @@
 }
 
 @media (max-width: 768px) {
+  .app-layout {
+    --globe-center-x: 50%;
+  }
+
   .globe-viewport {
     left: 0;
     width: 100%;
@@ -76,6 +121,12 @@
     top: max(8px, 1.2vh);
     right: max(10px, 2.5vw);
     gap: max(4px, 1vw);
+  }
+
+  .bottom-controls-bar {
+    bottom: max(10px, 1.5vh);
+    right: max(10px, 2.5vw);
+    gap: max(6px, 1.5vw);
   }
 
   .app-loading-screen {

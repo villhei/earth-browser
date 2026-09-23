@@ -177,7 +177,7 @@
 @media (max-width: 768px) {
   .active-era-banner {
     left: 50%;
-    top: max(56px, 7.5vh);
+    top: var(--space-10);
     transform: translateX(-50%);
     max-width: calc(100vw - max(16px, 4vw));
     padding: max(4px, 1vh) max(8px, 2vw);

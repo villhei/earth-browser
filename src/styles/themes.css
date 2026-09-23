@@ -8,10 +8,14 @@
    1. Default Theme: Oceanic Slate (Deep Space & Cyan)
    ========================================================================== */
 :root,
+[data-theme="dark"],
 [data-theme="slate"],
 [data-theme="default"] {
   /* Surfaces & Backgrounds */
   --color-bg-app: #050811;
+  --app-bg: var(--color-bg-app);
+  --app-fg: var(--color-text-primary);
+  --color-fg-app: var(--color-text-primary);
   --color-bg-header-start: rgba(5, 8, 17, 0.85);
   --color-bg-header-end: rgba(5, 8, 17, 0);
   --color-bg-panel: rgba(15, 23, 42, 0.88);
@@ -61,7 +65,11 @@
   --color-accent-secondary-hover: #60a5fa;
   --gradient-accent-badge: linear-gradient(135deg, #3b82f6, #6366f1);
   --gradient-brand-title: linear-gradient(135deg, #f8fafc, #94a3b8);
-  --gradient-header: linear-gradient(180deg, var(--color-bg-header-start) 0%, var(--color-bg-header-end) 100%);
+  --gradient-header: linear-gradient(
+    180deg,
+    var(--color-bg-header-start) 0%,
+    var(--color-bg-header-end) 100%
+  );
   --gradient-timeline-rail: linear-gradient(
     180deg,
     rgba(56, 189, 248, 0.4) 0%,
@@ -119,6 +127,9 @@
 [data-theme="light"] {
   /* Surfaces & Backgrounds */
   --color-bg-app: #f2ece1;
+  --app-bg: var(--color-bg-app);
+  --app-fg: var(--color-text-primary);
+  --color-fg-app: var(--color-text-primary);
   --color-bg-header-start: rgba(242, 236, 225, 0.95);
   --color-bg-header-end: rgba(242, 236, 225, 0);
   --color-bg-panel: rgba(255, 252, 245, 0.92);

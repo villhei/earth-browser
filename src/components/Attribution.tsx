@@ -250,8 +250,8 @@ export const Attribution: React.FC<AttributionProps> = ({
       >
         <svg
           className="attribution-icon"
-          width="15"
-          height="15"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -264,7 +264,9 @@ export const Attribution: React.FC<AttributionProps> = ({
           <line x1="12" y1="16" x2="12" y2="12" />
           <line x1="12" y1="8" x2="12.01" y2="8" />
         </svg>
-        <span>{language === "fi" ? "Lähteet ja tekijätiedot" : "Credits & Sources"}</span>
+        <span className="sr-only">
+          {language === "fi" ? "Lähteet ja tekijätiedot" : "Credits & Sources"}
+        </span>
       </button>
 
       <AttributionModal

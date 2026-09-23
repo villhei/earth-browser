@@ -126,10 +126,8 @@ export const App: React.FC = () => {
     setIsTimelineOpen(false)
   }, [])
 
-  // Era details modal state (appears in screen center on era change on mobile)
+  // Era details modal state (opened by clicking the active era banner)
   const [isEraDetailsOpen, setIsEraDetailsOpen] = useState(false)
-  const prevEraIdRef = useRef<string | null>(null)
-  const initialLoadDoneRef = useRef(false)
 
   // Era navigation handlers
   const currentEraIndex = useMemo(() => {
@@ -151,18 +149,6 @@ export const App: React.FC = () => {
       setCurrentEra(eras[currentEraIndex + 1])
     }
   }, [eras, currentEraIndex])
-
-  // Trigger details modal on mobile when active era changes
-  useEffect(() => {
-    if (!currentEra) return
-    if (initialLoadDoneRef.current && prevEraIdRef.current !== currentEra.id) {
-      if (isMobile) {
-        setIsEraDetailsOpen(true)
-      }
-    }
-    prevEraIdRef.current = currentEra.id
-    initialLoadDoneRef.current = true
-  }, [currentEra?.id, isMobile])
 
   const [globeConfig, setGlobeConfig] = useState<GlobeConfig>({
     texture: GlobeTexture.EARTH_DAY,
@@ -360,28 +346,6 @@ export const App: React.FC = () => {
           isLoading={isLoadingGeoJson}
         />
 
-        {/* Top Controls Bar with Settings */}
-        <div className="top-controls-bar">
-          <ControlsOverlay
-            config={globeConfig}
-            iceOverlayAvailable={!!iceOverlay}
-            terrainOverlayAvailable={!!terrainOverlayUrl}
-            onChangeConfig={setGlobeConfig}
-            onOpenAttribution={() => setIsAttributionOpen(true)}
-            colorScheme={themePreference}
-            onChangeColorScheme={handleColorSchemeChange}
-            language={language}
-            onChangeLanguage={handleLanguageChange}
-            onTriggerTerrainHighlight={
-              isTerrainMaskActive ? handlePulseTerrainHighlight : undefined
-            }
-            isTerrainHighlightActive={isHighlightingTerrain}
-            terrainHighlightLabel={
-              isTerrainMaskEligible ? terrainHighlightLabel : undefined
-            }
-          />
-        </div>
-
         {/* Country / Culture Inspector Drawer */}
         <CountryDrawer
           feature={selectedFeature}
@@ -410,13 +374,33 @@ export const App: React.FC = () => {
           language={language}
         />
 
-        {/* Data Source & Map Attribution */}
-        <Attribution
-          isModalOpen={isAttributionOpen}
-          onOpenModal={() => setIsAttributionOpen(true)}
-          onCloseModal={() => setIsAttributionOpen(false)}
-          language={language}
-        />
+        {/* Bottom Right Controls (Settings & Map Attribution) */}
+        <div className="bottom-controls-bar">
+          <ControlsOverlay
+            config={globeConfig}
+            iceOverlayAvailable={!!iceOverlay}
+            terrainOverlayAvailable={!!terrainOverlayUrl}
+            onChangeConfig={setGlobeConfig}
+            onOpenAttribution={() => setIsAttributionOpen(true)}
+            colorScheme={themePreference}
+            onChangeColorScheme={handleColorSchemeChange}
+            language={language}
+            onChangeLanguage={handleLanguageChange}
+            onTriggerTerrainHighlight={
+              isTerrainMaskActive ? handlePulseTerrainHighlight : undefined
+            }
+            isTerrainHighlightActive={isHighlightingTerrain}
+            terrainHighlightLabel={
+              isTerrainMaskEligible ? terrainHighlightLabel : undefined
+            }
+          />
+          <Attribution
+            isModalOpen={isAttributionOpen}
+            onOpenModal={() => setIsAttributionOpen(true)}
+            onCloseModal={() => setIsAttributionOpen(false)}
+            language={language}
+          />
+        </div>
       </main>
     </div>
   )

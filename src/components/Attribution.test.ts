@@ -20,9 +20,10 @@ describe("Attribution metadata", () => {
 })
 
 describe("Attribution button and modal rendering", () => {
-  it("renders the button displaying 'Credits & Sources' with an information symbol", () => {
+  it("renders the button displaying 'Credits & Sources' as an icon-only button with an information symbol and sr-only label", () => {
     const html = renderToStaticMarkup(React.createElement(Attribution))
     expect(html).toContain("Credits &amp; Sources")
+    expect(html).toContain('class="sr-only"')
     expect(html).toContain("app-attribution-btn")
     expect(html).toContain("attribution-icon")
     expect(html).toContain("<circle")

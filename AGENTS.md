@@ -104,7 +104,7 @@ This guide provides technical specifications, architectural patterns, and develo
   - Automatic smooth scrolling to keep the active era in view.
 
 ### 4. Visual Controls Overlay (`src/components/ControlsOverlay.tsx`)
-- Located at top-right (`top: 24px; right: 24px;`).
+- Located at bottom-right next to attributions as an icon-only button; popover opens upwards.
 - Controls:
   - **Earth Surface Texture** (Blue Marble Modern, Blue Marble Prehistoric variants, Day Map, Night Lights, Dark Planetary).
   - **Polygon Altitude** (`0.001` - `0.030`, default `0.002`).
@@ -115,11 +115,12 @@ This guide provides technical specifications, architectural patterns, and develo
   - **Appearance Tolerance** (`2px` - `24px`, default `10px`).
 
 ### 5. Territory Inspector Drawer (`src/components/CountryDrawer.tsx`)
-- Opens on country click at top-right (`top: 80px; right: 24px; width: 320px;`).
+- Opens on country click at top-right (`top: 80px; right: 24px; width: 340px;`) on desktop displays (>= 1280px).
+- Automatically collapses into a centered mobile modal presentation with backdrop overlay on screens smaller than 1280px wide (`@media (max-width: 1279px)`).
 - Displays culture sphere, parent empire (`PARTOF`), subjugation status (`SUBJECTO` striped indicator), border precision rating (Exact / Approximate / Frontier), ISO code, population, estimated area, and data source link.
 
 ### 6. Attribution & Data Sources (`src/components/Attribution.tsx`)
-- Bottom-right unobtrusive attribution badge with links to André Ourednik's `historical-basemaps` dataset and GPL-3.0 license.
+- Bottom-right unobtrusive icon-only button next to settings with links to André Ourednik's `historical-basemaps` dataset and GPL-3.0 license.
 - Interactive modal dialog (`AttributionModal`) presenting detailed licensing and source data credits.
 
 ---

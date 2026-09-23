@@ -230,8 +230,13 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     renderer.setSize(width || window.innerWidth, height || window.innerHeight)
     canvas.appendChild(renderer.domElement)
     rendererRef.current = renderer
-    const handleContextRestored = () => { renderDirtyRef.current = true }
-    renderer.domElement.addEventListener("webglcontextrestored", handleContextRestored)
+    const handleContextRestored = () => {
+      renderDirtyRef.current = true
+    }
+    renderer.domElement.addEventListener(
+      "webglcontextrestored",
+      handleContextRestored,
+    )
 
     // 2D Labels Canvas setup
     labelsCanvas.width = (width || window.innerWidth) * dpr
@@ -245,6 +250,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     globeRef.current = globe
     globe.globeImageUrl(textureImageUrl ?? getGlobeTextureUrl(texture))
     globe.polygonCapCurvatureResolution(polygonCapCurvatureResolution)
+    globe.showAtmosphere(false)
     globe.rendererSize(
       new THREE.Vector2(
         width || window.innerWidth,
@@ -278,6 +284,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     controls.rotateSpeed = 0.6
     controls.minDistance = MIN_VIEW_DISTANCE
     controls.maxDistance = MAX_VIEW_DISTANCE
+    controls.enablePan = false
 
     // Wait for camera movement, including damping after release, to settle.
     let viewChangeTimer: ReturnType<typeof setTimeout> | undefined
@@ -309,7 +316,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     const raycaster = new THREE.Raycaster()
     const mouse = new THREE.Vector2()
     const polygonScene = new PolygonScene()
-    const earthSphere = new THREE.Sphere(new THREE.Vector3(), globe.getGlobeRadius())
+    const earthSphere = new THREE.Sphere(
+      new THREE.Vector3(),
+      globe.getGlobeRadius(),
+    )
     const earthHit = new THREE.Vector3()
 
     const getIntersectedFeature = (
@@ -333,7 +343,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       raycaster.far = raycaster.ray.intersectSphere(earthSphere, earthHit)
         ? raycaster.ray.origin.distanceTo(earthHit) + 0.01
         : Infinity
-      const intersects = raycaster.intersectObjects(polygonScene.pickableMeshes, false)
+      const intersects = raycaster.intersectObjects(
+        polygonScene.pickableMeshes,
+        false,
+      )
       for (const hit of intersects) {
         let current: any = hit.object
         while (
@@ -480,14 +493,20 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     let lastGlobeMap: THREE.Texture | null = null
     const animate = () => {
       const cameraChanged = controls.update()
-      const polygonsChanged = polygonScene.update(globe, camera, globe.getGlobeRadius(), {
-        opacity: opacityRef.current,
-        selectedFeatureId: selectedFeatureIdRef.current,
-        hoveredFeatureId: hoveredFeatureIdRef.current ??
-          (hoveredFeatureRef.current?.id != null
-            ? String(hoveredFeatureRef.current.id)
-            : hoveredFeatureRef.current?.properties?.name || null),
-      })
+      const polygonsChanged = polygonScene.update(
+        globe,
+        camera,
+        globe.getGlobeRadius(),
+        {
+          opacity: opacityRef.current,
+          selectedFeatureId: selectedFeatureIdRef.current,
+          hoveredFeatureId:
+            hoveredFeatureIdRef.current ??
+            (hoveredFeatureRef.current?.id != null
+              ? String(hoveredFeatureRef.current.id)
+              : hoveredFeatureRef.current?.properties?.name || null),
+        },
+      )
 
       // Update terrain highlight pulse shader uniforms
       let highlightDirty = false
@@ -513,7 +532,13 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       // Texture loading and ThreeGlobe's deferred geometry/altitude updates can
       // finish after React effects. Observe them before skipping an idle frame.
       const globeMap = (globe.globeMaterial() as THREE.MeshPhongMaterial).map
-      if (cameraChanged || polygonsChanged || renderDirtyRef.current || highlightDirty || globeMap !== lastGlobeMap) {
+      if (
+        cameraChanged ||
+        polygonsChanged ||
+        renderDirtyRef.current ||
+        highlightDirty ||
+        globeMap !== lastGlobeMap
+      ) {
         renderer.render(scene, camera)
         renderDirtyRef.current = false
         lastGlobeMap = globeMap
@@ -721,7 +746,10 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       controls.removeEventListener("change", handleViewChange)
       restoreViewRef.current = null
       controls.dispose()
-      renderer.domElement.removeEventListener("webglcontextrestored", handleContextRestored)
+      renderer.domElement.removeEventListener(
+        "webglcontextrestored",
+        handleContextRestored,
+      )
       renderer.dispose()
       if (
         canvas &&
@@ -956,7 +984,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         width: "100%",
         height: "100%",
         overflow: "hidden",
-        backgroundColor: "var(--color-bg-app, #050811)",
+        backgroundColor: "transparent",
         cursor: "grab",
         ...style,
       }}
@@ -991,7 +1019,8 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "var(--color-bg-loading-overlay, rgba(5, 8, 17, 0.6))",
+            backgroundColor:
+              "var(--color-bg-loading-overlay, rgba(5, 8, 17, 0.6))",
             backdropFilter: "blur(var(--blur-xs, 4px))",
             zIndex: 10,
             gap: "16px",
@@ -1007,38 +1036,44 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         </div>
       )}
 
-      {hoveredFeature && (hoveredFeature.properties?.name || hoveredFeature.properties?.culture_metadata?.name_fi) && (
-        <div
-          style={{
-            position: "absolute",
-            bottom: "80px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            backgroundColor: "var(--color-bg-panel, rgba(15, 23, 42, 0.85))",
-            backdropFilter: "blur(var(--blur-sm, 8px))",
-            border: "1px solid var(--color-border-control, rgba(255, 255, 255, 0.15))",
-            padding: "8px 18px",
-            borderRadius: "var(--radius-pill, 20px)",
-            color: "var(--color-text-primary, #f8fafc)",
-            fontSize: "14px",
-            fontWeight: 500,
-            pointerEvents: "none",
-            boxShadow: "var(--shadow-md, 0 10px 25px rgba(0,0,0,0.5))",
-            zIndex: 5,
-          }}
-        >
-          {getLocalizedFeatureName(hoveredFeature.properties, language)}
-          {hoveredFeature.properties?.formal_name &&
-            hoveredFeature.properties.formal_name !==
-              getLocalizedFeatureName(hoveredFeature.properties, language) && (
-              <span
-                style={{ opacity: 0.7, marginLeft: "8px", fontSize: "12px" }}
-              >
-                ({hoveredFeature.properties.formal_name})
-              </span>
-            )}
-        </div>
-      )}
+      {hoveredFeature &&
+        (hoveredFeature.properties?.name ||
+          hoveredFeature.properties?.culture_metadata?.name_fi) && (
+          <div
+            style={{
+              position: "absolute",
+              bottom: "80px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              backgroundColor: "var(--color-bg-panel, rgba(15, 23, 42, 0.85))",
+              backdropFilter: "blur(var(--blur-sm, 8px))",
+              border:
+                "1px solid var(--color-border-control, rgba(255, 255, 255, 0.15))",
+              padding: "8px 18px",
+              borderRadius: "var(--radius-pill, 20px)",
+              color: "var(--color-text-primary, #f8fafc)",
+              fontSize: "14px",
+              fontWeight: 500,
+              pointerEvents: "none",
+              boxShadow: "var(--shadow-md, 0 10px 25px rgba(0,0,0,0.5))",
+              zIndex: 5,
+            }}
+          >
+            {getLocalizedFeatureName(hoveredFeature.properties, language)}
+            {hoveredFeature.properties?.formal_name &&
+              hoveredFeature.properties.formal_name !==
+                getLocalizedFeatureName(
+                  hoveredFeature.properties,
+                  language,
+                ) && (
+                <span
+                  style={{ opacity: 0.7, marginLeft: "8px", fontSize: "12px" }}
+                >
+                  ({hoveredFeature.properties.formal_name})
+                </span>
+              )}
+          </div>
+        )}
     </div>
   )
 }

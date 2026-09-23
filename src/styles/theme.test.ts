@@ -63,9 +63,9 @@ describe("Design Token System & Color Schemes", () => {
     vi.unstubAllGlobals()
   })
 
-  it("registers only Oceanic Slate and Historical Parchment color schemes", () => {
+  it("registers only Light and Dark color schemes", () => {
     const ids = COLOR_SCHEMES.map((s) => s.id)
-    expect(ids).toEqual(["slate", "parchment"])
+    expect(ids).toEqual(["light", "dark"])
     expect(COLOR_SCHEMES.length).toBe(2)
   })
 
@@ -77,41 +77,49 @@ describe("Design Token System & Color Schemes", () => {
   })
 
   it("applies theme attribute to document root and saves to localStorage", () => {
-    applyTheme("parchment")
-    expect(document.documentElement.getAttribute("data-theme")).toBe("parchment")
-    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("parchment")
+    applyTheme("light")
+    expect(document.documentElement.getAttribute("data-theme")).toBe("light")
+    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("light")
 
-    applyTheme("slate")
-    expect(document.documentElement.getAttribute("data-theme")).toBe("slate")
-    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("slate")
+    applyTheme("dark")
+    expect(document.documentElement.getAttribute("data-theme")).toBe("dark")
+    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("dark")
   })
 
   it("resolves default theme when no stored preference exists", () => {
-    expect(getInitialTheme()).toBe("slate")
+    expect(getInitialTheme()).toBe("dark")
   })
 
   it("reads theme preference from localStorage", () => {
-    localStorage.setItem(THEME_STORAGE_KEY, "parchment")
-    expect(getInitialTheme()).toBe("parchment")
+    localStorage.setItem(THEME_STORAGE_KEY, "light")
+    expect(getInitialTheme()).toBe("light")
   })
 
   it("reads theme preference from URL search params", () => {
     vi.stubGlobal("window", {
       location: {
-        search: "?theme=parchment",
+        search: "?theme=light",
       },
     })
-    expect(getInitialTheme()).toBe("parchment")
+    expect(getInitialTheme()).toBe("light")
   })
 
-  it("ignores invalid values in localStorage and falls back to slate", () => {
+  it("maps legacy slate and parchment preferences to dark and light", () => {
+    localStorage.setItem(THEME_STORAGE_KEY, "parchment")
+    expect(getInitialTheme()).toBe("light")
+
+    localStorage.setItem(THEME_STORAGE_KEY, "slate")
+    expect(getInitialTheme()).toBe("dark")
+  })
+
+  it("ignores invalid values in localStorage and falls back to dark", () => {
     localStorage.setItem(THEME_STORAGE_KEY, "invalid-theme-xyz")
-    expect(getInitialTheme()).toBe("slate")
+    expect(getInitialTheme()).toBe("dark")
   })
 
-  it("registers THEME_OPTIONS including Auto (System), Oceanic Slate, and Historical Parchment", () => {
+  it("registers THEME_OPTIONS including Auto (System), Light, and Dark", () => {
     const ids = THEME_OPTIONS.map((o) => o.id)
-    expect(ids).toEqual(["auto", "slate", "parchment"])
+    expect(ids).toEqual(["auto", "light", "dark"])
     expect(THEME_OPTIONS.length).toBe(3)
   })
 
@@ -126,9 +134,9 @@ describe("Design Token System & Color Schemes", () => {
       })),
     })
 
-    expect(getSystemTheme()).toBe("parchment")
+    expect(getSystemTheme()).toBe("light")
     expect(getThemePreference()).toBe("auto")
-    expect(getInitialTheme()).toBe("parchment")
+    expect(getInitialTheme()).toBe("light")
   })
 
   it("automatically detects system dark mode preference when no override exists", () => {
@@ -142,13 +150,13 @@ describe("Design Token System & Color Schemes", () => {
       })),
     })
 
-    expect(getSystemTheme()).toBe("slate")
+    expect(getSystemTheme()).toBe("dark")
     expect(getThemePreference()).toBe("auto")
-    expect(getInitialTheme()).toBe("slate")
+    expect(getInitialTheme()).toBe("dark")
   })
 
   it("allows user localStorage override to take precedence over system light preference", () => {
-    localStorage.setItem(THEME_STORAGE_KEY, "slate")
+    localStorage.setItem(THEME_STORAGE_KEY, "dark")
     vi.stubGlobal("window", {
       location: { search: "" },
       matchMedia: vi.fn().mockImplementation((query: string) => ({
@@ -159,14 +167,14 @@ describe("Design Token System & Color Schemes", () => {
       })),
     })
 
-    expect(getSystemTheme()).toBe("parchment")
-    expect(getThemePreference()).toBe("slate")
-    expect(getInitialTheme()).toBe("slate")
+    expect(getSystemTheme()).toBe("light")
+    expect(getThemePreference()).toBe("dark")
+    expect(getInitialTheme()).toBe("dark")
   })
 
   it("allows user URL query param override to take precedence over system dark preference", () => {
     vi.stubGlobal("window", {
-      location: { search: "?theme=parchment" },
+      location: { search: "?theme=light" },
       matchMedia: vi.fn().mockImplementation((query: string) => ({
         matches: query === "(prefers-color-scheme: dark)",
         media: query,
@@ -175,9 +183,9 @@ describe("Design Token System & Color Schemes", () => {
       })),
     })
 
-    expect(getSystemTheme()).toBe("slate")
-    expect(getThemePreference()).toBe("parchment")
-    expect(getInitialTheme()).toBe("parchment")
+    expect(getSystemTheme()).toBe("dark")
+    expect(getThemePreference()).toBe("light")
+    expect(getInitialTheme()).toBe("light")
   })
 
   it("applies auto theme and persists auto preference to localStorage", () => {
@@ -192,7 +200,7 @@ describe("Design Token System & Color Schemes", () => {
     })
 
     applyTheme("auto")
-    expect(document.documentElement.getAttribute("data-theme")).toBe("parchment")
+    expect(document.documentElement.getAttribute("data-theme")).toBe("light")
     expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("auto")
   })
 
@@ -221,13 +229,13 @@ describe("Design Token System & Color Schemes", () => {
     if (changeHandler) {
       (changeHandler as (e: any) => void)({ matches: true })
     }
-    expect(callback).toHaveBeenCalledWith("parchment")
+    expect(callback).toHaveBeenCalledWith("light")
 
     // Simulate system preference changing to dark mode
     if (changeHandler) {
       (changeHandler as (e: any) => void)({ matches: false })
     }
-    expect(callback).toHaveBeenCalledWith("slate")
+    expect(callback).toHaveBeenCalledWith("dark")
 
     unsubscribe()
     expect(removeEventListenerMock).toHaveBeenCalledWith("change", expect.any(Function))
@@ -270,6 +278,8 @@ describe("Design Token System & Color Schemes", () => {
 
     const expectedSemanticTokens = [
       "--color-bg-app",
+      "--app-bg",
+      "--app-fg",
       "--color-bg-panel",
       "--color-bg-control",
       "--color-text-primary",
@@ -291,7 +301,9 @@ describe("Design Token System & Color Schemes", () => {
       expect(themesContent).toContain(token)
     }
 
-    // Verify only slate and parchment themes exist in themes.css
+    // Verify dark and light themes exist in themes.css (with slate and parchment aliases)
+    expect(themesContent).toContain('[data-theme="dark"]')
+    expect(themesContent).toContain('[data-theme="light"]')
     expect(themesContent).toContain('[data-theme="slate"]')
     expect(themesContent).toContain('[data-theme="parchment"]')
 

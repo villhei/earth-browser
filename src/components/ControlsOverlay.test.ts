@@ -30,6 +30,18 @@ describe("ControlsOverlay terrain highlight", () => {
     expect(html).toContain("controls-toggle-btn")
   })
 
+  it("renders an icon-only button with accessible sr-only label and aria-label", () => {
+    const html = renderToStaticMarkup(
+      React.createElement(ControlsOverlay, {
+        config: baseConfig,
+        onChangeConfig: () => {},
+      })
+    )
+    expect(html).toContain('aria-label="Settings"')
+    expect(html).toContain('class="sr-only">Settings</span>')
+    expect(html).toContain("controls-icon")
+  })
+
   it("renders Finnish label when language is fi", () => {
     const html = renderToStaticMarkup(
       React.createElement(ControlsOverlay, {
@@ -38,6 +50,8 @@ describe("ControlsOverlay terrain highlight", () => {
         language: "fi",
       })
     )
-    expect(html).toContain("Asetukset")
+    expect(html).toContain('aria-label="Asetukset"')
+    expect(html).toContain('class="sr-only">Asetukset</span>')
   })
 })
+

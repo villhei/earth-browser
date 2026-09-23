@@ -193,8 +193,8 @@
   text-decoration: none;
 }
 
-/* Mobile Modal Presentation — occupying most but not all screen space */
-@media (max-width: 768px) {
+/* Mobile Modal Presentation in screen sizes smaller than 1280 wide */
+@media (max-width: 1279px) {
   .country-drawer-backdrop {
     display: block;
     position: fixed;
@@ -226,8 +226,8 @@
     max-height: min(85vh, calc(100dvh - max(32px, 8vh)));
     height: auto;
     z-index: var(--z-modal);
-    padding: max(14px, 3.5vw);
-    gap: max(10px, 2.5vw);
+    padding: clamp(14px, 3.5vw, 24px);
+    gap: clamp(10px, 2.5vw, 16px);
     border-radius: var(--radius-2xl);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), var(--shadow-panel-highlight);
     animation: countryModalPop 0.22s cubic-bezier(0.16, 1, 0.3, 1);
@@ -246,23 +246,21 @@
   }
 
   .drawer-header {
-    padding-bottom: max(8px, 1.8vh);
-    gap: max(8px, 2vw);
+    padding-bottom: clamp(8px, 1.8vh, 12px);
+    gap: clamp(8px, 2vw, 16px);
   }
 
   .drawer-title {
-    font-size: max(18px, 4.5vw);
+    font-size: clamp(18px, 4.5vw, 22px);
   }
 
   .drawer-subtitle {
-    font-size: max(12px, 3vw);
+    font-size: clamp(12px, 3vw, 14px);
   }
 
   .drawer-close-btn {
-    width: max(32px, 8vw);
-    height: max(32px, 8vw);
-    max-width: 36px;
-    max-height: 36px;
+    width: clamp(30px, 8vw, 36px);
+    height: clamp(30px, 8vw, 36px);
   }
 
   .drawer-content {
@@ -270,17 +268,18 @@
   }
 
   .drawer-row {
-    font-size: max(12px, 3vw);
+    font-size: clamp(12px, 3vw, 14px);
     gap: max(6px, 1.5vw);
   }
 
   .drawer-summary-box {
-    padding: max(10px, 2.5vw);
+    padding: clamp(10px, 2.5vw, 14px);
     gap: max(8px, 2vw);
     margin-top: max(2px, 0.5vh);
   }
 
   .drawer-summary-text {
-    font-size: max(12px, 3vw);
+    font-size: clamp(12px, 3vw, 14px);
   }
 }
+
