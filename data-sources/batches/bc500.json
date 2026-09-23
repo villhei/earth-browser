@@ -1,0 +1,715 @@
+[
+  {
+    "slug": "achaemenid-empire",
+    "name": "Achaemenid Empire",
+    "name_fi": "Akemenidien valtakunta",
+    "native_name": "𐎧𐏁𐏂 (Xšāça)",
+    "alternate_names": [
+      "First Persian Empire",
+      "Persian Empire"
+    ],
+    "culture_group": "Iranian",
+    "lineage_id": "persia",
+    "historical_period": "Classical Antiquity / Iron Age",
+    "year_start": -550,
+    "year_end": -330,
+    "period_label": "550 BCE – 330 BCE",
+    "period_label_fi": "550 eaa. – 330 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Akemenidien_valtakunta",
+    "wikidata_id": "Q389688",
+    "summary_en": "Founded by Cyrus the Great, the Achaemenid Empire was the largest empire of ancient history, spanning from the Balkans and Egypt to the Indus Valley. It was renowned for its centralized satrapy administration, the Royal Road network, and monumental architecture at Persepolis.",
+    "summary_fi": "Kyyros Suuren perustama Akemenidien valtakunta oli muinaisen historian laajin imperiumi, joka ulottui Balkanilta ja Egyptistä aina Indus-joelle saakka. Valtakunta tunnettiin kehittyneestä satraappihallinnostaan, Kuninkaantiestä ja Persepoliin monumentaalisesta arkkitehtuuristaan.",
+    "capital": "Persepolis, Pasargadae, Susa, Babylon",
+    "feature_name_matches": [
+      "Achaemenid Empire",
+      "Persian Empire",
+      "Persia"
+    ]
+  },
+  {
+    "slug": "roman-republic",
+    "name": "Roman Republic",
+    "name_fi": "Rooman tasavalta",
+    "native_name": "Senātus Populusque Rōmānus",
+    "alternate_names": [
+      "SPQR",
+      "Rome"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "rome",
+    "historical_period": "Classical Antiquity",
+    "year_start": -509,
+    "year_end": -27,
+    "period_label": "509 BCE – 27 BCE",
+    "period_label_fi": "509 eaa. – 27 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Roman_Republic",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Rooman_tasavalta",
+    "wikidata_id": "Q17167",
+    "summary_en": "The classical republican era of ancient Rome beginning with the overthrow of the Roman Kingdom. Governed by elected magistrates, a representative Senate, and citizen assemblies, Rome expanded from a central Italian city-state into the dominant power of the Mediterranean basin.",
+    "summary_fi": "Antiikin Rooman historian tasavaltainen ajanjakso, joka alkoi kuningasvallan kumoamisella vuonna 509 eaa. Valtiota johtivat vuosittain valittavat konsulit, senaatti ja kansankokoukset Rooman kasvaessa Keski-Italian kaupunkivaltiosta koko Välimeren valtiaaksi.",
+    "capital": "Rome",
+    "feature_name_matches": [
+      "Rome",
+      "Roman Republic"
+    ]
+  },
+  {
+    "slug": "carthaginian-empire",
+    "name": "Carthaginian Empire",
+    "name_fi": "Karthagon valtakunta",
+    "native_name": "𐤒𐤓𐤕𐤟𐤇𐤃𐤔𐤕 (Qart-ḥadašt)",
+    "alternate_names": [
+      "Ancient Carthage",
+      "Punic Empire"
+    ],
+    "culture_group": "Mediterranean",
+    "lineage_id": "carthage",
+    "historical_period": "Classical Antiquity / Iron Age",
+    "year_start": -814,
+    "year_end": -146,
+    "period_label": "814 BCE – 146 BCE",
+    "period_label_fi": "814 eaa. – 146 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Ancient_Carthage",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Karthago",
+    "wikidata_id": "Q2429397",
+    "summary_en": "A formidable Phoenician maritime empire centered in North Africa. Carthage commanded vast trading networks across the western Mediterranean, coastal Iberia, Sicily, and Sardinia, engaging in epic conflicts with the Greek colonies and the Roman Republic during the Punic Wars.",
+    "summary_fi": "Foinikialaisten perustama mahtava merivalta ja kauppaimperiumi Pohjois-Afrikassa nykyisen Tunisian rannikolla. Karthago hallitsi laajaa kauppaverkostoa läntisellä Välimerellä, Espanjassa ja Sisiliassa ennen tuhoutumistaan puunilaissodissa Roomaa vastaan.",
+    "capital": "Carthage",
+    "feature_name_matches": [
+      "Carthaginian Empire",
+      "Carthage"
+    ]
+  },
+  {
+    "slug": "greek-city-states",
+    "name": "Classical Greek City-States",
+    "name_fi": "Antiikin Kreikan kaupunkivaltiot",
+    "native_name": "Ἑλλάς (Hellás)",
+    "alternate_names": [
+      "Ancient Greece",
+      "Hellas",
+      "Poleis"
+    ],
+    "culture_group": "Greco-Roman",
+    "lineage_id": "greece",
+    "historical_period": "Archaic & Classical Greece",
+    "year_start": -800,
+    "year_end": -146,
+    "period_label": "800 BCE – 146 BCE",
+    "period_label_fi": "800 eaa. – 146 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Classical_Greece",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Antiikin_Kreikka",
+    "wikidata_id": "Q11772",
+    "summary_en": "A constellation of independent Hellenic poleis—including Athens, Sparta, Corinth, and Thebes—that flourished along the Aegean and Mediterranean. Renowned as the birthplace of Western democracy, classical philosophy, theater, scientific inquiry, and monumental architecture.",
+    "summary_fi": "Itsenäisten kreikkalaisten kaupunkivaltioiden (kuten Ateena, Sparta, Korintti ja Theba) muodostama kulttuuripiiri Egeanmeren ympärillä. Se toimi länsimaisen demokratian, filosofian, teatterin, tieteen ja taiteen synnyinsijana.",
+    "capital": "Athens, Sparta, Thebes, Corinth",
+    "feature_name_matches": [
+      "Greek city-states",
+      "Greek colonies"
+    ]
+  },
+  {
+    "slug": "zhou-dynasty",
+    "name": "Eastern Zhou States",
+    "name_fi": "Itäinen Zhou-dynastia ja taistelevat läänitysvaltiot",
+    "native_name": "東周 (Dōngzhōu)",
+    "alternate_names": [
+      "Spring and Autumn Period",
+      "Warring States",
+      "Zhou Dynasty"
+    ],
+    "culture_group": "East Asia",
+    "lineage_id": "china",
+    "historical_period": "Spring and Autumn Period / Chinese Bronze Age",
+    "year_start": -770,
+    "year_end": -256,
+    "period_label": "770 BCE – 256 BCE",
+    "period_label_fi": "770 eaa. – 256 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Eastern_Zhou",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/It%C3%A4inen_Zhou-dynastia",
+    "wikidata_id": "Q7209",
+    "summary_en": "The era of the Eastern Zhou dynasty characterized by decentralized feudal states (including Jin, Chu, Qi, and Qin). Despite constant warfare during the Spring and Autumn period, it witnessed the golden age of Chinese intellectual thought, producing Confucius, Laozi, and Sun Tzu.",
+    "summary_fi": "Kiinan itäisen Zhou-dynastian ja Kevättä ja syksyä -kauden aikainen hajanainen läänitysvaltioiden verkosto (mm. Jin, Chu, Qi ja Qin). Kaudella kukoisti kiinalaisen filosofian kultakausi ('sata koulukuntaa'), jolloin syntyivät konfutselaisuus ja taolaisuus.",
+    "capital": "Luoyi (Luoyang)",
+    "feature_name_matches": [
+      "Zhou states",
+      "Zhoa",
+      "Zhou"
+    ]
+  },
+  {
+    "slug": "magadha-kingdom",
+    "name": "Magadha Kingdom",
+    "name_fi": "Magadhan valtakunta",
+    "native_name": "मगध (Magadha)",
+    "alternate_names": [
+      "Haryanka dynasty",
+      "Mahajanapada of Magadha"
+    ],
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Mahajanapada Era / Second Urbanization",
+    "year_start": -600,
+    "year_end": -321,
+    "period_label": "c. 600 BCE – 321 BCE",
+    "period_label_fi": "n. 600 eaa. – 321 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Magadha",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Magadha",
+    "wikidata_id": "Q213498",
+    "summary_en": "The paramount ancient Indian kingdom situated in southern Bihar. Magadha served as the cradle of both Buddhism and Jainism under Kings Bimbisara and Ajatashatru, eventually forming the core of the subsequent Nanda and Mauryan Empires.",
+    "summary_fi": "Muinaisen Intian merkittävin ja mahtavin kuningaskunta (mahajanapada) eteläisessä Biharissa Gangesin laaksossa. Magadha toimi sekä buddhalaisuuden että jainalaisuuden syntykehtona ja muodosti perustan myöhemmälle Maurya-valtakunnalle.",
+    "capital": "Rajagriha (Rajgir), later Pataliputra",
+    "feature_name_matches": [
+      "Magadha"
+    ]
+  },
+  {
+    "slug": "kosala-kingdom",
+    "name": "Kosala Kingdom",
+    "name_fi": "Kosalan kuningaskunta",
+    "native_name": "कोसल (Kosala)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Mahajanapada Era",
+    "year_start": -700,
+    "year_end": -450,
+    "period_label": "c. 700 BCE – 450 BCE",
+    "period_label_fi": "n. 700 eaa. – 450 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kosala",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kosala",
+    "wikidata_id": "Q844111",
+    "summary_en": "A major ancient Indian kingdom located in northern Uttar Pradesh. Kosala, famously ruled by King Prasenajit during the lifetime of Gautama Buddha, was Magadha's primary rival before being absorbed into the Magadhan realm.",
+    "summary_fi": "Merkittävä muinaisintialainen kuningaskunta pohjoisessa Gangesin tasangolla. Kosala oli Gautama Buddhan elinaikana Magadhan merkittävin kilpailija ennen sulautumistaan osaksi Magadhan laajentuvaa valtakuntaa.",
+    "capital": "Shravasti, Ayodhya",
+    "feature_name_matches": [
+      "Kosala"
+    ]
+  },
+  {
+    "slug": "avanti-kingdom",
+    "name": "Avanti Kingdom",
+    "name_fi": "Avantin kuningaskunta",
+    "native_name": "अवन्ति (Avanti)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Mahajanapada Era",
+    "year_start": -600,
+    "year_end": -322,
+    "period_label": "c. 600 BCE – 322 BCE",
+    "period_label_fi": "n. 600 eaa. – 322 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Avanti_(India)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Avanti_(kuningaskunta)",
+    "wikidata_id": "Q790184",
+    "summary_en": "An important Mahajanapada kingdom centered in the Malwa region of central India. With its prosperous metropolis Ujjaini, Avanti controlled critical overland trade corridors linking northern India to Arabian Sea coastal ports.",
+    "summary_fi": "Tärkeä mahajanapada-kuningaskunta Keski-Intian Malwan alueella. Sen kukoistava pääkaupunki Ujjain hallitsi tärkeitä kauppareittejä Pohjois-Intian ja Arabianmeren satamien välillä.",
+    "capital": "Ujjayini (Ujjain), Mahishmati",
+    "feature_name_matches": [
+      "Avanti"
+    ]
+  },
+  {
+    "slug": "kuru-kingdom",
+    "name": "Kuru Kingdom",
+    "name_fi": "Kurun valtakunta",
+    "native_name": "कुरु (Kuru)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Late Vedic Period / Iron Age",
+    "year_start": -1200,
+    "year_end": -345,
+    "period_label": "c. 1200 BCE – 345 BCE",
+    "period_label_fi": "n. 1200 eaa. – 345 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kuru_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kuru_(kuningaskunta)",
+    "wikidata_id": "Q1194389",
+    "summary_en": "The foundational Vedic state of northern India, where Vedic hymns were systematized, rituals codified, and classical Brahmanical culture originated. The Kuru lineage forms the epic backdrop of the Mahabharata.",
+    "summary_fi": "Pohjois-Intian varhainen vedalainen valtio, jossa Veda-kirjallisuus ja rituaalit koottiin ja kanonisoitiin. Kuru-dynastian sisäinen valtataistelu muodostaa intialaisen Mahabharata-eepoksen keskeisen juonen.",
+    "capital": "Asandivat, Hastinapura",
+    "feature_name_matches": [
+      "Kuru"
+    ]
+  },
+  {
+    "slug": "pancala-kingdom",
+    "name": "Panchala Kingdom",
+    "name_fi": "Panchalan kuningaskunta",
+    "native_name": "पाञ्चाल (Pāñcāla)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Late Vedic Period / Mahajanapada",
+    "year_start": -900,
+    "year_end": -322,
+    "period_label": "c. 900 BCE – 322 BCE",
+    "period_label_fi": "n. 900 eaa. – 322 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Panchala",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Panchala",
+    "wikidata_id": "Q1064619",
+    "summary_en": "A prominent Mahajanapada confederacy in the central Ganges-Yamuna Doab, closely allied with the Kurus as a center of Vedic scholarship and philosophical Upanishadic discourse.",
+    "summary_fi": "Keskeinen mahajanapada-valtioliitto Gangesin ja Yamunan välisellä hedelmällisellä tasangolla. Se toimi läheisessä liitossa Kurun kanssa vedalaisen oppineisuuden ja Upanisad-filosofian keskuksena.",
+    "capital": "Ahichchhatra, Kampilya",
+    "feature_name_matches": [
+      "Pancala"
+    ]
+  },
+  {
+    "slug": "vatsa-kingdom",
+    "name": "Vatsa Kingdom",
+    "name_fi": "Vatsan kuningaskunta",
+    "native_name": "वत्स (Vatsa)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Mahajanapada Era",
+    "year_start": -600,
+    "year_end": -323,
+    "period_label": "c. 600 BCE – 323 BCE",
+    "period_label_fi": "n. 600 eaa. – 323 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Vatsa",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Vatsa_(kuningaskunta)",
+    "wikidata_id": "Q1071415",
+    "summary_en": "An influential kingdom situated at the confluence of the Ganges and Yamuna rivers. Its capital, Kaushambi, was an affluent commercial trading hub and a sanctuary visited frequently by Gautama Buddha.",
+    "summary_fi": "Ganges- ja Yamuna-jokien yhtymäkohdassa sijainnut vauras kauppavaltakunta. Sen pääkaupunki Kaushambi oli vilkas kaupankäynnin keskus ja Gautama Buddhan usein vierailema paikka.",
+    "capital": "Kaushambi",
+    "feature_name_matches": [
+      "Vatsa"
+    ]
+  },
+  {
+    "slug": "kasi-kingdom",
+    "name": "Kasi Kingdom",
+    "name_fi": "Kasin kuningaskunta",
+    "native_name": "काशी (Kāśī)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Mahajanapada Era",
+    "year_start": -700,
+    "year_end": -450,
+    "period_label": "c. 700 BCE – 450 BCE",
+    "period_label_fi": "n. 700 eaa. – 450 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kasi_Kingdom",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kasi_(kuningaskunta)",
+    "wikidata_id": "Q1750244",
+    "summary_en": "An ancient Indian Mahajanapada centered on the sacred city of Varanasi (Benares). Highly revered for its cotton textiles, craftsmanship, and spiritual ascetic traditions prior to annexation by Kosala.",
+    "summary_fi": "Muinaisen Intian valtakunta pyhän Varanasin kaupungin ympärillä Gangesin varrella. Se tunnettiin hienoista puuvillakankaistaan, käsityöläisistään ja uskonnollisesta merkityksestään ennen Kosalan valloitusta.",
+    "capital": "Varanasi",
+    "feature_name_matches": [
+      "Kasi"
+    ]
+  },
+  {
+    "slug": "malla-republic",
+    "name": "Malla Republic",
+    "name_fi": "Mallan tasavalta",
+    "native_name": "मल्ल (Malla)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Mahajanapada Era / Gana Sangha",
+    "year_start": -600,
+    "year_end": -400,
+    "period_label": "c. 600 BCE – 400 BCE",
+    "period_label_fi": "n. 600 eaa. – 400 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Malla_(India)",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Malla_(Intia)",
+    "wikidata_id": "Q1417088",
+    "summary_en": "An oligarchic republican confederacy (Gana Sangha) in northern India. Malla holds profound significance in Buddhist and Jain history as the site of Gautama Buddha's Parinirvana at Kushinagar and Mahavira's death at Pava.",
+    "summary_fi": "Muinaisintialainen tasavaltainen valtioliitto (gana sangha) Himalajan juurella. Malla on keskeinen buddhalaisuudelle ja jainalaisuudelle paikkana, jossa Gautama Buddha saavutti parinirvanan Kushinagarissa.",
+    "capital": "Kushinagar, Pava",
+    "feature_name_matches": [
+      "Malla"
+    ]
+  },
+  {
+    "slug": "surasena-kingdom",
+    "name": "Surasena Kingdom",
+    "name_fi": "Surasenan kuningaskunta",
+    "native_name": "शूरसेन (Śūrasena)",
+    "culture_group": "South Asia",
+    "lineage_id": "vedic-ancient-india",
+    "historical_period": "Mahajanapada Era",
+    "year_start": -600,
+    "year_end": -322,
+    "period_label": "c. 600 BCE – 322 BCE",
+    "period_label_fi": "n. 600 eaa. – 322 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Surasena",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Surasena",
+    "wikidata_id": "Q2302325",
+    "summary_en": "A prominent Mahajanapada kingdom centered on Mathura along the Yamuna river. It is celebrated in Hindu traditions as the ancestral homeland of Krishna and the Yadava clans.",
+    "summary_fi": "Mahajanapada-kuningaskunta Yamuna-joen varrella Mathuran kaupungin ympärillä. Se tunnetaan hindulaisessa perinteessä Krishnan ja Yadava-klaanien synnyin- ja asuinseutuna.",
+    "capital": "Mathura",
+    "feature_name_matches": [
+      "Surasena"
+    ]
+  },
+  {
+    "slug": "etruscan-civilization",
+    "name": "Etruscan Civilization",
+    "name_fi": "Etruskien sivilisaatio",
+    "native_name": "Rasenna / Rasna",
+    "alternate_names": [
+      "Etruria",
+      "Etrurians"
+    ],
+    "culture_group": "Southern Europe",
+    "lineage_id": "classical-mediterranean-tribes",
+    "historical_period": "Classical Antiquity / Iron Age",
+    "year_start": -900,
+    "year_end": -27,
+    "period_label": "900 BCE – 27 BCE",
+    "period_label_fi": "900 eaa. – 27 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Etruscan_civilization",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Etruskit",
+    "wikidata_id": "Q21175",
+    "summary_en": "A sophisticated pre-Roman civilization of ancient central Italy (Etruria) organized in a league of autonomous city-states. Renowned for rich metallurgy, terracotta sculpture, advanced divination rituals, and profound cultural influence on early Rome.",
+    "summary_fi": "Muinaisen Keski-Italian (Etrurian) sivistynyt kansa ja kaupunkivaltioiden liitto ennen Rooman nousua. Etruskit olivat taitavia metallinvalajia ja kauppiaita, joiden uskonto, arkkitehtuuri ja aakkoset vaikuttivat syvästi Roomaan.",
+    "capital": "Tarquinia, Veii, Cerveteri, Vulci",
+    "feature_name_matches": [
+      "Etrurians",
+      "Etruscan"
+    ]
+  },
+  {
+    "slug": "samnites",
+    "name": "Samnites",
+    "name_fi": "Samnilaiset",
+    "native_name": "Safineis",
+    "culture_group": "Southern Europe",
+    "lineage_id": "classical-mediterranean-tribes",
+    "historical_period": "Iron Age / Classical Antiquity",
+    "year_start": -600,
+    "year_end": -82,
+    "period_label": "600 BCE – 82 BCE",
+    "period_label_fi": "600 eaa. – 82 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Samnites",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Samnilaiset",
+    "wikidata_id": "Q211833",
+    "summary_en": "An Oscan-speaking Italic pastoral people of south-central Apennine Italy. Organized in a military tribal confederacy (the Samnite League), they fought Rome in three prolonged and ferocious Samnite Wars.",
+    "summary_fi": "Apenniinien vuoristossa Keski- ja Etelä-Italiassa elänyt itaalinen heimo ja heimoliitto. Samnilaiset olivat sotaisia vuoristolaisia, jotka kävivät Roomaa vastaan kolme pitkää samnilaissotaa.",
+    "capital": "Bovianum",
+    "feature_name_matches": [
+      "Samnites"
+    ]
+  },
+  {
+    "slug": "sabines",
+    "name": "Sabines",
+    "name_fi": "Sabiinit",
+    "native_name": "Safineis",
+    "culture_group": "Southern Europe",
+    "lineage_id": "classical-mediterranean-tribes",
+    "historical_period": "Iron Age / Classical Antiquity",
+    "year_start": -800,
+    "year_end": -290,
+    "period_label": "800 BCE – 290 BCE",
+    "period_label_fi": "800 eaa. – 290 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sabines",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Sabiinit",
+    "wikidata_id": "Q107870",
+    "summary_en": "An ancient Italic tribe settled in the Sabine Hills northeast of Rome. Integral to early Roman foundation mythology (the Rape of the Sabine Women and King Numa Pompilius), they fully merged with early Roman society.",
+    "summary_fi": "Muinaisen Keski-Italian itaalinen heimo Rooman koillispuolella. Sabiinit liittyivät läheisesti Rooman varhaiseen mytologiaan (kuten sabiinitarten ryöstö) ja sulautuivat varhain roomalaiseen yhteiskuntaan.",
+    "capital": "Reate (Rieti), Cures",
+    "feature_name_matches": [
+      "Sabini",
+      "Sabines"
+    ]
+  },
+  {
+    "slug": "boii-celtic-tribe",
+    "name": "Boii",
+    "name_fi": "Boijit",
+    "culture_group": "Southern Europe",
+    "lineage_id": "classical-mediterranean-tribes",
+    "historical_period": "Iron Age / La Tène Culture",
+    "year_start": -500,
+    "year_end": -100,
+    "period_label": "500 BCE – 100 BCE",
+    "period_label_fi": "500 eaa. – 100 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Boii",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Boijit",
+    "wikidata_id": "Q156743",
+    "summary_en": "A major Celtic tribal confederacy originating in Central Europe (giving Bohemia its name) that migrated across the Alps to establish settlements in the Po Valley of Cisalpine Gaul, frequently battling Rome.",
+    "summary_fi": "Merkittävä kelttiläinen heimo, jonka alkuperäinen asuinalue sijaitsi Keski-Euroopassa (josta Böömi saa nimensä). Osa boijeista asettui Pohjois-Italian Pon tasangolle ja soti pitkään Rooman laajentumista vastaan.",
+    "capital": "Felsina (Bologna)",
+    "feature_name_matches": [
+      "Boii",
+      "Boihaenum"
+    ]
+  },
+  {
+    "slug": "kingdom-of-kush",
+    "name": "Kingdom of Kush (Meroë)",
+    "name_fi": "Kushin kuningaskunta (Meroë)",
+    "native_name": "𐦡𐦠𐦲 (Kūš)",
+    "alternate_names": [
+      "Nubian Empire",
+      "Meroë",
+      "Kush"
+    ],
+    "culture_group": "East Africa",
+    "lineage_id": "nubia",
+    "historical_period": "Meroitic Period / African Iron Age",
+    "year_start": -1070,
+    "year_end": 350,
+    "period_label": "1070 BCE – 350 CE",
+    "period_label_fi": "1070 eaa. – 350 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Kingdom_of_Kush",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kush",
+    "wikidata_id": "Q241851",
+    "summary_en": "An ancient Nubian kingdom located along the Nile in present-day Sudan. Renowned for its distinctive steep-sided royal pyramids, thriving iron-smelting industry, and unique Meroitic script, Kush remained a great regional power for over a millennium.",
+    "summary_fi": "Muinainen nubialainen valtakunta Niilin varrella nykyisen Sudanin alueella. Se tunnetaan jyrkkäsivuisista Meroën pyramideistaan, laajasta raudantuotannostaan sekä omintakeisesta meroiittisesta kirjoitusjärjestelmästään.",
+    "capital": "Meroë, Napata",
+    "feature_name_matches": [
+      "Meroe",
+      "Kush",
+      "Nubia"
+    ]
+  },
+  {
+    "slug": "olmec-civilization",
+    "name": "Olmec Civilization",
+    "name_fi": "Olmeekkien sivilisaatio",
+    "native_name": "Ōlmēcatl",
+    "culture_group": "Mesoamerican",
+    "lineage_id": "olmec",
+    "historical_period": "Pre-Classic Formative Mesoamerica",
+    "year_start": -1500,
+    "year_end": -400,
+    "period_label": "1500 BCE – 400 BCE",
+    "period_label_fi": "1500 eaa. – 400 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Olmecs",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Olmeekit",
+    "wikidata_id": "Q135364",
+    "summary_en": "Regarded as the 'mother culture' of Mesoamerica, the Olmecs flourished in the tropical lowlands of Veracruz and Tabasco. They pioneered ceremonial temple mounds, the ritual ballgame, and monumental colossal basalt heads.",
+    "summary_fi": "Mesoamerikan varhaisin korkeakulttuuri ('äitikulttuuri') Meksikonlahden trooppisella rannikolla. Olmeekit loivat pohjan Mesoamerikan uskonnolle, pallopelille sekä kaiversivat kuuluisat valtavat basalttipäät.",
+    "capital": "San Lorenzo, La Venta",
+    "feature_name_matches": [
+      "Olmec"
+    ]
+  },
+  {
+    "slug": "chavin-culture",
+    "name": "Chavín Culture",
+    "name_fi": "Chavínin kulttuuri",
+    "culture_group": "Andean",
+    "lineage_id": "andean-civilizations",
+    "historical_period": "Early Horizon (Andean Pre-Inca)",
+    "year_start": -900,
+    "year_end": -200,
+    "period_label": "900 BCE – 200 BCE",
+    "period_label_fi": "900 eaa. – 200 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Chav%C3%ADn_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Chav%C3%ADnin_kulttuuri",
+    "wikidata_id": "Q728168",
+    "summary_en": "An extinct pre-Columbian civilization centered in the northern Andean highlands of Peru. Its monumental stone temple complex at Chavín de Huántar served as a pan-regional pilgrimage site and religious catalyst for Andean societies.",
+    "summary_fi": "Varhainen sivilisaatio Perun pohjoisilla Andeilla. Sen monumentaalinen kivitemppeli Chavín de Huántar toimi uskonnollisena pyhiinvaelluspaikkana ja loi taiteellisen ja uskonnollisen perustan myöhemmille Andien kulttuureille.",
+    "capital": "Chavín de Huántar",
+    "feature_name_matches": [
+      "Chavin"
+    ]
+  },
+  {
+    "slug": "adena-culture",
+    "name": "Adena Culture",
+    "name_fi": "Adenan kulttuuri",
+    "culture_group": "North American Indigenous",
+    "lineage_id": "woodland-mississippian",
+    "historical_period": "Early Woodland Period",
+    "year_start": -1000,
+    "year_end": 100,
+    "period_label": "1000 BCE – 100 CE",
+    "period_label_fi": "1000 eaa. – 100 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Adena_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Adenan_kulttuuri",
+    "wikidata_id": "Q355819",
+    "summary_en": "A pre-Columbian Native American mound-building culture that occupied the Ohio River Valley. Characterized by monumental conical burial earthworks, sophisticated stone pipe sculptures, and early cultivation of indigenous flora.",
+    "summary_fi": "Pohjois-Amerikan intiaanien kumpujenrakentajakulttuuri Ohio-joen laaksossa. Adena-kulttuuri tunnetaan kartiomaisista hautakummuistaan, taidokkaista kivipiipuistaan ja varhaisesta maanviljelystään.",
+    "capital": "Ohio River Valley",
+    "feature_name_matches": [
+      "Adena Culture",
+      "Adena"
+    ]
+  },
+  {
+    "slug": "sami-peoples",
+    "name": "Sámi Peoples",
+    "name_fi": "Saamelaiset",
+    "native_name": "Sámit / Sápmelaččat",
+    "culture_group": "Finno-Ugric",
+    "lineage_id": "finno-ugric-taiga",
+    "historical_period": "Fennoscandian Iron Age & Indigenous Continuity",
+    "year_start": -1000,
+    "year_end": 2024,
+    "period_label": "1000 BCE – Present",
+    "period_label_fi": "1000 eaa. – Nykyaika",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/S%C3%A1mi_peoples",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saamelaiset",
+    "wikidata_id": "Q48292",
+    "summary_en": "The indigenous Finno-Ugric people inhabiting Sápmi across northern Norway, Sweden, Finland, and the Kola Peninsula of Russia. Renowned for their ancient ecological adaptation to subarctic environments, rich oral tradition (yoik), and semi-nomadic seasonal subsistence.",
+    "summary_fi": "Euroopan unionin ainoa alkuperäiskansa, jonka asuinalue Sápmi ulottuu Pohjois-Norjaan, -Ruotsiin, -Suomeen ja Kuolan niemimaalle. Saamelaiskulttuuri perustuu vahvaan luontoyhteyteen, omaan kieli- ja joikuperinteeseen sekä poronhoitoon.",
+    "capital": "Sápmi",
+    "feature_name_matches": [
+      "Saami",
+      "Sámi",
+      "Sami"
+    ]
+  },
+  {
+    "slug": "pomeranian-culture",
+    "name": "Pomeranian Culture",
+    "name_fi": "Pommerin kulttuuri",
+    "culture_group": "Baltic",
+    "lineage_id": "baltic-archaeological",
+    "historical_period": "Early Iron Age",
+    "year_start": -700,
+    "year_end": -150,
+    "period_label": "700 BCE – 150 BCE",
+    "period_label_fi": "700 eaa. – 150 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Pomeranian_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Pommerin_kulttuuri",
+    "wikidata_id": "Q689035",
+    "summary_en": "An Iron Age culture that evolved from the Lusatian culture in northern Poland. Distinguished by distinctive face-urn cinerary vessels, bell-shaped grave chambers, and early iron metallurgy along the Baltic coast.",
+    "summary_fi": "Varhainen rautakautinen arkeologinen kulttuuri nykyisen Puolan pohjoisosissa Itämeren rannikolla. Se tunnetaan hautauurnistaan, joihin oli muotoiltu ihmiskasvot (kasvouurnat), sekä kivikammiohaudoistaan.",
+    "capital": "Baltic Pomerania",
+    "feature_name_matches": [
+      "Pomeranian culture"
+    ]
+  },
+  {
+    "slug": "milograd-culture",
+    "name": "Milograd Culture",
+    "name_fi": "Milogradin kulttuuri",
+    "culture_group": "Eastern Europe",
+    "lineage_id": "milograd",
+    "historical_period": "Early Iron Age",
+    "year_start": -700,
+    "year_end": -100,
+    "period_label": "700 BCE – 100 BCE",
+    "period_label_fi": "700 eaa. – 100 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Milograd_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Milogradin_kulttuuri",
+    "wikidata_id": "Q2620743",
+    "summary_en": "An archaeological culture of the 7th–1st centuries BCE located in southern Belarus and northern Ukraine along the Dnieper and Pripyat basins, featuring fortified hillfort settlements and linked to ancestral Baltic or Proto-Slavic populations.",
+    "summary_fi": "Varhainen rautakautinen kulttuuri Dneprin ja Pripetin altaissa Etelä-Valko-Venäjällä ja Pohjois-Ukrainassa. Se tunnetaan linnoitetuista mäkilinnoistaan ja pyörökaivannoistaan, ja se yhdistetään varhaisiin balttilais-slaavilaisiin väestöihin.",
+    "capital": "Dnieper-Pripyat basin",
+    "feature_name_matches": [
+      "Milograd culture"
+    ]
+  },
+  {
+    "slug": "sabaean-kingdom",
+    "name": "Kingdom of Saba (Sheba)",
+    "name_fi": "Sabalaisten valtakunta (Saba)",
+    "native_name": "𐩪𐩨𐩱 (Sb')",
+    "alternate_names": [
+      "Sheba",
+      "Saba"
+    ],
+    "culture_group": "Middle East",
+    "lineage_id": "arabian-peninsula",
+    "historical_period": "South Arabian Antiquity",
+    "year_start": -1200,
+    "year_end": 275,
+    "period_label": "1200 BCE – 275 CE",
+    "period_label_fi": "1200 eaa. – 275 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Sabaeans",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Saba",
+    "wikidata_id": "Q739773",
+    "summary_en": "An ancient South Arabian kingdom based in modern Yemen. Famous for the Great Marib Dam, frankincense and myrrh incense caravans, and biblical traditions surrounding the Queen of Sheba.",
+    "summary_fi": "Muinainen eteläarabialainen kuningaskunta nykyisen Jemenin alueella. Saba tunnettiin monumentaalisesta Ma'ribin padostaan, suitsukekauppakaravaaneistaan ja Raamatun kertomuksesta Saban kuningattaresta.",
+    "capital": "Ma'rib",
+    "feature_name_matches": [
+      "Saba"
+    ]
+  },
+  {
+    "slug": "late-jomon-culture",
+    "name": "Late Jōmon Culture",
+    "name_fi": "Myöhäis-Jōmonin kulttuuri",
+    "native_name": "縄文時代 (Jōmon jidai)",
+    "culture_group": "East Asia",
+    "lineage_id": "jomon",
+    "historical_period": "Japanese Prehistory / Neolithic",
+    "year_start": -2500,
+    "year_end": -300,
+    "period_label": "2500 BCE – 300 BCE",
+    "period_label_fi": "2500 eaa. – 300 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/J%C5%8Dmon_period",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/J%C5%8Dmon-kausi",
+    "wikidata_id": "Q207869",
+    "summary_en": "A sophisticated hunter-gatherer and coastal foraging society in pre-agricultural Japan, celebrated for the world's most intricate cord-marked earthenware pottery and hollow clay dogū figurines.",
+    "summary_fi": "Japanin esihistoriallinen metsästäjä-keräilijöiden ja kalastajien kulttuuri, joka tunnetaan maailman vanhimpiin ja taidokkaimpiin kuuluvasta nuorakeramiikastaan ja savisista dogū-patsaistaan.",
+    "capital": "Japanese Archipelago",
+    "feature_name_matches": [
+      "Late Jomon culture",
+      "Jōmon",
+      "Jomon"
+    ]
+  },
+  {
+    "slug": "illyrians",
+    "name": "Ancient Illyrians",
+    "name_fi": "Illyrialaiset",
+    "native_name": "Illyrii",
+    "culture_group": "Balkans",
+    "lineage_id": "ancient-balkans",
+    "historical_period": "Iron Age / Classical Antiquity",
+    "year_start": -1000,
+    "year_end": -168,
+    "period_label": "1000 BCE – 168 BCE",
+    "period_label_fi": "1000 eaa. – 168 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Illyrians",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Illyrialaiset",
+    "wikidata_id": "Q179261",
+    "summary_en": "An Indo-European tribal confederation inhabiting the western Balkan peninsula along the Adriatic coast. Renowned as skilled maritime navigators, metallurgists, and formidable warriors who fiercely contested Macedonian and Roman expansion.",
+    "summary_fi": "Indoeurooppalainen kansa ja heimoliitto Adrianmeren rannikolla Länsi-Balkanilla. Illyrialaiset olivat taitavia merenkulkijoita ja sotureita, jotka taistelivat pitkään Makedoniaa ja Roomaa vastaan.",
+    "capital": "Scodra (Shkodër)",
+    "feature_name_matches": [
+      "Illyrians"
+    ]
+  },
+  {
+    "slug": "bell-beaker-culture",
+    "name": "Bell Beaker Culture",
+    "name_fi": "Kellopikarikulttuuri",
+    "alternate_names": [
+      "Bell-shaped burials culture"
+    ],
+    "culture_group": "Western & Central Europe",
+    "lineage_id": "beaker-corded-ware",
+    "historical_period": "Chalcolithic / Early Bronze Age",
+    "year_start": -2800,
+    "year_end": -1800,
+    "period_label": "2800 BCE – 1800 BCE",
+    "period_label_fi": "2800 eaa. – 1800 eaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Bell_Beaker_culture",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Kellopikarikulttuuri",
+    "wikidata_id": "Q470769",
+    "summary_en": "A pan-European archaeological culture defined by distinctive inverted-bell drinking vessels, copper metallurgy, barbed flint arrowheads, and individual archery-themed burials.",
+    "summary_fi": "Laaja eurooppalainen myöhäiskivikautinen ja varhaispronssikautinen kulttuuri, jolle olivat ominaisia ylösalaisin käännetyn kellon muotoiset savipikarit, kuparikirveet ja jousiampujien haudat.",
+    "capital": "Western & Central Europe",
+    "feature_name_matches": [
+      "Bell-shaped burials culture",
+      "Beaker"
+    ]
+  },
+  {
+    "slug": "guanches",
+    "name": "Guanches",
+    "name_fi": "Guantšit",
+    "culture_group": "North Africa",
+    "lineage_id": "guanches",
+    "historical_period": "Canary Islands Antiquity",
+    "year_start": -1000,
+    "year_end": 1496,
+    "period_label": "c. 1000 BCE – 1496 CE",
+    "period_label_fi": "n. 1000 eaa. – 1496 jaa.",
+    "wikipedia_url_en": "https://en.wikipedia.org/wiki/Guanches",
+    "wikipedia_url_fi": "https://fi.wikipedia.org/wiki/Guant%C5%A1it",
+    "wikidata_id": "Q213261",
+    "summary_en": "The aboriginal Berber-descended inhabitants of the Canary Islands. Prior to Spanish conquest in the 15th century, they lived in isolated island chiefdoms, preserving unique cave architecture, whistling language (Silbo), and mummification traditions.",
+    "summary_fi": "Kanariansaarten berberialkuperää olleet alkuperäisasukkaat. He elivät saarilla vuosisatoja eristyksissä säilyttäen omintakeisen kulttuurinsa, luolamummoinnin ja vihellyskielen (Silbo) aina 1400-luvun espanjalaisvalloitukseen saakka.",
+    "capital": "Canary Islands",
+    "feature_name_matches": [
+      "Guanches"
+    ]
+  }
+]

@@ -137,14 +137,14 @@ This action plan provides a step-by-step roadmap for housekeeping, dead code rem
 ## Phase 5: Backend & Script Organization (P3)
 
 ### 5.1 Deduplicate PostGIS GeoJSON Query
-- [ ] Create `src/server/queries.ts` exporting `buildEraGeoJsonQuery(idOrSlugParam: string)`.
-- [ ] Refactor both `src/server/api.ts` (lines 50–120) and `src/server/exportStatic.ts` (lines 63–127) to import and share this query function.
+- [x] Create `src/server/queries.ts` exporting `getEraGeoJsonQuery(whereCondition: string)`.
+- [x] Refactor both `src/server/api.ts` (lines 50–120) and `src/server/exportStatic.ts` (lines 63–127) to import and share this query function.
 
 ### 5.2 Decouple `src/server/ingest.ts` from `scripts/`
-- [ ] Move `seed_culture_metadata_batch.ts` logic into `src/server/cultureSeeder.ts`.
-- [ ] Update `src/server/ingest.ts` to import `seedAllBatches` from `src/server/cultureSeeder.ts`.
-- [ ] Move the 24 `scripts/build_*_batch.ts` files into `scripts/generators/` or archive them.
-- [ ] Standardize `seed_culture_metadata_bc500.ts` into a standard `data-sources/batches/` JSON file.
+- [x] Move `seed_culture_metadata_batch.ts` logic into `src/server/cultureSeeder.ts`.
+- [x] Update `src/server/ingest.ts` to import `seedAllBatches` from `src/server/cultureSeeder.ts`.
+- [x] Move the `scripts/build_*_batch.ts` files into `scripts/generators/`.
+- [x] Standardize `seed_culture_metadata_bc500.ts` into a standard `data-sources/batches/bc500.json` file.
 
 ---
 
