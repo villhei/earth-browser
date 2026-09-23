@@ -3,7 +3,6 @@ import { GeoJSONFeature } from "../../types"
 import {
   getCountryColor,
   getSubjugationInfo,
-  getBorderPrecision,
   isNeutralOrUnclaimed,
   HIGHLIGHT_COLOR,
 } from "./colors"
@@ -16,7 +15,6 @@ const materialCache = new Map<string, THREE.Material>()
  * Supports:
  * - Solid colors with PARTOF parent inheritance
  * - Subjugation striped patterns (SUBJECTO) in spherical coordinates
- * - Border precision edge blur / softness
  * - Selected and hover states
  */
 export function getPolygonCapMaterial(
@@ -63,7 +61,6 @@ export function getPolygonCapMaterial(
   )
 
   const subjugation = getSubjugationInfo(name, props)
-  const precision = getBorderPrecision(props)
   const isStriped = subjugation.isSubjugated && !isSelected && !isHovered
 
   // Base color or striping colors
@@ -82,7 +79,6 @@ export function getPolygonCapMaterial(
     primaryColor,
     isStriped ? secondaryColor : "solid",
     effectiveOpacity.toFixed(2),
-    precision,
     isSelected ? "sel" : isHovered ? "hov" : "norm",
   ].join("::")
 
@@ -96,7 +92,6 @@ export function getPolygonCapMaterial(
     secondaryColor,
     isStriped,
     opacity: effectiveOpacity,
-    precision,
   })
 
   materialCache.set(cacheKey, material)
@@ -112,7 +107,6 @@ function createPolygonMaterial(params: {
   secondaryColor: string
   isStriped: boolean
   opacity: number
-  precision: 1 | 2 | 3
 }): THREE.Material {
   const colA = new THREE.Color(params.primaryColor)
   const colB = new THREE.Color(params.secondaryColor)

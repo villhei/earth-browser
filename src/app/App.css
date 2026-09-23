@@ -55,21 +55,6 @@
   color: var(--color-text-muted);
 }
 
-.top-controls-bar {
-  position: absolute;
-  top: var(--space-10);
-  right: var(--space-10);
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  z-index: var(--z-controls);
-}
-
-.top-controls-bar .controls-overlay {
-  position: relative;
-  top: auto;
-  right: auto;
-}
 
 .bottom-controls-bar {
   position: absolute;
@@ -117,11 +102,6 @@
     width: 100%;
   }
 
-  .top-controls-bar {
-    top: max(8px, 1.2vh);
-    right: max(10px, 2.5vw);
-    gap: max(4px, 1vw);
-  }
 
   .bottom-controls-bar {
     bottom: max(10px, 1.5vh);

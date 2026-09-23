@@ -31,6 +31,15 @@ async function exportStaticData() {
       throw dbErr
     }
 
+    // Clean erasDir of any existing .json files before exporting so stale files never accumulate
+    if (fs.existsSync(erasDir)) {
+      for (const file of fs.readdirSync(erasDir)) {
+        if (file.endsWith(".json")) {
+          fs.unlinkSync(path.join(erasDir, file))
+        }
+      }
+    }
+
     // 1. Export Eras catalog (matches GET /api/eras)
     console.log("Fetching historical eras catalog...")
     const erasRes = await pool.query(`
@@ -141,10 +150,6 @@ async function exportStaticData() {
 
       const slugPath = path.join(erasDir, `${era.slug}.json`)
       fs.writeFileSync(slugPath, jsonStr, "utf-8")
-
-      // Also write by ID for compatibility
-      const idPath = path.join(erasDir, `${era.id}.json`)
-      fs.writeFileSync(idPath, jsonStr, "utf-8")
 
       console.log(
         `  [${i + 1}/${eras.length}] ✓ ${era.slug} (${(jsonStr.length / 1024).toFixed(1)} KB, ${featureCount} features)`

@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react"
 import * as THREE from "three"
 import ThreeGlobe from "three-globe"
 import { OrbitControls } from "three/addons/controls/OrbitControls.js"
-import alpha from "color-alpha"
 import { PuffLoader } from "react-spinners"
 import { HistoricalGlobeProps, GlobeTexture, GlobeView } from "./types"
 import {
@@ -46,6 +45,15 @@ const DEFAULT_SIDE_COLOR = "#ffffff"
 const DEFAULT_STROKE_COLOR = "#000000"
 const DEFAULT_CAP_CURVATURE_RESOLUTION = 1
 const DEFAULT_ELEVATION_SCALE = 0.3
+
+function toRgba(colorStr: string, opacity: number): string {
+  try {
+    const c = new THREE.Color(colorStr)
+    return `rgba(${Math.round(c.r * 255)}, ${Math.round(c.g * 255)}, ${Math.round(c.b * 255)}, ${opacity})`
+  } catch {
+    return colorStr
+  }
+}
 
 export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
   view = DEFAULT_GLOBE_VIEW,
@@ -466,10 +474,6 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
     container.addEventListener("pointermove", handlePointerMove as any)
     container.addEventListener("pointerup", handlePointerUp as any)
     container.addEventListener("pointerleave", handlePointerLeave as any)
-    container.addEventListener("mousedown", handlePointerDown)
-    container.addEventListener("mousemove", handlePointerMove)
-    container.addEventListener("mouseup", handlePointerUp)
-    container.addEventListener("mouseleave", handlePointerLeave)
     container.addEventListener("click", handleClick)
 
     // State trackers for label engine dirty-checking to eliminate 0-cost idle rendering
@@ -732,10 +736,6 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
       container.removeEventListener("pointermove", handlePointerMove as any)
       container.removeEventListener("pointerup", handlePointerUp as any)
       container.removeEventListener("pointerleave", handlePointerLeave as any)
-      container.removeEventListener("mousedown", handlePointerDown)
-      container.removeEventListener("mousemove", handlePointerMove)
-      container.removeEventListener("mouseup", handlePointerUp)
-      container.removeEventListener("mouseleave", handlePointerLeave)
       container.removeEventListener("click", handleClick)
       resizeObserver.disconnect()
       window.removeEventListener("resize", handleResize)
@@ -930,7 +930,7 @@ export const HistoricalGlobe: React.FC<HistoricalGlobeProps> = ({
         if (props.is_unclaimed || isNeutralOrUnclaimed(name)) {
           return "transparent"
         }
-        return alpha(sideColor, 0.4)
+        return toRgba(sideColor, 0.4)
       })
     }
   }, [sideColor])

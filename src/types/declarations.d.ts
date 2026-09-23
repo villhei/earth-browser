@@ -1,15 +1,3 @@
-declare module "country-flag-colors" {
-  export type Country = {
-    name: string
-    colors: Array<string>
-  }
-  const CountryList: Array<Country>
-  export default CountryList
-}
-
-declare module "color-alpha" {
-  export default function alpha(color: string, opacity: number): string
-}
 
 declare module "*.css" {
   const content: string
