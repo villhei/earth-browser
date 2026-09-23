@@ -151,19 +151,19 @@ This action plan provides a step-by-step roadmap for housekeeping, dead code rem
 ## Phase 6: Documentation Refresh & Path Fixes (P3)
 
 ### 6.1 Fix Machine-Specific File Links
-- [ ] Replace `file:///home/ville/src/web/earth-browser/...` with relative paths in:
+- [x] Replace `file:///home/ville/src/web/earth-browser/...` with relative paths in:
   - `README.md` (line 187)
   - `CULTURES.md` (line 7)
   - `scripts/export_cultures_list.ts` (line 108)
   - `CULTURE_METADATA_EXPANSION.md` (multiple lines)
 
 ### 6.2 Update Architecture Maps & Guides
-- [ ] In `README.md`:
+- [x] In `README.md`:
   - Add `src/i18n/`, `src/styles/`, `src/earthTextures/`, and new UI components to the project tree.
-- [ ] In `AGENTS.md`:
+- [x] In `AGENTS.md`:
   - Update codebase map with current modules.
   - Update Section 3 (Timeline) and Section 4 (ControlsOverlay) to accurately describe ActiveEraBanner, Theme selector, and Language toggle.
-- [ ] In `CULTURE_METADATA_EXPANSION.md`:
+- [x] In `CULTURE_METADATA_EXPANSION.md`:
   - Update Section 1.1 to reflect active Finnish localization.
 
 ---

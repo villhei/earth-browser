@@ -76,40 +76,62 @@ View changes replace the current history entry so dragging does not fill browser
 
 ```
 earth-browser/
+├── data-sources/               # Source datasets, batches, and offline catalogs
+│   ├── batches/                # 37 culture metadata batch JSON files (2,999 entities)
+│   ├── residue/                # Regional inventories of unmapped historical entities
+│   ├── textures/               # Paleogeography source shapefiles, bathymetry & docs
+│   └── translations/           # Extracted entity string catalogs for localization
 ├── migrations/                 # Knex DDL database schema migrations
 │   └── seed/                   # Raw historical GeoJSON datasets (54 eras)
+├── scripts/                    # Maintenance, ingestion, and generation tooling
+│   ├── generators/             # Culture metadata batch generator scripts
+│   ├── culture_metadata_status.ts # 100% completion tracking reporter
+│   ├── extract-translatable-strings.ts # Offline translation string extractor
+│   ├── generate_prehistoric_textures.py # Bathymetry & ice sheet texture pipeline
+│   ├── seed_culture_metadata_batch.ts # CLI batch seeder wrapper
+│   └── update_geojson_datasets.ts # Upstream dataset sync and validation
 ├── src/
 │   ├── app/                    # Application shell & layout
-│   │   ├── App.tsx             # Main React application layout
+│   │   ├── App.tsx             # Main React application layout & state orchestration
 │   │   └── App.css             # Layout styling (viewport offsets, headers)
-├── components/             # Reusable UI components
-│   │   ├── Timeline.tsx        # Vertical scrollable left timeline panel with dot markers
-│   │   ├── Timeline.css        # Timeline panel styling
+│   ├── components/             # Reusable UI components
+│   │   ├── ActiveEraBanner.tsx # Top era indicator banner & chronological pill
+│   │   ├── Attribution.tsx     # Attribution button & modal dialog
+│   │   ├── ControlsOverlay.tsx # Visual appearance settings (altitude, opacity, labels, theme, lang)
 │   │   ├── CountryDrawer.tsx   # Country details / culture inspector side drawer
-│   │   ├── CountryDrawer.css   # Country drawer styling
-│   │   ├── ControlsOverlay.tsx # Visual appearance settings (altitude, opacity, labels)
-│   │   └── ControlsOverlay.css # Visual settings overlay styling
+│   │   ├── EraDetailsModal.tsx # Full-screen modal with detailed historical era context
+│   │   ├── LanguageToggle.tsx  # Bilingual toggle control (EN / FI)
+│   │   └── Timeline.tsx        # Vertical scrollable left timeline panel with dot markers
+│   ├── earthTextures/          # Bundled offline Earth texture images & paleogeographic masks
 │   ├── features/
 │   │   └── globe/              # Standalone, embeddable 3D Globe package
 │   │       ├── HistoricalGlobe.tsx # Pure ThreeGlobe WebGL visualizer
 │   │       ├── labels.ts       # 2D Screen-space non-overlapping label projection & collision engine
 │   │       ├── polygonMaterials.ts # Three.js polygon cap materials & subjugation stripes
 │   │       ├── colors.ts       # Culture color palette and precision resolvers
-│   │       ├── textures.ts     # Earth textures (Marble, Dark, Day, Night)
+│   │       ├── textures.ts     # Earth textures resolver (Marble, Dark, Day, Night, Prehistoric)
 │   │       ├── types.ts        # Globe component props & domain types
 │   │       └── index.ts        # Public export
-│   ├── server/                 # Backend services
-│   │   ├── db.ts               # PostgreSQL connection pool
+│   ├── i18n/                   # Bilingual localization system (English & Finnish)
+│   │   ├── context.tsx         # LanguageProvider & useLanguage hook
+│   │   ├── translations.ts     # Static UI string dictionary
+│   │   └── types.ts            # Supported languages and translation schemas
+│   ├── server/                 # Backend services & spatial query engine
 │   │   ├── api.ts              # Clean REST endpoints (/api/eras, /api/eras/:slug/geojson)
+│   │   ├── cultureSeeder.ts    # Batch upsert & feature linkage engine
+│   │   ├── db.ts               # PostgreSQL connection pool
+│   │   ├── eraMetadata.ts      # Chronological historical era catalog (54 eras)
+│   │   ├── exportStatic.ts     # Serverless static JSON exporter
 │   │   ├── ingest.ts           # Idempotent GeoJSON -> PostGIS ETL CLI
-│   │   └── eraMetadata.ts      # Chronological historical era catalog (54 eras)
+│   │   └── queries.ts          # Shared PostGIS FeatureCollection SQL query builder
 │   ├── services/
 │   │   └── api.ts              # Frontend API client with in-memory caching
+│   ├── styles/                 # Design tokens, theme palettes, and global CSS variables
 │   ├── types/                  # Shared GeoJSON & Era types
 │   └── index.tsx               # Client entrypoint
 ├── server.ts                   # Express server entry point
 ├── knexfile.ts                 # Database migration config
-├── vite.config.ts              # Frontend bundler & API proxy
+├── vite.config.ts              # Frontend bundler with code-splitting & API proxy
 └── package.json
 ```
 
@@ -184,7 +206,7 @@ Earth Browser features era-accurate Earth textures with realistic bathymetry-bas
 - **8,000 BCE** (*Early Neolithic*): -25m sea level, Doggerland archipelago.
 - **5,000 BCE** (*Green Sahara*): African Humid Period, Lake Mega-Chad (~350,000 km²).
 
-See [data-sources/textures/README.md](file:///home/ville/src/web/earth-browser/data-sources/textures/README.md) for data sources, algorithms, and instructions on generating and iterating on custom textures using [generate_prehistoric_textures.py](file:///home/ville/src/web/earth-browser/scripts/generate_prehistoric_textures.py).
+See [data-sources/textures/README.md](data-sources/textures/README.md) for data sources, algorithms, and instructions on generating and iterating on custom textures using [generate_prehistoric_textures.py](scripts/generate_prehistoric_textures.py).
 
 ---
 

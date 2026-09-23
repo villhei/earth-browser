@@ -19,37 +19,47 @@ This guide provides technical specifications, architectural patterns, and develo
 
 ## Codebase Map & Responsibilities
 
+```
 ├── data-sources/
-│   └── textures/                              # Source datasets & documentation for prehistoric textures
-│       ├── README.md                          # Detailed paleogeography & generation documentation
-│       ├── requirements.txt                   # Python dependencies (Pillow, numpy, scipy, pyshp, pyproj)
-│       └── ice-sheets/                        # Reconstructed vector shapefiles
-│           ├── north-america/                 # Laurentide & Cordilleran ice sheets (Dyke et al., WGS84)
-│           └── eurasia/                       # Scandinavian & Barents ice sheets (DATED-1, Lambert Azimuthal)
-├── CULTURE_METADATA_EXPANSION.md          # Multi-agent parallel task guide & missing entries inventory
+│   ├── batches/                               # 37 culture metadata batch JSON files (2,999 entities)
+│   ├── residue/                               # Regional inventories of unmapped historical entities
+│   ├── textures/                              # Source datasets & documentation for prehistoric textures
+│   │   ├── README.md                          # Detailed paleogeography & generation documentation
+│   │   ├── requirements.txt                   # Python dependencies (Pillow, numpy, scipy, pyshp, pyproj)
+│   │   └── ice-sheets/                        # Reconstructed vector shapefiles
+│   │       ├── north-america/                 # Laurentide & Cordilleran ice sheets (Dyke et al., WGS84)
+│   │       └── eurasia/                       # Scandinavian & Barents ice sheets (DATED-1, Lambert Azimuthal)
+│   └── translations/                          # Extracted entity string catalogs for localization
+├── CULTURE_METADATA_EXPANSION.md              # Multi-agent parallel task guide & completed inventory
 ├── migrations/
 │   ├── 20260828000000_create_eras_and_features.ts # Base schema (eras & era_features with PostGIS geom)
 │   ├── 20260831000000_add_border_precision_partof_subjecto.ts # Lineage & precision columns
-│   ├── 20260831010000_add_elevation_tier.ts       # Precalculated 3D elevation tiers for overlapping polygons
-│   ├── 20260921000000_create_culture_metadata.ts  # Canonical culture metadata table & era_features linkage
-│   └── seed/                                      # 54 Historical GeoJSON datasets (world_*.geojson)
+│   ├── 20260831010000_add_elevation_tier.ts   # Precalculated 3D elevation tiers for overlapping polygons
+│   ├── 20260921000000_create_culture_metadata.ts # Canonical culture metadata table & era_features linkage
+│   └── seed/                                  # 54 Historical GeoJSON datasets (world_*.geojson)
 ├── scripts/
+│   ├── generators/                            # Culture metadata batch generator scripts
 │   ├── generate_prehistoric_textures.py       # Python pipeline for bathymetry & ice sheet texture generation
 │   ├── update_geojson_datasets.ts             # Automated dataset sync & validation from upstream repository
-│   ├── seed_culture_metadata_batch.ts         # Parallel batch seeder for culture metadata
-│   └── culture_metadata_status.ts             # Completion tracking and missing entries generator
+│   ├── seed_culture_metadata_batch.ts         # Parallel batch seeder CLI wrapper
+│   ├── culture_metadata_status.ts             # Completion tracking and status reporter (100.0%)
+│   └── extract-translatable-strings.ts        # Translatable string extractor
 ├── src/
 │   ├── app/
 │   │   ├── App.tsx             # Root layout, state orchestration, era fetching & feature selection
 │   │   ├── App.css             # Glassmorphic layout, header styling, .globe-viewport offset
 │   │   └── index.tsx           # React DOM root entry
 │   ├── components/
-│   │   ├── Timeline.tsx        # Vertical left timeline panel with dot markers & auto-scroll
-│   │   ├── Timeline.css        # Left-docked glassmorphism panel & custom scrollbars
-│   │   ├── ControlsOverlay.tsx # Visuals dropdown (Altitude, Opacity, Label Size, Appearance Tolerance)
+│   │   ├── ActiveEraBanner.tsx # Floating top era banner with year pill & click-to-expand details
+│   │   ├── Attribution.tsx     # Attribution modal dialog & source credits
+│   │   ├── ControlsOverlay.tsx # Visuals & theme dropdown (altitude, opacity, labels, theme, lang)
 │   │   ├── ControlsOverlay.css # Dropdown panel & slider styling
 │   │   ├── CountryDrawer.tsx   # Detailed inspector for selected territory/empire
-│   │   └── CountryDrawer.css   # Right-docked slide-in inspector styling
+│   │   ├── CountryDrawer.css   # Right-docked slide-in inspector styling
+│   │   ├── EraDetailsModal.tsx # Full-screen modal with detailed historical era context
+│   │   ├── LanguageToggle.tsx  # Standalone bilingual switcher (EN / FI)
+│   │   ├── Timeline.tsx        # Vertical left timeline panel with dot markers & auto-scroll
+│   │   └── Timeline.css        # Left-docked glassmorphism panel & custom scrollbars
 │   ├── features/
 │   │   └── globe/              # Decoupled, reusable 3D Globe Visualizer package
 │   │       ├── HistoricalGlobe.tsx # WebGL canvas container, ThreeGlobe lifecycle & interaction
@@ -60,18 +70,25 @@ This guide provides technical specifications, architectural patterns, and develo
 │   │       ├── textures.ts     # Texture asset path resolvers
 │   │       ├── types.ts        # Globe component props & domain types
 │   │       └── index.ts        # Public export for globe feature
+│   ├── i18n/                   # Bilingual localization system (English & Finnish)
+│   │   ├── context.tsx         # LanguageProvider & useLanguage hook
+│   │   ├── translations.ts     # Static UI string dictionary
+│   │   └── types.ts            # Supported languages and translation schemas
 │   ├── server/
 │   │   ├── api.ts              # Express router for /api/eras and /api/eras/:slug/geojson
+│   │   ├── cultureSeeder.ts    # Batch upsert & feature linkage engine
 │   │   ├── db.ts               # PostgreSQL connection pool configuration
 │   │   ├── eraMetadata.ts      # Catalog of 54 historical eras with chronological metadata
-│   │   └── ingest.ts           # PostGIS ingestion CLI (land clipping, centroid calculation)
+│   │   ├── exportStatic.ts     # Serverless static JSON exporter
+│   │   ├── ingest.ts           # PostGIS ingestion CLI (land clipping, centroid calculation)
+│   │   └── queries.ts          # Shared PostGIS FeatureCollection SQL query builder
 │   ├── services/
 │   │   └── api.ts              # Client API service with in-memory caching
-│   ├── types/
-│   │   └── index.ts            # Shared GeoJSON, Era, and Globe configuration interfaces
-│   └── earthTextures/          # Bundled offline Earth texture images (123k BCE, 10k BCE, 8k BCE, 5k BCE, Modern)
+│   ├── styles/                 # Theme tokens and color schemes (Light, Dark, Auto)
+│   ├── types/                  # Shared GeoJSON, Era, and Globe configuration interfaces
+│   └── earthTextures/          # Bundled offline Earth texture images & paleogeographic masks
 ├── server.ts                   # Express server entry point (port 3000)
-├── vite.config.ts              # Vite frontend configuration with /api proxy to backend
+├── vite.config.ts              # Vite frontend configuration with Rollup code-splitting & /api proxy
 └── knexfile.ts                 # Knex migration connection configuration
 ```
 
@@ -81,12 +98,12 @@ This guide provides technical specifications, architectural patterns, and develo
 
 ### 1. 3D Globe Visualizer (`src/features/globe/HistoricalGlobe.tsx`)
 - **Decoupled Architecture**: Accepts pure GeoJSON `FeatureCollection` and configuration props without any backend coupling.
-- **Viewport Layout**: The globe is housed in `.globe-viewport` in [`App.css`](file:///Users/ville.heikkinen/other/earth-browser/src/app/App.css), offset (`left: 160px; width: calc(100% - 160px)`) to position the globe in the open screen area beside the left timeline.
+- **Viewport Layout**: The globe is housed in `.globe-viewport` in [`App.css`](src/app/App.css), offset (`left: 160px; width: calc(100% - 160px)`) to position the globe in the open screen area beside the left timeline.
 - **Raycasting & Interaction**: OrbitControls handles rotation/zoom; pointer raycasting detects 3D feature intersections and highlights territories.
 
 ### 2. High-Performance 2D Label Engine (`src/features/globe/labels.ts`)
 - **Horizon Culling**: Discards points behind the 3D globe horizon using vector trigonometry (`isPointBehindGlobe`).
-- **Centroid Calculation**: For multi-island archipelagos (e.g. Japan, Indonesia, Britain), [`computeGeometryCentroid`](file:///Users/ville.heikkinen/other/earth-browser/src/features/globe/labels.ts) selects the largest polygon by area to prevent ocean-floating labels.
+- **Centroid Calculation**: For multi-island archipelagos (e.g. Japan, Indonesia, Britain), [`computeGeometryCentroid`](src/features/globe/labels.ts) selects the largest polygon by area to prevent ocean-floating labels.
 - **AABB Collision Resolution**: Places labels in order of priority (Selected > Hovered > Area/Prominence > Center distance) and prevents overlaps via screen-space bounding boxes.
 - **Configurable Sizing & Spacing**:
   - `labelSize` (default `14px`, adjustable `9px` - `22px`).
@@ -94,32 +111,37 @@ This guide provides technical specifications, architectural patterns, and develo
   - Renders to a dedicated 2D canvas overlay at 60fps with high-DPI scaling and legible dark halos.
 
 ### 3. Vertical Timeline Panel (`src/components/Timeline.tsx`)
-- **Docked on Left**: `position: absolute; left: 24px; top: 80px; bottom: 24px; width: 290px;` with glassmorphic dark background.
+- **Docked on Left**: `position: absolute; left: 24px; top: 80px; bottom: 24px; width: 290px;` with glassmorphic background.
 - **Features**:
-  - Era step navigation (`‹` / `›` buttons).
-  - Active era summary card (year, territory count, clean name, description).
   - Vertical rail line with circular dot markers for each era (glowing cyan on active).
   - Monospace, high-contrast year column (`timeline-item-year`).
   - Truncated label with ellipsis (`timeline-item-label`) and full hover tooltips.
   - Automatic smooth scrolling to keep the active era in view.
 
-### 4. Visual Controls Overlay (`src/components/ControlsOverlay.tsx`)
+### 4. Active Era Banner & Era Details Modal (`ActiveEraBanner.tsx`, `EraDetailsModal.tsx`)
+- **Active Era Banner**: Top floating pill displaying active year, name, territory count, and era navigation buttons (`‹` / `›`). Clicking anywhere on the banner opens the detailed era modal.
+- **Era Details Modal**: Full-screen glassmorphic dialog with rich chronological narrative, global milestones, and regional summaries for the selected era.
+
+### 5. Visual Controls Overlay (`src/components/ControlsOverlay.tsx`)
 - Located at bottom-right next to attributions as an icon-only button; popover opens upwards.
 - Controls:
-  - **Earth Surface Texture** (Blue Marble Modern, Blue Marble Prehistoric variants, Day Map, Night Lights, Dark Planetary).
-  - **Polygon Altitude** (`0.001` - `0.030`, default `0.002`).
-  - **Overlap Elevation** (`0.0x` - `3.0x`, default `0.3x` multiplier for stepped elevation of nested sub-entities and overlapping territories).
-  - **Country Base Opacity** (`0%` - `100%`, default `55%`).
-  - **Country Labels Toggle** (`Enabled` / `Disabled`).
-  - **Label Size** (`9px` - `22px`, default `14px`).
-  - **Appearance Tolerance** (`2px` - `24px`, default `10px`).
+  - **Language**: English (`en`) / Finnish (`fi`) switching via embedded `<LanguageToggle />` and `<LanguageProvider>`.
+  - **Theme / Color Scheme**: Auto, Light, Dark preferences dynamically applied via design tokens in `src/styles/theme.ts`.
+  - **Earth Surface Texture**: Blue Marble Modern, Blue Marble Prehistoric variants, Day Map, Night Lights, Dark Planetary.
+  - **Prehistoric Overlays**: Bathymetric coastline mask, glacial ice sheets, and terrain highlight shader triggers.
+  - **Polygon Altitude**: `0.001` - `0.030` (default `0.002`).
+  - **Overlap Elevation**: `0.0x` - `3.0x` (default `0.3x` multiplier for stepped elevation of nested sub-entities and overlapping territories).
+  - **Country Base Opacity**: `0%` - `100%` (default `55%`).
+  - **Country Labels Toggle**: Enabled / Disabled.
+  - **Label Size**: `9px` - `22px` (default `14px`).
+  - **Appearance Tolerance**: `2px` - `24px` (default `10px`).
 
-### 5. Territory Inspector Drawer (`src/components/CountryDrawer.tsx`)
+### 6. Territory Inspector Drawer (`src/components/CountryDrawer.tsx`)
 - Opens on country click at top-right (`top: 80px; right: 24px; width: 340px;`) on desktop displays (>= 1280px).
 - Automatically collapses into a centered mobile modal presentation with backdrop overlay on screens smaller than 1280px wide (`@media (max-width: 1279px)`).
-- Displays culture sphere, parent empire (`PARTOF`), subjugation status (`SUBJECTO` striped indicator), border precision rating (Exact / Approximate / Frontier), ISO code, population, estimated area, and data source link.
+- Displays bilingual culture summaries, parent empire (`PARTOF`), subjugation status (`SUBJECTO` striped indicator), border precision rating (Exact / Approximate / Frontier), ISO code, population, estimated area, and Wikipedia links.
 
-### 6. Attribution & Data Sources (`src/components/Attribution.tsx`)
+### 7. Attribution & Data Sources (`src/components/Attribution.tsx`)
 - Bottom-right unobtrusive icon-only button next to settings with links to André Ourednik's `historical-basemaps` dataset and GPL-3.0 license.
 - Interactive modal dialog (`AttributionModal`) presenting detailed licensing and source data credits.
 

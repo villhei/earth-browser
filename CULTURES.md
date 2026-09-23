@@ -4,7 +4,7 @@ This catalog compiles all **3000** distinct historical, archaeological, and indi
 
 Across all **54 historical eras** (123,000 BCE – 2010 CE), the database contains **17,563 total feature entries** categorized into **39 cultural groups**.
 
-A complete machine-readable dataset is also available in [`data-sources/cultures.json`](file:///home/ville/src/web/earth-browser/data-sources/cultures.json).
+A complete machine-readable dataset is also available in [`data-sources/cultures.json`](data-sources/cultures.json).
 
 ## Table of Contents
 
