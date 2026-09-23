@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Language } from "../i18n/types"
+import { Language, useLanguage } from "../i18n"
 import "./Attribution.css"
 
 export const CREATOR_INFO = {
@@ -28,8 +28,10 @@ export interface AttributionModalProps {
 export const AttributionModal: React.FC<AttributionModalProps> = ({
   isOpen = false,
   onClose,
-  language = "en",
+  language: propLanguage,
 }) => {
+  const context = useLanguage()
+  const language = propLanguage ?? context?.language ?? "en"
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -232,8 +234,10 @@ export const Attribution: React.FC<AttributionProps> = ({
   isModalOpen: controlledIsOpen,
   onOpenModal,
   onCloseModal,
-  language = "en",
+  language: propLanguage,
 }) => {
+  const context = useLanguage()
+  const language = propLanguage ?? context?.language ?? "en"
   const [internalIsOpen, setInternalIsOpen] = useState(false)
   const isModalOpen = controlledIsOpen !== undefined ? controlledIsOpen : internalIsOpen
   const handleOpen = onOpenModal || (() => setInternalIsOpen(true))

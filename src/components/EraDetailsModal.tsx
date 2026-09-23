@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { Era } from "../types"
-import { Language } from "../i18n/types"
+import { Language, useLanguage } from "../i18n"
 import { t } from "../i18n/translations"
 import { formatEraLabel } from "./Timeline"
 import "./EraDetailsModal.css"
@@ -16,8 +16,10 @@ export const EraDetailsModal: React.FC<EraDetailsModalProps> = ({
   isOpen,
   currentEra,
   onClose,
-  language = "en",
+  language: propLanguage,
 }) => {
+  const context = useLanguage()
+  const language = propLanguage ?? context?.language ?? "en"
   // Dismiss on Escape key
   useEffect(() => {
     if (!isOpen) return

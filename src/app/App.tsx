@@ -33,39 +33,21 @@ import {
 } from "../styles/theme"
 import {
   Language,
-  getInitialLanguage,
-  LANGUAGE_STORAGE_KEY,
+  LanguageProvider,
+  useLanguage,
   getLocalizedEra,
   t,
 } from "../i18n"
 import "./App.css"
 
-export const App: React.FC = () => {
-  const [language, setLanguageState] = useState<Language>(() => getInitialLanguage())
+export const AppContent: React.FC = () => {
+  const { language, setLanguage } = useLanguage()
   const [themePreference, setThemePreference] = useState<ThemePreference>(() => getThemePreference())
   const [colorScheme, setColorScheme] = useState<ColorSchemeId>(() => resolveTheme(themePreference))
   const [eras, setEras] = useState<Era[]>([])
   const [currentEra, setCurrentEra] = useState<Era | null>(null)
   const [cameraView, setCameraView] = useState(() => readViewUrl(window.location.search).view)
   const latestViewRef = useRef(cameraView)
-
-  const handleLanguageChange = useCallback((newLang: Language) => {
-    setLanguageState(newLang)
-    try {
-      localStorage.setItem(LANGUAGE_STORAGE_KEY, newLang)
-    } catch {
-      // ignore
-    }
-    if (typeof document !== "undefined") {
-      document.documentElement.lang = newLang
-    }
-  }, [])
-
-  useEffect(() => {
-    if (typeof document !== "undefined") {
-      document.documentElement.lang = language
-    }
-  }, [language])
 
   const handleViewChange = useCallback((view: GlobeView) => {
     latestViewRef.current = view
@@ -335,7 +317,6 @@ export const App: React.FC = () => {
         {/* Selected Era Banner — Floats on top of the Globe with Navigation */}
         <ActiveEraBanner
           currentEra={localizedCurrentEra}
-          language={language}
           onPrevEra={handlePrevEra}
           onNextEra={handleNextEra}
           hasPrevEra={hasPrevEra}
@@ -351,7 +332,6 @@ export const App: React.FC = () => {
           feature={selectedFeature}
           currentEra={localizedCurrentEra}
           onClose={() => setSelectedFeature(null)}
-          language={language}
         />
 
         {/* Interactive Timeline Scrubber / Mobile Drawer */}
@@ -360,7 +340,6 @@ export const App: React.FC = () => {
           currentEra={localizedCurrentEra}
           onSelectEra={setCurrentEra}
           isLoading={isLoadingGeoJson}
-          language={language}
           isOpen={isTimelineOpen}
           onClose={handleCloseTimeline}
           isMobile={isMobile}
@@ -371,7 +350,6 @@ export const App: React.FC = () => {
           isOpen={isEraDetailsOpen}
           currentEra={localizedCurrentEra}
           onClose={() => setIsEraDetailsOpen(false)}
-          language={language}
         />
 
         {/* Bottom Right Controls (Settings & Map Attribution) */}
@@ -384,8 +362,6 @@ export const App: React.FC = () => {
             onOpenAttribution={() => setIsAttributionOpen(true)}
             colorScheme={themePreference}
             onChangeColorScheme={handleColorSchemeChange}
-            language={language}
-            onChangeLanguage={handleLanguageChange}
             onTriggerTerrainHighlight={
               isTerrainMaskActive ? handlePulseTerrainHighlight : undefined
             }
@@ -398,12 +374,17 @@ export const App: React.FC = () => {
             isModalOpen={isAttributionOpen}
             onOpenModal={() => setIsAttributionOpen(true)}
             onCloseModal={() => setIsAttributionOpen(false)}
-            language={language}
           />
         </div>
       </main>
     </div>
   )
 }
+
+export const App: React.FC = () => (
+  <LanguageProvider>
+    <AppContent />
+  </LanguageProvider>
+)
 
 export default App

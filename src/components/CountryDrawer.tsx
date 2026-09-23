@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { GeoJSONFeature, Era } from "../types"
-import { Language } from "../i18n/types"
+import { Language, useLanguage } from "../i18n"
 import {
   t,
   getLocalizedCultureSphere,
@@ -25,8 +25,11 @@ export const CountryDrawer: React.FC<CountryDrawerProps> = ({
   feature,
   currentEra,
   onClose,
-  language = "en",
+  language: propLanguage,
 }) => {
+  const context = useLanguage()
+  const language = propLanguage ?? context?.language ?? "en"
+
   if (!feature) return null
 
   const props = feature.properties || {}

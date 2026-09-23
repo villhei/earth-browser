@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react"
 import { GlobeConfig, GlobeTexture } from "../types"
 import { ThemePreference, THEME_OPTIONS } from "../styles/theme"
-import { Language, LANGUAGES } from "../i18n/types"
+import { Language, useLanguage } from "../i18n"
 import { t } from "../i18n/translations"
+import { LanguageToggle } from "./LanguageToggle"
 import "./ControlsOverlay.css"
 
 interface ControlsOverlayProps {
@@ -31,9 +32,19 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
   onTriggerTerrainHighlight,
   isTerrainHighlightActive = false,
   terrainHighlightLabel,
-  language = "en",
+  language: propLanguage,
   onChangeLanguage,
 }) => {
+  const context = useLanguage()
+  const language = propLanguage ?? context?.language ?? "en"
+
+  const handleSelectLanguage = (lang: Language) => {
+    if (context?.setLanguage) {
+      context.setLanguage(lang)
+    }
+    onChangeLanguage?.(lang)
+  }
+
   const [isOpen, setIsOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -114,20 +125,10 @@ export const ControlsOverlay: React.FC<ControlsOverlayProps> = ({
             <div className="controls-label-row">
               <label className="controls-label">{t("language", language)}</label>
             </div>
-            <div style={{ display: "flex", gap: "8px" }}>
-              {LANGUAGES.map((opt) => (
-                <button
-                  key={opt.id}
-                  type="button"
-                  className={`controls-pill ${language === opt.id ? "active" : ""}`}
-                  style={{ flex: 1, textAlign: "center" }}
-                  onClick={() => onChangeLanguage?.(opt.id)}
-                  aria-pressed={language === opt.id}
-                >
-                  {opt.fullLabel}
-                </button>
-              ))}
-            </div>
+            <LanguageToggle
+              language={language}
+              onSelectLanguage={handleSelectLanguage}
+            />
           </div>
 
           {/* UI Color Scheme */}

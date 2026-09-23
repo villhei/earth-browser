@@ -3,7 +3,7 @@ import fs from "fs"
 import path from "path"
 
 describe("Translatable Strings Extraction & Catalog", () => {
-  const translationsDir = path.resolve(__dirname, "../../data/translations")
+  const translationsDir = path.resolve(__dirname, "../../../data-sources/translations")
   const extractedPath = path.join(translationsDir, "extracted_strings.json")
   const catalogPath = path.join(translationsDir, "translatable_catalog.json")
   const seedsPath = path.join(translationsDir, "places_multilingual_seed.json")

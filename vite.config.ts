@@ -30,6 +30,15 @@ export default defineConfig({
   build: {
     outDir: "docs",
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          "vendor-three": ["three"],
+          "vendor-globe": ["three-globe"],
+          "vendor-react": ["react", "react-dom"],
+        },
+      },
+    },
   },
   plugins: [react(), githubPagesPlugin()],
   resolve: {

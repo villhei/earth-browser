@@ -6,9 +6,9 @@
  * all 53 historical GeoJSON datasets, places.geojson, and application metadata.
  *
  * Outputs:
- * - src/data/translations/extracted_strings.json (comprehensive categorized registry with stats and contexts)
- * - src/data/translations/translatable_catalog.json (clean key-value catalog ready for i18n tooling)
- * - src/data/translations/places_multilingual_seed.json (seed dictionary using multi-language place names in places.geojson)
+ * - data-sources/translations/extracted_strings.json (comprehensive categorized registry with stats and contexts)
+ * - data-sources/translations/translatable_catalog.json (clean key-value catalog ready for i18n tooling)
+ * - data-sources/translations/places_multilingual_seed.json (seed dictionary using multi-language place names in places.geojson)
  * - docs/translatable_strings_summary.md (markdown report of extraction statistics and findings)
  */
 
@@ -20,7 +20,7 @@ import entityRegistryData from "../src/features/globe/entityRegistry.json"
 
 const ROOT_DIR = path.resolve(__dirname, "..")
 const SEED_DIR = path.join(ROOT_DIR, "migrations/seed")
-const OUTPUT_DIR = path.join(ROOT_DIR, "src/data/translations")
+const OUTPUT_DIR = path.join(ROOT_DIR, "data-sources/translations")
 const DOCS_DIR = path.join(ROOT_DIR, "docs")
 
 // Ensure directories exist
@@ -442,9 +442,9 @@ This document summarizes all extracted translatable names, sovereign polities, p
 - **Total Historical Era Boundary Datasets Scanned**: **${files.length} eras** (${totalWorldFeatures.toLocaleString()} total polygon features)
 - **Archaeological & City Places Scanned**: **${multilingualPlacesSeeds.length.toLocaleString()} locations** with multi-lingual seed names
 - **Generated Catalog Files**:
-  - [\`src/data/translations/extracted_strings.json\`](file://${extractedPath}): Complete array with occurrence frequencies, roles, era references, and seed translations.
-  - [\`src/data/translations/translatable_catalog.json\`](file://${catalogPath}): Key-value map suitable for direct integration into i18n localization engines (e.g. i18next, react-intl).
-  - [\`src/data/translations/places_multilingual_seed.json\`](file://${seedsPath}): Seed translations across 20+ languages (Arabic, Hebrew, Greek, Russian, French, German, Spanish, Portuguese, Italian, Hindi, etc.).
+  - [\`data-sources/translations/extracted_strings.json\`](file://${extractedPath}): Complete array with occurrence frequencies, roles, era references, and seed translations.
+  - [\`data-sources/translations/translatable_catalog.json\`](file://${catalogPath}): Key-value map suitable for direct integration into i18n localization engines (e.g. i18next, react-intl).
+  - [\`data-sources/translations/places_multilingual_seed.json\`](file://${seedsPath}): Seed translations across 20+ languages (Arabic, Hebrew, Greek, Russian, French, German, Spanish, Portuguese, Italian, Hindi, etc.).
 
 ---
 
@@ -531,7 +531,7 @@ The dataset includes multilingual name variants across more than 20 world langua
 ## 🚀 How to Use These Extracted Strings for Localization
 
 1. **Direct Integration with i18n Frameworks**:
-   - The JSON dictionary in [\`src/data/translations/translatable_catalog.json\`](file://${catalogPath}) can be loaded directly into \`i18next\` or \`react-intl\`.
+   - The JSON dictionary in [\`data-sources/translations/translatable_catalog.json\`](file://${catalogPath}) can be loaded directly into \`i18next\` or \`react-intl\`.
 2. **Translation Guessing & Fallback Pipeline**:
    - Historical entities can inherit translations from canonical lineages (e.g. "Western Roman Empire" inheriting the base translation for "Rome" + "Western").
    - Machine translation APIs or LLM batch translators can translate [\`translatable_catalog.json\`](file://${catalogPath}) in prioritized tiers:

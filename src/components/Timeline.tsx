@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react"
 import { Era } from "../types"
-import { Language } from "../i18n/types"
+import { Language, useLanguage } from "../i18n"
 import { groupErasByEpoch, getEpochForEra, getLocalizedEpoch } from "./eraGrouping"
 import "./Timeline.css"
 
@@ -32,11 +32,13 @@ export const Timeline: React.FC<TimelineProps> = ({
   currentEra,
   onSelectEra,
   isLoading = false,
-  language = "en",
+  language: propLanguage,
   isOpen = false,
   onClose,
   isMobile = false,
 }) => {
+  const context = useLanguage()
+  const language = propLanguage ?? context?.language ?? "en"
   const activeItemRef = useRef<HTMLButtonElement | null>(null)
   const listRef = useRef<HTMLDivElement | null>(null)
 

@@ -224,6 +224,16 @@
   margin-top: var(--space-1);
 }
 
+.controls-panel .language-toggle {
+  display: flex;
+  width: 100%;
+}
+
+.controls-panel .language-btn {
+  flex: 1;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .controls-toggle-btn {
     width: 44px;

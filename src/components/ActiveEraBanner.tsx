@@ -1,6 +1,6 @@
 import React from "react"
 import { Era } from "../types"
-import { Language } from "../i18n/types"
+import { Language, useLanguage } from "../i18n"
 import { formatEraLabel } from "./Timeline"
 import { t } from "../i18n/translations"
 import "./ActiveEraBanner.css"
@@ -20,7 +20,7 @@ export interface ActiveEraBannerProps {
 
 export const ActiveEraBanner: React.FC<ActiveEraBannerProps> = ({
   currentEra,
-  language = "en",
+  language: propLanguage,
   onPrevEra,
   onNextEra,
   hasPrevEra = false,
@@ -30,6 +30,8 @@ export const ActiveEraBanner: React.FC<ActiveEraBannerProps> = ({
   onOpenDetails,
   isLoading = false,
 }) => {
+  const context = useLanguage()
+  const language = propLanguage ?? context?.language ?? "en"
   if (!currentEra) return null
 
   const cleanTitle = formatEraLabel(currentEra.name)
