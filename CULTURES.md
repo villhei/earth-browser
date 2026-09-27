@@ -1,53 +1,53 @@
 # Catalog of Cultures, Civilizations & Polities
 
-This catalog compiles all **3000** distinct historical, archaeological, and indigenous cultural entities extracted directly from the **Earth Browser** PostGIS database (`world` database, `era_features` table).
+This catalog compiles distinct historical, archaeological, and indigenous cultural entities extracted directly from the **Earth Browser** PostGIS database (`world` database, `era_features` table).
 
-Across all **54 historical eras** (123,000 BCE – 2010 CE), the database contains **17,563 total feature entries** categorized into **39 cultural groups**.
+Cultural entities across historical eras (123,000 BCE – 2010 CE) are categorized into recognized cultural groups.
 
 A complete machine-readable dataset is also available in [`data-sources/cultures.json`](data-sources/cultures.json).
 
 ## Table of Contents
 
 1. [Summary by Cultural Group](#summary-by-cultural-group)
-- [Historical Culture (1655 entities)](#historical-culture)
-- [North American Indigenous (274 entities)](#north-american-indigenous)
-- [Oceania (71 entities)](#oceania)
-- [Caribbean (35 entities)](#caribbean)
-- [Southeast Asia (50 entities)](#southeast-asia)
-- [West Africa (37 entities)](#west-africa)
-- [East Asia (70 entities)](#east-asia)
-- [South Asia (85 entities)](#south-asia)
-- [East Africa (44 entities)](#east-africa)
-- [Southern Europe (38 entities)](#southern-europe)
-- [Western Europe (53 entities)](#western-europe)
-- [Middle East (35 entities)](#middle-east)
-- [Arctic & Subarctic (44 entities)](#arctic-subarctic)
-- [Central Asia (71 entities)](#central-asia)
-- [Central Europe (45 entities)](#central-europe)
-- [North Africa (31 entities)](#north-africa)
-- [Latin America (15 entities)](#latin-america)
-- [South American Indigenous (37 entities)](#south-american-indigenous)
-- [Southern Africa (27 entities)](#southern-africa)
-- [Mesoamerican (56 entities)](#mesoamerican)
-- [Andean (34 entities)](#andean)
-- [Nordic (13 entities)](#nordic)
-- [Central Africa (16 entities)](#central-africa)
-- [Prehistoric & Archaeological (17 entities)](#prehistoric-archaeological)
-- [Central America (7 entities)](#central-america)
-- [Baltic (14 entities)](#baltic)
-- [Balkans (18 entities)](#balkans)
-- [Ancient Near East (21 entities)](#ancient-near-east)
-- [Finno-Ugric (7 entities)](#finno-ugric)
-- [Greco-Roman (17 entities)](#greco-roman)
-- [Slavic (16 entities)](#slavic)
-- [North America (3 entities)](#north-america)
-- [Eastern Europe (5 entities)](#eastern-europe)
-- [Caucasus (3 entities)](#caucasus)
-- [Iranian (14 entities)](#iranian)
-- [Islamic Caliphates (12 entities)](#islamic-caliphates)
-- [Western & Central Europe (6 entities)](#western-central-europe)
-- [Mediterranean (3 entities)](#mediterranean)
-- [Unclaimed Wilderness (1 entities)](#unclaimed-wilderness)
+- [Historical Culture](#historical-culture)
+- [North American Indigenous](#north-american-indigenous)
+- [Oceania](#oceania)
+- [Caribbean](#caribbean)
+- [Southeast Asia](#southeast-asia)
+- [West Africa](#west-africa)
+- [South Asia](#south-asia)
+- [East Africa](#east-africa)
+- [East Asia](#east-asia)
+- [Southern Europe](#southern-europe)
+- [Western Europe](#western-europe)
+- [Middle East](#middle-east)
+- [Arctic & Subarctic](#arctic-subarctic)
+- [Central Asia](#central-asia)
+- [Central Europe](#central-europe)
+- [North Africa](#north-africa)
+- [Latin America](#latin-america)
+- [South American Indigenous](#south-american-indigenous)
+- [Southern Africa](#southern-africa)
+- [Andean](#andean)
+- [Mesoamerican](#mesoamerican)
+- [Nordic](#nordic)
+- [Central Africa](#central-africa)
+- [Prehistoric & Archaeological](#prehistoric-archaeological)
+- [Central America](#central-america)
+- [Baltic](#baltic)
+- [Balkans](#balkans)
+- [Ancient Near East](#ancient-near-east)
+- [Finno-Ugric](#finno-ugric)
+- [Greco-Roman](#greco-roman)
+- [Slavic](#slavic)
+- [North America](#north-america)
+- [Eastern Europe](#eastern-europe)
+- [Caucasus](#caucasus)
+- [Iranian](#iranian)
+- [Islamic Caliphates](#islamic-caliphates)
+- [Western & Central Europe](#western-central-europe)
+- [Mediterranean](#mediterranean)
+- [Unclaimed Wilderness](#unclaimed-wilderness)
 
 ---
 
@@ -55,43 +55,43 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 | Cultural Group | Unique Entities | Total Era Records | Date Span |
 | :--- | :---: | :---: | :--- |
-| [**Historical Culture**](#historical-culture) | 1655 | 4111 | 5 000 BCE – 2010 CE |
-| [**North American Indigenous**](#north-american-indigenous) | 274 | 704 | 2 000 BCE – 1800 CE |
-| [**Oceania**](#oceania) | 71 | 600 | 10 000 BCE – 2010 CE |
-| [**Caribbean**](#caribbean) | 35 | 315 | 1 500 BCE – 2010 CE |
-| [**Southeast Asia**](#southeast-asia) | 50 | 298 | 2 000 BCE – 2010 CE |
-| [**West Africa**](#west-africa) | 37 | 294 | 8 000 BCE – 2010 CE |
-| [**East Asia**](#east-asia) | 70 | 290 | 10 000 BCE – 2010 CE |
-| [**South Asia**](#south-asia) | 85 | 290 | 5 000 BCE – 2010 CE |
-| [**East Africa**](#east-africa) | 44 | 266 | 4 000 BCE – 2010 CE |
-| [**Southern Europe**](#southern-europe) | 38 | 247 | 500 BCE – 2010 CE |
-| [**Western Europe**](#western-europe) | 53 | 241 | 1 500 BCE – 2010 CE |
-| [**Middle East**](#middle-east) | 35 | 233 | 1 500 BCE – 2010 CE |
-| [**Arctic & Subarctic**](#arctic-subarctic) | 44 | 225 | 10 000 BCE – 1800 CE |
-| [**Central Asia**](#central-asia) | 71 | 218 | 5 000 BCE – 2010 CE |
+| [**Historical Culture**](#historical-culture) | 1665 | 4137 | 5,000 BCE – 2010 CE |
+| [**North American Indigenous**](#north-american-indigenous) | 274 | 704 | 2,000 BCE – 1800 CE |
+| [**Oceania**](#oceania) | 74 | 619 | 10,000 BCE – 2010 CE |
+| [**Caribbean**](#caribbean) | 35 | 315 | 1,500 BCE – 2010 CE |
+| [**Southeast Asia**](#southeast-asia) | 50 | 298 | 2,000 BCE – 2010 CE |
+| [**West Africa**](#west-africa) | 37 | 294 | 8,000 BCE – 2010 CE |
+| [**South Asia**](#south-asia) | 85 | 290 | 5,000 BCE – 2010 CE |
+| [**East Africa**](#east-africa) | 44 | 266 | 4,000 BCE – 2010 CE |
+| [**East Asia**](#east-asia) | 61 | 264 | 10,000 BCE – 2010 CE |
+| [**Southern Europe**](#southern-europe) | 39 | 248 | 500 BCE – 2010 CE |
+| [**Western Europe**](#western-europe) | 54 | 245 | 1,500 BCE – 2010 CE |
+| [**Middle East**](#middle-east) | 36 | 234 | 1,500 BCE – 2010 CE |
+| [**Arctic & Subarctic**](#arctic-subarctic) | 44 | 225 | 10,000 BCE – 1800 CE |
+| [**Central Asia**](#central-asia) | 71 | 218 | 5,000 BCE – 2010 CE |
 | [**Central Europe**](#central-europe) | 45 | 185 | 700 BCE – 2010 CE |
-| [**North Africa**](#north-africa) | 31 | 176 | 4 000 BCE – 2010 CE |
+| [**North Africa**](#north-africa) | 31 | 176 | 4,000 BCE – 2010 CE |
 | [**Latin America**](#latin-america) | 15 | 163 | 1715 CE – 2010 CE |
-| [**South American Indigenous**](#south-american-indigenous) | 37 | 159 | 1 500 BCE – 1878 CE |
-| [**Southern Africa**](#southern-africa) | 27 | 155 | 10 000 BCE – 2010 CE |
-| [**Mesoamerican**](#mesoamerican) | 56 | 138 | 2 000 BCE – 1815 CE |
-| [**Andean**](#andean) | 34 | 136 | 5 000 BCE – 1800 CE |
+| [**South American Indigenous**](#south-american-indigenous) | 40 | 162 | 1,500 BCE – 1878 CE |
+| [**Southern Africa**](#southern-africa) | 27 | 155 | 10,000 BCE – 2010 CE |
+| [**Andean**](#andean) | 33 | 130 | 5,000 BCE – 1783 CE |
+| [**Mesoamerican**](#mesoamerican) | 46 | 115 | 2,000 BCE – 1815 CE |
 | [**Nordic**](#nordic) | 13 | 115 | 200 BCE – 2010 CE |
 | [**Central Africa**](#central-africa) | 16 | 90 | 1492 CE – 2010 CE |
-| [**Prehistoric & Archaeological**](#prehistoric-archaeological) | 17 | 85 | 123 000 BCE – 1878 CE |
+| [**Prehistoric & Archaeological**](#prehistoric-archaeological) | 17 | 85 | 123,000 BCE – 1878 CE |
 | [**Central America**](#central-america) | 7 | 84 | 1650 CE – 2010 CE |
-| [**Baltic**](#baltic) | 14 | 82 | 5 000 BCE – 2010 CE |
-| [**Balkans**](#balkans) | 18 | 62 | 1 500 BCE – 2010 CE |
-| [**Ancient Near East**](#ancient-near-east) | 21 | 59 | 5 000 BCE – 1800 CE |
-| [**Finno-Ugric**](#finno-ugric) | 7 | 56 | 2 000 BCE – 1530 CE |
-| [**Greco-Roman**](#greco-roman) | 17 | 54 | 4 000 BCE – 1400 CE |
+| [**Baltic**](#baltic) | 14 | 82 | 5,000 BCE – 2010 CE |
+| [**Balkans**](#balkans) | 18 | 62 | 1,500 BCE – 2010 CE |
+| [**Ancient Near East**](#ancient-near-east) | 21 | 59 | 5,000 BCE – 1800 CE |
+| [**Finno-Ugric**](#finno-ugric) | 7 | 56 | 2,000 BCE – 1530 CE |
+| [**Greco-Roman**](#greco-roman) | 18 | 55 | 4,000 BCE – 1400 CE |
 | [**Slavic**](#slavic) | 16 | 52 | 900 CE – 2010 CE |
 | [**North America**](#north-america) | 3 | 39 | 1783 CE – 2010 CE |
 | [**Eastern Europe**](#eastern-europe) | 5 | 38 | 700 BCE – 2010 CE |
 | [**Caucasus**](#caucasus) | 3 | 36 | 323 BCE – 2010 CE |
-| [**Iranian**](#iranian) | 14 | 32 | 1 500 BCE – 1715 CE |
+| [**Iranian**](#iranian) | 14 | 32 | 1,500 BCE – 1715 CE |
 | [**Islamic Caliphates**](#islamic-caliphates) | 12 | 28 | 700 CE – 1900 CE |
-| [**Western & Central Europe**](#western-central-europe) | 6 | 20 | 5 000 BCE – 100 CE |
+| [**Western & Central Europe**](#western-central-europe) | 6 | 20 | 5,000 BCE – 100 CE |
 | [**Mediterranean**](#mediterranean) | 3 | 19 | 500 BCE – 2010 CE |
 | [**Unclaimed Wilderness**](#unclaimed-wilderness) | 1 | 2 | 1945 CE – 1960 CE |
 
@@ -99,9 +99,9 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ## <a id="historical-culture"></a>Historical Culture
 
-* **Unique Entities**: 1655
-* **Total Appearances**: 4111
-* **Historical Span**: 5 000 BCE – 2010 CE
+* **Unique Entities**: 1665
+* **Total Appearances**: 4137
+* **Historical Span**: 5,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -149,7 +149,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Amboca** | Amboca | 1492 CE | 1 |
 | **Ambur** | Ambur | 1783 CE – 1800 CE | 2 |
 | **Amorúa** | Amorúa | 1492 CE | 1 |
-| **Amuq D** | Amuq D | 5 000 BCE | 1 |
+| **Amuq D** | Amuq D | 5,000 BCE | 1 |
 | **Anambé** | Anambé | 1492 CE | 1 |
 | **Andean states and chiefdoms** | Andean states and chiefdoms | 1279 CE – 1400 CE | 3 |
 | **Andegerebenha** | Andegerebenha | 1600 CE – 1800 CE | 6 |
@@ -248,6 +248,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Bidjara** | Bidjara | 1600 CE – 1800 CE | 6 |
 | **Bidwell** | Bidwell | 1600 CE – 1800 CE | 6 |
 | **Bigambul** | Bigambul | 1600 CE – 1800 CE | 6 |
+| **Bilinara** | Bilinara | 1600 CE – 1815 CE | 7 |
 | **Biloxi** | Biloxi | 1492 CE – 1600 CE | 3 |
 | **Binbinga** | Binbinga | 1600 CE – 1800 CE | 6 |
 | **Bindjali** | Bindjali | 1600 CE – 1800 CE | 6 |
@@ -340,6 +341,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Chilula** | Chilula | 1492 CE | 1 |
 | **Chimacum** | Chimacum | 1492 CE | 1 |
 | **Chimariko (territory)** | Chimariko (territory) | 1492 CE | 1 |
+| **Chinantla (Tsa ju jmí’)** | Chinantla (Tsa ju jmí’) | 1492 CE | 1 |
 | **Chiquitano** | Chiquitano | 1492 CE | 1 |
 | **Chiso** | Chiso | 1492 CE | 1 |
 | **Chisos** | Chisos | 1530 CE – 1600 CE | 2 |
@@ -443,6 +445,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Eastern Mono/Monache** | Eastern Mono/Monache | 1492 CE | 1 |
 | **Eastern Nehântick** | Eastern Nehântick | 1492 CE | 1 |
 | **Ecuana** | Ecuana | 1492 CE | 1 |
+| **Eduria (Taiwano)** | Eduria (Taiwano) | 1492 CE | 1 |
 | **Eeyou Istchee** | Eeyou Istchee | 1492 CE | 1 |
 | **El Pom Wintu** | El Pom Wintu | 1492 CE | 1 |
 | **Emberá** | Emberá | 1492 CE | 1 |
@@ -606,6 +609,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Ijku (Arhuaco)** | Ijku (Arhuaco) | 1492 CE | 1 |
 | **Ikitu** | Ikitu | 1492 CE | 1 |
 | **Ikolen** | Ikolen | 1492 CE | 1 |
+| **Ikoots/Kunajts/Ikoojts (Huave)** | Ikoots/Kunajts/Ikoojts (Huave) | 1492 CE | 1 |
 | **Ikpeng** | Ikpeng | 1492 CE | 1 |
 | **Imbangala** | Imbangala | 1815 CE | 1 |
 | **In-SHUCK-ch** | In-SHUCK-ch | 1492 CE | 1 |
@@ -666,10 +670,12 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Kamaiurá** | Kamaiurá | 1492 CE | 1 |
 | **Kamarupa** | Kamarupa | 600 CE – 1200 CE | 2 |
 | **Kambeba/Omagua** | Kambeba/Omagua | 1492 CE | 1 |
+| **Kamejeya (Yukuna)** | Kamejeya (Yukuna) | 1492 CE | 1 |
 | **Kamerun** | Kamerun | 1914 CE | 1 |
 | **Kamia** | Kamia | 1530 CE – 1600 CE | 2 |
 | **Kamilaroi** | Kamilaroi | 1600 CE – 1800 CE | 6 |
 | **Kamëntsá** | Kamëntsá | 1492 CE | 1 |
+| **Kanara** | Kanara | 1800 CE | 1 |
 | **Kanas** | Kanas | 1492 CE | 1 |
 | **Kanauj** | Kanauj | 600 CE – 700 CE | 2 |
 | **Kandozi** | Kandozi | 1492 CE | 1 |
@@ -905,6 +911,8 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Maung** | Maung | 1600 CE – 1815 CE | 7 |
 | **Mauri** | Mauri | 700 CE | 1 |
 | **Maxakalí** | Maxakalí | 1492 CE | 1 |
+| **Mayaimi** | Mayaimi | 1492 CE | 1 |
+| **Mayangna** | Mayangna | 1492 CE | 1 |
 | **Mayi-Kulan** | Mayi-Kulan | 1600 CE – 1800 CE | 6 |
 | **Mayi-Kutuna** | Mayi-Kutuna | 1600 CE – 1800 CE | 6 |
 | **Mayi-Thakurti** | Mayi-Thakurti | 1600 CE – 1800 CE | 6 |
@@ -937,6 +945,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Micqanaqa’n** | Micqanaqa’n | 1492 CE | 1 |
 | **Middag Kingdom** | Middag Kingdom | 1650 CE – 1700 CE | 2 |
 | **Miller** | Miller | 100 BCE – 500 CE | 7 |
+| **Mingin** | Mingin | 1600 CE – 1800 CE | 6 |
 | **Mirambo Unyanyembe Ukimbu** | Mirambo Unyanyembe Ukimbu | 1878 CE – 1900 CE | 3 |
 | **Mirning** | Mirning | 1600 CE – 1815 CE | 7 |
 | **Misak** | Misak | 1492 CE | 1 |
@@ -995,7 +1004,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Nadöb** | Nadöb | 1492 CE | 1 |
 | **Nakako** | Nakako | 1600 CE – 1815 CE | 7 |
 | **Nakara** | Nakara | 1600 CE – 1800 CE | 6 |
-| **Namazga** | Namazga | 5 000 BCE – 2 000 BCE | 4 |
+| **Namazga** | Namazga | 5,000 BCE – 2,000 BCE | 4 |
 | **Nambikwara** | Nambikwara | 1492 CE | 1 |
 | **Nan Chao** | Nan Chao | 800 CE – 1200 CE | 5 |
 | **Nan-Zhao** | Nan-Zhao | 700 CE | 1 |
@@ -1006,6 +1015,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Nansemond** | Nansemond | 1492 CE | 1 |
 | **Nanti** | Nanti | 1492 CE | 1 |
 | **Nanzan** | Nanzan | 1400 CE | 1 |
+| **Narangga** | Narangga | 1600 CE – 1800 CE | 6 |
 | **Nari Nari** | Nari Nari | 1600 CE – 1800 CE | 6 |
 | **Nasa** | Nasa | 1492 CE | 1 |
 | **Nassau** | Nassau | 1815 CE | 1 |
@@ -1021,7 +1031,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Ndebele** | Ndebele | 1878 CE – 1900 CE | 3 |
 | **Nehalem** | Nehalem | 1492 CE | 1 |
 | **Nejd** | Nejd | 1783 CE – 1815 CE | 3 |
-| **Nemay** | Nemay | 5 000 BCE | 1 |
+| **Nemay** | Nemay | 5,000 BCE | 1 |
 | **Nenets** | Nenets | 1530 CE | 1 |
 | **Nespelem** | Nespelem | 1492 CE | 1 |
 | **Nestucca** | Nestucca | 1492 CE | 1 |
@@ -1135,7 +1145,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Otomies** | Otomies | 1530 CE – 1600 CE | 2 |
 | **Oudh** | Oudh | 1783 CE – 1815 CE | 3 |
 | **Ovimbundu** | Ovimbundu | 1878 CE – 1900 CE | 3 |
-| **Oxus** | Oxus | 2 000 BCE | 1 |
+| **Oxus** | Oxus | 2,000 BCE | 1 |
 | **Očhéthi Šakówiŋ** | Očhéthi Šakówiŋ | 1492 CE | 1 |
 | **O’ de püt/Angpøn (Zoque)** | O’ de püt/Angpøn (Zoque) | 1492 CE | 1 |
 | **Pacahuara** | Pacahuara | 1492 CE | 1 |
@@ -1295,7 +1305,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Segu** | Segu | 1715 CE – 1800 CE | 3 |
 | **Sekakawon** | Sekakawon | 1492 CE | 1 |
 | **Semiahmoo** | Semiahmoo | 1492 CE | 1 |
-| **Semites** | Semites | 4 000 BCE – 2 000 BCE | 3 |
+| **Semites** | Semites | 4,000 BCE – 2,000 BCE | 3 |
 | **Senas** | Senas | 1000 CE – 1100 CE | 2 |
 | **Serano** | Serano | 1530 CE – 1715 CE | 5 |
 | **Severians** | Severians | 700 CE | 1 |
@@ -1737,7 +1747,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **ZioBain (Siona)** | ZioBain (Siona) | 1492 CE | 1 |
 | **Zoró/Pangyjej** | Zoró/Pangyjej | 1492 CE | 1 |
 | **Zo’é** | Zo’é | 1492 CE | 1 |
-| **city-states** | city-states | 4 000 BCE – 2 000 BCE | 3 |
+| **city-states** | city-states | 4,000 BCE – 2,000 BCE | 3 |
 | **ditidaqiic̓aq disib̓aʔk (Ditidaht)** | ditidaqiic̓aq disib̓aʔk (Ditidaht) | 1492 CE | 1 |
 | **kòréβahώ (korebaju/Koreguaje)** | kòréβahώ (korebaju/Koreguaje) | 1492 CE | 1 |
 | **minor Hindu and Buddhist kingdoms** | minor Hindu and Buddhist kingdoms | 1300 CE – 1400 CE | 2 |
@@ -1769,7 +1779,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 274
 * **Total Appearances**: 704
-* **Historical Span**: 2 000 BCE – 1800 CE
+* **Historical Span**: 2,000 BCE – 1800 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -1786,7 +1796,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Apalachees** | Eastern Woodlands First Nations | 1492 CE | 1 |
 | **Apsaalooké (Crow)** | Great Plains Indigenous Nations | 1492 CE | 1 |
 | **Arapaho** | Great Plains Indigenous Nations | 1492 CE – 1715 CE | 6 |
-| **Archaic Amerindian hunter-gatherers** | Archaic Amerindian Hunter-Gatherers | 2 000 BCE | 1 |
+| **Archaic Amerindian hunter-gatherers** | Archaic Amerindian Hunter-Gatherers | 2,000 BCE | 1 |
 | **Arikara** | Great Plains Indigenous Nations | 1530 CE – 1715 CE | 5 |
 | **Assiniboine** | Great Plains Indigenous Nations | 1492 CE | 1 |
 | **Atakapa** | Eastern Woodlands First Nations | 1530 CE – 1715 CE | 7 |
@@ -1834,9 +1844,9 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Cree** | Eastern Woodlands First Nations | 1492 CE – 1700 CE | 5 |
 | **Crow** | Great Plains Indigenous Nations | 1500 CE – 1715 CE | 6 |
 | **Delaware** | Eastern Woodlands First Nations | 1500 CE – 1600 CE | 3 |
-| **Desert hunter-gatherers** | Southwest & California Indigenous Nations | 1 500 BCE – 1500 CE | 26 |
+| **Desert hunter-gatherers** | Southwest & California Indigenous Nations | 1,500 BCE – 1500 CE | 26 |
 | **Diné Bikéyah** | Southwest & California Indigenous Nations | 1492 CE | 1 |
-| **Eastern North American hunter-gatherers** | Eastern Woodlands First Nations | 1 500 BCE – 1400 CE | 20 |
+| **Eastern North American hunter-gatherers** | Eastern Woodlands First Nations | 1,500 BCE – 1400 CE | 20 |
 | **Eastern Pomo** | Southwest & California Indigenous Nations | 1492 CE | 1 |
 | **Eastern Shawnee (Oklahoma)** | Eastern Woodlands First Nations | 1492 CE | 1 |
 | **Eastern Shoshone** | Southwest & California Indigenous Nations | 1492 CE | 1 |
@@ -1929,7 +1939,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Nez Perce** | Pacific Northwest & Plateau First Nations | 1500 CE – 1715 CE | 6 |
 | **Niitsítpiis-stahkoii ᖹᐟᒧᐧᐨᑯᐧ ᓴᐦᖾᐟ (Blackfoot / Niitsítapi ᖹᐟᒧᐧᒣᑯ)** | Great Plains Indigenous Nations | 1492 CE | 1 |
 | **Nimiipuu (Nez Perce)** | Pacific Northwest & Plateau First Nations | 1492 CE | 1 |
-| **North American Pacific foraging, hunting and fishing peoples** | Pacific Northwest & Plateau First Nations | 1 500 BCE – 1500 CE | 26 |
+| **North American Pacific foraging, hunting and fishing peoples** | Pacific Northwest & Plateau First Nations | 1,500 BCE – 1500 CE | 26 |
 | **Northeastern Pomo** | Southwest & California Indigenous Nations | 1492 CE | 1 |
 | **Northern Paiute** | Southwest & California Indigenous Nations | 1530 CE – 1715 CE | 5 |
 | **Northern Pomo** | Southwest & California Indigenous Nations | 1492 CE | 1 |
@@ -1960,15 +1970,15 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Pima** | Southwest & California Indigenous Nations | 1530 CE – 1600 CE | 2 |
 | **Pipa Aha Macav (Mojave)** | Southwest & California Indigenous Nations | 1492 CE | 1 |
 | **Piscataway** | Eastern Woodlands First Nations | 1492 CE | 1 |
-| **Plain bison hunters** | Great Plains Indigenous Nations | 1 500 BCE – 1500 CE | 26 |
+| **Plain bison hunters** | Great Plains Indigenous Nations | 1,500 BCE – 1500 CE | 26 |
 | **Plains Miwok** | Southwest & California Indigenous Nations | 1492 CE | 1 |
-| **Plateau fichers and hunter gatherers** | Pacific Northwest & Plateau First Nations | 1 500 BCE – 1530 CE | 27 |
+| **Plateau fichers and hunter gatherers** | Pacific Northwest & Plateau First Nations | 1,500 BCE – 1530 CE | 27 |
 | **Pomo** | Southwest & California Indigenous Nations | 1500 CE – 1715 CE | 6 |
 | **Ponca** | Great Plains Indigenous Nations | 1492 CE – 1715 CE | 6 |
 | **Ponca (Oklahoma)** | Great Plains Indigenous Nations | 1492 CE | 1 |
 | **Potawatomi** | Eastern Woodlands First Nations | 1530 CE – 1715 CE | 5 |
 | **Potawatomi-Shawnee (Oklahoma)** | Eastern Woodlands First Nations | 1492 CE | 1 |
-| **Poverty point culture** | Mound Builder & Woodland Traditions | 1 500 BCE – 500 CE | 2 |
+| **Poverty point culture** | Mound Builder & Woodland Traditions | 1,500 BCE – 500 CE | 2 |
 | **Powhatan** | Eastern Woodlands First Nations | 1492 CE | 1 |
 | **Pueblos** | Southwest & California Indigenous Nations | 1492 CE | 1 |
 | **Pâri (Pawnee)** | Great Plains Indigenous Nations | 1492 CE | 1 |
@@ -2054,26 +2064,26 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ## <a id="oceania"></a>Oceania
 
-* **Unique Entities**: 71
-* **Total Appearances**: 600
-* **Historical Span**: 10 000 BCE – 2010 CE
+* **Unique Entities**: 74
+* **Total Appearances**: 619
+* **Historical Span**: 10,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Aboriginal Tasmanians** | Australian & Tasmanian Aboriginal Peoples | 10 000 BCE – 1800 CE | 7 |
-| **Aboriginal tribes** | Australian & Tasmanian Aboriginal Peoples | 10 000 BCE – 3 000 BCE | 5 |
+| **Aboriginal Tasmanians** | Australian & Tasmanian Aboriginal Peoples | 10,000 BCE – 1800 CE | 7 |
+| **Aboriginal tribes** | Australian & Tasmanian Aboriginal Peoples | 10,000 BCE – 3,000 BCE | 5 |
 | **American Samoa** | American Samoa | 1878 CE – 2010 CE | 16 |
 | **Armorica** | Polynesian Realms & Voyagers | 500 CE | 1 |
 | **Arrernte** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Australia** | Australia | 1914 CE – 2010 CE | 9 |
-| **Australian aboriginal hunter-gatherers** | Australian & Tasmanian Aboriginal Peoples | 2 000 BCE – 1815 CE | 36 |
-| **Austronesians** | Polynesian Realms & Voyagers | 10 000 BCE – 400 BCE | 11 |
+| **Australian aboriginal hunter-gatherers** | Australian & Tasmanian Aboriginal Peoples | 2,000 BCE – 1815 CE | 36 |
+| **Austronesians** | Polynesian Realms & Voyagers | 10,000 BCE – 400 BCE | 11 |
 | **Badimaya** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Banjima** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Bardi** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Bibbulman** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
-| **Dakapeng culture** | Dapenkeng & Proto-Austronesian Cultures | 2 000 BCE | 1 |
-| **Dapenkeng culture** | Dapenkeng & Proto-Austronesian Cultures | 5 000 BCE – 3 000 BCE | 3 |
+| **Dakapeng culture** | Dapenkeng & Proto-Austronesian Cultures | 2,000 BCE | 1 |
+| **Dapenkeng culture** | Dapenkeng & Proto-Austronesian Cultures | 5,000 BCE – 3,000 BCE | 3 |
 | **Eora** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1800 CE | 6 |
 | **Fiji** | Fiji | 1878 CE – 2010 CE | 46 |
 | **First Samori Empire** | Polynesian Realms & Voyagers | 1900 CE | 1 |
@@ -2099,6 +2109,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Jurruru** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Kadjerong** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Kalaako/Malpa** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
+| **Kalaamaya** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Kaniyang** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Karajarri** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Karangpurru** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
@@ -2109,14 +2120,16 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Maoris** | Polynesian Realms & Voyagers | 1530 CE – 1600 CE | 2 |
 | **Mayi-Yapi** | Micronesian Realms | 1600 CE – 1800 CE | 6 |
 | **Mebêngôkre (Kayapó)** | Micronesian Realms | 1492 CE | 1 |
+| **Muruwari** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1800 CE | 6 |
 | **Māori** | Polynesian Realms & Voyagers | 1783 CE – 1900 CE | 4 |
 | **New Caledonia** | New Caledonia | 1938 CE | 1 |
 | **New Hebrides** | Vanuatu | 1938 CE | 1 |
 | **New Zealand** | New Zealand | 1914 CE – 2010 CE | 9 |
+| **Ngunawal** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1800 CE | 6 |
 | **Niue** | Niue | 1878 CE – 2010 CE | 12 |
 | **Papua New Guinea** | Papua New Guinea | 1492 CE – 2010 CE | 16 |
 | **Papuan** | Papuan Highland Agriculturalists | 200 BCE | 1 |
-| **Papuan neolithic farmers** | Papuan Highland Agriculturalists | 1 500 BCE – 400 BCE | 5 |
+| **Papuan neolithic farmers** | Papuan Highland Agriculturalists | 1,500 BCE – 400 BCE | 5 |
 | **Papuans** | Melanesian Realms | 800 CE – 1815 CE | 8 |
 | **Pinikura** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
 | **Pinjarup** | Australian & Tasmanian Aboriginal Peoples | 1600 CE – 1815 CE | 7 |
@@ -2125,7 +2138,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Samoa** | Samoa | 1878 CE – 2010 CE | 13 |
 | **Second Samori Empire** | Polynesian Realms & Voyagers | 1900 CE | 1 |
 | **Taiwanese Tribes** | Dapenkeng & Proto-Austronesian Cultures | 1200 CE | 1 |
-| **Tasmanian hunter-gatherers** | Australian & Tasmanian Aboriginal Peoples | 2 000 BCE – 1715 CE | 32 |
+| **Tasmanian hunter-gatherers** | Australian & Tasmanian Aboriginal Peoples | 2,000 BCE – 1715 CE | 32 |
 | **Tonga** | Tonga | 1878 CE – 2010 CE | 26 |
 | **Tuʻi Tonga Empire** | Tuʻi Tonga Empire | 500 CE – 1815 CE | 18 |
 | **Wallis and Futuna Islands** | Wallis and Futuna Islands | 1878 CE – 2010 CE | 13 |
@@ -2140,7 +2153,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 35
 * **Total Appearances**: 315
-* **Historical Span**: 1 500 BCE – 2010 CE
+* **Historical Span**: 1,500 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -2151,7 +2164,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Barbados** | Barbados | 1815 CE – 2010 CE | 9 |
 | **Barbados (UK)** | Barbados | 1715 CE | 1 |
 | **Boriken Taino** | Caribbean Indigenous Peoples | 1492 CE | 1 |
-| **Caribbean hunter-gatherers** | Caribbean Indigenous Peoples | 1 500 BCE – 1650 CE | 31 |
+| **Caribbean hunter-gatherers** | Caribbean Indigenous Peoples | 1,500 BCE – 1650 CE | 31 |
 | **Ciboney** | Caribbean Indigenous Peoples | 800 CE – 900 CE | 2 |
 | **Cuba** | Cuba | 1914 CE – 2010 CE | 9 |
 | **Cuba (Spain)** | Cuba | 1530 CE – 1715 CE | 5 |
@@ -2188,7 +2201,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 50
 * **Total Appearances**: 298
-* **Historical Span**: 2 000 BCE – 2010 CE
+* **Historical Span**: 2,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -2196,12 +2209,12 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Annam** | Vietnamese Dynasties & Champa | 1000 CE – 1945 CE | 7 |
 | **Arakan** | Burmese Kingdoms | 200 BCE – 1815 CE | 12 |
 | **Arakan (Indian princely state)** | Burmese Kingdoms | 1700 CE – 1715 CE | 2 |
-| **Austro-Asiatic rice cultures** | Austroasiatic Agricultural Traditions | 2 000 BCE – 400 BCE | 5 |
+| **Austro-Asiatic rice cultures** | Austroasiatic Agricultural Traditions | 2,000 BCE – 400 BCE | 5 |
 | **Ava** | Burmese Kingdoms | 1650 CE – 1715 CE | 3 |
 | **Ayutthaya** | Ayutthaya Kingdom (Siam) | 1400 CE – 1715 CE | 10 |
 | **Brunei** | Brunei | 1650 CE – 2010 CE | 18 |
 | **Burma** | Myanmar | 1783 CE – 2010 CE | 8 |
-| **Burmese** | Burmese Kingdoms | 1 500 BCE – 700 BCE | 3 |
+| **Burmese** | Burmese Kingdoms | 1,500 BCE – 700 BCE | 3 |
 | **Burmese kingdoms** | Burmese Kingdoms | 1492 CE – 1600 CE | 4 |
 | **Cambodia** | Cambodia | 1492 CE – 2010 CE | 16 |
 | **Champa** | Vietnamese Dynasties & Champa | 500 CE – 1500 CE | 12 |
@@ -2236,7 +2249,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Slavonic tribes** | Siamese & Tai Kingdoms | 800 CE | 1 |
 | **Srivijaya Empire** | Maritime Southeast Asia (Nusantara) | 800 CE – 1400 CE | 8 |
 | **Sukhothai** | Siamese & Tai Kingdoms | 1279 CE – 1400 CE | 5 |
-| **Thai** | Siamese & Tai Kingdoms | 2 000 BCE – 200 BCE | 2 |
+| **Thai** | Siamese & Tai Kingdoms | 2,000 BCE – 200 BCE | 2 |
 | **Thai Kingdoms** | Siamese & Tai Kingdoms | 600 CE – 700 CE | 2 |
 | **Thailand** | Thailand | 1945 CE – 2010 CE | 5 |
 | **Tonkin** | Vietnamese Dynasties & Champa | 1945 CE | 1 |
@@ -2251,13 +2264,13 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 37
 * **Total Appearances**: 294
-* **Historical Span**: 8 000 BCE – 2010 CE
+* **Historical Span**: 8,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
 | **Akan** | Gulf of Guinea Kingdoms | 1492 CE – 1700 CE | 6 |
 | **Asante** | Gulf of Guinea Kingdoms | 1715 CE – 1900 CE | 7 |
-| **Bantu** | Sub-Saharan Agricultural Traditions | 8 000 BCE – 2 000 BCE | 5 |
+| **Bantu** | Sub-Saharan Agricultural Traditions | 8,000 BCE – 2,000 BCE | 5 |
 | **Bantu peoples** | Sub-Saharan Agricultural Traditions | 800 CE – 1500 CE | 10 |
 | **Benin** | Benin | 1279 CE – 2010 CE | 17 |
 | **Burkina Faso** | Burkina Faso | 1945 CE – 2010 CE | 5 |
@@ -2291,90 +2304,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Wadai** | Sahelian & Western Sudanese Empires | 1530 CE – 1800 CE | 7 |
 | **Wadai Empire** | Sahelian & Western Sudanese Empires | 1878 CE – 1880 CE | 2 |
 | **Wassoulou Empire** | Sahelian & Western Sudanese Empires | 1878 CE – 1880 CE | 2 |
-| **West African cereal farmers** | Sub-Saharan Agricultural Traditions | 1 500 BCE – 1500 CE | 27 |
-
-[↑ Back to top](#table-of-contents)
-
----
-
-## <a id="east-asia"></a>East Asia
-
-* **Unique Entities**: 70
-* **Total Appearances**: 290
-* **Historical Span**: 10 000 BCE – 2010 CE
-
-| Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
-| :--- | :--- | :--- | :---: |
-| **Ainu** | Ainu Peoples | 5 000 BCE – 1700 CE | 30 |
-| **Ainus** | Ainu Peoples | 1279 CE – 1500 CE | 6 |
-| **Balhae** | Korean Dynasties | 900 CE | 1 |
-| **Bedouins** | Japanese Dynasties & Kingdoms | 900 CE | 1 |
-| **Bilinara** | Japanese Dynasties & Kingdoms | 1600 CE – 1815 CE | 7 |
-| **China** | China | 1945 CE – 2010 CE | 5 |
-| **Chinantla (Tsa ju jmí’)** | Imperial Chinese Dynasties | 1492 CE | 1 |
-| **Chinese Warlords** | Imperial Chinese Dynasties | 1920 CE – 1930 CE | 2 |
-| **Chinese warlords** | Imperial Chinese Dynasties | 1938 CE | 1 |
-| **Cochin China** | Imperial Chinese Dynasties | 1783 CE – 1945 CE | 7 |
-| **Dutch Formosa** | Imperial Chinese Dynasties | 1650 CE – 1700 CE | 2 |
-| **Eduria (Taiwano)** | Imperial Chinese Dynasties | 1492 CE | 1 |
-| **Empire of Japan** | Japanese Dynasties & Kingdoms | 1914 CE – 1938 CE | 4 |
-| **French Indo-China** | Imperial Chinese Dynasties | 1920 CE – 1938 CE | 3 |
-| **French Indochina** | Imperial Chinese Dynasties | 1878 CE – 1914 CE | 4 |
-| **Gaya** | Korean Dynasties | 100 CE – 400 CE | 4 |
-| **Gojoseon** | Korean Dynasties | 400 BCE | 1 |
-| **Goryeo** | Korean Dynasties | 1200 CE | 1 |
-| **Hainan** | Imperial Chinese Dynasties | 1 BCE – 1400 CE | 14 |
-| **Han Empire** | Han Dynasty | 200 BCE – 100 BCE | 2 |
-| **Hong Kong** | Hong Kong | 1650 CE – 2010 CE | 18 |
-| **Imperial Japan** | Japanese Dynasties & Kingdoms | 1878 CE – 1900 CE | 3 |
-| **Imperial Japan (Fujiwara)** | Japanese Dynasties & Kingdoms | 1000 CE – 1200 CE | 3 |
-| **Japan** | Japan | 800 CE – 2010 CE | 10 |
-| **Japan (USA)** | Japan | 1945 CE | 1 |
-| **Japan (Warring States)** | Japan | 1530 CE – 1600 CE | 2 |
-| **Jōmon** | Jōmon Prehistoric Culture | 10 000 BCE – 2 000 BCE | 6 |
-| **Kanara** | Japanese Dynasties & Kingdoms | 1800 CE | 1 |
-| **Khitans** | Imperial Chinese Dynasties | 900 CE | 1 |
-| **Koguryo** | Korean Dynasties | 1 BCE – 700 CE | 9 |
-| **Korea** | South Korea | 1000 CE – 1900 CE | 15 |
-| **Korea (USA)** | South Korea | 1945 CE | 1 |
-| **Korea (USSR)** | South Korea | 1945 CE | 1 |
-| **Korea, Democratic People's Republic of** | Korean Dynasties | 1960 CE – 2010 CE | 4 |
-| **Korea, Republic of** | Korean Dynasties | 1960 CE – 2010 CE | 4 |
-| **Koreans** | Korean Dynasties | 2 000 BCE | 1 |
-| **Kushan Empire** | Imperial Chinese Dynasties | 100 BCE – 100 CE | 2 |
-| **Late Jomon culture** | Jōmon Prehistoric Culture | 1 500 BCE – 400 BCE | 5 |
-| **Liao** | Imperial Chinese Dynasties | 1000 CE – 1200 CE | 3 |
-| **Macedon and Hellenic League** | Japanese Dynasties & Kingdoms | 200 BCE | 1 |
-| **Manchu Empire** | Qing Dynasty | 1650 CE – 1914 CE | 9 |
-| **Manchuria** | Imperial Chinese Dynasties | 1920 CE – 1945 CE | 3 |
-| **Min-Yue** | Imperial Chinese Dynasties | 200 BCE – 100 BCE | 2 |
-| **Ming Chinese Empire** | Ming Dynasty | 1500 CE – 1600 CE | 3 |
-| **Ming Empire** | Ming Dynasty | 1492 CE | 1 |
-| **Mingin** | Imperial Chinese Dynasties | 1600 CE – 1800 CE | 6 |
-| **Nan-Yue** | Imperial Chinese Dynasties | 200 BCE – 100 BCE | 2 |
-| **Narangga** | Japanese Dynasties & Kingdoms | 1600 CE – 1800 CE | 6 |
-| **Paekche** | Korean Dynasties | 100 CE – 700 CE | 9 |
-| **Paleo-Koreans** | Korean Dynasties | 1 500 BCE – 700 BCE | 3 |
-| **Parhae** | Korean Dynasties | 800 CE | 1 |
-| **Post-Ming Warlords** | Imperial Chinese Dynasties | 1650 CE – 1700 CE | 2 |
-| **Qin** | Imperial Chinese Dynasties | 323 BCE – 300 BCE | 2 |
-| **Qing Empire** | Imperial Chinese Dynasties | 1783 CE – 1800 CE | 2 |
-| **Santo Domingo (Spain)** | Imperial Chinese Dynasties | 1715 CE | 1 |
-| **Shogun Japan (Kamakura)** | Japanese Dynasties & Kingdoms | 1279 CE – 1400 CE | 3 |
-| **Silia** | Korean Dynasties | 800 CE | 1 |
-| **Silla** | Korean Dynasties | 1 BCE – 900 CE | 9 |
-| **Sinic** | Imperial Chinese Dynasties | 1 500 BCE – 700 BCE | 3 |
-| **Sixteen Kingdoms** | Imperial Chinese Dynasties | 400 CE | 1 |
-| **Song Empire** | Song Dynasty | 1000 CE – 1200 CE | 3 |
-| **Taiwan** | Taiwan | 1492 CE – 2010 CE | 9 |
-| **Tang Empire** | Tang Dynasty | 800 CE – 900 CE | 2 |
-| **Wu** | Imperial Chinese Dynasties | 1 500 BCE – 700 BCE | 3 |
-| **Xia** | Imperial Chinese Dynasties | 2 000 BCE | 1 |
-| **Yamato** | Japanese Dynasties & Kingdoms | 500 CE – 900 CE | 4 |
-| **Yayoi** | Japanese Dynasties & Kingdoms | 400 BCE – 100 CE | 2 |
-| **Yue** | Imperial Chinese Dynasties | 323 BCE – 300 BCE | 2 |
-| **Zhoa** | Imperial Chinese Dynasties | 1 500 BCE – 700 BCE | 3 |
-| **Zhou states** | Imperial Chinese Dynasties | 500 BCE – 300 BCE | 4 |
+| **West African cereal farmers** | Sub-Saharan Agricultural Traditions | 1,500 BCE – 1500 CE | 27 |
 
 [↑ Back to top](#table-of-contents)
 
@@ -2384,7 +2314,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 85
 * **Total Appearances**: 290
-* **Historical Span**: 5 000 BCE – 2010 CE
+* **Historical Span**: 5,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -2405,8 +2335,8 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Chola Empire** | Southern & Deccan Indian Kingdoms | 1000 CE – 1400 CE | 5 |
 | **Cholas** | Southern & Deccan Indian Kingdoms | 500 CE – 1100 CE | 4 |
 | **Cochin** | Indian Kingdoms & Princely States | 1783 CE – 1800 CE | 2 |
-| **Dravidians** | Southern & Deccan Indian Kingdoms | 5 000 BCE – 700 BCE | 7 |
-| **Gandhara grave culture** | Vedic & Early Indian Kingdoms | 1 000 BCE | 1 |
+| **Dravidians** | Southern & Deccan Indian Kingdoms | 5,000 BCE – 700 BCE | 7 |
+| **Gandhara grave culture** | Vedic & Early Indian Kingdoms | 1,000 BCE | 1 |
 | **Golconda** | Delhi & Deccan Sultanates | 1783 CE | 1 |
 | **Gujarat** | Indian Kingdoms & Princely States | 1492 CE | 1 |
 | **Gupta Empire** | Gupta Empire | 300 CE – 500 CE | 3 |
@@ -2414,7 +2344,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Hindu kingdoms** | Indian Kingdoms & Princely States | 500 BCE – 1715 CE | 19 |
 | **Hindu kingdoms and republics** | Indian Kingdoms & Princely States | 323 BCE – 300 BCE | 3 |
 | **India** | India | 1783 CE – 2010 CE | 8 |
-| **Indus valley civilization** | Vedic & Early Indian Kingdoms | 4 000 BCE – 2 000 BCE | 3 |
+| **Indus valley civilization** | Vedic & Early Indian Kingdoms | 4,000 BCE – 2,000 BCE | 3 |
 | **Kadambas** | Southern & Deccan Indian Kingdoms | 500 CE | 1 |
 | **Kalinga** | Mauryan & Classical Indian Empires | 1 BCE – 1000 CE | 6 |
 | **Kandy** | Sri Lankan & Sinhalese Kingdoms | 1650 CE – 1800 CE | 6 |
@@ -2468,7 +2398,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Travancore** | Indian Kingdoms & Princely States | 1783 CE – 1815 CE | 3 |
 | **Vakataka** | Gupta & Classical Indian Empires | 500 CE | 1 |
 | **Vatsa** | Vedic & Early Indian Kingdoms | 500 BCE | 1 |
-| **Vedic Aryans** | Vedic & Early Indian Kingdoms | 1 500 BCE – 700 BCE | 3 |
+| **Vedic Aryans** | Vedic & Early Indian Kingdoms | 1,500 BCE – 700 BCE | 3 |
 | **Vijayanagara** | Southern & Deccan Indian Kingdoms | 1492 CE – 1650 CE | 5 |
 | **Western Chalukyas** | Southern & Deccan Indian Kingdoms | 1100 CE | 1 |
 | **Western Gangas** | Southern & Deccan Indian Kingdoms | 500 CE – 700 CE | 2 |
@@ -2482,7 +2412,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 44
 * **Total Appearances**: 266
-* **Historical Span**: 4 000 BCE – 2010 CE
+* **Historical Span**: 4,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -2503,7 +2433,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Ethiopia** | Ethiopia | 1279 CE – 2010 CE | 24 |
 | **Ethiopia (Italy)** | Ethiopia | 1938 CE | 1 |
 | **Ethiopian Highland Peoples** | Ethiopian Highlands Traditions | 700 CE | 1 |
-| **Ethiopian highland farmers** | Ethiopian Highlands Traditions | 1 500 BCE – 323 BCE | 6 |
+| **Ethiopian highland farmers** | Ethiopian Highlands Traditions | 1,500 BCE – 323 BCE | 6 |
 | **French Somaliland** | Djibouti | 1920 CE – 1938 CE | 3 |
 | **Funj** | Great Lakes & Swahili Kingdoms | 1492 CE – 1800 CE | 4 |
 | **Futa Toro** | Great Lakes & Swahili Kingdoms | 1878 CE – 1900 CE | 3 |
@@ -2511,8 +2441,8 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Imerina** | Kingdom of Madagascar (Merina) | 1878 CE – 1900 CE | 3 |
 | **Italian Somaliland** | Somali & Horn Sultanates | 1914 CE – 1938 CE | 4 |
 | **Kenya** | Kenya | 1920 CE – 2010 CE | 8 |
-| **Kerma** | Nubian Kingdoms | 4 000 BCE – 2 000 BCE | 3 |
-| **Kush** | Nubian Kingdoms | 1 500 BCE – 400 BCE | 4 |
+| **Kerma** | Nubian Kingdoms | 4,000 BCE – 2,000 BCE | 3 |
+| **Kush** | Nubian Kingdoms | 1,500 BCE – 400 BCE | 4 |
 | **Madagascar** | Madagascar | 1000 CE – 2010 CE | 22 |
 | **Madagascar (France)** | Madagascar | 1914 CE – 1945 CE | 5 |
 | **Makkura** | Nubian Kingdoms | 500 CE – 1400 CE | 11 |
@@ -2535,10 +2465,84 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ---
 
+## <a id="east-asia"></a>East Asia
+
+* **Unique Entities**: 61
+* **Total Appearances**: 264
+* **Historical Span**: 10,000 BCE – 2010 CE
+
+| Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
+| :--- | :--- | :--- | :---: |
+| **Ainu** | Ainu Peoples | 5,000 BCE – 1700 CE | 30 |
+| **Ainus** | Ainu Peoples | 1279 CE – 1500 CE | 6 |
+| **Balhae** | Korean Dynasties | 900 CE | 1 |
+| **China** | China | 1945 CE – 2010 CE | 5 |
+| **Chinese Warlords** | Imperial Chinese Dynasties | 1920 CE – 1930 CE | 2 |
+| **Chinese warlords** | Imperial Chinese Dynasties | 1938 CE | 1 |
+| **Cochin China** | Imperial Chinese Dynasties | 1783 CE – 1945 CE | 7 |
+| **Dutch Formosa** | Imperial Chinese Dynasties | 1650 CE – 1700 CE | 2 |
+| **Empire of Japan** | Japanese Dynasties & Kingdoms | 1914 CE – 1938 CE | 4 |
+| **French Indo-China** | Imperial Chinese Dynasties | 1920 CE – 1938 CE | 3 |
+| **Gaya** | Korean Dynasties | 100 CE – 400 CE | 4 |
+| **Gojoseon** | Korean Dynasties | 400 BCE | 1 |
+| **Goryeo** | Korean Dynasties | 1200 CE | 1 |
+| **Hainan** | Imperial Chinese Dynasties | 1 BCE – 1400 CE | 14 |
+| **Han Empire** | Han Dynasty | 200 BCE – 100 BCE | 2 |
+| **Hong Kong** | Hong Kong | 1650 CE – 2010 CE | 18 |
+| **Imperial Japan** | Japanese Dynasties & Kingdoms | 1878 CE – 1900 CE | 3 |
+| **Imperial Japan (Fujiwara)** | Japanese Dynasties & Kingdoms | 1000 CE – 1200 CE | 3 |
+| **Japan** | Japan | 800 CE – 2010 CE | 10 |
+| **Japan (USA)** | Japan | 1945 CE | 1 |
+| **Japan (Warring States)** | Japan | 1530 CE – 1600 CE | 2 |
+| **Jōmon** | Jōmon Prehistoric Culture | 10,000 BCE – 2,000 BCE | 6 |
+| **Khitans** | Imperial Chinese Dynasties | 900 CE | 1 |
+| **Koguryo** | Korean Dynasties | 1 BCE – 700 CE | 9 |
+| **Korea** | South Korea | 1000 CE – 1900 CE | 15 |
+| **Korea (USA)** | South Korea | 1945 CE | 1 |
+| **Korea (USSR)** | South Korea | 1945 CE | 1 |
+| **Korea, Democratic People's Republic of** | Korean Dynasties | 1960 CE – 2010 CE | 4 |
+| **Korea, Republic of** | Korean Dynasties | 1960 CE – 2010 CE | 4 |
+| **Koreans** | Korean Dynasties | 2,000 BCE | 1 |
+| **Kushan Empire** | Imperial Chinese Dynasties | 100 BCE – 100 CE | 2 |
+| **Late Jomon culture** | Jōmon Prehistoric Culture | 1,500 BCE – 400 BCE | 5 |
+| **Liao** | Imperial Chinese Dynasties | 1000 CE – 1200 CE | 3 |
+| **Manchu Empire** | Qing Dynasty | 1650 CE – 1914 CE | 9 |
+| **Manchuria** | Imperial Chinese Dynasties | 1920 CE – 1945 CE | 3 |
+| **Min-Yue** | Imperial Chinese Dynasties | 200 BCE – 100 BCE | 2 |
+| **Ming Chinese Empire** | Ming Dynasty | 1500 CE – 1600 CE | 3 |
+| **Ming Empire** | Ming Dynasty | 1492 CE | 1 |
+| **Nan-Yue** | Imperial Chinese Dynasties | 200 BCE – 100 BCE | 2 |
+| **Paekche** | Korean Dynasties | 100 CE – 700 CE | 9 |
+| **Paleo-Koreans** | Korean Dynasties | 1,500 BCE – 700 BCE | 3 |
+| **Parhae** | Korean Dynasties | 800 CE | 1 |
+| **Post-Ming Warlords** | Imperial Chinese Dynasties | 1650 CE – 1700 CE | 2 |
+| **Qin** | Imperial Chinese Dynasties | 323 BCE – 300 BCE | 2 |
+| **Qing Empire** | Imperial Chinese Dynasties | 1783 CE – 1800 CE | 2 |
+| **Shogun Japan (Kamakura)** | Japanese Dynasties & Kingdoms | 1279 CE – 1400 CE | 3 |
+| **Silia** | Korean Dynasties | 800 CE | 1 |
+| **Silla** | Korean Dynasties | 1 BCE – 900 CE | 9 |
+| **Sinic** | Imperial Chinese Dynasties | 1,500 BCE – 700 BCE | 3 |
+| **Sixteen Kingdoms** | Imperial Chinese Dynasties | 400 CE | 1 |
+| **Song Empire** | Song Dynasty | 1000 CE – 1200 CE | 3 |
+| **Taiwan** | Taiwan | 1492 CE – 2010 CE | 9 |
+| **Tang Empire** | Tang Dynasty | 800 CE – 900 CE | 2 |
+| **Tokugawa shogunate** | Japanese Dynasties & Kingdoms | 1650 CE – 1715 CE | 3 |
+| **Wu** | Imperial Chinese Dynasties | 1,500 BCE – 700 BCE | 3 |
+| **Xia** | Imperial Chinese Dynasties | 2,000 BCE | 1 |
+| **Yamato** | Japanese Dynasties & Kingdoms | 500 CE – 900 CE | 4 |
+| **Yayoi** | Japanese Dynasties & Kingdoms | 400 BCE – 100 CE | 2 |
+| **Yue** | Imperial Chinese Dynasties | 323 BCE – 300 BCE | 2 |
+| **Zhoa** | Imperial Chinese Dynasties | 1,500 BCE – 700 BCE | 3 |
+| **Zhou states** | Imperial Chinese Dynasties | 500 BCE – 300 BCE | 4 |
+
+[↑ Back to top](#table-of-contents)
+
+---
+
 ## <a id="southern-europe"></a>Southern Europe
 
-* **Unique Entities**: 38
-* **Total Appearances**: 247
+* **Unique Entities**: 39
+* **Total Appearances**: 248
 * **Historical Span**: 500 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
@@ -2573,6 +2577,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Sabini** | Ancient European & Mediterranean Civilizations | 500 BCE – 400 BCE | 2 |
 | **Samnites** | Ancient European & Mediterranean Civilizations | 500 BCE – 400 BCE | 2 |
 | **San Marino** | San Marino | 1815 CE | 1 |
+| **Santo Domingo (Spain)** | Spanish Kingdoms | 1715 CE | 1 |
 | **Sardinia** | Italian States | 1000 CE – 1715 CE | 11 |
 | **Sardinia-Piedmont** | Italian States | 1650 CE – 1715 CE | 3 |
 | **Savoy** | Italian States | 1530 CE – 1600 CE | 2 |
@@ -2588,9 +2593,9 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ## <a id="western-europe"></a>Western Europe
 
-* **Unique Entities**: 53
-* **Total Appearances**: 241
-* **Historical Span**: 1 500 BCE – 2010 CE
+* **Unique Entities**: 54
+* **Total Appearances**: 245
+* **Historical Span**: 1,500 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -2599,7 +2604,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Britany** | Celtic Nations & Kingdoms | 800 CE – 1530 CE | 11 |
 | **Burgundians** | Germanic & Migration Kingdoms | 400 CE – 500 CE | 2 |
 | **Carolingian Empire** | Germanic & Migration Kingdoms | 800 CE – 900 CE | 4 |
-| **Celtiberians** | Celtic Nations & Kingdoms | 1 500 BCE – 700 BCE | 3 |
+| **Celtiberians** | Celtic Nations & Kingdoms | 1,500 BCE – 700 BCE | 3 |
 | **Celtic kingdoms** | Celtic Nations & Kingdoms | 800 CE – 1200 CE | 5 |
 | **Celts** | Celtic Nations & Kingdoms | 400 BCE – 100 BCE | 5 |
 | **Dutch Brazil** | Low Countries | 1650 CE – 1700 CE | 2 |
@@ -2614,6 +2619,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Franks** | Germanic & Migration Kingdoms | 400 CE – 500 CE | 4 |
 | **French Cameroons** | Kingdom of France | 1920 CE – 1938 CE | 3 |
 | **French Equatorial Africa** | Kingdom of France | 1914 CE – 1938 CE | 4 |
+| **French Indochina** | Kingdom of France | 1878 CE – 1914 CE | 4 |
 | **French West Africa** | Kingdom of France | 1914 CE – 1938 CE | 4 |
 | **Frisians** | Germanic & Migration Kingdoms | 600 CE – 700 CE | 2 |
 | **Germanic tribes** | Germanic & Migration Kingdoms | 400 BCE | 1 |
@@ -2654,14 +2660,15 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ## <a id="middle-east"></a>Middle East
 
-* **Unique Entities**: 35
-* **Total Appearances**: 233
-* **Historical Span**: 1 500 BCE – 2010 CE
+* **Unique Entities**: 36
+* **Total Appearances**: 234
+* **Historical Span**: 1,500 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Arabian pastoral nomads** | Arabian & Gulf Emirates | 1 500 BCE – 700 BCE | 3 |
+| **Arabian pastoral nomads** | Arabian & Gulf Emirates | 1,500 BCE – 700 BCE | 3 |
 | **Arabs** | Arabian & Gulf Emirates | 200 BCE – 1500 CE | 3 |
+| **Bedouins** | Arabian & Gulf Emirates | 900 CE | 1 |
 | **Eastern Roman Empire** | Arabian & Gulf Emirates | 400 CE – 700 CE | 4 |
 | **Emirate of the White Sheep Turks** | Arabian & Gulf Emirates | 1492 CE – 1500 CE | 2 |
 | **Hadramaut** | Arabian & Gulf Emirates | 323 BCE – 1700 CE | 21 |
@@ -2685,7 +2692,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Qatar** | Qatar | 1878 CE – 2010 CE | 13 |
 | **Republic of Turkey** | Turkey | 1930 CE | 1 |
 | **Roman Republic** | Arabian & Gulf Emirates | 400 BCE – 100 BCE | 4 |
-| **Saba** | Arabian & Gulf Emirates | 1 500 BCE – 100 BCE | 8 |
+| **Saba** | Arabian & Gulf Emirates | 1,500 BCE – 100 BCE | 8 |
 | **Saudi Arabia** | Saudi Arabia | 1938 CE – 2010 CE | 6 |
 | **Seljuk Empire** | Ottoman & Seljuk Empires | 1100 CE | 1 |
 | **Syria** | Syria | 1945 CE – 2010 CE | 5 |
@@ -2704,13 +2711,13 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 44
 * **Total Appearances**: 225
-* **Historical Span**: 10 000 BCE – 1800 CE
+* **Historical Span**: 10,000 BCE – 1800 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
 | **Acho Dene Koe** | Subarctic Indigenous Peoples | 1492 CE | 1 |
 | **Alutiiq (Sugpiaq)** | Arctic & Circumpolar Peoples | 1492 CE | 1 |
-| **Arctic marine mammal hunters** | Arctic & Circumpolar Peoples | 2 000 BCE – 1200 CE | 23 |
+| **Arctic marine mammal hunters** | Arctic & Circumpolar Peoples | 2,000 BCE – 1200 CE | 23 |
 | **Athabaskan** | Subarctic Indigenous Peoples | 800 CE – 1650 CE | 12 |
 | **Beothuk** | Subarctic Indigenous Peoples | 800 CE – 1600 CE | 9 |
 | **Champagne & Aishihik** | Subarctic Indigenous Peoples | 1492 CE | 1 |
@@ -2732,15 +2739,15 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Montagnais Innu** | Subarctic Indigenous Peoples | 1530 CE – 1715 CE | 5 |
 | **Naskapi Innu** | Subarctic Indigenous Peoples | 1530 CE – 1715 CE | 5 |
 | **Nitassinan (Innu)** | Subarctic Indigenous Peoples | 1492 CE | 1 |
-| **Okhotsk culture** | Okhotsk Maritime Culture | 10 000 BCE – 8 000 BCE | 2 |
+| **Okhotsk culture** | Okhotsk Maritime Culture | 10,000 BCE – 8,000 BCE | 2 |
 | **Paleo-Inuit** | Arctic & Circumpolar Peoples | 500 BCE – 400 CE | 7 |
-| **Paleo-Siberian hunter-gatherers** | Paleo-Siberian Peoples | 2 000 BCE – 1200 CE | 23 |
+| **Paleo-Siberian hunter-gatherers** | Paleo-Siberian Peoples | 2,000 BCE – 1200 CE | 23 |
 | **Sahtu** | Subarctic Indigenous Peoples | 1700 CE – 1715 CE | 2 |
 | **Sahtu Dene and Metis** | Subarctic Indigenous Peoples | 1492 CE | 1 |
 | **Siberians** | Paleo-Siberian Peoples | 1279 CE – 1500 CE | 5 |
 | **Siginygmit (Sireniki) Yupik** | Arctic & Circumpolar Peoples | 1492 CE | 1 |
 | **Sivuqaq (St. Lawrence Island) Yupik** | Arctic & Circumpolar Peoples | 1492 CE | 1 |
-| **Subarctic forest hunter-gatherers** | Subarctic Indigenous Peoples | 1 500 BCE – 1715 CE | 32 |
+| **Subarctic forest hunter-gatherers** | Subarctic Indigenous Peoples | 1,500 BCE – 1715 CE | 32 |
 | **Suspiaq** | Arctic & Circumpolar Peoples | 1530 CE – 1800 CE | 7 |
 | **T'atsaot'ine** | Subarctic Indigenous Peoples | 1530 CE – 1800 CE | 7 |
 | **Teslin Tlingit Council (BC)** | Subarctic Indigenous Peoples | 1492 CE | 1 |
@@ -2761,24 +2768,24 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 71
 * **Total Appearances**: 218
-* **Historical Span**: 5 000 BCE – 2010 CE
+* **Historical Span**: 5,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Afanasevo** | Eurasian Steppe Pastoral Traditions | 3 000 BCE – 2 000 BCE | 2 |
+| **Afanasevo** | Eurasian Steppe Pastoral Traditions | 3,000 BCE – 2,000 BCE | 2 |
 | **Afghanistan** | Afghanistan | 1783 CE – 2010 CE | 15 |
 | **Alans** | Ancient Steppe Nomadic Confederations | 100 CE – 1100 CE | 5 |
-| **Andronovo** | Eurasian Steppe Pastoral Traditions | 2 000 BCE | 1 |
+| **Andronovo** | Eurasian Steppe Pastoral Traditions | 2,000 BCE | 1 |
 | **Astrakhan Khanate** | Mongol & Post-Mongol Khanates | 1530 CE | 1 |
 | **Avars** | Turkic & Steppe Khaganates | 600 CE – 900 CE | 4 |
 | **Blue Horde** | Mongol & Post-Mongol Khanates | 1400 CE | 1 |
 | **Bokhara Khanate** | Mongol & Post-Mongol Khanates | 1878 CE – 1880 CE | 2 |
 | **Bukara Khanate** | Mongol & Post-Mongol Khanates | 1530 CE | 1 |
 | **Bulgar Khanate** | Turkic & Steppe Khaganates | 1000 CE – 1400 CE | 6 |
-| **Catacomb culture** | Eurasian Steppe Pastoral Traditions | 2 000 BCE | 1 |
+| **Catacomb culture** | Eurasian Steppe Pastoral Traditions | 2,000 BCE | 1 |
 | **Caucasian Alans** | Ancient Steppe Nomadic Confederations | 400 CE | 1 |
 | **Chagatai Khanate** | Chagatai Khanate | 1279 CE – 1500 CE | 5 |
-| **Cimerians** | Ancient Steppe Nomadic Confederations | 1 500 BCE – 700 BCE | 6 |
+| **Cimerians** | Ancient Steppe Nomadic Confederations | 1,500 BCE – 700 BCE | 6 |
 | **Crimean Khanate** | Mongol & Post-Mongol Khanates | 1492 CE – 1600 CE | 4 |
 | **Cuman Khanates** | Turkic & Steppe Khaganates | 1200 CE | 1 |
 | **Cuman-Kipchak confederation** | Turkic & Steppe Khaganates | 1100 CE | 1 |
@@ -2788,12 +2795,12 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Göktürks** | Turkic & Steppe Khaganates | 600 CE – 700 CE | 2 |
 | **Huns** | Ancient Steppe Nomadic Confederations | 700 CE | 1 |
 | **Ilkhanate** | Ilkhanate | 1279 CE – 1300 CE | 2 |
-| **Karasuk culture** | Karasuk Culture (Siberian & Central Asian Bronze Age) | 1 500 BCE – 700 BCE | 3 |
+| **Karasuk culture** | Karasuk Culture (Siberian & Central Asian Bronze Age) | 1,500 BCE – 700 BCE | 3 |
 | **Karluks** | Turkic & Steppe Khaganates | 700 CE – 900 CE | 2 |
 | **Kazakhstan** | Kazakhstan | 1994 CE – 2010 CE | 3 |
 | **Kazan Khanate** | Mongol & Post-Mongol Khanates | 1530 CE | 1 |
-| **Kelteminar** | Eurasian Steppe Pastoral Traditions | 5 000 BCE | 1 |
-| **Kelteminar culture** | Eurasian Steppe Pastoral Traditions | 5 000 BCE | 1 |
+| **Kelteminar** | Eurasian Steppe Pastoral Traditions | 5,000 BCE | 1 |
+| **Kelteminar culture** | Eurasian Steppe Pastoral Traditions | 5,000 BCE | 1 |
 | **Khanate of Sibir** | Mongol & Post-Mongol Khanates | 1492 CE – 1530 CE | 3 |
 | **Khanate of the Golden Horde** | Golden Horde | 1279 CE – 1300 CE | 2 |
 | **Khazars** | Turkic & Steppe Khaganates | 600 CE – 1000 CE | 5 |
@@ -2808,20 +2815,20 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Oghuz Turks** | Turkic & Steppe Khaganates | 900 CE | 1 |
 | **Oirat Confederation** | Mongol & Post-Mongol Khanates | 1492 CE – 1500 CE | 2 |
 | **Pechenegs** | Turkic & Steppe Khaganates | 900 CE | 1 |
-| **Proto-Altaic pastoralists** | Proto-Altaic & Eastern Steppe Pastoralists | 1 500 BCE – 400 BCE | 5 |
+| **Proto-Altaic pastoralists** | Proto-Altaic & Eastern Steppe Pastoralists | 1,500 BCE – 400 BCE | 5 |
 | **Proto-Scythian culture** | Ancient Steppe Nomadic Confederations | 700 BCE | 1 |
 | **Proto-Tibetan cultures** | Tibetan Realm | 400 BCE | 1 |
 | **Saces** | Ancient Steppe Nomadic Confederations | 100 BCE | 1 |
 | **Saka Kingdom** | Ancient Steppe Nomadic Confederations | 1 BCE – 300 CE | 4 |
 | **Sarmates** | Ancient Steppe Nomadic Confederations | 100 BCE | 1 |
 | **Scythians** | Ancient Steppe Nomadic Confederations | 400 BCE – 100 CE | 4 |
-| **Sintashta** | Eurasian Steppe Pastoral Traditions | 2 000 BCE | 1 |
+| **Sintashta** | Eurasian Steppe Pastoral Traditions | 2,000 BCE | 1 |
 | **Southern Xiongnu** | Ancient Steppe Nomadic Confederations | 100 CE – 200 CE | 2 |
 | **Tajikistan** | Tajikistan | 1994 CE – 2010 CE | 3 |
 | **Tibet** | Tibetan Realm | 1000 CE – 1960 CE | 19 |
 | **Tibetan Empire** | Tibetan Realm | 800 CE – 900 CE | 2 |
-| **Tibetans** | Tibetan Realm | 1 500 BCE – 700 BCE | 3 |
-| **Tibeto-Burmanese** | Tibetan Realm | 2 000 BCE | 1 |
+| **Tibetans** | Tibetan Realm | 1,500 BCE – 700 BCE | 3 |
+| **Tibeto-Burmanese** | Tibetan Realm | 2,000 BCE | 1 |
 | **Timurid Emirates** | Mongol & Post-Mongol Khanates | 1492 CE – 1500 CE | 2 |
 | **Timurid Empire** | Mongol & Post-Mongol Khanates | 1400 CE | 1 |
 | **Turcik tribes** | Turkic & Steppe Khaganates | 200 BCE | 1 |
@@ -2832,7 +2839,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Western Gokturk Khaganate** | Turkic & Steppe Khaganates | 700 CE | 2 |
 | **White Horde** | Mongol & Post-Mongol Khanates | 1400 CE – 1500 CE | 3 |
 | **Xiongnu** | Ancient Steppe Nomadic Confederations | 400 BCE – 1 BCE | 4 |
-| **Yamnaya culture** | Eurasian Steppe Pastoral Traditions | 3 000 BCE | 1 |
+| **Yamnaya culture** | Eurasian Steppe Pastoral Traditions | 3,000 BCE | 1 |
 | **Yuezhi** | Ancient Steppe Nomadic Confederations | 200 BCE | 1 |
 | **Zhangzhung Kingdom** | Tibetan Realm | 400 BCE – 100 BCE | 5 |
 | **central Asian khanates** | Mongol & Post-Mongol Khanates | 1530 CE – 1900 CE | 17 |
@@ -2903,7 +2910,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 31
 * **Total Appearances**: 176
-* **Historical Span**: 4 000 BCE – 2010 CE
+* **Historical Span**: 4,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -2912,9 +2919,9 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Algeria (France)** | Algeria | 1938 CE | 1 |
 | **Almoravid dynasty** | Maghrebi Sultanates | 1100 CE | 1 |
 | **Berber Tribes** | Berber & Saharan Peoples | 1200 CE | 1 |
-| **Berbers** | Berber & Saharan Peoples | 1 500 BCE – 900 CE | 4 |
-| **Egypt** | Egypt | 4 000 BCE – 2010 CE | 21 |
-| **Guanches** | Guanches (Canary Islands) | 1 500 BCE – 1815 CE | 34 |
+| **Berbers** | Berber & Saharan Peoples | 1,500 BCE – 900 CE | 4 |
+| **Egypt** | Egypt | 4,000 BCE – 2010 CE | 21 |
+| **Guanches** | Guanches (Canary Islands) | 1,500 BCE – 1815 CE | 34 |
 | **Harer (Egypt)** | Egyptian Civilization | 1878 CE – 1900 CE | 3 |
 | **Kingdom of Gala** | Berber & Saharan Peoples | 200 BCE | 1 |
 | **Kingdom of Syphax** | Berber & Saharan Peoples | 200 BCE | 1 |
@@ -2928,7 +2935,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Numidia** | Berber & Saharan Peoples | 100 BCE | 1 |
 | **Ptolemaic Kingdom** | Egyptian Civilization | 300 BCE – 100 BCE | 3 |
 | **Saharan Nomadic Tribes** | Berber & Saharan Peoples | 700 CE | 1 |
-| **Saharan pastoral nomads** | Berber & Saharan Peoples | 2 000 BCE – 200 BCE | 19 |
+| **Saharan pastoral nomads** | Berber & Saharan Peoples | 2,000 BCE – 200 BCE | 19 |
 | **Spanish Morocco** | Maghrebi Sultanates | 1914 CE | 1 |
 | **Sudan** | Sudan | 1920 CE – 2010 CE | 8 |
 | **Tripolitana (UK Lybia)** | Maghrebi Sultanates | 1945 CE | 1 |
@@ -2973,20 +2980,21 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ## <a id="south-american-indigenous"></a>South American Indigenous
 
-* **Unique Entities**: 37
-* **Total Appearances**: 159
-* **Historical Span**: 1 500 BCE – 1878 CE
+* **Unique Entities**: 40
+* **Total Appearances**: 162
+* **Historical Span**: 1,500 BCE – 1878 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
 | **Ahé (Kawahib)** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
-| **Amazon hunter-gatherers** | Amazonian & Tropical Lowland Peoples | 1 500 BCE – 1783 CE | 32 |
+| **Amazon hunter-gatherers** | Amazonian & Tropical Lowland Peoples | 1,500 BCE – 1783 CE | 32 |
 | **Ashaninka** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Awaeté** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Awaeté (Asurini of the Xingu)** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Aónikenk (Tehuelche)** | Southern Cone & Pampas Peoples | 1492 CE | 1 |
 | **Cabiyari/Kawiyarí** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Charrúa** | Southern Cone & Pampas Peoples | 1492 CE | 1 |
+| **Chitonahua/Murunahua** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Da’naxda’xw Awaetlatla** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Diaguita** | Southern Cone & Pampas Peoples | 1492 CE | 1 |
 | **Envuga (Kawahib)** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
@@ -2996,15 +3004,17 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Kawahib (Parintintin)** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Kawahib (Tenharim)** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Magüta/Ticuna** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
-| **Manioc farmers** | Amazonian & Tropical Lowland Peoples | 1 500 BCE – 100 BCE | 9 |
+| **Manioc farmers** | Amazonian & Tropical Lowland Peoples | 1,500 BCE – 100 BCE | 9 |
 | **Mapuche** | Southern Cone & Pampas Peoples | 1878 CE | 1 |
+| **Marinahua** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Miranha** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
-| **Pampas cultures** | Southern Cone & Pampas Peoples | 1 500 BCE – 1878 CE | 35 |
+| **Pampas cultures** | Southern Cone & Pampas Peoples | 1,500 BCE – 1878 CE | 35 |
 | **Paspahegh** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Pintupi** | Amazonian & Tropical Lowland Peoples | 1600 CE – 1815 CE | 7 |
-| **Savanna hunter-gatherers** | Amazonian & Tropical Lowland Peoples | 1 500 BCE – 1783 CE | 32 |
+| **Savanna hunter-gatherers** | Amazonian & Tropical Lowland Peoples | 1,500 BCE – 1783 CE | 32 |
 | **Selk'nam** | Southern Cone & Pampas Peoples | 1492 CE | 1 |
 | **Selkirk** | Southern Cone & Pampas Peoples | 1492 CE | 1 |
+| **Sharanahua** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Shipibo-Konibo** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
 | **Shuar** | Amazonian & Tropical Lowland Peoples | 1279 CE – 1815 CE | 12 |
 | **Shuar-Wampis** | Amazonian & Tropical Lowland Peoples | 1492 CE | 1 |
@@ -3025,7 +3035,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 27
 * **Total Appearances**: 155
-* **Historical Span**: 10 000 BCE – 2010 CE
+* **Historical Span**: 10,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -3035,7 +3045,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Botswana** | Botswana | 1914 CE – 2010 CE | 9 |
 | **Gitx̱san Lax̱yip** | Khoisan Peoples | 1492 CE | 1 |
 | **Great Zimbabwe** | Southern African Kingdoms | 1000 CE – 1400 CE | 6 |
-| **Khoisan** | Khoisan Peoples | 10 000 BCE – 1500 CE | 34 |
+| **Khoisan** | Khoisan Peoples | 10,000 BCE – 1500 CE | 34 |
 | **Lesotho** | Lesotho | 1914 CE – 2010 CE | 9 |
 | **Malawi** | Malawi | 1914 CE – 2010 CE | 8 |
 | **Mozambique** | Mozambique | 1878 CE – 2010 CE | 9 |
@@ -3061,92 +3071,23 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ---
 
-## <a id="mesoamerican"></a>Mesoamerican
-
-* **Unique Entities**: 56
-* **Total Appearances**: 138
-* **Historical Span**: 2 000 BCE – 1815 CE
-
-| Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
-| :--- | :--- | :--- | :---: |
-| **Ayuukjä'äy (Mixe)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Aztec Empire** | Aztec Empire (Triple Alliance) | 1500 CE | 1 |
-| **Ben 'Zaa/Binnizá/Mén Diiste/Bene Xhon (Zapoteco)** | Zapotec Civilization | 1492 CE | 1 |
-| **Chitonahua/Murunahua** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Chorotega** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Coyutecos (Nahua)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Guachichil** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Guachichiles** | Mesoamerican & Central American Indigenous States | 1530 CE – 1600 CE | 2 |
-| **Guna Yala** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Guna of Madugandí** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Guna of Wargandí** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Gunadule (Kuna-Tule)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Huasteco/Teenek** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Ikoots/Kunajts/Ikoojts (Huave)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **K'iche'** | Maya Civilization | 1492 CE | 1 |
-| **Kalaamaya** | Maya Civilization | 1600 CE – 1815 CE | 7 |
-| **Kamejeya (Yukuna)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Kaqchikel** | Maya Civilization | 1492 CE | 1 |
-| **Lenca** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Maize farmers** | Mesoamerican Agricultural Traditions | 1 500 BCE – 200 BCE | 7 |
-| **Marinahua** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Maya** | Maya Civilization | 1600 CE – 1815 CE | 7 |
-| **Maya Yucateco** | Maya Civilization | 1492 CE | 1 |
-| **Maya chiefdoms and states** | Maya Civilization | 323 BCE – 400 CE | 9 |
-| **Maya city-states** | Maya Civilization | 800 CE – 1500 CE | 9 |
-| **Maya states** | Maya Civilization | 500 CE – 700 CE | 3 |
-| **Mayaimi** | Maya Civilization | 1492 CE | 1 |
-| **Mayangna** | Maya Civilization | 1492 CE | 1 |
-| **Mayas** | Maya Civilization | 1530 CE – 1600 CE | 2 |
-| **Mesoamerican hunter-gatherers and maïze farmers** | Mesoamerican Agricultural Traditions | 2 000 BCE | 1 |
-| **Mexicanero (Nahuas)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Mexihcah (Triple Alliance)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Miskito** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Mixtec Empire** | Mixtec Civilization | 1279 CE – 1500 CE | 4 |
-| **Mixtecs** | Mixtec Civilization | 800 CE – 900 CE | 2 |
-| **Monte Albán** | Zapotec Civilization | 323 BCE – 700 CE | 12 |
-| **Nahua** | Aztec Empire (Triple Alliance) | 1492 CE | 2 |
-| **Nahua (Guerrero)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Nahua (Mexico)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Nahua (Michoacan)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Nahuas** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Ngunawal** | Mesoamerican & Central American Indigenous States | 1600 CE – 1800 CE | 6 |
-| **Nicarao/Nahoa** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Náayerite (Cora)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Olmec** | Olmec Civilization | 1 500 BCE – 400 BCE | 5 |
-| **P’urhépecha** | Purépecha Empire | 1492 CE | 1 |
-| **Q'eqchi'** | Maya Civilization | 1492 CE | 1 |
-| **Sharanahua** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
-| **Teotihuacan** | Teotihuacan Civilization | 323 BCE – 700 CE | 12 |
-| **Tokugawa shogunate** | Mesoamerican & Central American Indigenous States | 1650 CE – 1715 CE | 3 |
-| **Toltec Empire** | Toltec Civilization | 800 CE – 1200 CE | 5 |
-| **Totonac** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Totonaco** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
-| **Zapotec** | Zapotec Civilization | 400 BCE | 1 |
-| **Zapotec Empire** | Zapotec Civilization | 1279 CE – 1400 CE | 3 |
-| **Ñuu Savi (Mixtecapan)** | Mixtec Civilization | 1492 CE | 1 |
-
-[↑ Back to top](#table-of-contents)
-
----
-
 ## <a id="andean"></a>Andean
 
-* **Unique Entities**: 34
-* **Total Appearances**: 136
-* **Historical Span**: 5 000 BCE – 1800 CE
+* **Unique Entities**: 33
+* **Total Appearances**: 130
+* **Historical Span**: 5,000 BCE – 1783 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Andean hunter-gatherers** | Andean Civilizations & Inca | 1 500 BCE – 1783 CE | 32 |
+| **Andean hunter-gatherers** | Andean Civilizations & Inca | 1,500 BCE – 1783 CE | 32 |
 | **Cayubaba** | Andean Civilizations & Inca | 1492 CE | 1 |
-| **Chavin** | Andean Civilizations & Inca | 1 000 BCE – 100 BCE | 8 |
+| **Chavin** | Andean Civilizations & Inca | 1,000 BCE – 100 BCE | 8 |
 | **Chimú** | Andean Civilizations & Inca | 1492 CE | 1 |
 | **Chimú Empire** | Andean Civilizations & Inca | 1000 CE – 1400 CE | 6 |
-| **Chinchoros** | Andean Civilizations & Inca | 1 500 BCE – 500 BCE | 4 |
-| **Chinchorro culture** | Andean Civilizations & Inca | 2 000 BCE | 1 |
-| **Chorrera** | Andean Civilizations & Inca | 1 500 BCE – 100 BCE | 9 |
-| **El Paraiso** | Andean Civilizations & Inca | 1 500 BCE – 500 BCE | 4 |
+| **Chinchoros** | Andean Civilizations & Inca | 1,500 BCE – 500 BCE | 4 |
+| **Chinchorro culture** | Andean Civilizations & Inca | 2,000 BCE | 1 |
+| **Chorrera** | Andean Civilizations & Inca | 1,500 BCE – 100 BCE | 9 |
+| **El Paraiso** | Andean Civilizations & Inca | 1,500 BCE – 500 BCE | 4 |
 | **Huancas** | Andean Civilizations & Inca | 1492 CE | 1 |
 | **Huari Empire** | Andean Civilizations & Inca | 600 CE – 1200 CE | 7 |
 | **Inca Empire** | Inca Empire (Tawantinsuyu) | 1500 CE – 1600 CE | 3 |
@@ -3160,18 +3101,76 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Manteño-Huancavilca** | Andean Civilizations & Inca | 1492 CE | 1 |
 | **Moche** | Andean Civilizations & Inca | 1 BCE – 700 CE | 8 |
 | **Muisca** | Chibcha & Northern Andean Civilizations | 1492 CE | 1 |
-| **Muruwari** | Andean Civilizations & Inca | 1600 CE – 1800 CE | 6 |
 | **Nazca** | Andean Civilizations & Inca | 100 BCE – 500 CE | 7 |
-| **Norte Chico** | Andean Civilizations & Inca | 5 000 BCE – 2 000 BCE | 4 |
+| **Norte Chico** | Andean Civilizations & Inca | 5,000 BCE – 2,000 BCE | 4 |
 | **Paracas** | Andean Civilizations & Inca | 400 BCE – 200 BCE | 4 |
 | **Pasto** | Chibcha & Northern Andean Civilizations | 1492 CE | 1 |
 | **Tiahuanaco Empire** | Andean Civilizations & Inca | 600 CE – 1200 CE | 7 |
-| **Valdivia** | Andean Civilizations & Inca | 5 000 BCE – 2 000 BCE | 4 |
+| **Valdivia** | Andean Civilizations & Inca | 5,000 BCE – 2,000 BCE | 4 |
 | **Wankarani** | Andean Civilizations & Inca | 400 BCE – 100 BCE | 5 |
 | **Wari** | Andean Civilizations & Inca | 1492 CE | 1 |
 | **Wari’** | Andean Civilizations & Inca | 1492 CE | 1 |
 | **Xinca** | Andean Civilizations & Inca | 1492 CE | 1 |
 | **Zenú** | Chibcha & Northern Andean Civilizations | 1492 CE | 1 |
+
+[↑ Back to top](#table-of-contents)
+
+---
+
+## <a id="mesoamerican"></a>Mesoamerican
+
+* **Unique Entities**: 46
+* **Total Appearances**: 115
+* **Historical Span**: 2,000 BCE – 1815 CE
+
+| Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
+| :--- | :--- | :--- | :---: |
+| **Ayuukjä'äy (Mixe)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Aztec Empire** | Aztec Empire (Triple Alliance) | 1500 CE | 1 |
+| **Ben 'Zaa/Binnizá/Mén Diiste/Bene Xhon (Zapoteco)** | Zapotec Civilization | 1492 CE | 1 |
+| **Chorotega** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Coyutecos (Nahua)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
+| **Guachichil** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Guachichiles** | Mesoamerican & Central American Indigenous States | 1530 CE – 1600 CE | 2 |
+| **Guna Yala** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Guna of Madugandí** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Guna of Wargandí** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Gunadule (Kuna-Tule)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Huasteco/Teenek** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **K'iche'** | Maya Civilization | 1492 CE | 1 |
+| **Kaqchikel** | Maya Civilization | 1492 CE | 1 |
+| **Lenca** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Maize farmers** | Mesoamerican Agricultural Traditions | 1,500 BCE – 200 BCE | 7 |
+| **Maya** | Maya Civilization | 1600 CE – 1815 CE | 7 |
+| **Maya Yucateco** | Maya Civilization | 1492 CE | 1 |
+| **Maya chiefdoms and states** | Maya Civilization | 323 BCE – 400 CE | 9 |
+| **Maya city-states** | Maya Civilization | 800 CE – 1500 CE | 9 |
+| **Maya states** | Maya Civilization | 500 CE – 700 CE | 3 |
+| **Mayas** | Maya Civilization | 1530 CE – 1600 CE | 2 |
+| **Mesoamerican hunter-gatherers and maïze farmers** | Mesoamerican Agricultural Traditions | 2,000 BCE | 1 |
+| **Mexicanero (Nahuas)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
+| **Mexihcah (Triple Alliance)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
+| **Miskito** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Mixtec Empire** | Mixtec Civilization | 1279 CE – 1500 CE | 4 |
+| **Mixtecs** | Mixtec Civilization | 800 CE – 900 CE | 2 |
+| **Monte Albán** | Zapotec Civilization | 323 BCE – 700 CE | 12 |
+| **Nahua** | Aztec Empire (Triple Alliance) | 1492 CE | 2 |
+| **Nahua (Guerrero)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
+| **Nahua (Mexico)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
+| **Nahua (Michoacan)** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
+| **Nahuas** | Aztec Empire (Triple Alliance) | 1492 CE | 1 |
+| **Nicarao/Nahoa** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Náayerite (Cora)** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Olmec** | Olmec Civilization | 1,500 BCE – 400 BCE | 5 |
+| **P’urhépecha** | Purépecha Empire | 1492 CE | 1 |
+| **Q'eqchi'** | Maya Civilization | 1492 CE | 1 |
+| **Teotihuacan** | Teotihuacan Civilization | 323 BCE – 700 CE | 12 |
+| **Toltec Empire** | Toltec Civilization | 800 CE – 1200 CE | 5 |
+| **Totonac** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Totonaco** | Mesoamerican & Central American Indigenous States | 1492 CE | 1 |
+| **Zapotec** | Zapotec Civilization | 400 BCE | 1 |
+| **Zapotec Empire** | Zapotec Civilization | 1279 CE – 1400 CE | 3 |
+| **Ñuu Savi (Mixtecapan)** | Mixtec Civilization | 1492 CE | 1 |
 
 [↑ Back to top](#table-of-contents)
 
@@ -3236,27 +3235,27 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 17
 * **Total Appearances**: 85
-* **Historical Span**: 123 000 BCE – 1878 CE
+* **Historical Span**: 123,000 BCE – 1878 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Alluvial Lowland Mesolithic Hunter-Foragers** | Alluvial Lowland Mesolithic Hunter-Foragers | 10 000 BCE – 8 000 BCE | 2 |
-| **Coastal and Woodland Mesolithic Hunter-Foragers** | Coastal & Woodland Mesolithic Hunter-Foragers | 10 000 BCE – 8 000 BCE | 2 |
-| **Dimini** | Neolithic Farming Traditions | 5 000 BCE | 1 |
-| **Ghassul** | Neolithic Farming Traditions | 5 000 BCE | 1 |
-| **Highland Mesolithic Hunter-Foragers** | Highland Mesolithic Hunter-Foragers | 10 000 BCE – 8 000 BCE | 4 |
-| **Homo erectus** | Homo erectus Populations | 123 000 BCE | 1 |
-| **Homo heidelbergensis** | Homo heidelbergensis Populations | 123 000 BCE | 1 |
-| **Hunters-gatherers** | Mesolithic Hunter-Foragers | 10 000 BCE – 2 000 BCE | 5 |
-| **La Almagra culture** | Neolithic Farming Traditions | 5 000 BCE | 1 |
-| **Levantine Corridor (Neolithic Farmers)** | Levantine Corridor (Early Neolithic Farmers) | 10 000 BCE – 8 000 BCE | 2 |
-| **Naquada I** | Neolithic Farming Traditions | 5 000 BCE | 1 |
-| **Neanderthal** | Neanderthal Populations | 123 000 BCE | 2 |
-| **Neolithic Farmers** | Neolithic Farming Traditions | 10 000 BCE – 8 000 BCE | 2 |
-| **Patagonian shellfish and marine mammal hunters** | Coastal Shellfish Gatherers | 1 500 BCE – 1878 CE | 35 |
-| **Shellfish gatherers** | Coastal Shellfish Gatherers | 1 500 BCE – 800 CE | 18 |
-| **Stentinello culture** | Neolithic Farming Traditions | 5 000 BCE | 1 |
-| **Steppe Mesolithic Hunter-Foragers** | Steppe Mesolithic Hunter-Foragers | 10 000 BCE – 8 000 BCE | 6 |
+| **Alluvial Lowland Mesolithic Hunter-Foragers** | Alluvial Lowland Mesolithic Hunter-Foragers | 10,000 BCE – 8,000 BCE | 2 |
+| **Coastal and Woodland Mesolithic Hunter-Foragers** | Coastal & Woodland Mesolithic Hunter-Foragers | 10,000 BCE – 8,000 BCE | 2 |
+| **Dimini** | Neolithic Farming Traditions | 5,000 BCE | 1 |
+| **Ghassul** | Neolithic Farming Traditions | 5,000 BCE | 1 |
+| **Highland Mesolithic Hunter-Foragers** | Highland Mesolithic Hunter-Foragers | 10,000 BCE – 8,000 BCE | 4 |
+| **Homo erectus** | Homo erectus Populations | 123,000 BCE | 1 |
+| **Homo heidelbergensis** | Homo heidelbergensis Populations | 123,000 BCE | 1 |
+| **Hunters-gatherers** | Mesolithic Hunter-Foragers | 10,000 BCE – 2,000 BCE | 5 |
+| **La Almagra culture** | Neolithic Farming Traditions | 5,000 BCE | 1 |
+| **Levantine Corridor (Neolithic Farmers)** | Levantine Corridor (Early Neolithic Farmers) | 10,000 BCE – 8,000 BCE | 2 |
+| **Naquada I** | Neolithic Farming Traditions | 5,000 BCE | 1 |
+| **Neanderthal** | Neanderthal Populations | 123,000 BCE | 2 |
+| **Neolithic Farmers** | Neolithic Farming Traditions | 10,000 BCE – 8,000 BCE | 2 |
+| **Patagonian shellfish and marine mammal hunters** | Coastal Shellfish Gatherers | 1,500 BCE – 1878 CE | 35 |
+| **Shellfish gatherers** | Coastal Shellfish Gatherers | 1,500 BCE – 800 CE | 18 |
+| **Stentinello culture** | Neolithic Farming Traditions | 5,000 BCE | 1 |
+| **Steppe Mesolithic Hunter-Foragers** | Steppe Mesolithic Hunter-Foragers | 10,000 BCE – 8,000 BCE | 6 |
 
 [↑ Back to top](#table-of-contents)
 
@@ -3286,23 +3285,23 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 14
 * **Total Appearances**: 82
-* **Historical Span**: 5 000 BCE – 2010 CE
+* **Historical Span**: 5,000 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
 | **Baltic tribes** | Baltic Peoples & States | 800 CE – 1000 CE | 3 |
 | **Brushed Pottery culture** | Baltic & Pomeranian Archaeological Cultures | 500 BCE – 100 CE | 8 |
 | **Curonians** | Baltic Peoples & States | 500 BCE – 100 CE | 8 |
-| **Early combware** | Baltic & Pomeranian Archaeological Cultures | 5 000 BCE | 1 |
+| **Early combware** | Baltic & Pomeranian Archaeological Cultures | 5,000 BCE | 1 |
 | **Eastern Masurian culture** | Baltic & Pomeranian Archaeological Cultures | 500 BCE – 100 CE | 8 |
 | **Estonia** | Estonia | 1920 CE – 2010 CE | 6 |
 | **Latvia** | Latvia | 1920 CE – 2010 CE | 6 |
 | **Lithuania** | Lithuania | 1279 CE – 2010 CE | 8 |
-| **Narva** | Baltic & Pomeranian Archaeological Cultures | 5 000 BCE | 1 |
+| **Narva** | Baltic & Pomeranian Archaeological Cultures | 5,000 BCE | 1 |
 | **Plain-Pottery culture** | Baltic & Pomeranian Archaeological Cultures | 500 BCE – 100 CE | 8 |
 | **Pomeranian culture** | Baltic & Pomeranian Archaeological Cultures | 500 BCE – 100 CE | 8 |
 | **Sambian-Nothangian culture** | Baltic & Pomeranian Archaeological Cultures | 500 BCE – 100 CE | 8 |
-| **Volga-Kamm** | Baltic & Pomeranian Archaeological Cultures | 5 000 BCE | 1 |
+| **Volga-Kamm** | Baltic & Pomeranian Archaeological Cultures | 5,000 BCE | 1 |
 | **Western Masurian culture** | Baltic & Pomeranian Archaeological Cultures | 500 BCE – 100 CE | 8 |
 
 [↑ Back to top](#table-of-contents)
@@ -3313,7 +3312,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 18
 * **Total Appearances**: 62
-* **Historical Span**: 1 500 BCE – 2010 CE
+* **Historical Span**: 1,500 BCE – 2010 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -3327,14 +3326,14 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Dacia** | Ancient Balkan Kingdoms & Peoples | 1 BCE – 100 CE | 2 |
 | **Dacians** | Ancient Balkan Kingdoms & Peoples | 100 BCE | 1 |
 | **Dardania** | Ancient Balkan Kingdoms & Peoples | 200 BCE | 1 |
-| **Illyrians** | Ancient Balkan Kingdoms & Peoples | 1 500 BCE – 500 BCE | 4 |
+| **Illyrians** | Ancient Balkan Kingdoms & Peoples | 1,500 BCE – 500 BCE | 4 |
 | **Macedonia** | Macedonia | 1994 CE – 2010 CE | 3 |
 | **Montenegro** | Montenegro | 1715 CE – 2010 CE | 8 |
 | **Odrysian Kingdom** | Ancient Balkan Kingdoms & Peoples | 1 BCE | 1 |
 | **Principality of Wallachia** | Balkan Kingdoms & Principalities | 1400 CE | 1 |
 | **Serbia** | Serbia | 900 CE – 2010 CE | 11 |
 | **Slovenia** | Slovenia | 1994 CE – 2010 CE | 3 |
-| **Thrace** | Ancient Balkan Kingdoms & Peoples | 1 500 BCE – 700 BCE | 3 |
+| **Thrace** | Ancient Balkan Kingdoms & Peoples | 1,500 BCE – 700 BCE | 3 |
 
 [↑ Back to top](#table-of-contents)
 
@@ -3344,31 +3343,31 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 21
 * **Total Appearances**: 59
-* **Historical Span**: 5 000 BCE – 1800 CE
+* **Historical Span**: 5,000 BCE – 1800 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Anatolian tribes** | Anatolian & Caucasian Kingdoms | 2 000 BCE | 1 |
-| **Arameans** | Ancient Levantine Civilizations | 1 500 BCE – 700 BCE | 3 |
-| **Assyria** | Mesopotamian Civilizations | 1 500 BCE – 700 BCE | 3 |
-| **Babylonia** | Mesopotamian Civilizations | 1 500 BCE – 700 BCE | 3 |
-| **Canaan** | Ancient Levantine Civilizations | 2 000 BCE | 1 |
+| **Anatolian tribes** | Anatolian & Caucasian Kingdoms | 2,000 BCE | 1 |
+| **Arameans** | Ancient Levantine Civilizations | 1,500 BCE – 700 BCE | 3 |
+| **Assyria** | Mesopotamian Civilizations | 1,500 BCE – 700 BCE | 3 |
+| **Babylonia** | Mesopotamian Civilizations | 1,500 BCE – 700 BCE | 3 |
+| **Canaan** | Ancient Levantine Civilizations | 2,000 BCE | 1 |
 | **Cappadocia** | Anatolian & Caucasian Kingdoms | 323 BCE – 300 BCE | 2 |
 | **Chelamela** | Mesopotamian Civilizations | 1492 CE | 1 |
 | **Colchis** | Anatolian & Caucasian Kingdoms | 323 BCE – 300 BCE | 2 |
-| **Elam** | Mesopotamian Civilizations | 5 000 BCE – 700 BCE | 7 |
-| **Hittites** | Anatolian & Caucasian Kingdoms | 2 000 BCE – 700 BCE | 4 |
-| **Hurrian Kingdoms** | Mesopotamian Civilizations | 5 000 BCE – 2 000 BCE | 4 |
+| **Elam** | Mesopotamian Civilizations | 5,000 BCE – 700 BCE | 7 |
+| **Hittites** | Anatolian & Caucasian Kingdoms | 2,000 BCE – 700 BCE | 4 |
+| **Hurrian Kingdoms** | Mesopotamian Civilizations | 5,000 BCE – 2,000 BCE | 4 |
 | **Judea** | Ancient Levantine Civilizations | 1 BCE | 1 |
-| **Kingdom of David and Solomon** | Ancient Levantine Civilizations | 1 500 BCE – 700 BCE | 3 |
+| **Kingdom of David and Solomon** | Ancient Levantine Civilizations | 1,500 BCE – 700 BCE | 3 |
 | **Mari** | Mesopotamian Civilizations | 800 CE | 1 |
 | **Mundurukânia (Wuy jugu)** | Mesopotamian Civilizations | 1492 CE | 1 |
-| **Phrygians** | Anatolian & Caucasian Kingdoms | 1 500 BCE – 700 BCE | 3 |
-| **Ubaid** | Mesopotamian Civilizations | 5 000 BCE | 1 |
-| **Ur** | Mesopotamian Civilizations | 4 000 BCE – 2 000 BCE | 3 |
-| **Urartu** | Anatolian & Caucasian Kingdoms | 1 500 BCE – 700 BCE | 3 |
+| **Phrygians** | Anatolian & Caucasian Kingdoms | 1,500 BCE – 700 BCE | 3 |
+| **Ubaid** | Mesopotamian Civilizations | 5,000 BCE | 1 |
+| **Ur** | Mesopotamian Civilizations | 4,000 BCE – 2,000 BCE | 3 |
+| **Urartu** | Anatolian & Caucasian Kingdoms | 1,500 BCE – 700 BCE | 3 |
 | **Wulgurukaba** | Mesopotamian Civilizations | 1600 CE – 1800 CE | 6 |
-| **state societies and Aramaean kingdoms** | Ancient Levantine Civilizations | 1 500 BCE – 700 BCE | 6 |
+| **state societies and Aramaean kingdoms** | Ancient Levantine Civilizations | 1,500 BCE – 700 BCE | 6 |
 
 [↑ Back to top](#table-of-contents)
 
@@ -3378,13 +3377,13 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 7
 * **Total Appearances**: 56
-* **Historical Span**: 2 000 BCE – 1530 CE
+* **Historical Span**: 2,000 BCE – 1530 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Finno-Ugric taiga hunter-gatherers** | Finno-Ugric Taiga Peoples | 2 000 BCE – 1200 CE | 26 |
+| **Finno-Ugric taiga hunter-gatherers** | Finno-Ugric Taiga Peoples | 2,000 BCE – 1200 CE | 26 |
 | **Pisamira** | Finno-Ugric Taiga Peoples | 1492 CE | 1 |
-| **Saami** | Finno-Ugric Taiga Peoples | 1 500 BCE – 700 CE | 16 |
+| **Saami** | Finno-Ugric Taiga Peoples | 1,500 BCE – 700 CE | 16 |
 | **Sami** | Finno-Ugric Taiga Peoples | 900 CE | 1 |
 | **Samis** | Finno-Ugric Taiga Peoples | 1000 CE – 1300 CE | 2 |
 | **Samish** | Finno-Ugric Taiga Peoples | 1492 CE | 1 |
@@ -3396,20 +3395,21 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 ## <a id="greco-roman"></a>Greco-Roman
 
-* **Unique Entities**: 17
-* **Total Appearances**: 54
-* **Historical Span**: 4 000 BCE – 1400 CE
+* **Unique Entities**: 18
+* **Total Appearances**: 55
+* **Historical Span**: 4,000 BCE – 1400 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
 | **Bosporan Kingdom** | Macedonian & Hellenistic Empires | 323 BCE – 100 BCE | 4 |
 | **Bosporian Kingdom** | Macedonian & Hellenistic Empires | 1 BCE – 200 CE | 3 |
 | **Byzantine Empire** | Byzantine Empire (Eastern Roman Empire) | 800 CE – 1400 CE | 9 |
-| **Cycladic** | Ancient Greece | 4 000 BCE – 2 000 BCE | 3 |
+| **Cycladic** | Ancient Greece | 4,000 BCE – 2,000 BCE | 3 |
 | **Empire of Alexander** | Macedonian & Hellenistic Empires | 323 BCE | 1 |
-| **Greek city-states** | Ancient Greece | 1 500 BCE – 300 BCE | 11 |
+| **Greek city-states** | Ancient Greece | 1,500 BCE – 300 BCE | 11 |
 | **Greek colonies** | Ancient Greece | 400 BCE | 3 |
-| **Minoan** | Ancient Greece | 4 000 BCE – 2 000 BCE | 3 |
+| **Macedon and Hellenic League** | Macedonian & Hellenistic Empires | 200 BCE | 1 |
+| **Minoan** | Ancient Greece | 4,000 BCE – 2,000 BCE | 3 |
 | **Pergamon** | Macedonian & Hellenistic Empires | 200 BCE | 1 |
 | **Roman Empire** | Roman Empire | 1 BCE – 200 CE | 3 |
 | **Rome** | Roman Empire | 500 BCE – 200 BCE | 3 |
@@ -3507,7 +3507,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 14
 * **Total Appearances**: 32
-* **Historical Span**: 1 500 BCE – 1715 CE
+* **Historical Span**: 1,500 BCE – 1715 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
@@ -3516,7 +3516,7 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 | **Bactria** | Persian & Iranian Empires | 200 BCE | 1 |
 | **Buyid Emirate** | Persian & Iranian Empires | 1000 CE | 1 |
 | **Buyid dynasty** | Persian & Iranian Empires | 1200 CE | 1 |
-| **Iranian pastoralists** | Persian & Iranian Empires | 1 500 BCE – 700 BCE | 3 |
+| **Iranian pastoralists** | Persian & Iranian Empires | 1,500 BCE – 700 BCE | 3 |
 | **Parthia** | Persian & Iranian Empires | 200 BCE – 100 BCE | 2 |
 | **Parthian Empire** | Persian & Iranian Empires | 1 BCE – 300 CE | 4 |
 | **Safavid Empire** | Safavid Empire | 1530 CE – 1715 CE | 5 |
@@ -3559,16 +3559,16 @@ A complete machine-readable dataset is also available in [`data-sources/cultures
 
 * **Unique Entities**: 6
 * **Total Appearances**: 20
-* **Historical Span**: 5 000 BCE – 100 CE
+* **Historical Span**: 5,000 BCE – 100 CE
 
 | Entity / Culture Name | Canonical Historical Lineage | Active Era Range | Eras (Count) |
 | :--- | :--- | :--- | :---: |
-| **Beaker** | Bell Beaker & Corded Ware Traditions | 2 000 BCE | 1 |
+| **Beaker** | Bell Beaker & Corded Ware Traditions | 2,000 BCE | 1 |
 | **Bell-shaped burials culture** | Bell Beaker & Corded Ware Traditions | 500 BCE – 100 CE | 8 |
-| **Funnel-Beaker** | Bell Beaker & Corded Ware Traditions | 5 000 BCE | 1 |
-| **N. European Bronze Age cultures** | Nordic & Urnfield Bronze Age Cultures | 1 500 BCE – 700 BCE | 5 |
-| **Urnfield cultures** | Nordic & Urnfield Bronze Age Cultures | 1 500 BCE – 700 BCE | 4 |
-| **Únětice** | Nordic & Urnfield Bronze Age Cultures | 2 000 BCE | 1 |
+| **Funnel-Beaker** | Bell Beaker & Corded Ware Traditions | 5,000 BCE | 1 |
+| **N. European Bronze Age cultures** | Nordic & Urnfield Bronze Age Cultures | 1,500 BCE – 700 BCE | 5 |
+| **Urnfield cultures** | Nordic & Urnfield Bronze Age Cultures | 1,500 BCE – 700 BCE | 4 |
+| **Únětice** | Nordic & Urnfield Bronze Age Cultures | 2,000 BCE | 1 |
 
 [↑ Back to top](#table-of-contents)
 

@@ -3,7 +3,7 @@
  *
  * Extracts all sovereign polities, cultures, parent empires, suzerain powers,
  * archaeological site names, classifications, era metadata, and UI strings across
- * all 53 historical GeoJSON datasets, places.geojson, and application metadata.
+ * all 54 historical GeoJSON datasets, places.geojson, and application metadata.
  *
  * Outputs:
  * - data-sources/translations/extracted_strings.json (comprehensive categorized registry with stats and contexts)
@@ -117,7 +117,7 @@ export async function runExtraction() {
     }
   }
 
-  // 1. Process 53 Historical Era Datasets (world_*.geojson)
+  // 1. Process 54 Historical Era Datasets (world_*.geojson)
   const files = fs
     .readdirSync(SEED_DIR)
     .filter((f) => f.startsWith("world_") && f.endsWith(".geojson"))
@@ -432,7 +432,7 @@ export async function runExtraction() {
   const summaryMdPath = path.join(DOCS_DIR, "translatable_strings_summary.md")
   let md = `# Historical Earth Browser — Translatable Strings Summary
 
-This document summarizes all extracted translatable names, sovereign polities, parent empires, archaeological sites, societal classifications, era metadata, and UI labels across the 53 historical GeoJSON datasets, places catalog, and application code.
+This document summarizes all extracted translatable names, sovereign polities, parent empires, archaeological sites, societal classifications, era metadata, and UI labels across the 54 historical GeoJSON datasets, places catalog, and application code.
 
 ---
 
@@ -442,9 +442,9 @@ This document summarizes all extracted translatable names, sovereign polities, p
 - **Total Historical Era Boundary Datasets Scanned**: **${files.length} eras** (${totalWorldFeatures.toLocaleString()} total polygon features)
 - **Archaeological & City Places Scanned**: **${multilingualPlacesSeeds.length.toLocaleString()} locations** with multi-lingual seed names
 - **Generated Catalog Files**:
-  - [\`data-sources/translations/extracted_strings.json\`](file://${extractedPath}): Complete array with occurrence frequencies, roles, era references, and seed translations.
-  - [\`data-sources/translations/translatable_catalog.json\`](file://${catalogPath}): Key-value map suitable for direct integration into i18n localization engines (e.g. i18next, react-intl).
-  - [\`data-sources/translations/places_multilingual_seed.json\`](file://${seedsPath}): Seed translations across 20+ languages (Arabic, Hebrew, Greek, Russian, French, German, Spanish, Portuguese, Italian, Hindi, etc.).
+  - [\`data-sources/translations/extracted_strings.json\`](../data-sources/translations/extracted_strings.json): Complete array with occurrence frequencies, roles, era references, and seed translations.
+  - [\`data-sources/translations/translatable_catalog.json\`](../data-sources/translations/translatable_catalog.json): Key-value map suitable for direct integration into i18n localization engines (e.g. i18next, react-intl).
+  - [\`data-sources/translations/places_multilingual_seed.json\`](../data-sources/translations/places_multilingual_seed.json): Seed translations across 20+ languages (Arabic, Hebrew, Greek, Russian, French, German, Spanish, Portuguese, Italian, Hindi, etc.).
 
 ---
 

@@ -103,15 +103,15 @@ async function exportCultures() {
   groupStats.sort((a, b) => b.totalRecords - a.totalRecords)
 
   let md = `# Catalog of Cultures, Civilizations & Polities\n\n`
-  md += `This catalog compiles all **${records.length}** distinct historical, archaeological, and indigenous cultural entities extracted directly from the **Earth Browser** PostGIS database (\`world\` database, \`era_features\` table).\n\n`
-  md += `Across all **54 historical eras** (123,000 BCE – 2010 CE), the database contains **17,563 total feature entries** categorized into **${groups.size} cultural groups**.\n\n`
+  md += `This catalog compiles distinct historical, archaeological, and indigenous cultural entities extracted directly from the **Earth Browser** PostGIS database (\`world\` database, \`era_features\` table).\n\n`
+  md += `Cultural entities across historical eras (123,000 BCE – 2010 CE) are categorized into recognized cultural groups.\n\n`
   md += `A complete machine-readable dataset is also available in [\`data-sources/cultures.json\`](data-sources/cultures.json).\n\n`
 
   md += `## Table of Contents\n\n`
   md += `1. [Summary by Cultural Group](#summary-by-cultural-group)\n`
   for (const stat of groupStats) {
     const slug = stat.group.toLowerCase().replace(/[^a-z0-9]+/g, "-")
-    md += `- [${stat.group} (${stat.count} entities)](#${slug})\n`
+    md += `- [${stat.group}](#${slug})\n`
   }
   md += `\n---\n\n`
 
